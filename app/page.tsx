@@ -12,7 +12,7 @@ const ALL_CHARACTERS = getAllCharacters();
 // 彩蛋：搜尋 "ct"（不分大小寫）時顯示
 function CtEasterEgg() {
   return (
-    <div className="flex justify-center py-12">
+    <div className="flex justify-center">
       <div className="rounded-2xl overflow-hidden border-2 border-[#c9a227]/60 shadow-[0_0_40px_rgba(201,162,39,0.4)]">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
@@ -51,11 +51,26 @@ export default function HomePage() {
     return true;
   });
 
+  // 彩蛋模式：只顯示搜尋欄 + 置中圖片
+  if (isCtEasterEgg) {
+    return (
+      <>
+        <input
+          type="text"
+          placeholder="搜尋角色名稱…"
+          value={search}
+          onChange={e => setSearch(e.target.value)}
+          className="w-full md:w-80 mb-4 px-4 py-2 rounded-lg bg-white/5 border border-white/15 text-white placeholder-gray-500 text-sm focus:outline-none focus:border-white/40"
+        />
+        <div className="flex items-center justify-center min-h-[60vh]">
+          <CtEasterEgg />
+        </div>
+      </>
+    );
+  }
+
   return (
     <>
-      {/* 彩蛋 */}
-      {isCtEasterEgg && <CtEasterEgg />}
-
       <h1 className="text-xl sm:text-2xl font-bold text-white mb-4">角色列表</h1>
 
       {/* 搜尋欄 */}
