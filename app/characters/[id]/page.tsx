@@ -1,8 +1,8 @@
 import { notFound } from 'next/navigation';
-import Image from 'next/image';
 import { getCharacterById, getAllCharacters, getDisplayName } from '@/lib/api';
 import SkillSection from '@/components/SkillSection';
 import EidolonGrid from '@/components/EidolonGrid';
+import AvatarImage from '@/components/AvatarImage';
 
 // 屬性顏色
 const ELEMENT_COLOR: Record<string, string> = {
@@ -38,13 +38,10 @@ export default async function CharacterPage({ params }: { params: Promise<{ id: 
           border bg-gradient-to-b from-[#1a1a2e] to-[#0d0d1a]
           ${isGold ? 'border-[#c9a227]/40' : 'border-violet-500/40'}
         `}>
-          <Image
+          <AvatarImage
             src={character.image}
             alt={displayName}
-            fill
             className="object-contain p-4"
-            unoptimized
-            priority
           />
         </div>
 

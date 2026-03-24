@@ -1,7 +1,7 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import type { Character } from '@/lib/types';
 import { getDisplayName } from '@/lib/api';
+import AvatarImage from './AvatarImage';
 
 // 屬性顏色對照
 const ELEMENT_COLOR: Record<string, string> = {
@@ -35,12 +35,10 @@ export default function CharacterCard({ character }: { character: Character }) {
 
         {/* 角色圖片 */}
         <div className="relative w-full aspect-square bg-gradient-to-b from-[#1a1a2e] to-[#0d0d1a]">
-          <Image
+          <AvatarImage
             src={character.image}
             alt={displayName}
-            fill
             className="object-contain p-3"
-            unoptimized
           />
         </div>
 
