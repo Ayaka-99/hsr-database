@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import Link from 'next/link';
+import Image from 'next/image';
 import LangToggle from '@/components/LangToggle';
 import { LangProvider } from '@/lib/lang';
 
@@ -13,9 +14,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="zh-TW">
       <head>
-        <link rel="icon" href="/favicon.jpg.png" type="image/png" />
-        <link rel="shortcut icon" href="/favicon.jpg.png" type="image/png" />
-        <link rel="apple-touch-icon" href="/favicon.jpg.png" />
+        <link rel="icon" href="/hsr-database/favicon.jpg.png" type="image/png" />
+        <link rel="shortcut icon" href="/hsr-database/favicon.jpg.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/hsr-database/favicon.jpg.png" />
         {/* 繁體中文字體 */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
@@ -30,8 +31,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <nav className="sticky top-0 z-50 border-b border-white/10 backdrop-blur-md bg-[#0d0d1a]/80">
             <div className="max-w-7xl mx-auto px-4 h-14 flex items-center gap-6">
               <Link href="/" className="flex items-center gap-2 text-[#c9a227] font-bold text-lg tracking-wide">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/favicon.jpg.png" alt="icon" className="w-7 h-7 rounded-full object-cover border border-white/20" />
+                <Image src="/favicon.jpg.png" alt="icon" width={28} height={28} className="rounded-full object-cover border border-white/20" unoptimized />
                 CT杯 數據庫
               </Link>
               <Link href="/" className="text-sm text-gray-400 hover:text-white transition-colors">
