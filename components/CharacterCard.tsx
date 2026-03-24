@@ -6,6 +6,17 @@ import { getDisplayName } from '@/lib/api';
 import { useLang } from '@/lib/lang';
 import AvatarImage from './AvatarImage';
 
+// 屬性漸層背景（用於卡片圖片區）
+const ELEMENT_GRADIENT: Record<string, string> = {
+  '火':   'from-orange-900/50 to-[#0e0e1e]',
+  '冰':   'from-sky-900/50    to-[#0e0e1e]',
+  '雷':   'from-violet-900/50 to-[#0e0e1e]',
+  '風':   'from-teal-900/50   to-[#0e0e1e]',
+  '量子': 'from-purple-900/50 to-[#0e0e1e]',
+  '虛數': 'from-amber-900/50  to-[#0e0e1e]',
+  '物理': 'from-slate-800/50  to-[#0e0e1e]',
+};
+
 // 屬性顏色對照
 const ELEMENT_COLOR: Record<string, string> = {
   '火': 'text-orange-400',
@@ -38,7 +49,7 @@ export default function CharacterCard({ character }: { character: Character }) {
         </div>
 
         {/* 角色圖片 */}
-        <div className="relative w-full aspect-square bg-gradient-to-b from-[#1a1a2e] to-[#0d0d1a]">
+        <div className={`relative w-full aspect-square bg-gradient-to-b ${ELEMENT_GRADIENT[character.element] ?? 'from-[#1a1a2e] to-[#0d0d1a]'}`}>
           <AvatarImage
             src={character.image}
             alt={displayName}

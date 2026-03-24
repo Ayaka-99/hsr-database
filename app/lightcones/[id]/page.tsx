@@ -1,9 +1,17 @@
+import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import { getLightConeById, getAllLightCones } from '@/lib/api';
 
 // 精煉等級標籤
 const REFINEMENT_LABELS = ['一', '二', '三', '四', '五'];
+
+// 被動技能區塊顏色（依稀有度）
+const PASSIVE_COLOR: Record<number, { border: string; bg: string; name: string }> = {
+  5: { border: 'border-[#c9a227]/20', bg: 'bg-[#c9a227]/5',    name: 'text-[#c9a227]' },
+  4: { border: 'border-violet-500/20', bg: 'bg-violet-500/5',  name: 'text-violet-400' },
+  3: { border: 'border-blue-500/20',   bg: 'bg-blue-500/5',    name: 'text-blue-400' },
+};
 
 // 稀有度顏色
 const RARITY_COLOR: Record<number, string> = {
@@ -22,9 +30,15 @@ export default async function LightConePage({ params }: { params: Promise<{ id: 
   if (!lc) notFound();
 
   const color = RARITY_COLOR[lc.rarity] ?? RARITY_COLOR[3];
+  const passiveStyle = PASSIVE_COLOR[lc.rarity] ?? PASSIVE_COLOR[3];
 
   return (
     <div className="max-w-3xl mx-auto">
+      {/* 返回按鈕 */}
+      <Link href="/lightcones" className="inline-flex items-center gap-1.5 text-sm text-gray-500 hover:text-gray-200 transition-colors mb-6">
+        ← 光錐列表
+      </Link>
+
       {/* 頭部 */}
       <div className="flex flex-col sm:flex-row gap-6 mb-8">
         {/* 光錐圖片 */}
@@ -58,8 +72,8 @@ export default async function LightConePage({ params }: { params: Promise<{ id: 
       {/* 被動技能 */}
       <div>
         <h2 className="text-lg font-bold text-white mb-3">被動技能</h2>
-        <div className="rounded-xl border border-[#c9a227]/20 bg-[#c9a227]/5 p-4">
-          <p className="text-[#c9a227] font-semibold mb-4">{lc.passive.name}</p>
+        <div className={`rounded-xl border ${passiveStyle.border} ${passiveStyle.bg} p-4`}>
+          <p className={`${passiveStyle.name} font-semibold mb-4`}>{lc.passive.name}</p>
 
           {/* 各精煉等級描述 */}
           <div className="space-y-3">

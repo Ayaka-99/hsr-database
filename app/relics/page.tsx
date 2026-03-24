@@ -69,7 +69,7 @@ export default function RelicsPage() {
     <div>
       {/* 頁面標題 */}
       <div className="mb-6">
-        <h1 className="text-2xl font-bold text-white">仪器</h1>
+        <h1 className="text-2xl font-bold text-white">遺器</h1>
         <p className="text-sm text-gray-400 mt-1">遺器與位面飾品套裝效果</p>
       </div>
 

@@ -161,7 +161,7 @@ export interface LightCone {
 
 export type Path =
   | '巡獵' | '毀滅' | '智識' | '同諧'
-  | '虛無' | '豐饒' | '存護' | '記憶';
+  | '虛無' | '豐饒' | '存護' | '記憶'| '歡愉';
 
 export type Element =
   | '火' | '冰' | '雷' | '風'
@@ -220,3 +220,4 @@ claude
 - 圖片建議在 build 時預先下載至 `public/images/`，避免瀏覽器直接請求米哈遊伺服器被封鎖
 - 若資料 API 有 CORS 限制，改用 Next.js Route Handler 作為代理
 - 部署到 Vercel 前確認 `next.config.js` 加入允許的圖片網域
+-完成後推到github

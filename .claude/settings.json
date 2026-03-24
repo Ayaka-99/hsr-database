@@ -1,0 +1,36 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm:*)",
+      "Bash(npx:*)",
+      "Bash(git:*)",
+      "WebFetch(domain:www.topuplive.com)",
+      "WebFetch(domain:x.com)",
+      "WebFetch(domain:gamefaqs.gamespot.com)",
+      "WebFetch(domain:bittopup.com)",
+      "WebFetch(domain:genshinlab.com)",
+      "WebFetch(domain:cg.163.com)",
+      "WebFetch(domain:www.gamersky.com)",
+      "WebFetch(domain:www.taptap.cn)",
+      "WebFetch(domain:www.zhihu.com)",
+      "WebFetch(domain:www.hoyolab.com)",
+      "WebFetch(domain:homdgcat.wiki)",
+      "WebFetch(domain:www.ldshop.gg)",
+      "WebFetch(domain:gameggg.com)",
+      "WebFetch(domain:www.gameggg.com)",
+      "WebFetch(domain:www.laqoos.com)",
+      "WebFetch(domain:hsr.gay)",
+      "WebFetch(domain:starrail.honeyhunterworld.com)",
+      "WebFetch(domain:www.gachahaven.com)",
+      "WebFetch(domain:wikiwiki.jp)",
+      "WebFetch(domain:naga-ken.info)",
+      "WebFetch(domain:www.5ing-myway.com)",
+      "WebFetch(domain:dotgg.gg)",
+      "WebFetch(domain:itemlevel.net)",
+      "Bash(cp /tmp/tailwind-v4-shadcn.md c:/Users/ayaka/hsr-database/skills/tailwind-v4-shadcn.md)",
+      "Bash(cp /tmp/web-performance.md c:/Users/ayaka/hsr-database/skills/web-performance.md)",
+      "Bash(claude plugin:*)",
+      "Bash(claude mcp:*)"
+    ]
+  }
+}

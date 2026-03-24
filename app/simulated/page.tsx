@@ -31,14 +31,14 @@ const stages = [
   },
 ];
 
-const ELEMENT_COLOR: Record<string, string> = {
-  '火':   'text-orange-400',
-  '冰':   'text-cyan-400',
-  '雷':   'text-yellow-300',
-  '風':   'text-emerald-400',
-  '量子': 'text-violet-400',
-  '虛數': 'text-amber-300',
-  '物理': 'text-gray-300',
+const ELEMENT_BADGE: Record<string, string> = {
+  '火':   'bg-orange-500/20 text-orange-300 border-orange-500/40',
+  '冰':   'bg-sky-500/20    text-sky-300    border-sky-500/40',
+  '雷':   'bg-violet-500/20 text-violet-300 border-violet-500/40',
+  '風':   'bg-teal-500/20   text-teal-300   border-teal-500/40',
+  '量子': 'bg-purple-500/20 text-purple-300 border-purple-500/40',
+  '虛數': 'bg-yellow-500/20 text-yellow-200 border-yellow-500/40',
+  '物理': 'bg-gray-500/20   text-gray-300   border-gray-500/40',
 };
 
 function formatHP(n: number): string {
@@ -85,36 +85,58 @@ export default function SimulatedPage() {
         {stages.map(s => (
           <div
             key={s.round}
-            className="rounded-xl border border-white/10 bg-white/3 p-4 flex flex-col sm:flex-row sm:items-center gap-4"
+            className={`rounded-xl border p-4 ${
+              s.round === 3
+                ? 'border-[#c9a227]/30 bg-gradient-to-br from-[#1a1200]/60 to-[#0d0d1a]'
+                : 'border-white/10 bg-white/3'
+            }`}
           >
-            {/* 關卡編號 */}
-            <div className="shrink-0 w-10 h-10 rounded-full border border-white/15 bg-white/5 flex items-center justify-center text-sm font-bold text-gray-300">
-              {s.round}
-            </div>
-
-            {/* BOSS 資訊 */}
-            <div className="flex-1 min-w-0">
-              <div className="flex items-center gap-2 mb-1 flex-wrap">
-                <span className={`text-xs px-2 py-0.5 rounded-full border font-semibold ${s.typeStyle}`}>
-                  {s.type}
-                </span>
-                <span className="text-white font-semibold text-sm">{s.boss}</span>
+            <div className="flex flex-col sm:flex-row sm:items-center gap-3">
+              {/* 關卡編號 */}
+              <div className={`shrink-0 w-10 h-10 rounded-full border flex items-center justify-center text-sm font-bold ${
+                s.round === 3
+                  ? 'border-[#c9a227]/40 text-[#c9a227] bg-[#c9a227]/10'
+                  : 'border-white/15 text-gray-300 bg-white/5'
+              }`}>
+                {s.round}
               </div>
-              <p className="text-xs text-gray-400 leading-relaxed">{s.note}</p>
-            </div>
 
-            {/* 弱點 + HP */}
-            <div className="shrink-0 flex flex-col items-end gap-1">
-              <div className="flex gap-1 flex-wrap justify-end">
-                {s.weakness.map(w => (
-                  <span key={w} className={`text-xs font-semibold ${ELEMENT_COLOR[w] ?? 'text-white'}`}>
-                    {w}
+              {/* BOSS 資訊 */}
+              <div className="flex-1 min-w-0">
+                <div className="flex items-center gap-2 mb-1 flex-wrap">
+                  <span className={`text-xs px-2 py-0.5 rounded-full border font-semibold ${s.typeStyle}`}>
+                    {s.type}
                   </span>
-                ))}
+                  <span className="text-white font-semibold text-sm">{s.boss}</span>
+                </div>
+                <p className="text-xs text-gray-400 leading-relaxed">{s.note}</p>
               </div>
-              <span className="text-sm font-bold text-white tabular-nums">
-                HP {formatHP(s.hp)}
-              </span>
+
+              {/* 弱點 + HP */}
+              <div className="shrink-0 flex flex-col items-end gap-1.5">
+                <div className="flex gap-1 flex-wrap justify-end">
+                  {s.weakness.map(w => (
+                    <span key={w} className={`text-[10px] px-1.5 py-0.5 rounded border font-semibold ${ELEMENT_BADGE[w] ?? 'bg-gray-500/20 text-gray-300 border-gray-500/40'}`}>
+                      {w}
+                    </span>
+                  ))}
+                </div>
+                <span className={`text-sm font-bold tabular-nums ${s.round === 3 ? 'text-[#c9a227]' : 'text-white'}`}>
+                  HP {formatHP(s.hp)}
+                </span>
+              </div>
+            </div>
+
+            {/* HP 比例條 */}
+            <div className="mt-3 h-1 rounded-full bg-white/8 overflow-hidden">
+              <div
+                className={`h-full rounded-full ${
+                  s.round === 3
+                    ? 'bg-gradient-to-r from-[#c9a227]/70 to-[#c9a227]'
+                    : 'bg-gradient-to-r from-rose-700 to-rose-500'
+                }`}
+                style={{ width: `${Math.round((s.hp / 12_000_000) * 100)}%` }}
+              />
             </div>
           </div>
         ))}

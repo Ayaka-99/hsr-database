@@ -5,6 +5,28 @@ import SkillSection from '@/components/SkillSection';
 import EidolonGrid from '@/components/EidolonGrid';
 import AvatarImage from '@/components/AvatarImage';
 
+// 屬性漸層背景
+const ELEMENT_GRADIENT: Record<string, string> = {
+  '火':   'from-orange-900/50 to-[#0e0e1e]',
+  '冰':   'from-sky-900/50    to-[#0e0e1e]',
+  '雷':   'from-violet-900/50 to-[#0e0e1e]',
+  '風':   'from-teal-900/50   to-[#0e0e1e]',
+  '量子': 'from-purple-900/50 to-[#0e0e1e]',
+  '虛數': 'from-amber-900/50  to-[#0e0e1e]',
+  '物理': 'from-slate-800/50  to-[#0e0e1e]',
+};
+
+// 屬性邊框顏色
+const ELEMENT_BORDER: Record<string, string> = {
+  '火':   'border-orange-500/40',
+  '冰':   'border-sky-500/40',
+  '雷':   'border-violet-500/40',
+  '風':   'border-teal-500/40',
+  '量子': 'border-purple-500/40',
+  '虛數': 'border-amber-500/40',
+  '物理': 'border-gray-500/40',
+};
+
 // 屬性顏色
 const ELEMENT_COLOR: Record<string, string> = {
   '火': 'text-orange-400',
@@ -45,13 +67,18 @@ export default async function CharacterPage({ params }: { params: Promise<{ id: 
 
   return (
     <div className="max-w-4xl mx-auto">
+      {/* 返回按鈕 */}
+      <Link href="/" className="inline-flex items-center gap-1.5 text-sm text-gray-500 hover:text-gray-200 transition-colors mb-6">
+        ← 角色列表
+      </Link>
+
       {/* 角色頭部 */}
       <div className="flex flex-col sm:flex-row gap-6 mb-8">
         {/* 角色圖片 */}
         <div className={`
           relative w-full sm:w-48 aspect-square sm:h-48 rounded-xl overflow-hidden shrink-0
-          border bg-gradient-to-b from-[#1a1a2e] to-[#0d0d1a]
-          ${isGold ? 'border-[#c9a227]/40' : 'border-violet-500/40'}
+          border bg-gradient-to-b ${ELEMENT_GRADIENT[character.element] ?? 'from-[#1a1a2e] to-[#0d0d1a]'}
+          ${ELEMENT_BORDER[character.element] ?? (isGold ? 'border-[#c9a227]/40' : 'border-violet-500/40')}
         `}>
           <AvatarImage
             src={character.image}
