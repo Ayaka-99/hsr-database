@@ -15,6 +15,15 @@ export interface Eidolon {
   image: string;
 }
 
+export interface CharacterTrace {
+  anchor: string;
+  type: 'ability' | 'stat';
+  name: string;
+  description?: string;   // ability traces only
+  statType?: string;       // stat traces only
+  value?: number;          // stat traces only
+}
+
 export interface Character {
   id: string;
   name: string;
@@ -31,6 +40,7 @@ export interface Character {
     technique: Skill;
   };
   eidolons: Eidolon[];
+  traces?: CharacterTrace[];
 }
 
 export interface RelicSet {

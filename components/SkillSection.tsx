@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
-import type { Character } from '@/lib/types';
+import type { Character, CharacterTrace } from '@/lib/types';
 
 // 技能槽顯示名稱
 const SKILL_LABELS: Record<keyof Character['skills'], string> = {
@@ -42,22 +42,23 @@ const SKILL_LABEL_COLORS: Record<keyof Character['skills'], string> = {
 // 秘技只有 1 級，不顯示滑動條
 const NO_LEVELS = new Set<keyof Character['skills']>(['technique']);
 
-// 行迹節點佔位資料
-const TRACE_NODES = [
-  { id: 1, label: '行迹 1', col: 2, row: 1 },
-  { id: 2, label: '行迹 2', col: 1, row: 2 },
-  { id: 3, label: '行迹 3', col: 3, row: 2 },
-  { id: 4, label: '行迹 4', col: 2, row: 3 },
-  { id: 5, label: '行迹 5', col: 1, row: 4 },
-  { id: 6, label: '行迹 6', col: 3, row: 4 },
-];
+// 格式化行迹屬性數值
+function formatTraceValue(trace: CharacterTrace): string {
+  if (trace.value === undefined) return '';
+  const v = trace.value;
+  // 比例類（小於等於 1 的值）轉為百分比
+  if (v > 0 && v <= 1) return `+${(v * 100).toFixed(1).replace(/\.0$/, '')}%`;
+  return `+${v}`;
+}
 
 export default function SkillSection({
   skills,
   characterId,
+  traces,
 }: {
   skills: Character['skills'];
   characterId: string;
+  traces?: CharacterTrace[];
 }) {
   const [levels, setLevels] = useState<Record<string, number>>({});
   const keys = Object.keys(SKILL_LABELS) as Array<keyof Character['skills']>;
@@ -66,6 +67,10 @@ export default function SkillSection({
   function getSkillIconUrl(key: keyof Character['skills']): string {
     return `https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/${characterId}_${SKILL_ICON_SUFFIX[key]}.png`;
   }
+
+  const abilityTraces = traces?.filter(t => t.type === 'ability') ?? [];
+  const statTraces = traces?.filter(t => t.type === 'stat') ?? [];
+  const hasTraces = traces && traces.length > 0;
 
   return (
     <div>
@@ -141,28 +146,50 @@ export default function SkillSection({
       {/* ── 行迹區塊 ── */}
       <div className="mt-8">
         <h2 className="text-lg font-bold text-white mb-3">行迹</h2>
-        <div className="rounded-xl border border-white/10 bg-white/3 p-6">
-          {/* 樹狀佔位節點（3 欄 × 4 行網格） */}
-          <div
-            className="grid gap-4"
-            style={{ gridTemplateColumns: 'repeat(3, 1fr)', gridTemplateRows: 'repeat(4, auto)' }}
-          >
-            {TRACE_NODES.map(node => (
-              <div
-                key={node.id}
-                className="flex flex-col items-center gap-1"
-                style={{ gridColumn: node.col, gridRow: node.row }}
-              >
-                {/* 圓形節點 */}
-                <div className="w-12 h-12 rounded-full border-2 border-dashed border-gray-600/50 bg-gray-800/30 flex items-center justify-center">
-                  <span className="text-gray-600 text-xs font-bold">{node.id}</span>
-                </div>
-                <span className="text-xs text-gray-600">{node.label}</span>
+
+        {hasTraces ? (
+          <div className="space-y-4">
+            {/* 能力型行迹 */}
+            {abilityTraces.length > 0 && (
+              <div className="space-y-2">
+                {abilityTraces.map(trace => (
+                  <div
+                    key={trace.anchor}
+                    className="rounded-lg border border-[#c9a227]/30 bg-[#c9a227]/5 p-4"
+                  >
+                    <p className="text-[#c9a227] font-semibold text-sm mb-1">{trace.name}</p>
+                    {trace.description && (
+                      <p className="text-sm text-gray-300 whitespace-pre-line leading-relaxed">
+                        {trace.description}
+                      </p>
+                    )}
+                  </div>
+                ))}
               </div>
-            ))}
+            )}
+
+            {/* 屬性強化行迹 */}
+            {statTraces.length > 0 && (
+              <div>
+                <p className="text-xs text-gray-500 mb-2">屬性強化</p>
+                <div className="flex flex-wrap gap-2">
+                  {statTraces.map(trace => (
+                    <span
+                      key={trace.anchor}
+                      className="text-xs px-3 py-1.5 rounded-full border border-white/10 bg-white/5 text-gray-300"
+                    >
+                      {trace.name} <span className="text-emerald-400 font-semibold">{formatTraceValue(trace)}</span>
+                    </span>
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
-          <p className="text-center text-xs text-gray-600 mt-4 italic">資料擴充中</p>
-        </div>
+        ) : (
+          <div className="rounded-xl border border-white/10 bg-white/3 p-6 text-center">
+            <p className="text-xs text-gray-600 italic">資料擴充中</p>
+          </div>
+        )}
       </div>
     </div>
   );

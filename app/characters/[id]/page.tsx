@@ -68,7 +68,7 @@ export default async function CharacterPage({ params }: { params: Promise<{ id: 
 
       {/* 技能 */}
       <div className="mb-8">
-        <SkillSection skills={character.skills} characterId={character.id} />
+        <SkillSection skills={character.skills} characterId={character.id} traces={character.traces} />
       </div>
 
       {/* 命座 */}

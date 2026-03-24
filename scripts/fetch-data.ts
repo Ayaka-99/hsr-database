@@ -7,7 +7,7 @@
 
 import { writeFileSync, mkdirSync } from 'fs';
 import { join } from 'path';
-import type { Character, LightCone, Path, Element, Skill, Eidolon } from '../lib/types';
+import type { Character, LightCone, Path, Element, Skill, Eidolon, CharacterTrace } from '../lib/types';
 
 const MANIFEST_URL = 'https://static.nanoka.cc/manifest.json';
 const IMG_BASE = 'https://raw.githubusercontent.com/Mar-7th/StarRailRes/master';
@@ -159,10 +159,25 @@ interface ApiRank {
   icon: string;  // 例如 "SkillIcon_1001_Rank1.png"
 }
 
+interface ApiTraceNode {
+  anchor: string;
+  point_type: number;
+  point_name: string | null;
+  point_desc: string | null;
+  status_add_list: {
+    $type: string;
+    property_type: string;
+    value: number;
+    name: string;
+  }[];
+  param_list: number[];
+}
+
 interface ApiCharacterDetail {
   name: string;
   skills: Record<string, ApiSkill>;
   ranks: Record<string, ApiRank>;
+  skill_trees?: Record<string, Record<string, ApiTraceNode>>;
 }
 
 async function fetchCharacters(baseUrl: string): Promise<Character[]> {
@@ -225,16 +240,46 @@ async function fetchCharacters(baseUrl: string): Promise<Character[]> {
         image: rankIconToUrl(id, r.icon),
       }));
 
+      // ── 整理行迹 ──
+      const traces: CharacterTrace[] = [];
+      if (detail.skill_trees) {
+        for (const pointLevels of Object.values(detail.skill_trees)) {
+          const node = Object.values(pointLevels)[0] as ApiTraceNode;
+          if (!node) continue;
+          if (node.point_type === 3 && node.point_name) {
+            // 能力型行迹（有名稱與描述）
+            traces.push({
+              anchor: node.anchor,
+              type: 'ability',
+              name: node.point_name,
+              description: cleanDesc(node.point_desc),
+            });
+          } else if (node.point_type === 1 && node.status_add_list?.length) {
+            // 屬性強化型行迹
+            const stat = node.status_add_list[0];
+            traces.push({
+              anchor: node.anchor,
+              type: 'stat',
+              name: stat.name,
+              statType: stat.property_type,
+              value: stat.value,
+            });
+          }
+        }
+      }
+
       const rarity = parseRarity(entry.rank);
       characters.push({
         id,
         name: detail.name || entry.zh || entry.en,
+        nameEn: entry.en || undefined,
         rarity: (rarity === 5 ? 5 : 4) as Character['rarity'],
         path:    PATH_MAP[entry.baseType]    ?? '巡獵',
         element: ELEMENT_MAP[entry.damageType] ?? '物理',
         image: `${IMG_BASE}/icon/character/${id}.png`,
         skills,
         eidolons,
+        traces,
       });
 
       process.stdout.write(' ✓\n');
@@ -331,9 +376,9 @@ async function main() {
   // 1. 取得最新版本號
   console.log('📋 取得遊戲版本...');
   const manifest = await fetchJson<{ hsr: { live: string; latest: string } }>(MANIFEST_URL);
-  const version = manifest.hsr.latest;
+  const version = manifest.hsr.live;  // 使用已上線版本（截止 4.0）
   const BASE_URL = `https://static.nanoka.cc/hsr/${version}`;
-  console.log(`   版本：${version}\n`);
+  console.log(`   版本：${version}（live）\n`);
 
   // 2. 抓取角色
   const characters = await fetchCharacters(BASE_URL);
