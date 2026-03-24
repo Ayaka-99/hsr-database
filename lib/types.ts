@@ -3,7 +3,8 @@ export type Element = '火' | '冰' | '雷' | '風' | '量子' | '虛數' | '物
 
 export interface Skill {
   name: string;
-  description: string;
+  description: string;       // 第 1 級描述（向後兼容）
+  descriptions: string[];    // 第 1–15 級描述
   type: string;
 }
 

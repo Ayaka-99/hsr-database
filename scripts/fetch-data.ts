@@ -81,7 +81,7 @@ function parseRarity(rank: string): number {
   return match ? parseInt(match[1]) : 4;
 }
 
-/** 移除 <color=...>、<unbreak>、{RUBY_B#...} 等格式標記 */
+/** 移除所有格式標記，數值佔位符替換為 ? */
 function cleanDesc(desc: string | null | undefined): string {
   if (!desc) return '';
   return desc
@@ -90,12 +90,45 @@ function cleanDesc(desc: string | null | undefined): string {
     .replace(/<\/?unbreak>/g, '')
     .replace(/\{RUBY_B#[^}]+\}/g, '')
     .replace(/\{RUBY_E#\}/g, '')
-    .replace(/<\/?u>/g, '')          // 遊戲術語高亮標籤 <u>text</u> → text
-    .replace(/<\/?b>/g, '')          // 粗體標籤
-    .replace(/#\d+\[f\d+\]%?/g, '?') // 數值佔位符 #2[f1]%
-    .replace(/#\d+\[i\]%?/g, '?')   // 數值佔位符 #1[i]%
+    .replace(/<\/?u>/g, '')
+    .replace(/<\/?b>/g, '')
+    .replace(/#\d+\[f\d+\]%?/g, '?')
+    .replace(/#\d+\[i\]%?/g, '?')
     .replace(/\\n/g, '\n')
     .trim();
+}
+
+/** 移除格式標記但保留 #N[...] 佔位符 */
+function stripFormatOnly(desc: string | null | undefined): string {
+  if (!desc) return '';
+  return desc
+    .replace(/<color=[^>]+>/g, '')
+    .replace(/<\/color>/g, '')
+    .replace(/<\/?unbreak>/g, '')
+    .replace(/\{RUBY_B#[^}]+\}/g, '')
+    .replace(/\{RUBY_E#\}/g, '')
+    .replace(/<\/?u>/g, '')
+    .replace(/<\/?b>/g, '')
+    .replace(/\\n/g, '\n')
+    .trim();
+}
+
+/** 將 param_list 填入描述模板，生成指定等級的技能描述 */
+function resolveDesc(template: string, params: number[]): string {
+  // 替換 #N[i]% → Math.round(p*100)%
+  // 替換 #N[fX]% → (p*100).toFixed(X)%（去掉尾部 .0）
+  // 替換 #N[i] → Math.round(p) 或整數
+  // 替換 #N[fX] → p.toFixed(X)
+  return template.replace(/#(\d+)\[([^\]]+)\](%)?/g, (_, n, fmt, pct) => {
+    const p = params[parseInt(n) - 1] ?? 0;
+    const val = pct ? p * 100 : p;
+    if (fmt === 'i') {
+      return Math.round(val) + (pct ? '%' : '');
+    }
+    const decimals = parseInt(fmt.replace('f', '')) || 1;
+    const formatted = val.toFixed(decimals).replace(/\.0+$/, '');
+    return formatted + (pct ? '%' : '');
+  });
 }
 
 // ─── 角色資料 ─────────────────────────────────────────
@@ -116,6 +149,7 @@ interface ApiSkill {
   desc: string | null;
   type: string | null;  // Normal | BPSkill | Ultra | null (talent) | Maze | MazeNormal
   tag: string;
+  level?: Record<string, { param_list: number[] }>;
 }
 
 interface ApiRank {
@@ -153,24 +187,25 @@ async function fetchCharacters(baseUrl: string): Promise<Character[]> {
       // ── 整理技能 ──
       const skillSlots: Partial<Character['skills']> = {};
       for (const skill of Object.values(detail.skills)) {
-        if (skill.type === null && !skillSlots.talent) {
-          // type 為 null 代表天賦
-          skillSlots.talent = {
-            name: skill.name,
-            description: cleanDesc(skill.desc),
-            type: 'Talent',
-          };
-        } else if (skill.type && SKILL_TYPE_MAP[skill.type] && !skillSlots[SKILL_TYPE_MAP[skill.type]]) {
-          const key = SKILL_TYPE_MAP[skill.type];
-          skillSlots[key] = {
-            name: skill.name,
-            description: cleanDesc(skill.desc),
-            type: skill.type,
-          };
-        }
+        const slotKey = skill.type === null ? 'talent' : (SKILL_TYPE_MAP[skill.type] ?? null);
+        if (!slotKey || skillSlots[slotKey]) continue;
+
+        // 生成各等級描述（1–15 級，若無資料則只有 1 筆）
+        const template = stripFormatOnly(skill.desc);
+        const levels = skill.level ? Object.keys(skill.level).sort((a, b) => +a - +b) : [];
+        const descriptions = levels.length > 0
+          ? levels.map(lv => resolveDesc(template, skill.level![lv].param_list))
+          : [cleanDesc(skill.desc)];
+
+        skillSlots[slotKey] = {
+          name: skill.name,
+          description: descriptions[0] ?? cleanDesc(skill.desc),
+          descriptions,
+          type: skill.type ?? 'Talent',
+        };
       }
 
-      const empty: Skill = { name: '', description: '', type: '' };
+      const empty: Skill = { name: '', description: '', descriptions: [], type: '' };
       const skills: Character['skills'] = {
         basic:     skillSlots.basic     ?? empty,
         skill:     skillSlots.skill     ?? empty,
