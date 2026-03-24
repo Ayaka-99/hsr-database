@@ -18,24 +18,27 @@ function CtEasterEgg({ onClose }: { onClose: () => void }) {
       onClick={onClose}
     >
       <div
-        className="relative max-w-sm w-full mx-4 rounded-2xl overflow-hidden border-2 border-[#c9a227]/60 shadow-[0_0_40px_rgba(201,162,39,0.4)]"
+        className="relative max-w-xs w-full mx-4 rounded-2xl overflow-hidden border-2 border-[#c9a227]/60 shadow-[0_0_40px_rgba(201,162,39,0.4)]"
         onClick={e => e.stopPropagation()}
       >
-        <Image
-          src="/ct-easter-egg.png"
-          alt="CT"
-          width={400}
-          height={500}
-          className="w-full object-cover"
-        />
+        {/* 圖片區塊，固定高度讓 fill 生效 */}
+        <div className="relative w-full h-72">
+          <Image
+            src="/ct-easter-egg.png"
+            alt="CT"
+            fill
+            className="object-cover object-top"
+            unoptimized
+          />
+        </div>
         {/* 底部文字 */}
-        <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/90 to-transparent p-4 text-center">
+        <div className="bg-black/90 p-4 text-center">
           <p className="text-[#c9a227] font-bold text-xl tracking-widest">C T</p>
         </div>
         {/* 關閉按鈕 */}
         <button
           onClick={onClose}
-          className="absolute top-2 right-2 w-7 h-7 rounded-full bg-black/60 border border-white/20 text-white/70 hover:text-white text-sm flex items-center justify-center"
+          className="absolute top-2 right-2 w-7 h-7 rounded-full bg-black/60 border border-white/20 text-white/70 hover:text-white text-sm flex items-center justify-center z-10"
         >
           ✕
         </button>
