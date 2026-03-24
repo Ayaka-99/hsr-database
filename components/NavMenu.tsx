@@ -9,8 +9,8 @@ const NAV_ITEMS = [
   { href: '/', label: '角色' },
   { href: '/lightcones', label: '光錐' },
   { href: '/abyss', label: '三深淵' },
-  { href: '/simulated', label: '異象' },
-  { href: '/relics', label: '仲裁' },
+  { href: '/simulated', label: '異相仲裁' },
+  { href: '/relics', label: '遺器' },
 ];
 
 export default function NavMenu() {
