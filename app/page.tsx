@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import Image from 'next/image';
 import { getAllCharacters, getDisplayName } from '@/lib/api';
 import CharacterCard from '@/components/CharacterCard';
 import FilterBar from '@/components/FilterBar';
@@ -21,13 +20,11 @@ function CtEasterEgg({ onClose }: { onClose: () => void }) {
         className="relative max-w-sm w-full mx-4 rounded-2xl overflow-hidden border-2 border-[#c9a227]/60 shadow-[0_0_40px_rgba(201,162,39,0.4)]"
         onClick={e => e.stopPropagation()}
       >
-        <Image
-          src="/ct-easter-egg.jpg.png"
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/hsr-database/ct-easter-egg.jpg.png"
           alt="CT"
-          width={400}
-          height={400}
           className="w-full object-cover"
-          unoptimized
         />
         {/* 底部文字 */}
         <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/90 to-transparent p-4 text-center">
