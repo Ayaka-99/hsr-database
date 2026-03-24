@@ -10,33 +10,19 @@ import type { Path, Element } from '@/lib/types';
 const ALL_CHARACTERS = getAllCharacters();
 
 // 彩蛋：搜尋 "ct"（不分大小寫）時顯示
-function CtEasterEgg({ onClose }: { onClose: () => void }) {
+function CtEasterEgg() {
   return (
-    <div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm"
-      onClick={onClose}
-    >
-      <div
-        className="relative max-w-xs w-full mx-4 rounded-2xl overflow-hidden border-2 border-[#c9a227]/60 shadow-[0_0_40px_rgba(201,162,39,0.4)]"
-        onClick={e => e.stopPropagation()}
-      >
+    <div className="flex justify-center py-12">
+      <div className="rounded-2xl overflow-hidden border-2 border-[#c9a227]/60 shadow-[0_0_40px_rgba(201,162,39,0.4)]">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src="/hsr-database/ct-easter-egg.png"
           alt="CT"
-          className="w-full object-cover"
+          className="block max-h-[60vh] w-auto"
         />
-        {/* 底部文字 */}
         <div className="bg-black/90 p-4 text-center">
           <p className="text-[#c9a227] font-bold text-xl tracking-widest">C T</p>
         </div>
-        {/* 關閉按鈕 */}
-        <button
-          onClick={onClose}
-          className="absolute top-2 right-2 w-7 h-7 rounded-full bg-black/60 border border-white/20 text-white/70 hover:text-white text-sm flex items-center justify-center z-10"
-        >
-          ✕
-        </button>
       </div>
     </div>
   );
@@ -67,8 +53,8 @@ export default function HomePage() {
 
   return (
     <>
-      {/* 彩蛋 overlay */}
-      {isCtEasterEgg && <CtEasterEgg onClose={() => setSearch('')} />}
+      {/* 彩蛋 */}
+      {isCtEasterEgg && <CtEasterEgg />}
 
       <h1 className="text-xl sm:text-2xl font-bold text-white mb-4">角色列表</h1>
 
