@@ -22,7 +22,7 @@ function CtEasterEgg({ onClose }: { onClose: () => void }) {
         onClick={e => e.stopPropagation()}
       >
         <Image
-          src="/ct-easter-egg.jpg.png"
+          src="/ct-easter-egg.png"
           alt="CT"
           width={400}
           height={500}
