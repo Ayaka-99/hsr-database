@@ -23,7 +23,7 @@ export default function CharacterCard({ character }: { character: Character }) {
       <div className={`
         relative rounded-xl overflow-hidden cursor-pointer
         bg-white/5 border backdrop-blur-sm
-        transition-all duration-200
+        transition-all duration-200 hover:scale-105
         ${isGold
           ? 'border-[#c9a227]/30 hover:border-[#c9a227]/70 hover:shadow-[0_0_20px_#c9a22730]'
           : 'border-[#6b4ff5]/30 hover:border-[#6b4ff5]/70 hover:shadow-[0_0_20px_#6b4ff530]'}

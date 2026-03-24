@@ -17,7 +17,7 @@ export default function LightConeCard({ lc }: { lc: LightCone }) {
       <div className={`
         relative rounded-xl overflow-hidden cursor-pointer
         bg-white/5 border backdrop-blur-sm
-        transition-all duration-200 ${color}
+        transition-all duration-200 hover:scale-105 ${color}
       `}>
         {/* 稀有度 */}
         <div className={`absolute top-2 right-2 text-xs font-bold z-10 ${color.split(' ')[0]}`}>

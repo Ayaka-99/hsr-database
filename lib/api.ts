@@ -19,7 +19,7 @@ export function getDisplayName(character: Character): string {
 // ─── 角色 ─────────────────────────────────────────
 
 export function getAllCharacters(): Character[] {
-  return characters;
+  return [...characters].sort((a, b) => parseInt(a.id) - parseInt(b.id));
 }
 
 export function getCharacterById(id: string): Character | undefined {
@@ -41,7 +41,7 @@ export function getCharactersByRarity(rarity: 4 | 5): Character[] {
 // ─── 光錐 ─────────────────────────────────────────
 
 export function getAllLightCones(): LightCone[] {
-  return lightcones;
+  return [...lightcones].sort((a, b) => parseInt(a.id) - parseInt(b.id));
 }
 
 export function getLightConeById(id: string): LightCone | undefined {
