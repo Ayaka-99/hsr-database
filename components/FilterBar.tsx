@@ -2,7 +2,7 @@
 
 import type { Path, Element } from '@/lib/types';
 
-const PATHS: Path[] = ['存護', '巡獵', '毀滅', '智識', '同諧', '虛無', '豐饒', '記憶'];
+const PATHS: Path[] = ['存護', '巡獵', '毀滅', '智識', '同諧', '虛無', '豐饒', '記憶', '歡愉'];
 const ELEMENTS: Element[] = ['火', '冰', '雷', '風', '量子', '虛數', '物理'];
 
 interface Props {

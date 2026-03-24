@@ -1,4 +1,4 @@
-export type Path = '巡獵' | '毀滅' | '智識' | '同諧' | '虛無' | '豐饒' | '存護' | '記憶';
+export type Path = '巡獵' | '毀滅' | '智識' | '同諧' | '虛無' | '豐饒' | '存護' | '記憶' | '歡愉';
 export type Element = '火' | '冰' | '雷' | '風' | '量子' | '虛數' | '物理';
 
 export interface Skill {

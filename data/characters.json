@@ -10955,7 +10955,7 @@
     "id": "1505",
     "name": "绯英",
     "rarity": 5,
-    "path": "巡獵",
+    "path": "歡愉",
     "element": "物理",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1505.png",
     "skills": {
@@ -11092,9 +11092,9 @@
   },
   {
     "id": "1506",
-    "name": "银狼LV.<unbreak>999</unbreak>",
+    "name": "银狼LV.999",
     "rarity": 5,
-    "path": "巡獵",
+    "path": "歡愉",
     "element": "虛數",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1506.png",
     "skills": {

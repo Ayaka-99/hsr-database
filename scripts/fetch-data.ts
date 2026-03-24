@@ -24,6 +24,7 @@ const PATH_MAP: Record<string, Path> = {
   Warlock: '虛無',
   Priest:  '豐饒',
   Memory:  '記憶',
+  Elation: '歡愉',
 };
 
 const ELEMENT_MAP: Record<string, Element> = {
