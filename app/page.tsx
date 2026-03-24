@@ -22,7 +22,7 @@ function CtEasterEgg({ onClose }: { onClose: () => void }) {
       >
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}/ct-easter-egg.png`}
+          src="/hsr-database/ct-easter-egg.png"
           alt="CT"
           className="w-full object-cover"
         />
