@@ -1,8 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import Link from 'next/link';
-import Image from 'next/image';
-import LangToggle from '@/components/LangToggle';
+import NavMenu from '@/components/NavMenu';
 import { LangProvider } from '@/lib/lang';
 
 export const metadata: Metadata = {
@@ -29,30 +28,20 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <LangProvider>
           {/* 頂部導覽列 */}
           <nav className="sticky top-0 z-50 border-b border-white/10 backdrop-blur-md bg-[#0d0d1a]/80">
-            <div className="max-w-7xl mx-auto px-4 h-14 flex items-center gap-6">
+            <div className="max-w-7xl mx-auto px-4 h-14 flex items-center">
               <Link href="/" className="flex items-center gap-2 text-[#c9a227] font-bold text-lg tracking-wide">
-                <Image src="/favicon.jpg.png" alt="icon" width={28} height={28} className="rounded-full object-cover border border-white/20" unoptimized />
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/hsr-database/favicon.jpg.png"
+                  alt="icon"
+                  width={28}
+                  height={28}
+                  className="rounded-full object-cover border border-white/20"
+                />
                 CT杯 數據庫
               </Link>
-              <Link href="/" className="text-sm text-gray-400 hover:text-white transition-colors">
-                角色
-              </Link>
-              <Link href="/lightcones" className="text-sm text-gray-400 hover:text-white transition-colors">
-                光錐
-              </Link>
-              <Link href="/abyss" className="text-sm text-gray-400 hover:text-white transition-colors">
-                三深淵
-              </Link>
-              <Link href="/simulated" className="text-sm text-gray-400 hover:text-white transition-colors">
-                異相
-              </Link>
-              <Link href="/relics" className="text-sm text-gray-400 hover:text-white transition-colors">
-                仪器
-              </Link>
-              {/* 推到右側 */}
-              <div className="ml-auto">
-                <LangToggle />
-              </div>
+              {/* 右側頭像選單 */}
+              <NavMenu />
             </div>
           </nav>
           <main className="max-w-7xl mx-auto px-4 py-6">
