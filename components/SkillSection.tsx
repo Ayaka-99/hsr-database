@@ -42,6 +42,12 @@ const SKILL_LABEL_COLORS: Record<keyof Character['skills'], string> = {
 // 秘技只有 1 級，不顯示滑動條
 const NO_LEVELS = new Set<keyof Character['skills']>(['technique']);
 
+// 依稀有度與技能類型計算預設等級
+function defaultLevel(key: keyof Character['skills'], rarity: 4 | 5, maxLv: number): number {
+  const base = key === 'basic' ? (rarity === 4 ? 7 : 6) : (rarity === 4 ? 12 : 10);
+  return Math.min(base, maxLv);
+}
+
 // 格式化行迹屬性數值
 function formatTraceValue(trace: CharacterTrace): string {
   if (trace.value === undefined) return '';
@@ -55,10 +61,12 @@ export default function SkillSection({
   skills,
   characterId,
   traces,
+  rarity = 5,
 }: {
   skills: Character['skills'];
   characterId: string;
   traces?: CharacterTrace[];
+  rarity?: 4 | 5;
 }) {
   const [levels, setLevels] = useState<Record<string, number>>({});
   const keys = Object.keys(SKILL_LABELS) as Array<keyof Character['skills']>;
@@ -84,7 +92,7 @@ export default function SkillSection({
           const descs = skill.descriptions ?? [];
           const maxLv = descs.length;
           const showSlider = !NO_LEVELS.has(key) && maxLv > 1;
-          const lv = levels[key] ?? 1;
+          const lv = levels[key] ?? defaultLevel(key, rarity, maxLv);
           const description = showSlider && descs[lv - 1]
             ? descs[lv - 1]
             : skill.description;

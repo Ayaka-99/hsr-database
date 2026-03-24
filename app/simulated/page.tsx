@@ -1,18 +1,51 @@
-'use client';
+// 異相仲裁頁面（server component，無需互動狀態）
 
-import LineChart from '@/components/LineChart';
-import type { ChartPoint } from '@/components/LineChart';
-
-// 異相仲裁 — 典型週期怪物血量（差分宇宙路徑）
-const arbitrationData: ChartPoint[] = [
-  { label: '精英1', hp: 800_000,   note: '強化精英' },
-  { label: '精英2', hp: 1_200_000, note: '強化精英組' },
-  { label: 'BOSS1', hp: 3_500_000, note: '關底 BOSS (第1層)' },
-  { label: '精英3', hp: 950_000  },
-  { label: '精英4', hp: 1_500_000, note: '雙精英' },
-  { label: 'BOSS2', hp: 6_000_000, note: '關底 BOSS (第2層)' },
-  { label: 'BOSS3', hp: 10_000_000, note: '終局 BOSS' },
+// 本週三關陣容（每週更換）
+const stages = [
+  {
+    round: 1,
+    type: '騎士',
+    typeStyle: 'border-blue-500/40 bg-blue-500/5 text-blue-400',
+    boss: '黃金騎士·RD',
+    hp: 3_600_000,
+    weakness: ['物理', '量子'],
+    note: '週期性充能，充滿後發動範圍攻擊；優先破盾以打斷充能',
+  },
+  {
+    round: 2,
+    type: '騎士',
+    typeStyle: 'border-blue-500/40 bg-blue-500/5 text-blue-400',
+    boss: '銀狼·虛擬體',
+    hp: 5_200_000,
+    weakness: ['火', '雷', '風'],
+    note: '召喚複製體協同攻擊；優先消滅複製體降低輸出壓力',
+  },
+  {
+    round: 3,
+    type: '王騎',
+    typeStyle: 'border-[#c9a227]/40 bg-[#c9a227]/5 text-[#c9a227]',
+    boss: '歷戰的強敵·王騎',
+    hp: 12_000_000,
+    weakness: ['冰', '虛數', '量子'],
+    note: '多階段 BOSS，每 30% 血量觸發相位強化；終局前注意爆發時機儲能',
+  },
 ];
+
+const ELEMENT_COLOR: Record<string, string> = {
+  '火':   'text-orange-400',
+  '冰':   'text-cyan-400',
+  '雷':   'text-yellow-300',
+  '風':   'text-emerald-400',
+  '量子': 'text-violet-400',
+  '虛數': 'text-amber-300',
+  '物理': 'text-gray-300',
+};
+
+function formatHP(n: number): string {
+  if (n >= 1_000_000) return `${(n / 1_000_000).toFixed(1).replace(/\.0$/, '')}M`;
+  if (n >= 1_000) return `${Math.round(n / 1_000)}K`;
+  return String(n);
+}
 
 export default function SimulatedPage() {
   const rules = [
@@ -46,6 +79,47 @@ export default function SimulatedPage() {
         </p>
       </div>
 
+      {/* 本週三關 BOSS */}
+      <h2 className="text-lg font-bold text-white mb-4">本週仲裁陣容</h2>
+      <div className="space-y-3 mb-8">
+        {stages.map(s => (
+          <div
+            key={s.round}
+            className="rounded-xl border border-white/10 bg-white/3 p-4 flex flex-col sm:flex-row sm:items-center gap-4"
+          >
+            {/* 關卡編號 */}
+            <div className="shrink-0 w-10 h-10 rounded-full border border-white/15 bg-white/5 flex items-center justify-center text-sm font-bold text-gray-300">
+              {s.round}
+            </div>
+
+            {/* BOSS 資訊 */}
+            <div className="flex-1 min-w-0">
+              <div className="flex items-center gap-2 mb-1 flex-wrap">
+                <span className={`text-xs px-2 py-0.5 rounded-full border font-semibold ${s.typeStyle}`}>
+                  {s.type}
+                </span>
+                <span className="text-white font-semibold text-sm">{s.boss}</span>
+              </div>
+              <p className="text-xs text-gray-400 leading-relaxed">{s.note}</p>
+            </div>
+
+            {/* 弱點 + HP */}
+            <div className="shrink-0 flex flex-col items-end gap-1">
+              <div className="flex gap-1 flex-wrap justify-end">
+                {s.weakness.map(w => (
+                  <span key={w} className={`text-xs font-semibold ${ELEMENT_COLOR[w] ?? 'text-white'}`}>
+                    {w}
+                  </span>
+                ))}
+              </div>
+              <span className="text-sm font-bold text-white tabular-nums">
+                HP {formatHP(s.hp)}
+              </span>
+            </div>
+          </div>
+        ))}
+      </div>
+
       {/* 規則說明 */}
       <h2 className="text-lg font-bold text-white mb-4">仲裁規則</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
@@ -70,13 +144,13 @@ export default function SimulatedPage() {
         </ul>
       </div>
 
-      {/* 獎勵說明 */}
+      {/* 週常獎勵 */}
       <h2 className="text-lg font-bold text-white mb-4">週常獎勵</h2>
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-8">
         {[
-          { name: '星瓊', color: 'text-sky-400 border-sky-400/30 bg-sky-400/5' },
+          { name: '星瓊',       color: 'text-sky-400 border-sky-400/30 bg-sky-400/5' },
           { name: '遺器強化素材', color: 'text-amber-400 border-amber-400/30 bg-amber-400/5' },
-          { name: '信用點', color: 'text-yellow-300 border-yellow-300/30 bg-yellow-300/5' },
+          { name: '信用點',     color: 'text-yellow-300 border-yellow-300/30 bg-yellow-300/5' },
           { name: '角色養成素材', color: 'text-violet-400 border-violet-400/30 bg-violet-400/5' },
         ].map(item => (
           <div
@@ -88,17 +162,9 @@ export default function SimulatedPage() {
         ))}
       </div>
 
-      {/* 血量折線圖 */}
-      <h2 className="text-lg font-bold text-white mb-4">怪物血量波動</h2>
-      <LineChart
-        data={arbitrationData}
-        color="#a78bfa"
-        title="異相仲裁 — 各節點敵人血量參考（v4.0 典型週期）"
-      />
-
-      <div className="mt-6 p-4 rounded-xl border border-white/10 bg-white/3">
+      <div className="p-4 rounded-xl border border-white/10 bg-white/3">
         <p className="text-xs text-gray-500 text-center">
-          血量為 v4.0 週期參考估算，實際數值因週期設定而異。仲裁陣容週更資訊開發中，敬請期待。
+          本週 BOSS 資訊為參考資料，實際陣容每週更換，請以遊戲內顯示為準。
         </p>
       </div>
     </div>
