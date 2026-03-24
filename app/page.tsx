@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 import { getAllCharacters, getDisplayName } from '@/lib/api';
 import CharacterCard from '@/components/CharacterCard';
 import FilterBar from '@/components/FilterBar';
@@ -8,6 +9,41 @@ import type { Path, Element } from '@/lib/types';
 
 // 在 client component 裡直接使用 getAllCharacters（資料已 bundle 在 JSON）
 const ALL_CHARACTERS = getAllCharacters();
+
+// 彩蛋：搜尋 "ct"（不分大小寫）時顯示
+function CtEasterEgg({ onClose }: { onClose: () => void }) {
+  return (
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm"
+      onClick={onClose}
+    >
+      <div
+        className="relative max-w-sm w-full mx-4 rounded-2xl overflow-hidden border-2 border-[#c9a227]/60 shadow-[0_0_40px_rgba(201,162,39,0.4)]"
+        onClick={e => e.stopPropagation()}
+      >
+        <Image
+          src="/ct-easter-egg.jpg"
+          alt="CT"
+          width={400}
+          height={400}
+          className="w-full object-cover"
+          unoptimized
+        />
+        {/* 底部文字 */}
+        <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/90 to-transparent p-4 text-center">
+          <p className="text-[#c9a227] font-bold text-xl tracking-widest">C T</p>
+        </div>
+        {/* 關閉按鈕 */}
+        <button
+          onClick={onClose}
+          className="absolute top-2 right-2 w-7 h-7 rounded-full bg-black/60 border border-white/20 text-white/70 hover:text-white text-sm flex items-center justify-center"
+        >
+          ✕
+        </button>
+      </div>
+    </div>
+  );
+}
 
 export default function HomePage() {
   const [path, setPath] = useState<Path | ''>('');
@@ -18,18 +54,25 @@ export default function HomePage() {
   // 女性開拓者 ID（同屬性男性開拓者卡已代表，詳細頁可切換）
   const TB_FEMALE_IDS = new Set(['8002', '8004', '8006', '8008']);
 
+  // 彩蛋觸發：搜尋文字完全等於 "ct"（不分大小寫）
+  const isCtEasterEgg = search.trim().toLowerCase() === 'ct';
+
   // 依篩選條件與搜尋關鍵字過濾角色
   const filtered = ALL_CHARACTERS.filter(c => {
     if (TB_FEMALE_IDS.has(c.id)) return false;
     if (rarity !== 0 && c.rarity !== rarity) return false;
     if (element !== '' && c.element !== element) return false;
     if (path !== '' && c.path !== path) return false;
+    if (isCtEasterEgg) return false; // 彩蛋模式不顯示角色
     if (search.trim() !== '' && !getDisplayName(c).includes(search.trim())) return false;
     return true;
   });
 
   return (
     <>
+      {/* 彩蛋 overlay */}
+      {isCtEasterEgg && <CtEasterEgg onClose={() => setSearch('')} />}
+
       <h1 className="text-2xl font-bold text-white mb-4">角色列表</h1>
 
       {/* 搜尋欄 */}
