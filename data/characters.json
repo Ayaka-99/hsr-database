@@ -104,13 +104,13 @@
       {
         "rank": 1,
         "name": "记忆中的你",
-        "description": "终结技每冻结1个目标，为三月七恢复?点能量。",
+        "description": "终结技每冻结1个目标，为三月七恢复6点能量。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1001_rank1.png"
       },
       {
         "rank": 2,
         "name": "记忆中的它",
-        "description": "进入战斗时，为当前生命值百分比最低的我方目标提供等同于三月七?防御力+?的护盾，持续?回合。",
+        "description": "进入战斗时，为当前生命值百分比最低的我方目标提供等同于三月七24%防御力+320的护盾，持续3回合。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1001_rank2.png"
       },
       {
@@ -122,7 +122,7 @@
       {
         "rank": 4,
         "name": "不愿再失去",
-        "description": "天赋的反击效果每回合可触发的次数增加1次。使反击造成的伤害值提高，提高数值等同于三月七防御力的?。",
+        "description": "天赋的反击效果每回合可触发的次数增加1次。使反击造成的伤害值提高，提高数值等同于三月七防御力的30%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1001_rank4.png"
       },
       {
@@ -134,7 +134,7 @@
       {
         "rank": 6,
         "name": "就这样，一直…",
-        "description": "在战技提供的护盾保护下的我方目标，每回合开始时回复等同于各自?生命上限+?的生命值。",
+        "description": "在战技提供的护盾保护下的我方目标，每回合开始时回复等同于各自4%生命上限+106的生命值。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1001_rank6.png"
       }
     ],
@@ -334,7 +334,7 @@
       {
         "rank": 1,
         "name": "穷高极天，亢盈难久",
-        "description": "当击中的敌方目标当前生命值百分比大于等于?时，暴击率提高?。",
+        "description": "当击中的敌方目标当前生命值百分比大于等于50%时，暴击率提高12%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1002_rank1.png"
       },
       {
@@ -364,7 +364,7 @@
       {
         "rank": 6,
         "name": "须绳缚身，沉潜勿用",
-        "description": "战技触发的减速状态使目标的速度额外降低?。",
+        "description": "战技触发的减速状态使目标的速度额外降低8%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1002_rank6.png"
       }
     ],
@@ -564,13 +564,13 @@
       {
         "rank": 1,
         "name": "童年",
-        "description": "【乘胜追击】触发后，姬子的速度提高?，持续?回合。",
+        "description": "【乘胜追击】触发后，姬子的速度提高20%，持续2回合。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1003_rank1.png"
       },
       {
         "rank": 2,
         "name": "邂逅",
-        "description": "对当前生命值百分比小于等于?的敌方目标造成的伤害提高?。",
+        "description": "对当前生命值百分比小于等于50%的敌方目标造成的伤害提高15%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1003_rank2.png"
       },
       {
@@ -582,7 +582,7 @@
       {
         "rank": 4,
         "name": "投入",
-        "description": "施放战技对敌方目标造成弱点击破时，姬子额外获得?点充能。",
+        "description": "施放战技对敌方目标造成弱点击破时，姬子额外获得1点充能。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1003_rank4.png"
       },
       {
@@ -594,7 +594,7 @@
       {
         "rank": 6,
         "name": "开拓！",
-        "description": "终结技额外造成2次伤害，对随机敌方单体各造成等同于原伤害?的火属性伤害。",
+        "description": "终结技额外造成2次伤害，对随机敌方单体各造成等同于原伤害40%的火属性伤害。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1003_rank6.png"
       }
     ],
@@ -794,13 +794,13 @@
       {
         "rank": 1,
         "name": "名的传承",
-        "description": "施放终结技后，瓦尔特获得强化，在随后?次施放普攻或战技时额外对敌方目标造成1次附加伤害。施放普攻造成的附加伤害等同于普攻伤害倍率的?，施放战技造成的附加伤害等同于战技伤害倍率的?。",
+        "description": "施放终结技后，瓦尔特获得强化，在随后2次施放普攻或战技时额外对敌方目标造成1次附加伤害。施放普攻造成的附加伤害等同于普攻伤害倍率的50%，施放战技造成的附加伤害等同于战技伤害倍率的80%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1004_rank1.png"
       },
       {
         "rank": 2,
         "name": "星的凝聚",
-        "description": "触发天赋时，瓦尔特恢复?点能量。",
+        "description": "触发天赋时，瓦尔特恢复3点能量。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1004_rank2.png"
       },
       {
@@ -812,7 +812,7 @@
       {
         "rank": 4,
         "name": "义的名号",
-        "description": "施放战技时，使受到攻击的敌方目标速度降低的基础概率提高?。",
+        "description": "施放战技时，使受到攻击的敌方目标速度降低的基础概率提高35%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1004_rank4.png"
       },
       {
@@ -1024,13 +1024,13 @@
       {
         "rank": 1,
         "name": "无穷动！无穷",
-        "description": "天赋触发追加攻击时，有?的基础概率使目标受到的持续伤害提高?，持续?回合。",
+        "description": "天赋触发追加攻击时，有100%的基础概率使目标受到的持续伤害提高30%，持续2回合。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1005_rank1.png"
       },
       {
         "rank": 2,
         "name": "狂想者，呜咽",
-        "description": "卡芙卡在场时，我方全体造成的持续伤害提高?。",
+        "description": "卡芙卡在场时，我方全体造成的持续伤害提高25%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1005_rank2.png"
       },
       {
@@ -1042,7 +1042,7 @@
       {
         "rank": 4,
         "name": "把宣叙呈献给",
-        "description": "当敌方目标承受的由卡芙卡造成的触电状态产生伤害时，额外为卡芙卡恢复?点能量。",
+        "description": "当敌方目标承受的由卡芙卡造成的触电状态产生伤害时，额外为卡芙卡恢复2点能量。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1005_rank4.png"
       },
       {
@@ -1054,7 +1054,7 @@
       {
         "rank": 6,
         "name": "回旋，悄悄地",
-        "description": "终结技、秘技与天赋触发的追加攻击使敌方目标陷入的触电状态的伤害倍率提高?，并使触电状态的持续时间增加?回合。",
+        "description": "终结技、秘技与天赋触发的追加攻击使敌方目标陷入的触电状态的伤害倍率提高156%，并使触电状态的持续时间增加1回合。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1005_rank6.png"
       }
     ],
@@ -1254,13 +1254,13 @@
       {
         "rank": 1,
         "name": "社会工程",
-        "description": "施放终结技攻击敌方目标后，目标每有1个负面效果，银狼恢复?点能量。该效果在每次终结技攻击中最多生效?次。",
+        "description": "施放终结技攻击敌方目标后，目标每有1个负面效果，银狼恢复7点能量。该效果在每次终结技攻击中最多生效5次。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1006_rank1.png"
       },
       {
         "rank": 2,
         "name": "僵尸网络",
-        "description": "在敌方目标进入战斗时，使其效果抵抗降低?。",
+        "description": "在敌方目标进入战斗时，使其效果抵抗降低20%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1006_rank2.png"
       },
       {
@@ -1272,7 +1272,7 @@
       {
         "rank": 4,
         "name": "反弹端口",
-        "description": "施放终结技攻击敌方目标后，目标每有1个负面效果，则额外造成等同于银狼?攻击力的量子属性附加伤害。该效果在每次终结技攻击中最多触发?次。",
+        "description": "施放终结技攻击敌方目标后，目标每有1个负面效果，则额外造成等同于银狼20%攻击力的量子属性附加伤害。该效果在每次终结技攻击中最多触发5次。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1006_rank4.png"
       },
       {
@@ -1284,7 +1284,7 @@
       {
         "rank": 6,
         "name": "重叠网络",
-        "description": "敌方目标每有1个负面效果，银狼对其造成的伤害提高?，最多提高?。",
+        "description": "敌方目标每有1个负面效果，银狼对其造成的伤害提高20%，最多提高100%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1006_rank6.png"
       }
     ],
@@ -1484,7 +1484,7 @@
       {
         "rank": 1,
         "name": "万死不辞",
-        "description": "当前生命值百分比小于等于50%时，战技造成的伤害提高?。",
+        "description": "当前生命值百分比小于等于50%时，战技造成的伤害提高10%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1008_rank1.png"
       },
       {
@@ -1502,7 +1502,7 @@
       {
         "rank": 4,
         "name": "绝处反击",
-        "description": "进入战斗后，受到致命攻击时阿兰不会陷入无法战斗状态，并立即回复至自身生命上限的?。该效果在触发1次后或持续?回合后自动解除。",
+        "description": "进入战斗后，受到致命攻击时阿兰不会陷入无法战斗状态，并立即回复至自身生命上限的25%。该效果在触发1次后或持续2回合后自动解除。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1008_rank4.png"
       },
       {
@@ -1514,7 +1514,7 @@
       {
         "rank": 6,
         "name": "以身作引",
-        "description": "当前生命值百分比小于等于50%时，终结技造成的伤害提高?，且对相邻目标的伤害倍率提高到与主目标相同的伤害倍率。",
+        "description": "当前生命值百分比小于等于50%时，终结技造成的伤害提高20%，且对相邻目标的伤害倍率提高到与主目标相同的伤害倍率。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1008_rank6.png"
       }
     ],
@@ -1732,7 +1732,7 @@
       {
         "rank": 4,
         "name": "极光显现之时",
-        "description": "天赋的蓄能层数大于等于?时，艾丝妲的能量恢复效率提高?。",
+        "description": "天赋的蓄能层数大于等于2时，艾丝妲的能量恢复效率提高15%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1009_rank4.png"
       },
       {
@@ -1744,7 +1744,7 @@
       {
         "rank": 6,
         "name": "眠于银河之下",
-        "description": "天赋每回合减少的蓄能层数降低?。",
+        "description": "天赋每回合减少的蓄能层数降低1。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1009_rank6.png"
       }
     ],
@@ -1944,13 +1944,13 @@
       {
         "rank": 1,
         "name": "落井当下石",
-        "description": "施放普攻时，若指定敌方单体生命值百分比小于等于?，则额外造成等同于黑塔?攻击力的冰属性附加伤害。",
+        "description": "施放普攻时，若指定敌方单体生命值百分比小于等于50%，则额外造成等同于黑塔40%攻击力的冰属性附加伤害。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1013_rank1.png"
       },
       {
         "rank": 2,
         "name": "得胜必追击",
-        "description": "天赋每触发1次，自身暴击率提高?，该效果最多叠加?层。",
+        "description": "天赋每触发1次，自身暴击率提高3%，该效果最多叠加5层。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1013_rank2.png"
       },
       {
@@ -1962,7 +1962,7 @@
       {
         "rank": 4,
         "name": "打人要打脸",
-        "description": "触发天赋时造成的伤害提高?。",
+        "description": "触发天赋时造成的伤害提高10%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1013_rank4.png"
       },
       {
@@ -1974,7 +1974,7 @@
       {
         "rank": 6,
         "name": "世上没人能负我",
-        "description": "施放终结技后，攻击力提高?，持续?回合。",
+        "description": "施放终结技后，攻击力提高25%，持续1回合。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1013_rank6.png"
       }
     ],
@@ -2174,13 +2174,13 @@
       {
         "rank": 1,
         "name": "失落的白垩坚城",
-        "description": "Saber造成的终结技伤害提高?。Saber施放普攻或战技后，获得?点【炉心共鸣】。",
+        "description": "Saber造成的终结技伤害提高60%。Saber施放普攻或战技后，获得1点【炉心共鸣】。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1014_rank1.png"
       },
       {
         "rank": 2,
         "name": "尘封的圆桌誓言",
-        "description": "本场战斗中每获得1点【炉心共鸣】，使Saber造成的伤害无视目标?的防御力，该效果最多叠加?层。触发【炉心共鸣】提高战技倍率的效果时，每点【炉心共鸣】额外使本次战技的伤害倍率提高?。",
+        "description": "本场战斗中每获得1点【炉心共鸣】，使Saber造成的伤害无视目标1%的防御力，该效果最多叠加15层。触发【炉心共鸣】提高战技倍率的效果时，每点【炉心共鸣】额外使本次战技的伤害倍率提高7%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1014_rank2.png"
       },
       {
@@ -2192,7 +2192,7 @@
       {
         "rank": 4,
         "name": "十六个冬日的奇遇",
-        "description": "Saber的风属性抗性穿透提高?。施放终结技后，Saber的风属性抗性穿透提高?，该效果最多叠加?层。",
+        "description": "Saber的风属性抗性穿透提高8%。施放终结技后，Saber的风属性抗性穿透提高4%，该效果最多叠加3层。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1014_rank4.png"
       },
       {
@@ -2204,7 +2204,7 @@
       {
         "rank": 6,
         "name": "守护命运长夜",
-        "description": "Saber造成的终结技伤害的风属性抗性穿透提高?，行迹【湖之祝福】可积攒的溢出能量提高到?点。进入战斗首次施放终结技后，为Saber固定恢复?点能量，该效果每再施放?次终结技可触发1次。",
+        "description": "Saber造成的终结技伤害的风属性抗性穿透提高20%，行迹【湖之祝福】可积攒的溢出能量提高到200点。进入战斗首次施放终结技后，为Saber固定恢复300点能量，该效果每再施放3次终结技可触发1次。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1014_rank6.png"
       }
     ],
@@ -2403,13 +2403,13 @@
       {
         "rank": 1,
         "name": "未曾触及的理想",
-        "description": "单个回合内施放?次战技后，为我方恢复?个战技点。",
+        "description": "单个回合内施放3次战技后，为我方恢复2个战技点。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1015_rank1.png"
       },
       {
         "rank": 2,
         "name": "未能实现的幸福",
-        "description": "施放终结技时，使敌方目标的量子属性的抗性降低?，并为其添加量子属性弱点，持续?回合。",
+        "description": "施放终结技时，使敌方目标的量子属性的抗性降低20%，并为其添加量子属性弱点，持续2回合。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1015_rank2.png"
       },
       {
@@ -2421,7 +2421,7 @@
       {
         "rank": 4,
         "name": "难称英雄的一生",
-        "description": "造成的终结技伤害提高?。",
+        "description": "造成的终结技伤害提高150%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1015_rank4.png"
       },
       {
@@ -2433,7 +2433,7 @@
       {
         "rank": 6,
         "name": "无尽徘徊的巡礼",
-        "description": "回合开始时为我方恢复1个战技点。自身战技提供的伤害提高效果可以叠加的上限层数提高?层。造成的战技伤害无视?的防御力。",
+        "description": "回合开始时为我方恢复1个战技点。自身战技提供的伤害提高效果可以叠加的上限层数提高1层。造成的战技伤害无视20%的防御力。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1015_rank6.png"
       }
     ],
@@ -2633,13 +2633,13 @@
       {
         "rank": 1,
         "name": "养精蓄锐",
-        "description": "施放战技时，有?固定概率恢复1个战技点，该效果有1回合的触发冷却。",
+        "description": "施放战技时，有50%固定概率恢复1个战技点，该效果有1回合的触发冷却。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1101_rank1.png"
       },
       {
         "rank": 2,
         "name": "快速行军",
-        "description": "施放战技时，被指定的我方目标在行动后速度提高?，持续1回合。",
+        "description": "施放战技时，被指定的我方目标在行动后速度提高30%，持续1回合。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1101_rank2.png"
       },
       {
@@ -2651,7 +2651,7 @@
       {
         "rank": 4,
         "name": "攻其不备",
-        "description": "我方其他角色对弱点为风属性的敌方目标施放普攻后，布洛妮娅立即进行1次追加攻击，对该目标造成等同于普攻伤害?的风属性伤害，该效果每回合可触发1次。",
+        "description": "我方其他角色对弱点为风属性的敌方目标施放普攻后，布洛妮娅立即进行1次追加攻击，对该目标造成等同于普攻伤害80%的风属性伤害，该效果每回合可触发1次。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1101_rank4.png"
       },
       {
@@ -2663,7 +2663,7 @@
       {
         "rank": 6,
         "name": "气贯长虹",
-        "description": "战技对指定我方目标造成的伤害提高效果的持续时间增加?回合。",
+        "description": "战技对指定我方目标造成的伤害提高效果的持续时间增加1回合。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1101_rank6.png"
       }
     ],
@@ -2863,13 +2863,13 @@
       {
         "rank": 1,
         "name": "斩尽",
-        "description": "对当前生命值百分比小于等于?的敌方目标造成伤害时，暴击率提高?。",
+        "description": "对当前生命值百分比小于等于80%的敌方目标造成伤害时，暴击率提高15%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1102_rank1.png"
       },
       {
         "rank": 2,
         "name": "蝶舞",
-        "description": "战技的加速效果可以叠加，最多叠加?层。",
+        "description": "战技的加速效果可以叠加，最多叠加2层。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1102_rank2.png"
       },
       {
@@ -2881,7 +2881,7 @@
       {
         "rank": 4,
         "name": "掠影",
-        "description": "希儿消灭敌方目标时，自身恢复?点能量。",
+        "description": "希儿消灭敌方目标时，自身恢复15点能量。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1102_rank4.png"
       },
       {
@@ -2893,7 +2893,7 @@
       {
         "rank": 6,
         "name": "离析",
-        "description": "施放终结技后使受到攻击的敌方单体陷入【乱蝶】状态，持续?回合。【乱蝶】状态下的敌方目标受到攻击后，额外受到1次等同于希儿终结技伤害?的量子属性附加伤害。若该目标被我方其他目标触发【乱蝶】状态的附加伤害消灭，将不会触发希儿的天赋。\n当希儿陷入无法战斗状态时，敌方目标的【乱蝶】状态被解除。",
+        "description": "施放终结技后使受到攻击的敌方单体陷入【乱蝶】状态，持续1回合。【乱蝶】状态下的敌方目标受到攻击后，额外受到1次等同于希儿终结技伤害15%的量子属性附加伤害。若该目标被我方其他目标触发【乱蝶】状态的附加伤害消灭，将不会触发希儿的天赋。\n当希儿陷入无法战斗状态时，敌方目标的【乱蝶】状态被解除。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1102_rank6.png"
       }
     ],
@@ -3093,13 +3093,13 @@
       {
         "rank": 1,
         "name": "余音绕梁",
-        "description": "普攻对指定敌方目标的1个随机相邻目标造成等同于普攻伤害?的雷属性伤害。",
+        "description": "普攻对指定敌方目标的1个随机相邻目标造成等同于普攻伤害60%的雷属性伤害。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1103_rank1.png"
       },
       {
         "rank": 2,
         "name": "安可！",
-        "description": "每触发1次天赋的附加伤害，希露瓦恢复?点能量。",
+        "description": "每触发1次天赋的附加伤害，希露瓦恢复4点能量。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1103_rank2.png"
       },
       {
@@ -3111,7 +3111,7 @@
       {
         "rank": 4,
         "name": "制造噪音吧！",
-        "description": "施放终结技时，有?基础概率使非触电状态下的敌方目标状态陷入与战技相同的触电状态。",
+        "description": "施放终结技时，有100%基础概率使非触电状态下的敌方目标状态陷入与战技相同的触电状态。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1103_rank4.png"
       },
       {
@@ -3123,7 +3123,7 @@
       {
         "rank": 6,
         "name": "这一曲，贯穿天穹！",
-        "description": "希露瓦对触电状态下的敌方目标造成的伤害提高?。",
+        "description": "希露瓦对触电状态下的敌方目标造成的伤害提高30%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1103_rank6.png"
       }
     ],
@@ -3323,13 +3323,13 @@
       {
         "rank": 1,
         "name": "恪尽职守",
-        "description": "施放战技时，使受到攻击的敌方目标陷入冻结状态的基础概率提高?。",
+        "description": "施放战技时，使受到攻击的敌方目标陷入冻结状态的基础概率提高35%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1104_rank1.png"
       },
       {
         "rank": 2,
         "name": "余寒",
-        "description": "战技使敌方目标陷入的冻结状态解除后，目标的速度降低?，持续?回合。",
+        "description": "战技使敌方目标陷入的冻结状态解除后，目标的速度降低20%，持续1回合。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1104_rank2.png"
       },
       {
@@ -3341,7 +3341,7 @@
       {
         "rank": 4,
         "name": "精诚所至",
-        "description": "杰帕德在场时，我方全体的效果抵抗提高?。",
+        "description": "杰帕德在场时，我方全体的效果抵抗提高20%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1104_rank4.png"
       },
       {
@@ -3353,7 +3353,7 @@
       {
         "rank": 6,
         "name": "不屈的决意",
-        "description": "触发天赋时杰帕德立即行动，且当前生命值的回复量额外增加自身生命上限的?。",
+        "description": "触发天赋时杰帕德立即行动，且当前生命值的回复量额外增加自身生命上限的50%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1104_rank6.png"
       }
     ],
@@ -3553,13 +3553,13 @@
       {
         "rank": 1,
         "name": "遍识药理",
-        "description": "受到攻击后，若当前生命值百分比小于等于?，对自身施放1次治疗，回复等同于自身?生命上限+?的生命值。该效果单场战斗中只能触发1次。",
+        "description": "受到攻击后，若当前生命值百分比小于等于30%，对自身施放1次治疗，回复等同于自身15%生命上限+400的生命值。该效果单场战斗中只能触发1次。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1105_rank1.png"
       },
       {
         "rank": 2,
         "name": "临床研学",
-        "description": "施放终结技时，对当前生命值百分比小于等于?的我方目标附加?回合的持续治疗效果，目标回合开始时为其回复等同于娜塔莎?生命上限+?的生命值。",
+        "description": "施放终结技时，对当前生命值百分比小于等于30%的我方目标附加1回合的持续治疗效果，目标回合开始时为其回复等同于娜塔莎6%生命上限+160的生命值。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1105_rank2.png"
       },
       {
@@ -3571,7 +3571,7 @@
       {
         "rank": 4,
         "name": "妙手回春",
-        "description": "受到攻击后，额外恢复?点能量。",
+        "description": "受到攻击后，额外恢复5点能量。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1105_rank4.png"
       },
       {
@@ -3583,7 +3583,7 @@
       {
         "rank": 6,
         "name": "医者仁心",
-        "description": "施放普攻时，额外造成等同于娜塔莎生命上限?的物理属性伤害。",
+        "description": "施放普攻时，额外造成等同于娜塔莎生命上限40%的物理属性伤害。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1105_rank6.png"
       }
     ],
@@ -3783,13 +3783,13 @@
       {
         "rank": 1,
         "name": "胜利反馈",
-        "description": "敌方目标被消灭时，佩拉恢复?点能量。",
+        "description": "敌方目标被消灭时，佩拉恢复5点能量。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1106_rank1.png"
       },
       {
         "rank": 2,
         "name": "疾进不止",
-        "description": "施放战技解除增益效果时，速度提高?，持续?回合。",
+        "description": "施放战技解除增益效果时，速度提高10%，持续2回合。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1106_rank2.png"
       },
       {
@@ -3801,7 +3801,7 @@
       {
         "rank": 4,
         "name": "完全剖析",
-        "description": "施放战技时，有?的基础概率使敌方目标冰属性抗性降低?，持续?回合。",
+        "description": "施放战技时，有100%的基础概率使敌方目标冰属性抗性降低12%，持续2回合。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1106_rank4.png"
       },
       {
@@ -3813,7 +3813,7 @@
       {
         "rank": 6,
         "name": "疲弱追击",
-        "description": "施放攻击后，若敌方目标处于负面效果，则对其造成等同于佩拉?攻击力的冰属性附加伤害。",
+        "description": "施放攻击后，若敌方目标处于负面效果，则对其造成等同于佩拉40%攻击力的冰属性附加伤害。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1106_rank6.png"
       }
     ],
@@ -4019,7 +4019,7 @@
       {
         "rank": 2,
         "name": "紧紧的拥抱",
-        "description": "施放终结技后攻击力提高?，持续?回合。",
+        "description": "施放终结技后攻击力提高30%，持续2回合。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1107_rank2.png"
       },
       {
@@ -4031,7 +4031,7 @@
       {
         "rank": 4,
         "name": "家人的温暖",
-        "description": "受到攻击后，克拉拉受到的伤害降低?，效果持续到自己的下个回合开始。",
+        "description": "受到攻击后，克拉拉受到的伤害降低30%，效果持续到自己的下个回合开始。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1107_rank4.png"
       },
       {
@@ -4043,7 +4043,7 @@
       {
         "rank": 6,
         "name": "长久的陪伴",
-        "description": "我方其他目标遭到攻击后，史瓦罗也有?的固定概率触发对攻击者的反击，并对攻击目标添加【反击标记】。施放终结技时，额外增加?次强化反击的次数。",
+        "description": "我方其他目标遭到攻击后，史瓦罗也有50%的固定概率触发对攻击者的反击，并对攻击目标添加【反击标记】。施放终结技时，额外增加1次强化反击的次数。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1107_rank6.png"
       }
     ],
@@ -4243,13 +4243,13 @@
       {
         "rank": 1,
         "name": "加码的爱",
-        "description": "施放战技时，对敌方随机单体额外造成?次伤害。",
+        "description": "施放战技时，对敌方随机单体额外造成1次伤害。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1108_rank1.png"
       },
       {
         "rank": 2,
         "name": "热情会传染",
-        "description": "风化状态下的敌方目标被消灭时，使敌方全体有?的基础概率叠加?层等同于天赋的风化状态。",
+        "description": "风化状态下的敌方目标被消灭时，使敌方全体有100%的基础概率叠加1层等同于天赋的风化状态。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1108_rank2.png"
       },
       {
@@ -4261,7 +4261,7 @@
       {
         "rank": 4,
         "name": "爱之深，恨之切",
-        "description": "战技击中风化状态大于等于?层的敌方目标时，使其当前承受的风化状态立即产生相当于原伤害?的伤害。",
+        "description": "战技击中风化状态大于等于5层的敌方目标时，使其当前承受的风化状态立即产生相当于原伤害8%的伤害。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1108_rank4.png"
       },
       {
@@ -4273,7 +4273,7 @@
       {
         "rank": 6,
         "name": "消费升级",
-        "description": "天赋施加的风化状态的伤害倍率提高?。",
+        "description": "天赋施加的风化状态的伤害倍率提高15%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1108_rank6.png"
       }
     ],
@@ -4473,13 +4473,13 @@
       {
         "rank": 1,
         "name": "早睡早起很健康",
-        "description": "战技强化后造成的伤害提高?。",
+        "description": "战技强化后造成的伤害提高20%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1109_rank1.png"
       },
       {
         "rank": 2,
         "name": "吃好喝好长身体",
-        "description": "战技使敌方目标陷入的灼烧状态持续时间增加?回合。",
+        "description": "战技使敌方目标陷入的灼烧状态持续时间增加1回合。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1109_rank2.png"
       },
       {
@@ -4491,7 +4491,7 @@
       {
         "rank": 4,
         "name": "稀里糊涂没关系",
-        "description": "触发天赋时，有?基础概率使指定敌方目标的相邻目标也陷入等同于战技的灼烧状态。",
+        "description": "触发天赋时，有100%基础概率使指定敌方目标的相邻目标也陷入等同于战技的灼烧状态。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1109_rank4.png"
       },
       {
@@ -4503,7 +4503,7 @@
       {
         "rank": 6,
         "name": "随时准备打坏人",
-        "description": "虎克对灼烧状态下的敌方目标造成的伤害提高?。",
+        "description": "虎克对灼烧状态下的敌方目标造成的伤害提高20%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1109_rank6.png"
       }
     ],
@@ -4703,13 +4703,13 @@
       {
         "rank": 1,
         "name": "远行雪杖的清晨",
-        "description": "为当前生命值百分比小于等于?的我方目标提供治疗时，玲可的治疗量提高?，该效果对持续治疗效果也会生效。",
+        "description": "为当前生命值百分比小于等于50%的我方目标提供治疗时，玲可的治疗量提高20%，该效果对持续治疗效果也会生效。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1110_rank1.png"
       },
       {
         "rank": 2,
         "name": "便携炉具的正午",
-        "description": "持有【求生反应】的目标被施加负面效果时可抵抗?次负面效果。",
+        "description": "持有【求生反应】的目标被施加负面效果时可抵抗1次负面效果。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1110_rank2.png"
       },
       {
@@ -4721,7 +4721,7 @@
       {
         "rank": 4,
         "name": "露营篝火的薄暮",
-        "description": "获得【求生反应】时，使该目标攻击力提高，提高数值等同于玲可?生命上限的攻击力，持续?回合。",
+        "description": "获得【求生反应】时，使该目标攻击力提高，提高数值等同于玲可3%生命上限的攻击力，持续1回合。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1110_rank4.png"
       },
       {
@@ -4733,7 +4733,7 @@
       {
         "rank": 6,
         "name": "测绘图纸的黎明",
-        "description": "【求生反应】的生命上限提高效果额外提高，提高数值等同于玲可?的生命上限，并使其效果抵抗提高?。",
+        "description": "【求生反应】的生命上限提高效果额外提高，提高数值等同于玲可6%的生命上限，并使其效果抵抗提高30%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1110_rank6.png"
       }
     ],
@@ -4933,13 +4933,13 @@
       {
         "rank": 1,
         "name": "争斗不休",
-        "description": "当卢卡行动时，若指定的敌方目标处于裂伤状态，卢卡造成的伤害提高?，持续?回合。",
+        "description": "当卢卡行动时，若指定的敌方目标处于裂伤状态，卢卡造成的伤害提高15%，持续2回合。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1111_rank1.png"
       },
       {
         "rank": 2,
         "name": "敌弱，我强",
-        "description": "若战技击中的敌方目标弱点为物理属性，获得?层【斗志】。",
+        "description": "若战技击中的敌方目标弱点为物理属性，获得1层【斗志】。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1111_rank2.png"
       },
       {
@@ -4951,7 +4951,7 @@
       {
         "rank": 4,
         "name": "百折不回",
-        "description": "每获得1层【斗志】，攻击力提高?，该效果最多叠加?层。",
+        "description": "每获得1层【斗志】，攻击力提高5%，该效果最多叠加4层。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1111_rank4.png"
       },
       {
@@ -4963,7 +4963,7 @@
       {
         "rank": 6,
         "name": "冠军应得的喝彩",
-        "description": "施放强化普攻的【碎天拳】击中陷入裂伤状态下的敌方目标后，本次强化普攻使用的【直冲拳】每施放过1段攻击，则额外使其当前承受的裂伤状态立即产生1次相当于原伤害?的伤害。",
+        "description": "施放强化普攻的【碎天拳】击中陷入裂伤状态下的敌方目标后，本次强化普攻使用的【直冲拳】每施放过1段攻击，则额外使其当前承受的裂伤状态立即产生1次相当于原伤害8%的伤害。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1111_rank6.png"
       }
     ],
@@ -5163,13 +5163,13 @@
       {
         "rank": 1,
         "name": "未来市场",
-        "description": "陷入【负债证明】状态下的敌方目标受到追加攻击时，将会陷入【被执行】状态，单次攻击内最多生效1次。\n【被执行】使敌方目标受到的追加攻击的暴击伤害提高?，最多叠加?层。【负债证明】被移除时，【被执行】也会被移除。",
+        "description": "陷入【负债证明】状态下的敌方目标受到追加攻击时，将会陷入【被执行】状态，单次攻击内最多生效1次。\n【被执行】使敌方目标受到的追加攻击的暴击伤害提高25%，最多叠加2层。【负债证明】被移除时，【被执行】也会被移除。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1112_rank1.png"
       },
       {
         "rank": 2,
         "name": "善意收购",
-        "description": "账账自身行动并发动攻击后，托帕恢复?点能量。",
+        "description": "账账自身行动并发动攻击后，托帕恢复5点能量。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1112_rank2.png"
       },
       {
@@ -5181,7 +5181,7 @@
       {
         "rank": 4,
         "name": "敏捷处理",
-        "description": "账账自身回合开始时，托帕的行动提前?。",
+        "description": "账账自身回合开始时，托帕的行动提前20%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1112_rank4.png"
       },
       {
@@ -5193,7 +5193,7 @@
       {
         "rank": 6,
         "name": "激励机制",
-        "description": "账账处于【涨幅惊人！】状态的攻击次数增加?次，且攻击时火属性抗性穿透提高?。",
+        "description": "账账处于【涨幅惊人！】状态的攻击次数增加1次，且攻击时火属性抗性穿透提高10%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1112_rank6.png"
       }
     ],
@@ -5393,13 +5393,13 @@
       {
         "rank": 1,
         "name": "散勇化骁摸幺鱼",
-        "description": "施放终结技造成的伤害提高?。",
+        "description": "施放终结技造成的伤害提高10%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1201_rank1.png"
       },
       {
         "rank": 2,
         "name": "棋枰作枕好入眠",
-        "description": "青雀每次触发抽牌时，立即恢复?点能量。",
+        "description": "青雀每次触发抽牌时，立即恢复1点能量。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1201_rank2.png"
       },
       {
@@ -5411,7 +5411,7 @@
       {
         "rank": 4,
         "name": "帝垣翔鳞和绝张",
-        "description": "施放战技后，有?的固定概率获得【不求人】状态，持续至本回合结束。\n【不求人】状态下，施放普攻或施放强化普攻后立即进行1次追加攻击，对该目标造成等同于普攻或强化普攻伤害100%的量子属性伤害。",
+        "description": "施放战技后，有24%的固定概率获得【不求人】状态，持续至本回合结束。\n【不求人】状态下，施放普攻或施放强化普攻后立即进行1次追加攻击，对该目标造成等同于普攻或强化普攻伤害100%的量子属性伤害。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1201_rank4.png"
       },
       {
@@ -5623,13 +5623,13 @@
       {
         "rank": 1,
         "name": "春风得意，时运驰骋",
-        "description": "得到【赐福】的我方单体施放终结技后速度提高?，持续1回合。",
+        "description": "得到【赐福】的我方单体施放终结技后速度提高20%，持续1回合。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1202_rank1.png"
       },
       {
         "rank": 2,
         "name": "君子惠渥，晏笑承之",
-        "description": "得到【赐福】的我方单体在消灭敌方目标时恢复?点能量，该效果每回合只能触发1次。",
+        "description": "得到【赐福】的我方单体在消灭敌方目标时恢复5点能量，该效果每回合只能触发1次。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1202_rank2.png"
       },
       {
@@ -5641,7 +5641,7 @@
       {
         "rank": 4,
         "name": "鸣火机变，度时察势",
-        "description": "【赐福】附加的伤害倍率提高?。",
+        "description": "【赐福】附加的伤害倍率提高20%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1202_rank4.png"
       },
       {
@@ -5653,7 +5653,7 @@
       {
         "rank": 6,
         "name": "和气生财，泽盈四方",
-        "description": "终结技为我方目标恢复的能量提高?点。",
+        "description": "终结技为我方目标恢复的能量提高10点。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1202_rank6.png"
       }
     ],
@@ -5853,13 +5853,13 @@
       {
         "rank": 1,
         "name": "濯洗生者",
-        "description": "结界生效时我方全体攻击力提高?。",
+        "description": "结界生效时我方全体攻击力提高20%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1203_rank1.png"
       },
       {
         "rank": 2,
         "name": "净庭赐礼",
-        "description": "触发战技效果时，若指定我方目标当前生命值百分比小于50%，则罗刹提供的治疗量提高?；若指定我方目标当前生命值百分比大于等于50%，则为其提供能够抵消等同于罗刹?攻击力+?伤害的护盾，持续?回合。",
+        "description": "触发战技效果时，若指定我方目标当前生命值百分比小于50%，则罗刹提供的治疗量提高30%；若指定我方目标当前生命值百分比大于等于50%，则为其提供能够抵消等同于罗刹18%攻击力+240伤害的护盾，持续2回合。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1203_rank2.png"
       },
       {
@@ -5871,7 +5871,7 @@
       {
         "rank": 4,
         "name": "荆冠审判",
-        "description": "结界生效时使敌方目标陷入虚弱状态，造成的伤害降低?。",
+        "description": "结界生效时使敌方目标陷入虚弱状态，造成的伤害降低12%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1203_rank4.png"
       },
       {
@@ -5883,7 +5883,7 @@
       {
         "rank": 6,
         "name": "皆归尘土",
-        "description": "施放终结技时，有?固定概率使敌方全体全属性抗性降低?，持续?回合。",
+        "description": "施放终结技时，有100%固定概率使敌方全体全属性抗性降低20%，持续2回合。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1203_rank6.png"
       }
     ],
@@ -6083,13 +6083,13 @@
       {
         "rank": 1,
         "name": "星流霆击碎昆冈",
-        "description": "【神君】施放攻击时，对指定敌方单体的相邻目标造成的伤害倍率额外提高，提高数值等同于对主目标伤害倍率的?。",
+        "description": "【神君】施放攻击时，对指定敌方单体的相邻目标造成的伤害倍率额外提高，提高数值等同于对主目标伤害倍率的25%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1204_rank1.png"
       },
       {
         "rank": 2,
         "name": "戎戈动地开天阵",
-        "description": "【神君】行动后，景元的普攻、战技、终结技造成的伤害提高?，持续?回合。",
+        "description": "【神君】行动后，景元的普攻、战技、终结技造成的伤害提高20%，持续2回合。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1204_rank2.png"
       },
       {
@@ -6101,7 +6101,7 @@
       {
         "rank": 4,
         "name": "刃卷横云落玉沙",
-        "description": "【神君】每段攻击后，景元恢复?点能量。",
+        "description": "【神君】每段攻击后，景元恢复2点能量。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1204_rank4.png"
       },
       {
@@ -6113,7 +6113,7 @@
       {
         "rank": 6,
         "name": "威灵有应破敌雠",
-        "description": "【神君】每段攻击后会使指定敌方目标额外陷入易伤状态。\n易伤状态下的敌方目标受到的伤害提高?，持续至【神君】本次攻击结束，该效果最多叠加?层。",
+        "description": "【神君】每段攻击后会使指定敌方目标额外陷入易伤状态。\n易伤状态下的敌方目标受到的伤害提高12%，持续至【神君】本次攻击结束，该效果最多叠加3层。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1204_rank6.png"
       }
     ],
@@ -6313,13 +6313,13 @@
       {
         "rank": 1,
         "name": "剑录大限，地狱变相",
-        "description": "终结技对指定敌方单体造成的伤害额外提高，提高数值等同于刃?本场战斗中累计的已损失生命值。\n本场战斗中累计已损失生命值最高不超过刃生命上限的?，施放终结技后会清空并进行重新累计。",
+        "description": "终结技对指定敌方单体造成的伤害额外提高，提高数值等同于刃150%本场战斗中累计的已损失生命值。\n本场战斗中累计已损失生命值最高不超过刃生命上限的90%，施放终结技后会清空并进行重新累计。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1205_rank1.png"
       },
       {
         "rank": 2,
         "name": "支离旧梦，万端遗恨",
-        "description": "刃处于【地狱变】状态时，暴击率提高?。",
+        "description": "刃处于【地狱变】状态时，暴击率提高15%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1205_rank2.png"
       },
       {
@@ -6331,7 +6331,7 @@
       {
         "rank": 4,
         "name": "泉台歧路，百骸回春",
-        "description": "当前生命值百分比从大于50%降低至小于等于50%时，生命上限提高?，该效果最多叠加?层。",
+        "description": "当前生命值百分比从大于50%降低至小于等于50%时，生命上限提高20%，该效果最多叠加2层。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1205_rank4.png"
       },
       {
@@ -6343,7 +6343,7 @@
       {
         "rank": 6,
         "name": "命留魂销，复返此身",
-        "description": "充能的层数上限降低至4层。天赋触发追加攻击造成的伤害额外提高，提高数值等同于刃?的生命上限。",
+        "description": "充能的层数上限降低至4层。天赋触发追加攻击造成的伤害额外提高，提高数值等同于刃50%的生命上限。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1205_rank6.png"
       }
     ],
@@ -6549,7 +6549,7 @@
       {
         "rank": 2,
         "name": "其身百炼",
-        "description": "触发【剑势】后，素裳受到的伤害降低?，持续1回合。",
+        "description": "触发【剑势】后，素裳受到的伤害降低20%，持续1回合。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1206_rank2.png"
       },
       {
@@ -6561,7 +6561,7 @@
       {
         "rank": 4,
         "name": "其心百辟",
-        "description": "素裳的击破特攻提高?。",
+        "description": "素裳的击破特攻提高40%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1206_rank4.png"
       },
       {
@@ -6773,13 +6773,13 @@
       {
         "rank": 1,
         "name": "天舶飞将，枕弧待战",
-        "description": "进入战斗时，我方全体速度提高?，持续?回合。",
+        "description": "进入战斗时，我方全体速度提高10%，持续2回合。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1207_rank1.png"
       },
       {
         "rank": 2,
         "name": "青霄驰骋，驱驭苍穹",
-        "description": "当我方任意单体当前能量值等于其能量上限时，驭空额外恢复?点能量。该效果我方每个单体仅可触发1次，当驭空施放终结技后，重置该效果触发次数。",
+        "description": "当我方任意单体当前能量值等于其能量上限时，驭空额外恢复5点能量。该效果我方每个单体仅可触发1次，当驭空施放终结技后，重置该效果触发次数。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1207_rank2.png"
       },
       {
@@ -6791,7 +6791,7 @@
       {
         "rank": 4,
         "name": "百里闻风，九曲响镝",
-        "description": "持有【鸣弦号令】时，驭空造成的伤害提高?。",
+        "description": "持有【鸣弦号令】时，驭空造成的伤害提高30%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1207_rank4.png"
       },
       {
@@ -6803,7 +6803,7 @@
       {
         "rank": 6,
         "name": "弦栝如雷，铣珧激荡",
-        "description": "驭空施放终结技时，立即先获得?层【鸣弦号令】。",
+        "description": "驭空施放终结技时，立即先获得1层【鸣弦号令】。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1207_rank6.png"
       }
     ],
@@ -7003,13 +7003,13 @@
       {
         "rank": 1,
         "name": "司危",
-        "description": "【鉴知】使暴击伤害提高?。",
+        "description": "【鉴知】使暴击伤害提高30%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1208_rank1.png"
       },
       {
         "rank": 2,
         "name": "柔兆",
-        "description": "【穷观阵】开启时，若我方目标受到致命伤害，则本次行动中所有受到致命伤害的我方目标都不会陷入无法战斗状态，并立即回复等同于其自身生命上限?的生命值。该效果单场战斗中可以触发1次。",
+        "description": "【穷观阵】开启时，若我方目标受到致命伤害，则本次行动中所有受到致命伤害的我方目标都不会陷入无法战斗状态，并立即回复等同于其自身生命上限70%的生命值。该效果单场战斗中可以触发1次。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1208_rank2.png"
       },
       {
@@ -7021,7 +7021,7 @@
       {
         "rank": 4,
         "name": "格泽",
-        "description": "当处于【穷观阵】的我方其他目标受到攻击后，符玄恢复?点能量。",
+        "description": "当处于【穷观阵】的我方其他目标受到攻击后，符玄恢复5点能量。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1208_rank4.png"
       },
       {
@@ -7033,7 +7033,7 @@
       {
         "rank": 6,
         "name": "种陵",
-        "description": "【穷观阵】开启时，会累计我方全体本场战斗中的已损失生命值。符玄施放终结技造成的伤害提高，提高数值等同于本场战斗中累计已损失生命值的?。\n本场战斗中累计已损失生命值最高不超过符玄生命上限的?，施放终结技后会清空并进行重新累计。",
+        "description": "【穷观阵】开启时，会累计我方全体本场战斗中的已损失生命值。符玄施放终结技造成的伤害提高，提高数值等同于本场战斗中累计已损失生命值的200%。\n本场战斗中累计已损失生命值最高不超过符玄生命上限的120%，施放终结技后会清空并进行重新累计。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1208_rank6.png"
       }
     ],
@@ -7233,13 +7233,13 @@
       {
         "rank": 1,
         "name": "素刃",
-        "description": "当彦卿攻击敌方目标时，如果目标处于冻结状态，则立即对目标造成等同于彦卿?攻击力的冰属性附加伤害。",
+        "description": "当彦卿攻击敌方目标时，如果目标处于冻结状态，则立即对目标造成等同于彦卿60%攻击力的冰属性附加伤害。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1209_rank1.png"
       },
       {
         "rank": 2,
         "name": "空明",
-        "description": "处于【智剑连心】效果时，额外提高?的能量恢复效率。",
+        "description": "处于【智剑连心】效果时，额外提高10%的能量恢复效率。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1209_rank2.png"
       },
       {
@@ -7251,7 +7251,7 @@
       {
         "rank": 4,
         "name": "霜厉",
-        "description": "当前生命值百分比大于等于?时，提高自身?的冰属性抗性穿透。",
+        "description": "当前生命值百分比大于等于80%时，提高自身12%的冰属性抗性穿透。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1209_rank4.png"
       },
       {
@@ -7463,13 +7463,13 @@
       {
         "rank": 1,
         "name": "倒立吃面条",
-        "description": "施放战技时，有?的基础概率使受到攻击的敌方目标效果抵抗降低?，持续?回合。",
+        "description": "施放战技时，有100%的基础概率使受到攻击的敌方目标效果抵抗降低10%，持续2回合。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1210_rank1.png"
       },
       {
         "rank": 2,
         "name": "刷牙吹口哨",
-        "description": "当敌方目标处于灼烧状态时，桂乃芬的普攻与战技对其施加的灼烧状态的伤害倍率提升?。",
+        "description": "当敌方目标处于灼烧状态时，桂乃芬的普攻与战技对其施加的灼烧状态的伤害倍率提升40%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1210_rank2.png"
       },
       {
@@ -7481,7 +7481,7 @@
       {
         "rank": 4,
         "name": "金枪锁咽喉",
-        "description": "桂乃芬施加的灼烧状态每触发一次伤害，使自身恢复?点能量。",
+        "description": "桂乃芬施加的灼烧状态每触发一次伤害，使自身恢复2点能量。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1210_rank4.png"
       },
       {
@@ -7493,7 +7493,7 @@
       {
         "rank": 6,
         "name": "徒手接子弹",
-        "description": "使【吞火】的可叠加层数增加?层。",
+        "description": "使【吞火】的可叠加层数增加1层。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1210_rank6.png"
       }
     ],
@@ -7693,13 +7693,13 @@
       {
         "rank": 1,
         "name": "百脉甘津宁神久",
-        "description": "【生息】结束时若我方目标当前生命值等于其生命上限，则额外恢复目标?点能量。",
+        "description": "【生息】结束时若我方目标当前生命值等于其生命上限，则额外恢复目标8点能量。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1211_rank1.png"
       },
       {
         "rank": 2,
         "name": "壶中洞天云螭眠",
-        "description": "施放终结技后，白露的治疗量提高?，持续?回合。",
+        "description": "施放终结技后，白露的治疗量提高15%，持续2回合。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1211_rank2.png"
       },
       {
@@ -7711,7 +7711,7 @@
       {
         "rank": 4,
         "name": "肘后备急除外障",
-        "description": "战技提供的每1次治疗会额外使受治疗者造成的伤害提高?，最多叠加?层，持续?回合。",
+        "description": "战技提供的每1次治疗会额外使受治疗者造成的伤害提高10%，最多叠加3层，持续2回合。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1211_rank4.png"
       },
       {
@@ -7723,7 +7723,7 @@
       {
         "rank": 6,
         "name": "龙漦吐哺胜金丹",
-        "description": "白露在单场战斗中累计可以对受到致命攻击的我方目标提供治疗的效果触发次数增加?次。",
+        "description": "白露在单场战斗中累计可以对受到致命攻击的我方目标提供治疗的效果触发次数增加1次。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1211_rank6.png"
       }
     ],
@@ -7923,13 +7923,13 @@
       {
         "rank": 1,
         "name": "月犯天关",
-        "description": "施放终结技或强化战技时，镜流的暴击伤害提高?，持续?回合。若只攻击了1个敌方目标，则额外对该目标造成1次等同于镜流?攻击力的冰属性伤害。",
+        "description": "施放终结技或强化战技时，镜流的暴击伤害提高24%，持续1回合。若只攻击了1个敌方目标，则额外对该目标造成1次等同于镜流100%攻击力的冰属性伤害。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1212_rank1.png"
       },
       {
         "rank": 2,
         "name": "朔晕七星",
-        "description": "施放终结技后，下一次强化战技的伤害提高?。",
+        "description": "施放终结技后，下一次强化战技的伤害提高80%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1212_rank2.png"
       },
       {
@@ -7941,7 +7941,7 @@
       {
         "rank": 4,
         "name": "持秉玄烛",
-        "description": "【转魄】状态下消耗队友生命值获得的攻击力额外提高，提高数值等同于我方全体生命值消耗总量的?，获得的攻击力上限提高?。",
+        "description": "【转魄】状态下消耗队友生命值获得的攻击力额外提高，提高数值等同于我方全体生命值消耗总量的90%，获得的攻击力上限提高30%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1212_rank4.png"
       },
       {
@@ -7953,7 +7953,7 @@
       {
         "rank": 6,
         "name": "蚀变于娄",
-        "description": "镜流进入【转魄】状态时，【朔望】的上限层数提高1层并额外获得?层【朔望】。【转魄】状态下，暴击伤害提高?。",
+        "description": "镜流进入【转魄】状态时，【朔望】的上限层数提高1层并额外获得1层【朔望】。【转魄】状态下，暴击伤害提高50%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1212_rank6.png"
       }
     ],
@@ -8153,7 +8153,7 @@
       {
         "rank": 1,
         "name": "萦天",
-        "description": "使【亢心】的可叠加层数增加?层。且每段攻击额外获得1层【亢心】。",
+        "description": "使【亢心】的可叠加层数增加4层。且每段攻击额外获得1层【亢心】。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1213_rank1.png"
       },
       {
@@ -8183,7 +8183,7 @@
       {
         "rank": 6,
         "name": "见谯",
-        "description": "我方其他角色施放终结技后，丹恒•饮月下一次施放【盘拏耀跃】时虚数属性抗性穿透提高?，该效果最多叠加?层。",
+        "description": "我方其他角色施放终结技后，丹恒•饮月下一次施放【盘拏耀跃】时虚数属性抗性穿透提高20%，该效果最多叠加3层。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1213_rank6.png"
       }
     ],
@@ -8383,13 +8383,13 @@
       {
         "rank": 1,
         "name": "缚心魔",
-        "description": "天赋的追加攻击造成的伤害提高?。",
+        "description": "天赋的追加攻击造成的伤害提高40%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1214_rank1.png"
       },
       {
         "rank": 2,
         "name": "破五尘",
-        "description": "天赋的追加攻击无视弱点属性削减敌方的韧性，同时为自身恢复等同于雪衣?生命上限的生命值。击破弱点时，触发量子属性的弱点击破效果。",
+        "description": "天赋的追加攻击无视弱点属性削减敌方的韧性，同时为自身恢复等同于雪衣5%生命上限的生命值。击破弱点时，触发量子属性的弱点击破效果。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1214_rank2.png"
       },
       {
@@ -8401,7 +8401,7 @@
       {
         "rank": 4,
         "name": "断业根",
-        "description": "施放终结技时，击破特攻提高?，持续?回合。",
+        "description": "施放终结技时，击破特攻提高40%，持续2回合。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1214_rank4.png"
       },
       {
@@ -8413,7 +8413,7 @@
       {
         "rank": 6,
         "name": "司死生",
-        "description": "【恶报】的层数上限降低至?层。",
+        "description": "【恶报】的层数上限降低至6层。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1214_rank6.png"
       }
     ],
@@ -8613,13 +8613,13 @@
       {
         "rank": 1,
         "name": "一心",
-        "description": "持有终结技效果的我方目标消灭敌方目标时，寒鸦行动提前?，该效果每回合只能触发?次。",
+        "description": "持有终结技效果的我方目标消灭敌方目标时，寒鸦行动提前15%，该效果每回合只能触发1次。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1215_rank1.png"
       },
       {
         "rank": 2,
         "name": "二观",
-        "description": "施放战技后，速度提高?，持续?回合。",
+        "description": "施放战技后，速度提高20%，持续1回合。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1215_rank2.png"
       },
       {
@@ -8631,7 +8631,7 @@
       {
         "rank": 4,
         "name": "四谛",
-        "description": "终结技的持续时间额外增加?回合。",
+        "description": "终结技的持续时间额外增加1回合。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1215_rank4.png"
       },
       {
@@ -8643,7 +8643,7 @@
       {
         "rank": 6,
         "name": "六正",
-        "description": "天赋的伤害提高效果额外提高?。",
+        "description": "天赋的伤害提高效果额外提高10%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1215_rank6.png"
       }
     ],
@@ -8843,13 +8843,13 @@
       {
         "rank": 1,
         "name": "岁阳寄体，妖邪依凭",
-        "description": "天赋产生的【禳命】持续时间延长?回合，且当藿藿拥有【禳命】时我方全体提高?的速度。",
+        "description": "天赋产生的【禳命】持续时间延长1回合，且当藿藿拥有【禳命】时我方全体提高12%的速度。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1217_rank1.png"
       },
       {
         "rank": 2,
         "name": "判官书符，镇尾锁灵",
-        "description": "当藿藿拥有【禳命】时，若我方目标受到致命攻击，不会陷入无法战斗状态，并立即回复等同于其自身生命上限?的生命值，使【禳命】的持续回合数减1。该效果单场战斗中可以触发?次。",
+        "description": "当藿藿拥有【禳命】时，若我方目标受到致命攻击，不会陷入无法战斗状态，并立即回复等同于其自身生命上限50%的生命值，使【禳命】的持续回合数减1。该效果单场战斗中可以触发2次。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1217_rank2.png"
       },
       {
@@ -8861,7 +8861,7 @@
       {
         "rank": 4,
         "name": "坐卧不离，争拗难宁",
-        "description": "施放战技或触发天赋为我方目标提供治疗时，目标的当前生命值越低治疗量越高，最多使藿藿提供的治疗量提高?。",
+        "description": "施放战技或触发天赋为我方目标提供治疗时，目标的当前生命值越低治疗量越高，最多使藿藿提供的治疗量提高80%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1217_rank4.png"
       },
       {
@@ -8873,7 +8873,7 @@
       {
         "rank": 6,
         "name": "同休共戚，相须而行",
-        "description": "为我方目标提供治疗时，使目标造成的伤害提高?，持续?回合。",
+        "description": "为我方目标提供治疗时，使目标造成的伤害提高50%，持续2回合。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1217_rank6.png"
       }
     ],
@@ -9073,13 +9073,13 @@
       {
         "rank": 1,
         "name": "五味五走，生熟有定",
-        "description": "我方目标对处于【烬煨】状态的敌方目标造成的伤害提高?。每当触发天赋效果使敌方目标陷入【烬煨】状态时，使本次叠加的【烬煨】层数额外提高?层。",
+        "description": "我方目标对处于【烬煨】状态的敌方目标造成的伤害提高40%。每当触发天赋效果使敌方目标陷入【烬煨】状态时，使本次叠加的【烬煨】层数额外提高1层。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1218_rank1.png"
       },
       {
         "rank": 2,
         "name": "爽口作疾，厚味措毒",
-        "description": "敌方目标处于【烬煨】状态时，【烬煨】对其造成的火属性持续伤害倍率提高?。",
+        "description": "敌方目标处于【烬煨】状态时，【烬煨】对其造成的火属性持续伤害倍率提高300%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1218_rank2.png"
       },
       {
@@ -9091,7 +9091,7 @@
       {
         "rank": 4,
         "name": "藏腑和平，血气资荣",
-        "description": "结界存在时，敌方目标的攻击力降低?。",
+        "description": "结界存在时，敌方目标的攻击力降低15%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1218_rank4.png"
       },
       {
@@ -9103,7 +9103,7 @@
       {
         "rank": 6,
         "name": "九沸九变，火为之纪",
-        "description": "敌方目标被消灭时，其持有的【烬煨】会叠加给场上存活的【烬煨】层数最低的敌人。【烬煨】的层数上限提升至?，每层【烬煨】会使目标的全属性抗性降低?。",
+        "description": "敌方目标被消灭时，其持有的【烬煨】会叠加给场上存活的【烬煨】层数最低的敌人。【烬煨】的层数上限提升至9，每层【烬煨】会使目标的全属性抗性降低3%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1218_rank6.png"
       }
     ],
@@ -9303,13 +9303,13 @@
       {
         "rank": 1,
         "name": "镇绥天钧",
-        "description": "发动【闪裂刃舞】或【钺贯天冲】后，使飞霄造成的终结技伤害额外提高，提高数值等同于原伤害的?，最多叠加?层，持续至终结技行动结束。",
+        "description": "发动【闪裂刃舞】或【钺贯天冲】后，使飞霄造成的终结技伤害额外提高，提高数值等同于原伤害的10%，最多叠加5层，持续至终结技行动结束。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1220_rank1.png"
       },
       {
         "rank": 2,
         "name": "礼辰祷月",
-        "description": "天赋效果中，我方目标每施放1次追加攻击即可使飞霄获得1点【飞黄】。该效果每回合最多触发?次。",
+        "description": "天赋效果中，我方目标每施放1次追加攻击即可使飞霄获得1点【飞黄】。该效果每回合最多触发6次。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1220_rank2.png"
       },
       {
@@ -9321,7 +9321,7 @@
       {
         "rank": 4,
         "name": "驱飓听冰",
-        "description": "天赋的追加攻击的削韧值提高?，并且发动时使自身速度提高?，持续?回合。",
+        "description": "天赋的追加攻击的削韧值提高100%，并且发动时使自身速度提高8%，持续2回合。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1220_rank4.png"
       },
       {
@@ -9333,7 +9333,7 @@
       {
         "rank": 6,
         "name": "惟首正丘",
-        "description": "飞霄造成的终结技伤害的全属性抗性穿透提高?。天赋的追加攻击伤害同时视为终结技伤害，并且伤害倍率提高?。",
+        "description": "飞霄造成的终结技伤害的全属性抗性穿透提高20%。天赋的追加攻击伤害同时视为终结技伤害，并且伤害倍率提高140%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1220_rank6.png"
       }
     ],
@@ -9533,13 +9533,13 @@
       {
         "rank": 1,
         "name": "沉锋离垢",
-        "description": "【勘破•斩】与【勘破•灭】造成的伤害提高?，【勘破•灭】的额外伤害次数增加?次。",
+        "description": "【勘破•斩】与【勘破•灭】造成的伤害提高20%，【勘破•灭】的额外伤害次数增加3次。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1221_rank1.png"
       },
       {
         "rank": 2,
         "name": "初芒破生",
-        "description": "发动反击造成伤害时无视敌方目标?的防御力。",
+        "description": "发动反击造成伤害时无视敌方目标20%的防御力。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1221_rank2.png"
       },
       {
@@ -9551,7 +9551,7 @@
       {
         "rank": 4,
         "name": "大匠击橐",
-        "description": "发动【勘破•斩】或【勘破•灭】后使自身效果抵抗提高?，持续?回合。",
+        "description": "发动【勘破•斩】或【勘破•灭】后使自身效果抵抗提高50%，持续1回合。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1221_rank4.png"
       },
       {
@@ -9563,7 +9563,7 @@
       {
         "rank": 6,
         "name": "剑胆琴心",
-        "description": "【格挡】状态期间，敌方主动施放技能时无论是否攻击云璃，都会触发【勘破•灭】同时移除【格挡】效果，发动【勘破•斩】或【勘破•灭】造成伤害时暴击率提高?，物理属性抗性穿透提高?。",
+        "description": "【格挡】状态期间，敌方主动施放技能时无论是否攻击云璃，都会触发【勘破•灭】同时移除【格挡】效果，发动【勘破•斩】或【勘破•灭】造成伤害时暴击率提高15%，物理属性抗性穿透提高20%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1221_rank6.png"
       }
     ],
@@ -9763,13 +9763,13 @@
       {
         "rank": 1,
         "name": "馨气当盛，除邪避讳",
-        "description": "灵砂的弱点击破效率提高?。当有敌方单位的弱点被击破时，使其防御力降低?。",
+        "description": "灵砂的弱点击破效率提高50%。当有敌方单位的弱点被击破时，使其防御力降低20%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1222_rank1.png"
       },
       {
         "rank": 2,
         "name": "欹枕垂云，烟奁红雪",
-        "description": "施放终结技时，使我方全体击破特攻提高?，持续?回合。",
+        "description": "施放终结技时，使我方全体击破特攻提高40%，持续3回合。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1222_rank2.png"
       },
       {
@@ -9781,7 +9781,7 @@
       {
         "rank": 4,
         "name": "横垂宝幄，半拂琼筵",
-        "description": "【浮元】行动时，为当前生命值最低的我方目标回复等同于灵砂?攻击力的生命值。",
+        "description": "【浮元】行动时，为当前生命值最低的我方目标回复等同于灵砂40%攻击力的生命值。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1222_rank4.png"
       },
       {
@@ -9793,7 +9793,7 @@
       {
         "rank": 6,
         "name": "晓兰深藏，宿香暗贮",
-        "description": "【浮元】在场时，使敌方全体全属性抗性降低?，【浮元】攻击时，额外造成?次伤害，每次伤害对随机敌方单体造成等同于灵砂?攻击力的火属性伤害和?点削韧值，优先选择韧性值大于0且有火属性弱点的目标。",
+        "description": "【浮元】在场时，使敌方全体全属性抗性降低20%，【浮元】攻击时，额外造成4次伤害，每次伤害对随机敌方单体造成等同于灵砂50%攻击力的火属性伤害和5点削韧值，优先选择韧性值大于0且有火属性弱点的目标。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1222_rank6.png"
       }
     ],
@@ -9993,13 +9993,13 @@
       {
         "rank": 1,
         "name": "矢志",
-        "description": "进入战斗后，貊泽恢复?点能量。每触发1次天赋的附加伤害，貊泽恢复?点能量。",
+        "description": "进入战斗后，貊泽恢复20点能量。每触发1次天赋的附加伤害，貊泽恢复2点能量。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1223_rank1.png"
       },
       {
         "rank": 2,
         "name": "惩膺",
-        "description": "我方全体目标对成为【猎物】的敌方目标造成伤害时，暴击伤害提高?。",
+        "description": "我方全体目标对成为【猎物】的敌方目标造成伤害时，暴击伤害提高40%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1223_rank2.png"
       },
       {
@@ -10011,7 +10011,7 @@
       {
         "rank": 4,
         "name": "逐薮",
-        "description": "施放终结技时，貊泽造成的伤害提高?，持续?回合。",
+        "description": "施放终结技时，貊泽造成的伤害提高30%，持续2回合。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1223_rank4.png"
       },
       {
@@ -10023,7 +10023,7 @@
       {
         "rank": 6,
         "name": "丹心",
-        "description": "天赋的追加攻击的伤害倍率提高?。",
+        "description": "天赋的追加攻击的伤害倍率提高25%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1223_rank6.png"
       }
     ],
@@ -10223,13 +10223,13 @@
       {
         "rank": 1,
         "name": "初花学剑动星芒",
-        "description": "场上存在【师父】时，三月七的速度提高?。",
+        "description": "场上存在【师父】时，三月七的速度提高10%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1224_rank1.png"
       },
       {
         "rank": 2,
         "name": "白刃耀雪舞骇浪",
-        "description": "每当【师父】施放普攻或战技攻击敌方目标后，三月七立即发动追加攻击，对本次攻击的主目标造成等同于三月七?攻击力的虚数属性伤害，并根据【师父】的命途触发对应效果，随后获得?点充能。若不存在可攻击的主目标，则攻击敌方随机单体。该效果每回合最多触发1次。",
+        "description": "每当【师父】施放普攻或战技攻击敌方目标后，三月七立即发动追加攻击，对本次攻击的主目标造成等同于三月七60%攻击力的虚数属性伤害，并根据【师父】的命途触发对应效果，随后获得1点充能。若不存在可攻击的主目标，则攻击敌方随机单体。该效果每回合最多触发1次。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1224_rank2.png"
       },
       {
@@ -10241,7 +10241,7 @@
       {
         "rank": 4,
         "name": "龙飞凤舞不窝囊",
-        "description": "回合开始时，恢复?点能量。",
+        "description": "回合开始时，恢复5点能量。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1224_rank4.png"
       },
       {
@@ -10253,7 +10253,7 @@
       {
         "rank": 6,
         "name": "天下第一本姑娘",
-        "description": "施放终结技后，下一次强化普攻造成的暴击伤害提高?。",
+        "description": "施放终结技后，下一次强化普攻造成的暴击伤害提高50%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1224_rank6.png"
       }
     ],
@@ -10453,13 +10453,13 @@
       {
         "rank": 1,
         "name": "狐尘已去，云驾有期",
-        "description": "持有【狐祈】的我方目标，弱点击破效率提高?。",
+        "description": "持有【狐祈】的我方目标，弱点击破效率提高50%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1225_rank1.png"
       },
       {
         "rank": 2,
         "name": "瑞应之來，必昭有德",
-        "description": "当有敌方目标的弱点被击破时，为忘归人恢复?点能量。施放终结技后，我方全体行动提前?。",
+        "description": "当有敌方目标的弱点被击破时，为忘归人恢复3点能量。施放终结技后，我方全体行动提前24%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1225_rank2.png"
       },
       {
@@ -10471,7 +10471,7 @@
       {
         "rank": 4,
         "name": "自我离形，而今几姓",
-        "description": "持有【狐祈】的我方目标，造成的击破伤害提高?。",
+        "description": "持有【狐祈】的我方目标，造成的击破伤害提高20%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1225_rank4.png"
       },
       {
@@ -10483,7 +10483,7 @@
       {
         "rank": 6,
         "name": "肇素未来，晦明兴灭",
-        "description": "忘归人的弱点击破效率提高?。当忘归人处于【炽灼】状态时，【狐祈】效果对我方全体生效。",
+        "description": "忘归人的弱点击破效率提高50%。当忘归人处于【炽灼】状态时，【狐祈】效果对我方全体生效。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1225_rank6.png"
       }
     ],
@@ -10683,13 +10683,13 @@
       {
         "rank": 1,
         "name": "盐与犬",
-        "description": "加拉赫进入战斗后会恢复?点能量，效果抵抗提高?。",
+        "description": "加拉赫进入战斗后会恢复20点能量，效果抵抗提高50%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1301_rank1.png"
       },
       {
         "rank": 2,
         "name": "狮子之尾",
-        "description": "施放战技时，解除指定我方单体的?个负面效果，同时使其效果抵抗提高?，持续?回合。",
+        "description": "施放战技时，解除指定我方单体的1个负面效果，同时使其效果抵抗提高30%，持续2回合。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1301_rank2.png"
       },
       {
@@ -10701,7 +10701,7 @@
       {
         "rank": 4,
         "name": "临终的轻语",
-        "description": "加拉赫终结技造成的【酩酊】状态持续时间延长?回合。",
+        "description": "加拉赫终结技造成的【酩酊】状态持续时间延长1回合。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1301_rank4.png"
       },
       {
@@ -10713,7 +10713,7 @@
       {
         "rank": 6,
         "name": "血与沙",
-        "description": "加拉赫的击破特攻提高?，弱点击破效率提高?。",
+        "description": "加拉赫的击破特攻提高20%，弱点击破效率提高20%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1301_rank6.png"
       }
     ],
@@ -10913,13 +10913,13 @@
       {
         "rank": 1,
         "name": "审美王国的缺口",
-        "description": "每层【升格】额外使暴击伤害提高?。",
+        "description": "每层【升格】额外使暴击伤害提高4%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1302_rank1.png"
       },
       {
         "rank": 2,
         "name": "玛瑙石的谦卑",
-        "description": "施放终结技时，若敌方目标数量大于等于?个时，攻击力提高?，持续?回合。",
+        "description": "施放终结技时，若敌方目标数量大于等于3个时，攻击力提高40%，持续1回合。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1302_rank2.png"
       },
       {
@@ -10931,7 +10931,7 @@
       {
         "rank": 4,
         "name": "号角的奉献",
-        "description": "战斗开始时，获得?层【升格】，并使天赋的效果可叠加上限提高?层。",
+        "description": "战斗开始时，获得2层【升格】，并使天赋的效果可叠加上限提高2层。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1302_rank4.png"
       },
       {
@@ -10943,7 +10943,7 @@
       {
         "rank": 6,
         "name": "「你」的光芒",
-        "description": "施放终结技时，无视敌方目标?的防御力。",
+        "description": "施放终结技时，无视敌方目标30%的防御力。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1302_rank6.png"
       }
     ],
@@ -11143,13 +11143,13 @@
       {
         "rank": 1,
         "name": "神经仿绣图",
-        "description": "终结技展开结界期间，我方全体造成伤害时无视目标?的防御力。",
+        "description": "终结技展开结界期间，我方全体造成伤害时无视目标20%的防御力。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1303_rank1.png"
       },
       {
         "rank": 2,
         "name": "芦前漫步",
-        "description": "阮•梅在场时，我方全体对处于弱点击破状态的敌方目标造成伤害时，攻击力提高?。",
+        "description": "阮•梅在场时，我方全体对处于弱点击破状态的敌方目标造成伤害时，攻击力提高40%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1303_rank2.png"
       },
       {
@@ -11161,7 +11161,7 @@
       {
         "rank": 4,
         "name": "寻神铜镜前",
-        "description": "当敌方目标的弱点被击破时，阮•梅自身击破特攻提高?，持续?回合。",
+        "description": "当敌方目标的弱点被击破时，阮•梅自身击破特攻提高100%，持续3回合。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1303_rank4.png"
       },
       {
@@ -11173,7 +11173,7 @@
       {
         "rank": 6,
         "name": "半脱纱巾落团扇",
-        "description": "终结技展开的结界持续时间延长?回合。天赋造成的击破伤害倍率额外提高?。",
+        "description": "终结技展开的结界持续时间延长1回合。天赋造成的击破伤害倍率额外提高200%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1303_rank6.png"
       }
     ],
@@ -11373,13 +11373,13 @@
       {
         "rank": 1,
         "name": "囚徒博弈",
-        "description": "持有【坚垣筹码】的我方目标暴击伤害提高?。施放终结技后，为我方全体提供护盾【坚垣筹码】，护盾量等同于战技提供的护盾量的?，持续?回合。",
+        "description": "持有【坚垣筹码】的我方目标暴击伤害提高20%。施放终结技后，为我方全体提供护盾【坚垣筹码】，护盾量等同于战技提供的护盾量的100%，持续3回合。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1304_rank1.png"
       },
       {
         "rank": 2,
         "name": "有限理性",
-        "description": "施放普攻时使目标的全属性抗性降低?，持续?回合。",
+        "description": "施放普攻时使目标的全属性抗性降低12%，持续3回合。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1304_rank2.png"
       },
       {
@@ -11391,7 +11391,7 @@
       {
         "rank": 4,
         "name": "意外绞刑",
-        "description": "触发天赋的追加攻击时，会先使砂金防御力提高?，持续?回合，并使天赋的追加攻击额外增加?段攻击段数。",
+        "description": "触发天赋的追加攻击时，会先使砂金防御力提高40%，持续2回合，并使天赋的追加攻击额外增加3段攻击段数。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1304_rank4.png"
       },
       {
@@ -11403,7 +11403,7 @@
       {
         "rank": 6,
         "name": "猎鹿游戏",
-        "description": "每有1个队友持有护盾，砂金造成的伤害提高?，最高不超过?。",
+        "description": "每有1个队友持有护盾，砂金造成的伤害提高50%，最高不超过150%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1304_rank6.png"
       }
     ],
@@ -11603,13 +11603,13 @@
       {
         "rank": 1,
         "name": "倨傲生祸患",
-        "description": "行迹【归纳】的叠加层数上限提高?层。战斗开始时，立即获得?层【归纳】。需要先解锁行迹【归纳】。",
+        "description": "行迹【归纳】的叠加层数上限提高4层。战斗开始时，立即获得4层【归纳】。需要先解锁行迹【归纳】。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1305_rank1.png"
       },
       {
         "rank": 2,
         "name": "显微而阐幽",
-        "description": "天赋的追加攻击击中目标时，目标每有1个负面效果，则额外造成等同于真理医生?攻击力的虚数属性附加伤害。该效果在每次追加攻击中最多触发?次。",
+        "description": "天赋的追加攻击击中目标时，目标每有1个负面效果，则额外造成等同于真理医生20%攻击力的虚数属性附加伤害。该效果在每次追加攻击中最多触发4次。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1305_rank2.png"
       },
       {
@@ -11621,7 +11621,7 @@
       {
         "rank": 4,
         "name": "盲目造痴愚",
-        "description": "触发天赋时，真理医生额外恢复?点能量。",
+        "description": "触发天赋时，真理医生额外恢复15点能量。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1305_rank4.png"
       },
       {
@@ -11633,7 +11633,7 @@
       {
         "rank": 6,
         "name": "永恒唯真理",
-        "description": "【智者的短见】的触发效果额外增加?次，天赋的追加攻击造成的伤害提高?。",
+        "description": "【智者的短见】的触发效果额外增加1次，天赋的追加攻击造成的伤害提高50%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1305_rank6.png"
       }
     ],
@@ -11833,13 +11833,13 @@
       {
         "rank": 1,
         "name": "悬置怀疑",
-        "description": "终结技施加的【谜诡】的持续时间额外增加1回合，持有【谜诡】的我方目标攻击力提高?。",
+        "description": "终结技施加的【谜诡】的持续时间额外增加1回合，持有【谜诡】的我方目标攻击力提高40%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1306_rank1.png"
       },
       {
         "rank": 2,
         "name": "虚构无端",
-        "description": "天赋每层效果额外使我方目标造成伤害时无视目标?的防御力。",
+        "description": "天赋每层效果额外使我方目标造成伤害时无视目标8%的防御力。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1306_rank2.png"
       },
       {
@@ -11863,7 +11863,7 @@
       {
         "rank": 6,
         "name": "多重解答",
-        "description": "战技的暴击伤害提高效果额外提高，提高数值等同于花火暴击伤害的?，花火施放战技时，使战技的暴击伤害提高效果对持有【谜诡】的队友都会生效，花火施放终结技时，若我方单体中有目标持有战技的暴击伤害提高效果，使该效果扩散至持有【谜诡】的队友。",
+        "description": "战技的暴击伤害提高效果额外提高，提高数值等同于花火暴击伤害的30%，花火施放战技时，使战技的暴击伤害提高效果对持有【谜诡】的队友都会生效，花火施放终结技时，若我方单体中有目标持有战技的暴击伤害提高效果，使该效果扩散至持有【谜诡】的队友。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1306_rank6.png"
       }
     ],
@@ -12063,13 +12063,13 @@
       {
         "rank": 1,
         "name": "三磅石，七阶柱",
-        "description": "当黑天鹅处于可战斗状态时，处于风化、裂伤、灼烧、触电状态下的敌方目标对应的风、物理、火、雷属性抗性分别降低?。",
+        "description": "当黑天鹅处于可战斗状态时，处于风化、裂伤、灼烧、触电状态下的敌方目标对应的风、物理、火、雷属性抗性分别降低25%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1307_rank1.png"
       },
       {
         "rank": 2,
         "name": "羔羊，请勿为我恸哭",
-        "description": "【奥迹】状态下的敌方目标被消灭时，有?的基础概率使相邻目标陷入?层【奥迹】。",
+        "description": "【奥迹】状态下的敌方目标被消灭时，有100%的基础概率使相邻目标陷入6层【奥迹】。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1307_rank2.png"
       },
       {
@@ -12081,7 +12081,7 @@
       {
         "rank": 4,
         "name": "泪水，亦是礼物",
-        "description": "【揭露】状态下，敌方目标效果抵抗降低?，且每回合开始时或被消灭时使黑天鹅恢复?点能量。能量恢复效果在【揭露】状态持续时间内最多触发1次，再次陷入【揭露】状态会刷新触发次数。",
+        "description": "【揭露】状态下，敌方目标效果抵抗降低10%，且每回合开始时或被消灭时使黑天鹅恢复8点能量。能量恢复效果在【揭露】状态持续时间内最多触发1次，再次陷入【揭露】状态会刷新触发次数。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1307_rank4.png"
       },
       {
@@ -12093,7 +12093,7 @@
       {
         "rank": 6,
         "name": "万神皆善，苦役者未知",
-        "description": "当敌方目标受到黑天鹅的队友的攻击时，黑天鹅有?的基础概率使目标陷入1层【奥迹】。\n每当黑天鹅使敌方目标陷入【奥迹】时，有?的固定概率使本次叠加的【奥迹】层数额外提高?层。",
+        "description": "当敌方目标受到黑天鹅的队友的攻击时，黑天鹅有65%的基础概率使目标陷入1层【奥迹】。\n每当黑天鹅使敌方目标陷入【奥迹】时，有50%的固定概率使本次叠加的【奥迹】层数额外提高1层。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1307_rank6.png"
       }
     ],
@@ -12293,7 +12293,7 @@
       {
         "rank": 1,
         "name": "高天寥落真言始",
-        "description": "对处于负面效果的敌方目标造成伤害时暴击率提高?。",
+        "description": "对处于负面效果的敌方目标造成伤害时暴击率提高18%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1308_rank1.png"
       },
       {
@@ -12311,7 +12311,7 @@
       {
         "rank": 4,
         "name": "亘焰燎照镜中人",
-        "description": "在敌方目标进入战斗时，使其陷入终结技伤害易伤状态，受到的终结技伤害提高?。",
+        "description": "在敌方目标进入战斗时，使其陷入终结技伤害易伤状态，受到的终结技伤害提高8%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1308_rank4.png"
       },
       {
@@ -12323,7 +12323,7 @@
       {
         "rank": 6,
         "name": "灾咎解桎梏",
-        "description": "黄泉造成的终结技伤害全属性抗性穿透提高?，施放普攻、战技造成的伤害同时视为终结技伤害，并无视弱点属性削减敌方韧性。击破弱点时，触发雷属性的弱点击破效果。",
+        "description": "黄泉造成的终结技伤害全属性抗性穿透提高20%，施放普攻、战技造成的伤害同时视为终结技伤害，并无视弱点属性削减敌方韧性。击破弱点时，触发雷属性的弱点击破效果。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1308_rank6.png"
       }
     ],
@@ -12523,13 +12523,13 @@
       {
         "rank": 1,
         "name": "微笑的国度",
-        "description": "处于【协奏】状态时，我方全体全属性抗性穿透提高?。",
+        "description": "处于【协奏】状态时，我方全体全属性抗性穿透提高24%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1309_rank1.png"
       },
       {
         "rank": 2,
         "name": "两者的午茶",
-        "description": "处于【协奏】状态时，我方全体速度提高?。天赋的能量恢复效果额外提高?点。",
+        "description": "处于【协奏】状态时，我方全体速度提高16%。天赋的能量恢复效果额外提高1点。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1309_rank2.png"
       },
       {
@@ -12541,7 +12541,7 @@
       {
         "rank": 4,
         "name": "雨滴的钥匙",
-        "description": "施放终结技时，解除我方全体的控制类负面状态，使我方全体在知更鸟处于【协奏】状态期间的效果抵抗提高?。",
+        "description": "施放终结技时，解除我方全体的控制类负面状态，使我方全体在知更鸟处于【协奏】状态期间的效果抵抗提高50%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1309_rank4.png"
       },
       {
@@ -12553,7 +12553,7 @@
       {
         "rank": 6,
         "name": "月隐的午夜",
-        "description": "处于【协奏】状态时，终结技造成的物理属性附加伤害的暴击伤害额外提高?。【月隐的午夜】效果最多触发?次，每次施放终结技时重置触发次数。",
+        "description": "处于【协奏】状态时，终结技造成的物理属性附加伤害的暴击伤害额外提高450%。【月隐的午夜】效果最多触发8次，每次施放终结技时重置触发次数。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1309_rank6.png"
       }
     ],
@@ -12753,13 +12753,13 @@
       {
         "rank": 1,
         "name": "我曾安眠，赤染之茧",
-        "description": "施放强化战技时无视目标?的防御，且强化战技不消耗战技点。",
+        "description": "施放强化战技时无视目标15%的防御，且强化战技不消耗战技点。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1310_rank1.png"
       },
       {
         "rank": 2,
         "name": "自破碎的天空坠落",
-        "description": "「完全燃烧」状态下施放强化普攻、强化战技消灭敌方目标或使目标陷入弱点击破状态时，装甲「萨姆」立即获得1个额外回合。该效果在?回合后可再次触发。",
+        "description": "「完全燃烧」状态下施放强化普攻、强化战技消灭敌方目标或使目标陷入弱点击破状态时，装甲「萨姆」立即获得1个额外回合。该效果在1回合后可再次触发。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1310_rank2.png"
       },
       {
@@ -12771,7 +12771,7 @@
       {
         "rank": 4,
         "name": "我会看见，飞萤之火",
-        "description": "「完全燃烧」状态下，装甲「萨姆」的效果抵抗提高?。",
+        "description": "「完全燃烧」状态下，装甲「萨姆」的效果抵抗提高50%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1310_rank4.png"
       },
       {
@@ -12783,7 +12783,7 @@
       {
         "rank": 6,
         "name": "绽放在终竟的明天",
-        "description": "「完全燃烧」状态下装甲「萨姆」的火属性抗性穿透提高?。施放强化普攻、强化战技时弱点击破效率提高?。",
+        "description": "「完全燃烧」状态下装甲「萨姆」的火属性抗性穿透提高20%。施放强化普攻、强化战技时弱点击破效率提高50%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1310_rank6.png"
       }
     ],
@@ -12983,13 +12983,13 @@
       {
         "rank": 1,
         "name": "飘忽的幻影",
-        "description": "施放终结技时，场上每有1个敌方目标，本次终结技的攻击段数额外增加?段，最多额外增加?段。",
+        "description": "施放终结技时，场上每有1个敌方目标，本次终结技的攻击段数额外增加1段，最多额外增加5段。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1312_rank1.png"
       },
       {
         "rank": 2,
         "name": "青春的怅望",
-        "description": "终结技每段攻击前，有?的基础概率使目标防御力降低?，持续?回合。",
+        "description": "终结技每段攻击前，有24%的基础概率使目标防御力降低16%，持续3回合。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1312_rank2.png"
       },
       {
@@ -13001,7 +13001,7 @@
       {
         "rank": 4,
         "name": "亲挚的音容",
-        "description": "终结技每段攻击的伤害倍率提高?。",
+        "description": "终结技每段攻击的伤害倍率提高6%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1312_rank4.png"
       },
       {
@@ -13013,7 +13013,7 @@
       {
         "rank": 6,
         "name": "久已生疏的憧憬",
-        "description": "施放终结技时，使自身造成的伤害提高?，持续至自身回合结束，且下一次施放战技后为我方恢复?个战技点。",
+        "description": "施放终结技时，使自身造成的伤害提高30%，持续至自身回合结束，且下一次施放战技后为我方恢复1个战技点。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1312_rank6.png"
       }
     ],
@@ -13213,13 +13213,13 @@
       {
         "rank": 1,
         "name": "千纪沉寂之末",
-        "description": "星期日施放战技时，使目标角色造成伤害时无视目标?的防御力，召唤物造成伤害时无视目标?的防御力，持续?回合。",
+        "description": "星期日施放战技时，使目标角色造成伤害时无视目标16%的防御力，召唤物造成伤害时无视目标40%的防御力，持续2回合。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1313_rank1.png"
       },
       {
         "rank": 2,
         "name": "笃信补完微缺",
-        "description": "首次施放终结技后恢复?个战技点。【蒙福者】造成的伤害提高?。",
+        "description": "首次施放终结技后恢复2个战技点。【蒙福者】造成的伤害提高30%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1313_rank2.png"
       },
       {
@@ -13231,7 +13231,7 @@
       {
         "rank": 4,
         "name": "雕塑的卷首语",
-        "description": "回合开始时，恢复?点能量。",
+        "description": "回合开始时，恢复8点能量。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1313_rank4.png"
       },
       {
@@ -13243,7 +13243,7 @@
       {
         "rank": 6,
         "name": "群星喧哗之始",
-        "description": "天赋的暴击率提高效果可以叠加，最多叠加?层，并使天赋的持续时间增加?回合。星期日施放终结技时，也可以为目标添加天赋的暴击率提高效果。天赋的暴击率提高效果生效时，当目标的暴击率超过100%，每溢出1%暴击率提高?暴击伤害。",
+        "description": "天赋的暴击率提高效果可以叠加，最多叠加3层，并使天赋的持续时间增加1回合。星期日施放终结技时，也可以为目标添加天赋的暴击率提高效果。天赋的暴击率提高效果生效时，当目标的暴击率超过100%，每溢出1%暴击率提高2%暴击伤害。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1313_rank6.png"
       }
     ],
@@ -13443,13 +13443,13 @@
       {
         "rank": 1,
         "name": "无私？亦可交割",
-        "description": "翡翠天赋的追加攻击伤害提高?，持有【收债人】状态的角色施放攻击后击中敌方目标数量等于2/1名时，翡翠额外获得?/?点充能。",
+        "description": "翡翠天赋的追加攻击伤害提高32%，持有【收债人】状态的角色施放攻击后击中敌方目标数量等于2/1名时，翡翠额外获得1/2点充能。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1314_rank1.png"
       },
       {
         "rank": 2,
         "name": "道德？谨此核押",
-        "description": "【当品】叠加至?层时，翡翠暴击率提高?。",
+        "description": "【当品】叠加至15层时，翡翠暴击率提高18%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1314_rank2.png"
       },
       {
@@ -13461,7 +13461,7 @@
       {
         "rank": 4,
         "name": "真诚？唯凭认沽",
-        "description": "施放终结技时，使翡翠造成的伤害无视敌方目标?的防御力，持续?回合。",
+        "description": "施放终结技时，使翡翠造成的伤害无视敌方目标12%的防御力，持续3回合。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1314_rank4.png"
       },
       {
@@ -13473,7 +13473,7 @@
       {
         "rank": 6,
         "name": "公平？仍须保荐",
-        "description": "场上有【收债人】状态的角色时，翡翠量子属性抗性穿透提高?，同时翡翠获得【收债人】状态。",
+        "description": "场上有【收债人】状态的角色时，翡翠量子属性抗性穿透提高20%，同时翡翠获得【收债人】状态。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1314_rank6.png"
       }
     ],
@@ -13673,13 +13673,13 @@
       {
         "rank": 1,
         "name": "扬尘孤星",
-        "description": "战斗开始时，获得1层【优势口袋】。波提欧造成伤害时无视敌方目标?的防御力。",
+        "description": "战斗开始时，获得1层【优势口袋】。波提欧造成伤害时无视敌方目标16%的防御力。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1315_rank1.png"
       },
       {
         "rank": 2,
         "name": "里程碑贩子",
-        "description": "处于【绝命对峙】并获得【优势口袋】时，恢复?个战技点，并且击破特攻提高?，持续?回合。该效果单个回合内不可重复触发，在获得溢出的【优势口袋】时也会触发。",
+        "description": "处于【绝命对峙】并获得【优势口袋】时，恢复1个战技点，并且击破特攻提高30%，持续2回合。该效果单个回合内不可重复触发，在获得溢出的【优势口袋】时也会触发。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1315_rank2.png"
       },
       {
@@ -13691,7 +13691,7 @@
       {
         "rank": 4,
         "name": "冷肉名厨",
-        "description": "处于【绝命对峙】的敌方目标受到波提欧攻击时，受到的伤害额外提高?。波提欧受到处于【绝命对峙】的敌方目标的攻击时，受到的伤害提高效果降低?。",
+        "description": "处于【绝命对峙】的敌方目标受到波提欧攻击时，受到的伤害额外提高12%。波提欧受到处于【绝命对峙】的敌方目标的攻击时，受到的伤害提高效果降低12%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1315_rank4.png"
       },
       {
@@ -13703,7 +13703,7 @@
       {
         "rank": 6,
         "name": "撬棍旅馆的浣熊",
-        "description": "触发天赋造成击破伤害时，对目标额外造成等同于原伤害倍率?的击破伤害，对相邻目标额外造成等同于原伤害倍率?的击破伤害。",
+        "description": "触发天赋造成击破伤害时，对目标额外造成等同于原伤害倍率40%的击破伤害，对相邻目标额外造成等同于原伤害倍率70%的击破伤害。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1315_rank6.png"
       }
     ],
@@ -13903,13 +13903,13 @@
       {
         "rank": 1,
         "name": "常世道返三途无六钱",
-        "description": "施放终结技进入【结印】状态期间，乱破造成的伤害无视目标?的防御，退出【结印】状态后恢复?点能量。",
+        "description": "施放终结技进入【结印】状态期间，乱破造成的伤害无视目标15%的防御，退出【结印】状态后恢复20点能量。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1317_rank1.png"
       },
       {
         "rank": 2,
         "name": "俳句暗记有识无挂碍",
-        "description": "强化普攻的前2段攻击对指定敌方单体的削韧值提高?。",
+        "description": "强化普攻的前2段攻击对指定敌方单体的削韧值提高50%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1317_rank2.png"
       },
       {
@@ -13921,7 +13921,7 @@
       {
         "rank": 4,
         "name": "经年劣化任侠无忍义",
-        "description": "【结印】状态期间，我方全体速度提高?。",
+        "description": "【结印】状态期间，我方全体速度提高12%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1317_rank4.png"
       },
       {
@@ -13933,7 +13933,7 @@
       {
         "rank": 6,
         "name": "破邪显正应报无慈悲",
-        "description": "战斗开始时乱破获得?点天赋效果的充能，且充能上限增加?点。发动【忍具•降魔花弁】第3段攻击后获得?点充能。",
+        "description": "战斗开始时乱破获得5点天赋效果的充能，且充能上限增加5点。发动【忍具•降魔花弁】第3段攻击后获得5点充能。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1317_rank6.png"
       }
     ],
@@ -14133,13 +14133,13 @@
       {
         "rank": 1,
         "name": "当一朵花含苞待放",
-        "description": "天赋为【共舞者】提供的超击破伤害倍率对我方全体角色生效，其中【共舞者】的倍率额外提高?。【共舞者】施放攻击后，对受到攻击的敌方目标额外造成等同于其韧性上限?的固定削韧（至少?点，至多?点）。该效果每个敌方目标只能触发1次，敌方目标受到致命攻击后重置该目标的可触发次数。",
+        "description": "天赋为【共舞者】提供的超击破伤害倍率对我方全体角色生效，其中【共舞者】的倍率额外提高40%。【共舞者】施放攻击后，对受到攻击的敌方目标额外造成等同于其韧性上限25%的固定削韧（至少10点，至多300点）。该效果每个敌方目标只能触发1次，敌方目标受到致命攻击后重置该目标的可触发次数。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1321_rank1.png"
       },
       {
         "rank": 2,
         "name": "新生，鲜灵，爱怜",
-        "description": "大丽花在场时，敌方全体全属性抗性降低?。敌方目标入场时，立即陷入【败谢】状态，持续?回合。",
+        "description": "大丽花在场时，敌方全体全属性抗性降低20%。敌方目标入场时，立即陷入【败谢】状态，持续3回合。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1321_rank2.png"
       },
       {
@@ -14151,7 +14151,7 @@
       {
         "rank": 4,
         "name": "可惜花蕊为虫剥蚀",
-        "description": "天赋的追加攻击的伤害次数增加?次，施放时使敌方全体目标受到的伤害提高?，持续?回合。",
+        "description": "天赋的追加攻击的伤害次数增加5次，施放时使敌方全体目标受到的伤害提高12%，持续2回合。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1321_rank4.png"
       },
       {
@@ -14163,7 +14163,7 @@
       {
         "rank": 6,
         "name": "然而它总是，致命美丽",
-        "description": "【共舞者】的击破特攻提高?。施放天赋的追加攻击时，使所有【共舞者】下一次行动提前?。",
+        "description": "【共舞者】的击破特攻提高150%。施放天赋的追加攻击时，使所有【共舞者】下一次行动提前20%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1321_rank6.png"
       }
     ],
@@ -14363,13 +14363,13 @@
       {
         "rank": 1,
         "name": "群星岸落之夜",
-        "description": "强化战技计算【解读】层数时，额外计算主目标及相邻目标中层数最高的1个目标当前【解读】层数的?。施放强化战技重置【解读】时，改为将层数重置为?层。",
+        "description": "强化战技计算【解读】层数时，额外计算主目标及相邻目标中层数最高的1个目标当前【解读】层数的50%。施放强化战技重置【解读】时，改为将层数重置为15层。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1401_rank1.png"
       },
       {
         "rank": 2,
         "name": "穿过锁孔之风",
-        "description": "大黑塔进入战斗和施放终结技后，额外获得1层【灵感】。施放强化战技后，大黑塔的下一次行动提前?。",
+        "description": "大黑塔进入战斗和施放终结技后，额外获得1层【灵感】。施放强化战技后，大黑塔的下一次行动提前35%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1401_rank2.png"
       },
       {
@@ -14381,7 +14381,7 @@
       {
         "rank": 4,
         "name": "第十六把钥匙",
-        "description": "队伍中的「智识」命途角色的速度提高?。",
+        "description": "队伍中的「智识」命途角色的速度提高12%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1401_rank4.png"
       },
       {
@@ -14393,7 +14393,7 @@
       {
         "rank": 6,
         "name": "甜饵般的答案",
-        "description": "大黑塔的冰属性抗性穿透提高?，当场上敌方目标数量等于3或以上/2/1名时，终结技的伤害倍率提高?/?/?。",
+        "description": "大黑塔的冰属性抗性穿透提高20%，当场上敌方目标数量等于3或以上/2/1名时，终结技的伤害倍率提高140%/250%/400%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1401_rank6.png"
       }
     ],
@@ -14593,13 +14593,13 @@
       {
         "rank": 1,
         "name": "飘曳金星的行列",
-        "description": "处于【间隙织线】状态下的敌人受到的伤害提高?，阿格莱雅或衣匠攻击该目标后额外恢复?点能量。",
+        "description": "处于【间隙织线】状态下的敌人受到的伤害提高15%，阿格莱雅或衣匠攻击该目标后额外恢复20点能量。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1402_rank1.png"
       },
       {
         "rank": 2,
         "name": "行舟命运的眼睑",
-        "description": "当阿格莱雅或衣匠行动时，使阿格莱雅与衣匠造成的伤害无视目标?的防御力，该效果最多叠加?层，持续至除自身与衣匠以外的任意单位主动施放技能时。",
+        "description": "当阿格莱雅或衣匠行动时，使阿格莱雅与衣匠造成的伤害无视目标14%的防御力，该效果最多叠加3层，持续至除自身与衣匠以外的任意单位主动施放技能时。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1402_rank2.png"
       },
       {
@@ -14611,7 +14611,7 @@
       {
         "rank": 4,
         "name": "大理石内的闪烁",
-        "description": "忆灵天赋的速度提高效果层数上限提高?层。阿格莱雅施放攻击后也能使衣匠获得忆灵天赋的速度提高效果。",
+        "description": "忆灵天赋的速度提高效果层数上限提高1层。阿格莱雅施放攻击后也能使衣匠获得忆灵天赋的速度提高效果。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1402_rank4.png"
       },
       {
@@ -14623,7 +14623,7 @@
       {
         "rank": 6,
         "name": "盈虚无常的金线",
-        "description": "当阿格莱雅处于【至高之姿】状态时，自身与衣匠的雷属性抗性穿透提高?，当阿格莱雅或衣匠的速度高于160/240/320点时，其造成的连携攻击伤害提高?/?/?。",
+        "description": "当阿格莱雅处于【至高之姿】状态时，自身与衣匠的雷属性抗性穿透提高20%，当阿格莱雅或衣匠的速度高于160/240/320点时，其造成的连携攻击伤害提高10%/30%/60%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1402_rank6.png"
       }
     ],
@@ -14823,13 +14823,13 @@
       {
         "rank": 1,
         "name": "拾起砂糖的祭典",
-        "description": "结界持续期间，我方目标攻击敌人后，对结界造成附加伤害的目标额外造成等同于本次攻击总伤害值?的真实伤害。",
+        "description": "结界持续期间，我方目标攻击敌人后，对结界造成附加伤害的目标额外造成等同于本次攻击总伤害值24%的真实伤害。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1403_rank1.png"
       },
       {
         "rank": 2,
         "name": "探访佳梦的向导",
-        "description": "结界造成的附加伤害提高至原伤害的?。结界造成附加伤害时，会额外造成?次附加伤害。",
+        "description": "结界造成的附加伤害提高至原伤害的120%。结界造成附加伤害时，会额外造成1次附加伤害。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1403_rank2.png"
       },
       {
@@ -14841,7 +14841,7 @@
       {
         "rank": 4,
         "name": "心意相契的安宁",
-        "description": "【神启】持续期间，我方全体造成伤害时无视目标?的防御力。",
+        "description": "【神启】持续期间，我方全体造成伤害时无视目标18%的防御力。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1403_rank4.png"
       },
       {
@@ -14853,7 +14853,7 @@
       {
         "rank": 6,
         "name": "星月满天的明日",
-        "description": "缇宝施放终结技后，对敌方全体发动天赋的追加攻击。天赋的追加攻击造成的伤害提高?。",
+        "description": "缇宝施放终结技后，对敌方全体发动天赋的追加攻击。天赋的追加攻击造成的伤害提高729%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1403_rank6.png"
       }
     ],
@@ -15053,13 +15053,13 @@
       {
         "rank": 1,
         "name": "寒风雕琢不屈的脊梁",
-        "description": "【弑神登神】对主目标造成的伤害倍率提高?，且变成对敌方全体造成等同于主目标伤害倍率的虚数属性伤害。",
+        "description": "【弑神登神】对主目标造成的伤害倍率提高30%，且变成对敌方全体造成等同于主目标伤害倍率的虚数属性伤害。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1404_rank1.png"
       },
       {
         "rank": 2,
         "name": "纷争见证尸骸的喉鸣",
-        "description": "【血仇】状态期间，万敌造成的伤害无视敌方目标?的防御力，且接受治疗后会将?的治疗数值转化为充能，累计转化的充能不超过?点。任意单位行动后重置可累计的充能。",
+        "description": "【血仇】状态期间，万敌造成的伤害无视敌方目标15%的防御力，且接受治疗后会将40%的治疗数值转化为充能，累计转化的充能不超过40点。任意单位行动后重置可累计的充能。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1404_rank2.png"
       },
       {
@@ -15071,7 +15071,7 @@
       {
         "rank": 4,
         "name": "号角惊觉缄默的狂狮",
-        "description": "【血仇】状态期间暴击伤害提高?，且受到来自敌方目标的攻击后回复等同于自身?生命上限的生命值。",
+        "description": "【血仇】状态期间暴击伤害提高30%，且受到来自敌方目标的攻击后回复等同于自身10%生命上限的生命值。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1404_rank4.png"
       },
       {
@@ -15083,7 +15083,7 @@
       {
         "rank": 6,
         "name": "往日攀陟沉积的血山",
-        "description": "进入战斗时立刻进入【血仇】状态且【弑神登神】所需的充能值降低至?点。",
+        "description": "进入战斗时立刻进入【血仇】状态且【弑神登神】所需的充能值降低至100点。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1404_rank6.png"
       }
     ],
@@ -15283,13 +15283,13 @@
       {
         "rank": 1,
         "name": "月掩星夜的魔术师",
-        "description": "首次施放战技后，恢复?个战技点。施放战技击中敌方目标时，使目标防御力降低?，持续?回合。",
+        "description": "首次施放战技后，恢复1个战技点。施放战技击中敌方目标时，使目标防御力降低16%，持续2回合。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1405_rank1.png"
       },
       {
         "rank": 2,
         "name": "真实历史的自然人",
-        "description": "敌方目标入场时，触发1次天赋的弱点添加效果，并使其全属性抗性降低?。",
+        "description": "敌方目标入场时，触发1次天赋的弱点添加效果，并使其全属性抗性降低20%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1405_rank2.png"
       },
       {
@@ -15301,7 +15301,7 @@
       {
         "rank": 4,
         "name": "坠落在山谷的炽热",
-        "description": "施放战技时，攻击力提高?，持续?回合。该效果最多叠加?层。",
+        "description": "施放战技时，攻击力提高30%，持续2回合。该效果最多叠加2层。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1405_rank4.png"
       },
       {
@@ -15313,7 +15313,7 @@
       {
         "rank": 6,
         "name": "万物皆在万物之中",
-        "description": "那刻夏造成的伤害为原伤害的?。行迹【必要的留白】的2种效果都会直接触发，不再依赖我方队伍中「智识」命途角色的数量。",
+        "description": "那刻夏造成的伤害为原伤害的130%。行迹【必要的留白】的2种效果都会直接触发，不再依赖我方队伍中「智识」命途角色的数量。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1405_rank6.png"
       }
     ],
@@ -15513,13 +15513,13 @@
       {
         "rank": 1,
         "name": "察言观色看笑脸",
-        "description": "赛飞儿记录的伤害值为原记录值的?。施放天赋的追加攻击时，赛飞儿的攻击力提高?，持续?回合。",
+        "description": "赛飞儿记录的伤害值为原记录值的150%。施放天赋的追加攻击时，赛飞儿的攻击力提高80%，持续2回合。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1406_rank1.png"
       },
       {
         "rank": 2,
         "name": "焦头烂额顺手牵",
-        "description": "赛飞儿击中敌方目标时，有?的基础概率使其受到的伤害提高?，持续?回合。",
+        "description": "赛飞儿击中敌方目标时，有120%的基础概率使其受到的伤害提高30%，持续2回合。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1406_rank2.png"
       },
       {
@@ -15531,7 +15531,7 @@
       {
         "rank": 4,
         "name": "东窗事发一溜烟",
-        "description": "【老主顾】受到我方目标攻击后，赛飞儿对其造成等同于赛飞儿?攻击力的量子属性附加伤害。",
+        "description": "【老主顾】受到我方目标攻击后，赛飞儿对其造成等同于赛飞儿50%攻击力的量子属性附加伤害。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1406_rank4.png"
       },
       {
@@ -15543,7 +15543,7 @@
       {
         "rank": 6,
         "name": "大盗无名天地间",
-        "description": "赛飞儿天赋的追加攻击造成的伤害提高?，记录时额外记录该攻击造成的非溢出伤害的?。施放终结技清空记录值后，返还本次清除记录值的?。",
+        "description": "赛飞儿天赋的追加攻击造成的伤害提高350%，记录时额外记录该攻击造成的非溢出伤害的16%。施放终结技清空记录值后，返还本次清除记录值的20%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1406_rank6.png"
       }
     ],
@@ -15743,13 +15743,13 @@
       {
         "rank": 1,
         "name": "雪地的圣女，付记忆入殓",
-        "description": "敌方目标当前生命值小于等于自身生命上限?/?时，【骸爪，冥龙之环拥】、【擘裂冥茫的爪痕】、【燎尽黯泽的焰息】、【灼掠幽墟的晦翼】对其造成的伤害为原伤害的?/?。",
+        "description": "敌方目标当前生命值小于等于自身生命上限80%/50%时，【骸爪，冥龙之环拥】、【擘裂冥茫的爪痕】、【燎尽黯泽的焰息】、【灼掠幽墟的晦翼】对其造成的伤害为原伤害的120%/140%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1407_rank1.png"
       },
       {
         "rank": 2,
         "name": "以扑翼繁花加冕",
-        "description": "召唤忆灵死龙后，遐蝶获得?层【炽意】，【炽意】最多持有?层，可用来抵扣死龙忆灵技【燎尽黯泽的焰息】的生命值消耗，并使遐蝶行动提前100%，下一次施放强化战技遐蝶获得等同于【新蕊】上限?点数的【新蕊】。",
+        "description": "召唤忆灵死龙后，遐蝶获得2层【炽意】，【炽意】最多持有2层，可用来抵扣死龙忆灵技【燎尽黯泽的焰息】的生命值消耗，并使遐蝶行动提前100%，下一次施放强化战技遐蝶获得等同于【新蕊】上限30%点数的【新蕊】。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1407_rank2.png"
       },
       {
@@ -15761,7 +15761,7 @@
       {
         "rank": 4,
         "name": "拥悲怜哀歌安眠",
-        "description": "遐蝶在场时，我方全体受到治疗时的回复量提高?。",
+        "description": "遐蝶在场时，我方全体受到治疗时的回复量提高20%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1407_rank4.png"
       },
       {
@@ -15773,7 +15773,7 @@
       {
         "rank": 6,
         "name": "待流年奔涌破茧",
-        "description": "遐蝶与死龙造成伤害时，量子属性抗性穿透提高?。死龙攻击期间可以无视弱点属性削减敌方韧性，击破弱点时，触发量子属性的弱点击破效果，触发天赋【灼掠幽墟的晦翼】的弹射次数额外增加?次。",
+        "description": "遐蝶与死龙造成伤害时，量子属性抗性穿透提高20%。死龙攻击期间可以无视弱点属性削减敌方韧性，击破弱点时，触发量子属性的弱点击破效果，触发天赋【灼掠幽墟的晦翼】的弹射次数额外增加3次。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1407_rank6.png"
       }
     ],
@@ -15973,13 +15973,13 @@
       {
         "rank": 1,
         "name": "火与光，善恶的化身",
-        "description": "卡厄斯兰那的额外回合的基础速度继承比例提高至?。单场战斗中每有1个敌方目标被消灭，使其额外提高?，最多提高至?。\n施放终结技时，暴击伤害提高?，持续?回合。",
+        "description": "卡厄斯兰那的额外回合的基础速度继承比例提高至66%。单场战斗中每有1个敌方目标被消灭，使其额外提高1.5%，最多提高至84%。\n施放终结技时，暴击伤害提高50%，持续3回合。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1408_rank1.png"
       },
       {
         "rank": 2,
         "name": "天与地，世间的泡沫",
-        "description": "卡厄斯兰那的物理属性抗性穿透提高?。单次施放【支柱•死星天裁】消耗【毁伤】点数达到?点时，获得1个额外回合。",
+        "description": "卡厄斯兰那的物理属性抗性穿透提高20%。单次施放【支柱•死星天裁】消耗【毁伤】点数达到4点时，获得1个额外回合。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1408_rank2.png"
       },
       {
@@ -15991,7 +15991,7 @@
       {
         "rank": 4,
         "name": "多少泰坦面目模糊",
-        "description": "施放【灾厄•弑魂焚诏】时，额外获得?层【弑魂之炽】。",
+        "description": "施放【灾厄•弑魂焚诏】时，额外获得4层【弑魂之炽】。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1408_rank4.png"
       },
       {
@@ -16003,7 +16003,7 @@
       {
         "rank": 6,
         "name": "亘古长升，蚀火残阳",
-        "description": "【火种】的可溢出点数不再拥有上限。战斗开始时，获得?点【火种】。\n施放【支柱•死星天裁】的攻击后，对生命值最高的敌方目标额外造成等同于本次攻击总伤害值?的真实伤害。",
+        "description": "【火种】的可溢出点数不再拥有上限。战斗开始时，获得6点【火种】。\n施放【支柱•死星天裁】的攻击后，对生命值最高的敌方目标额外造成等同于本次攻击总伤害值36%的真实伤害。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1408_rank6.png"
       }
     ],
@@ -16203,13 +16203,13 @@
       {
         "rank": 1,
         "name": "呵护黑夜中的烛火",
-        "description": "风堇处于【雨过天晴】状态时，我方全体目标生命上限额外提高?，并且施放攻击后立即回复等同于风堇?生命上限的生命值。",
+        "description": "风堇处于【雨过天晴】状态时，我方全体目标生命上限额外提高50%，并且施放攻击后立即回复等同于风堇8%生命上限的生命值。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1409_rank1.png"
       },
       {
         "rank": 2,
         "name": "请来我的庭院坐坐",
-        "description": "我方目标生命值降低时，速度提高?，持续?回合。",
+        "description": "我方目标生命值降低时，速度提高30%，持续2回合。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1409_rank2.png"
       },
       {
@@ -16221,7 +16221,7 @@
       {
         "rank": 4,
         "name": "送你一颗橙晖琥珀",
-        "description": "行迹【暴风停歇】获得强化，每超过?点速度，风堇和小伊卡的暴击伤害额外提高?。",
+        "description": "行迹【暴风停歇】获得强化，每超过1点速度，风堇和小伊卡的暴击伤害额外提高2%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1409_rank4.png"
       },
       {
@@ -16233,7 +16233,7 @@
       {
         "rank": 6,
         "name": "天空…应我的祈愿",
-        "description": "小伊卡施放忆灵技清空累计治疗数值改为?，小伊卡在场时，我方全体目标的全属性抗性穿透提高?。",
+        "description": "小伊卡施放忆灵技清空累计治疗数值改为12%，小伊卡在场时，我方全体目标的全属性抗性穿透提高20%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1409_rank6.png"
       }
     ],
@@ -16433,7 +16433,7 @@
       {
         "rank": 1,
         "name": "你问我心为何悲伤",
-        "description": "海瑟音在场时，我方目标造成的持续伤害为原伤害的?，当海瑟音通过天赋使敌人陷入风化/裂伤/灼烧/触电状态时，有?的基础概率额外使其陷入一次与原天赋效果相同，且可同时存在的风化/裂伤/灼烧/触电状态。",
+        "description": "海瑟音在场时，我方目标造成的持续伤害为原伤害的116%，当海瑟音通过天赋使敌人陷入风化/裂伤/灼烧/触电状态时，有100%的基础概率额外使其陷入一次与原天赋效果相同，且可同时存在的风化/裂伤/灼烧/触电状态。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1410_rank1.png"
       },
       {
@@ -16451,7 +16451,7 @@
       {
         "rank": 4,
         "name": "看呀，时间为何流淌",
-        "description": "结界持续期间，使敌方全体全属性抗性降低?。",
+        "description": "结界持续期间，使敌方全体全属性抗性降低20%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1410_rank4.png"
       },
       {
@@ -16463,7 +16463,7 @@
       {
         "rank": 6,
         "name": "沉没的你，何日返乡",
-        "description": "结界持续期间，每回合开始时或我方目标单次攻击后，触发海瑟音物理持续伤害效果的次数上限提高至?次，且造成的伤害倍率提高?。",
+        "description": "结界持续期间，每回合开始时或我方目标单次攻击后，触发海瑟音物理持续伤害效果的次数上限提高至12次，且造成的伤害倍率提高20%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1410_rank6.png"
       }
     ],
@@ -16663,13 +16663,13 @@
       {
         "rank": 1,
         "name": "夺走一切王冠",
-        "description": "持有【军功】的角色造成伤害时无视目标?的防御力。若当前【军功】已升级为【爵位】，则该角色造成战技伤害时额外无视目标?的防御力。刻律德菈施放战技时，为指定我方目标恢复?点能量。",
+        "description": "持有【军功】的角色造成伤害时无视目标16%的防御力。若当前【军功】已升级为【爵位】，则该角色造成战技伤害时额外无视目标20%的防御力。刻律德菈施放战技时，为指定我方目标恢复2点能量。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1412_rank1.png"
       },
       {
         "rank": 2,
         "name": "凝聚万众宏愿",
-        "description": "持有【军功】的角色造成的伤害提高?。场上存在持有【军功】的队友时，刻律德菈造成的伤害提高?。",
+        "description": "持有【军功】的角色造成的伤害提高40%。场上存在持有【军功】的队友时，刻律德菈造成的伤害提高160%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1412_rank2.png"
       },
       {
@@ -16681,7 +16681,7 @@
       {
         "rank": 4,
         "name": "重塑天地人间",
-        "description": "终结技的伤害倍率提高?。",
+        "description": "终结技的伤害倍率提高240%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1412_rank4.png"
       },
       {
@@ -16693,7 +16693,7 @@
       {
         "rank": 6,
         "name": "征途只在，星辰大海",
-        "description": "持有【军功】的角色全属性抗性穿透提高?，且【军功】触发的附加伤害倍率提高?。场上存在持有【军功】的队友时，刻律德菈全属性抗性穿透提高?。",
+        "description": "持有【军功】的角色全属性抗性穿透提高20%，且【军功】触发的附加伤害倍率提高300%。场上存在持有【军功】的队友时，刻律德菈全属性抗性穿透提高20%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1412_rank6.png"
       }
     ],
@@ -16893,13 +16893,13 @@
       {
         "rank": 1,
         "name": "睡吧，长夜有所梦",
-        "description": "长夜月在场时，场上敌方目标数量等于4或以上/3/2/1名时，我方忆灵造成的伤害为原伤害的?/?/?/?。",
+        "description": "长夜月在场时，场上敌方目标数量等于4或以上/3/2/1名时，我方忆灵造成的伤害为原伤害的120%/125%/130%/150%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1413_rank1.png"
       },
       {
         "rank": 2,
         "name": "听，沉眠中的呓语",
-        "description": "长夜月和忆灵「长夜」的暴击伤害提高?，每当长夜月获得【忆质】时，使获得的【忆质】数量提高?点。施放终结技时，额外获得?点【至暗之谜】的充能。",
+        "description": "长夜月和忆灵「长夜」的暴击伤害提高40%，每当长夜月获得【忆质】时，使获得的【忆质】数量提高2点。施放终结技时，额外获得2点【至暗之谜】的充能。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1413_rank2.png"
       },
       {
@@ -16911,7 +16911,7 @@
       {
         "rank": 4,
         "name": "醒来，便是你的明天",
-        "description": "长夜月在场时，我方忆灵的弱点击破效率提高?，忆灵「长夜」的弱点击破效率额外提高?。",
+        "description": "长夜月在场时，我方忆灵的弱点击破效率提高25%，忆灵「长夜」的弱点击破效率额外提高25%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1413_rank4.png"
       },
       {
@@ -16923,7 +16923,7 @@
       {
         "rank": 6,
         "name": "就这样，一直",
-        "description": "长夜月在场时，我方全体目标的全属性抗性穿透提高?。忆灵「长夜」施放【迷梦，流失，如露】后，长夜月获得本次攻击消耗【忆质】数量的?。",
+        "description": "长夜月在场时，我方全体目标的全属性抗性穿透提高20%。忆灵「长夜」施放【迷梦，流失，如露】后，长夜月获得本次攻击消耗【忆质】数量的30%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1413_rank6.png"
       }
     ],
@@ -17123,13 +17123,13 @@
       {
         "rank": 1,
         "name": "蜕却旧鳞的荒龙",
-        "description": "丹恒•腾荒施放终结技时，恢复?个战技点，使【同袍】全属性抗性穿透提高?，持续?回合。",
+        "description": "丹恒•腾荒施放终结技时，恢复1个战技点，使【同袍】全属性抗性穿透提高18%，持续3回合。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1414_rank1.png"
       },
       {
         "rank": 2,
         "name": "守望开拓的赤子",
-        "description": "终结技的强化龙灵行动效果额外增加?次，丹恒•腾荒施放终结技后【龙灵】行动提前100%。强化【龙灵】行动时，【同袍】造成的附加伤害为原伤害的?，且本次提供的护盾量为原护盾量的?。",
+        "description": "终结技的强化龙灵行动效果额外增加2次，丹恒•腾荒施放终结技后【龙灵】行动提前100%。强化【龙灵】行动时，【同袍】造成的附加伤害为原伤害的200%，且本次提供的护盾量为原护盾量的200%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1414_rank2.png"
       },
       {
@@ -17141,7 +17141,7 @@
       {
         "rank": 4,
         "name": "金石立誓，此身为舟",
-        "description": "【同袍】受到的伤害降低?。",
+        "description": "【同袍】受到的伤害降低20%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1414_rank4.png"
       },
       {
@@ -17153,7 +17153,7 @@
       {
         "rank": 6,
         "name": "草木微尘皆入梦中",
-        "description": "场上存在【同袍】时，使敌方全体受到的伤害提高?，【同袍】造成伤害时，无视敌方目标?的防御力。丹恒•腾荒施放终结技时，【同袍】会对敌方全体造成等同于【同袍】?攻击力的相应属性附加伤害。",
+        "description": "场上存在【同袍】时，使敌方全体受到的伤害提高20%，【同袍】造成伤害时，无视敌方目标12%的防御力。丹恒•腾荒施放终结技时，【同袍】会对敌方全体造成等同于【同袍】330%攻击力的相应属性附加伤害。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1414_rank6.png"
       }
     ],
@@ -17353,13 +17353,13 @@
       {
         "rank": 1,
         "name": "空白，在诗篇的起点",
-        "description": "德谬歌触发忆灵技【献予「真我」之诗】施放【花与箭的舞曲】时获得?点【追忆】并使本次攻击的弹射次数额外增加?次。",
+        "description": "德谬歌触发忆灵技【献予「真我」之诗】施放【花与箭的舞曲】时获得6点【追忆】并使本次攻击的弹射次数额外增加12次。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1415_rank1.png"
       },
       {
         "rank": 2,
         "name": "十三种光彩，倒映明天",
-        "description": "进入战斗时，额外获得?点【追忆】。每有1名不同的我方角色获得德谬歌忆灵技的增益效果，我方目标通过战技的结界造成的真实伤害倍率提高?，最多提高?。",
+        "description": "进入战斗时，额外获得12点【追忆】。每有1名不同的我方角色获得德谬歌忆灵技的增益效果，我方目标通过战技的结界造成的真实伤害倍率提高6%，最多提高24%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1415_rank2.png"
       },
       {
@@ -17371,7 +17371,7 @@
       {
         "rank": 4,
         "name": "请笑着，写就下一页",
-        "description": "德谬歌每施放1次【花与箭的舞曲】后，本场战斗中触发忆灵技【献予「真我」之诗】的弹射伤害倍率提高?，最多可叠加?层。",
+        "description": "德谬歌每施放1次【花与箭的舞曲】后，本场战斗中触发忆灵技【献予「真我」之诗】的弹射伤害倍率提高6%，最多可叠加24层。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1415_rank4.png"
       },
       {
@@ -17383,7 +17383,7 @@
       {
         "rank": 6,
         "name": "记忆，化作涟漪片片♪",
-        "description": "昔涟首次施放终结技时，使我方全体行动提前?。德谬歌每次触发忆灵技【献予「真我」之诗】施放【花与箭的舞曲】时，根据本场战斗中已触发的次数获得以下效果：\n1次：德谬歌在场时，敌方全体目标的防御力降低?；\n至少2次：使我方全体行动提前?。",
+        "description": "昔涟首次施放终结技时，使我方全体行动提前100%。德谬歌每次触发忆灵技【献予「真我」之诗】施放【花与箭的舞曲】时，根据本场战斗中已触发的次数获得以下效果：\n1次：德谬歌在场时，敌方全体目标的防御力降低20%；\n至少2次：使我方全体行动提前24%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1415_rank6.png"
       }
     ],
@@ -17583,13 +17583,13 @@
       {
         "rank": 1,
         "name": "#全网热搜：她是谁？",
-        "description": "阿哈时刻结束时获得?个笑点。当前每拥有1个笑点，使我方全体全属性抗性穿透提高?，最多提高?。",
+        "description": "阿哈时刻结束时获得5个笑点。当前每拥有1个笑点，使我方全体全属性抗性穿透提高1.5%，最多提高15%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1501_rank1.png"
       },
       {
         "rank": 2,
         "name": "#观众的眼睛是雪亮的",
-        "description": "阿哈时刻结束时使火花获得1个额外回合和?个【爆点】。每消耗1个【爆点】使自身暴击伤害提高?，持续?回合，最多叠加?层。",
+        "description": "阿哈时刻结束时使火花获得1个额外回合和2个【爆点】。每消耗1个【爆点】使自身暴击伤害提高10%，持续2回合，最多叠加4层。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1501_rank2.png"
       },
       {
@@ -17601,7 +17601,7 @@
       {
         "rank": 4,
         "name": "#硬控！顶级表情管理",
-        "description": "施放终结技时额外获得?个笑点，使自身欢愉度提高?，持续?回合。",
+        "description": "施放终结技时额外获得5个笑点，使自身欢愉度提高36%，持续3回合。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1501_rank4.png"
       },
       {
@@ -17613,7 +17613,7 @@
       {
         "rank": 6,
         "name": "#锵锵，即将绝版的我",
-        "description": "全属性抗性穿透提高?。欢愉技每计入?个笑点使其造成的额外伤害次数增加1次，最多增加至?次。",
+        "description": "全属性抗性穿透提高20%。欢愉技每计入1个笑点使其造成的额外伤害次数增加1次，最多增加至40次。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1501_rank6.png"
       }
     ],
@@ -17813,13 +17813,13 @@
       {
         "rank": 1,
         "name": "何处落玉，盈盈笑语",
-        "description": "终结技触发的阿哈的额外回合固定计入笑点数提高至?个。我方全体目标造成欢愉伤害时无视目标?防御力。",
+        "description": "终结技触发的阿哈的额外回合固定计入笑点数提高至40个。我方全体目标造成欢愉伤害时无视目标20%防御力。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1502_rank1.png"
       },
       {
         "rank": 2,
         "name": "飞箭无目，青翎为瞳",
-        "description": "结界持续期间，我方全体目标速度提高?，欢愉度额外提高?。",
+        "description": "结界持续期间，我方全体目标速度提高12%，欢愉度额外提高16%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1502_rank2.png"
       },
       {
@@ -17831,7 +17831,7 @@
       {
         "rank": 4,
         "name": "命若素绡，拈羽点彩",
-        "description": "爻光终结技触发的阿哈的额外回合中，我方全体角色欢愉技造成的伤害为原伤害的?。",
+        "description": "爻光终结技触发的阿哈的额外回合中，我方全体角色欢愉技造成的伤害为原伤害的150%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1502_rank4.png"
       },
       {
@@ -17843,7 +17843,7 @@
       {
         "rank": 6,
         "name": "牵丝渡引，天星垂虹",
-        "description": "我方全体目标的欢愉伤害增笑?。爻光欢愉技的伤害倍率提高原倍率的?。",
+        "description": "我方全体目标的欢愉伤害增笑25%。爻光欢愉技的伤害倍率提高原倍率的100%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1502_rank6.png"
       }
     ],
@@ -18043,13 +18043,13 @@
       {
         "rank": 1,
         "name": "坠临万界的星芒",
-        "description": "施放终结技消灭敌方目标时，开拓者额外恢复?点能量，该效果每次攻击只能触发1次。",
+        "description": "施放终结技消灭敌方目标时，开拓者额外恢复10点能量，该效果每次攻击只能触发1次。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/8001_rank1.png"
       },
       {
         "rank": 2,
         "name": "因缘假合的人身",
-        "description": "施放攻击后，若击中的敌方目标弱点为物理属性，则回复等同于开拓者?攻击力的生命值。",
+        "description": "施放攻击后，若击中的敌方目标弱点为物理属性，则回复等同于开拓者5%攻击力的生命值。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/8001_rank2.png"
       },
       {
@@ -18061,7 +18061,7 @@
       {
         "rank": 4,
         "name": "凝眸毁灭的瞬间",
-        "description": "击中处于弱点击破状态的敌方目标时，暴击率提高?。",
+        "description": "击中处于弱点击破状态的敌方目标时，暴击率提高25%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/8001_rank4.png"
       },
       {
@@ -18273,13 +18273,13 @@
       {
         "rank": 1,
         "name": "坠临万界的星芒",
-        "description": "施放终结技消灭敌方目标时，开拓者额外恢复?点能量，该效果每次攻击只能触发1次。",
+        "description": "施放终结技消灭敌方目标时，开拓者额外恢复10点能量，该效果每次攻击只能触发1次。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/8002_rank1.png"
       },
       {
         "rank": 2,
         "name": "因缘假合的人身",
-        "description": "施放攻击后，若击中的敌方目标弱点为物理属性，则回复等同于开拓者?攻击力的生命值。",
+        "description": "施放攻击后，若击中的敌方目标弱点为物理属性，则回复等同于开拓者5%攻击力的生命值。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/8002_rank2.png"
       },
       {
@@ -18291,7 +18291,7 @@
       {
         "rank": 4,
         "name": "凝眸毁灭的瞬间",
-        "description": "击中处于弱点击破状态的敌方目标时，暴击率提高?。",
+        "description": "击中处于弱点击破状态的敌方目标时，暴击率提高25%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/8002_rank4.png"
       },
       {
@@ -18503,13 +18503,13 @@
       {
         "rank": 1,
         "name": "大地芯髓的鸣动",
-        "description": "施放普攻时，额外造成等同于开拓者?防御力的火属性伤害；施放强化普攻时，额外造成等同于开拓者?防御力的火属性伤害。",
+        "description": "施放普攻时，额外造成等同于开拓者25%防御力的火属性伤害；施放强化普攻时，额外造成等同于开拓者50%防御力的火属性伤害。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/8003_rank1.png"
       },
       {
         "rank": 2,
         "name": "古老寒铁的坚守",
-        "description": "触发天赋时，为我方全体提供的护盾能够额外抵消等同于开拓者防御力?+?的伤害。",
+        "description": "触发天赋时，为我方全体提供的护盾能够额外抵消等同于开拓者防御力2%+27的伤害。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/8003_rank2.png"
       },
       {
@@ -18521,7 +18521,7 @@
       {
         "rank": 4,
         "name": "驻留文明的誓言",
-        "description": "战斗开始时，立即获得?层【灼热意志】。",
+        "description": "战斗开始时，立即获得4层【灼热意志】。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/8003_rank4.png"
       },
       {
@@ -18533,7 +18533,7 @@
       {
         "rank": 6,
         "name": "永屹城垣的壁垒",
-        "description": "施放强化普攻或终结技后，开拓者的防御力提高?，最多叠加?层。",
+        "description": "施放强化普攻或终结技后，开拓者的防御力提高10%，最多叠加3层。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/8003_rank6.png"
       }
     ],
@@ -18733,13 +18733,13 @@
       {
         "rank": 1,
         "name": "大地芯髓的鸣动",
-        "description": "施放普攻时，额外造成等同于开拓者?防御力的火属性伤害；施放强化普攻时，额外造成等同于开拓者?防御力的火属性伤害。",
+        "description": "施放普攻时，额外造成等同于开拓者25%防御力的火属性伤害；施放强化普攻时，额外造成等同于开拓者50%防御力的火属性伤害。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/8004_rank1.png"
       },
       {
         "rank": 2,
         "name": "古老寒铁的坚守",
-        "description": "触发天赋时，为我方全体提供的护盾能够额外抵消等同于开拓者防御力?+?的伤害。",
+        "description": "触发天赋时，为我方全体提供的护盾能够额外抵消等同于开拓者防御力2%+27的伤害。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/8004_rank2.png"
       },
       {
@@ -18751,7 +18751,7 @@
       {
         "rank": 4,
         "name": "驻留文明的誓言",
-        "description": "战斗开始时，立即获得?层【灼热意志】。",
+        "description": "战斗开始时，立即获得4层【灼热意志】。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/8004_rank4.png"
       },
       {
@@ -18763,7 +18763,7 @@
       {
         "rank": 6,
         "name": "永屹城垣的壁垒",
-        "description": "施放强化普攻或终结技后，开拓者的防御力提高?，最多叠加?层。",
+        "description": "施放强化普攻或终结技后，开拓者的防御力提高10%，最多叠加3层。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/8004_rank6.png"
       }
     ],
@@ -18963,13 +18963,13 @@
       {
         "rank": 1,
         "name": "您的最佳观众席",
-        "description": "施放首次战技后立即回复?点战技点。",
+        "description": "施放首次战技后立即回复1点战技点。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/8005_rank1.png"
       },
       {
         "rank": 2,
         "name": "越狱的跨洋彩虹",
-        "description": "战斗开始时，开拓者的能量恢复效率提高?，持续?回合。",
+        "description": "战斗开始时，开拓者的能量恢复效率提高25%，持续3回合。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/8005_rank2.png"
       },
       {
@@ -18981,7 +18981,7 @@
       {
         "rank": 4,
         "name": "袒护白鸽的冠冕",
-        "description": "开拓者在场时，使除自身以外的队友击破特攻提高，提高数值等同于开拓者?的击破特攻。",
+        "description": "开拓者在场时，使除自身以外的队友击破特攻提高，提高数值等同于开拓者15%的击破特攻。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/8005_rank4.png"
       },
       {
@@ -18993,7 +18993,7 @@
       {
         "rank": 6,
         "name": "明天，栖息聚光之下",
-        "description": "战技的额外伤害次数增加?次。",
+        "description": "战技的额外伤害次数增加2次。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/8005_rank6.png"
       }
     ],
@@ -19193,13 +19193,13 @@
       {
         "rank": 1,
         "name": "您的最佳观众席",
-        "description": "施放首次战技后立即回复?点战技点。",
+        "description": "施放首次战技后立即回复1点战技点。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/8006_rank1.png"
       },
       {
         "rank": 2,
         "name": "越狱的跨洋彩虹",
-        "description": "战斗开始时，开拓者的能量恢复效率提高?，持续?回合。",
+        "description": "战斗开始时，开拓者的能量恢复效率提高25%，持续3回合。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/8006_rank2.png"
       },
       {
@@ -19211,7 +19211,7 @@
       {
         "rank": 4,
         "name": "袒护白鸽的冠冕",
-        "description": "开拓者在场时，使除自身以外的队友击破特攻提高，提高数值等同于开拓者?的击破特攻。",
+        "description": "开拓者在场时，使除自身以外的队友击破特攻提高，提高数值等同于开拓者15%的击破特攻。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/8006_rank4.png"
       },
       {
@@ -19223,7 +19223,7 @@
       {
         "rank": 6,
         "name": "明天，栖息聚光之下",
-        "description": "战技的额外伤害次数增加?次。",
+        "description": "战技的额外伤害次数增加2次。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/8006_rank6.png"
       }
     ],
@@ -19423,13 +19423,13 @@
       {
         "rank": 1,
         "name": "现在的记叙者",
-        "description": "持有【迷迷的声援】的我方目标暴击率提高?。当我方目标持有【迷迷的声援】时，【迷迷的声援】的效果对该目标的忆灵/忆师也生效，该效果不可叠加。",
+        "description": "持有【迷迷的声援】的我方目标暴击率提高10%。当我方目标持有【迷迷的声援】时，【迷迷的声援】的效果对该目标的忆灵/忆师也生效，该效果不可叠加。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/8007_rank1.png"
       },
       {
         "rank": 2,
         "name": "过往的拾遗者",
-        "description": "除迷迷以外的我方忆灵行动时，开拓者恢复?点能量。该效果每回合最多触发?次，开拓者回合开始时重置可触发次数。",
+        "description": "除迷迷以外的我方忆灵行动时，开拓者恢复8点能量。该效果每回合最多触发1次，开拓者回合开始时重置可触发次数。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/8007_rank2.png"
       },
       {
@@ -19441,7 +19441,7 @@
       {
         "rank": 4,
         "name": "缪斯的新舞伴",
-        "description": "使能量上限为0的我方目标主动施放技能时，迷迷也能够获得?充能，并且该目标通过【迷迷的声援】造成的真实伤害倍率额外提高?。",
+        "description": "使能量上限为0的我方目标主动施放技能时，迷迷也能够获得3%充能，并且该目标通过【迷迷的声援】造成的真实伤害倍率额外提高6%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/8007_rank4.png"
       },
       {
@@ -19653,13 +19653,13 @@
       {
         "rank": 1,
         "name": "现在的记叙者",
-        "description": "持有【迷迷的声援】的我方目标暴击率提高?。当我方目标持有【迷迷的声援】时，【迷迷的声援】的效果对该目标的忆灵/忆师也生效，该效果不可叠加。",
+        "description": "持有【迷迷的声援】的我方目标暴击率提高10%。当我方目标持有【迷迷的声援】时，【迷迷的声援】的效果对该目标的忆灵/忆师也生效，该效果不可叠加。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/8008_rank1.png"
       },
       {
         "rank": 2,
         "name": "过往的拾遗者",
-        "description": "除迷迷以外的我方忆灵行动时，开拓者恢复?点能量。该效果每回合最多触发?次，开拓者回合开始时重置可触发次数。",
+        "description": "除迷迷以外的我方忆灵行动时，开拓者恢复8点能量。该效果每回合最多触发1次，开拓者回合开始时重置可触发次数。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/8008_rank2.png"
       },
       {
@@ -19671,7 +19671,7 @@
       {
         "rank": 4,
         "name": "缪斯的新舞伴",
-        "description": "使能量上限为0的我方目标主动施放技能时，迷迷也能够获得?充能，并且该目标通过【迷迷的声援】造成的真实伤害倍率额外提高?。",
+        "description": "使能量上限为0的我方目标主动施放技能时，迷迷也能够获得3%充能，并且该目标通过【迷迷的声援】造成的真实伤害倍率额外提高6%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/8008_rank4.png"
       },
       {

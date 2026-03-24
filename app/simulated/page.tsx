@@ -1,4 +1,18 @@
-// 異相仲裁頁面
+'use client';
+
+import LineChart from '@/components/LineChart';
+import type { ChartPoint } from '@/components/LineChart';
+
+// 異相仲裁 — 典型週期怪物血量（差分宇宙路徑）
+const arbitrationData: ChartPoint[] = [
+  { label: '精英1', hp: 800_000,   note: '強化精英' },
+  { label: '精英2', hp: 1_200_000, note: '強化精英組' },
+  { label: 'BOSS1', hp: 3_500_000, note: '關底 BOSS (第1層)' },
+  { label: '精英3', hp: 950_000  },
+  { label: '精英4', hp: 1_500_000, note: '雙精英' },
+  { label: 'BOSS2', hp: 6_000_000, note: '關底 BOSS (第2層)' },
+  { label: 'BOSS3', hp: 10_000_000, note: '終局 BOSS' },
+];
 
 export default function SimulatedPage() {
   const rules = [
@@ -74,9 +88,17 @@ export default function SimulatedPage() {
         ))}
       </div>
 
-      <div className="p-4 rounded-xl border border-white/10 bg-white/3">
+      {/* 血量折線圖 */}
+      <h2 className="text-lg font-bold text-white mb-4">怪物血量波動</h2>
+      <LineChart
+        data={arbitrationData}
+        color="#a78bfa"
+        title="異相仲裁 — 各節點敵人血量參考（v4.0 典型週期）"
+      />
+
+      <div className="mt-6 p-4 rounded-xl border border-white/10 bg-white/3">
         <p className="text-xs text-gray-500 text-center">
-          仲裁陣容週更資訊及最優祝福路線分析功能開發中，敬請期待。
+          血量為 v4.0 週期參考估算，實際數值因週期設定而異。仲裁陣容週更資訊開發中，敬請期待。
         </p>
       </div>
     </div>

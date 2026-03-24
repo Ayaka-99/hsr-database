@@ -15,8 +15,12 @@ export default function HomePage() {
   const [rarity, setRarity] = useState<4 | 5 | 0>(0);
   const [search, setSearch] = useState('');
 
+  // 女性開拓者 ID（同屬性男性開拓者卡已代表，詳細頁可切換）
+  const TB_FEMALE_IDS = new Set(['8002', '8004', '8006', '8008']);
+
   // 依篩選條件與搜尋關鍵字過濾角色
   const filtered = ALL_CHARACTERS.filter(c => {
+    if (TB_FEMALE_IDS.has(c.id)) return false;
     if (rarity !== 0 && c.rarity !== rarity) return false;
     if (element !== '' && c.element !== element) return false;
     if (path !== '' && c.path !== path) return false;

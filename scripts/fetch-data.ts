@@ -154,9 +154,11 @@ interface ApiSkill {
 }
 
 interface ApiRank {
+  id: number;
   name: string;
   desc: string;
   icon: string;  // 例如 "SkillIcon_1001_Rank1.png"
+  param_list: number[];
 }
 
 interface ApiTraceNode {
@@ -234,9 +236,8 @@ async function fetchCharacters(baseUrl: string): Promise<Character[]> {
       const eidolons: Eidolon[] = Object.entries(detail.ranks).map(([rank, r]) => ({
         rank: parseInt(rank) as Eidolon['rank'],
         name: r.name,
-        description: cleanDesc(r.desc),
-        // 使用 API 回傳的 icon 名稱轉換正確圖片路徑
-        // e.g. SkillIcon_1001_Ultra.png → icon/skill/1001_ultimate.png
+        // 使用 param_list 解析實際數值，替代 ? 佔位符
+        description: resolveDesc(stripFormatOnly(r.desc), r.param_list ?? []),
         image: rankIconToUrl(id, r.icon),
       }));
 

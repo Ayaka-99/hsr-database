@@ -1,86 +1,118 @@
-// 三深淵頁面：忘卻之庭、末日幻影、純虛數幻境
+'use client';
+
+import LineChart from '@/components/LineChart';
+import type { ChartPoint } from '@/components/LineChart';
+
+// 忘卻之庭 (Memory of Chaos) — 4.0 期 HP 參考值
+const mocData: ChartPoint[] = [
+  { label: 'F1',  hp: 350_000  },
+  { label: 'F2',  hp: 480_000  },
+  { label: 'F3',  hp: 620_000  },
+  { label: 'F4',  hp: 850_000  },
+  { label: 'F5',  hp: 1_100_000 },
+  { label: 'F6',  hp: 1_400_000 },
+  { label: 'F7',  hp: 1_850_000 },
+  { label: 'F8',  hp: 2_400_000 },
+  { label: 'F9',  hp: 2_900_000 },
+  { label: 'F10', hp: 3_500_000, note: 'BOSS: 陷沒之夢' },
+  { label: 'F11', hp: 4_200_000 },
+  { label: 'F12', hp: 5_200_000, note: 'BOSS: 失憶芽孢·湮滅' },
+];
+
+// 末日幻影 (Apocalyptic Shadow) — 4.0 期血量階段
+const asData: ChartPoint[] = [
+  { label: 'P1',  hp: 8_500_000, note: '開場 (夢錨)' },
+  { label: 'P2',  hp: 6_000_000, note: '70% 階段' },
+  { label: 'P3',  hp: 3_200_000, note: '40% 相位變換' },
+  { label: 'P4',  hp: 800_000,   note: '10% 最終討伐' },
+  { label: 'B2-1',hp: 10_000_000, note: 'BOSS2 (界域·霞頌)' },
+  { label: 'B2-2',hp: 7_500_000, note: '75%' },
+  { label: 'B2-3',hp: 3_800_000, note: '38%' },
+];
+
+// 純虛數幻境 (Pure Fiction) — 4.0 期波次累積 HP
+const pfData: ChartPoint[] = [
+  { label: 'W1-1', hp: 480_000  },
+  { label: 'W1-2', hp: 560_000  },
+  { label: 'W2-1', hp: 780_000  },
+  { label: 'W2-2', hp: 950_000  },
+  { label: 'W3-1', hp: 1_300_000 },
+  { label: 'W3-2', hp: 1_600_000 },
+  { label: 'W4-1', hp: 2_100_000 },
+  { label: 'W4-2', hp: 2_600_000, note: '狂暴雜兵潮' },
+];
+
+type Mode = 'moc' | 'as' | 'pf';
+
+const MODES: { id: Mode; label: string; en: string; color: string; border: string; data: ChartPoint[] }[] = [
+  {
+    id: 'moc', label: '忘卻之庭', en: 'Memory of Chaos',
+    color: '#a78bfa', border: 'border-violet-500/30 hover:border-violet-500/60',
+    data: mocData,
+  },
+  {
+    id: 'as', label: '末日幻影', en: 'Apocalyptic Shadow',
+    color: '#fb923c', border: 'border-orange-500/30 hover:border-orange-500/60',
+    data: asData,
+  },
+  {
+    id: 'pf', label: '純虛數幻境', en: 'Pure Fiction',
+    color: '#38bdf8', border: 'border-sky-500/30 hover:border-sky-500/60',
+    data: pfData,
+  },
+];
+
+const MODE_BULLETS: Record<Mode, string[]> = {
+  moc: ['每月重置，持續兩周', '共 12 層，每層 2 場', '追求最少行動輪數', '需準備兩套陣容'],
+  as:  ['強調單體爆發傷害', '每期 BOSS 弱點不同', '特殊 BUFF 機制加成', '需針對弱點搭配屬性'],
+  pf:  ['強調群體 AOE 傷害', '擊殺積分達標過關', '無限刷新敵人浪潮', '需高行動頻率輸出'],
+};
 
 export default function AbyssPage() {
   return (
     <div>
-      {/* 頁面標題 */}
-      <div className="mb-8">
+      <div className="mb-6">
         <h1 className="text-2xl font-bold text-white">三深淵</h1>
-        <p className="text-sm text-gray-400 mt-1">星穹鐵道三大終局挑戰模式</p>
+        <p className="text-sm text-gray-400 mt-1">星穹鐵道三大終局挑戰模式 — 血量波動參考圖 (v4.0)</p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {/* 忘卻之庭 */}
-        <div className="rounded-2xl overflow-hidden border border-violet-500/30 bg-gradient-to-br from-[#1a0d3a] to-[#0d0d1a] p-6 hover:border-violet-500/60 hover:shadow-[0_0_24px_#6b4ff530] transition-all">
-          <div className="mb-4">
-            <div className="inline-block px-2 py-0.5 text-xs font-bold rounded-full bg-violet-500/20 border border-violet-500/40 text-violet-300 mb-3">
-              Memory of Chaos
+      <div className="space-y-8">
+        {MODES.map(mode => (
+          <div
+            key={mode.id}
+            className={`rounded-2xl border bg-[#0d0d1a] p-6 transition-all ${mode.border}`}
+          >
+            {/* 標題列 */}
+            <div className="flex items-center gap-3 mb-4">
+              <div>
+                <p className="text-xs text-gray-500">{mode.en}</p>
+                <h2 className="text-lg font-bold text-white">{mode.label}</h2>
+              </div>
             </div>
-            <h2 className="text-xl font-bold text-white">忘卻之庭</h2>
-          </div>
-          <p className="text-sm text-gray-300 leading-relaxed mb-4">
-            雙陣營輪換的限時挑戰。玩家需在每月兩個周期內，以最少行動次數清除所有敵人。
-            挑戰分為 12 層，每層包含兩個半場，各使用不同角色陣容。
-          </p>
-          <ul className="space-y-1">
-            {['每月重置，持續兩周', '共 12 層，每層 2 場', '追求最少行動輪數', '需準備兩套陣容'].map(t => (
-              <li key={t} className="flex items-center gap-2 text-xs text-gray-400">
-                <span className="w-1 h-1 rounded-full bg-violet-400 shrink-0" />
-                {t}
-              </li>
-            ))}
-          </ul>
-        </div>
 
-        {/* 末日幻影 */}
-        <div className="rounded-2xl overflow-hidden border border-orange-500/30 bg-gradient-to-br from-[#2a0d00] to-[#0d0d1a] p-6 hover:border-orange-500/60 hover:shadow-[0_0_24px_#f9731630] transition-all">
-          <div className="mb-4">
-            <div className="inline-block px-2 py-0.5 text-xs font-bold rounded-full bg-orange-500/20 border border-orange-500/40 text-orange-300 mb-3">
-              Apocalyptic Shadow
-            </div>
-            <h2 className="text-xl font-bold text-white">末日幻影</h2>
-          </div>
-          <p className="text-sm text-gray-300 leading-relaxed mb-4">
-            以擊殺 BOSS 為核心的限時挑戰。每期設有特定的增益 BUFF 與敵人弱點，
-            玩家需要針對性地搭配陣容，在時限內造成最大傷害。
-          </p>
-          <ul className="space-y-1">
-            {['強調單體爆發傷害', '每期 BOSS 弱點不同', '特殊 BUFF 機制加成', '需針對弱點搭配屬性'].map(t => (
-              <li key={t} className="flex items-center gap-2 text-xs text-gray-400">
-                <span className="w-1 h-1 rounded-full bg-orange-400 shrink-0" />
-                {t}
-              </li>
-            ))}
-          </ul>
-        </div>
+            {/* 描述 + 要點 */}
+            <ul className="flex flex-wrap gap-x-6 gap-y-1 mb-5">
+              {MODE_BULLETS[mode.id].map(t => (
+                <li key={t} className="flex items-center gap-1.5 text-xs text-gray-400">
+                  <span className="w-1 h-1 rounded-full shrink-0" style={{ background: mode.color }} />
+                  {t}
+                </li>
+              ))}
+            </ul>
 
-        {/* 純虛數幻境 */}
-        <div className="rounded-2xl overflow-hidden border border-sky-500/30 bg-gradient-to-br from-[#001a2a] to-[#0d0d1a] p-6 hover:border-sky-500/60 hover:shadow-[0_0_24px_#0ea5e930] transition-all">
-          <div className="mb-4">
-            <div className="inline-block px-2 py-0.5 text-xs font-bold rounded-full bg-sky-500/20 border border-sky-500/40 text-sky-300 mb-3">
-              Pure Fiction
-            </div>
-            <h2 className="text-xl font-bold text-white">純虛數幻境</h2>
+            {/* 折線圖 */}
+            <LineChart
+              data={mode.data}
+              color={mode.color}
+              title={`${mode.label} — 各階段敵人血量（參考值）`}
+            />
           </div>
-          <p className="text-sm text-gray-300 leading-relaxed mb-4">
-            以積累擊殺數量為勝利條件的群體輸出挑戰。持續刷新的雜兵浪潮，
-            考驗玩家的範圍傷害能力與行動效率。
-          </p>
-          <ul className="space-y-1">
-            {['強調群體 AOE 傷害', '擊殺積分達標過關', '無限刷新敵人浪潮', '需高行動頻率輸出'].map(t => (
-              <li key={t} className="flex items-center gap-2 text-xs text-gray-400">
-                <span className="w-1 h-1 rounded-full bg-sky-400 shrink-0" />
-                {t}
-              </li>
-            ))}
-          </ul>
-        </div>
+        ))}
       </div>
 
-      {/* 備註 */}
-      <div className="mt-8 p-4 rounded-xl border border-white/10 bg-white/3">
-        <p className="text-xs text-gray-500 text-center">
-          詳細陣容推薦與評分功能開發中，敬請期待。
+      <div className="mt-6 p-3 rounded-xl border border-white/10 bg-white/3">
+        <p className="text-xs text-gray-600 text-center">
+          血量數值為 v4.0 週期參考估算，實際數值因週期設定與難度等級而異。
         </p>
       </div>
     </div>

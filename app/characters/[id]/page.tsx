@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { getCharacterById, getAllCharacters, getDisplayName } from '@/lib/api';
 import SkillSection from '@/components/SkillSection';
@@ -15,6 +16,15 @@ const ELEMENT_COLOR: Record<string, string> = {
   '物理': 'text-gray-300',
 };
 
+// 開拓者性別配對 (男 ↔ 女)
+const TB_PAIR: Record<string, string> = {
+  '8001': '8002', '8002': '8001',
+  '8003': '8004', '8004': '8003',
+  '8005': '8006', '8006': '8005',
+  '8007': '8008', '8008': '8007',
+};
+const TB_MALE = new Set(['8001', '8003', '8005', '8007']);
+
 // 靜態生成所有角色頁面
 export function generateStaticParams() {
   return getAllCharacters().map(c => ({ id: c.id }));
@@ -27,6 +37,11 @@ export default async function CharacterPage({ params }: { params: Promise<{ id: 
 
   const isGold = character.rarity === 5;
   const displayName = getDisplayName(character);
+
+  // 開拓者性別切換
+  const partnerId = TB_PAIR[character.id];
+  const partnerChar = partnerId ? getCharacterById(partnerId) : null;
+  const isMale = TB_MALE.has(character.id);
 
   return (
     <div className="max-w-4xl mx-auto">
@@ -63,6 +78,33 @@ export default async function CharacterPage({ params }: { params: Promise<{ id: 
               </span>
             </div>
           </div>
+
+          {/* 開拓者性別切換 */}
+          {partnerChar && (
+            <div className="flex items-center gap-2 mt-1">
+              <span className="text-xs text-gray-500">性別</span>
+              <Link
+                href={`/characters/${character.id}`}
+                className={`text-xs px-2.5 py-1 rounded-full border transition-colors ${
+                  isMale
+                    ? 'border-[#c9a227]/60 bg-[#c9a227]/10 text-[#c9a227]'
+                    : 'border-white/10 text-gray-400 hover:text-white'
+                }`}
+              >
+                ♂ 男性
+              </Link>
+              <Link
+                href={`/characters/${partnerChar.id}`}
+                className={`text-xs px-2.5 py-1 rounded-full border transition-colors ${
+                  !isMale
+                    ? 'border-[#c9a227]/60 bg-[#c9a227]/10 text-[#c9a227]'
+                    : 'border-white/10 text-gray-400 hover:text-white'
+                }`}
+              >
+                ♀ 女性
+              </Link>
+            </div>
+          )}
         </div>
       </div>
 
