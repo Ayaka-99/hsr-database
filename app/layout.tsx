@@ -28,7 +28,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <LangProvider>
           {/* 頂部導覽列 */}
           <nav className="sticky top-0 z-50 border-b border-white/10 backdrop-blur-md bg-[#0d0d1a]/80">
-            <div className="max-w-7xl mx-auto px-4 h-14 flex items-center">
+            <div className="max-w-7xl mx-auto px-4 h-12 sm:h-14 flex items-center">
               <Link href="/" className="flex items-center gap-2 text-[#c9a227] font-bold text-lg tracking-wide">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img

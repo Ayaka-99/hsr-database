@@ -13,7 +13,7 @@ function Btn({ active, onClick, children }: { active: boolean; onClick: () => vo
   return (
     <button
       onClick={onClick}
-      className={`px-3 py-1 rounded-full text-sm border transition-colors ${
+      className={`shrink-0 px-3 py-1 rounded-full text-sm border transition-colors ${
         active
           ? 'bg-white/15 border-white/40 text-white font-semibold'
           : 'border-white/20 text-gray-400 hover:border-white/40 hover:text-gray-200'
@@ -38,7 +38,7 @@ export default function LightConesPage() {
 
   return (
     <>
-      <h1 className="text-2xl font-bold text-white mb-4">光錐列表</h1>
+      <h1 className="text-xl sm:text-2xl font-bold text-white mb-4">光錐列表</h1>
 
       {/* 搜尋欄 */}
       <input
@@ -46,11 +46,11 @@ export default function LightConesPage() {
         placeholder="搜尋光錐名稱…"
         value={search}
         onChange={e => setSearch(e.target.value)}
-        className="w-full sm:w-64 mb-4 px-4 py-2 rounded-lg bg-white/5 border border-white/15 text-white placeholder-gray-500 text-sm focus:outline-none focus:border-white/40"
+        className="w-full md:w-80 mb-4 px-4 py-2 rounded-lg bg-white/5 border border-white/15 text-white placeholder-gray-500 text-sm focus:outline-none focus:border-white/40"
       />
 
       {/* 篩選列 */}
-      <div className="flex flex-wrap gap-2 mb-6 items-center">
+      <div className="flex gap-2 mb-4 sm:mb-6 items-center overflow-x-auto pb-2 scrollbar-none">
         {/* 稀有度 */}
         <Btn active={rarity === 0} onClick={() => setRarity(0)}>全部</Btn>
         {([5, 4, 3] as const).map(r => (
@@ -58,7 +58,7 @@ export default function LightConesPage() {
             {r}★
           </Btn>
         ))}
-        <span className="w-px h-5 bg-white/15 mx-1" />
+        <span className="shrink-0 w-px h-5 bg-white/15 mx-1" />
         {/* 命途 */}
         {PATHS.map(p => (
           <Btn key={p} active={path === p} onClick={() => setPath(path === p ? '' : p)}>
@@ -70,7 +70,7 @@ export default function LightConesPage() {
       <p className="text-sm text-gray-500 mb-4">共 {filtered.length} 個光錐</p>
 
       {/* 光錐卡片網格 */}
-      <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-7 xl:grid-cols-8 gap-3">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-7 xl:grid-cols-8 gap-2 sm:gap-3">
         {filtered.map(lc => (
           <LightConeCard key={lc.id} lc={lc} />
         ))}

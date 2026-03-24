@@ -39,7 +39,7 @@ function FilterBtn({
   return (
     <button
       onClick={onClick}
-      className={`px-3 py-1 rounded-full text-sm border transition-colors ${
+      className={`shrink-0 px-3 py-1 rounded-full text-sm border transition-colors ${
         active
           ? `${activeClass} font-semibold`
           : 'border-white/20 text-gray-500 hover:border-white/35 hover:text-gray-200'
@@ -52,7 +52,7 @@ function FilterBtn({
 
 export default function FilterBar({ path, element, rarity, onPath, onElement, onRarity }: Props) {
   return (
-    <div className="flex flex-wrap gap-2 mb-6 items-center">
+    <div className="flex gap-2 mb-4 sm:mb-6 items-center overflow-x-auto pb-2 scrollbar-none">
       {/* 稀有度篩選 */}
       <FilterBtn active={rarity === 0} activeClass="bg-white/15 border-white/40 text-white" onClick={() => onRarity(0)}>
         全部
@@ -64,7 +64,7 @@ export default function FilterBar({ path, element, rarity, onPath, onElement, on
         4★
       </FilterBtn>
 
-      <span className="w-px h-5 bg-white/15 mx-1" />
+      <span className="shrink-0 w-px h-5 bg-white/15 mx-1" />
 
       {/* 屬性篩選（各屬性獨立配色） */}
       {ELEMENTS.map(e => (
@@ -78,7 +78,7 @@ export default function FilterBar({ path, element, rarity, onPath, onElement, on
         </FilterBtn>
       ))}
 
-      <span className="w-px h-5 bg-white/15 mx-1" />
+      <span className="shrink-0 w-px h-5 bg-white/15 mx-1" />
 
       {/* 命途篩選 */}
       {PATHS.map(p => (

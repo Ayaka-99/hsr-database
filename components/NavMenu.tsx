@@ -62,7 +62,7 @@ export default function NavMenu() {
 
       {/* 下拉選單 */}
       {open && (
-        <div className="absolute right-0 top-11 w-40 rounded-xl border border-white/10 bg-[#0d0d1a]/95 backdrop-blur-md shadow-xl z-50 overflow-hidden">
+        <div className="absolute right-0 top-11 w-40 max-w-[90vw] rounded-xl border border-white/10 bg-[#0d0d1a]/95 backdrop-blur-md shadow-xl z-50 overflow-hidden">
           {NAV_ITEMS.map(({ href, label }) => {
             const isActive =
               href === '/'

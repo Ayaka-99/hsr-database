@@ -70,7 +70,7 @@ export default function HomePage() {
       {/* 彩蛋 overlay */}
       {isCtEasterEgg && <CtEasterEgg onClose={() => setSearch('')} />}
 
-      <h1 className="text-2xl font-bold text-white mb-4">角色列表</h1>
+      <h1 className="text-xl sm:text-2xl font-bold text-white mb-4">角色列表</h1>
 
       {/* 搜尋欄 */}
       <input
@@ -78,7 +78,7 @@ export default function HomePage() {
         placeholder="搜尋角色名稱…"
         value={search}
         onChange={e => setSearch(e.target.value)}
-        className="w-full sm:w-64 mb-4 px-4 py-2 rounded-lg bg-white/5 border border-white/15 text-white placeholder-gray-500 text-sm focus:outline-none focus:border-white/40"
+        className="w-full md:w-80 mb-4 px-4 py-2 rounded-lg bg-white/5 border border-white/15 text-white placeholder-gray-500 text-sm focus:outline-none focus:border-white/40"
       />
 
       <FilterBar
@@ -93,7 +93,7 @@ export default function HomePage() {
       <p className="text-sm text-gray-500 mb-4">共 {filtered.length} 個角色</p>
 
       {/* 角色卡片網格 */}
-      <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-7 xl:grid-cols-8 gap-3">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-7 xl:grid-cols-8 gap-2 sm:gap-3">
         {filtered.map(c => (
           <CharacterCard key={c.id} character={c} />
         ))}
