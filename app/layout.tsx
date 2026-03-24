@@ -4,8 +4,8 @@ import Link from 'next/link';
 import FontToggle from '@/components/FontToggle';
 
 export const metadata: Metadata = {
-  title: 'HSR Database',
-  description: '崩壞：星穹鐵道角色與光錐資料庫',
+  title: 'CT杯 數據庫',
+  description: '崩壞：星穹鐵道角色與光錐數據庫',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -25,7 +25,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <nav className="sticky top-0 z-50 border-b border-white/10 backdrop-blur-md bg-[#0d0d1a]/80">
           <div className="max-w-7xl mx-auto px-4 h-14 flex items-center gap-6">
             <Link href="/" className="text-[#c9a227] font-bold text-lg tracking-wide">
-              HSR DB
+              CT杯 數據庫
             </Link>
             <Link href="/" className="text-sm text-gray-400 hover:text-white transition-colors">
               角色
