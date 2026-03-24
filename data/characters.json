@@ -7,6 +7,14 @@
     "path": "存護",
     "element": "冰",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1001.png",
+    "stats": {
+      "hp": 562,
+      "atk": 271,
+      "def": 304,
+      "spd": 101,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "极寒的弓矢",
@@ -237,6 +245,14 @@
     "path": "巡獵",
     "element": "風",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1002.png",
+    "stats": {
+      "hp": 468,
+      "atk": 290,
+      "def": 211,
+      "spd": 110,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "云骑枪术•朔风",
@@ -467,6 +483,14 @@
     "path": "智識",
     "element": "火",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1003.png",
+    "stats": {
+      "hp": 556,
+      "atk": 402,
+      "def": 232,
+      "spd": 96,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "武装调律",
@@ -697,6 +721,14 @@
     "path": "虛無",
     "element": "虛數",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1004.png",
+    "stats": {
+      "hp": 597,
+      "atk": 329,
+      "def": 270,
+      "spd": 102,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "重力压制",
@@ -927,6 +959,14 @@
     "path": "虛無",
     "element": "雷",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1005.png",
+    "stats": {
+      "hp": 577,
+      "atk": 360,
+      "def": 257,
+      "spd": 100,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "夜间喧嚣不止",
@@ -1157,6 +1197,14 @@
     "path": "虛無",
     "element": "量子",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1006.png",
+    "stats": {
+      "hp": 556,
+      "atk": 340,
+      "def": 245,
+      "spd": 107,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "|系统警告|",
@@ -1387,6 +1435,14 @@
     "path": "毀滅",
     "element": "雷",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1008.png",
+    "stats": {
+      "hp": 636,
+      "atk": 318,
+      "def": 176,
+      "spd": 102,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "如雷疾行",
@@ -1617,6 +1673,14 @@
     "path": "同諧",
     "element": "火",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1009.png",
+    "stats": {
+      "hp": 543,
+      "atk": 271,
+      "def": 246,
+      "spd": 106,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "光谱射线",
@@ -1847,6 +1911,14 @@
     "path": "智識",
     "element": "冰",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1013.png",
+    "stats": {
+      "hp": 505,
+      "atk": 309,
+      "def": 211,
+      "spd": 100,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "看什么看",
@@ -2077,6 +2149,14 @@
     "path": "毀滅",
     "element": "風",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1014.png",
+    "stats": {
+      "hp": 659,
+      "atk": 319,
+      "def": 347,
+      "spd": 101,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "风王结界",
@@ -2307,6 +2387,14 @@
     "path": "巡獵",
     "element": "量子",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1015.png",
+    "stats": {
+      "hp": 618,
+      "atk": 329,
+      "def": 257,
+      "spd": 105,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "干将•莫邪",
@@ -2536,6 +2624,14 @@
     "path": "同諧",
     "element": "風",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1101.png",
+    "stats": {
+      "hp": 659,
+      "atk": 309,
+      "def": 283,
+      "spd": 99,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "驭风的子弹",
@@ -2766,6 +2862,14 @@
     "path": "巡獵",
     "element": "量子",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1102.png",
+    "stats": {
+      "hp": 494,
+      "atk": 340,
+      "def": 193,
+      "spd": 115,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "强袭",
@@ -2996,6 +3100,14 @@
     "path": "智識",
     "element": "雷",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1103.png",
+    "stats": {
+      "hp": 487,
+      "atk": 346,
+      "def": 199,
+      "spd": 104,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "雷鸣音阶",
@@ -3226,6 +3338,14 @@
     "path": "存護",
     "element": "冰",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1104.png",
+    "stats": {
+      "hp": 741,
+      "atk": 288,
+      "def": 347,
+      "spd": 92,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "一意之拳",
@@ -3456,6 +3576,14 @@
     "path": "豐饒",
     "element": "物理",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1105.png",
+    "stats": {
+      "hp": 618,
+      "atk": 253,
+      "def": 269,
+      "spd": 98,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "仁慈的背面",
@@ -3686,6 +3814,14 @@
     "path": "虛無",
     "element": "冰",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1106.png",
+    "stats": {
+      "hp": 524,
+      "atk": 290,
+      "def": 246,
+      "spd": 105,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "冰点射击",
@@ -3916,6 +4052,14 @@
     "path": "毀滅",
     "element": "物理",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1107.png",
+    "stats": {
+      "hp": 659,
+      "atk": 391,
+      "def": 257,
+      "spd": 90,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "我也想帮上忙",
@@ -4146,6 +4290,14 @@
     "path": "虛無",
     "element": "風",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1108.png",
+    "stats": {
+      "hp": 543,
+      "atk": 328,
+      "def": 211,
+      "spd": 102,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "酷炫的刀花",
@@ -4376,6 +4528,14 @@
     "path": "毀滅",
     "element": "火",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1109.png",
+    "stats": {
+      "hp": 711,
+      "atk": 328,
+      "def": 187,
+      "spd": 94,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "喂！小心火烛",
@@ -4606,6 +4766,14 @@
     "path": "豐饒",
     "element": "量子",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1110.png",
+    "stats": {
+      "hp": 562,
+      "atk": 262,
+      "def": 293,
+      "spd": 100,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "冰攀前齿技术",
@@ -4836,6 +5004,14 @@
     "path": "虛無",
     "element": "物理",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1111.png",
+    "stats": {
+      "hp": 487,
+      "atk": 309,
+      "def": 257,
+      "spd": 103,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "直冲拳",
@@ -5066,6 +5242,14 @@
     "path": "巡獵",
     "element": "火",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1112.png",
+    "stats": {
+      "hp": 494,
+      "atk": 329,
+      "def": 219,
+      "spd": 110,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "赤字…",
@@ -5296,6 +5480,14 @@
     "path": "智識",
     "element": "量子",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1201.png",
+    "stats": {
+      "hp": 543,
+      "atk": 346,
+      "def": 234,
+      "spd": 98,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "门前清",
@@ -5526,6 +5718,14 @@
     "path": "同諧",
     "element": "雷",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1202.png",
+    "stats": {
+      "hp": 449,
+      "atk": 281,
+      "def": 211,
+      "spd": 112,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "逐客令",
@@ -5756,6 +5956,14 @@
     "path": "豐饒",
     "element": "虛數",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1203.png",
+    "stats": {
+      "hp": 680,
+      "atk": 402,
+      "def": 193,
+      "spd": 101,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "黑渊的棘刺",
@@ -5986,6 +6194,14 @@
     "path": "智識",
     "element": "雷",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1204.png",
+    "stats": {
+      "hp": 618,
+      "atk": 371,
+      "def": 257,
+      "spd": 99,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "石火流光",
@@ -6216,6 +6432,14 @@
     "path": "毀滅",
     "element": "風",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1205.png",
+    "stats": {
+      "hp": 721,
+      "atk": 288,
+      "def": 257,
+      "spd": 97,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "支离剑",
@@ -6446,6 +6670,14 @@
     "path": "巡獵",
     "element": "物理",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1206.png",
+    "stats": {
+      "hp": 487,
+      "atk": 300,
+      "def": 222,
+      "spd": 107,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "云骑剑经 • 素霓",
@@ -6676,6 +6908,14 @@
     "path": "同諧",
     "element": "虛數",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1207.png",
+    "stats": {
+      "hp": 487,
+      "atk": 318,
+      "def": 199,
+      "spd": 107,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "流镝",
@@ -6906,6 +7146,14 @@
     "path": "存護",
     "element": "量子",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1208.png",
+    "stats": {
+      "hp": 782,
+      "atk": 247,
+      "def": 322,
+      "spd": 100,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "始击岁星",
@@ -7136,6 +7384,14 @@
     "path": "巡獵",
     "element": "冰",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1209.png",
+    "stats": {
+      "hp": 474,
+      "atk": 360,
+      "def": 219,
+      "spd": 109,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "霜锋点寒芒",
@@ -7366,6 +7622,14 @@
     "path": "虛無",
     "element": "火",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1210.png",
+    "stats": {
+      "hp": 468,
+      "atk": 309,
+      "def": 234,
+      "spd": 106,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "劈头满堂彩",
@@ -7596,6 +7860,14 @@
     "path": "豐饒",
     "element": "雷",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1211.png",
+    "stats": {
+      "hp": 700,
+      "atk": 299,
+      "def": 257,
+      "spd": 98,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "望 、闻、问…蹴！",
@@ -7826,6 +8098,14 @@
     "path": "毀滅",
     "element": "冰",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1212.png",
+    "stats": {
+      "hp": 762,
+      "atk": 360,
+      "def": 257,
+      "spd": 96,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "流影方晖",
@@ -8056,6 +8336,14 @@
     "path": "毀滅",
     "element": "虛數",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1213.png",
+    "stats": {
+      "hp": 659,
+      "atk": 371,
+      "def": 193,
+      "spd": 102,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "泽芝",
@@ -8286,6 +8574,14 @@
     "path": "毀滅",
     "element": "量子",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1214.png",
+    "stats": {
+      "hp": 562,
+      "atk": 318,
+      "def": 211,
+      "spd": 103,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "破魔锥",
@@ -8516,6 +8812,14 @@
     "path": "同諧",
     "element": "物理",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1215.png",
+    "stats": {
+      "hp": 487,
+      "atk": 300,
+      "def": 187,
+      "spd": 110,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "冥谶天笔",
@@ -8746,6 +9050,14 @@
     "path": "豐饒",
     "element": "風",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1217.png",
+    "stats": {
+      "hp": 721,
+      "atk": 319,
+      "def": 270,
+      "spd": 98,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "令旗•征风召雨",
@@ -8976,6 +9288,14 @@
     "path": "虛無",
     "element": "火",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1218.png",
+    "stats": {
+      "hp": 721,
+      "atk": 319,
+      "def": 270,
+      "spd": 98,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "仁火攻心",
@@ -9206,6 +9526,14 @@
     "path": "巡獵",
     "element": "風",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1220.png",
+    "stats": {
+      "hp": 556,
+      "atk": 319,
+      "def": 206,
+      "spd": 112,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "闪裂",
@@ -9436,6 +9764,14 @@
     "path": "毀滅",
     "element": "物理",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1221.png",
+    "stats": {
+      "hp": 721,
+      "atk": 360,
+      "def": 245,
+      "spd": 94,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "翻风转日",
@@ -9666,6 +10002,14 @@
     "path": "豐饒",
     "element": "火",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1222.png",
+    "stats": {
+      "hp": 721,
+      "atk": 360,
+      "def": 232,
+      "spd": 98,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "肃香",
@@ -9896,6 +10240,14 @@
     "path": "巡獵",
     "element": "雷",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1223.png",
+    "stats": {
+      "hp": 431,
+      "atk": 318,
+      "def": 187,
+      "spd": 111,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "飞铙",
@@ -10126,6 +10478,14 @@
     "path": "巡獵",
     "element": "虛數",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1224.png",
+    "stats": {
+      "hp": 562,
+      "atk": 300,
+      "def": 234,
+      "spd": 102,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "荡涤妖邪琉璃剑",
@@ -10356,6 +10716,14 @@
     "path": "虛無",
     "element": "火",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1225.png",
+    "stats": {
+      "hp": 597,
+      "atk": 309,
+      "def": 296,
+      "spd": 102,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "焕焕辰尾",
@@ -10586,6 +10954,14 @@
     "path": "豐饒",
     "element": "火",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1301.png",
+    "stats": {
+      "hp": 693,
+      "atk": 281,
+      "def": 234,
+      "spd": 98,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "开瓶费",
@@ -10816,6 +11192,14 @@
     "path": "智識",
     "element": "物理",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1302.png",
+    "stats": {
+      "hp": 556,
+      "atk": 391,
+      "def": 193,
+      "spd": 103,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "芬芳一现",
@@ -11046,6 +11430,14 @@
     "path": "同諧",
     "element": "冰",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1303.png",
+    "stats": {
+      "hp": 577,
+      "atk": 350,
+      "def": 257,
+      "spd": 104,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "一针幽兰",
@@ -11276,6 +11668,14 @@
     "path": "存護",
     "element": "虛數",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1304.png",
+    "stats": {
+      "hp": 638,
+      "atk": 237,
+      "def": 347,
+      "spd": 106,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "直观投注",
@@ -11506,6 +11906,14 @@
     "path": "巡獵",
     "element": "虛數",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1305.png",
+    "stats": {
+      "hp": 556,
+      "atk": 412,
+      "def": 245,
+      "spd": 103,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "知识就是力量",
@@ -11736,6 +12144,14 @@
     "path": "同諧",
     "element": "量子",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1306.png",
+    "stats": {
+      "hp": 741,
+      "atk": 278,
+      "def": 257,
+      "spd": 101,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "独角戏",
@@ -11966,6 +12382,14 @@
     "path": "虛無",
     "element": "風",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1307.png",
+    "stats": {
+      "hp": 577,
+      "atk": 350,
+      "def": 257,
+      "spd": 102,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "洞见，缄默的黎明",
@@ -12196,6 +12620,14 @@
     "path": "虛無",
     "element": "雷",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1308.png",
+    "stats": {
+      "hp": 597,
+      "atk": 371,
+      "def": 232,
+      "spd": 101,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "三途枯榷",
@@ -12426,6 +12858,14 @@
     "path": "同諧",
     "element": "物理",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1309.png",
+    "stats": {
+      "hp": 680,
+      "atk": 340,
+      "def": 257,
+      "spd": 102,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "扑翼白声",
@@ -12656,6 +13096,14 @@
     "path": "毀滅",
     "element": "火",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1310.png",
+    "stats": {
+      "hp": 432,
+      "atk": 278,
+      "def": 412,
+      "spd": 104,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "指令-闪燃推进",
@@ -12886,6 +13334,14 @@
     "path": "毀滅",
     "element": "冰",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1312.png",
+    "stats": {
+      "hp": 674,
+      "atk": 318,
+      "def": 211,
+      "spd": 96,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "请…请让一下！",
@@ -13116,6 +13572,14 @@
     "path": "同諧",
     "element": "虛數",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1313.png",
+    "stats": {
+      "hp": 659,
+      "atk": 340,
+      "def": 283,
+      "spd": 96,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "闪烁的劝诫",
@@ -13346,6 +13810,14 @@
     "path": "智識",
     "element": "量子",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1314.png",
+    "stats": {
+      "hp": 577,
+      "atk": 350,
+      "def": 270,
+      "spd": 103,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "挞楚抽薪",
@@ -13576,6 +14048,14 @@
     "path": "巡獵",
     "element": "物理",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1315.png",
+    "stats": {
+      "hp": 638,
+      "atk": 329,
+      "def": 232,
+      "spd": 107,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "蹄铁裂颅",
@@ -13806,6 +14286,14 @@
     "path": "智識",
     "element": "虛數",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1317.png",
+    "stats": {
+      "hp": 577,
+      "atk": 381,
+      "def": 245,
+      "spd": 96,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "忍术•七转八起",
@@ -14036,6 +14524,14 @@
     "path": "虛無",
     "element": "火",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1321.png",
+    "stats": {
+      "hp": 577,
+      "atk": 360,
+      "def": 322,
+      "spd": 96,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "拨弄…记忆绽开裂隙",
@@ -14266,6 +14762,14 @@
     "path": "智識",
     "element": "冰",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1401.png",
+    "stats": {
+      "hp": 618,
+      "atk": 360,
+      "def": 257,
+      "spd": 99,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "开窍了吗",
@@ -14496,6 +15000,14 @@
     "path": "記憶",
     "element": "雷",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1402.png",
+    "stats": {
+      "hp": 659,
+      "atk": 371,
+      "def": 257,
+      "spd": 102,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "刺纹之蜜",
@@ -14726,6 +15238,14 @@
     "path": "同諧",
     "element": "量子",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1403.png",
+    "stats": {
+      "hp": 556,
+      "atk": 278,
+      "def": 386,
+      "spd": 96,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "一百层的小火箭",
@@ -14956,6 +15476,14 @@
     "path": "毀滅",
     "element": "虛數",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1404.png",
+    "stats": {
+      "hp": 824,
+      "atk": 227,
+      "def": 103,
+      "spd": 95,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "踏破征途的誓言",
@@ -15186,6 +15714,14 @@
     "path": "智識",
     "element": "風",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1405.png",
+    "stats": {
+      "hp": 515,
+      "atk": 402,
+      "def": 296,
+      "spd": 97,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "楚痛，酿造实识",
@@ -15416,6 +15952,14 @@
     "path": "虛無",
     "element": "量子",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1406.png",
+    "stats": {
+      "hp": 494,
+      "atk": 340,
+      "def": 270,
+      "spd": 106,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "呀，漏网之鱼",
@@ -15646,6 +16190,14 @@
     "path": "記憶",
     "element": "量子",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1407.png",
+    "stats": {
+      "hp": 865,
+      "atk": 278,
+      "def": 257,
+      "spd": 95,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "哀悼，死海之涟漪",
@@ -15876,6 +16428,14 @@
     "path": "毀滅",
     "element": "物理",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1408.png",
+    "stats": {
+      "hp": 762,
+      "atk": 309,
+      "def": 373,
+      "spd": 94,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "逐火救世，行则将至",
@@ -16106,6 +16666,14 @@
     "path": "記憶",
     "element": "風",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1409.png",
+    "stats": {
+      "hp": 577,
+      "atk": 206,
+      "def": 335,
+      "spd": 110,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "当微风轻吻云沫",
@@ -16336,6 +16904,14 @@
     "path": "虛無",
     "element": "物理",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1410.png",
+    "stats": {
+      "hp": 638,
+      "atk": 319,
+      "def": 257,
+      "spd": 102,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "小调，止水中回响",
@@ -16566,6 +17142,14 @@
     "path": "同諧",
     "element": "風",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1412.png",
+    "stats": {
+      "hp": 721,
+      "atk": 329,
+      "def": 257,
+      "spd": 99,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "易位，兵贵神速",
@@ -16796,6 +17380,14 @@
     "path": "記憶",
     "element": "冰",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1413.png",
+    "stats": {
+      "hp": 700,
+      "atk": 288,
+      "def": 309,
+      "spd": 99,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "从此岁月朦胧",
@@ -17026,6 +17618,14 @@
     "path": "存護",
     "element": "物理",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1414.png",
+    "stats": {
+      "hp": 556,
+      "atk": 309,
+      "def": 412,
+      "spd": 97,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "镇恶护生",
@@ -17256,6 +17856,14 @@
     "path": "記憶",
     "element": "冰",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1415.png",
+    "stats": {
+      "hp": 741,
+      "atk": 237,
+      "def": 309,
+      "spd": 101,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "看，希望的起始！",
@@ -17486,6 +18094,14 @@
     "path": "歡愉",
     "element": "火",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1501.png",
+    "stats": {
+      "hp": 556,
+      "atk": 340,
+      "def": 245,
+      "spd": 107,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "哑火了吗",
@@ -17716,6 +18332,14 @@
     "path": "歡愉",
     "element": "物理",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/1502.png",
+    "stats": {
+      "hp": 659,
+      "atk": 247,
+      "def": 347,
+      "spd": 101,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "雀翎鸣镝，过招有喜",
@@ -17946,6 +18570,14 @@
     "path": "毀滅",
     "element": "物理",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/8001.png",
+    "stats": {
+      "hp": 638,
+      "atk": 329,
+      "def": 245,
+      "spd": 100,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "再见安打",
@@ -18176,6 +18808,14 @@
     "path": "毀滅",
     "element": "物理",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/8002.png",
+    "stats": {
+      "hp": 638,
+      "atk": 329,
+      "def": 245,
+      "spd": 100,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "再见安打",
@@ -18406,6 +19046,14 @@
     "path": "存護",
     "element": "火",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/8003.png",
+    "stats": {
+      "hp": 659,
+      "atk": 319,
+      "def": 322,
+      "spd": 95,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "穿彻坚冰的烈芒",
@@ -18636,6 +19284,14 @@
     "path": "存護",
     "element": "火",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/8004.png",
+    "stats": {
+      "hp": 659,
+      "atk": 319,
+      "def": 322,
+      "spd": 95,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "穿彻坚冰的烈芒",
@@ -18866,6 +19522,14 @@
     "path": "同諧",
     "element": "虛數",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/8005.png",
+    "stats": {
+      "hp": 577,
+      "atk": 237,
+      "def": 360,
+      "spd": 105,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "摇摆的礼仪",
@@ -19096,6 +19760,14 @@
     "path": "同諧",
     "element": "虛數",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/8006.png",
+    "stats": {
+      "hp": 577,
+      "atk": 237,
+      "def": 360,
+      "spd": 105,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "摇摆的礼仪",
@@ -19326,6 +19998,14 @@
     "path": "記憶",
     "element": "冰",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/8007.png",
+    "stats": {
+      "hp": 556,
+      "atk": 288,
+      "def": 335,
+      "spd": 103,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "包在我身上！",
@@ -19556,6 +20236,14 @@
     "path": "記憶",
     "element": "冰",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/character/8008.png",
+    "stats": {
+      "hp": 556,
+      "atk": 288,
+      "def": 335,
+      "spd": 103,
+      "critRate": 5,
+      "critDmg": 50
+    },
     "skills": {
       "basic": {
         "name": "包在我身上！",

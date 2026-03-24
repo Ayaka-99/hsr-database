@@ -7,7 +7,7 @@
 
 import { writeFileSync, mkdirSync } from 'fs';
 import { join } from 'path';
-import type { Character, LightCone, Path, Element, Skill, Eidolon, CharacterTrace, RelicSet } from '../lib/types';
+import type { Character, LightCone, Path, Element, Skill, Eidolon, CharacterTrace, RelicSet, CharacterStats } from '../lib/types';
 
 const MANIFEST_URL = 'https://static.nanoka.cc/manifest.json';
 const IMG_BASE = 'https://raw.githubusercontent.com/Mar-7th/StarRailRes/master';
@@ -175,11 +175,24 @@ interface ApiTraceNode {
   param_list: number[];
 }
 
+interface ApiStatEntry {
+  attack_base: number;
+  attack_add: number;
+  defence_base: number;
+  defence_add: number;
+  hp_base: number;
+  hp_add: number;
+  speed_base: number;
+  critical_chance: number;
+  critical_damage: number;
+}
+
 interface ApiCharacterDetail {
   name: string;
   skills: Record<string, ApiSkill>;
   ranks: Record<string, ApiRank>;
   skill_trees?: Record<string, Record<string, ApiTraceNode>>;
+  stats?: Record<string, ApiStatEntry>;
 }
 
 async function fetchCharacters(baseUrl: string): Promise<Character[]> {
@@ -269,6 +282,20 @@ async function fetchCharacters(baseUrl: string): Promise<Character[]> {
         }
       }
 
+      // ── 整理 Lv.80 屬性（最高升星階段 stats[6]，再加 10 級成長）──
+      let stats: CharacterStats | undefined;
+      if (detail.stats?.['6']) {
+        const s = detail.stats['6'];
+        stats = {
+          hp:       Math.round(s.hp_base + s.hp_add * 10),
+          atk:      Math.round(s.attack_base + s.attack_add * 10),
+          def:      Math.round(s.defence_base + s.defence_add * 10),
+          spd:      Math.round(s.speed_base * 10) / 10,
+          critRate: Math.round(s.critical_chance * 1000) / 10,
+          critDmg:  Math.round(s.critical_damage * 1000) / 10,
+        };
+      }
+
       const rarity = parseRarity(entry.rank);
       characters.push({
         id,
@@ -278,6 +305,7 @@ async function fetchCharacters(baseUrl: string): Promise<Character[]> {
         path:    PATH_MAP[entry.baseType]    ?? '巡獵',
         element: ELEMENT_MAP[entry.damageType] ?? '物理',
         image: `${IMG_BASE}/icon/character/${id}.png`,
+        stats,
         skills,
         eidolons,
         traces,

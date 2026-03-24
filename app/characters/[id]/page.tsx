@@ -106,6 +106,25 @@ export default async function CharacterPage({ params }: { params: Promise<{ id: 
             </div>
           </div>
 
+          {/* Lv.80 基礎屬性 */}
+          {character.stats && (
+            <div className="mt-1 grid grid-cols-3 gap-x-4 gap-y-1.5 text-sm">
+              {[
+                { label: '生命值', value: character.stats.hp.toLocaleString() },
+                { label: '攻擊力', value: character.stats.atk.toLocaleString() },
+                { label: '防禦力', value: character.stats.def.toLocaleString() },
+                { label: '速度',   value: character.stats.spd },
+                { label: '暴擊率', value: `${character.stats.critRate}%` },
+                { label: '暴擊傷害', value: `${character.stats.critDmg}%` },
+              ].map(({ label, value }) => (
+                <div key={label}>
+                  <div className="text-gray-500 text-xs">{label}</div>
+                  <div className="text-white font-medium">{value}</div>
+                </div>
+              ))}
+            </div>
+          )}
+
           {/* 開拓者性別切換 */}
           {partnerChar && (
             <div className="flex items-center gap-2 mt-1">

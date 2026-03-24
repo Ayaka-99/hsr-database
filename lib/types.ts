@@ -24,6 +24,15 @@ export interface CharacterTrace {
   value?: number;          // stat traces only
 }
 
+export interface CharacterStats {
+  hp: number;
+  atk: number;
+  def: number;
+  spd: number;
+  critRate: number;
+  critDmg: number;
+}
+
 export interface Character {
   id: string;
   name: string;
@@ -32,6 +41,7 @@ export interface Character {
   path: Path;
   element: Element;
   image: string;
+  stats?: CharacterStats;
   skills: {
     basic: Skill;
     skill: Skill;
