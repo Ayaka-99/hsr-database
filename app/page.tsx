@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import Image from 'next/image';
 import { getAllCharacters, getDisplayName } from '@/lib/api';
 import CharacterCard from '@/components/CharacterCard';
 import FilterBar from '@/components/FilterBar';
@@ -21,16 +20,12 @@ function CtEasterEgg({ onClose }: { onClose: () => void }) {
         className="relative max-w-xs w-full mx-4 rounded-2xl overflow-hidden border-2 border-[#c9a227]/60 shadow-[0_0_40px_rgba(201,162,39,0.4)]"
         onClick={e => e.stopPropagation()}
       >
-        {/* 圖片區塊，固定高度讓 fill 生效 */}
-        <div className="relative w-full h-72">
-          <Image
-            src="/ct-easter-egg.png"
-            alt="CT"
-            fill
-            className="object-cover object-top"
-            unoptimized
-          />
-        </div>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}/ct-easter-egg.png`}
+          alt="CT"
+          className="w-full object-cover"
+        />
         {/* 底部文字 */}
         <div className="bg-black/90 p-4 text-center">
           <p className="text-[#c9a227] font-bold text-xl tracking-widest">C T</p>
