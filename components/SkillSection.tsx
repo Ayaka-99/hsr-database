@@ -48,13 +48,34 @@ function defaultLevel(key: keyof Character['skills'], rarity: 4 | 5, maxLv: numb
   return Math.min(base, maxLv);
 }
 
-// 格式化行迹屬性數值
-function formatTraceValue(trace: CharacterTrace): string {
-  if (trace.value === undefined) return '';
-  const v = trace.value;
-  // 比例類（小於等於 1 的值）轉為百分比
-  if (v > 0 && v <= 1) return `+${(v * 100).toFixed(1).replace(/\.0$/, '')}%`;
-  return `+${v}`;
+// 屬性名稱對照（statType → 繁體中文）
+const STAT_NAMES: Record<string, string> = {
+  HPAddedRatio:                '生命值',
+  AttackAddedRatio:            '攻擊力',
+  DefenceAddedRatio:           '防禦力',
+  SpeedDelta:                  '速度',
+  CriticalChanceBase:          '暴擊率',
+  CriticalDamageBase:          '暴擊傷害',
+  StatusProbabilityBase:       '效果命中',
+  StatusResistanceBase:        '效果抵抗',
+  BreakDamageAddedRatioBase:   '擊破特攻',
+  FireAddedRatio:              '火屬性傷害提高',
+  IceAddedRatio:               '冰屬性傷害提高',
+  ThunderAddedRatio:           '雷屬性傷害提高',
+  WindAddedRatio:              '風屬性傷害提高',
+  QuantumAddedRatio:           '量子屬性傷害提高',
+  ImaginaryAddedRatio:         '虛數屬性傷害提高',
+  PhysicalAddedRatio:          '物理屬性傷害提高',
+  ElationDamageAddedRatioBase: '歡愉屬性傷害提高',
+};
+
+// 格式化加總後的行迹屬性數值
+function formatStatValue(statType: string, total: number): string {
+  // SpeedDelta 是扁平值（+N 速度）
+  if (statType === 'SpeedDelta') return `+${total % 1 === 0 ? total : total.toFixed(1)}`;
+  // 其餘比例類轉百分比
+  const pct = total * 100;
+  return `+${pct % 1 === 0 ? pct : parseFloat(pct.toFixed(1))}%`;
 }
 
 export default function SkillSection({
@@ -77,8 +98,17 @@ export default function SkillSection({
   }
 
   const abilityTraces = traces?.filter(t => t.type === 'ability') ?? [];
-  const statTraces = traces?.filter(t => t.type === 'stat') ?? [];
   const hasTraces = traces && traces.length > 0;
+
+  // 依 statType 加總屬性數值
+  const statSummary = (traces ?? [])
+    .filter(t => t.type === 'stat' && t.statType)
+    .reduce<Record<string, { name: string; total: number }>>((acc, t) => {
+      const key = t.statType!;
+      if (!acc[key]) acc[key] = { name: STAT_NAMES[key] ?? t.name, total: 0 };
+      acc[key].total += t.value ?? 0;
+      return acc;
+    }, {});
 
   return (
     <div>
@@ -176,17 +206,17 @@ export default function SkillSection({
               </div>
             )}
 
-            {/* 屬性強化行迹 */}
-            {statTraces.length > 0 && (
+            {/* 屬性強化行迹（加總顯示） */}
+            {Object.keys(statSummary).length > 0 && (
               <div>
                 <p className="text-xs text-gray-500 mb-2">屬性強化</p>
                 <div className="flex flex-wrap gap-2">
-                  {statTraces.map(trace => (
+                  {Object.entries(statSummary).map(([key, { name, total }]) => (
                     <span
-                      key={trace.anchor}
+                      key={key}
                       className="text-xs px-3 py-1.5 rounded-full border border-white/10 bg-white/5 text-gray-300"
                     >
-                      {trace.name} <span className="text-emerald-400 font-semibold">{formatTraceValue(trace)}</span>
+                      {name} <span className="text-emerald-400 font-semibold">{formatStatValue(key, total)}</span>
                     </span>
                   ))}
                 </div>

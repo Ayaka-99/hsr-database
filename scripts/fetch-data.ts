@@ -7,7 +7,7 @@
 
 import { writeFileSync, mkdirSync } from 'fs';
 import { join } from 'path';
-import type { Character, LightCone, Path, Element, Skill, Eidolon, CharacterTrace } from '../lib/types';
+import type { Character, LightCone, Path, Element, Skill, Eidolon, CharacterTrace, RelicSet } from '../lib/types';
 
 const MANIFEST_URL = 'https://static.nanoka.cc/manifest.json';
 const IMG_BASE = 'https://raw.githubusercontent.com/Mar-7th/StarRailRes/master';
@@ -368,6 +368,53 @@ async function fetchLightCones(baseUrl: string): Promise<LightCone[]> {
   return lightCones;
 }
 
+// ─── 遺器套裝資料 ─────────────────────────────────────────
+
+interface ApiRelicSetEffect {
+  zh: string;
+  en: string;
+  ParamList?: number[];
+}
+
+interface ApiRelicSetEntry {
+  zh: string;
+  en: string;
+  icon: string;
+  set: {
+    '2': ApiRelicSetEffect;
+    '4'?: ApiRelicSetEffect;
+  };
+}
+
+async function fetchRelicSets(baseUrl: string): Promise<RelicSet[]> {
+  console.log('\n📥 抓取遺器套裝...');
+  const list = await fetchJson<Record<string, ApiRelicSetEntry>>(`${baseUrl}/relicset.json`);
+
+  const sets: RelicSet[] = [];
+  for (const [id, entry] of Object.entries(list)) {
+    const effect2Template = stripFormatOnly(entry.set['2'].zh);
+    const effect2 = resolveDesc(effect2Template, entry.set['2'].ParamList ?? []);
+    const effect4Template = entry.set['4'] ? stripFormatOnly(entry.set['4'].zh) : undefined;
+    const effect4 = effect4Template
+      ? resolveDesc(effect4Template, entry.set['4']?.ParamList ?? [])
+      : undefined;
+
+    sets.push({
+      id,
+      name: entry.zh,
+      nameEn: entry.en,
+      icon: `${IMG_BASE}/icon/relic/${id}.png`,
+      type: effect4 ? 'relic' : 'ornament',
+      effects: effect4
+        ? { 2: effect2, 4: effect4 }
+        : { 2: effect2 },
+    });
+  }
+
+  console.log(`   共 ${sets.length} 個套裝`);
+  return sets;
+}
+
 // ─── 主程式 ─────────────────────────────────────────
 
 async function main() {
@@ -398,6 +445,15 @@ async function main() {
     'utf-8'
   );
   console.log(`✅ 已儲存 ${lightCones.length} 個光錐 → data/lightcones.json`);
+
+  // 4. 抓取遺器套裝
+  const relicSets = await fetchRelicSets(BASE_URL);
+  writeFileSync(
+    join(DATA_DIR, 'relicsets.json'),
+    JSON.stringify(relicSets, null, 2),
+    'utf-8'
+  );
+  console.log(`✅ 已儲存 ${relicSets.length} 個遺器套裝 → data/relicsets.json`);
 
   console.log('\n🎉 完成！');
 }
