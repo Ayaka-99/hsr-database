@@ -7,17 +7,15 @@ import { LangProvider } from '@/lib/lang';
 export const metadata: Metadata = {
   title: 'CT杯 數據庫',
   description: '崩壞：星穹鐵道角色與光錐數據庫',
-  icons: {
-    icon: '/favicon.jpg.png',
-    shortcut: '/favicon.jpg.png',
-    apple: '/favicon.jpg.png',
-  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="zh-TW">
       <head>
+        <link rel="icon" href="/favicon.jpg.png" type="image/png" />
+        <link rel="shortcut icon" href="/favicon.jpg.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/favicon.jpg.png" />
         {/* 繁體中文字體 */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
