@@ -18,6 +18,7 @@ export interface Eidolon {
 export interface Character {
   id: string;
   name: string;
+  nameEn?: string;
   rarity: 4 | 5;
   path: Path;
   element: Element;
@@ -30,6 +31,15 @@ export interface Character {
     technique: Skill;
   };
   eidolons: Eidolon[];
+}
+
+export interface RelicSet {
+  id: string;
+  name: string;
+  nameEn: string;
+  icon: string;
+  type: 'relic' | 'ornament';
+  effects: { 2: string; 4?: string };
 }
 
 export interface LightCone {

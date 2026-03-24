@@ -136,7 +136,8 @@
         "description": "在戰技提供的護盾保護下的我方目標，每回合開始時回覆等同於各自?生命上限+?的生命值。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1001_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "March 7th"
   },
   {
     "id": "1002",
@@ -275,7 +276,8 @@
         "description": "戰技觸發的減速狀態使目標的速度額外降低?。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1002_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "Dan Heng"
   },
   {
     "id": "1003",
@@ -414,7 +416,8 @@
         "description": "終結技額外造成2次傷害，對隨機敵方單體各造成等同於原傷害?的火屬性傷害。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1003_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "Himeko"
   },
   {
     "id": "1004",
@@ -553,7 +556,8 @@
         "description": "施放戰技時，對隨機敵方單體額外造成1次傷害。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1004_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "Welt"
   },
   {
     "id": "1005",
@@ -692,7 +696,8 @@
         "description": "終結技、秘技與天賦觸發的追加攻擊使敵方目標陷入的觸電狀態的傷害倍率提高?，並使觸電狀態的持續時間增加?回合。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1005_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "Kafka"
   },
   {
     "id": "1006",
@@ -831,7 +836,8 @@
         "description": "敵方目標每有1個負面效果，銀狼對其造成的傷害提高?，最多提高?。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1006_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "Silver Wolf"
   },
   {
     "id": "1008",
@@ -970,7 +976,8 @@
         "description": "當前生命值百分比小於等於50%時，終結技造成的傷害提高?，且對相鄰目標的傷害倍率提高到與主目標相同的傷害倍率。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1008_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "Arlan"
   },
   {
     "id": "1009",
@@ -1109,7 +1116,8 @@
         "description": "天賦每回合減少的蓄能層數降低?。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1009_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "Asta"
   },
   {
     "id": "1013",
@@ -1248,7 +1256,8 @@
         "description": "施放終結技後，攻擊力提高?，持續?回合。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1013_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "Herta"
   },
   {
     "id": "1014",
@@ -1387,7 +1396,8 @@
         "description": "Saber造成的終結技傷害的風屬性抗性穿透提高?，行跡【湖之祝福】可積攢的溢出能量提高到?點。進入戰鬥首次施放終結技後，為Saber固定恢復?點能量，該效果每再施放?次終結技可觸發1次。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1014_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "Saber"
   },
   {
     "id": "1015",
@@ -1511,7 +1521,8 @@
         "description": "回合開始時為我方恢復1個戰技點。自身戰技提供的傷害提高效果可以疊加的上限層數提高?層。造成的戰技傷害無視?的防禦力。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1015_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "Archer"
   },
   {
     "id": "1101",
@@ -1650,7 +1661,8 @@
         "description": "戰技對指定我方目標造成的傷害提高效果的持續時間增加?回合。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1101_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "Bronya"
   },
   {
     "id": "1102",
@@ -1789,7 +1801,8 @@
         "description": "施放終結技攻擊後使受到攻擊的敵方單體陷入【亂蝶】狀態，持續?回合。【亂蝶】狀態下的敵方目標受到攻擊後，額外受到1次等同於希兒終結技傷害?的量子屬性附加傷害。若該目標被我方其他目標觸發【亂蝶】狀態的附加傷害消滅，將不會觸發希兒的天賦。\n當希兒陷入無法戰鬥狀態時，敵方目標的【亂蝶】狀態被解除。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1102_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "Seele"
   },
   {
     "id": "1103",
@@ -1928,7 +1941,8 @@
         "description": "希露瓦對觸電狀態下的敵方目標造成的傷害提高?。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1103_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "Serval"
   },
   {
     "id": "1104",
@@ -2067,7 +2081,8 @@
         "description": "觸發天賦時傑帕德立即行動，且當前生命值的回覆量額外增加自身生命上限的?。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1104_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "Gepard"
   },
   {
     "id": "1105",
@@ -2206,7 +2221,8 @@
         "description": "施放普攻時，額外造成等同於娜塔莎生命上限?的物理屬性傷害。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1105_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "Natasha"
   },
   {
     "id": "1106",
@@ -2345,7 +2361,8 @@
         "description": "施放攻擊後，若敵方目標處於負面效果，則對其造成等同於佩拉?攻擊力的冰屬性附加傷害。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1106_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "Pela"
   },
   {
     "id": "1107",
@@ -2484,7 +2501,8 @@
         "description": "我方其他目標遭到攻擊後，史瓦羅也有?的固定概率觸發對攻擊者的反擊，並對攻擊目標添加【反擊標記】。施放終結技時，額外增加?次強化反擊的次數。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1107_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "Clara"
   },
   {
     "id": "1108",
@@ -2623,7 +2641,8 @@
         "description": "天賦施加的風化狀態的傷害倍率提高?。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1108_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "Sampo"
   },
   {
     "id": "1109",
@@ -2762,7 +2781,8 @@
         "description": "虎克對灼燒狀態下的敵方目標造成的傷害提高?。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1109_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "Hook"
   },
   {
     "id": "1110",
@@ -2901,7 +2921,8 @@
         "description": "【求生反應】的生命上限提高效果額外提高，提高數值等同於玲可?的生命上限，並使其效果抵抗提高?。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1110_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "Lynx"
   },
   {
     "id": "1111",
@@ -3040,7 +3061,8 @@
         "description": "施放強化普攻的【碎天拳】擊中陷入裂傷狀態下的敵方目標後，本次強化普攻使用的【直衝拳】每施放過1段攻擊，則額外使其當前承受的裂傷狀態立即產生1次相當於原傷害?的傷害。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1111_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "Luka"
   },
   {
     "id": "1112",
@@ -3179,7 +3201,8 @@
         "description": "賬賬處於【漲幅驚人！】狀態的攻擊次數增加?次，且攻擊時火屬性抗性穿透提高?。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1112_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "Topaz & Numby"
   },
   {
     "id": "1201",
@@ -3318,7 +3341,8 @@
         "description": "施放強化普攻後，恢復1個戰技點。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1201_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "Qingque"
   },
   {
     "id": "1202",
@@ -3457,7 +3481,8 @@
         "description": "終結技為我方目標恢復的能量提高?點。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1202_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "Tingyun"
   },
   {
     "id": "1203",
@@ -3596,7 +3621,8 @@
         "description": "施放終結技時，有?固定概率使敵方全體全屬性抗性降低?，持續?回合。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1203_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "Luocha"
   },
   {
     "id": "1204",
@@ -3735,7 +3761,8 @@
         "description": "【神君】每段攻擊後會使指定敵方目標額外陷入易傷狀態。\n易傷狀態下的敵方目標受到的傷害提高?，持續至【神君】本次攻擊結束，該效果最多疊加?層。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1204_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "Jing Yuan"
   },
   {
     "id": "1205",
@@ -3874,7 +3901,8 @@
         "description": "充能的層數上限降低至4層。天賦觸發追加攻擊造成的傷害額外提高，提高數值等同於刃?的生命上限。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1205_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "Blade"
   },
   {
     "id": "1206",
@@ -4013,7 +4041,8 @@
         "description": "天賦的加速效果可以疊加，最多疊加2層，且進入戰鬥後素裳立即獲得1層天賦的加速效果。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1206_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "Sushang"
   },
   {
     "id": "1207",
@@ -4152,7 +4181,8 @@
         "description": "馭空施放終結技時，立即先獲得?層【鳴弦號令】。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1207_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "Yukong"
   },
   {
     "id": "1208",
@@ -4291,7 +4321,8 @@
         "description": "【窮觀陣】開啟時，會累計我方全體本場戰鬥中的已損失生命值。符玄施放終結技造成的傷害提高，提高數值等同於本場戰鬥中累計已損失生命值的?。\n本場戰鬥中累計已損失生命值最高不超過符玄生命上限的?，施放終結技後會清空並進行重新累計。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1208_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "Fu Xuan"
   },
   {
     "id": "1209",
@@ -4430,7 +4461,8 @@
         "description": "消滅敵方目標時，如果當前持有【智劍連心】或終結技的增益效果，則使這些增益效果的持續時間全部延長1回合。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1209_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "Yanqing"
   },
   {
     "id": "1210",
@@ -4569,7 +4601,8 @@
         "description": "使【吞火】的可疊加層數增加?層。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1210_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "Guinaifen"
   },
   {
     "id": "1211",
@@ -4708,7 +4741,8 @@
         "description": "白露在單場戰鬥中累計可以對受到致命攻擊的我方目標提供治療的效果觸發次數增加?次。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1211_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "Bailu"
   },
   {
     "id": "1212",
@@ -4847,7 +4881,8 @@
         "description": "鏡流進入【轉魄】狀態時，【朔望】的上限層數提高1層並額外獲得?層【朔望】。【轉魄】狀態下，暴擊傷害提高?。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1212_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "Jingliu"
   },
   {
     "id": "1213",
@@ -4972,7 +5007,8 @@
         "description": "我方其他角色施放終結技後，丹恆•飲月下一次施放【盤拏耀躍】時虛數屬性抗性穿透提高?，該效果最多疊加?層。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1213_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "Dan Heng • Imbibitor Lunae"
   },
   {
     "id": "1214",
@@ -5111,7 +5147,8 @@
         "description": "【惡報】的層數上限降低至?層。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1214_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "Xueyi"
   },
   {
     "id": "1215",
@@ -5250,7 +5287,8 @@
         "description": "天賦的傷害提高效果額外提高?。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1215_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "Hanya"
   },
   {
     "id": "1217",
@@ -5389,7 +5427,8 @@
         "description": "為我方目標提供治療時，使目標造成的傷害提高?，持續?回合。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1217_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "Huohuo"
   },
   {
     "id": "1218",
@@ -5528,7 +5567,8 @@
         "description": "敵方目標被消滅時，其持有的【燼煨】會疊加給場上存活的【燼煨】層數最低的敵人。【燼煨】的層數上限提升至?，每層【燼煨】會使目標的全屬性抗性降低?。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1218_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "Jiaoqiu"
   },
   {
     "id": "1220",
@@ -5667,7 +5707,8 @@
         "description": "飛霄造成的終結技傷害的全屬性抗性穿透提高?。天賦的追加攻擊傷害同時視為終結技傷害，並且傷害倍率提高?。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1220_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "Feixiao"
   },
   {
     "id": "1221",
@@ -5806,7 +5847,8 @@
         "description": "【格擋】狀態期間，敵方主動施放技能時無論是否攻擊雲璃，都會觸發【勘破•滅】同時移除【格擋】效果，發動【勘破•斬】或【勘破•滅】造成傷害時暴擊率提高?，物理屬性抗性穿透提高?。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1221_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "Yunli"
   },
   {
     "id": "1222",
@@ -5945,7 +5987,8 @@
         "description": "【浮元】在場時，使敵方全體全屬性抗性降低?，【浮元】攻擊時，額外造成?次傷害，每次傷害對隨機敵方單體造成等同於靈砂?攻擊力的火屬性傷害和?點削韌值，優先選擇韌性值大於0且有火屬性弱點的目標。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1222_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "Lingsha"
   },
   {
     "id": "1223",
@@ -6084,7 +6127,8 @@
         "description": "天賦的追加攻擊的傷害倍率提高?。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1223_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "Moze"
   },
   {
     "id": "1224",
@@ -6223,7 +6267,8 @@
         "description": "施放終結技後，下一次強化普攻造成的暴擊傷害提高?。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1224_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "March 7th"
   },
   {
     "id": "1225",
@@ -6362,7 +6407,8 @@
         "description": "忘歸人的弱點擊破效率提高?。當忘歸人處於【熾灼】狀態時，【狐祈】效果對我方全體生效。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1225_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "Fugue"
   },
   {
     "id": "1301",
@@ -6501,7 +6547,8 @@
         "description": "加拉赫的擊破特攻提高?，弱點擊破效率提高?。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1301_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "Gallagher"
   },
   {
     "id": "1302",
@@ -6640,7 +6687,8 @@
         "description": "施放終結技時，無視敵方目標?的防禦力。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1302_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "Argenti"
   },
   {
     "id": "1303",
@@ -6779,7 +6827,8 @@
         "description": "終結技展開的結界持續時間延長?回合。天賦造成的擊破傷害倍率額外提高?。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1303_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "Ruan Mei"
   },
   {
     "id": "1304",
@@ -6918,7 +6967,8 @@
         "description": "每有1個隊友持有護盾，砂金造成的傷害提高?，最高不超過?。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1304_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "Aventurine"
   },
   {
     "id": "1305",
@@ -7057,7 +7107,8 @@
         "description": "【智者的短見】的觸發效果額外增加?次，天賦的追加攻擊造成的傷害提高?。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1305_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "Dr. Ratio"
   },
   {
     "id": "1306",
@@ -7196,7 +7247,8 @@
         "description": "戰技的暴擊傷害提高效果額外提高，提高數值等同於花火暴擊傷害的?，花火施放戰技時，使戰技的暴擊傷害提高效果對持有【謎詭】的隊友都會生效，花火施放終結技時，若我方單體中有目標持有戰技的暴擊傷害提高效果，使該效果擴散至持有【謎詭】的隊友。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1306_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "Sparkle"
   },
   {
     "id": "1307",
@@ -7335,7 +7387,8 @@
         "description": "當敵方目標受到黑天鵝的隊友的攻擊時，黑天鵝有?的基礎概率使目標陷入1層【奧跡】。\n每當黑天鵝使敵方目標陷入【奧跡】時，有?的固定概率使本次疊加的【奧跡】層數額外提高?層。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1307_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "Black Swan"
   },
   {
     "id": "1308",
@@ -7474,7 +7527,8 @@
         "description": "黃泉造成的終結技傷害全屬性抗性穿透提高?，施放普攻、戰技造成的傷害同時視為終結技傷害，並無視弱點屬性削減敵方韌性。擊破弱點時，觸發雷屬性的弱點擊破效果。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1308_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "Acheron"
   },
   {
     "id": "1309",
@@ -7613,7 +7667,8 @@
         "description": "處於【協奏】狀態時，終結技造成的物理屬性附加傷害的暴擊傷害額外提高?。【月隱的午夜】效果最多觸發?次，每次施放終結技時重置觸發次數。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1309_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "Robin"
   },
   {
     "id": "1310",
@@ -7752,7 +7807,8 @@
         "description": "「完全燃燒」狀態下裝甲「薩姆」的火屬性抗性穿透提高?。施放強化普攻、強化戰技時弱點擊破效率提高?。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1310_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "Firefly"
   },
   {
     "id": "1312",
@@ -7891,7 +7947,8 @@
         "description": "施放終結技時，使自身造成的傷害提高?，持續至自身回合結束，且下一次施放戰技後為我方恢復?個戰技點。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1312_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "Misha"
   },
   {
     "id": "1313",
@@ -8030,7 +8087,8 @@
         "description": "天賦的暴擊率提高效果可以疊加，最多疊加?層，並使天賦的持續時間增加?回合。星期日施放終結技時，也可以為目標添加天賦的暴擊率提高效果。天賦的暴擊率提高效果生效時，當目標的暴擊率超過100%，每溢出1%暴擊率提高?暴擊傷害。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1313_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "Sunday"
   },
   {
     "id": "1314",
@@ -8169,7 +8227,8 @@
         "description": "場上有【收債人】狀態的角色時，翡翠量子屬性抗性穿透提高?，同時翡翠獲得【收債人】狀態。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1314_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "Jade"
   },
   {
     "id": "1315",
@@ -8308,7 +8367,8 @@
         "description": "觸發天賦造成擊破傷害時，對目標額外造成等同於原傷害倍率?的擊破傷害，對相鄰目標額外造成等同於原傷害倍率?的擊破傷害。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1315_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "Boothill"
   },
   {
     "id": "1317",
@@ -8447,7 +8507,8 @@
         "description": "戰鬥開始時亂破獲得?點天賦效果的充能，且充能上限增加?點。發動【忍具•降魔花弁】第3段攻擊後獲得?點充能。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1317_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "Rappa"
   },
   {
     "id": "1321",
@@ -8586,7 +8647,8 @@
         "description": "【共舞者】的擊破特攻提高?。施放天賦的追加攻擊時，使所有【共舞者】下一次行動提前?。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1321_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "The Dahlia"
   },
   {
     "id": "1401",
@@ -8725,7 +8787,8 @@
         "description": "大黑塔的冰屬性抗性穿透提高?，當場上敵方目標數量等於3或以上/2/1名時，終結技的傷害倍率提高?/?/?。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1401_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "The Herta"
   },
   {
     "id": "1402",
@@ -8864,7 +8927,8 @@
         "description": "當阿格萊雅處於【至高之姿】狀態時，自身與衣匠的雷屬性抗性穿透提高?，當阿格萊雅或衣匠的速度高於160/240/320點時，其造成的連攜攻擊傷害提高?/?/?。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1402_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "Aglaea"
   },
   {
     "id": "1403",
@@ -9003,7 +9067,8 @@
         "description": "緹寶施放終結技後，對敵方全體發動天賦的追加攻擊。天賦的追加攻擊造成的傷害提高?。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1403_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "Tribbie"
   },
   {
     "id": "1404",
@@ -9142,7 +9207,8 @@
         "description": "進入戰鬥時立刻進入【血仇】狀態且【弒神登神】所需的充能值降低至?點。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1404_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "Mydei"
   },
   {
     "id": "1405",
@@ -9281,7 +9347,8 @@
         "description": "那刻夏造成的傷害為原傷害的?。行跡【必要的留白】的2種效果都會直接觸發，不再依賴我方隊伍中「智識」命途角色的數量。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1405_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "Anaxa"
   },
   {
     "id": "1406",
@@ -9420,7 +9487,8 @@
         "description": "賽飛兒天賦的追加攻擊造成的傷害提高?，記錄時額外記錄該攻擊造成的非溢出傷害的?。施放終結技清空記錄值後，返還本次清除記錄值的?。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1406_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "Cipher"
   },
   {
     "id": "1407",
@@ -9559,7 +9627,8 @@
         "description": "遐蝶與死龍造成傷害時，量子屬性抗性穿透提高?。死龍攻擊期間可以無視弱點屬性削減敵方韌性，擊破弱點時，觸發量子屬性的弱點擊破效果，觸發天賦【灼掠幽墟的晦翼】的彈射次數額外增加?次。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1407_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "Castorice"
   },
   {
     "id": "1408",
@@ -9698,7 +9767,8 @@
         "description": "【火種】的可溢出點數不再擁有上限。戰鬥開始時，獲得?點【火種】。\n施放【支柱•死星天裁】的攻擊後，對生命值最高的敵方目標額外造成等同於本次攻擊總傷害值?的真實傷害。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1408_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "Phainon"
   },
   {
     "id": "1409",
@@ -9837,7 +9907,8 @@
         "description": "小伊卡施放憶靈技清空累計治療數值改為?，小伊卡在場時，我方全體目標的全屬性抗性穿透提高?。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1409_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "Hyacine"
   },
   {
     "id": "1410",
@@ -9976,7 +10047,8 @@
         "description": "結界持續期間，每回合開始時或我方目標單次攻擊後，觸發海瑟音物理持續傷害效果的次數上限提高至?次，且造成的傷害倍率提高?。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1410_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "Hysilens"
   },
   {
     "id": "1412",
@@ -10115,7 +10187,8 @@
         "description": "持有【軍功】的角色全屬性抗性穿透提高?，且【軍功】觸發的附加傷害倍率提高?。場上存在持有【軍功】的隊友時，刻律德菈全屬性抗性穿透提高?。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1412_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "Cerydra"
   },
   {
     "id": "1413",
@@ -10254,7 +10327,8 @@
         "description": "長夜月在場時，我方全體目標的全屬性抗性穿透提高?。憶靈「長夜」施放【迷夢，流失，如露】後，長夜月獲得本次攻擊消耗【憶質】數量的?。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1413_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "Evernight"
   },
   {
     "id": "1414",
@@ -10393,7 +10467,8 @@
         "description": "場上存在【同袍】時，使敵方全體受到的傷害提高?，【同袍】造成傷害時，無視敵方目標?的防禦力。丹恆•騰荒施放終結技時，【同袍】會對敵方全體造成等同於【同袍】?攻擊力的相應屬性附加傷害。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1414_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "Dan Heng • Permansor Terrae"
   },
   {
     "id": "1415",
@@ -10532,7 +10607,8 @@
         "description": "昔漣首次施放終結技時，使我方全體行動提前?。德謬歌每次觸發憶靈技【獻予「真我」之詩】施放【花與箭的舞曲】時，根據本場戰鬥中已觸發的次數獲得以下效果：\n1次：德謬歌在場時，敵方全體目標的防禦力降低?；\n至少2次：使我方全體行動提前?。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1415_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "Cyrene"
   },
   {
     "id": "1501",
@@ -10671,7 +10747,8 @@
         "description": "全屬性抗性穿透提高?。歡愉技每計入?個笑點使其造成的額外傷害次數增加1次，最多增加至?次。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1501_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "Sparxie"
   },
   {
     "id": "1502",
@@ -10810,7 +10887,8 @@
         "description": "我方全體目標的歡愉傷害增笑?。爻光歡愉技的傷害倍率提高原倍率的?。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/1502_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "Yao Guang"
   },
   {
     "id": "8001",
@@ -10949,7 +11027,8 @@
         "description": "開拓者消滅敵方目標時，也會觸發天賦。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/8001_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "{NICKNAME}"
   },
   {
     "id": "8002",
@@ -11088,7 +11167,8 @@
         "description": "開拓者消滅敵方目標時，也會觸發天賦。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/8002_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "{NICKNAME}"
   },
   {
     "id": "8003",
@@ -11227,7 +11307,8 @@
         "description": "施放強化普攻或終結技後，開拓者的防禦力提高?，最多疊加?層。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/8003_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "{NICKNAME}"
   },
   {
     "id": "8004",
@@ -11366,7 +11447,8 @@
         "description": "施放強化普攻或終結技後，開拓者的防禦力提高?，最多疊加?層。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/8004_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "{NICKNAME}"
   },
   {
     "id": "8005",
@@ -11505,7 +11587,8 @@
         "description": "戰技的額外傷害次數增加?次。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/8005_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "{NICKNAME}"
   },
   {
     "id": "8006",
@@ -11644,7 +11727,8 @@
         "description": "戰技的額外傷害次數增加?次。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/8006_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "{NICKNAME}"
   },
   {
     "id": "8007",
@@ -11783,7 +11867,8 @@
         "description": "終結技的暴擊率固定為100%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/8007_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "{NICKNAME}"
   },
   {
     "id": "8008",
@@ -11922,7 +12007,8 @@
         "description": "終結技的暴擊率固定為100%。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/8008_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "{NICKNAME}"
   },
   {
     "id": "8009",
@@ -12061,7 +12147,8 @@
         "description": "開拓者對除自身以外的我方目標施放終結技時，開拓者也會獲得相同的終結技效果。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/8009_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "{NICKNAME}"
   },
   {
     "id": "8010",
@@ -12200,6 +12287,7 @@
         "description": "開拓者對除自身以外的我方目標施放終結技時，開拓者也會獲得相同的終結技效果。",
         "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/8010_rank6.png"
       }
-    ]
+    ],
+    "nameEn": "{NICKNAME}"
   }
 ]

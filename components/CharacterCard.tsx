@@ -1,6 +1,9 @@
+'use client';
+
 import Link from 'next/link';
 import type { Character } from '@/lib/types';
 import { getDisplayName } from '@/lib/api';
+import { useLang } from '@/lib/lang';
 import AvatarImage from './AvatarImage';
 
 // 屬性顏色對照
@@ -15,8 +18,9 @@ const ELEMENT_COLOR: Record<string, string> = {
 };
 
 export default function CharacterCard({ character }: { character: Character }) {
+  const { lang } = useLang();
   const isGold = character.rarity === 5;
-  const displayName = getDisplayName(character);
+  const displayName = getDisplayName(character, lang);
 
   return (
     <Link href={`/characters/${character.id}`}>

@@ -1,7 +1,8 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import Link from 'next/link';
-import FontToggle from '@/components/FontToggle';
+import LangToggle from '@/components/LangToggle';
+import { LangProvider } from '@/lib/lang';
 
 export const metadata: Metadata = {
   title: 'CT杯 數據庫',
@@ -21,27 +22,38 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body>
-        {/* 頂部導覽列 */}
-        <nav className="sticky top-0 z-50 border-b border-white/10 backdrop-blur-md bg-[#0d0d1a]/80">
-          <div className="max-w-7xl mx-auto px-4 h-14 flex items-center gap-6">
-            <Link href="/" className="text-[#c9a227] font-bold text-lg tracking-wide">
-              CT杯 數據庫
-            </Link>
-            <Link href="/" className="text-sm text-gray-400 hover:text-white transition-colors">
-              角色
-            </Link>
-            <Link href="/lightcones" className="text-sm text-gray-400 hover:text-white transition-colors">
-              光錐
-            </Link>
-            {/* 推到右側 */}
-            <div className="ml-auto">
-              <FontToggle />
+        <LangProvider>
+          {/* 頂部導覽列 */}
+          <nav className="sticky top-0 z-50 border-b border-white/10 backdrop-blur-md bg-[#0d0d1a]/80">
+            <div className="max-w-7xl mx-auto px-4 h-14 flex items-center gap-6">
+              <Link href="/" className="text-[#c9a227] font-bold text-lg tracking-wide">
+                CT杯 數據庫
+              </Link>
+              <Link href="/" className="text-sm text-gray-400 hover:text-white transition-colors">
+                角色
+              </Link>
+              <Link href="/lightcones" className="text-sm text-gray-400 hover:text-white transition-colors">
+                光錐
+              </Link>
+              <Link href="/abyss" className="text-sm text-gray-400 hover:text-white transition-colors">
+                三深淵
+              </Link>
+              <Link href="/simulated" className="text-sm text-gray-400 hover:text-white transition-colors">
+                異相
+              </Link>
+              <Link href="/relics" className="text-sm text-gray-400 hover:text-white transition-colors">
+                仪器
+              </Link>
+              {/* 推到右側 */}
+              <div className="ml-auto">
+                <LangToggle />
+              </div>
             </div>
-          </div>
-        </nav>
-        <main className="max-w-7xl mx-auto px-4 py-6">
-          {children}
-        </main>
+          </nav>
+          <main className="max-w-7xl mx-auto px-4 py-6">
+            {children}
+          </main>
+        </LangProvider>
       </body>
     </html>
   );
