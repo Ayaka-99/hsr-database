@@ -90,6 +90,8 @@ export default function SkillSection({
   rarity?: 4 | 5;
 }) {
   const [levels, setLevels] = useState<Record<string, number>>({});
+  // 詩行跡等級（每首獨立）
+  const [poemLevels, setPoemLevels] = useState<Record<string, number>>({});
   const keys = Object.keys(SKILL_LABELS) as Array<keyof Character['skills']>;
 
   // 組合技能圖示 URL
@@ -97,7 +99,10 @@ export default function SkillSection({
     return `https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/${characterId}_${SKILL_ICON_SUFFIX[key]}.png`;
   }
 
-  const abilityTraces = traces?.filter(t => t.type === 'ability') ?? [];
+  // 普通行跡（無多等級）
+  const abilityTraces = traces?.filter(t => t.type === 'ability' && !(t.descriptions && t.descriptions.length > 1)) ?? [];
+  // 詩行跡（有多等級，如「獻予X之詩」）
+  const poemTraces = traces?.filter(t => t.type === 'ability' && t.descriptions && t.descriptions.length > 1) ?? [];
   const hasTraces = traces && traces.length > 0;
 
   // 依 statType 加總屬性數值
@@ -203,6 +208,45 @@ export default function SkillSection({
                     )}
                   </div>
                 ))}
+              </div>
+            )}
+
+            {/* 詩行跡（獻予X之詩，有多等級） */}
+            {poemTraces.length > 0 && (
+              <div className="space-y-2">
+                <p className="text-xs text-gray-500 mb-2">憶靈技效果</p>
+                {poemTraces.map(trace => {
+                  const descs = trace.descriptions!;
+                  const lv = poemLevels[trace.anchor] ?? 1;
+                  return (
+                    <div
+                      key={trace.anchor}
+                      className="rounded-lg border border-sky-400/30 bg-sky-400/5 p-4"
+                    >
+                      <div className="flex items-center justify-between mb-2 flex-wrap gap-2">
+                        <p className="text-sky-300 font-semibold text-sm">{trace.name}</p>
+                        <span className="text-xs font-bold text-sky-400">Lv.{lv}</span>
+                      </div>
+                      {/* 等級滑動條 */}
+                      <div className="mb-3 flex items-center gap-3">
+                        <span className="text-xs text-gray-500 shrink-0">1</span>
+                        <input
+                          type="range"
+                          min={1}
+                          max={descs.length}
+                          value={lv}
+                          onChange={e => setPoemLevels(prev => ({ ...prev, [trace.anchor]: +e.target.value }))}
+                          className="flex-1 h-1.5 cursor-pointer"
+                          style={{ accentColor: '#38bdf8' }}
+                        />
+                        <span className="text-xs text-gray-500 shrink-0">{descs.length}</span>
+                      </div>
+                      <p className="text-sm text-gray-300 whitespace-pre-line leading-relaxed">
+                        {descs[lv - 1] || trace.description || '—'}
+                      </p>
+                    </div>
+                  );
+                })}
               </div>
             )}
 

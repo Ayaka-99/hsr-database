@@ -19,7 +19,8 @@ export interface CharacterTrace {
   anchor: string;
   type: 'ability' | 'stat';
   name: string;
-  description?: string;   // ability traces only
+  description?: string;    // ability traces only（單等級）
+  descriptions?: string[]; // 多等級行跡（如「獻予X之詩」，Lv.1–7）
   statType?: string;       // stat traces only
   value?: number;          // stat traces only
 }

@@ -132,6 +132,20 @@ function resolveDesc(template: string, params: number[]): string {
   });
 }
 
+/** 同 resolveDesc，但整數用 Math.floor（符合遊戲憶靈技顯示） */
+function resolveDescFloor(template: string, params: number[]): string {
+  return template.replace(/#(\d+)\[([^\]]+)\](%)?/g, (_, n, fmt, pct) => {
+    const p = params[parseInt(n) - 1] ?? 0;
+    const val = pct ? p * 100 : p;
+    if (fmt === 'i') {
+      return Math.floor(val) + (pct ? '%' : '');
+    }
+    const decimals = parseInt(fmt.replace('f', '')) || 1;
+    const formatted = val.toFixed(decimals).replace(/\.0+$/, '');
+    return formatted + (pct ? '%' : '');
+  });
+}
+
 // ─── 角色資料 ─────────────────────────────────────────
 
 interface ApiCharacterList {
@@ -187,12 +201,22 @@ interface ApiStatEntry {
   critical_damage: number;
 }
 
+interface ApiMemospriteSkill {
+  name: string;
+  desc: string;
+  type: string | null;
+  level: Record<string, { param_list: number[] }>;
+}
+
 interface ApiCharacterDetail {
   name: string;
   skills: Record<string, ApiSkill>;
   ranks: Record<string, ApiRank>;
   skill_trees?: Record<string, Record<string, ApiTraceNode>>;
   stats?: Record<string, ApiStatEntry>;
+  memosprite?: {
+    skills: Record<string, ApiMemospriteSkill>;
+  };
 }
 
 async function fetchCharacters(baseUrl: string): Promise<Character[]> {
@@ -261,12 +285,12 @@ async function fetchCharacters(baseUrl: string): Promise<Character[]> {
           const node = Object.values(pointLevels)[0] as ApiTraceNode;
           if (!node) continue;
           if (node.point_type === 3 && node.point_name) {
-            // 能力型行迹（有名稱與描述）
+            // 能力型行迹（有名稱與描述）— 用 resolveDesc 填入實際數值
             traces.push({
               anchor: node.anchor,
               type: 'ability',
               name: node.point_name,
-              description: cleanDesc(node.point_desc),
+              description: resolveDesc(stripFormatOnly(node.point_desc), node.param_list ?? []),
             });
           } else if (node.point_type === 1 && node.status_add_list?.length) {
             // 屬性強化型行迹
@@ -279,6 +303,29 @@ async function fetchCharacters(baseUrl: string): Promise<Character[]> {
               value: stat.value,
             });
           }
+        }
+      }
+
+      // ── 整理忆灵技「獻予X之詩」行跡（各黃金裔角色專屬效果，7 個等級）──
+      if (detail.memosprite?.skills) {
+        const poemSkills = Object.entries(detail.memosprite.skills)
+          .filter(([, s]) => s.type === 'Servant' && s.name?.includes('「'))
+          .sort(([a], [b]) => +a - +b);
+
+        for (const [skillId, skill] of poemSkills) {
+          const template = stripFormatOnly(skill.desc);
+          const levelKeys = Object.keys(skill.level).sort((a, b) => +a - +b);
+          // 取前 7 個等級（符合遊戲顯示上限）
+          const descriptions = levelKeys.slice(0, 7).map(lv =>
+            resolveDescFloor(template, skill.level[lv].param_list)
+          );
+          traces.push({
+            anchor: `poem_${skillId}`,
+            type: 'ability',
+            name: skill.name,
+            description: descriptions[0],
+            descriptions,
+          });
         }
       }
 
@@ -452,9 +499,9 @@ async function main() {
   // 1. 取得最新版本號
   console.log('📋 取得遊戲版本...');
   const manifest = await fetchJson<{ hsr: { live: string; latest: string } }>(MANIFEST_URL);
-  const version = manifest.hsr.live;  // 使用已上線版本（截止 4.0）
+  const version = manifest.hsr.latest;  // 使用最新版本（含未上線角色）
   const BASE_URL = `https://static.nanoka.cc/hsr/${version}`;
-  console.log(`   版本：${version}（live）\n`);
+  console.log(`   版本：${version}（latest）\n`);
 
   // 2. 抓取角色
   const characters = await fetchCharacters(BASE_URL);
