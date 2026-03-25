@@ -326,7 +326,7 @@ export default function AbyssPage() {
 
       {/* 賽季列表 */}
       <div className="space-y-6">
-        {seasons.map((season) => (
+        {seasons.map((season, i) => (
           <SeasonSection
             key={season.id}
             season={season}
