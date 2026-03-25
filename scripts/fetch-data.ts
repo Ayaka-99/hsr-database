@@ -453,13 +453,13 @@ async function fetchLightCones(baseUrl: string): Promise<LightCone[]> {
 
       lightCones.push({
         id,
-        name: detail.name || entry.zh || entry.en,
+        name: toTW(detail.name || entry.zh || entry.en),
         rarity: ([3, 4, 5].includes(rarity) ? rarity : 3) as LightCone['rarity'],
         path:  PATH_MAP[entry.baseType] ?? '巡獵',
         image: `${IMG_BASE}/icon/light_cone/${id}.png`,
         passive: {
-          name: ref?.name ?? '',
-          description: descriptions,
+          name: toTW(ref?.name ?? ''),
+          description: descriptions.map(toTW),
         },
       });
 
