@@ -53,3 +53,4 @@ scripts/
 - One file per task
 - Use local JSON, not live API calls in components
 - All text in Traditional Chinese
+- 新增任何內容（UI 文字、註解、變數名稱以外的字串）一律使用繁體中文寫入
