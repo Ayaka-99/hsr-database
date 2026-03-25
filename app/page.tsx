@@ -13,15 +13,20 @@ const ALL_CHARACTERS = getAllCharacters();
 function CtEasterEgg() {
   return (
     <div className="flex justify-center">
-      <div className="rounded-2xl overflow-hidden border-2 border-[#c9a227]/60 shadow-[0_0_40px_rgba(201,162,39,0.4)]">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src="/hsr-database/ct-easter-egg.png"
-          alt="CT"
-          className="block max-h-[60vh] w-auto"
-        />
-        <div className="bg-black/90 p-4 text-center">
-          <p className="text-[#c9a227] font-bold text-xl tracking-widest">C T</p>
+      <div className="ct-rainbow-frame">
+        <div className="ct-inner-frame ct-corner-bottom">
+          {/* 角落裝飾菱形 */}
+          <span className="absolute top-[3px] left-1/2 -translate-x-1/2 text-[#c9a227]/80 text-xs z-10 pointer-events-none select-none">◆</span>
+          <span className="absolute bottom-[3px] left-1/2 -translate-x-1/2 text-[#c9a227]/80 text-xs z-10 pointer-events-none select-none">◆</span>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/hsr-database/ct-easter-egg.png"
+            alt="CT"
+            className="block max-h-[60vh] w-auto"
+          />
+          <div className="bg-black/90 p-4 text-center border-t border-[#c9a227]/30">
+            <p className="text-[#c9a227] font-bold text-xl tracking-widest">❧ C T ❧</p>
+          </div>
         </div>
       </div>
     </div>
