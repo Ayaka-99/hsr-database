@@ -18,14 +18,6 @@ const ELEMENT_COLOR: Record<string, string> = {
   物理: 'bg-gray-500/20   text-gray-300   border-gray-500/40',
 };
 
-// 關卡配色（前三關 + 王棋）
-const STAGE_STYLES = [
-  { border: 'border-blue-500/30', badge: 'border-blue-500/40 bg-blue-500/10 text-blue-400', numBorder: 'border-blue-500/30 text-blue-400 bg-blue-500/10' },
-  { border: 'border-blue-500/30', badge: 'border-blue-500/40 bg-blue-500/10 text-blue-400', numBorder: 'border-blue-500/30 text-blue-400 bg-blue-500/10' },
-  { border: 'border-blue-500/30', badge: 'border-blue-500/40 bg-blue-500/10 text-blue-400', numBorder: 'border-blue-500/30 text-blue-400 bg-blue-500/10' },
-  { border: 'border-[#c9a227]/30', badge: 'border-[#c9a227]/40 bg-[#c9a227]/10 text-[#c9a227]', numBorder: 'border-[#c9a227]/40 text-[#c9a227] bg-[#c9a227]/10' },
-];
-
 // ── 弱點標籤 ─────────────────────────────────────────
 function WeaknessBadge({ element }: { element: string }) {
   return (
@@ -58,26 +50,51 @@ function MonsterIcon({ monster }: { monster: EndgameMonster }) {
   );
 }
 
-// ── 關卡卡片 ─────────────────────────────────────────
-function StageCard({ floor, index, isBoss }: { floor: EndgameFloor; index: number; isBoss: boolean }) {
-  const style = STAGE_STYLES[Math.min(index, STAGE_STYLES.length - 1)];
+// ── 時間線節點 ───────────────────────────────────────
+function TimelineNode({ floor, index, total }: { floor: EndgameFloor; index: number; total: number }) {
+  const isBoss = index === total - 1;
 
   return (
-    <div className={`rounded-xl border ${style.border} p-4 ${isBoss ? 'bg-gradient-to-br from-[#1a1200]/40 to-[#0d0d1a]' : 'bg-white/[0.02]'}`}>
-      <div className="flex flex-col sm:flex-row sm:items-start gap-3">
-        {/* 關卡編號 */}
-        <div className={`shrink-0 w-9 h-9 rounded-full border flex items-center justify-center text-sm font-bold ${style.numBorder}`}>
+    <div className="flex gap-4">
+      {/* 左側時間線 */}
+      <div className="flex flex-col items-center shrink-0">
+        {/* 節點圓圈 */}
+        <div className={`w-8 h-8 rounded-full border-2 flex items-center justify-center text-xs font-bold shrink-0 ${
+          isBoss
+            ? 'border-[#c9a227] bg-[#c9a227]/15 text-[#c9a227]'
+            : 'border-[#6b4ff5]/50 bg-[#6b4ff5]/10 text-[#6b4ff5]'
+        }`}>
           {isBoss ? '♛' : index + 1}
         </div>
+        {/* 連接線 */}
+        {index < total - 1 && (
+          <div className="w-px flex-1 min-h-[24px] bg-gradient-to-b from-[#6b4ff5]/30 to-transparent" />
+        )}
+      </div>
 
-        {/* 關卡資訊 */}
-        <div className="flex-1 min-w-0">
-          <div className="flex items-center gap-2 mb-2 flex-wrap">
-            <span className="text-white font-semibold text-sm">{floor.name}</span>
-          </div>
+      {/* 右側內容卡片 */}
+      <div className={`flex-1 min-w-0 mb-4 rounded-xl border overflow-hidden ${
+        isBoss
+          ? 'border-[#c9a227]/30 bg-gradient-to-br from-[#1a1200]/30 to-transparent'
+          : 'border-white/8 bg-white/[0.015]'
+      }`}>
+        {/* 關卡名稱列 */}
+        <div className={`px-4 py-2.5 border-b flex items-center gap-2 ${
+          isBoss ? 'border-[#c9a227]/20 bg-[#c9a227]/5' : 'border-white/5 bg-white/[0.02]'
+        }`}>
+          <span className={`text-xs font-bold ${isBoss ? 'text-[#c9a227]' : 'text-white'}`}>
+            {floor.name}
+          </span>
+          {isBoss && (
+            <span className="text-[9px] px-1.5 py-0.5 rounded bg-[#c9a227]/15 text-[#c9a227] border border-[#c9a227]/30">
+              王棋
+            </span>
+          )}
+        </div>
 
+        <div className="p-4 space-y-3">
           {/* 弱點 */}
-          <div className="flex gap-1 flex-wrap mb-3">
+          <div className="flex gap-1 flex-wrap">
             {floor.weakness1.map(w => <WeaknessBadge key={w} element={w} />)}
           </div>
 
@@ -90,7 +107,7 @@ function StageCard({ floor, index, isBoss }: { floor: EndgameFloor; index: numbe
 
           {/* 機制標籤 */}
           {floor.tags1 && floor.tags1.length > 0 && (
-            <div className="mt-3 flex flex-wrap gap-1.5">
+            <div className="flex flex-wrap gap-1.5">
               {floor.tags1.map((tag, i) => (
                 <span key={i} className="text-[10px] px-2 py-0.5 rounded-full border border-white/10 bg-white/5 text-gray-400" title={tag.desc}>
                   {tag.name}
@@ -104,7 +121,41 @@ function StageCard({ floor, index, isBoss }: { floor: EndgameFloor; index: numbe
   );
 }
 
-// ══════════════════════════════════════════════════════
+// ── 賽季展示區塊 ─────────────────────────────────────
+function SeasonDetail({ season }: { season: EndgameSeason }) {
+  return (
+    <div className="space-y-5">
+      {/* 增益區 */}
+      {season.buffs && season.buffs.length > 0 && (
+        <div>
+          <p className="text-[11px] text-gray-500 font-medium mb-2 uppercase tracking-wider">王棋增益</p>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
+            {season.buffs.map((b, i) => (
+              <div key={i} className="rounded-lg border border-white/8 bg-white/[0.02] px-3 py-2.5">
+                <p className="text-[11px] text-[#c9a227] font-semibold mb-1">{b.name}</p>
+                <p className="text-[10px] text-gray-400 leading-relaxed">{b.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* 時間線關卡列表 */}
+      <div>
+        {season.floors.map((floor, i) => (
+          <TimelineNode
+            key={i}
+            floor={floor}
+            index={i}
+            total={season.floors.length}
+          />
+        ))}
+      </div>
+    </div>
+  );
+}
+
+// ══════════════════════════════════════════════════════════
 export default function SimulatedPage() {
   const [seasonIdx, setSeasonIdx] = useState(0);
   const season = SEASONS[seasonIdx];
@@ -121,71 +172,37 @@ export default function SimulatedPage() {
     <div className="space-y-6">
       {/* 頁面標題 */}
       <div>
-        <h1 className="text-2xl font-bold text-white">異相仲裁</h1>
-        <p className="text-sm text-gray-400 mt-1">差分宇宙 — Divergent Universe: Anomaly Arbitration</p>
+        <h1 className="text-2xl font-bold text-white tracking-tight">異相仲裁</h1>
+        <p className="text-sm text-gray-500 mt-1">差分宇宙特殊挑戰</p>
       </div>
 
-      {/* 賽季選擇 */}
-      <div className="flex flex-wrap gap-1.5">
-        {SEASONS.map((s, i) => (
-          <button
-            key={s.id}
-            onClick={() => setSeasonIdx(i)}
-            className={`px-3 py-1.5 rounded-full text-xs border transition-colors ${
-              seasonIdx === i
-                ? 'border-[#6b4ff5]/60 bg-[#6b4ff5]/10 text-[#6b4ff5]'
-                : 'border-white/10 text-gray-500 hover:text-gray-300'
-            }`}
-          >
-            {s.name}
-            {i === 0 && (
-              <span className="ml-1.5 px-1 py-0.5 rounded text-[9px] bg-[#6b4ff5]/20 text-[#6b4ff5]">最新</span>
-            )}
-          </button>
-        ))}
+      {/* 賽季橫向捲動選擇器 */}
+      <div className="flex gap-2 overflow-x-auto pb-1 -mx-1 px-1 scrollbar-hide">
+        {SEASONS.map((s, i) => {
+          const active = seasonIdx === i;
+          return (
+            <button
+              key={s.id}
+              onClick={() => setSeasonIdx(i)}
+              className={`shrink-0 px-4 py-2 rounded-lg text-xs border transition-all duration-200 ${
+                active
+                  ? 'border-[#6b4ff5]/50 bg-[#6b4ff5]/10 text-[#6b4ff5] shadow-lg shadow-[#6b4ff5]/5'
+                  : 'border-white/8 text-gray-500 hover:text-gray-300 hover:border-white/15'
+              }`}
+            >
+              <span className="font-medium">{s.name}</span>
+            </button>
+          );
+        })}
       </div>
 
-      {/* 簡介 */}
-      <div className="rounded-xl border border-[#6b4ff5]/20 bg-gradient-to-br from-[#12092a]/60 to-[#0d0d1a] p-5">
-        <p className="text-gray-300 leading-relaxed text-sm">
-          異相仲裁是差分宇宙中的特殊挑戰模式。每期包含數個前置關卡（騎士、主教等）以及最終的王棋 BOSS 關。
-          需依據各關弱點與敵方機制來規劃陣容與祝福路線。
-        </p>
-      </div>
-
-      {/* 王棋增益（若有） */}
-      {season.buffs && season.buffs.length > 0 && (
-        <div>
-          <h2 className="text-sm font-bold text-gray-400 mb-2">王棋增益選項</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
-            {season.buffs.map((b, i) => (
-              <div key={i} className="rounded-lg border border-white/8 bg-white/[0.02] px-3 py-2">
-                <p className="text-[11px] text-[#c9a227] font-semibold mb-0.5">{b.name}</p>
-                <p className="text-[10px] text-gray-400 leading-relaxed">{b.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      )}
-
-      {/* 關卡列表 */}
-      <div className="space-y-3">
-        {season.floors.map((floor, i) => (
-          <StageCard
-            key={i}
-            floor={floor}
-            index={i}
-            isBoss={i === season.floors.length - 1}
-          />
-        ))}
-      </div>
+      {/* 賽季詳情 */}
+      <SeasonDetail season={season} />
 
       {/* 註腳 */}
-      <div className="p-4 rounded-xl border border-white/8 bg-white/[0.02]">
-        <p className="text-xs text-gray-500 text-center">
-          資料來自 nanoka.cc API，關卡內容每期更新，請以遊戲內顯示為準。
-        </p>
-      </div>
+      <p className="text-[10px] text-gray-600 text-center pt-2">
+        資料來源 nanoka.cc API · 關卡內容每期更新，請以遊戲內顯示為準
+      </p>
     </div>
   );
 }
