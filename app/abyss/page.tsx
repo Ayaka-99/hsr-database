@@ -191,8 +191,8 @@ function HighestDifficultyCard({ floor, theme }: { floor: EndgameFloor; theme: t
 }
 
 // ── 賽季區塊 ──────────────────────────────────────────
-function SeasonSection({ season, modeKey }: { season: EndgameSeason; modeKey: string }) {
-  const [open, setOpen] = useState(true);
+function SeasonSection({ season, modeKey, defaultOpen }: { season: EndgameSeason; modeKey: string; defaultOpen?: boolean }) {
+  const [open, setOpen] = useState(defaultOpen ?? false);
   const theme = MODE_THEME[modeKey];
   const status = getSeasonStatus(season);
 
@@ -331,6 +331,7 @@ export default function AbyssPage() {
             key={season.id}
             season={season}
             modeKey={mode.key}
+            defaultOpen={i === 0}
           />
         ))}
       </div>
