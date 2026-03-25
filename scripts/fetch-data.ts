@@ -529,9 +529,9 @@ async function main() {
   // 1. 取得最新版本號
   console.log('📋 取得遊戲版本...');
   const manifest = await fetchJson<{ hsr: { live: string; latest: string } }>(MANIFEST_URL);
-  const version = manifest.hsr.latest;  // 使用最新版本（含未上線角色）
+  const version = manifest.hsr.live;  // 僅使用正式上線版本，避免未公開資料的法律風險
   const BASE_URL = `https://static.nanoka.cc/hsr/${version}`;
-  console.log(`   版本：${version}（latest）\n`);
+  console.log(`   版本：${version}（live）\n`);
 
   // 2. 抓取角色
   const characters = await fetchCharacters(BASE_URL);
