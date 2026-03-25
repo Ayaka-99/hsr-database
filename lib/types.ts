@@ -76,12 +76,19 @@ export interface RelicSet {
   effects: { 2: string; 4?: string };
 }
 
+export interface LightConeStats {
+  hp: number;
+  atk: number;
+  def: number;
+}
+
 export interface LightCone {
   id: string;
   name: string;
   rarity: 3 | 4 | 5;
   path: Path;
   image: string;
+  stats?: LightConeStats;
   passive: {
     name: string;
     description: string[];

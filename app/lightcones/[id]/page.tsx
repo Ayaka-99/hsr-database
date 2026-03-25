@@ -20,6 +20,49 @@ const RARITY_COLOR: Record<number, string> = {
   3: 'text-blue-400 border-blue-500/40',
 };
 
+/**
+ * 將五個精煉等級的描述合併為單一描述，數值以 / 分隔
+ * 例如：「暴擊率提高12%」→「暴擊率提高12/14/16/18/20%」
+ */
+function mergeRefinements(descriptions: string[]): string {
+  if (descriptions.length === 0) return '';
+  if (descriptions.length === 1) return descriptions[0];
+
+  // 將描述拆分為文字與數字交錯的 token 陣列
+  type Token = { type: 'text' | 'num'; value: string };
+  const tokenize = (s: string): Token[] => {
+    const parts: Token[] = [];
+    const regex = /(\d+\.?\d*)/g;
+    let last = 0;
+    let m: RegExpExecArray | null;
+    while ((m = regex.exec(s)) !== null) {
+      if (m.index > last) parts.push({ type: 'text', value: s.slice(last, m.index) });
+      parts.push({ type: 'num', value: m[0] });
+      last = regex.lastIndex;
+    }
+    if (last < s.length) parts.push({ type: 'text', value: s.slice(last) });
+    return parts;
+  };
+
+  const tokenized = descriptions.map(tokenize);
+  const base = tokenized[0];
+  let result = '';
+
+  for (let i = 0; i < base.length; i++) {
+    const token = base[i];
+    if (token.type === 'text') {
+      result += token.value;
+    } else {
+      // 收集所有精煉等級在此位置的數值
+      const values = tokenized.map(tokens => tokens[i]?.value ?? token.value);
+      const allSame = values.every(v => v === values[0]);
+      result += allSame ? token.value : values.join('/');
+    }
+  }
+
+  return result;
+}
+
 export function generateStaticParams() {
   return getAllLightCones().map(lc => ({ id: lc.id }));
 }
@@ -31,6 +74,9 @@ export default async function LightConePage({ params }: { params: Promise<{ id: 
 
   const color = RARITY_COLOR[lc.rarity] ?? RARITY_COLOR[3];
   const passiveStyle = PASSIVE_COLOR[lc.rarity] ?? PASSIVE_COLOR[3];
+
+  // 合併精煉描述（用 / 表示差異數值）
+  const mergedDesc = mergeRefinements(lc.passive.description);
 
   return (
     <div className="max-w-3xl mx-auto">
@@ -56,7 +102,7 @@ export default async function LightConePage({ params }: { params: Promise<{ id: 
           />
         </div>
 
-        {/* 基本資訊 */}
+        {/* 基本資訊 + 屬性 */}
         <div className="flex flex-col justify-center gap-2">
           <div className={`text-sm font-semibold ${color.split(' ')[0]}`}>
             {'★'.repeat(lc.rarity)}
@@ -66,6 +112,24 @@ export default async function LightConePage({ params }: { params: Promise<{ id: 
             <span className="text-gray-500">命途  </span>
             <span className="text-white font-medium">{lc.path}</span>
           </div>
+
+          {/* 滿級屬性（Lv.80） */}
+          {lc.stats && (
+            <div className="mt-2 flex flex-wrap gap-3">
+              <div className="flex flex-col items-center rounded-lg border border-white/10 bg-white/5 px-4 py-2 min-w-[72px]">
+                <span className="text-[10px] text-gray-500 mb-0.5">生命值</span>
+                <span className="text-sm font-bold text-white">{lc.stats.hp.toLocaleString()}</span>
+              </div>
+              <div className="flex flex-col items-center rounded-lg border border-white/10 bg-white/5 px-4 py-2 min-w-[72px]">
+                <span className="text-[10px] text-gray-500 mb-0.5">攻擊力</span>
+                <span className="text-sm font-bold text-white">{lc.stats.atk.toLocaleString()}</span>
+              </div>
+              <div className="flex flex-col items-center rounded-lg border border-white/10 bg-white/5 px-4 py-2 min-w-[72px]">
+                <span className="text-[10px] text-gray-500 mb-0.5">防禦力</span>
+                <span className="text-sm font-bold text-white">{lc.stats.def.toLocaleString()}</span>
+              </div>
+            </div>
+          )}
         </div>
       </div>
 
@@ -75,17 +139,17 @@ export default async function LightConePage({ params }: { params: Promise<{ id: 
         <div className={`rounded-xl border ${passiveStyle.border} ${passiveStyle.bg} p-4`}>
           <p className={`${passiveStyle.name} font-semibold mb-4`}>{lc.passive.name}</p>
 
-          {/* 各精煉等級描述 */}
-          <div className="space-y-3">
-            {lc.passive.description.map((desc, i) => (
-              <div key={i} className="flex gap-3">
-                <span className="shrink-0 text-xs font-bold text-[#c9a227] bg-[#c9a227]/10 border border-[#c9a227]/30 rounded-full px-2 py-0.5 h-fit">
-                  精{REFINEMENT_LABELS[i] ?? i + 1}
-                </span>
-                <p className="text-sm text-gray-300 whitespace-pre-line leading-relaxed">{desc}</p>
-              </div>
+          {/* 精煉等級標籤列 */}
+          <div className="flex flex-wrap gap-1.5 mb-4">
+            {REFINEMENT_LABELS.map((label, i) => (
+              <span key={i} className="text-xs font-bold text-[#c9a227] bg-[#c9a227]/10 border border-[#c9a227]/30 rounded-full px-2 py-0.5">
+                精{label}
+              </span>
             ))}
           </div>
+
+          {/* 合併描述 */}
+          <p className="text-sm text-gray-300 whitespace-pre-line leading-relaxed">{mergedDesc}</p>
         </div>
       </div>
     </div>
