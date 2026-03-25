@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
-import type { Character, CharacterTrace } from '@/lib/types';
+import type { Character, CharacterTrace, Memosprite } from '@/lib/types';
 
 // 技能槽顯示名稱
 const SKILL_LABELS: Record<keyof Character['skills'], string> = {
@@ -71,9 +71,7 @@ const STAT_NAMES: Record<string, string> = {
 
 // 格式化加總後的行迹屬性數值
 function formatStatValue(statType: string, total: number): string {
-  // SpeedDelta 是扁平值（+N 速度）
   if (statType === 'SpeedDelta') return `+${total % 1 === 0 ? total : total.toFixed(1)}`;
-  // 其餘比例類轉百分比
   const pct = total * 100;
   return `+${pct % 1 === 0 ? pct : parseFloat(pct.toFixed(1))}%`;
 }
@@ -82,30 +80,29 @@ export default function SkillSection({
   skills,
   characterId,
   traces,
+  memosprite,
   rarity = 5,
 }: {
   skills: Character['skills'];
   characterId: string;
   traces?: CharacterTrace[];
+  memosprite?: Memosprite;
   rarity?: 4 | 5;
 }) {
   const [levels, setLevels] = useState<Record<string, number>>({});
-  // 詩行跡等級（每首獨立）
-  const [poemLevels, setPoemLevels] = useState<Record<string, number>>({});
+  const [memoLevels, setMemoLevels] = useState<Record<string, number>>({});
   const keys = Object.keys(SKILL_LABELS) as Array<keyof Character['skills']>;
 
-  // 組合技能圖示 URL
   function getSkillIconUrl(key: keyof Character['skills']): string {
     return `https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/skill/${characterId}_${SKILL_ICON_SUFFIX[key]}.png`;
   }
 
-  // 普通行跡（無多等級）
-  const abilityTraces = traces?.filter(t => t.type === 'ability' && !(t.descriptions && t.descriptions.length > 1)) ?? [];
-  // 詩行跡（有多等級，如「獻予X之詩」）
-  const poemTraces = traces?.filter(t => t.type === 'ability' && t.descriptions && t.descriptions.length > 1) ?? [];
+  // 只顯示非詩行跡的 ability traces（詩行跡已移至憶靈技區塊）
+  const abilityTraces = traces?.filter(
+    t => t.type === 'ability' && !t.anchor.startsWith('poem_')
+  ) ?? [];
   const hasTraces = traces && traces.length > 0;
 
-  // 依 statType 加總屬性數值
   const statSummary = (traces ?? [])
     .filter(t => t.type === 'stat' && t.statType)
     .reduce<Record<string, { name: string; total: number }>>((acc, t) => {
@@ -134,9 +131,7 @@ export default function SkillSection({
 
           return (
             <div key={key} className={`rounded-lg border p-4 ${SKILL_COLORS[key]}`}>
-              {/* 技能類型標籤 + 圖示 + 名稱 + 等級 */}
               <div className="flex items-center gap-2 mb-2 flex-wrap">
-                {/* 技能小圖示 */}
                 <div className="relative w-10 h-10 shrink-0 rounded-md overflow-hidden bg-white/5 border border-white/10">
                   <Image
                     src={getSkillIconUrl(key)}
@@ -160,7 +155,6 @@ export default function SkillSection({
                 )}
               </div>
 
-              {/* 等級滑動條 */}
               {showSlider && (
                 <div className="mb-3 flex items-center gap-3">
                   <span className="text-xs text-gray-500 shrink-0">1</span>
@@ -177,7 +171,6 @@ export default function SkillSection({
                 </div>
               )}
 
-              {/* 技能描述 */}
               <p className="text-sm text-gray-300 whitespace-pre-line leading-relaxed">
                 {description || '—'}
               </p>
@@ -185,6 +178,51 @@ export default function SkillSection({
           );
         })}
       </div>
+
+      {/* ── 憶靈技區塊 ── */}
+      {memosprite && memosprite.skills.length > 0 && (
+        <div className="mt-8">
+          <h2 className="text-lg font-bold text-white mb-1">憶靈技</h2>
+          <p className="text-xs text-gray-500 mb-3">憶靈：{memosprite.name}</p>
+          <div className="space-y-3">
+            {memosprite.skills.map(skill => {
+              const descs = skill.descriptions ?? [];
+              const maxLv = descs.length;
+              const lv = memoLevels[skill.id] ?? 1;
+              const showSlider = maxLv > 1;
+
+              return (
+                <div key={skill.id} className="rounded-lg border border-sky-500/30 bg-sky-500/5 p-4">
+                  <div className="flex items-center justify-between mb-2 flex-wrap gap-2">
+                    <span className="text-sky-300 font-semibold text-sm">{skill.name}</span>
+                    {showSlider && (
+                      <span className="text-xs font-bold text-sky-400">Lv.{lv}</span>
+                    )}
+                  </div>
+                  {showSlider && (
+                    <div className="mb-3 flex items-center gap-3">
+                      <span className="text-xs text-gray-500 shrink-0">1</span>
+                      <input
+                        type="range"
+                        min={1}
+                        max={maxLv}
+                        value={lv}
+                        onChange={e => setMemoLevels(prev => ({ ...prev, [skill.id]: +e.target.value }))}
+                        className="flex-1 h-1.5 cursor-pointer"
+                        style={{ accentColor: '#38bdf8' }}
+                      />
+                      <span className="text-xs text-gray-500 shrink-0">{maxLv}</span>
+                    </div>
+                  )}
+                  <p className="text-sm text-gray-300 whitespace-pre-line leading-relaxed">
+                    {descs[lv - 1] || skill.description || '—'}
+                  </p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      )}
 
       {/* ── 行迹區塊 ── */}
       <div className="mt-8">
@@ -208,45 +246,6 @@ export default function SkillSection({
                     )}
                   </div>
                 ))}
-              </div>
-            )}
-
-            {/* 詩行跡（獻予X之詩，有多等級） */}
-            {poemTraces.length > 0 && (
-              <div className="space-y-2">
-                <p className="text-xs text-gray-500 mb-2">憶靈技效果</p>
-                {poemTraces.map(trace => {
-                  const descs = trace.descriptions!;
-                  const lv = poemLevels[trace.anchor] ?? 1;
-                  return (
-                    <div
-                      key={trace.anchor}
-                      className="rounded-lg border border-sky-400/30 bg-sky-400/5 p-4"
-                    >
-                      <div className="flex items-center justify-between mb-2 flex-wrap gap-2">
-                        <p className="text-sky-300 font-semibold text-sm">{trace.name}</p>
-                        <span className="text-xs font-bold text-sky-400">Lv.{lv}</span>
-                      </div>
-                      {/* 等級滑動條 */}
-                      <div className="mb-3 flex items-center gap-3">
-                        <span className="text-xs text-gray-500 shrink-0">1</span>
-                        <input
-                          type="range"
-                          min={1}
-                          max={descs.length}
-                          value={lv}
-                          onChange={e => setPoemLevels(prev => ({ ...prev, [trace.anchor]: +e.target.value }))}
-                          className="flex-1 h-1.5 cursor-pointer"
-                          style={{ accentColor: '#38bdf8' }}
-                        />
-                        <span className="text-xs text-gray-500 shrink-0">{descs.length}</span>
-                      </div>
-                      <p className="text-sm text-gray-300 whitespace-pre-line leading-relaxed">
-                        {descs[lv - 1] || trace.description || '—'}
-                      </p>
-                    </div>
-                  );
-                })}
               </div>
             )}
 

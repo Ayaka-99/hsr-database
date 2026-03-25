@@ -30,7 +30,8 @@
       "Bash(cp /tmp/tailwind-v4-shadcn.md c:/Users/ayaka/hsr-database/skills/tailwind-v4-shadcn.md)",
       "Bash(cp /tmp/web-performance.md c:/Users/ayaka/hsr-database/skills/web-performance.md)",
       "Bash(claude plugin:*)",
-      "Bash(claude mcp:*)"
+      "Bash(claude mcp:*)",
+      "WebFetch(domain:ayaka-99.github.io)"
     ]
   }
 }

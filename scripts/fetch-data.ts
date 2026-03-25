@@ -7,7 +7,11 @@
 
 import { writeFileSync, mkdirSync } from 'fs';
 import { join } from 'path';
-import type { Character, LightCone, Path, Element, Skill, Eidolon, CharacterTrace, RelicSet, CharacterStats } from '../lib/types';
+// eslint-disable-next-line @typescript-eslint/no-require-imports
+const { Converter } = require('opencc-js') as { Converter: (opts: { from: string; to: string }) => (s: string) => string };
+import type { Character, LightCone, Path, Element, Skill, Eidolon, CharacterTrace, Memosprite, MemospriteSkill, RelicSet, CharacterStats } from '../lib/types';
+
+const toTW = Converter({ from: 'cn', to: 'tw' });
 
 const MANIFEST_URL = 'https://static.nanoka.cc/manifest.json';
 const IMG_BASE = 'https://raw.githubusercontent.com/Mar-7th/StarRailRes/master';
@@ -215,6 +219,7 @@ interface ApiCharacterDetail {
   skill_trees?: Record<string, Record<string, ApiTraceNode>>;
   stats?: Record<string, ApiStatEntry>;
   memosprite?: {
+    name: string;
     skills: Record<string, ApiMemospriteSkill>;
   };
 }
@@ -246,15 +251,15 @@ async function fetchCharacters(baseUrl: string): Promise<Character[]> {
         if (!slotKey || skillSlots[slotKey]) continue;
 
         // 生成各等級描述（1–15 級，若無資料則只有 1 筆）
-        const template = stripFormatOnly(skill.desc);
+        const template = toTW(stripFormatOnly(skill.desc));
         const levels = skill.level ? Object.keys(skill.level).sort((a, b) => +a - +b) : [];
         const descriptions = levels.length > 0
           ? levels.map(lv => resolveDesc(template, skill.level![lv].param_list))
-          : [cleanDesc(skill.desc)];
+          : [toTW(cleanDesc(skill.desc))];
 
         skillSlots[slotKey] = {
-          name: skill.name,
-          description: descriptions[0] ?? cleanDesc(skill.desc),
+          name: toTW(skill.name),
+          description: descriptions[0] ?? toTW(cleanDesc(skill.desc)),
           descriptions,
           type: skill.type ?? 'Talent',
         };
@@ -272,9 +277,8 @@ async function fetchCharacters(baseUrl: string): Promise<Character[]> {
       // ── 整理命座 ──
       const eidolons: Eidolon[] = Object.entries(detail.ranks).map(([rank, r]) => ({
         rank: parseInt(rank) as Eidolon['rank'],
-        name: r.name,
-        // 使用 param_list 解析實際數值，替代 ? 佔位符
-        description: resolveDesc(stripFormatOnly(r.desc), r.param_list ?? []),
+        name: toTW(r.name),
+        description: resolveDesc(toTW(stripFormatOnly(r.desc)), r.param_list ?? []),
         image: rankIconToUrl(id, r.icon),
       }));
 
@@ -285,12 +289,11 @@ async function fetchCharacters(baseUrl: string): Promise<Character[]> {
           const node = Object.values(pointLevels)[0] as ApiTraceNode;
           if (!node) continue;
           if (node.point_type === 3 && node.point_name) {
-            // 能力型行迹（有名稱與描述）— 用 resolveDesc 填入實際數值
             traces.push({
               anchor: node.anchor,
               type: 'ability',
-              name: node.point_name,
-              description: resolveDesc(stripFormatOnly(node.point_desc), node.param_list ?? []),
+              name: toTW(node.point_name),
+              description: resolveDesc(toTW(stripFormatOnly(node.point_desc)), node.param_list ?? []),
             });
           } else if (node.point_type === 1 && node.status_add_list?.length) {
             // 屬性強化型行迹
@@ -313,19 +316,45 @@ async function fetchCharacters(baseUrl: string): Promise<Character[]> {
           .sort(([a], [b]) => +a - +b);
 
         for (const [skillId, skill] of poemSkills) {
-          const template = stripFormatOnly(skill.desc);
+          const template = toTW(stripFormatOnly(skill.desc));
           const levelKeys = Object.keys(skill.level).sort((a, b) => +a - +b);
-          // 取前 7 個等級（符合遊戲顯示上限）
           const descriptions = levelKeys.slice(0, 7).map(lv =>
             resolveDescFloor(template, skill.level[lv].param_list)
           );
           traces.push({
             anchor: `poem_${skillId}`,
             type: 'ability',
-            name: skill.name,
+            name: toTW(skill.name),
             description: descriptions[0],
             descriptions,
           });
+        }
+      }
+
+      // ── 整理憶靈技資料（記憶命途角色） ──
+      let memosprite: Memosprite | undefined;
+      if (detail.memosprite?.skills && detail.memosprite.name) {
+        const seen = new Set<string>();
+        const memoSkills: MemospriteSkill[] = [];
+        for (const [skillId, skill] of Object.entries(detail.memosprite.skills).sort(([a], [b]) => +a - +b)) {
+          if (!skill.desc) continue;
+          const key = skill.name + '|' + skill.desc.slice(0, 30);
+          if (seen.has(key)) continue;
+          seen.add(key);
+          const template = toTW(stripFormatOnly(skill.desc));
+          const levelKeys = Object.keys(skill.level ?? {}).sort((a, b) => +a - +b);
+          const descriptions = levelKeys.map(lv =>
+            resolveDescFloor(template, skill.level![lv].param_list ?? [])
+          );
+          memoSkills.push({
+            id: skillId,
+            name: toTW(skill.name),
+            description: descriptions[0] ?? template,
+            descriptions,
+          });
+        }
+        if (memoSkills.length > 0) {
+          memosprite = { name: toTW(detail.memosprite.name), skills: memoSkills };
         }
       }
 
@@ -346,7 +375,7 @@ async function fetchCharacters(baseUrl: string): Promise<Character[]> {
       const rarity = parseRarity(entry.rank);
       characters.push({
         id,
-        name: detail.name || entry.zh || entry.en,
+        name: toTW(detail.name || entry.zh || entry.en),
         nameEn: entry.en || undefined,
         rarity: (rarity === 5 ? 5 : 4) as Character['rarity'],
         path:    PATH_MAP[entry.baseType]    ?? '巡獵',
@@ -356,6 +385,7 @@ async function fetchCharacters(baseUrl: string): Promise<Character[]> {
         skills,
         eidolons,
         traces,
+        ...(memosprite ? { memosprite } : {}),
       });
 
       process.stdout.write(' ✓\n');

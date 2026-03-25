@@ -25,6 +25,18 @@ export interface CharacterTrace {
   value?: number;          // stat traces only
 }
 
+export interface MemospriteSkill {
+  id: string;
+  name: string;
+  description: string;
+  descriptions: string[];
+}
+
+export interface Memosprite {
+  name: string;
+  skills: MemospriteSkill[];
+}
+
 export interface CharacterStats {
   hp: number;
   atk: number;
@@ -52,6 +64,7 @@ export interface Character {
   };
   eidolons: Eidolon[];
   traces?: CharacterTrace[];
+  memosprite?: Memosprite;
 }
 
 export interface RelicSet {
