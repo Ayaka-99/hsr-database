@@ -13,19 +13,25 @@ const ALL_CHARACTERS = getAllCharacters();
 function CtEasterEgg() {
   return (
     <div className="flex justify-center">
-      <div className="ct-rainbow-frame">
-        <div className="ct-inner-frame ct-corner-bottom">
-          {/* 角落裝飾菱形 */}
-          <span className="absolute top-[3px] left-1/2 -translate-x-1/2 text-[#c9a227]/80 text-xs z-10 pointer-events-none select-none">◆</span>
-          <span className="absolute bottom-[3px] left-1/2 -translate-x-1/2 text-[#c9a227]/80 text-xs z-10 pointer-events-none select-none">◆</span>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/hsr-database/ct-easter-egg.png"
-            alt="CT"
-            className="block max-h-[60vh] w-auto"
-          />
-          <div className="bg-black/90 p-4 text-center border-t border-[#c9a227]/30">
-            <p className="text-[#c9a227] font-bold text-xl tracking-widest">❧ C T ❧</p>
+      <div className="ct-frame-glow">
+        {/* 厚框帶 + 菱形角飾 */}
+        <div className="ct-frame-band">
+          <div className="ct-gem tl" /><div className="ct-gem tr" />
+          <div className="ct-gem bl" /><div className="ct-gem br" />
+          <div className="ct-gem-mid top" /><div className="ct-gem-mid bottom" />
+          <div className="ct-gem-mid left" /><div className="ct-gem-mid right" />
+
+          {/* 內容 */}
+          <div className="ct-frame-content">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/hsr-database/ct-easter-egg.png"
+              alt="CT"
+              className="block max-h-[60vh] w-auto"
+            />
+            <div className="bg-black/95 px-6 py-4 text-center border-t border-[#c9a227]/40">
+              <p className="text-[#c9a227] font-bold text-xl tracking-[0.4em]">❦ C T ❦</p>
+            </div>
           </div>
         </div>
       </div>
