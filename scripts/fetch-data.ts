@@ -358,14 +358,14 @@ async function fetchCharacters(baseUrl: string): Promise<Character[]> {
         }
       }
 
-      // ── 整理 Lv.80 屬性（最高升星階段 stats[6]，再加 10 級成長）──
+      // ── 整理 Lv.80 屬性（最高升星階段 stats[6]，從 Lv.1 到 Lv.80 共 79 級成長）──
       let stats: CharacterStats | undefined;
       if (detail.stats?.['6']) {
         const s = detail.stats['6'];
         stats = {
-          hp:       Math.round(s.hp_base + s.hp_add * 10),
-          atk:      Math.round(s.attack_base + s.attack_add * 10),
-          def:      Math.round(s.defence_base + s.defence_add * 10),
+          hp:       Math.round(s.hp_base + s.hp_add * 79),
+          atk:      Math.round(s.attack_base + s.attack_add * 79),
+          def:      Math.round(s.defence_base + s.defence_add * 79),
           spd:      Math.round(s.speed_base * 10) / 10,
           critRate: Math.round(s.critical_chance * 1000) / 10,
           critDmg:  Math.round(s.critical_damage * 1000) / 10,
