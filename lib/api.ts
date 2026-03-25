@@ -1,11 +1,13 @@
-import type { Character, LightCone, Path, Element, RelicSet } from './types';
+import type { Character, LightCone, Path, Element, RelicSet, EndgameData } from './types';
 import charactersData from '../data/characters.json';
 import lightconesData from '../data/lightcones.json';
 import relicsData from '../data/relicsets.json';
+import endgameData from '../data/endgame.json';
 
 const characters = charactersData as Character[];
 const lightcones = lightconesData as LightCone[];
 const relics = relicsData as RelicSet[];
+const endgame = endgameData as EndgameData;
 
 // ─── 輔助函式 ─────────────────────────────────────────
 
@@ -66,4 +68,10 @@ export function getLightConesByRarity(rarity: 3 | 4 | 5): LightCone[] {
 
 export function getAllRelicSets(): RelicSet[] {
   return relics;
+}
+
+// ─── 終局挑戰 ─────────────────────────────────────────
+
+export function getEndgameData(): EndgameData {
+  return endgame;
 }

@@ -1,192 +1,189 @@
-// 異相仲裁頁面（server component，無需互動狀態）
+'use client';
 
-// 本週三關陣容（每週更換）
-const stages = [
-  {
-    round: 1,
-    type: '騎士',
-    typeStyle: 'border-blue-500/40 bg-blue-500/5 text-blue-400',
-    boss: '黃金騎士·RD',
-    hp: 3_600_000,
-    weakness: ['物理', '量子'],
-    note: '週期性充能，充滿後發動範圍攻擊；優先破盾以打斷充能',
-  },
-  {
-    round: 2,
-    type: '騎士',
-    typeStyle: 'border-blue-500/40 bg-blue-500/5 text-blue-400',
-    boss: '銀狼·虛擬體',
-    hp: 5_200_000,
-    weakness: ['火', '雷', '風'],
-    note: '召喚複製體協同攻擊；優先消滅複製體降低輸出壓力',
-  },
-  {
-    round: 3,
-    type: '王騎',
-    typeStyle: 'border-[#c9a227]/40 bg-[#c9a227]/5 text-[#c9a227]',
-    boss: '歷戰的強敵·王騎',
-    hp: 12_000_000,
-    weakness: ['冰', '虛數', '量子'],
-    note: '多階段 BOSS，每 30% 血量觸發相位強化；終局前注意爆發時機儲能',
-  },
-];
+import { useState } from 'react';
+import { getEndgameData } from '@/lib/api';
+import type { EndgameSeason, EndgameFloor, EndgameMonster } from '@/lib/types';
 
-const ELEMENT_BADGE: Record<string, string> = {
-  '火':   'bg-orange-500/20 text-orange-300 border-orange-500/40',
-  '冰':   'bg-sky-500/20    text-sky-300    border-sky-500/40',
-  '雷':   'bg-violet-500/20 text-violet-300 border-violet-500/40',
-  '風':   'bg-teal-500/20   text-teal-300   border-teal-500/40',
-  '量子': 'bg-purple-500/20 text-purple-300 border-purple-500/40',
-  '虛數': 'bg-yellow-500/20 text-yellow-200 border-yellow-500/40',
-  '物理': 'bg-gray-500/20   text-gray-300   border-gray-500/40',
+const DATA = getEndgameData();
+const SEASONS = DATA.peak;
+
+// 弱點屬性配色
+const ELEMENT_COLOR: Record<string, string> = {
+  火:   'bg-orange-500/20 text-orange-300 border-orange-500/40',
+  冰:   'bg-sky-500/20    text-sky-300    border-sky-500/40',
+  雷:   'bg-violet-500/20 text-violet-300 border-violet-500/40',
+  風:   'bg-teal-500/20   text-teal-300   border-teal-500/40',
+  量子: 'bg-purple-500/20 text-purple-300 border-purple-500/40',
+  虛數: 'bg-yellow-500/20 text-yellow-200 border-yellow-500/40',
+  物理: 'bg-gray-500/20   text-gray-300   border-gray-500/40',
 };
 
-function formatHP(n: number): string {
-  if (n >= 1_000_000) return `${(n / 1_000_000).toFixed(1).replace(/\.0$/, '')}M`;
-  if (n >= 1_000) return `${Math.round(n / 1_000)}K`;
-  return String(n);
+// 關卡配色（前三關 + 王棋）
+const STAGE_STYLES = [
+  { border: 'border-blue-500/30', badge: 'border-blue-500/40 bg-blue-500/10 text-blue-400', numBorder: 'border-blue-500/30 text-blue-400 bg-blue-500/10' },
+  { border: 'border-blue-500/30', badge: 'border-blue-500/40 bg-blue-500/10 text-blue-400', numBorder: 'border-blue-500/30 text-blue-400 bg-blue-500/10' },
+  { border: 'border-blue-500/30', badge: 'border-blue-500/40 bg-blue-500/10 text-blue-400', numBorder: 'border-blue-500/30 text-blue-400 bg-blue-500/10' },
+  { border: 'border-[#c9a227]/30', badge: 'border-[#c9a227]/40 bg-[#c9a227]/10 text-[#c9a227]', numBorder: 'border-[#c9a227]/40 text-[#c9a227] bg-[#c9a227]/10' },
+];
+
+// ── 弱點標籤 ─────────────────────────────────────────
+function WeaknessBadge({ element }: { element: string }) {
+  return (
+    <span className={`text-[10px] px-1.5 py-0.5 rounded border font-medium ${ELEMENT_COLOR[element] ?? 'bg-gray-500/20 text-gray-300 border-gray-500/40'}`}>
+      {element}
+    </span>
+  );
 }
 
-export default function SimulatedPage() {
-  const rules = [
-    { title: '固定陣容', desc: '使用系統提供的預設角色陣容，不可自由選擇角色。' },
-    { title: '命途祝福', desc: '根據陣容特性，優先選擇對應命途的祝福加成。' },
-    { title: '奇物選擇', desc: '奇物與陣容契合度至關重要，影響整體輸出效能。' },
-    { title: '每週刷新', desc: '仲裁關卡每週更換，陣容與目標難度隨機生成。' },
-  ];
+// ── 怪物圖示 ─────────────────────────────────────────
+function MonsterIcon({ monster }: { monster: EndgameMonster }) {
+  const [failed, setFailed] = useState(false);
+  return (
+    <div className="flex flex-col items-center gap-1 w-16 shrink-0">
+      <div className="w-14 h-14 rounded-lg overflow-hidden border border-white/10 bg-[#111125]">
+        {!failed && monster.icon ? (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
+            src={monster.icon}
+            alt={monster.name}
+            className="w-full h-full object-contain"
+            onError={() => setFailed(true)}
+          />
+        ) : (
+          <div className="w-full h-full flex items-center justify-center text-gray-700 text-lg">?</div>
+        )}
+      </div>
+      <p className="text-center text-[9px] text-gray-400 leading-tight line-clamp-2 w-full">{monster.name}</p>
+    </div>
+  );
+}
 
-  const tips = [
-    '仲裁模式不需要自建隊伍，以熟悉陣容機制為主要挑戰。',
-    '每次仲裁提供多組陣容選擇，依據個人熟悉度挑選。',
-    '祝福選擇應優先考量陣容主要輸出技能的加成路線。',
-    '難度可依個人程度調整，完成基礎仲裁即可取得週常獎勵。',
-  ];
+// ── 關卡卡片 ─────────────────────────────────────────
+function StageCard({ floor, index, isBoss }: { floor: EndgameFloor; index: number; isBoss: boolean }) {
+  const style = STAGE_STYLES[Math.min(index, STAGE_STYLES.length - 1)];
 
   return (
-    <div>
+    <div className={`rounded-xl border ${style.border} p-4 ${isBoss ? 'bg-gradient-to-br from-[#1a1200]/40 to-[#0d0d1a]' : 'bg-white/[0.02]'}`}>
+      <div className="flex flex-col sm:flex-row sm:items-start gap-3">
+        {/* 關卡編號 */}
+        <div className={`shrink-0 w-9 h-9 rounded-full border flex items-center justify-center text-sm font-bold ${style.numBorder}`}>
+          {isBoss ? '♛' : index + 1}
+        </div>
+
+        {/* 關卡資訊 */}
+        <div className="flex-1 min-w-0">
+          <div className="flex items-center gap-2 mb-2 flex-wrap">
+            <span className="text-white font-semibold text-sm">{floor.name}</span>
+          </div>
+
+          {/* 弱點 */}
+          <div className="flex gap-1 flex-wrap mb-3">
+            {floor.weakness1.map(w => <WeaknessBadge key={w} element={w} />)}
+          </div>
+
+          {/* 怪物 */}
+          {floor.monsters1.length > 0 && (
+            <div className="flex flex-wrap gap-2">
+              {floor.monsters1.map((m, i) => <MonsterIcon key={i} monster={m} />)}
+            </div>
+          )}
+
+          {/* 機制標籤 */}
+          {floor.tags1 && floor.tags1.length > 0 && (
+            <div className="mt-3 flex flex-wrap gap-1.5">
+              {floor.tags1.map((tag, i) => (
+                <span key={i} className="text-[10px] px-2 py-0.5 rounded-full border border-white/10 bg-white/5 text-gray-400" title={tag.desc}>
+                  {tag.name}
+                </span>
+              ))}
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// ══════════════════════════════════════════════════════
+export default function SimulatedPage() {
+  const [seasonIdx, setSeasonIdx] = useState(0);
+  const season = SEASONS[seasonIdx];
+
+  if (!season) {
+    return (
+      <div className="text-center text-gray-500 py-20">
+        <p>暫無異相仲裁資料</p>
+      </div>
+    );
+  }
+
+  return (
+    <div className="space-y-6">
       {/* 頁面標題 */}
-      <div className="mb-8">
+      <div>
         <h1 className="text-2xl font-bold text-white">異相仲裁</h1>
-        <p className="text-sm text-gray-400 mt-1">差分宇宙 — Divergent Universe: Arbitration</p>
+        <p className="text-sm text-gray-400 mt-1">差分宇宙 — Divergent Universe: Anomaly Arbitration</p>
+      </div>
+
+      {/* 賽季選擇 */}
+      <div className="flex flex-wrap gap-1.5">
+        {SEASONS.map((s, i) => (
+          <button
+            key={s.id}
+            onClick={() => setSeasonIdx(i)}
+            className={`px-3 py-1.5 rounded-full text-xs border transition-colors ${
+              seasonIdx === i
+                ? 'border-[#6b4ff5]/60 bg-[#6b4ff5]/10 text-[#6b4ff5]'
+                : 'border-white/10 text-gray-500 hover:text-gray-300'
+            }`}
+          >
+            {s.name}
+            {i === 0 && (
+              <span className="ml-1.5 px-1 py-0.5 rounded text-[9px] bg-[#6b4ff5]/20 text-[#6b4ff5]">最新</span>
+            )}
+          </button>
+        ))}
       </div>
 
       {/* 簡介 */}
-      <div className="rounded-2xl border border-[#6b4ff5]/30 bg-gradient-to-br from-[#12092a] to-[#0d0d1a] p-6 mb-8">
-        <p className="text-gray-200 leading-relaxed text-sm">
-          異相仲裁是差分宇宙中的特殊週常挑戰模式。每週系統會提供數組預設陣容，
-          玩家在指定角色的限制下完成一局差分宇宙探索。挑戰重點在於針對固定陣容
-          制定最優祝福路線與奇物組合，並非自建隊伍，考驗的是對遊戲機制的理解深度。
+      <div className="rounded-xl border border-[#6b4ff5]/20 bg-gradient-to-br from-[#12092a]/60 to-[#0d0d1a] p-5">
+        <p className="text-gray-300 leading-relaxed text-sm">
+          異相仲裁是差分宇宙中的特殊挑戰模式。每期包含數個前置關卡（騎士、主教等）以及最終的王棋 BOSS 關。
+          需依據各關弱點與敵方機制來規劃陣容與祝福路線。
         </p>
       </div>
 
-      {/* 本週三關 BOSS */}
-      <h2 className="text-lg font-bold text-white mb-4">本週仲裁陣容</h2>
-      <div className="space-y-3 mb-8">
-        {stages.map(s => (
-          <div
-            key={s.round}
-            className={`rounded-xl border p-4 ${
-              s.round === 3
-                ? 'border-[#c9a227]/30 bg-gradient-to-br from-[#1a1200]/60 to-[#0d0d1a]'
-                : 'border-white/10 bg-white/3'
-            }`}
-          >
-            <div className="flex flex-col sm:flex-row sm:items-center gap-3">
-              {/* 關卡編號 */}
-              <div className={`shrink-0 w-10 h-10 rounded-full border flex items-center justify-center text-sm font-bold ${
-                s.round === 3
-                  ? 'border-[#c9a227]/40 text-[#c9a227] bg-[#c9a227]/10'
-                  : 'border-white/15 text-gray-300 bg-white/5'
-              }`}>
-                {s.round}
+      {/* 王棋增益（若有） */}
+      {season.buffs && season.buffs.length > 0 && (
+        <div>
+          <h2 className="text-sm font-bold text-gray-400 mb-2">王棋增益選項</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
+            {season.buffs.map((b, i) => (
+              <div key={i} className="rounded-lg border border-white/8 bg-white/[0.02] px-3 py-2">
+                <p className="text-[11px] text-[#c9a227] font-semibold mb-0.5">{b.name}</p>
+                <p className="text-[10px] text-gray-400 leading-relaxed">{b.desc}</p>
               </div>
-
-              {/* BOSS 資訊 */}
-              <div className="flex-1 min-w-0">
-                <div className="flex items-center gap-2 mb-1 flex-wrap">
-                  <span className={`text-xs px-2 py-0.5 rounded-full border font-semibold ${s.typeStyle}`}>
-                    {s.type}
-                  </span>
-                  <span className="text-white font-semibold text-sm">{s.boss}</span>
-                </div>
-                <p className="text-xs text-gray-400 leading-relaxed">{s.note}</p>
-              </div>
-
-              {/* 弱點 + HP */}
-              <div className="shrink-0 flex flex-col items-end gap-1.5">
-                <div className="flex gap-1 flex-wrap justify-end">
-                  {s.weakness.map(w => (
-                    <span key={w} className={`text-[10px] px-1.5 py-0.5 rounded border font-semibold ${ELEMENT_BADGE[w] ?? 'bg-gray-500/20 text-gray-300 border-gray-500/40'}`}>
-                      {w}
-                    </span>
-                  ))}
-                </div>
-                <span className={`text-sm font-bold tabular-nums ${s.round === 3 ? 'text-[#c9a227]' : 'text-white'}`}>
-                  HP {formatHP(s.hp)}
-                </span>
-              </div>
-            </div>
-
-            {/* HP 比例條 */}
-            <div className="mt-3 h-1 rounded-full bg-white/8 overflow-hidden">
-              <div
-                className={`h-full rounded-full ${
-                  s.round === 3
-                    ? 'bg-gradient-to-r from-[#c9a227]/70 to-[#c9a227]'
-                    : 'bg-gradient-to-r from-rose-700 to-rose-500'
-                }`}
-                style={{ width: `${Math.round((s.hp / 12_000_000) * 100)}%` }}
-              />
-            </div>
+            ))}
           </div>
+        </div>
+      )}
+
+      {/* 關卡列表 */}
+      <div className="space-y-3">
+        {season.floors.map((floor, i) => (
+          <StageCard
+            key={i}
+            floor={floor}
+            index={i}
+            isBoss={i === season.floors.length - 1}
+          />
         ))}
       </div>
 
-      {/* 規則說明 */}
-      <h2 className="text-lg font-bold text-white mb-4">仲裁規則</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
-        {rules.map(r => (
-          <div key={r.title} className="rounded-xl border border-white/10 bg-white/5 p-4">
-            <h3 className="text-[#c9a227] font-semibold text-sm mb-1">{r.title}</h3>
-            <p className="text-xs text-gray-300 leading-relaxed">{r.desc}</p>
-          </div>
-        ))}
-      </div>
-
-      {/* 攻略要點 */}
-      <h2 className="text-lg font-bold text-white mb-4">攻略要點</h2>
-      <div className="rounded-xl border border-white/10 bg-white/5 p-4 mb-8">
-        <ul className="space-y-2">
-          {tips.map((tip, i) => (
-            <li key={i} className="flex items-start gap-2 text-sm text-gray-300">
-              <span className="text-[#6b4ff5] font-bold shrink-0 mt-0.5">·</span>
-              {tip}
-            </li>
-          ))}
-        </ul>
-      </div>
-
-      {/* 週常獎勵 */}
-      <h2 className="text-lg font-bold text-white mb-4">週常獎勵</h2>
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-8">
-        {[
-          { name: '星瓊',       color: 'text-sky-400 border-sky-400/30 bg-sky-400/5' },
-          { name: '遺器強化素材', color: 'text-amber-400 border-amber-400/30 bg-amber-400/5' },
-          { name: '信用點',     color: 'text-yellow-300 border-yellow-300/30 bg-yellow-300/5' },
-          { name: '角色養成素材', color: 'text-violet-400 border-violet-400/30 bg-violet-400/5' },
-        ].map(item => (
-          <div
-            key={item.name}
-            className={`rounded-xl border p-3 text-center text-sm font-semibold ${item.color}`}
-          >
-            {item.name}
-          </div>
-        ))}
-      </div>
-
-      <div className="p-4 rounded-xl border border-white/10 bg-white/3">
+      {/* 註腳 */}
+      <div className="p-4 rounded-xl border border-white/8 bg-white/[0.02]">
         <p className="text-xs text-gray-500 text-center">
-          本週 BOSS 資訊為參考資料，實際陣容每週更換，請以遊戲內顯示為準。
+          資料來自 nanoka.cc API，關卡內容每期更新，請以遊戲內顯示為準。
         </p>
       </div>
     </div>

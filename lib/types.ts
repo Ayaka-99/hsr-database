@@ -94,3 +94,48 @@ export interface LightCone {
     description: string[];
   };
 }
+
+// ─── 終局挑戰 ─────────────────────────────────────────
+
+export interface EndgameMonster {
+  id: string;
+  name: string;
+  icon: string;
+}
+
+export interface EndgameTag {
+  name: string;
+  desc: string;
+}
+
+export interface EndgameFloor {
+  name: string;
+  weakness1: string[];
+  weakness2: string[];
+  monsters1: EndgameMonster[];
+  monsters2: EndgameMonster[];
+  tags1?: EndgameTag[];
+  tags2?: EndgameTag[];
+}
+
+export interface EndgameBuff {
+  name: string;
+  desc: string;
+}
+
+export interface EndgameSeason {
+  id: string;
+  name: string;
+  beginTime: string;
+  endTime: string;
+  buff: string;
+  buffs?: EndgameBuff[];
+  floors: EndgameFloor[];
+}
+
+export interface EndgameData {
+  maze: EndgameSeason[];
+  story: EndgameSeason[];
+  boss: EndgameSeason[];
+  peak: EndgameSeason[];
+}
