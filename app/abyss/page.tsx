@@ -8,9 +8,9 @@ const DATA = getEndgameData();
 
 // 三種模式定義
 const MODES = [
-  { key: 'maze' as const, name: '忘卻之庭', icon: '⚔', desc: '月度重置，雙陣容通關' },
-  { key: 'story' as const, name: '虛構敘事', icon: '📖', desc: '群體輸出，擊殺積分' },
-  { key: 'boss' as const, name: '末日幻影', icon: '💀', desc: '單體爆發，BOSS 機制' },
+  { key: 'maze' as const, name: '忘卻之庭', icon: '⚔', desc: '騙課' },
+  { key: 'story' as const, name: '虛構敘事', icon: '📖', desc: '騙課' },
+  { key: 'boss' as const, name: '末日幻影', icon: '💀', desc: '騙課' },
 ] as const;
 
 // 模式主題色
