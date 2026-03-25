@@ -157,32 +157,32 @@
         "anchor": "Point07",
         "type": "ability",
         "name": "加護",
-        "description": "戰技提供的護盾持續時間增加?回合。"
+        "description": "戰技提供的護盾持續時間增加1回合。"
       },
       {
         "anchor": "Point08",
         "type": "ability",
         "name": "冰咒",
-        "description": "施放終結技時，凍結敵方目標的基礎概率提高?。"
+        "description": "施放終結技時，凍結敵方目標的基礎概率提高15%。"
       },
       {
         "anchor": "Point09",
         "type": "stat",
-        "name": "冰屬性傷害提高",
+        "name": "冰属性伤害提高",
         "statType": "IceAddedRatio",
         "value": 0.032
       },
       {
         "anchor": "Point10",
         "type": "stat",
-        "name": "防禦力",
+        "name": "防御力",
         "statType": "DefenceAddedRatio",
         "value": 0.05
       },
       {
         "anchor": "Point11",
         "type": "stat",
-        "name": "冰屬性傷害提高",
+        "name": "冰属性伤害提高",
         "statType": "IceAddedRatio",
         "value": 0.032
       },
@@ -196,7 +196,7 @@
       {
         "anchor": "Point13",
         "type": "stat",
-        "name": "冰屬性傷害提高",
+        "name": "冰属性伤害提高",
         "statType": "IceAddedRatio",
         "value": 0.048
       },
@@ -210,28 +210,28 @@
       {
         "anchor": "Point15",
         "type": "stat",
-        "name": "防禦力",
+        "name": "防御力",
         "statType": "DefenceAddedRatio",
         "value": 0.075
       },
       {
         "anchor": "Point16",
         "type": "stat",
-        "name": "冰屬性傷害提高",
+        "name": "冰属性伤害提高",
         "statType": "IceAddedRatio",
         "value": 0.048
       },
       {
         "anchor": "Point17",
         "type": "stat",
-        "name": "冰屬性傷害提高",
+        "name": "冰属性伤害提高",
         "statType": "IceAddedRatio",
         "value": 0.064
       },
       {
         "anchor": "Point18",
         "type": "stat",
-        "name": "防禦力",
+        "name": "防御力",
         "statType": "DefenceAddedRatio",
         "value": 0.1
       }
@@ -389,87 +389,87 @@
         "anchor": "Point06",
         "type": "ability",
         "name": "潛龍",
-        "description": "若當前生命值百分比小於等於?，則被敵方目標攻擊的概率降低。"
+        "description": "若當前生命值百分比小於等於50%，則被敵方目標攻擊的概率降低。"
       },
       {
         "anchor": "Point07",
         "type": "ability",
         "name": "絕影",
-        "description": "施放攻擊後有?的固定概率使自身速度提高?，持續?回合。"
+        "description": "施放攻擊後有50%的固定概率使自身速度提高20%，持續2回合。"
       },
       {
         "anchor": "Point08",
         "type": "ability",
         "name": "罡風",
-        "description": "普攻對減速狀態下的敵方目標造成的傷害提高?。"
+        "description": "普攻對減速狀態下的敵方目標造成的傷害提高40%。"
       },
       {
         "anchor": "Point09",
         "type": "stat",
-        "name": "風屬性傷害提高",
+        "name": "风属性伤害提高",
         "statType": "WindAddedRatio",
         "value": 0.032
       },
       {
         "anchor": "Point10",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.04
       },
       {
         "anchor": "Point11",
         "type": "stat",
-        "name": "風屬性傷害提高",
+        "name": "风属性伤害提高",
         "statType": "WindAddedRatio",
         "value": 0.032
       },
       {
         "anchor": "Point12",
         "type": "stat",
-        "name": "防禦力",
+        "name": "防御力",
         "statType": "DefenceAddedRatio",
         "value": 0.05
       },
       {
         "anchor": "Point13",
         "type": "stat",
-        "name": "風屬性傷害提高",
+        "name": "风属性伤害提高",
         "statType": "WindAddedRatio",
         "value": 0.048
       },
       {
         "anchor": "Point14",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.06
       },
       {
         "anchor": "Point15",
         "type": "stat",
-        "name": "風屬性傷害提高",
+        "name": "风属性伤害提高",
         "statType": "WindAddedRatio",
         "value": 0.048
       },
       {
         "anchor": "Point16",
         "type": "stat",
-        "name": "防禦力",
+        "name": "防御力",
         "statType": "DefenceAddedRatio",
         "value": 0.075
       },
       {
         "anchor": "Point17",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.08
       },
       {
         "anchor": "Point18",
         "type": "stat",
-        "name": "風屬性傷害提高",
+        "name": "风属性伤害提高",
         "statType": "WindAddedRatio",
         "value": 0.064
       }
@@ -627,38 +627,38 @@
         "anchor": "Point06",
         "type": "ability",
         "name": "星火",
-        "description": "施放攻擊後，有?的基礎概率使敵方目標陷入灼燒狀態，持續?回合。\n灼燒狀態下，敵方目標每回合開始時受到等同於姬子?攻擊力的火屬性持續傷害。"
+        "description": "施放攻擊後，有50%的基礎概率使敵方目標陷入灼燒狀態，持續2回合。\n灼燒狀態下，敵方目標每回合開始時受到等同於姬子30%攻擊力的火屬性持續傷害。"
       },
       {
         "anchor": "Point07",
         "type": "ability",
         "name": "灼熱",
-        "description": "戰技對灼燒狀態下的敵方目標造成的傷害提高?。"
+        "description": "戰技對灼燒狀態下的敵方目標造成的傷害提高20%。"
       },
       {
         "anchor": "Point08",
         "type": "ability",
         "name": "道標",
-        "description": "若當前生命值百分比大於等於?，則暴擊率提高?。"
+        "description": "若當前生命值百分比大於等於80%，則暴擊率提高15%。"
       },
       {
         "anchor": "Point09",
         "type": "stat",
-        "name": "火屬性傷害提高",
+        "name": "火属性伤害提高",
         "statType": "FireAddedRatio",
         "value": 0.032
       },
       {
         "anchor": "Point10",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.04
       },
       {
         "anchor": "Point11",
         "type": "stat",
-        "name": "火屬性傷害提高",
+        "name": "火属性伤害提高",
         "statType": "FireAddedRatio",
         "value": 0.032
       },
@@ -672,21 +672,21 @@
       {
         "anchor": "Point13",
         "type": "stat",
-        "name": "火屬性傷害提高",
+        "name": "火属性伤害提高",
         "statType": "FireAddedRatio",
         "value": 0.048
       },
       {
         "anchor": "Point14",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.06
       },
       {
         "anchor": "Point15",
         "type": "stat",
-        "name": "火屬性傷害提高",
+        "name": "火属性伤害提高",
         "statType": "FireAddedRatio",
         "value": 0.048
       },
@@ -700,14 +700,14 @@
       {
         "anchor": "Point17",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.08
       },
       {
         "anchor": "Point18",
         "type": "stat",
-        "name": "火屬性傷害提高",
+        "name": "火属性伤害提高",
         "statType": "FireAddedRatio",
         "value": 0.064
       }
@@ -865,38 +865,38 @@
         "anchor": "Point06",
         "type": "ability",
         "name": "懲戒",
-        "description": "施放終結技時，有?基礎概率使目標受到的傷害提高?，持續?回合。"
+        "description": "施放終結技時，有100%基礎概率使目標受到的傷害提高12%，持續2回合。"
       },
       {
         "anchor": "Point07",
         "type": "ability",
         "name": "審判",
-        "description": "施放終結技時，額外恢復?點能量。"
+        "description": "施放終結技時，額外恢復10點能量。"
       },
       {
         "anchor": "Point08",
         "type": "ability",
         "name": "裁決",
-        "description": "對被弱點擊破的敵方目標造成的傷害提高?。"
+        "description": "對被弱點擊破的敵方目標造成的傷害提高20%。"
       },
       {
         "anchor": "Point09",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.04
       },
       {
         "anchor": "Point10",
         "type": "stat",
-        "name": "虛數屬性傷害提高",
+        "name": "虚数属性伤害提高",
         "statType": "ImaginaryAddedRatio",
         "value": 0.032
       },
       {
         "anchor": "Point11",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.04
       },
@@ -910,21 +910,21 @@
       {
         "anchor": "Point13",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.06
       },
       {
         "anchor": "Point14",
         "type": "stat",
-        "name": "虛數屬性傷害提高",
+        "name": "虚数属性伤害提高",
         "statType": "ImaginaryAddedRatio",
         "value": 0.048
       },
       {
         "anchor": "Point15",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.06
       },
@@ -938,14 +938,14 @@
       {
         "anchor": "Point17",
         "type": "stat",
-        "name": "虛數屬性傷害提高",
+        "name": "虚数属性伤害提高",
         "statType": "ImaginaryAddedRatio",
         "value": 0.064
       },
       {
         "anchor": "Point18",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.08
       }
@@ -1109,18 +1109,18 @@
         "anchor": "Point07",
         "type": "ability",
         "name": "掠奪",
-        "description": "觸電狀態下的敵方目標被消滅時，卡芙卡額外恢復?點能量。"
+        "description": "觸電狀態下的敵方目標被消滅時，卡芙卡額外恢復5點能量。"
       },
       {
         "anchor": "Point08",
         "type": "ability",
         "name": "荊棘",
-        "description": "終結技、秘技與天賦觸發的追加攻擊使敵方目標陷入的觸電狀態的基礎概率提高?。"
+        "description": "終結技、秘技與天賦觸發的追加攻擊使敵方目標陷入的觸電狀態的基礎概率提高30%。"
       },
       {
         "anchor": "Point09",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.04
       },
@@ -1134,7 +1134,7 @@
       {
         "anchor": "Point11",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.04
       },
@@ -1148,7 +1148,7 @@
       {
         "anchor": "Point13",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.06
       },
@@ -1162,7 +1162,7 @@
       {
         "anchor": "Point15",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.06
       },
@@ -1183,7 +1183,7 @@
       {
         "anchor": "Point18",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.08
       }
@@ -1341,24 +1341,24 @@
         "anchor": "Point06",
         "type": "ability",
         "name": "生成",
-        "description": "【缺陷】的持續時間增加?回合。每當有敵方目標的弱點被擊破時，銀狼有?的基礎概率對該目標植入1個隨機【缺陷】。"
+        "description": "【缺陷】的持續時間增加1回合。每當有敵方目標的弱點被擊破時，銀狼有65%的基礎概率對該目標植入1個隨機【缺陷】。"
       },
       {
         "anchor": "Point07",
         "type": "ability",
         "name": "注入",
-        "description": "施放戰技時，為敵方目標添加的弱點持續時間增加?回合。"
+        "description": "施放戰技時，為敵方目標添加的弱點持續時間增加1回合。"
       },
       {
         "anchor": "Point08",
         "type": "ability",
         "name": "旁註",
-        "description": "施放戰技時，若敵方目標的負面效果數量大於等於?個，則戰技使目標全屬性抗性降低的效果額外降低?。"
+        "description": "施放戰技時，若敵方目標的負面效果數量大於等於3個，則戰技使目標全屬性抗性降低的效果額外降低3%。"
       },
       {
         "anchor": "Point09",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.04
       },
@@ -1372,21 +1372,21 @@
       {
         "anchor": "Point11",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.04
       },
       {
         "anchor": "Point12",
         "type": "stat",
-        "name": "量子屬性傷害提高",
+        "name": "量子属性伤害提高",
         "statType": "QuantumAddedRatio",
         "value": 0.032
       },
       {
         "anchor": "Point13",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.06
       },
@@ -1400,14 +1400,14 @@
       {
         "anchor": "Point15",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.06
       },
       {
         "anchor": "Point16",
         "type": "stat",
-        "name": "量子屬性傷害提高",
+        "name": "量子属性伤害提高",
         "statType": "QuantumAddedRatio",
         "value": 0.048
       },
@@ -1421,7 +1421,7 @@
       {
         "anchor": "Point18",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.08
       }
@@ -1579,24 +1579,24 @@
         "anchor": "Point06",
         "type": "ability",
         "name": "蘇生",
-        "description": "消滅敵方目標時，若當前生命值百分比小於等於?，則立即回覆等同於自身生命上限?的生命值。"
+        "description": "消滅敵方目標時，若當前生命值百分比小於等於30%，則立即回覆等同於自身生命上限20%的生命值。"
       },
       {
         "anchor": "Point07",
         "type": "ability",
         "name": "堅忍",
-        "description": "抵抗持續傷害類負面狀態的概率提高?。"
+        "description": "抵抗持續傷害類負面狀態的概率提高50%。"
       },
       {
         "anchor": "Point08",
         "type": "ability",
         "name": "抗禦",
-        "description": "進入戰鬥時，若當前生命值百分比小於等於?，阿蘭可以抵抗除持續傷害外的所有傷害。當阿蘭受到攻擊後，該效果解除。"
+        "description": "進入戰鬥時，若當前生命值百分比小於等於50%，阿蘭可以抵抗除持續傷害外的所有傷害。當阿蘭受到攻擊後，該效果解除。"
       },
       {
         "anchor": "Point09",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.04
       },
@@ -1610,7 +1610,7 @@
       {
         "anchor": "Point11",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.04
       },
@@ -1624,7 +1624,7 @@
       {
         "anchor": "Point13",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.06
       },
@@ -1638,7 +1638,7 @@
       {
         "anchor": "Point15",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.06
       },
@@ -1659,7 +1659,7 @@
       {
         "anchor": "Point18",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.08
       }
@@ -1817,87 +1817,87 @@
         "anchor": "Point06",
         "type": "ability",
         "name": "火花",
-        "description": "施放普攻時，有?的基礎概率使敵方目標陷入灼燒狀態，持續?回合。\n灼燒狀態下，敵方目標每回合開始時受到等同於艾絲妲普攻?的火屬性持續傷害。"
+        "description": "施放普攻時，有80%的基礎概率使敵方目標陷入灼燒狀態，持續3回合。\n灼燒狀態下，敵方目標每回合開始時受到等同於艾絲妲普攻50%的火屬性持續傷害。"
       },
       {
         "anchor": "Point07",
         "type": "ability",
         "name": "點燃",
-        "description": "艾絲妲在場時，我方全體的火屬性傷害提高?。"
+        "description": "艾絲妲在場時，我方全體的火屬性傷害提高18%。"
       },
       {
         "anchor": "Point08",
         "type": "ability",
         "name": "星座",
-        "description": "艾絲妲每擁有1層蓄能，自身防禦力提高?。"
+        "description": "艾絲妲每擁有1層蓄能，自身防禦力提高6%。"
       },
       {
         "anchor": "Point09",
         "type": "stat",
-        "name": "火屬性傷害提高",
+        "name": "火属性伤害提高",
         "statType": "FireAddedRatio",
         "value": 0.032
       },
       {
         "anchor": "Point10",
         "type": "stat",
-        "name": "防禦力",
+        "name": "防御力",
         "statType": "DefenceAddedRatio",
         "value": 0.05
       },
       {
         "anchor": "Point11",
         "type": "stat",
-        "name": "火屬性傷害提高",
+        "name": "火属性伤害提高",
         "statType": "FireAddedRatio",
         "value": 0.032
       },
       {
         "anchor": "Point12",
         "type": "stat",
-        "name": "暴擊率",
+        "name": "暴击率",
         "statType": "CriticalChanceBase",
         "value": 0.027
       },
       {
         "anchor": "Point13",
         "type": "stat",
-        "name": "火屬性傷害提高",
+        "name": "火属性伤害提高",
         "statType": "FireAddedRatio",
         "value": 0.048
       },
       {
         "anchor": "Point14",
         "type": "stat",
-        "name": "防禦力",
+        "name": "防御力",
         "statType": "DefenceAddedRatio",
         "value": 0.075
       },
       {
         "anchor": "Point15",
         "type": "stat",
-        "name": "火屬性傷害提高",
+        "name": "火属性伤害提高",
         "statType": "FireAddedRatio",
         "value": 0.048
       },
       {
         "anchor": "Point16",
         "type": "stat",
-        "name": "暴擊率",
+        "name": "暴击率",
         "statType": "CriticalChanceBase",
         "value": 0.04
       },
       {
         "anchor": "Point17",
         "type": "stat",
-        "name": "防禦力",
+        "name": "防御力",
         "statType": "DefenceAddedRatio",
         "value": 0.1
       },
       {
         "anchor": "Point18",
         "type": "stat",
-        "name": "火屬性傷害提高",
+        "name": "火属性伤害提高",
         "statType": "FireAddedRatio",
         "value": 0.064
       }
@@ -2055,87 +2055,87 @@
         "anchor": "Point06",
         "type": "ability",
         "name": "效率",
-        "description": "施放戰技時，對目標造成的傷害提高效果額外再提高?。"
+        "description": "施放戰技時，對目標造成的傷害提高效果額外再提高25%。"
       },
       {
         "anchor": "Point07",
         "type": "ability",
         "name": "人偶",
-        "description": "抵抗控制類負面狀態的概率提高?。"
+        "description": "抵抗控制類負面狀態的概率提高35%。"
       },
       {
         "anchor": "Point08",
         "type": "ability",
         "name": "冰結",
-        "description": "施放終結技時，對凍結狀態下的敵人造成的傷害提高?。"
+        "description": "施放終結技時，對凍結狀態下的敵人造成的傷害提高20%。"
       },
       {
         "anchor": "Point09",
         "type": "stat",
-        "name": "冰屬性傷害提高",
+        "name": "冰属性伤害提高",
         "statType": "IceAddedRatio",
         "value": 0.032
       },
       {
         "anchor": "Point10",
         "type": "stat",
-        "name": "防禦力",
+        "name": "防御力",
         "statType": "DefenceAddedRatio",
         "value": 0.05
       },
       {
         "anchor": "Point11",
         "type": "stat",
-        "name": "冰屬性傷害提高",
+        "name": "冰属性伤害提高",
         "statType": "IceAddedRatio",
         "value": 0.032
       },
       {
         "anchor": "Point12",
         "type": "stat",
-        "name": "暴擊率",
+        "name": "暴击率",
         "statType": "CriticalChanceBase",
         "value": 0.027
       },
       {
         "anchor": "Point13",
         "type": "stat",
-        "name": "冰屬性傷害提高",
+        "name": "冰属性伤害提高",
         "statType": "IceAddedRatio",
         "value": 0.048
       },
       {
         "anchor": "Point14",
         "type": "stat",
-        "name": "防禦力",
+        "name": "防御力",
         "statType": "DefenceAddedRatio",
         "value": 0.075
       },
       {
         "anchor": "Point15",
         "type": "stat",
-        "name": "冰屬性傷害提高",
+        "name": "冰属性伤害提高",
         "statType": "IceAddedRatio",
         "value": 0.048
       },
       {
         "anchor": "Point16",
         "type": "stat",
-        "name": "暴擊率",
+        "name": "暴击率",
         "statType": "CriticalChanceBase",
         "value": 0.04
       },
       {
         "anchor": "Point17",
         "type": "stat",
-        "name": "防禦力",
+        "name": "防御力",
         "statType": "DefenceAddedRatio",
         "value": 0.1
       },
       {
         "anchor": "Point18",
         "type": "stat",
-        "name": "冰屬性傷害提高",
+        "name": "冰属性伤害提高",
         "statType": "IceAddedRatio",
         "value": 0.064
       }
@@ -2293,38 +2293,38 @@
         "anchor": "Point06",
         "type": "ability",
         "name": "龍之騎士",
-        "description": "Saber的暴擊率提高?。進入戰鬥和施放強化普攻時，獲得【魔力放出】效果，該效果下，若Saber持有【爐心共鳴】，且施放戰技並消耗【爐心共鳴】可為Saber恢復滿能量，則消耗【魔力放出】為我方恢復1個戰技點並使Saber立即行動。"
+        "description": "Saber的暴擊率提高20%。進入戰鬥和施放強化普攻時，獲得【魔力放出】效果，該效果下，若Saber持有【爐心共鳴】，且施放戰技並消耗【爐心共鳴】可為Saber恢復滿能量，則消耗【魔力放出】為我方恢復1個戰技點並使Saber立即行動。"
       },
       {
         "anchor": "Point07",
         "type": "ability",
         "name": "湖之祝福",
-        "description": "Saber可積攢最多?點溢出能量，施放終結技後清空並恢復相應的能量值。戰鬥開始時若能量不足?則使其恢復至?。"
+        "description": "Saber可積攢最多120點溢出能量，施放終結技後清空並恢復相應的能量值。戰鬥開始時若能量不足60%則使其恢復至60%。"
       },
       {
         "anchor": "Point08",
         "type": "ability",
         "name": "星之冠冕",
-        "description": "施放戰技時，使Saber的暴擊傷害提高?，持續?回合。本場戰鬥中每獲得1點【爐心共鳴】，使Saber的暴擊傷害提高?，該效果最多疊加?層。"
+        "description": "施放戰技時，使Saber的暴擊傷害提高50%，持續2回合。本場戰鬥中每獲得1點【爐心共鳴】，使Saber的暴擊傷害提高4%，該效果最多疊加8層。"
       },
       {
         "anchor": "Point09",
         "type": "stat",
-        "name": "風屬性傷害提高",
+        "name": "风属性伤害提高",
         "statType": "WindAddedRatio",
         "value": 0.032
       },
       {
         "anchor": "Point10",
         "type": "stat",
-        "name": "暴擊率",
+        "name": "暴击率",
         "statType": "CriticalChanceBase",
         "value": 0.027
       },
       {
         "anchor": "Point11",
         "type": "stat",
-        "name": "風屬性傷害提高",
+        "name": "风属性伤害提高",
         "statType": "WindAddedRatio",
         "value": 0.032
       },
@@ -2338,21 +2338,21 @@
       {
         "anchor": "Point13",
         "type": "stat",
-        "name": "風屬性傷害提高",
+        "name": "风属性伤害提高",
         "statType": "WindAddedRatio",
         "value": 0.048
       },
       {
         "anchor": "Point14",
         "type": "stat",
-        "name": "暴擊率",
+        "name": "暴击率",
         "statType": "CriticalChanceBase",
         "value": 0.04
       },
       {
         "anchor": "Point15",
         "type": "stat",
-        "name": "風屬性傷害提高",
+        "name": "风属性伤害提高",
         "statType": "WindAddedRatio",
         "value": 0.048
       },
@@ -2366,14 +2366,14 @@
       {
         "anchor": "Point17",
         "type": "stat",
-        "name": "暴擊率",
+        "name": "暴击率",
         "statType": "CriticalChanceBase",
         "value": 0.053
       },
       {
         "anchor": "Point18",
         "type": "stat",
-        "name": "風屬性傷害提高",
+        "name": "风属性伤害提高",
         "statType": "WindAddedRatio",
         "value": 0.064
       }
@@ -2530,87 +2530,87 @@
         "anchor": "Point06",
         "type": "ability",
         "name": "投影魔術",
-        "description": "Archer在場時，戰技點上限額外增加?點。"
+        "description": "Archer在場時，戰技點上限額外增加2點。"
       },
       {
         "anchor": "Point07",
         "type": "ability",
         "name": "正義夥伴",
-        "description": "Archer進入戰鬥時獲得?點充能。"
+        "description": "Archer進入戰鬥時獲得1點充能。"
       },
       {
         "anchor": "Point08",
         "type": "ability",
         "name": "守護者",
-        "description": "我方獲得戰技點後，若戰技點大於等於?點，Archer的暴擊傷害提高?，持續?回合。"
+        "description": "我方獲得戰技點後，若戰技點大於等於4點，Archer的暴擊傷害提高120%，持續1回合。"
       },
       {
         "anchor": "Point09",
         "type": "stat",
-        "name": "量子屬性傷害提高",
+        "name": "量子属性伤害提高",
         "statType": "QuantumAddedRatio",
         "value": 0.032
       },
       {
         "anchor": "Point10",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.04
       },
       {
         "anchor": "Point11",
         "type": "stat",
-        "name": "量子屬性傷害提高",
+        "name": "量子属性伤害提高",
         "statType": "QuantumAddedRatio",
         "value": 0.032
       },
       {
         "anchor": "Point12",
         "type": "stat",
-        "name": "暴擊率",
+        "name": "暴击率",
         "statType": "CriticalChanceBase",
         "value": 0.027
       },
       {
         "anchor": "Point13",
         "type": "stat",
-        "name": "量子屬性傷害提高",
+        "name": "量子属性伤害提高",
         "statType": "QuantumAddedRatio",
         "value": 0.048
       },
       {
         "anchor": "Point14",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.06
       },
       {
         "anchor": "Point15",
         "type": "stat",
-        "name": "量子屬性傷害提高",
+        "name": "量子属性伤害提高",
         "statType": "QuantumAddedRatio",
         "value": 0.048
       },
       {
         "anchor": "Point16",
         "type": "stat",
-        "name": "暴擊率",
+        "name": "暴击率",
         "statType": "CriticalChanceBase",
         "value": 0.04
       },
       {
         "anchor": "Point17",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.08
       },
       {
         "anchor": "Point18",
         "type": "stat",
-        "name": "量子屬性傷害提高",
+        "name": "量子属性伤害提高",
         "statType": "QuantumAddedRatio",
         "value": 0.064
       }
@@ -2774,32 +2774,32 @@
         "anchor": "Point07",
         "type": "ability",
         "name": "陣地",
-        "description": "戰鬥開始時，我方全體的防禦力提高?，持續?回合。"
+        "description": "戰鬥開始時，我方全體的防禦力提高20%，持續2回合。"
       },
       {
         "anchor": "Point08",
         "type": "ability",
         "name": "軍勢",
-        "description": "布洛妮婭在場時，我方全體造成的傷害提高?。"
+        "description": "布洛妮婭在場時，我方全體造成的傷害提高10%。"
       },
       {
         "anchor": "Point09",
         "type": "stat",
-        "name": "風屬性傷害提高",
+        "name": "风属性伤害提高",
         "statType": "WindAddedRatio",
         "value": 0.032
       },
       {
         "anchor": "Point10",
         "type": "stat",
-        "name": "暴擊傷害",
+        "name": "暴击伤害",
         "statType": "CriticalDamageBase",
         "value": 0.053
       },
       {
         "anchor": "Point11",
         "type": "stat",
-        "name": "風屬性傷害提高",
+        "name": "风属性伤害提高",
         "statType": "WindAddedRatio",
         "value": 0.032
       },
@@ -2813,21 +2813,21 @@
       {
         "anchor": "Point13",
         "type": "stat",
-        "name": "風屬性傷害提高",
+        "name": "风属性伤害提高",
         "statType": "WindAddedRatio",
         "value": 0.048
       },
       {
         "anchor": "Point14",
         "type": "stat",
-        "name": "暴擊傷害",
+        "name": "暴击伤害",
         "statType": "CriticalDamageBase",
         "value": 0.08
       },
       {
         "anchor": "Point15",
         "type": "stat",
-        "name": "風屬性傷害提高",
+        "name": "风属性伤害提高",
         "statType": "WindAddedRatio",
         "value": 0.048
       },
@@ -2841,14 +2841,14 @@
       {
         "anchor": "Point17",
         "type": "stat",
-        "name": "暴擊傷害",
+        "name": "暴击伤害",
         "statType": "CriticalDamageBase",
         "value": 0.107
       },
       {
         "anchor": "Point18",
         "type": "stat",
-        "name": "風屬性傷害提高",
+        "name": "风属性伤害提高",
         "statType": "WindAddedRatio",
         "value": 0.064
       }
@@ -3006,87 +3006,87 @@
         "anchor": "Point06",
         "type": "ability",
         "name": "夜行",
-        "description": "若當前生命值百分比小於等於?，則被敵方目標攻擊的概率降低。"
+        "description": "若當前生命值百分比小於等於50%，則被敵方目標攻擊的概率降低。"
       },
       {
         "anchor": "Point07",
         "type": "ability",
         "name": "割裂",
-        "description": "增幅狀態下希兒的量子屬性抗性穿透提高?。"
+        "description": "增幅狀態下希兒的量子屬性抗性穿透提高20%。"
       },
       {
         "anchor": "Point08",
         "type": "ability",
         "name": "漣漪",
-        "description": "施放普攻後，希兒的下一次行動提前?。"
+        "description": "施放普攻後，希兒的下一次行動提前20%。"
       },
       {
         "anchor": "Point09",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.04
       },
       {
         "anchor": "Point10",
         "type": "stat",
-        "name": "暴擊傷害",
+        "name": "暴击伤害",
         "statType": "CriticalDamageBase",
         "value": 0.053
       },
       {
         "anchor": "Point11",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.04
       },
       {
         "anchor": "Point12",
         "type": "stat",
-        "name": "防禦力",
+        "name": "防御力",
         "statType": "DefenceAddedRatio",
         "value": 0.05
       },
       {
         "anchor": "Point13",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.06
       },
       {
         "anchor": "Point14",
         "type": "stat",
-        "name": "暴擊傷害",
+        "name": "暴击伤害",
         "statType": "CriticalDamageBase",
         "value": 0.08
       },
       {
         "anchor": "Point15",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.06
       },
       {
         "anchor": "Point16",
         "type": "stat",
-        "name": "防禦力",
+        "name": "防御力",
         "statType": "DefenceAddedRatio",
         "value": 0.075
       },
       {
         "anchor": "Point17",
         "type": "stat",
-        "name": "暴擊傷害",
+        "name": "暴击伤害",
         "statType": "CriticalDamageBase",
         "value": 0.107
       },
       {
         "anchor": "Point18",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.08
       }
@@ -3244,24 +3244,24 @@
         "anchor": "Point06",
         "type": "ability",
         "name": "搖滾",
-        "description": "施放戰技時，使受到攻擊的敵方目標陷入觸電狀態的基礎概率提高?。"
+        "description": "施放戰技時，使受到攻擊的敵方目標陷入觸電狀態的基礎概率提高20%。"
       },
       {
         "anchor": "Point07",
         "type": "ability",
         "name": "電音",
-        "description": "戰鬥開始時，立即恢復?點能量。"
+        "description": "戰鬥開始時，立即恢復15點能量。"
       },
       {
         "anchor": "Point08",
         "type": "ability",
         "name": "狂熱",
-        "description": "消滅敵方目標後，攻擊力提高?，持續?回合。"
+        "description": "消滅敵方目標後，攻擊力提高20%，持續2回合。"
       },
       {
         "anchor": "Point09",
         "type": "stat",
-        "name": "暴擊率",
+        "name": "暴击率",
         "statType": "CriticalChanceBase",
         "value": 0.027
       },
@@ -3275,7 +3275,7 @@
       {
         "anchor": "Point11",
         "type": "stat",
-        "name": "暴擊率",
+        "name": "暴击率",
         "statType": "CriticalChanceBase",
         "value": 0.027
       },
@@ -3289,7 +3289,7 @@
       {
         "anchor": "Point13",
         "type": "stat",
-        "name": "暴擊率",
+        "name": "暴击率",
         "statType": "CriticalChanceBase",
         "value": 0.04
       },
@@ -3303,7 +3303,7 @@
       {
         "anchor": "Point15",
         "type": "stat",
-        "name": "暴擊率",
+        "name": "暴击率",
         "statType": "CriticalChanceBase",
         "value": 0.04
       },
@@ -3324,7 +3324,7 @@
       {
         "anchor": "Point18",
         "type": "stat",
-        "name": "暴擊率",
+        "name": "暴击率",
         "statType": "CriticalChanceBase",
         "value": 0.053
       }
@@ -3494,12 +3494,12 @@
         "anchor": "Point08",
         "type": "ability",
         "name": "戰意",
-        "description": "傑帕德提高等同於自身當前防禦力?的攻擊力，每回合開始時刷新。"
+        "description": "傑帕德提高等同於自身當前防禦力35%的攻擊力，每回合開始時刷新。"
       },
       {
         "anchor": "Point09",
         "type": "stat",
-        "name": "冰屬性傷害提高",
+        "name": "冰属性伤害提高",
         "statType": "IceAddedRatio",
         "value": 0.032
       },
@@ -3513,21 +3513,21 @@
       {
         "anchor": "Point11",
         "type": "stat",
-        "name": "冰屬性傷害提高",
+        "name": "冰属性伤害提高",
         "statType": "IceAddedRatio",
         "value": 0.032
       },
       {
         "anchor": "Point12",
         "type": "stat",
-        "name": "防禦力",
+        "name": "防御力",
         "statType": "DefenceAddedRatio",
         "value": 0.05
       },
       {
         "anchor": "Point13",
         "type": "stat",
-        "name": "冰屬性傷害提高",
+        "name": "冰属性伤害提高",
         "statType": "IceAddedRatio",
         "value": 0.048
       },
@@ -3541,14 +3541,14 @@
       {
         "anchor": "Point15",
         "type": "stat",
-        "name": "冰屬性傷害提高",
+        "name": "冰属性伤害提高",
         "statType": "IceAddedRatio",
         "value": 0.048
       },
       {
         "anchor": "Point16",
         "type": "stat",
-        "name": "防禦力",
+        "name": "防御力",
         "statType": "DefenceAddedRatio",
         "value": 0.075
       },
@@ -3562,7 +3562,7 @@
       {
         "anchor": "Point18",
         "type": "stat",
-        "name": "冰屬性傷害提高",
+        "name": "冰属性伤害提高",
         "statType": "IceAddedRatio",
         "value": 0.064
       }
@@ -3720,19 +3720,19 @@
         "anchor": "Point06",
         "type": "ability",
         "name": "舒緩",
-        "description": "施放戰技時，解除指定我方單體的?個負面效果。"
+        "description": "施放戰技時，解除指定我方單體的1個負面效果。"
       },
       {
         "anchor": "Point07",
         "type": "ability",
         "name": "醫者",
-        "description": "娜塔莎提供的治療量提高?。"
+        "description": "娜塔莎提供的治療量提高10%。"
       },
       {
         "anchor": "Point08",
         "type": "ability",
         "name": "調理",
-        "description": "施放戰技產生的持續回覆效果延長?回合。"
+        "description": "施放戰技產生的持續回覆效果延長1回合。"
       },
       {
         "anchor": "Point09",
@@ -3758,7 +3758,7 @@
       {
         "anchor": "Point12",
         "type": "stat",
-        "name": "防禦力",
+        "name": "防御力",
         "statType": "DefenceAddedRatio",
         "value": 0.05
       },
@@ -3786,7 +3786,7 @@
       {
         "anchor": "Point16",
         "type": "stat",
-        "name": "防禦力",
+        "name": "防御力",
         "statType": "DefenceAddedRatio",
         "value": 0.075
       },
@@ -3958,38 +3958,38 @@
         "anchor": "Point06",
         "type": "ability",
         "name": "痛擊",
-        "description": "對處於負面效果的敵方目標造成的傷害提高?。"
+        "description": "對處於負面效果的敵方目標造成的傷害提高20%。"
       },
       {
         "anchor": "Point07",
         "type": "ability",
         "name": "秘策",
-        "description": "佩拉在場時，我方全體的效果命中提高?。"
+        "description": "佩拉在場時，我方全體的效果命中提高10%。"
       },
       {
         "anchor": "Point08",
         "type": "ability",
         "name": "追殲",
-        "description": "施放戰技解除增益效果時，下一次攻擊造成的傷害提高?。"
+        "description": "施放戰技解除增益效果時，下一次攻擊造成的傷害提高20%。"
       },
       {
         "anchor": "Point09",
         "type": "stat",
-        "name": "冰屬性傷害提高",
+        "name": "冰属性伤害提高",
         "statType": "IceAddedRatio",
         "value": 0.032
       },
       {
         "anchor": "Point10",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.04
       },
       {
         "anchor": "Point11",
         "type": "stat",
-        "name": "冰屬性傷害提高",
+        "name": "冰属性伤害提高",
         "statType": "IceAddedRatio",
         "value": 0.032
       },
@@ -4003,21 +4003,21 @@
       {
         "anchor": "Point13",
         "type": "stat",
-        "name": "冰屬性傷害提高",
+        "name": "冰属性伤害提高",
         "statType": "IceAddedRatio",
         "value": 0.048
       },
       {
         "anchor": "Point14",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.06
       },
       {
         "anchor": "Point15",
         "type": "stat",
-        "name": "冰屬性傷害提高",
+        "name": "冰属性伤害提高",
         "statType": "IceAddedRatio",
         "value": 0.048
       },
@@ -4031,14 +4031,14 @@
       {
         "anchor": "Point17",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.08
       },
       {
         "anchor": "Point18",
         "type": "stat",
-        "name": "冰屬性傷害提高",
+        "name": "冰属性伤害提高",
         "statType": "IceAddedRatio",
         "value": 0.064
       }
@@ -4196,38 +4196,38 @@
         "anchor": "Point06",
         "type": "ability",
         "name": "家人",
-        "description": "受到攻擊時有?的固定概率解除自身1個負面效果。"
+        "description": "受到攻擊時有35%的固定概率解除自身1個負面效果。"
       },
       {
         "anchor": "Point07",
         "type": "ability",
         "name": "守護",
-        "description": "抵抗控制類負面狀態的概率提高?。"
+        "description": "抵抗控制類負面狀態的概率提高35%。"
       },
       {
         "anchor": "Point08",
         "type": "ability",
         "name": "復仇",
-        "description": "史瓦羅的反擊造成的傷害提高?。"
+        "description": "史瓦羅的反擊造成的傷害提高30%。"
       },
       {
         "anchor": "Point09",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.04
       },
       {
         "anchor": "Point10",
         "type": "stat",
-        "name": "物理屬性傷害提高",
+        "name": "物理属性伤害提高",
         "statType": "PhysicalAddedRatio",
         "value": 0.032
       },
       {
         "anchor": "Point11",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.04
       },
@@ -4241,21 +4241,21 @@
       {
         "anchor": "Point13",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.06
       },
       {
         "anchor": "Point14",
         "type": "stat",
-        "name": "物理屬性傷害提高",
+        "name": "物理属性伤害提高",
         "statType": "PhysicalAddedRatio",
         "value": 0.048
       },
       {
         "anchor": "Point15",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.06
       },
@@ -4269,14 +4269,14 @@
       {
         "anchor": "Point17",
         "type": "stat",
-        "name": "物理屬性傷害提高",
+        "name": "物理属性伤害提高",
         "statType": "PhysicalAddedRatio",
         "value": 0.064
       },
       {
         "anchor": "Point18",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.08
       }
@@ -4434,24 +4434,24 @@
         "anchor": "Point06",
         "type": "ability",
         "name": "圈套",
-        "description": "天賦使敵方陷入風化狀態的持續時間延長?回合。"
+        "description": "天賦使敵方陷入風化狀態的持續時間延長1回合。"
       },
       {
         "anchor": "Point07",
         "type": "ability",
         "name": "後手",
-        "description": "施放終結技時，額外恢復?點能量。"
+        "description": "施放終結技時，額外恢復10點能量。"
       },
       {
         "anchor": "Point08",
         "type": "ability",
         "name": "加料",
-        "description": "風化狀態下的敵方目標對桑博造成的傷害降低?。"
+        "description": "風化狀態下的敵方目標對桑博造成的傷害降低15%。"
       },
       {
         "anchor": "Point09",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.04
       },
@@ -4465,7 +4465,7 @@
       {
         "anchor": "Point11",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.04
       },
@@ -4479,7 +4479,7 @@
       {
         "anchor": "Point13",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.06
       },
@@ -4493,7 +4493,7 @@
       {
         "anchor": "Point15",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.06
       },
@@ -4514,7 +4514,7 @@
       {
         "anchor": "Point18",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.08
       }
@@ -4672,24 +4672,24 @@
         "anchor": "Point06",
         "type": "ability",
         "name": "童真",
-        "description": "觸發天賦時，回覆等同於虎克生命上限?的生命值。"
+        "description": "觸發天賦時，回覆等同於虎克生命上限5%的生命值。"
       },
       {
         "anchor": "Point07",
         "type": "ability",
         "name": "無邪",
-        "description": "抵抗控制類負面狀態的概率提高?。"
+        "description": "抵抗控制類負面狀態的概率提高35%。"
       },
       {
         "anchor": "Point08",
         "type": "ability",
         "name": "玩火",
-        "description": "施放終結技後，虎克的行動提前?並額外恢復?點能量。"
+        "description": "施放終結技後，虎克的行動提前20%並額外恢復5點能量。"
       },
       {
         "anchor": "Point09",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.04
       },
@@ -4703,21 +4703,21 @@
       {
         "anchor": "Point11",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.04
       },
       {
         "anchor": "Point12",
         "type": "stat",
-        "name": "暴擊傷害",
+        "name": "暴击伤害",
         "statType": "CriticalDamageBase",
         "value": 0.053
       },
       {
         "anchor": "Point13",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.06
       },
@@ -4731,14 +4731,14 @@
       {
         "anchor": "Point15",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.06
       },
       {
         "anchor": "Point16",
         "type": "stat",
-        "name": "暴擊傷害",
+        "name": "暴击伤害",
         "statType": "CriticalDamageBase",
         "value": 0.08
       },
@@ -4752,7 +4752,7 @@
       {
         "anchor": "Point18",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.08
       }
@@ -4910,19 +4910,19 @@
         "anchor": "Point06",
         "type": "ability",
         "name": "提前勘測",
-        "description": "當持有【求生反應】的目標受到攻擊後，玲可立即恢復?點能量。"
+        "description": "當持有【求生反應】的目標受到攻擊後，玲可立即恢復2點能量。"
       },
       {
         "anchor": "Point07",
         "type": "ability",
         "name": "探險技術",
-        "description": "抵抗控制類負面狀態的概率提高?。"
+        "description": "抵抗控制類負面狀態的概率提高35%。"
       },
       {
         "anchor": "Point08",
         "type": "ability",
         "name": "極境求生",
-        "description": "天賦產生的持續回覆效果延長?回合。"
+        "description": "天賦產生的持續回覆效果延長1回合。"
       },
       {
         "anchor": "Point09",
@@ -4934,7 +4934,7 @@
       {
         "anchor": "Point10",
         "type": "stat",
-        "name": "防禦力",
+        "name": "防御力",
         "statType": "DefenceAddedRatio",
         "value": 0.05
       },
@@ -4962,7 +4962,7 @@
       {
         "anchor": "Point14",
         "type": "stat",
-        "name": "防禦力",
+        "name": "防御力",
         "statType": "DefenceAddedRatio",
         "value": 0.075
       },
@@ -4983,7 +4983,7 @@
       {
         "anchor": "Point17",
         "type": "stat",
-        "name": "防禦力",
+        "name": "防御力",
         "statType": "DefenceAddedRatio",
         "value": 0.1
       },
@@ -5148,24 +5148,24 @@
         "anchor": "Point06",
         "type": "ability",
         "name": "動能過載",
-        "description": "施放戰技時，立即解除敵方目標?個增益效果。"
+        "description": "施放戰技時，立即解除敵方目標1個增益效果。"
       },
       {
         "anchor": "Point07",
         "type": "ability",
         "name": "循環制動",
-        "description": "每獲得1層【鬥志】，額外恢復?點能量。"
+        "description": "每獲得1層【鬥志】，額外恢復3點能量。"
       },
       {
         "anchor": "Point08",
         "type": "ability",
         "name": "粉碎鬥志",
-        "description": "施放強化普攻時，【直衝拳】的每1段攻擊都有?的固定概率使盧卡額外施放1段攻擊。此效果對額外施放的攻擊不會生效。"
+        "description": "施放強化普攻時，【直衝拳】的每1段攻擊都有50%的固定概率使盧卡額外施放1段攻擊。此效果對額外施放的攻擊不會生效。"
       },
       {
         "anchor": "Point09",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.04
       },
@@ -5179,21 +5179,21 @@
       {
         "anchor": "Point11",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.04
       },
       {
         "anchor": "Point12",
         "type": "stat",
-        "name": "防禦力",
+        "name": "防御力",
         "statType": "DefenceAddedRatio",
         "value": 0.05
       },
       {
         "anchor": "Point13",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.06
       },
@@ -5207,14 +5207,14 @@
       {
         "anchor": "Point15",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.06
       },
       {
         "anchor": "Point16",
         "type": "stat",
-        "name": "防禦力",
+        "name": "防御力",
         "statType": "DefenceAddedRatio",
         "value": 0.075
       },
@@ -5228,7 +5228,7 @@
       {
         "anchor": "Point18",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.08
       }
@@ -5392,32 +5392,32 @@
         "anchor": "Point07",
         "type": "ability",
         "name": "金融動盪",
-        "description": "託帕和賬賬對擁有火屬性弱點的敵方目標造成的傷害提高?。"
+        "description": "託帕和賬賬對擁有火屬性弱點的敵方目標造成的傷害提高15%。"
       },
       {
         "anchor": "Point08",
         "type": "ability",
         "name": "技術性調整",
-        "description": "當賬賬處於【漲幅驚人！】狀態施放攻擊後，額外使託帕恢復?點能量。"
+        "description": "當賬賬處於【漲幅驚人！】狀態施放攻擊後，額外使託帕恢復10點能量。"
       },
       {
         "anchor": "Point09",
         "type": "stat",
-        "name": "火屬性傷害提高",
+        "name": "火属性伤害提高",
         "statType": "FireAddedRatio",
         "value": 0.032
       },
       {
         "anchor": "Point10",
         "type": "stat",
-        "name": "暴擊率",
+        "name": "暴击率",
         "statType": "CriticalChanceBase",
         "value": 0.027
       },
       {
         "anchor": "Point11",
         "type": "stat",
-        "name": "火屬性傷害提高",
+        "name": "火属性伤害提高",
         "statType": "FireAddedRatio",
         "value": 0.032
       },
@@ -5431,21 +5431,21 @@
       {
         "anchor": "Point13",
         "type": "stat",
-        "name": "火屬性傷害提高",
+        "name": "火属性伤害提高",
         "statType": "FireAddedRatio",
         "value": 0.048
       },
       {
         "anchor": "Point14",
         "type": "stat",
-        "name": "暴擊率",
+        "name": "暴击率",
         "statType": "CriticalChanceBase",
         "value": 0.04
       },
       {
         "anchor": "Point15",
         "type": "stat",
-        "name": "火屬性傷害提高",
+        "name": "火属性伤害提高",
         "statType": "FireAddedRatio",
         "value": 0.048
       },
@@ -5459,14 +5459,14 @@
       {
         "anchor": "Point17",
         "type": "stat",
-        "name": "暴擊率",
+        "name": "暴击率",
         "statType": "CriticalChanceBase",
         "value": 0.053
       },
       {
         "anchor": "Point18",
         "type": "stat",
-        "name": "火屬性傷害提高",
+        "name": "火属性伤害提高",
         "statType": "FireAddedRatio",
         "value": 0.064
       }
@@ -5630,81 +5630,81 @@
         "anchor": "Point07",
         "type": "ability",
         "name": "聽牌",
-        "description": "戰技使自身造成的傷害提高效果額外提高?。"
+        "description": "戰技使自身造成的傷害提高效果額外提高10%。"
       },
       {
         "anchor": "Point08",
         "type": "ability",
         "name": "搶槓",
-        "description": "施放強化普攻後，青雀的速度提高?，持續1回合。"
+        "description": "施放強化普攻後，青雀的速度提高10%，持續1回合。"
       },
       {
         "anchor": "Point09",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.04
       },
       {
         "anchor": "Point10",
         "type": "stat",
-        "name": "量子屬性傷害提高",
+        "name": "量子属性伤害提高",
         "statType": "QuantumAddedRatio",
         "value": 0.032
       },
       {
         "anchor": "Point11",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.04
       },
       {
         "anchor": "Point12",
         "type": "stat",
-        "name": "防禦力",
+        "name": "防御力",
         "statType": "DefenceAddedRatio",
         "value": 0.05
       },
       {
         "anchor": "Point13",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.06
       },
       {
         "anchor": "Point14",
         "type": "stat",
-        "name": "量子屬性傷害提高",
+        "name": "量子属性伤害提高",
         "statType": "QuantumAddedRatio",
         "value": 0.048
       },
       {
         "anchor": "Point15",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.06
       },
       {
         "anchor": "Point16",
         "type": "stat",
-        "name": "防禦力",
+        "name": "防御力",
         "statType": "DefenceAddedRatio",
         "value": 0.075
       },
       {
         "anchor": "Point17",
         "type": "stat",
-        "name": "量子屬性傷害提高",
+        "name": "量子属性伤害提高",
         "statType": "QuantumAddedRatio",
         "value": 0.064
       },
       {
         "anchor": "Point18",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.08
       }
@@ -5862,87 +5862,87 @@
         "anchor": "Point06",
         "type": "ability",
         "name": "駐晴",
-        "description": "施放戰技時，停雲自身速度提高?，持續1回合。"
+        "description": "施放戰技時，停雲自身速度提高20%，持續1回合。"
       },
       {
         "anchor": "Point07",
         "type": "ability",
         "name": "止厄",
-        "description": "普攻造成的傷害提高?。"
+        "description": "普攻造成的傷害提高40%。"
       },
       {
         "anchor": "Point08",
         "type": "ability",
         "name": "亨通",
-        "description": "停雲的回合開始時，自身立即恢復?點能量。"
+        "description": "停雲的回合開始時，自身立即恢復5點能量。"
       },
       {
         "anchor": "Point09",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.04
       },
       {
         "anchor": "Point10",
         "type": "stat",
-        "name": "防禦力",
+        "name": "防御力",
         "statType": "DefenceAddedRatio",
         "value": 0.05
       },
       {
         "anchor": "Point11",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.04
       },
       {
         "anchor": "Point12",
         "type": "stat",
-        "name": "雷屬性傷害提高",
+        "name": "雷属性伤害提高",
         "statType": "ThunderAddedRatio",
         "value": 0.032
       },
       {
         "anchor": "Point13",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.06
       },
       {
         "anchor": "Point14",
         "type": "stat",
-        "name": "防禦力",
+        "name": "防御力",
         "statType": "DefenceAddedRatio",
         "value": 0.075
       },
       {
         "anchor": "Point15",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.06
       },
       {
         "anchor": "Point16",
         "type": "stat",
-        "name": "雷屬性傷害提高",
+        "name": "雷属性伤害提高",
         "statType": "ThunderAddedRatio",
         "value": 0.048
       },
       {
         "anchor": "Point17",
         "type": "stat",
-        "name": "防禦力",
+        "name": "防御力",
         "statType": "DefenceAddedRatio",
         "value": 0.1
       },
       {
         "anchor": "Point18",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.08
       }
@@ -6100,24 +6100,24 @@
         "anchor": "Point06",
         "type": "ability",
         "name": "浸池蘇生",
-        "description": "觸發戰技效果時，解除指定我方單體的?個負面效果。"
+        "description": "觸發戰技效果時，解除指定我方單體的1個負面效果。"
       },
       {
         "anchor": "Point07",
         "type": "ability",
         "name": "澆灌塵身",
-        "description": "處於結界中的任意敵方目標受到我方攻擊後，除攻擊者外的我方目標也會回覆等同於羅剎?攻擊力+?的生命值。"
+        "description": "處於結界中的任意敵方目標受到我方攻擊後，除攻擊者外的我方目標也會回覆等同於羅剎7%攻擊力+93的生命值。"
       },
       {
         "anchor": "Point08",
         "type": "ability",
         "name": "行過幽谷",
-        "description": "抵抗控制類負面狀態的概率提高?。"
+        "description": "抵抗控制類負面狀態的概率提高70%。"
       },
       {
         "anchor": "Point09",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.04
       },
@@ -6131,21 +6131,21 @@
       {
         "anchor": "Point11",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.04
       },
       {
         "anchor": "Point12",
         "type": "stat",
-        "name": "防禦力",
+        "name": "防御力",
         "statType": "DefenceAddedRatio",
         "value": 0.05
       },
       {
         "anchor": "Point13",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.06
       },
@@ -6159,14 +6159,14 @@
       {
         "anchor": "Point15",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.06
       },
       {
         "anchor": "Point16",
         "type": "stat",
-        "name": "防禦力",
+        "name": "防御力",
         "statType": "DefenceAddedRatio",
         "value": 0.075
       },
@@ -6180,7 +6180,7 @@
       {
         "anchor": "Point18",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.08
       }
@@ -6338,87 +6338,87 @@
         "anchor": "Point06",
         "type": "ability",
         "name": "破陣",
-        "description": "若【神君】下回合的攻擊段數大於等於?段，則其下回合的暴擊傷害提高?。"
+        "description": "若【神君】下回合的攻擊段數大於等於6段，則其下回合的暴擊傷害提高25%。"
       },
       {
         "anchor": "Point07",
         "type": "ability",
         "name": "綢繆",
-        "description": "戰鬥開始時，立即恢復?點能量。"
+        "description": "戰鬥開始時，立即恢復15點能量。"
       },
       {
         "anchor": "Point08",
         "type": "ability",
         "name": "遣將",
-        "description": "施放戰技後，暴擊率提升?，持續?回合。"
+        "description": "施放戰技後，暴擊率提升10%，持續2回合。"
       },
       {
         "anchor": "Point09",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.04
       },
       {
         "anchor": "Point10",
         "type": "stat",
-        "name": "暴擊率",
+        "name": "暴击率",
         "statType": "CriticalChanceBase",
         "value": 0.027
       },
       {
         "anchor": "Point11",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.04
       },
       {
         "anchor": "Point12",
         "type": "stat",
-        "name": "防禦力",
+        "name": "防御力",
         "statType": "DefenceAddedRatio",
         "value": 0.05
       },
       {
         "anchor": "Point13",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.06
       },
       {
         "anchor": "Point14",
         "type": "stat",
-        "name": "暴擊率",
+        "name": "暴击率",
         "statType": "CriticalChanceBase",
         "value": 0.04
       },
       {
         "anchor": "Point15",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.06
       },
       {
         "anchor": "Point16",
         "type": "stat",
-        "name": "防禦力",
+        "name": "防御力",
         "statType": "DefenceAddedRatio",
         "value": 0.075
       },
       {
         "anchor": "Point17",
         "type": "stat",
-        "name": "暴擊率",
+        "name": "暴击率",
         "statType": "CriticalChanceBase",
         "value": 0.053
       },
       {
         "anchor": "Point18",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.08
       }
@@ -6576,19 +6576,19 @@
         "anchor": "Point06",
         "type": "ability",
         "name": "無盡形壽",
-        "description": "刃的當前生命值百分比小於等於生命上限的50%時，受到治療時的回覆量提高?。"
+        "description": "刃的當前生命值百分比小於等於生命上限的50%時，受到治療時的回覆量提高20%。"
       },
       {
         "anchor": "Point07",
         "type": "ability",
         "name": "吞忍百死",
-        "description": "施放【無間劍樹】後，若擊中處於弱點擊破狀態的敵方目標，刃回覆等同於自身?生命上限+?的生命值。"
+        "description": "施放【無間劍樹】後，若擊中處於弱點擊破狀態的敵方目標，刃回覆等同於自身5%生命上限+100的生命值。"
       },
       {
         "anchor": "Point08",
         "type": "ability",
         "name": "壞劫隳亡",
-        "description": "天賦施放的追加攻擊傷害提高?。"
+        "description": "天賦施放的追加攻擊傷害提高20%。"
       },
       {
         "anchor": "Point09",
@@ -6600,7 +6600,7 @@
       {
         "anchor": "Point10",
         "type": "stat",
-        "name": "暴擊率",
+        "name": "暴击率",
         "statType": "CriticalChanceBase",
         "value": 0.027
       },
@@ -6628,7 +6628,7 @@
       {
         "anchor": "Point14",
         "type": "stat",
-        "name": "暴擊率",
+        "name": "暴击率",
         "statType": "CriticalChanceBase",
         "value": 0.04
       },
@@ -6649,7 +6649,7 @@
       {
         "anchor": "Point17",
         "type": "stat",
-        "name": "暴擊率",
+        "name": "暴击率",
         "statType": "CriticalChanceBase",
         "value": 0.053
       },
@@ -6814,24 +6814,24 @@
         "anchor": "Point06",
         "type": "ability",
         "name": "赤子",
-        "description": "若當前生命值百分比小於等於?，則被敵方目標攻擊的概率降低。"
+        "description": "若當前生命值百分比小於等於50%，則被敵方目標攻擊的概率降低。"
       },
       {
         "anchor": "Point07",
         "type": "ability",
         "name": "逐寇",
-        "description": "每發動1次【劍勢】，【劍勢】造成的傷害提高?，該效果最多疊加?層。"
+        "description": "每發動1次【劍勢】，【劍勢】造成的傷害提高3%，該效果最多疊加10層。"
       },
       {
         "anchor": "Point08",
         "type": "ability",
         "name": "破敵",
-        "description": "施放普攻或戰技後，若場上有敵方目標處於弱點擊破狀態，則素裳的行動提前?。"
+        "description": "施放普攻或戰技後，若場上有敵方目標處於弱點擊破狀態，則素裳的行動提前15%。"
       },
       {
         "anchor": "Point09",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.04
       },
@@ -6845,21 +6845,21 @@
       {
         "anchor": "Point11",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.04
       },
       {
         "anchor": "Point12",
         "type": "stat",
-        "name": "防禦力",
+        "name": "防御力",
         "statType": "DefenceAddedRatio",
         "value": 0.05
       },
       {
         "anchor": "Point13",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.06
       },
@@ -6873,14 +6873,14 @@
       {
         "anchor": "Point15",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.06
       },
       {
         "anchor": "Point16",
         "type": "stat",
-        "name": "防禦力",
+        "name": "防御力",
         "statType": "DefenceAddedRatio",
         "value": 0.075
       },
@@ -6894,7 +6894,7 @@
       {
         "anchor": "Point18",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.08
       }
@@ -7052,24 +7052,24 @@
         "anchor": "Point06",
         "type": "ability",
         "name": "襄尺",
-        "description": "馭空被施加負面效果時可抵抗1次負面效果，該效果在?回合後可再次觸發。"
+        "description": "馭空被施加負面效果時可抵抗1次負面效果，該效果在2回合後可再次觸發。"
       },
       {
         "anchor": "Point07",
         "type": "ability",
         "name": "遲彝",
-        "description": "馭空在場時，我方全體造成的虛數屬性傷害提高?。"
+        "description": "馭空在場時，我方全體造成的虛數屬性傷害提高12%。"
       },
       {
         "anchor": "Point08",
         "type": "ability",
         "name": "氣壯",
-        "description": "持有【鳴弦號令】時，每當我方目標行動後，馭空將額外恢復?點能量。"
+        "description": "持有【鳴弦號令】時，每當我方目標行動後，馭空將額外恢復2點能量。"
       },
       {
         "anchor": "Point09",
         "type": "stat",
-        "name": "虛數屬性傷害提高",
+        "name": "虚数属性伤害提高",
         "statType": "ImaginaryAddedRatio",
         "value": 0.032
       },
@@ -7083,21 +7083,21 @@
       {
         "anchor": "Point11",
         "type": "stat",
-        "name": "虛數屬性傷害提高",
+        "name": "虚数属性伤害提高",
         "statType": "ImaginaryAddedRatio",
         "value": 0.032
       },
       {
         "anchor": "Point12",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.04
       },
       {
         "anchor": "Point13",
         "type": "stat",
-        "name": "虛數屬性傷害提高",
+        "name": "虚数属性伤害提高",
         "statType": "ImaginaryAddedRatio",
         "value": 0.048
       },
@@ -7111,14 +7111,14 @@
       {
         "anchor": "Point15",
         "type": "stat",
-        "name": "虛數屬性傷害提高",
+        "name": "虚数属性伤害提高",
         "statType": "ImaginaryAddedRatio",
         "value": 0.048
       },
       {
         "anchor": "Point16",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.06
       },
@@ -7132,7 +7132,7 @@
       {
         "anchor": "Point18",
         "type": "stat",
-        "name": "虛數屬性傷害提高",
+        "name": "虚数属性伤害提高",
         "statType": "ImaginaryAddedRatio",
         "value": 0.064
       }
@@ -7290,13 +7290,13 @@
         "anchor": "Point06",
         "type": "ability",
         "name": "太乙式盤",
-        "description": "【窮觀陣】開啟時，符玄施放戰技將額外恢復?點能量。"
+        "description": "【窮觀陣】開啟時，符玄施放戰技將額外恢復20點能量。"
       },
       {
         "anchor": "Point07",
         "type": "ability",
         "name": "遁甲星輿",
-        "description": "施放終結技時為我方其他目標回覆等同於符玄?生命上限+?的生命值。"
+        "description": "施放終結技時為我方其他目標回覆等同於符玄5%生命上限+133的生命值。"
       },
       {
         "anchor": "Point08",
@@ -7307,7 +7307,7 @@
       {
         "anchor": "Point09",
         "type": "stat",
-        "name": "暴擊率",
+        "name": "暴击率",
         "statType": "CriticalChanceBase",
         "value": 0.027
       },
@@ -7321,7 +7321,7 @@
       {
         "anchor": "Point11",
         "type": "stat",
-        "name": "暴擊率",
+        "name": "暴击率",
         "statType": "CriticalChanceBase",
         "value": 0.027
       },
@@ -7335,7 +7335,7 @@
       {
         "anchor": "Point13",
         "type": "stat",
-        "name": "暴擊率",
+        "name": "暴击率",
         "statType": "CriticalChanceBase",
         "value": 0.04
       },
@@ -7349,7 +7349,7 @@
       {
         "anchor": "Point15",
         "type": "stat",
-        "name": "暴擊率",
+        "name": "暴击率",
         "statType": "CriticalChanceBase",
         "value": 0.04
       },
@@ -7370,7 +7370,7 @@
       {
         "anchor": "Point18",
         "type": "stat",
-        "name": "暴擊率",
+        "name": "暴击率",
         "statType": "CriticalChanceBase",
         "value": 0.053
       }
@@ -7528,38 +7528,38 @@
         "anchor": "Point06",
         "type": "ability",
         "name": "頒冰",
-        "description": "施放攻擊後，對攜帶冰屬性弱點的敵方目標造成等同於彥卿?攻擊力的冰屬性附加傷害。"
+        "description": "施放攻擊後，對攜帶冰屬性弱點的敵方目標造成等同於彥卿30%攻擊力的冰屬性附加傷害。"
       },
       {
         "anchor": "Point07",
         "type": "ability",
         "name": "凌霜",
-        "description": "處於【智劍連心】效果時，效果抵抗提高?。"
+        "description": "處於【智劍連心】效果時，效果抵抗提高20%。"
       },
       {
         "anchor": "Point08",
         "type": "ability",
         "name": "輕呂",
-        "description": "觸發暴擊時，速度提高?，持續?回合。"
+        "description": "觸發暴擊時，速度提高10%，持續2回合。"
       },
       {
         "anchor": "Point09",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.04
       },
       {
         "anchor": "Point10",
         "type": "stat",
-        "name": "冰屬性傷害提高",
+        "name": "冰属性伤害提高",
         "statType": "IceAddedRatio",
         "value": 0.032
       },
       {
         "anchor": "Point11",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.04
       },
@@ -7573,21 +7573,21 @@
       {
         "anchor": "Point13",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.06
       },
       {
         "anchor": "Point14",
         "type": "stat",
-        "name": "冰屬性傷害提高",
+        "name": "冰属性伤害提高",
         "statType": "IceAddedRatio",
         "value": 0.048
       },
       {
         "anchor": "Point15",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.06
       },
@@ -7601,14 +7601,14 @@
       {
         "anchor": "Point17",
         "type": "stat",
-        "name": "冰屬性傷害提高",
+        "name": "冰属性伤害提高",
         "statType": "IceAddedRatio",
         "value": 0.064
       },
       {
         "anchor": "Point18",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.08
       }
@@ -7766,38 +7766,38 @@
         "anchor": "Point06",
         "type": "ability",
         "name": "緣竿",
-        "description": "普攻有?的基礎概率使敵方目標陷入與戰技相同的灼燒狀態。"
+        "description": "普攻有80%的基礎概率使敵方目標陷入與戰技相同的灼燒狀態。"
       },
       {
         "anchor": "Point07",
         "type": "ability",
         "name": "投狹",
-        "description": "戰鬥開始時，桂乃芬的行動提前?。"
+        "description": "戰鬥開始時，桂乃芬的行動提前25%。"
       },
       {
         "anchor": "Point08",
         "type": "ability",
         "name": "逾鋒",
-        "description": "對陷入灼燒狀態的敵方目標造成的傷害提高?。"
+        "description": "對陷入灼燒狀態的敵方目標造成的傷害提高20%。"
       },
       {
         "anchor": "Point09",
         "type": "stat",
-        "name": "火屬性傷害提高",
+        "name": "火属性伤害提高",
         "statType": "FireAddedRatio",
         "value": 0.032
       },
       {
         "anchor": "Point10",
         "type": "stat",
-        "name": "擊破特攻",
+        "name": "击破特攻",
         "statType": "BreakDamageAddedRatioBase",
         "value": 0.053
       },
       {
         "anchor": "Point11",
         "type": "stat",
-        "name": "火屬性傷害提高",
+        "name": "火属性伤害提高",
         "statType": "FireAddedRatio",
         "value": 0.032
       },
@@ -7811,21 +7811,21 @@
       {
         "anchor": "Point13",
         "type": "stat",
-        "name": "火屬性傷害提高",
+        "name": "火属性伤害提高",
         "statType": "FireAddedRatio",
         "value": 0.048
       },
       {
         "anchor": "Point14",
         "type": "stat",
-        "name": "擊破特攻",
+        "name": "击破特攻",
         "statType": "BreakDamageAddedRatioBase",
         "value": 0.08
       },
       {
         "anchor": "Point15",
         "type": "stat",
-        "name": "火屬性傷害提高",
+        "name": "火属性伤害提高",
         "statType": "FireAddedRatio",
         "value": 0.048
       },
@@ -7839,14 +7839,14 @@
       {
         "anchor": "Point17",
         "type": "stat",
-        "name": "擊破特攻",
+        "name": "击破特攻",
         "statType": "BreakDamageAddedRatioBase",
         "value": 0.107
       },
       {
         "anchor": "Point18",
         "type": "stat",
-        "name": "火屬性傷害提高",
+        "name": "火属性伤害提高",
         "statType": "FireAddedRatio",
         "value": 0.064
       }
@@ -8004,19 +8004,19 @@
         "anchor": "Point06",
         "type": "ability",
         "name": "岐黃精義",
-        "description": "白露對我方目標造成過量治療時會提高目標?的生命上限，持續?回合。"
+        "description": "白露對我方目標造成過量治療時會提高目標10%的生命上限，持續2回合。"
       },
       {
         "anchor": "Point07",
         "type": "ability",
         "name": "持明龍脈",
-        "description": "【生息】效果的觸發次數增加?次。"
+        "description": "【生息】效果的觸發次數增加1次。"
       },
       {
         "anchor": "Point08",
         "type": "ability",
         "name": "鱗淵福澤",
-        "description": "擁有【生息】的角色受到的傷害降低?。"
+        "description": "擁有【生息】的角色受到的傷害降低10%。"
       },
       {
         "anchor": "Point09",
@@ -8028,7 +8028,7 @@
       {
         "anchor": "Point10",
         "type": "stat",
-        "name": "防禦力",
+        "name": "防御力",
         "statType": "DefenceAddedRatio",
         "value": 0.05
       },
@@ -8056,7 +8056,7 @@
       {
         "anchor": "Point14",
         "type": "stat",
-        "name": "防禦力",
+        "name": "防御力",
         "statType": "DefenceAddedRatio",
         "value": 0.075
       },
@@ -8077,7 +8077,7 @@
       {
         "anchor": "Point17",
         "type": "stat",
-        "name": "防禦力",
+        "name": "防御力",
         "statType": "DefenceAddedRatio",
         "value": 0.1
       },
@@ -8242,24 +8242,24 @@
         "anchor": "Point06",
         "type": "ability",
         "name": "死境",
-        "description": "【轉魄】狀態下，效果抵抗提高?。"
+        "description": "【轉魄】狀態下，效果抵抗提高35%。"
       },
       {
         "anchor": "Point07",
         "type": "ability",
         "name": "劍首",
-        "description": "施放【無罅飛光】後，下次行動提前?。"
+        "description": "施放【無罅飛光】後，下次行動提前10%。"
       },
       {
         "anchor": "Point08",
         "type": "ability",
         "name": "霜魄",
-        "description": "【轉魄】狀態下，終結技造成的傷害提高?。"
+        "description": "【轉魄】狀態下，終結技造成的傷害提高20%。"
       },
       {
         "anchor": "Point09",
         "type": "stat",
-        "name": "暴擊傷害",
+        "name": "暴击伤害",
         "statType": "CriticalDamageBase",
         "value": 0.053
       },
@@ -8273,7 +8273,7 @@
       {
         "anchor": "Point11",
         "type": "stat",
-        "name": "暴擊傷害",
+        "name": "暴击伤害",
         "statType": "CriticalDamageBase",
         "value": 0.053
       },
@@ -8287,7 +8287,7 @@
       {
         "anchor": "Point13",
         "type": "stat",
-        "name": "暴擊傷害",
+        "name": "暴击伤害",
         "statType": "CriticalDamageBase",
         "value": 0.08
       },
@@ -8301,7 +8301,7 @@
       {
         "anchor": "Point15",
         "type": "stat",
-        "name": "暴擊傷害",
+        "name": "暴击伤害",
         "statType": "CriticalDamageBase",
         "value": 0.08
       },
@@ -8322,7 +8322,7 @@
       {
         "anchor": "Point18",
         "type": "stat",
-        "name": "暴擊傷害",
+        "name": "暴击伤害",
         "statType": "CriticalDamageBase",
         "value": 0.107
       }
@@ -8480,38 +8480,38 @@
         "anchor": "Point06",
         "type": "ability",
         "name": "伏辰",
-        "description": "戰鬥開始時，立即恢復?點能量。"
+        "description": "戰鬥開始時，立即恢復15點能量。"
       },
       {
         "anchor": "Point07",
         "type": "ability",
         "name": "修禹",
-        "description": "抵抗控制類負面狀態的概率提高?。"
+        "description": "抵抗控制類負面狀態的概率提高35%。"
       },
       {
         "anchor": "Point08",
         "type": "ability",
         "name": "起蟄",
-        "description": "對擁有虛數屬性弱點的敵方目標造成傷害時，暴擊傷害提高?。"
+        "description": "對擁有虛數屬性弱點的敵方目標造成傷害時，暴擊傷害提高24%。"
       },
       {
         "anchor": "Point09",
         "type": "stat",
-        "name": "虛數屬性傷害提高",
+        "name": "虚数属性伤害提高",
         "statType": "ImaginaryAddedRatio",
         "value": 0.032
       },
       {
         "anchor": "Point10",
         "type": "stat",
-        "name": "暴擊率",
+        "name": "暴击率",
         "statType": "CriticalChanceBase",
         "value": 0.027
       },
       {
         "anchor": "Point11",
         "type": "stat",
-        "name": "虛數屬性傷害提高",
+        "name": "虚数属性伤害提高",
         "statType": "ImaginaryAddedRatio",
         "value": 0.032
       },
@@ -8525,21 +8525,21 @@
       {
         "anchor": "Point13",
         "type": "stat",
-        "name": "虛數屬性傷害提高",
+        "name": "虚数属性伤害提高",
         "statType": "ImaginaryAddedRatio",
         "value": 0.048
       },
       {
         "anchor": "Point14",
         "type": "stat",
-        "name": "暴擊率",
+        "name": "暴击率",
         "statType": "CriticalChanceBase",
         "value": 0.04
       },
       {
         "anchor": "Point15",
         "type": "stat",
-        "name": "虛數屬性傷害提高",
+        "name": "虚数属性伤害提高",
         "statType": "ImaginaryAddedRatio",
         "value": 0.048
       },
@@ -8553,14 +8553,14 @@
       {
         "anchor": "Point17",
         "type": "stat",
-        "name": "暴擊率",
+        "name": "暴击率",
         "statType": "CriticalChanceBase",
         "value": 0.053
       },
       {
         "anchor": "Point18",
         "type": "stat",
-        "name": "虛數屬性傷害提高",
+        "name": "虚数属性伤害提高",
         "statType": "ImaginaryAddedRatio",
         "value": 0.064
       }
@@ -8718,24 +8718,24 @@
         "anchor": "Point06",
         "type": "ability",
         "name": "預兆機杼",
-        "description": "使自身造成的傷害提高，提高數值等同於擊破特攻的?，最多使造成的傷害提高?。"
+        "description": "使自身造成的傷害提高，提高數值等同於擊破特攻的100%，最多使造成的傷害提高240%。"
       },
       {
         "anchor": "Point07",
         "type": "ability",
         "name": "摧鋒軸承",
-        "description": "如果敵方目標當前韌性大於等於其自身韌性上限的?，施放終結技時造成的傷害提高?。"
+        "description": "如果敵方目標當前韌性大於等於其自身韌性上限的50%，施放終結技時造成的傷害提高10%。"
       },
       {
         "anchor": "Point08",
         "type": "ability",
         "name": "伺觀中樞",
-        "description": "雪衣會累計溢出的【惡報】層數，最多累計?層。雪衣觸發天賦後，獲得相應溢出層數的【惡報】。"
+        "description": "雪衣會累計溢出的【惡報】層數，最多累計6層。雪衣觸發天賦後，獲得相應溢出層數的【惡報】。"
       },
       {
         "anchor": "Point09",
         "type": "stat",
-        "name": "擊破特攻",
+        "name": "击破特攻",
         "statType": "BreakDamageAddedRatioBase",
         "value": 0.053
       },
@@ -8749,21 +8749,21 @@
       {
         "anchor": "Point11",
         "type": "stat",
-        "name": "擊破特攻",
+        "name": "击破特攻",
         "statType": "BreakDamageAddedRatioBase",
         "value": 0.053
       },
       {
         "anchor": "Point12",
         "type": "stat",
-        "name": "量子屬性傷害提高",
+        "name": "量子属性伤害提高",
         "statType": "QuantumAddedRatio",
         "value": 0.032
       },
       {
         "anchor": "Point13",
         "type": "stat",
-        "name": "擊破特攻",
+        "name": "击破特攻",
         "statType": "BreakDamageAddedRatioBase",
         "value": 0.08
       },
@@ -8777,14 +8777,14 @@
       {
         "anchor": "Point15",
         "type": "stat",
-        "name": "擊破特攻",
+        "name": "击破特攻",
         "statType": "BreakDamageAddedRatioBase",
         "value": 0.08
       },
       {
         "anchor": "Point16",
         "type": "stat",
-        "name": "量子屬性傷害提高",
+        "name": "量子属性伤害提高",
         "statType": "QuantumAddedRatio",
         "value": 0.048
       },
@@ -8798,7 +8798,7 @@
       {
         "anchor": "Point18",
         "type": "stat",
-        "name": "擊破特攻",
+        "name": "击破特攻",
         "statType": "BreakDamageAddedRatioBase",
         "value": 0.107
       }
@@ -8956,24 +8956,24 @@
         "anchor": "Point06",
         "type": "ability",
         "name": "錄事",
-        "description": "觸發【承負】戰技點回復效果的我方單位攻擊力提高?，持續?回合。"
+        "description": "觸發【承負】戰技點回復效果的我方單位攻擊力提高10%，持續1回合。"
       },
       {
         "anchor": "Point07",
         "type": "ability",
         "name": "幽府",
-        "description": "持有【承負】的敵方目標被消滅時，如果【承負】為全隊回覆戰技點的觸發次數小於等於?，則額外回覆?點戰技點。"
+        "description": "持有【承負】的敵方目標被消滅時，如果【承負】為全隊回覆戰技點的觸發次數小於等於1，則額外回覆1點戰技點。"
       },
       {
         "anchor": "Point08",
         "type": "ability",
         "name": "還陽",
-        "description": "當【承負】戰技點恢復效果被觸發時，自身恢復?點能量。"
+        "description": "當【承負】戰技點恢復效果被觸發時，自身恢復2點能量。"
       },
       {
         "anchor": "Point09",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.04
       },
@@ -8987,7 +8987,7 @@
       {
         "anchor": "Point11",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.04
       },
@@ -9001,7 +9001,7 @@
       {
         "anchor": "Point13",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.06
       },
@@ -9015,7 +9015,7 @@
       {
         "anchor": "Point15",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.06
       },
@@ -9036,7 +9036,7 @@
       {
         "anchor": "Point18",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.08
       }
@@ -9194,19 +9194,19 @@
         "anchor": "Point06",
         "type": "ability",
         "name": "不敢自專",
-        "description": "戰鬥開始時，藿藿獲得【禳命】，持續?回合。"
+        "description": "戰鬥開始時，藿藿獲得【禳命】，持續1回合。"
       },
       {
         "anchor": "Point07",
         "type": "ability",
         "name": "貞兇之命",
-        "description": "抵抗控制類負面狀態的概率提高?。"
+        "description": "抵抗控制類負面狀態的概率提高35%。"
       },
       {
         "anchor": "Point08",
         "type": "ability",
         "name": "怯懼應激",
-        "description": "觸發天賦為我方目標提供治療時，藿藿恢復?點能量。"
+        "description": "觸發天賦為我方目標提供治療時，藿藿恢復1點能量。"
       },
       {
         "anchor": "Point09",
@@ -9432,19 +9432,19 @@
         "anchor": "Point06",
         "type": "ability",
         "name": "爟火",
-        "description": "戰鬥開始時，立即恢復?點能量。"
+        "description": "戰鬥開始時，立即恢復15點能量。"
       },
       {
         "anchor": "Point07",
         "type": "ability",
         "name": "舉炊",
-        "description": "椒丘效果命中大於?時，每超過?，則額外提高?攻擊力，最高不超過?。"
+        "description": "椒丘效果命中大於80%時，每超過15%，則額外提高60%攻擊力，最高不超過240%。"
       },
       {
         "anchor": "Point08",
         "type": "ability",
         "name": "炙香",
-        "description": "結界存在時，敵方目標進入戰鬥時，會被施加【燼煨】，層數與結界展開期間【燼煨】層數最高者相同，最低為?層。"
+        "description": "結界存在時，敵方目標進入戰鬥時，會被施加【燼煨】，層數與結界展開期間【燼煨】層數最高者相同，最低為1層。"
       },
       {
         "anchor": "Point09",
@@ -9456,7 +9456,7 @@
       {
         "anchor": "Point10",
         "type": "stat",
-        "name": "火屬性傷害提高",
+        "name": "火属性伤害提高",
         "statType": "FireAddedRatio",
         "value": 0.032
       },
@@ -9484,7 +9484,7 @@
       {
         "anchor": "Point14",
         "type": "stat",
-        "name": "火屬性傷害提高",
+        "name": "火属性伤害提高",
         "statType": "FireAddedRatio",
         "value": 0.048
       },
@@ -9505,7 +9505,7 @@
       {
         "anchor": "Point17",
         "type": "stat",
-        "name": "火屬性傷害提高",
+        "name": "火属性伤害提高",
         "statType": "FireAddedRatio",
         "value": 0.064
       },
@@ -9670,87 +9670,87 @@
         "anchor": "Point06",
         "type": "ability",
         "name": "天通",
-        "description": "戰鬥開始時，獲得?點【飛黃】。\n回合開始時，若上回合未通過天賦發動追加攻擊，計入1次獲得【飛黃】所需的攻擊次數。"
+        "description": "戰鬥開始時，獲得3點【飛黃】。\n回合開始時，若上回合未通過天賦發動追加攻擊，計入1次獲得【飛黃】所需的攻擊次數。"
       },
       {
         "anchor": "Point07",
         "type": "ability",
         "name": "解形",
-        "description": "施放終結技對敵方目標造成傷害時，被視為發動了追加攻擊。追加攻擊的暴擊傷害提高?。"
+        "description": "施放終結技對敵方目標造成傷害時，被視為發動了追加攻擊。追加攻擊的暴擊傷害提高36%。"
       },
       {
         "anchor": "Point08",
         "type": "ability",
         "name": "電舉",
-        "description": "施放戰技時，攻擊力提高?，持續?回合。"
+        "description": "施放戰技時，攻擊力提高48%，持續3回合。"
       },
       {
         "anchor": "Point09",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.04
       },
       {
         "anchor": "Point10",
         "type": "stat",
-        "name": "暴擊率",
+        "name": "暴击率",
         "statType": "CriticalChanceBase",
         "value": 0.027
       },
       {
         "anchor": "Point11",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.04
       },
       {
         "anchor": "Point12",
         "type": "stat",
-        "name": "防禦力",
+        "name": "防御力",
         "statType": "DefenceAddedRatio",
         "value": 0.05
       },
       {
         "anchor": "Point13",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.06
       },
       {
         "anchor": "Point14",
         "type": "stat",
-        "name": "暴擊率",
+        "name": "暴击率",
         "statType": "CriticalChanceBase",
         "value": 0.04
       },
       {
         "anchor": "Point15",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.06
       },
       {
         "anchor": "Point16",
         "type": "stat",
-        "name": "防禦力",
+        "name": "防御力",
         "statType": "DefenceAddedRatio",
         "value": 0.075
       },
       {
         "anchor": "Point17",
         "type": "stat",
-        "name": "暴擊率",
+        "name": "暴击率",
         "statType": "CriticalChanceBase",
         "value": 0.053
       },
       {
         "anchor": "Point18",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.08
       }
@@ -9914,18 +9914,18 @@
         "anchor": "Point07",
         "type": "ability",
         "name": "卻邪",
-        "description": "【格擋】狀態下抵抗受到的控制類負面效果，並使受到的傷害降低?。"
+        "description": "【格擋】狀態下抵抗受到的控制類負面效果，並使受到的傷害降低20%。"
       },
       {
         "anchor": "Point08",
         "type": "ability",
         "name": "真剛",
-        "description": "施放反擊時，雲璃的攻擊力提高?，持續1回合。"
+        "description": "施放反擊時，雲璃的攻擊力提高30%，持續1回合。"
       },
       {
         "anchor": "Point09",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.04
       },
@@ -9939,21 +9939,21 @@
       {
         "anchor": "Point11",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.04
       },
       {
         "anchor": "Point12",
         "type": "stat",
-        "name": "暴擊率",
+        "name": "暴击率",
         "statType": "CriticalChanceBase",
         "value": 0.027
       },
       {
         "anchor": "Point13",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.06
       },
@@ -9967,14 +9967,14 @@
       {
         "anchor": "Point15",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.06
       },
       {
         "anchor": "Point16",
         "type": "stat",
-        "name": "暴擊率",
+        "name": "暴击率",
         "statType": "CriticalChanceBase",
         "value": 0.04
       },
@@ -9988,7 +9988,7 @@
       {
         "anchor": "Point18",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.08
       }
@@ -10146,24 +10146,24 @@
         "anchor": "Point06",
         "type": "ability",
         "name": "朱燎",
-        "description": "使自身攻擊力/治療量提高，提高數值等同於擊破特攻的?/?，最多使攻擊力/治療量提高?/?。"
+        "description": "使自身攻擊力/治療量提高，提高數值等同於擊破特攻的25%/10%，最多使攻擊力/治療量提高50%/20%。"
       },
       {
         "anchor": "Point07",
         "type": "ability",
         "name": "蘭煙",
-        "description": "施放普攻時額外恢復?點能量。"
+        "description": "施放普攻時額外恢復10點能量。"
       },
       {
         "anchor": "Point08",
         "type": "ability",
         "name": "遺爇",
-        "description": "【浮元】在場時，我方任意角色受到傷害或消耗生命值時，若隊伍中有存在當前生命值百分比小於等於?的角色，【浮元】會立即對敵人發動天賦的追加攻擊，此次觸發不消耗【浮元】行動次數，該效果在?回合後可再次觸發。"
+        "description": "【浮元】在場時，我方任意角色受到傷害或消耗生命值時，若隊伍中有存在當前生命值百分比小於等於60%的角色，【浮元】會立即對敵人發動天賦的追加攻擊，此次觸發不消耗【浮元】行動次數，該效果在2回合後可再次觸發。"
       },
       {
         "anchor": "Point09",
         "type": "stat",
-        "name": "擊破特攻",
+        "name": "击破特攻",
         "statType": "BreakDamageAddedRatioBase",
         "value": 0.053
       },
@@ -10177,21 +10177,21 @@
       {
         "anchor": "Point11",
         "type": "stat",
-        "name": "擊破特攻",
+        "name": "击破特攻",
         "statType": "BreakDamageAddedRatioBase",
         "value": 0.053
       },
       {
         "anchor": "Point12",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.04
       },
       {
         "anchor": "Point13",
         "type": "stat",
-        "name": "擊破特攻",
+        "name": "击破特攻",
         "statType": "BreakDamageAddedRatioBase",
         "value": 0.08
       },
@@ -10205,14 +10205,14 @@
       {
         "anchor": "Point15",
         "type": "stat",
-        "name": "擊破特攻",
+        "name": "击破特攻",
         "statType": "BreakDamageAddedRatioBase",
         "value": 0.08
       },
       {
         "anchor": "Point16",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.06
       },
@@ -10226,7 +10226,7 @@
       {
         "anchor": "Point18",
         "type": "stat",
-        "name": "擊破特攻",
+        "name": "击破特攻",
         "statType": "BreakDamageAddedRatioBase",
         "value": 0.107
       }
@@ -10384,38 +10384,38 @@
         "anchor": "Point06",
         "type": "ability",
         "name": "墨毫繡衣",
-        "description": "施放天賦的追加攻擊後，恢復?個戰技點，該效果在?回合後可再次觸發。"
+        "description": "施放天賦的追加攻擊後，恢復1個戰技點，該效果在1回合後可再次觸發。"
       },
       {
         "anchor": "Point07",
         "type": "ability",
         "name": "手奮匕尺",
-        "description": "貊澤解除離場狀態時，行動提前?。每個波次開始時，貊澤行動提前?。"
+        "description": "貊澤解除離場狀態時，行動提前20%。每個波次開始時，貊澤行動提前30%。"
       },
       {
         "anchor": "Point08",
         "type": "ability",
         "name": "不折鏌幹",
-        "description": "施放終結技造成傷害時，被視為發動了追加攻擊。【獵物】受到的追加攻擊傷害提高?。"
+        "description": "施放終結技造成傷害時，被視為發動了追加攻擊。【獵物】受到的追加攻擊傷害提高25%。"
       },
       {
         "anchor": "Point09",
         "type": "stat",
-        "name": "暴擊傷害",
+        "name": "暴击伤害",
         "statType": "CriticalDamageBase",
         "value": 0.053
       },
       {
         "anchor": "Point10",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.04
       },
       {
         "anchor": "Point11",
         "type": "stat",
-        "name": "暴擊傷害",
+        "name": "暴击伤害",
         "statType": "CriticalDamageBase",
         "value": 0.053
       },
@@ -10429,21 +10429,21 @@
       {
         "anchor": "Point13",
         "type": "stat",
-        "name": "暴擊傷害",
+        "name": "暴击伤害",
         "statType": "CriticalDamageBase",
         "value": 0.08
       },
       {
         "anchor": "Point14",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.06
       },
       {
         "anchor": "Point15",
         "type": "stat",
-        "name": "暴擊傷害",
+        "name": "暴击伤害",
         "statType": "CriticalDamageBase",
         "value": 0.08
       },
@@ -10457,14 +10457,14 @@
       {
         "anchor": "Point17",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.08
       },
       {
         "anchor": "Point18",
         "type": "stat",
-        "name": "暴擊傷害",
+        "name": "暴击伤害",
         "statType": "CriticalDamageBase",
         "value": 0.107
       }
@@ -10622,7 +10622,7 @@
         "anchor": "Point06",
         "type": "ability",
         "name": "驚鴻",
-        "description": "戰鬥開始時，三月七的行動提前?。"
+        "description": "戰鬥開始時，三月七的行動提前25%。"
       },
       {
         "anchor": "Point07",
@@ -10634,75 +10634,75 @@
         "anchor": "Point08",
         "type": "ability",
         "name": "斡波",
-        "description": "施放強化普攻後，使【師父】的暴擊傷害提高?，擊破特攻提高?，持續?回合。"
+        "description": "施放強化普攻後，使【師父】的暴擊傷害提高60%，擊破特攻提高36%，持續2回合。"
       },
       {
         "anchor": "Point09",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.04
       },
       {
         "anchor": "Point10",
         "type": "stat",
-        "name": "暴擊傷害",
+        "name": "暴击伤害",
         "statType": "CriticalDamageBase",
         "value": 0.053
       },
       {
         "anchor": "Point11",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.04
       },
       {
         "anchor": "Point12",
         "type": "stat",
-        "name": "防禦力",
+        "name": "防御力",
         "statType": "DefenceAddedRatio",
         "value": 0.05
       },
       {
         "anchor": "Point13",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.06
       },
       {
         "anchor": "Point14",
         "type": "stat",
-        "name": "暴擊傷害",
+        "name": "暴击伤害",
         "statType": "CriticalDamageBase",
         "value": 0.08
       },
       {
         "anchor": "Point15",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.06
       },
       {
         "anchor": "Point16",
         "type": "stat",
-        "name": "防禦力",
+        "name": "防御力",
         "statType": "DefenceAddedRatio",
         "value": 0.075
       },
       {
         "anchor": "Point17",
         "type": "stat",
-        "name": "暴擊傷害",
+        "name": "暴击伤害",
         "statType": "CriticalDamageBase",
         "value": 0.107
       },
       {
         "anchor": "Point18",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.08
       }
@@ -10860,19 +10860,19 @@
         "anchor": "Point06",
         "type": "ability",
         "name": "青丘重光",
-        "description": "我方目標造成弱點擊破後額外使敵方目標行動延後?。"
+        "description": "我方目標造成弱點擊破後額外使敵方目標行動延後15%。"
       },
       {
         "anchor": "Point07",
         "type": "ability",
         "name": "塗山玄設",
-        "description": "使自身擊破特攻提高?，施放首次戰技後立即恢復?點戰技點。"
+        "description": "使自身擊破特攻提高30%，施放首次戰技後立即恢復1點戰技點。"
       },
       {
         "anchor": "Point08",
         "type": "ability",
         "name": "璣星太素",
-        "description": "當有敵方目標的弱點被擊破時，使除自身以外的隊友擊破特攻提高?，若忘歸人的擊破特攻大於等於?，擊破特攻提高的效果額外提高?，持續?回合，該效果最多可疊加?層。"
+        "description": "當有敵方目標的弱點被擊破時，使除自身以外的隊友擊破特攻提高6%，若忘歸人的擊破特攻大於等於220%，擊破特攻提高的效果額外提高12%，持續2回合，該效果最多可疊加2層。"
       },
       {
         "anchor": "Point09",
@@ -10884,7 +10884,7 @@
       {
         "anchor": "Point10",
         "type": "stat",
-        "name": "擊破特攻",
+        "name": "击破特攻",
         "statType": "BreakDamageAddedRatioBase",
         "value": 0.053
       },
@@ -10912,7 +10912,7 @@
       {
         "anchor": "Point14",
         "type": "stat",
-        "name": "擊破特攻",
+        "name": "击破特攻",
         "statType": "BreakDamageAddedRatioBase",
         "value": 0.08
       },
@@ -10933,7 +10933,7 @@
       {
         "anchor": "Point17",
         "type": "stat",
-        "name": "擊破特攻",
+        "name": "击破特攻",
         "statType": "BreakDamageAddedRatioBase",
         "value": 0.107
       },
@@ -11098,7 +11098,7 @@
         "anchor": "Point06",
         "type": "ability",
         "name": "嶄新配方",
-        "description": "使自身提供的治療量提高，提高數值等同於擊破特攻的?，最多使提供的治療量提高?。"
+        "description": "使自身提供的治療量提高，提高數值等同於擊破特攻的50%，最多使提供的治療量提高75%。"
       },
       {
         "anchor": "Point07",
@@ -11122,7 +11122,7 @@
       {
         "anchor": "Point10",
         "type": "stat",
-        "name": "擊破特攻",
+        "name": "击破特攻",
         "statType": "BreakDamageAddedRatioBase",
         "value": 0.053
       },
@@ -11150,7 +11150,7 @@
       {
         "anchor": "Point14",
         "type": "stat",
-        "name": "擊破特攻",
+        "name": "击破特攻",
         "statType": "BreakDamageAddedRatioBase",
         "value": 0.08
       },
@@ -11336,38 +11336,38 @@
         "anchor": "Point06",
         "type": "ability",
         "name": "虔誠",
-        "description": "回合開始時，立即獲得?層【升格】。"
+        "description": "回合開始時，立即獲得1層【升格】。"
       },
       {
         "anchor": "Point07",
         "type": "ability",
         "name": "慷慨",
-        "description": "在敵方目標進入戰鬥時，自身立即恢復?點能量。"
+        "description": "在敵方目標進入戰鬥時，自身立即恢復2點能量。"
       },
       {
         "anchor": "Point08",
         "type": "ability",
         "name": "勇氣",
-        "description": "對當前生命值百分比小於等於?的敵方目標造成的傷害提高?。"
+        "description": "對當前生命值百分比小於等於50%的敵方目標造成的傷害提高15%。"
       },
       {
         "anchor": "Point09",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.04
       },
       {
         "anchor": "Point10",
         "type": "stat",
-        "name": "物理屬性傷害提高",
+        "name": "物理属性伤害提高",
         "statType": "PhysicalAddedRatio",
         "value": 0.032
       },
       {
         "anchor": "Point11",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.04
       },
@@ -11381,21 +11381,21 @@
       {
         "anchor": "Point13",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.06
       },
       {
         "anchor": "Point14",
         "type": "stat",
-        "name": "物理屬性傷害提高",
+        "name": "物理属性伤害提高",
         "statType": "PhysicalAddedRatio",
         "value": 0.048
       },
       {
         "anchor": "Point15",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.06
       },
@@ -11409,14 +11409,14 @@
       {
         "anchor": "Point17",
         "type": "stat",
-        "name": "物理屬性傷害提高",
+        "name": "物理属性伤害提高",
         "statType": "PhysicalAddedRatio",
         "value": 0.064
       },
       {
         "anchor": "Point18",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.08
       }
@@ -11574,38 +11574,38 @@
         "anchor": "Point06",
         "type": "ability",
         "name": "物體呼吸中",
-        "description": "我方全體擊破特攻提高?。"
+        "description": "我方全體擊破特攻提高20%。"
       },
       {
         "anchor": "Point07",
         "type": "ability",
         "name": "日消遐思長",
-        "description": "阮•梅的回合開始時，自身恢復?點能量。"
+        "description": "阮•梅的回合開始時，自身恢復5點能量。"
       },
       {
         "anchor": "Point08",
         "type": "ability",
         "name": "落燭照水燃",
-        "description": "戰鬥中阮•梅的擊破特攻大於?時，每超過?，則戰技使我方全體傷害提高的效果額外提高?，最高不超過?。"
+        "description": "戰鬥中阮•梅的擊破特攻大於120%時，每超過10%，則戰技使我方全體傷害提高的效果額外提高6%，最高不超過36%。"
       },
       {
         "anchor": "Point09",
         "type": "stat",
-        "name": "擊破特攻",
+        "name": "击破特攻",
         "statType": "BreakDamageAddedRatioBase",
         "value": 0.053
       },
       {
         "anchor": "Point10",
         "type": "stat",
-        "name": "防禦力",
+        "name": "防御力",
         "statType": "DefenceAddedRatio",
         "value": 0.05
       },
       {
         "anchor": "Point11",
         "type": "stat",
-        "name": "擊破特攻",
+        "name": "击破特攻",
         "statType": "BreakDamageAddedRatioBase",
         "value": 0.053
       },
@@ -11619,21 +11619,21 @@
       {
         "anchor": "Point13",
         "type": "stat",
-        "name": "擊破特攻",
+        "name": "击破特攻",
         "statType": "BreakDamageAddedRatioBase",
         "value": 0.08
       },
       {
         "anchor": "Point14",
         "type": "stat",
-        "name": "防禦力",
+        "name": "防御力",
         "statType": "DefenceAddedRatio",
         "value": 0.075
       },
       {
         "anchor": "Point15",
         "type": "stat",
-        "name": "擊破特攻",
+        "name": "击破特攻",
         "statType": "BreakDamageAddedRatioBase",
         "value": 0.08
       },
@@ -11647,14 +11647,14 @@
       {
         "anchor": "Point17",
         "type": "stat",
-        "name": "防禦力",
+        "name": "防御力",
         "statType": "DefenceAddedRatio",
         "value": 0.1
       },
       {
         "anchor": "Point18",
         "type": "stat",
-        "name": "擊破特攻",
+        "name": "击破特攻",
         "statType": "BreakDamageAddedRatioBase",
         "value": 0.107
       }
@@ -11812,38 +11812,38 @@
         "anchor": "Point06",
         "type": "ability",
         "name": "槓桿",
-        "description": "若砂金的防禦力高於?點，每超過100點防禦力可使自身暴擊率提高?，最多提高?。"
+        "description": "若砂金的防禦力高於1600點，每超過100點防禦力可使自身暴擊率提高2%，最多提高48%。"
       },
       {
         "anchor": "Point07",
         "type": "ability",
         "name": "熱手",
-        "description": "戰鬥開始時，為我方全體提供護盾【堅垣籌碼】，護盾量等同於戰技提供的護盾量的?，持續?回合。"
+        "description": "戰鬥開始時，為我方全體提供護盾【堅垣籌碼】，護盾量等同於戰技提供的護盾量的100%，持續3回合。"
       },
       {
         "anchor": "Point08",
         "type": "ability",
         "name": "賓果！",
-        "description": "持有【堅垣籌碼】的隊友發動追加攻擊後，為砂金積攢1點【盲注】，該效果最多觸發?次，當砂金回合開始時，重置該效果觸發次數。砂金在發動天賦的追加攻擊後，為我方全體提供能夠抵消等同於砂金?防禦力+?傷害的【堅垣籌碼】，併為護盾值最低的我方目標額外提供能夠抵消等同於砂金?防禦力+?傷害的【堅垣籌碼】，持續3回合。"
+        "description": "持有【堅垣籌碼】的隊友發動追加攻擊後，為砂金積攢1點【盲注】，該效果最多觸發3次，當砂金回合開始時，重置該效果觸發次數。砂金在發動天賦的追加攻擊後，為我方全體提供能夠抵消等同於砂金7%防禦力+96傷害的【堅垣籌碼】，併為護盾值最低的我方目標額外提供能夠抵消等同於砂金7%防禦力+96傷害的【堅垣籌碼】，持續3回合。"
       },
       {
         "anchor": "Point09",
         "type": "stat",
-        "name": "防禦力",
+        "name": "防御力",
         "statType": "DefenceAddedRatio",
         "value": 0.05
       },
       {
         "anchor": "Point10",
         "type": "stat",
-        "name": "虛數屬性傷害提高",
+        "name": "虚数属性伤害提高",
         "statType": "ImaginaryAddedRatio",
         "value": 0.032
       },
       {
         "anchor": "Point11",
         "type": "stat",
-        "name": "防禦力",
+        "name": "防御力",
         "statType": "DefenceAddedRatio",
         "value": 0.05
       },
@@ -11857,21 +11857,21 @@
       {
         "anchor": "Point13",
         "type": "stat",
-        "name": "防禦力",
+        "name": "防御力",
         "statType": "DefenceAddedRatio",
         "value": 0.075
       },
       {
         "anchor": "Point14",
         "type": "stat",
-        "name": "虛數屬性傷害提高",
+        "name": "虚数属性伤害提高",
         "statType": "ImaginaryAddedRatio",
         "value": 0.048
       },
       {
         "anchor": "Point15",
         "type": "stat",
-        "name": "防禦力",
+        "name": "防御力",
         "statType": "DefenceAddedRatio",
         "value": 0.075
       },
@@ -11885,14 +11885,14 @@
       {
         "anchor": "Point17",
         "type": "stat",
-        "name": "虛數屬性傷害提高",
+        "name": "虚数属性伤害提高",
         "statType": "ImaginaryAddedRatio",
         "value": 0.064
       },
       {
         "anchor": "Point18",
         "type": "stat",
-        "name": "防禦力",
+        "name": "防御力",
         "statType": "DefenceAddedRatio",
         "value": 0.1
       }
@@ -12050,87 +12050,87 @@
         "anchor": "Point06",
         "type": "ability",
         "name": "歸納",
-        "description": "施放戰技時，目標每有1個負面效果，真理醫生暴擊率提高?、暴擊傷害提高?，該效果最多疊加?層。"
+        "description": "施放戰技時，目標每有1個負面效果，真理醫生暴擊率提高2.5%、暴擊傷害提高5%，該效果最多疊加6層。"
       },
       {
         "anchor": "Point07",
         "type": "ability",
         "name": "演繹",
-        "description": "施放戰技攻擊敵方目標後，有?的基礎概率使受到攻擊的敵方目標效果抵抗降低?，持續?回合。"
+        "description": "施放戰技攻擊敵方目標後，有100%的基礎概率使受到攻擊的敵方目標效果抵抗降低10%，持續2回合。"
       },
       {
         "anchor": "Point08",
         "type": "ability",
         "name": "推理",
-        "description": "造成傷害時，若目標負面狀態大於等於?個，目標每有1個負面效果，真理醫生對其造成的傷害提高?，最多提高?。"
+        "description": "造成傷害時，若目標負面狀態大於等於3個，目標每有1個負面效果，真理醫生對其造成的傷害提高10%，最多提高50%。"
       },
       {
         "anchor": "Point09",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.04
       },
       {
         "anchor": "Point10",
         "type": "stat",
-        "name": "暴擊率",
+        "name": "暴击率",
         "statType": "CriticalChanceBase",
         "value": 0.027
       },
       {
         "anchor": "Point11",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.04
       },
       {
         "anchor": "Point12",
         "type": "stat",
-        "name": "防禦力",
+        "name": "防御力",
         "statType": "DefenceAddedRatio",
         "value": 0.05
       },
       {
         "anchor": "Point13",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.06
       },
       {
         "anchor": "Point14",
         "type": "stat",
-        "name": "暴擊率",
+        "name": "暴击率",
         "statType": "CriticalChanceBase",
         "value": 0.04
       },
       {
         "anchor": "Point15",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.06
       },
       {
         "anchor": "Point16",
         "type": "stat",
-        "name": "防禦力",
+        "name": "防御力",
         "statType": "DefenceAddedRatio",
         "value": 0.075
       },
       {
         "anchor": "Point17",
         "type": "stat",
-        "name": "暴擊率",
+        "name": "暴击率",
         "statType": "CriticalChanceBase",
         "value": 0.053
       },
       {
         "anchor": "Point18",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.08
       }
@@ -12288,7 +12288,7 @@
         "anchor": "Point06",
         "type": "ability",
         "name": "歲時記",
-        "description": "施放普攻時額外恢復?點能量。"
+        "description": "施放普攻時額外恢復10點能量。"
       },
       {
         "anchor": "Point07",
@@ -12300,7 +12300,7 @@
         "anchor": "Point08",
         "type": "ability",
         "name": "夜想曲",
-        "description": "我方全體的攻擊力提高?。當我方隊伍中存在1名/2名/3名量子屬性的角色時，我方量子屬性的角色的攻擊力額外提高?/?/?。"
+        "description": "我方全體的攻擊力提高15%。當我方隊伍中存在1名/2名/3名量子屬性的角色時，我方量子屬性的角色的攻擊力額外提高5%/15%/30%。"
       },
       {
         "anchor": "Point09",
@@ -12312,7 +12312,7 @@
       {
         "anchor": "Point10",
         "type": "stat",
-        "name": "暴擊傷害",
+        "name": "暴击伤害",
         "statType": "CriticalDamageBase",
         "value": 0.053
       },
@@ -12340,7 +12340,7 @@
       {
         "anchor": "Point14",
         "type": "stat",
-        "name": "暴擊傷害",
+        "name": "暴击伤害",
         "statType": "CriticalDamageBase",
         "value": 0.08
       },
@@ -12361,7 +12361,7 @@
       {
         "anchor": "Point17",
         "type": "stat",
-        "name": "暴擊傷害",
+        "name": "暴击伤害",
         "statType": "CriticalDamageBase",
         "value": 0.107
       },
@@ -12526,38 +12526,38 @@
         "anchor": "Point06",
         "type": "ability",
         "name": "髒中躁動",
-        "description": "施放戰技攻擊陷入風化、裂傷、灼燒、觸電狀態的指定敵方單體後，分別各有?的基礎概率額外使目標陷入1層【奧跡】。"
+        "description": "施放戰技攻擊陷入風化、裂傷、灼燒、觸電狀態的指定敵方單體後，分別各有65%的基礎概率額外使目標陷入1層【奧跡】。"
       },
       {
         "anchor": "Point07",
         "type": "ability",
         "name": "杯底端倪",
-        "description": "在敵方目標進入戰鬥時，有?的基礎概率陷入1層【奧跡】。\n敵方目標在我方單次攻擊內每受到1次持續傷害，有?的基礎概率陷入1層【奧跡】，單次攻擊內最多陷入?層。"
+        "description": "在敵方目標進入戰鬥時，有65%的基礎概率陷入1層【奧跡】。\n敵方目標在我方單次攻擊內每受到1次持續傷害，有65%的基礎概率陷入1層【奧跡】，單次攻擊內最多陷入3層。"
       },
       {
         "anchor": "Point08",
         "type": "ability",
         "name": "燭影朕兆",
-        "description": "使自身造成的傷害提高，提高數值等同於效果命中的?，最多使造成的傷害提高?。"
+        "description": "使自身造成的傷害提高，提高數值等同於效果命中的60%，最多使造成的傷害提高72%。"
       },
       {
         "anchor": "Point09",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.04
       },
       {
         "anchor": "Point10",
         "type": "stat",
-        "name": "風屬性傷害提高",
+        "name": "风属性伤害提高",
         "statType": "WindAddedRatio",
         "value": 0.032
       },
       {
         "anchor": "Point11",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.04
       },
@@ -12571,21 +12571,21 @@
       {
         "anchor": "Point13",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.06
       },
       {
         "anchor": "Point14",
         "type": "stat",
-        "name": "風屬性傷害提高",
+        "name": "风属性伤害提高",
         "statType": "WindAddedRatio",
         "value": 0.048
       },
       {
         "anchor": "Point15",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.06
       },
@@ -12599,14 +12599,14 @@
       {
         "anchor": "Point17",
         "type": "stat",
-        "name": "風屬性傷害提高",
+        "name": "风属性伤害提高",
         "statType": "WindAddedRatio",
         "value": 0.064
       },
       {
         "anchor": "Point18",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.08
       }
@@ -12764,87 +12764,87 @@
         "anchor": "Point06",
         "type": "ability",
         "name": "赤鬼",
-        "description": "戰鬥開始時，立即獲得?點【殘夢】，併為隨機1名敵方附上?層【集真赤】。當【殘夢】達到上限時，每溢出1點【殘夢】獲得1層【四相斷我】，使【四相斷我】最多可以疊加至?層。"
+        "description": "戰鬥開始時，立即獲得5點【殘夢】，併為隨機1名敵方附上5層【集真赤】。當【殘夢】達到上限時，每溢出1點【殘夢】獲得1層【四相斷我】，使【四相斷我】最多可以疊加至3層。"
       },
       {
         "anchor": "Point07",
         "type": "ability",
         "name": "奈落",
-        "description": "我方隊伍中存在1名/2名除黃泉之外的「虛無」命途角色時，使黃泉普攻、戰技、終結技造成的傷害為原傷害的?/?。"
+        "description": "我方隊伍中存在1名/2名除黃泉之外的「虛無」命途角色時，使黃泉普攻、戰技、終結技造成的傷害為原傷害的115%/160%。"
       },
       {
         "anchor": "Point08",
         "type": "ability",
         "name": "雷心",
-        "description": "終結技的【啼澤雨斬】擊中持有【集真赤】的敵方目標時，使黃泉造成的傷害提高?，該效果最多疊加?層，持續?回合，並在發動【黃泉返渡】時額外造成?次傷害，每次傷害對敵方隨機單體造成等同於黃泉?攻擊力的雷屬性傷害，該傷害視為終結技傷害。"
+        "description": "終結技的【啼澤雨斬】擊中持有【集真赤】的敵方目標時，使黃泉造成的傷害提高30%，該效果最多疊加3層，持續3回合，並在發動【黃泉返渡】時額外造成6次傷害，每次傷害對敵方隨機單體造成等同於黃泉25%攻擊力的雷屬性傷害，該傷害視為終結技傷害。"
       },
       {
         "anchor": "Point09",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.04
       },
       {
         "anchor": "Point10",
         "type": "stat",
-        "name": "暴擊傷害",
+        "name": "暴击伤害",
         "statType": "CriticalDamageBase",
         "value": 0.053
       },
       {
         "anchor": "Point11",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.04
       },
       {
         "anchor": "Point12",
         "type": "stat",
-        "name": "雷屬性傷害提高",
+        "name": "雷属性伤害提高",
         "statType": "ThunderAddedRatio",
         "value": 0.032
       },
       {
         "anchor": "Point13",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.06
       },
       {
         "anchor": "Point14",
         "type": "stat",
-        "name": "暴擊傷害",
+        "name": "暴击伤害",
         "statType": "CriticalDamageBase",
         "value": 0.08
       },
       {
         "anchor": "Point15",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.06
       },
       {
         "anchor": "Point16",
         "type": "stat",
-        "name": "雷屬性傷害提高",
+        "name": "雷属性伤害提高",
         "statType": "ThunderAddedRatio",
         "value": 0.048
       },
       {
         "anchor": "Point17",
         "type": "stat",
-        "name": "暴擊傷害",
+        "name": "暴击伤害",
         "statType": "CriticalDamageBase",
         "value": 0.107
       },
       {
         "anchor": "Point18",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.08
       }
@@ -13002,24 +13002,24 @@
         "anchor": "Point06",
         "type": "ability",
         "name": "華彩花腔",
-        "description": "戰鬥開始時，自身行動提前?。"
+        "description": "戰鬥開始時，自身行動提前25%。"
       },
       {
         "anchor": "Point07",
         "type": "ability",
         "name": "即興裝飾",
-        "description": "處於【協奏】狀態時，我方全體發動追加攻擊造成的暴擊傷害提高?。"
+        "description": "處於【協奏】狀態時，我方全體發動追加攻擊造成的暴擊傷害提高25%。"
       },
       {
         "anchor": "Point08",
         "type": "ability",
         "name": "模進樂段",
-        "description": "施放戰技時額外恢復?點能量。"
+        "description": "施放戰技時額外恢復5點能量。"
       },
       {
         "anchor": "Point09",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.04
       },
@@ -13033,7 +13033,7 @@
       {
         "anchor": "Point11",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.04
       },
@@ -13047,7 +13047,7 @@
       {
         "anchor": "Point13",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.06
       },
@@ -13061,7 +13061,7 @@
       {
         "anchor": "Point15",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.06
       },
@@ -13082,7 +13082,7 @@
       {
         "anchor": "Point18",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.08
       }
@@ -13240,24 +13240,24 @@
         "anchor": "Point06",
         "type": "ability",
         "name": "α模組-偏時迸發",
-        "description": "「完全燃燒」狀態下，攻擊沒有火屬性弱點的敵人也能削減韌性，效果等同於原技能削韌值的?。"
+        "description": "「完全燃燒」狀態下，攻擊沒有火屬性弱點的敵人也能削減韌性，效果等同於原技能削韌值的55%。"
       },
       {
         "anchor": "Point07",
         "type": "ability",
         "name": "β模組-自限裝甲",
-        "description": "「完全燃燒」狀態下，當裝甲「薩姆」的擊破特攻大於等於?/?時，攻擊處於弱點擊破狀態下的敵方目標後，會將本次攻擊的削韌值轉化為1次?/?的超擊破傷害。"
+        "description": "「完全燃燒」狀態下，當裝甲「薩姆」的擊破特攻大於等於200%/360%時，攻擊處於弱點擊破狀態下的敵方目標後，會將本次攻擊的削韌值轉化為1次35%/50%的超擊破傷害。"
       },
       {
         "anchor": "Point08",
         "type": "ability",
         "name": "γ模組-過載核心",
-        "description": "若裝甲「薩姆」的攻擊力高於?點，每超過?點攻擊力可使自身擊破特攻提高?。"
+        "description": "若裝甲「薩姆」的攻擊力高於1800點，每超過10點攻擊力可使自身擊破特攻提高0.8%。"
       },
       {
         "anchor": "Point09",
         "type": "stat",
-        "name": "擊破特攻",
+        "name": "击破特攻",
         "statType": "BreakDamageAddedRatioBase",
         "value": 0.053
       },
@@ -13271,7 +13271,7 @@
       {
         "anchor": "Point11",
         "type": "stat",
-        "name": "擊破特攻",
+        "name": "击破特攻",
         "statType": "BreakDamageAddedRatioBase",
         "value": 0.053
       },
@@ -13285,7 +13285,7 @@
       {
         "anchor": "Point13",
         "type": "stat",
-        "name": "擊破特攻",
+        "name": "击破特攻",
         "statType": "BreakDamageAddedRatioBase",
         "value": 0.08
       },
@@ -13299,7 +13299,7 @@
       {
         "anchor": "Point15",
         "type": "stat",
-        "name": "擊破特攻",
+        "name": "击破特攻",
         "statType": "BreakDamageAddedRatioBase",
         "value": 0.08
       },
@@ -13320,7 +13320,7 @@
       {
         "anchor": "Point18",
         "type": "stat",
-        "name": "擊破特攻",
+        "name": "击破特攻",
         "statType": "BreakDamageAddedRatioBase",
         "value": 0.107
       }
@@ -13478,87 +13478,87 @@
         "anchor": "Point06",
         "type": "ability",
         "name": "釋放",
-        "description": "終結技首段攻擊前，使目標陷入凍結狀態的基礎概率提高?。"
+        "description": "終結技首段攻擊前，使目標陷入凍結狀態的基礎概率提高80%。"
       },
       {
         "anchor": "Point07",
         "type": "ability",
         "name": "鎖接",
-        "description": "施放終結技時，效果命中提高?，持續至本次終結技行動結束。"
+        "description": "施放終結技時，效果命中提高60%，持續至本次終結技行動結束。"
       },
       {
         "anchor": "Point08",
         "type": "ability",
         "name": "傳衝",
-        "description": "對陷入凍結狀態的敵方目標造成傷害時，暴擊傷害提升?。"
+        "description": "對陷入凍結狀態的敵方目標造成傷害時，暴擊傷害提升30%。"
       },
       {
         "anchor": "Point09",
         "type": "stat",
-        "name": "冰屬性傷害提高",
+        "name": "冰属性伤害提高",
         "statType": "IceAddedRatio",
         "value": 0.032
       },
       {
         "anchor": "Point10",
         "type": "stat",
-        "name": "防禦力",
+        "name": "防御力",
         "statType": "DefenceAddedRatio",
         "value": 0.05
       },
       {
         "anchor": "Point11",
         "type": "stat",
-        "name": "冰屬性傷害提高",
+        "name": "冰属性伤害提高",
         "statType": "IceAddedRatio",
         "value": 0.032
       },
       {
         "anchor": "Point12",
         "type": "stat",
-        "name": "暴擊率",
+        "name": "暴击率",
         "statType": "CriticalChanceBase",
         "value": 0.027
       },
       {
         "anchor": "Point13",
         "type": "stat",
-        "name": "冰屬性傷害提高",
+        "name": "冰属性伤害提高",
         "statType": "IceAddedRatio",
         "value": 0.048
       },
       {
         "anchor": "Point14",
         "type": "stat",
-        "name": "防禦力",
+        "name": "防御力",
         "statType": "DefenceAddedRatio",
         "value": 0.075
       },
       {
         "anchor": "Point15",
         "type": "stat",
-        "name": "冰屬性傷害提高",
+        "name": "冰属性伤害提高",
         "statType": "IceAddedRatio",
         "value": 0.048
       },
       {
         "anchor": "Point16",
         "type": "stat",
-        "name": "暴擊率",
+        "name": "暴击率",
         "statType": "CriticalChanceBase",
         "value": 0.04
       },
       {
         "anchor": "Point17",
         "type": "stat",
-        "name": "防禦力",
+        "name": "防御力",
         "statType": "DefenceAddedRatio",
         "value": 0.1
       },
       {
         "anchor": "Point18",
         "type": "stat",
-        "name": "冰屬性傷害提高",
+        "name": "冰属性伤害提高",
         "statType": "IceAddedRatio",
         "value": 0.064
       }
@@ -13716,24 +13716,24 @@
         "anchor": "Point06",
         "type": "ability",
         "name": "主日渴慕",
-        "description": "施放終結技時，若為目標恢復的能量不足?點，恢復的能量提高至?點。"
+        "description": "施放終結技時，若為目標恢復的能量不足40點，恢復的能量提高至40點。"
       },
       {
         "anchor": "Point07",
         "type": "ability",
         "name": "崇高拂塵",
-        "description": "戰鬥開始時，星期日恢復?點能量。"
+        "description": "戰鬥開始時，星期日恢復25點能量。"
       },
       {
         "anchor": "Point08",
         "type": "ability",
         "name": "掌中安港",
-        "description": "施放戰技時，解除目標的?個負面效果。"
+        "description": "施放戰技時，解除目標的1個負面效果。"
       },
       {
         "anchor": "Point09",
         "type": "stat",
-        "name": "暴擊傷害",
+        "name": "暴击伤害",
         "statType": "CriticalDamageBase",
         "value": 0.053
       },
@@ -13747,21 +13747,21 @@
       {
         "anchor": "Point11",
         "type": "stat",
-        "name": "暴擊傷害",
+        "name": "暴击伤害",
         "statType": "CriticalDamageBase",
         "value": 0.053
       },
       {
         "anchor": "Point12",
         "type": "stat",
-        "name": "防禦力",
+        "name": "防御力",
         "statType": "DefenceAddedRatio",
         "value": 0.05
       },
       {
         "anchor": "Point13",
         "type": "stat",
-        "name": "暴擊傷害",
+        "name": "暴击伤害",
         "statType": "CriticalDamageBase",
         "value": 0.08
       },
@@ -13775,14 +13775,14 @@
       {
         "anchor": "Point15",
         "type": "stat",
-        "name": "暴擊傷害",
+        "name": "暴击伤害",
         "statType": "CriticalDamageBase",
         "value": 0.08
       },
       {
         "anchor": "Point16",
         "type": "stat",
-        "name": "防禦力",
+        "name": "防御力",
         "statType": "DefenceAddedRatio",
         "value": 0.075
       },
@@ -13796,7 +13796,7 @@
       {
         "anchor": "Point18",
         "type": "stat",
-        "name": "暴擊傷害",
+        "name": "暴击伤害",
         "statType": "CriticalDamageBase",
         "value": 0.107
       }
@@ -13954,38 +13954,38 @@
         "anchor": "Point06",
         "type": "ability",
         "name": "逆回購",
-        "description": "在敵方目標進入戰鬥時，翡翠獲得?層【當品】。處於【收債人】狀態的角色回合開始時，額外獲得?層【當品】。"
+        "description": "在敵方目標進入戰鬥時，翡翠獲得1層【當品】。處於【收債人】狀態的角色回合開始時，額外獲得3層【當品】。"
       },
       {
         "anchor": "Point07",
         "type": "ability",
         "name": "折牙票",
-        "description": "戰鬥開始時，翡翠的行動提前?。"
+        "description": "戰鬥開始時，翡翠的行動提前50%。"
       },
       {
         "anchor": "Point08",
         "type": "ability",
         "name": "絕當品",
-        "description": "天賦中每層【當品】額外使翡翠的攻擊力提高?。"
+        "description": "天賦中每層【當品】額外使翡翠的攻擊力提高0.5%。"
       },
       {
         "anchor": "Point09",
         "type": "stat",
-        "name": "量子屬性傷害提高",
+        "name": "量子属性伤害提高",
         "statType": "QuantumAddedRatio",
         "value": 0.032
       },
       {
         "anchor": "Point10",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.04
       },
       {
         "anchor": "Point11",
         "type": "stat",
-        "name": "量子屬性傷害提高",
+        "name": "量子属性伤害提高",
         "statType": "QuantumAddedRatio",
         "value": 0.032
       },
@@ -13999,21 +13999,21 @@
       {
         "anchor": "Point13",
         "type": "stat",
-        "name": "量子屬性傷害提高",
+        "name": "量子属性伤害提高",
         "statType": "QuantumAddedRatio",
         "value": 0.048
       },
       {
         "anchor": "Point14",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.06
       },
       {
         "anchor": "Point15",
         "type": "stat",
-        "name": "量子屬性傷害提高",
+        "name": "量子属性伤害提高",
         "statType": "QuantumAddedRatio",
         "value": 0.048
       },
@@ -14027,14 +14027,14 @@
       {
         "anchor": "Point17",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.08
       },
       {
         "anchor": "Point18",
         "type": "stat",
-        "name": "量子屬性傷害提高",
+        "name": "量子属性伤害提高",
         "statType": "QuantumAddedRatio",
         "value": 0.064
       }
@@ -14192,38 +14192,38 @@
         "anchor": "Point06",
         "type": "ability",
         "name": "幽靈裝填",
-        "description": "使自身暴擊率/暴擊傷害提高，提高數值等同於擊破特攻的?/?，最多使暴擊率/暴擊傷害提高?/?。"
+        "description": "使自身暴擊率/暴擊傷害提高，提高數值等同於擊破特攻的10%/50%，最多使暴擊率/暴擊傷害提高30%/150%。"
       },
       {
         "anchor": "Point07",
         "type": "ability",
         "name": "蛇之上行",
-        "description": "波提歐處於【絕命對峙】時，受到未處於【絕命對峙】目標的傷害降低?。"
+        "description": "波提歐處於【絕命對峙】時，受到未處於【絕命對峙】目標的傷害降低30%。"
       },
       {
         "anchor": "Point08",
         "type": "ability",
         "name": "抵近射擊",
-        "description": "處於【絕命對峙】並獲得【優勢口袋】時，恢復?點能量。該效果在獲得溢出的【優勢口袋】時也會觸發。"
+        "description": "處於【絕命對峙】並獲得【優勢口袋】時，恢復10點能量。該效果在獲得溢出的【優勢口袋】時也會觸發。"
       },
       {
         "anchor": "Point09",
         "type": "stat",
-        "name": "擊破特攻",
+        "name": "击破特攻",
         "statType": "BreakDamageAddedRatioBase",
         "value": 0.053
       },
       {
         "anchor": "Point10",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.04
       },
       {
         "anchor": "Point11",
         "type": "stat",
-        "name": "擊破特攻",
+        "name": "击破特攻",
         "statType": "BreakDamageAddedRatioBase",
         "value": 0.053
       },
@@ -14237,21 +14237,21 @@
       {
         "anchor": "Point13",
         "type": "stat",
-        "name": "擊破特攻",
+        "name": "击破特攻",
         "statType": "BreakDamageAddedRatioBase",
         "value": 0.08
       },
       {
         "anchor": "Point14",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.06
       },
       {
         "anchor": "Point15",
         "type": "stat",
-        "name": "擊破特攻",
+        "name": "击破特攻",
         "statType": "BreakDamageAddedRatioBase",
         "value": 0.08
       },
@@ -14265,14 +14265,14 @@
       {
         "anchor": "Point17",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.08
       },
       {
         "anchor": "Point18",
         "type": "stat",
-        "name": "擊破特攻",
+        "name": "击破特攻",
         "statType": "BreakDamageAddedRatioBase",
         "value": 0.107
       }
@@ -14430,24 +14430,24 @@
         "anchor": "Point06",
         "type": "ability",
         "name": "忍法帖•魔天",
-        "description": "精英級別及以上的敵方目標的弱點被擊破時，亂破額外獲得?點充能，並恢復?點能量。"
+        "description": "精英級別及以上的敵方目標的弱點被擊破時，亂破額外獲得1點充能，並恢復10點能量。"
       },
       {
         "anchor": "Point07",
         "type": "ability",
         "name": "忍法帖•海鳴",
-        "description": "【結印】狀態期間，亂破施放強化普攻對處於弱點擊破狀態下的敵方目標造成傷害後，會將本次傷害的削韌值轉化為1次?的超擊破傷害。"
+        "description": "【結印】狀態期間，亂破施放強化普攻對處於弱點擊破狀態下的敵方目標造成傷害後，會將本次傷害的削韌值轉化為1次60%的超擊破傷害。"
       },
       {
         "anchor": "Point08",
         "type": "ability",
         "name": "忍法帖•枯葉",
-        "description": "敵方目標的弱點被擊破時，受到的擊破傷害提高?，若亂破當前攻擊力高於?點，每超過100點攻擊力可使該數值額外提高?，最多額外提高?。效果持續?回合。"
+        "description": "敵方目標的弱點被擊破時，受到的擊破傷害提高2%，若亂破當前攻擊力高於2400點，每超過100點攻擊力可使該數值額外提高1%，最多額外提高8%。效果持續2回合。"
       },
       {
         "anchor": "Point09",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.04
       },
@@ -14461,21 +14461,21 @@
       {
         "anchor": "Point11",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.04
       },
       {
         "anchor": "Point12",
         "type": "stat",
-        "name": "擊破特攻",
+        "name": "击破特攻",
         "statType": "BreakDamageAddedRatioBase",
         "value": 0.053
       },
       {
         "anchor": "Point13",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.06
       },
@@ -14489,14 +14489,14 @@
       {
         "anchor": "Point15",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.06
       },
       {
         "anchor": "Point16",
         "type": "stat",
-        "name": "擊破特攻",
+        "name": "击破特攻",
         "statType": "BreakDamageAddedRatioBase",
         "value": 0.08
       },
@@ -14510,7 +14510,7 @@
       {
         "anchor": "Point18",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.08
       }
@@ -14668,24 +14668,24 @@
         "anchor": "Point06",
         "type": "ability",
         "name": "又一場葬禮",
-        "description": "進入戰鬥時，使其他角色的擊破特攻提高，提高數值等同於?大麗花的擊破特攻+?，持續?回合。當大麗花受到隊友提供的治療效果或護盾時，再次觸發該效果，持續?回合，單個回合內不可重複觸發。"
+        "description": "進入戰鬥時，使其他角色的擊破特攻提高，提高數值等同於24%大麗花的擊破特攻+50%，持續1回合。當大麗花受到隊友提供的治療效果或護盾時，再次觸發該效果，持續3回合，單個回合內不可重複觸發。"
       },
       {
         "anchor": "Point07",
         "type": "ability",
         "name": "致哀，故人",
-        "description": "施放天賦的追加攻擊時，為我方恢復1個戰技點，該效果每施放?次天賦的追加攻擊可觸發1次。"
+        "description": "施放天賦的追加攻擊時，為我方恢復1個戰技點，該效果每施放2次天賦的追加攻擊可觸發1次。"
       },
       {
         "anchor": "Point08",
         "type": "ability",
         "name": "棄舊，戀新",
-        "description": "我方目標為敵方目標添加弱點時，速度提高?，持續?回合。若我方火屬性角色施放攻擊期間添加過弱點，則攻擊後對每個添加弱點的目標額外造成?點火屬性固定削韌，並恢復?能量上限的能量，最多通過此效果恢復至能量上限的?。"
+        "description": "我方目標為敵方目標添加弱點時，速度提高30%，持續2回合。若我方火屬性角色施放攻擊期間添加過弱點，則攻擊後對每個添加弱點的目標額外造成20點火屬性固定削韌，並恢復10%能量上限的能量，最多通過此效果恢復至能量上限的50%。"
       },
       {
         "anchor": "Point09",
         "type": "stat",
-        "name": "擊破特攻",
+        "name": "击破特攻",
         "statType": "BreakDamageAddedRatioBase",
         "value": 0.053
       },
@@ -14699,7 +14699,7 @@
       {
         "anchor": "Point11",
         "type": "stat",
-        "name": "擊破特攻",
+        "name": "击破特攻",
         "statType": "BreakDamageAddedRatioBase",
         "value": 0.053
       },
@@ -14713,7 +14713,7 @@
       {
         "anchor": "Point13",
         "type": "stat",
-        "name": "擊破特攻",
+        "name": "击破特攻",
         "statType": "BreakDamageAddedRatioBase",
         "value": 0.08
       },
@@ -14727,7 +14727,7 @@
       {
         "anchor": "Point15",
         "type": "stat",
-        "name": "擊破特攻",
+        "name": "击破特攻",
         "statType": "BreakDamageAddedRatioBase",
         "value": 0.08
       },
@@ -14748,7 +14748,7 @@
       {
         "anchor": "Point18",
         "type": "stat",
-        "name": "擊破特攻",
+        "name": "击破特攻",
         "statType": "BreakDamageAddedRatioBase",
         "value": 0.107
       }
@@ -14906,38 +14906,38 @@
         "anchor": "Point06",
         "type": "ability",
         "name": "冷漠的誠實",
-        "description": "我方目標攻擊時，對被擊中的敵方目標施加1層【解讀】。攻擊後，本次攻擊每擊中1個目標就使大黑塔固定恢復?點能量，最多計算5個目標。施放強化戰技時，若主目標的【解讀】層數達到42，使大黑塔造成的傷害提高?，持續到本次攻擊結束。"
+        "description": "我方目標攻擊時，對被擊中的敵方目標施加1層【解讀】。攻擊後，本次攻擊每擊中1個目標就使大黑塔固定恢復3點能量，最多計算5個目標。施放強化戰技時，若主目標的【解讀】層數達到42，使大黑塔造成的傷害提高50%，持續到本次攻擊結束。"
       },
       {
         "anchor": "Point07",
         "type": "ability",
         "name": "視界外來信",
-        "description": "進入戰鬥時，若隊伍中的「智識」命途角色大於等於2名，使我方全體暴擊傷害提高?，行跡【冷漠的誠實】計算擊中目標數時至少計算?個目標，攻擊後對被擊中的敵方目標中【解讀】層數最高的目標施加?層【解讀】，若攻擊者為「智識」命途角色則額外施加?層【解讀】。"
+        "description": "進入戰鬥時，若隊伍中的「智識」命途角色大於等於2名，使我方全體暴擊傷害提高80%，行跡【冷漠的誠實】計算擊中目標數時至少計算3個目標，攻擊後對被擊中的敵方目標中【解讀】層數最高的目標施加1層【解讀】，若攻擊者為「智識」命途角色則額外施加2層【解讀】。"
       },
       {
         "anchor": "Point08",
         "type": "ability",
         "name": "飢餓的地景",
-        "description": "敵方目標每被施加1層【解讀】，大黑塔獲得1層【謎底】，最多疊加?層。施放終結技時，每持有1層【謎底】，使本次終結技的傷害倍率提高?。"
+        "description": "敵方目標每被施加1層【解讀】，大黑塔獲得1層【謎底】，最多疊加99層。施放終結技時，每持有1層【謎底】，使本次終結技的傷害倍率提高1%。"
       },
       {
         "anchor": "Point09",
         "type": "stat",
-        "name": "冰屬性傷害提高",
+        "name": "冰属性伤害提高",
         "statType": "IceAddedRatio",
         "value": 0.032
       },
       {
         "anchor": "Point10",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.04
       },
       {
         "anchor": "Point11",
         "type": "stat",
-        "name": "冰屬性傷害提高",
+        "name": "冰属性伤害提高",
         "statType": "IceAddedRatio",
         "value": 0.032
       },
@@ -14951,21 +14951,21 @@
       {
         "anchor": "Point13",
         "type": "stat",
-        "name": "冰屬性傷害提高",
+        "name": "冰属性伤害提高",
         "statType": "IceAddedRatio",
         "value": 0.048
       },
       {
         "anchor": "Point14",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.06
       },
       {
         "anchor": "Point15",
         "type": "stat",
-        "name": "冰屬性傷害提高",
+        "name": "冰属性伤害提高",
         "statType": "IceAddedRatio",
         "value": 0.048
       },
@@ -14979,14 +14979,14 @@
       {
         "anchor": "Point17",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.08
       },
       {
         "anchor": "Point18",
         "type": "stat",
-        "name": "冰屬性傷害提高",
+        "name": "冰属性伤害提高",
         "statType": "IceAddedRatio",
         "value": 0.064
       }
@@ -15455,38 +15455,38 @@
         "anchor": "Point06",
         "type": "ability",
         "name": "城牆外的羊羔兒…",
-        "description": "施放天賦的追加攻擊後，緹寶造成的傷害提高?，該效果最多疊加?層，持續?回合。"
+        "description": "施放天賦的追加攻擊後，緹寶造成的傷害提高72%，該效果最多疊加3層，持續3回合。"
       },
       {
         "anchor": "Point07",
         "type": "ability",
         "name": "長翅膀的玻璃球！",
-        "description": "結界持續期間，緹寶的生命上限提高，提高數值等同於我方全體角色生命上限之和的?。"
+        "description": "結界持續期間，緹寶的生命上限提高，提高數值等同於我方全體角色生命上限之和的9%。"
       },
       {
         "anchor": "Point08",
         "type": "ability",
         "name": "岔路旁的小石子？",
-        "description": "戰鬥開始時，緹寶恢復?點能量。我方其他目標攻擊後，每擊中1個目標使緹寶恢復?點能量。"
+        "description": "戰鬥開始時，緹寶恢復30點能量。我方其他目標攻擊後，每擊中1個目標使緹寶恢復1.5點能量。"
       },
       {
         "anchor": "Point09",
         "type": "stat",
-        "name": "暴擊傷害",
+        "name": "暴击伤害",
         "statType": "CriticalDamageBase",
         "value": 0.053
       },
       {
         "anchor": "Point10",
         "type": "stat",
-        "name": "暴擊率",
+        "name": "暴击率",
         "statType": "CriticalChanceBase",
         "value": 0.027
       },
       {
         "anchor": "Point11",
         "type": "stat",
-        "name": "暴擊傷害",
+        "name": "暴击伤害",
         "statType": "CriticalDamageBase",
         "value": 0.053
       },
@@ -15500,21 +15500,21 @@
       {
         "anchor": "Point13",
         "type": "stat",
-        "name": "暴擊傷害",
+        "name": "暴击伤害",
         "statType": "CriticalDamageBase",
         "value": 0.08
       },
       {
         "anchor": "Point14",
         "type": "stat",
-        "name": "暴擊率",
+        "name": "暴击率",
         "statType": "CriticalChanceBase",
         "value": 0.04
       },
       {
         "anchor": "Point15",
         "type": "stat",
-        "name": "暴擊傷害",
+        "name": "暴击伤害",
         "statType": "CriticalDamageBase",
         "value": 0.08
       },
@@ -15528,14 +15528,14 @@
       {
         "anchor": "Point17",
         "type": "stat",
-        "name": "暴擊率",
+        "name": "暴击率",
         "statType": "CriticalChanceBase",
         "value": 0.053
       },
       {
         "anchor": "Point18",
         "type": "stat",
-        "name": "暴擊傷害",
+        "name": "暴击伤害",
         "statType": "CriticalDamageBase",
         "value": 0.107
       }
@@ -15693,7 +15693,7 @@
         "anchor": "Point06",
         "type": "ability",
         "name": "水與泥土",
-        "description": "【血仇】狀態下萬敵受到致命攻擊時不會退出【血仇】狀態。該效果單場戰鬥中可以觸發?次。"
+        "description": "【血仇】狀態下萬敵受到致命攻擊時不會退出【血仇】狀態。該效果單場戰鬥中可以觸發3次。"
       },
       {
         "anchor": "Point07",
@@ -15705,12 +15705,12 @@
         "anchor": "Point08",
         "type": "ability",
         "name": "血祥罩衫",
-        "description": "戰鬥開始時，若萬敵的生命上限高於?點，每超過100點生命值可使自身暴擊率提高?，萬敵受到來自敵方目標傷害造成的充能比例提高?，受到治療時的回覆量提高?，超出部分最多計入?點生命值。"
+        "description": "戰鬥開始時，若萬敵的生命上限高於4000點，每超過100點生命值可使自身暴擊率提高1.2%，萬敵受到來自敵方目標傷害造成的充能比例提高2.5%，受到治療時的回覆量提高0.75%，超出部分最多計入4000點生命值。"
       },
       {
         "anchor": "Point09",
         "type": "stat",
-        "name": "暴擊傷害",
+        "name": "暴击伤害",
         "statType": "CriticalDamageBase",
         "value": 0.053
       },
@@ -15724,7 +15724,7 @@
       {
         "anchor": "Point11",
         "type": "stat",
-        "name": "暴擊傷害",
+        "name": "暴击伤害",
         "statType": "CriticalDamageBase",
         "value": 0.053
       },
@@ -15738,7 +15738,7 @@
       {
         "anchor": "Point13",
         "type": "stat",
-        "name": "暴擊傷害",
+        "name": "暴击伤害",
         "statType": "CriticalDamageBase",
         "value": 0.08
       },
@@ -15752,7 +15752,7 @@
       {
         "anchor": "Point15",
         "type": "stat",
-        "name": "暴擊傷害",
+        "name": "暴击伤害",
         "statType": "CriticalDamageBase",
         "value": 0.08
       },
@@ -15773,7 +15773,7 @@
       {
         "anchor": "Point18",
         "type": "stat",
-        "name": "暴擊傷害",
+        "name": "暴击伤害",
         "statType": "CriticalDamageBase",
         "value": 0.107
       }
@@ -15931,38 +15931,38 @@
         "anchor": "Point06",
         "type": "ability",
         "name": "流浪的能指",
-        "description": "施放普攻時，額外恢復?點能量。\n回合開始時，若場上不存在處於【質性揭露】狀態的敵方目標，立即恢復?點能量。"
+        "description": "施放普攻時，額外恢復10點能量。\n回合開始時，若場上不存在處於【質性揭露】狀態的敵方目標，立即恢復30點能量。"
       },
       {
         "anchor": "Point07",
         "type": "ability",
         "name": "必要的留白",
-        "description": "根據我方隊伍中「智識」命途角色的數量，在本場戰鬥中觸發其中1個效果：\n1名：那刻夏的暴擊傷害提高?。\n至少2名：我方全體造成的傷害提高?。"
+        "description": "根據我方隊伍中「智識」命途角色的數量，在本場戰鬥中觸發其中1個效果：\n1名：那刻夏的暴擊傷害提高140%。\n至少2名：我方全體造成的傷害提高50%。"
       },
       {
         "anchor": "Point08",
         "type": "ability",
         "name": "質性的嬗變",
-        "description": "敵方目標每擁有1個不同屬性的弱點，那刻夏對其造成的傷害無視?的防禦力，最多計入7個。"
+        "description": "敵方目標每擁有1個不同屬性的弱點，那刻夏對其造成的傷害無視4%的防禦力，最多計入7個。"
       },
       {
         "anchor": "Point09",
         "type": "stat",
-        "name": "風屬性傷害提高",
+        "name": "风属性伤害提高",
         "statType": "WindAddedRatio",
         "value": 0.032
       },
       {
         "anchor": "Point10",
         "type": "stat",
-        "name": "暴擊率",
+        "name": "暴击率",
         "statType": "CriticalChanceBase",
         "value": 0.027
       },
       {
         "anchor": "Point11",
         "type": "stat",
-        "name": "風屬性傷害提高",
+        "name": "风属性伤害提高",
         "statType": "WindAddedRatio",
         "value": 0.032
       },
@@ -15976,21 +15976,21 @@
       {
         "anchor": "Point13",
         "type": "stat",
-        "name": "風屬性傷害提高",
+        "name": "风属性伤害提高",
         "statType": "WindAddedRatio",
         "value": 0.048
       },
       {
         "anchor": "Point14",
         "type": "stat",
-        "name": "暴擊率",
+        "name": "暴击率",
         "statType": "CriticalChanceBase",
         "value": 0.04
       },
       {
         "anchor": "Point15",
         "type": "stat",
-        "name": "風屬性傷害提高",
+        "name": "风属性伤害提高",
         "statType": "WindAddedRatio",
         "value": 0.048
       },
@@ -16004,14 +16004,14 @@
       {
         "anchor": "Point17",
         "type": "stat",
-        "name": "暴擊率",
+        "name": "暴击率",
         "statType": "CriticalChanceBase",
         "value": 0.053
       },
       {
         "anchor": "Point18",
         "type": "stat",
-        "name": "風屬性傷害提高",
+        "name": "风属性伤害提高",
         "statType": "WindAddedRatio",
         "value": 0.064
       }
@@ -16169,19 +16169,19 @@
         "anchor": "Point06",
         "type": "ability",
         "name": "神行寶鞋",
-        "description": "賽飛兒的速度大於等於140/170時，暴擊率提高?/?，獲得的記錄值提高?/?。"
+        "description": "賽飛兒的速度大於等於140/170時，暴擊率提高25%/50%，獲得的記錄值提高50%/100%。"
       },
       {
         "anchor": "Point07",
         "type": "ability",
         "name": "三百俠盜",
-        "description": "賽飛兒會記錄我方目標對【老主顧】以外的敵方目標造成的非真實傷害的?，不記錄溢出傷害。"
+        "description": "賽飛兒會記錄我方目標對【老主顧】以外的敵方目標造成的非真實傷害的8%，不記錄溢出傷害。"
       },
       {
         "anchor": "Point08",
         "type": "ability",
         "name": "偷天換日",
-        "description": "天賦的追加攻擊造成的暴擊傷害提高?。賽飛兒在場時，敵方全體目標受到的傷害提高?。"
+        "description": "天賦的追加攻擊造成的暴擊傷害提高100%。賽飛兒在場時，敵方全體目標受到的傷害提高40%。"
       },
       {
         "anchor": "Point09",
@@ -16193,7 +16193,7 @@
       {
         "anchor": "Point10",
         "type": "stat",
-        "name": "量子屬性傷害提高",
+        "name": "量子属性伤害提高",
         "statType": "QuantumAddedRatio",
         "value": 0.032
       },
@@ -16221,7 +16221,7 @@
       {
         "anchor": "Point14",
         "type": "stat",
-        "name": "量子屬性傷害提高",
+        "name": "量子属性伤害提高",
         "statType": "QuantumAddedRatio",
         "value": 0.048
       },
@@ -16242,7 +16242,7 @@
       {
         "anchor": "Point17",
         "type": "stat",
-        "name": "量子屬性傷害提高",
+        "name": "量子属性伤害提高",
         "statType": "QuantumAddedRatio",
         "value": 0.064
       },
@@ -16752,38 +16752,38 @@
         "anchor": "Point06",
         "type": "ability",
         "name": "行向世界終點",
-        "description": "戰鬥開始時，獲得?點【火種】。變身結束時，獲得?點【火種】。"
+        "description": "戰鬥開始時，獲得1點【火種】。變身結束時，獲得3點【火種】。"
       },
       {
         "anchor": "Point07",
         "type": "ability",
         "name": "身承炎炬萬千",
-        "description": "受到隊友提供的治療效果或護盾時，造成的傷害提高?，持續?回合。該效果單個回合內不可重複觸發。\n受到隊友提供的能量恢復的技能效果時，獲得?點【火種】。"
+        "description": "受到隊友提供的治療效果或護盾時，造成的傷害提高45%，持續4回合。該效果單個回合內不可重複觸發。\n受到隊友提供的能量恢復的技能效果時，獲得1點【火種】。"
       },
       {
         "anchor": "Point08",
         "type": "ability",
         "name": "照見英雄本色",
-        "description": "進入戰鬥或變身結束時，攻擊力提高?。該效果最多疊加?層。"
+        "description": "進入戰鬥或變身結束時，攻擊力提高50%。該效果最多疊加2層。"
       },
       {
         "anchor": "Point09",
         "type": "stat",
-        "name": "暴擊傷害",
+        "name": "暴击伤害",
         "statType": "CriticalDamageBase",
         "value": 0.053
       },
       {
         "anchor": "Point10",
         "type": "stat",
-        "name": "暴擊率",
+        "name": "暴击率",
         "statType": "CriticalChanceBase",
         "value": 0.027
       },
       {
         "anchor": "Point11",
         "type": "stat",
-        "name": "暴擊傷害",
+        "name": "暴击伤害",
         "statType": "CriticalDamageBase",
         "value": 0.053
       },
@@ -16797,21 +16797,21 @@
       {
         "anchor": "Point13",
         "type": "stat",
-        "name": "暴擊傷害",
+        "name": "暴击伤害",
         "statType": "CriticalDamageBase",
         "value": 0.08
       },
       {
         "anchor": "Point14",
         "type": "stat",
-        "name": "暴擊率",
+        "name": "暴击率",
         "statType": "CriticalChanceBase",
         "value": 0.04
       },
       {
         "anchor": "Point15",
         "type": "stat",
-        "name": "暴擊傷害",
+        "name": "暴击伤害",
         "statType": "CriticalDamageBase",
         "value": 0.08
       },
@@ -16825,14 +16825,14 @@
       {
         "anchor": "Point17",
         "type": "stat",
-        "name": "暴擊率",
+        "name": "暴击率",
         "statType": "CriticalChanceBase",
         "value": 0.053
       },
       {
         "anchor": "Point18",
         "type": "stat",
-        "name": "暴擊傷害",
+        "name": "暴击伤害",
         "statType": "CriticalDamageBase",
         "value": 0.107
       }
@@ -17301,19 +17301,19 @@
         "anchor": "Point06",
         "type": "ability",
         "name": "征服的劍旗",
-        "description": "戰鬥開始時，海瑟音展開與終結技效果相同的結界，結界持續?回合。每當海瑟音展開結界時，恢復?個戰技點。"
+        "description": "戰鬥開始時，海瑟音展開與終結技效果相同的結界，結界持續3回合。每當海瑟音展開結界時，恢復1個戰技點。"
       },
       {
         "anchor": "Point07",
         "type": "ability",
         "name": "盛會的泡沫",
-        "description": "海瑟音施放終結技時，若敵方目標處於持續傷害狀態，使其當前承受的所有持續傷害立即產生相當於原傷害?的傷害。"
+        "description": "海瑟音施放終結技時，若敵方目標處於持續傷害狀態，使其當前承受的所有持續傷害立即產生相當於原傷害150%的傷害。"
       },
       {
         "anchor": "Point08",
         "type": "ability",
         "name": "珍珠的琴絃",
-        "description": "若海瑟音的效果命中高於?，每超過?可使自身造成的傷害提高?，最多提高?。"
+        "description": "若海瑟音的效果命中高於60%，每超過10%可使自身造成的傷害提高15%，最多提高90%。"
       },
       {
         "anchor": "Point09",
@@ -17325,7 +17325,7 @@
       {
         "anchor": "Point10",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.04
       },
@@ -17353,7 +17353,7 @@
       {
         "anchor": "Point14",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.06
       },
@@ -17374,7 +17374,7 @@
       {
         "anchor": "Point17",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.08
       },
@@ -17539,38 +17539,38 @@
         "anchor": "Point06",
         "type": "ability",
         "name": "來者",
-        "description": "刻律德菈的攻擊力大於?時，每超過?點攻擊力可使自身暴擊傷害提高?，最多提高?。"
+        "description": "刻律德菈的攻擊力大於2000時，每超過100點攻擊力可使自身暴擊傷害提高18%，最多提高360%。"
       },
       {
         "anchor": "Point07",
         "type": "ability",
         "name": "見者",
-        "description": "刻律德菈的暴擊率提高?。當刻律德菈的充能小於上限時，持有【軍功】的角色施放終結技時使刻律德菈獲得?點充能，該效果單場戰鬥中可以觸發1次。"
+        "description": "刻律德菈的暴擊率提高100%。當刻律德菈的充能小於上限時，持有【軍功】的角色施放終結技時使刻律德菈獲得1點充能，該效果單場戰鬥中可以觸發1次。"
       },
       {
         "anchor": "Point08",
         "type": "ability",
         "name": "征服者",
-        "description": "施放戰技時，使自身和持有【軍功】的隊友速度提高?點，持續?回合。持有【軍功】的角色施放普攻或戰技時，為刻律德菈恢復?點能量。"
+        "description": "施放戰技時，使自身和持有【軍功】的隊友速度提高20點，持續3回合。持有【軍功】的角色施放普攻或戰技時，為刻律德菈恢復5點能量。"
       },
       {
         "anchor": "Point09",
         "type": "stat",
-        "name": "風屬性傷害提高",
+        "name": "风属性伤害提高",
         "statType": "WindAddedRatio",
         "value": 0.032
       },
       {
         "anchor": "Point10",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.04
       },
       {
         "anchor": "Point11",
         "type": "stat",
-        "name": "風屬性傷害提高",
+        "name": "风属性伤害提高",
         "statType": "WindAddedRatio",
         "value": 0.032
       },
@@ -17584,21 +17584,21 @@
       {
         "anchor": "Point13",
         "type": "stat",
-        "name": "風屬性傷害提高",
+        "name": "风属性伤害提高",
         "statType": "WindAddedRatio",
         "value": 0.048
       },
       {
         "anchor": "Point14",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.06
       },
       {
         "anchor": "Point15",
         "type": "stat",
-        "name": "風屬性傷害提高",
+        "name": "风属性伤害提高",
         "statType": "WindAddedRatio",
         "value": 0.048
       },
@@ -17612,14 +17612,14 @@
       {
         "anchor": "Point17",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.08
       },
       {
         "anchor": "Point18",
         "type": "stat",
-        "name": "風屬性傷害提高",
+        "name": "风属性伤害提高",
         "statType": "WindAddedRatio",
         "value": 0.064
       }
@@ -18105,38 +18105,38 @@
         "anchor": "Point06",
         "type": "ability",
         "name": "神秀",
-        "description": "施放戰技時，使成為【同袍】的目標攻擊力提高，提高數值等同於丹恆•騰荒?攻擊力。"
+        "description": "施放戰技時，使成為【同袍】的目標攻擊力提高，提高數值等同於丹恆•騰荒15%攻擊力。"
       },
       {
         "anchor": "Point07",
         "type": "ability",
         "name": "葳蕤",
-        "description": "戰鬥開始時，丹恆•騰荒行動提前?。【同袍】施放攻擊時，丹恆•騰荒恢復?點能量，使【龍靈】行動提前?。"
+        "description": "戰鬥開始時，丹恆•騰荒行動提前40%。【同袍】施放攻擊時，丹恆•騰荒恢復6點能量，使【龍靈】行動提前15%。"
       },
       {
         "anchor": "Point08",
         "type": "ability",
         "name": "崢嶸",
-        "description": "【龍靈】行動時，額外為當前護盾值最低的我方目標提供能夠抵消等同於丹恆•騰荒?攻擊力+?傷害的護盾。重複獲得丹恆•騰荒的護盾時，護盾量可以疊加，最高不超過當前戰技提供的護盾量的?。強化【龍靈】行動時，額外對當前生命值最高的敵方單體造成1次等同於【同袍】?攻擊力的相應屬性附加傷害。"
+        "description": "【龍靈】行動時，額外為當前護盾值最低的我方目標提供能夠抵消等同於丹恆•騰荒5%攻擊力+100傷害的護盾。重複獲得丹恆•騰荒的護盾時，護盾量可以疊加，最高不超過當前戰技提供的護盾量的300%。強化【龍靈】行動時，額外對當前生命值最高的敵方單體造成1次等同於【同袍】40%攻擊力的相應屬性附加傷害。"
       },
       {
         "anchor": "Point09",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.04
       },
       {
         "anchor": "Point10",
         "type": "stat",
-        "name": "防禦力",
+        "name": "防御力",
         "statType": "DefenceAddedRatio",
         "value": 0.05
       },
       {
         "anchor": "Point11",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.04
       },
@@ -18150,21 +18150,21 @@
       {
         "anchor": "Point13",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.06
       },
       {
         "anchor": "Point14",
         "type": "stat",
-        "name": "防禦力",
+        "name": "防御力",
         "statType": "DefenceAddedRatio",
         "value": 0.075
       },
       {
         "anchor": "Point15",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.06
       },
@@ -18178,14 +18178,14 @@
       {
         "anchor": "Point17",
         "type": "stat",
-        "name": "防禦力",
+        "name": "防御力",
         "statType": "DefenceAddedRatio",
         "value": 0.1
       },
       {
         "anchor": "Point18",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.08
       }
@@ -19102,87 +19102,87 @@
         "anchor": "Point06",
         "type": "ability",
         "name": "甜蜜！笑點籤售會",
-        "description": "若火花攻擊力高於?點，每超過?點攻擊力可使自身歡愉度提高?，最多提高?。"
+        "description": "若火花攻擊力高於2000點，每超過100點攻擊力可使自身歡愉度提高5%，最多提高80%。"
       },
       {
         "anchor": "Point07",
         "type": "ability",
         "name": "炫目！人設萬花筒",
-        "description": "隊伍中「歡愉」命途角色數量等於1/2/3或以上時，火花施放終結技額外獲得?/?/?個笑點及?/?/?個【爆點】。"
+        "description": "隊伍中「歡愉」命途角色數量等於1/2/3或以上時，火花施放終結技額外獲得2/4/8個笑點及1/1/4個【爆點】。"
       },
       {
         "anchor": "Point08",
         "type": "ability",
         "name": "沸騰！真偽調色盤",
-        "description": "當前每擁有1個笑點，使我方全體暴擊傷害提高?，最多提高?。"
+        "description": "當前每擁有1個笑點，使我方全體暴擊傷害提高8%，最多提高80%。"
       },
       {
         "anchor": "Point09",
         "type": "stat",
-        "name": "歡愉度",
+        "name": "欢愉度",
         "statType": "ElationDamageAddedRatioBase",
         "value": 0.04
       },
       {
         "anchor": "Point10",
         "type": "stat",
-        "name": "暴擊率",
+        "name": "暴击率",
         "statType": "CriticalChanceBase",
         "value": 0.027
       },
       {
         "anchor": "Point11",
         "type": "stat",
-        "name": "歡愉度",
+        "name": "欢愉度",
         "statType": "ElationDamageAddedRatioBase",
         "value": 0.04
       },
       {
         "anchor": "Point12",
         "type": "stat",
-        "name": "暴擊傷害",
+        "name": "暴击伤害",
         "statType": "CriticalDamageBase",
         "value": 0.053
       },
       {
         "anchor": "Point13",
         "type": "stat",
-        "name": "歡愉度",
+        "name": "欢愉度",
         "statType": "ElationDamageAddedRatioBase",
         "value": 0.06
       },
       {
         "anchor": "Point14",
         "type": "stat",
-        "name": "暴擊率",
+        "name": "暴击率",
         "statType": "CriticalChanceBase",
         "value": 0.04
       },
       {
         "anchor": "Point15",
         "type": "stat",
-        "name": "歡愉度",
+        "name": "欢愉度",
         "statType": "ElationDamageAddedRatioBase",
         "value": 0.06
       },
       {
         "anchor": "Point16",
         "type": "stat",
-        "name": "暴擊傷害",
+        "name": "暴击伤害",
         "statType": "CriticalDamageBase",
         "value": 0.08
       },
       {
         "anchor": "Point17",
         "type": "stat",
-        "name": "暴擊率",
+        "name": "暴击率",
         "statType": "CriticalChanceBase",
         "value": 0.053
       },
       {
         "anchor": "Point18",
         "type": "stat",
-        "name": "歡愉度",
+        "name": "欢愉度",
         "statType": "ElationDamageAddedRatioBase",
         "value": 0.08
       }
@@ -19340,24 +19340,24 @@
         "anchor": "Point06",
         "type": "ability",
         "name": "開屏有禮",
-        "description": "爻光的速度大於等於?時，使自身歡愉度提高?，之後每超過?點速度使自身歡愉度提高?，最多計入?點超出的速度。"
+        "description": "爻光的速度大於等於120時，使自身歡愉度提高30%，之後每超過1點速度使自身歡愉度提高1%，最多計入200點超出的速度。"
       },
       {
         "anchor": "Point07",
         "type": "ability",
         "name": "神閒意滿",
-        "description": "自身暴擊傷害提高?，施放歡愉技後，為我方恢復?個戰技點。"
+        "description": "自身暴擊傷害提高60%，施放歡愉技後，為我方恢復1個戰技點。"
       },
       {
         "anchor": "Point08",
         "type": "ability",
         "name": "鴻運鱗集",
-        "description": "爻光獲得【好活當賞】時，使其持續時間增加?回合。"
+        "description": "爻光獲得【好活當賞】時，使其持續時間增加1回合。"
       },
       {
         "anchor": "Point09",
         "type": "stat",
-        "name": "暴擊率",
+        "name": "暴击率",
         "statType": "CriticalChanceBase",
         "value": 0.027
       },
@@ -19371,21 +19371,21 @@
       {
         "anchor": "Point11",
         "type": "stat",
-        "name": "暴擊率",
+        "name": "暴击率",
         "statType": "CriticalChanceBase",
         "value": 0.027
       },
       {
         "anchor": "Point12",
         "type": "stat",
-        "name": "歡愉度",
+        "name": "欢愉度",
         "statType": "ElationDamageAddedRatioBase",
         "value": 0.04
       },
       {
         "anchor": "Point13",
         "type": "stat",
-        "name": "暴擊率",
+        "name": "暴击率",
         "statType": "CriticalChanceBase",
         "value": 0.04
       },
@@ -19399,14 +19399,14 @@
       {
         "anchor": "Point15",
         "type": "stat",
-        "name": "暴擊率",
+        "name": "暴击率",
         "statType": "CriticalChanceBase",
         "value": 0.04
       },
       {
         "anchor": "Point16",
         "type": "stat",
-        "name": "歡愉度",
+        "name": "欢愉度",
         "statType": "ElationDamageAddedRatioBase",
         "value": 0.06
       },
@@ -19420,7 +19420,7 @@
       {
         "anchor": "Point18",
         "type": "stat",
-        "name": "暴擊率",
+        "name": "暴击率",
         "statType": "CriticalChanceBase",
         "value": 0.053
       }
@@ -19578,24 +19578,24 @@
         "anchor": "Point06",
         "type": "ability",
         "name": "蓄勢",
-        "description": "戰鬥開始時，立即恢復?點能量。"
+        "description": "戰鬥開始時，立即恢復15點能量。"
       },
       {
         "anchor": "Point07",
         "type": "ability",
         "name": "堅韌",
-        "description": "天賦的效果每層同時使開拓者的防禦力提高?。"
+        "description": "天賦的效果每層同時使開拓者的防禦力提高10%。"
       },
       {
         "anchor": "Point08",
         "type": "ability",
         "name": "鬥志",
-        "description": "施放戰技或終結技【全勝•安息全壘打】時，對指定敵方目標造成的傷害提高?。"
+        "description": "施放戰技或終結技【全勝•安息全壘打】時，對指定敵方目標造成的傷害提高25%。"
       },
       {
         "anchor": "Point09",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.04
       },
@@ -19609,21 +19609,21 @@
       {
         "anchor": "Point11",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.04
       },
       {
         "anchor": "Point12",
         "type": "stat",
-        "name": "防禦力",
+        "name": "防御力",
         "statType": "DefenceAddedRatio",
         "value": 0.05
       },
       {
         "anchor": "Point13",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.06
       },
@@ -19637,14 +19637,14 @@
       {
         "anchor": "Point15",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.06
       },
       {
         "anchor": "Point16",
         "type": "stat",
-        "name": "防禦力",
+        "name": "防御力",
         "statType": "DefenceAddedRatio",
         "value": 0.075
       },
@@ -19658,7 +19658,7 @@
       {
         "anchor": "Point18",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.08
       }
@@ -19816,24 +19816,24 @@
         "anchor": "Point06",
         "type": "ability",
         "name": "蓄勢",
-        "description": "戰鬥開始時，立刻恢復?點能量。"
+        "description": "戰鬥開始時，立刻恢復15點能量。"
       },
       {
         "anchor": "Point07",
         "type": "ability",
         "name": "堅韌",
-        "description": "天賦的效果每層同時使開拓者的防禦力提高?。"
+        "description": "天賦的效果每層同時使開拓者的防禦力提高10%。"
       },
       {
         "anchor": "Point08",
         "type": "ability",
         "name": "鬥志",
-        "description": "施放戰技或終結技【全勝•安息全壘打】時，對指定敵方目標造成的傷害提高?。"
+        "description": "施放戰技或終結技【全勝•安息全壘打】時，對指定敵方目標造成的傷害提高25%。"
       },
       {
         "anchor": "Point09",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.04
       },
@@ -19847,21 +19847,21 @@
       {
         "anchor": "Point11",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.04
       },
       {
         "anchor": "Point12",
         "type": "stat",
-        "name": "防禦力",
+        "name": "防御力",
         "statType": "DefenceAddedRatio",
         "value": 0.05
       },
       {
         "anchor": "Point13",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.06
       },
@@ -19875,14 +19875,14 @@
       {
         "anchor": "Point15",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.06
       },
       {
         "anchor": "Point16",
         "type": "stat",
-        "name": "防禦力",
+        "name": "防御力",
         "statType": "DefenceAddedRatio",
         "value": 0.075
       },
@@ -19896,7 +19896,7 @@
       {
         "anchor": "Point18",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.08
       }
@@ -20054,38 +20054,38 @@
         "anchor": "Point06",
         "type": "ability",
         "name": "強援弱",
-        "description": "施放戰技後，我方全體受到的傷害降低?，持續?回合。"
+        "description": "施放戰技後，我方全體受到的傷害降低15%，持續1回合。"
       },
       {
         "anchor": "Point07",
         "type": "ability",
         "name": "生先死",
-        "description": "開拓者施放強化普攻後，回覆等同於自身生命上限?的生命值。"
+        "description": "開拓者施放強化普攻後，回覆等同於自身生命上限5%的生命值。"
       },
       {
         "anchor": "Point08",
         "type": "ability",
         "name": "行勝思",
-        "description": "回合開始時，若開拓者持有護盾保護，則攻擊力提高?並恢復?點能量，持續到行動結束。"
+        "description": "回合開始時，若開拓者持有護盾保護，則攻擊力提高15%並恢復5點能量，持續到行動結束。"
       },
       {
         "anchor": "Point09",
         "type": "stat",
-        "name": "防禦力",
+        "name": "防御力",
         "statType": "DefenceAddedRatio",
         "value": 0.05
       },
       {
         "anchor": "Point10",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.04
       },
       {
         "anchor": "Point11",
         "type": "stat",
-        "name": "防禦力",
+        "name": "防御力",
         "statType": "DefenceAddedRatio",
         "value": 0.05
       },
@@ -20099,21 +20099,21 @@
       {
         "anchor": "Point13",
         "type": "stat",
-        "name": "防禦力",
+        "name": "防御力",
         "statType": "DefenceAddedRatio",
         "value": 0.075
       },
       {
         "anchor": "Point14",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.06
       },
       {
         "anchor": "Point15",
         "type": "stat",
-        "name": "防禦力",
+        "name": "防御力",
         "statType": "DefenceAddedRatio",
         "value": 0.075
       },
@@ -20127,14 +20127,14 @@
       {
         "anchor": "Point17",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.08
       },
       {
         "anchor": "Point18",
         "type": "stat",
-        "name": "防禦力",
+        "name": "防御力",
         "statType": "DefenceAddedRatio",
         "value": 0.1
       }
@@ -20292,38 +20292,38 @@
         "anchor": "Point06",
         "type": "ability",
         "name": "強援弱",
-        "description": "施放戰技後，我方全體受到的傷害降低?，持續?回合。"
+        "description": "施放戰技後，我方全體受到的傷害降低15%，持續1回合。"
       },
       {
         "anchor": "Point07",
         "type": "ability",
         "name": "生先死",
-        "description": "開拓者施放強化普攻後，回覆等同於自身生命上限?的生命值。"
+        "description": "開拓者施放強化普攻後，回覆等同於自身生命上限5%的生命值。"
       },
       {
         "anchor": "Point08",
         "type": "ability",
         "name": "行勝思",
-        "description": "回合開始時，若開拓者持有護盾保護，則攻擊力提高?並恢復?點能量，持續到行動結束。"
+        "description": "回合開始時，若開拓者持有護盾保護，則攻擊力提高15%並恢復5點能量，持續到行動結束。"
       },
       {
         "anchor": "Point09",
         "type": "stat",
-        "name": "防禦力",
+        "name": "防御力",
         "statType": "DefenceAddedRatio",
         "value": 0.05
       },
       {
         "anchor": "Point10",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.04
       },
       {
         "anchor": "Point11",
         "type": "stat",
-        "name": "防禦力",
+        "name": "防御力",
         "statType": "DefenceAddedRatio",
         "value": 0.05
       },
@@ -20337,21 +20337,21 @@
       {
         "anchor": "Point13",
         "type": "stat",
-        "name": "防禦力",
+        "name": "防御力",
         "statType": "DefenceAddedRatio",
         "value": 0.075
       },
       {
         "anchor": "Point14",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.06
       },
       {
         "anchor": "Point15",
         "type": "stat",
-        "name": "防禦力",
+        "name": "防御力",
         "statType": "DefenceAddedRatio",
         "value": 0.075
       },
@@ -20365,14 +20365,14 @@
       {
         "anchor": "Point17",
         "type": "stat",
-        "name": "攻擊力",
+        "name": "攻击力",
         "statType": "AttackAddedRatio",
         "value": 0.08
       },
       {
         "anchor": "Point18",
         "type": "stat",
-        "name": "防禦力",
+        "name": "防御力",
         "statType": "DefenceAddedRatio",
         "value": 0.1
       }
@@ -20530,38 +20530,38 @@
         "anchor": "Point06",
         "type": "ability",
         "name": "衛我起舞",
-        "description": "當場上敵方目標數量等於5或以上/4/3/2/1名時，【伴舞】效果觸發的超擊破傷害提高?/?/?/?/?。"
+        "description": "當場上敵方目標數量等於5或以上/4/3/2/1名時，【伴舞】效果觸發的超擊破傷害提高20%/30%/40%/50%/60%。"
       },
       {
         "anchor": "Point07",
         "type": "ability",
         "name": "隨波逐流",
-        "description": "施放戰技時，第一次傷害的削韌值額外提高?。"
+        "description": "施放戰技時，第一次傷害的削韌值額外提高100%。"
       },
       {
         "anchor": "Point08",
         "type": "ability",
         "name": "劇院之帽",
-        "description": "我方目標造成弱點擊破後額外使敵方目標行動延後?。"
+        "description": "我方目標造成弱點擊破後額外使敵方目標行動延後30%。"
       },
       {
         "anchor": "Point09",
         "type": "stat",
-        "name": "擊破特攻",
+        "name": "击破特攻",
         "statType": "BreakDamageAddedRatioBase",
         "value": 0.053
       },
       {
         "anchor": "Point10",
         "type": "stat",
-        "name": "虛數屬性傷害提高",
+        "name": "虚数属性伤害提高",
         "statType": "ImaginaryAddedRatio",
         "value": 0.032
       },
       {
         "anchor": "Point11",
         "type": "stat",
-        "name": "擊破特攻",
+        "name": "击破特攻",
         "statType": "BreakDamageAddedRatioBase",
         "value": 0.053
       },
@@ -20575,21 +20575,21 @@
       {
         "anchor": "Point13",
         "type": "stat",
-        "name": "擊破特攻",
+        "name": "击破特攻",
         "statType": "BreakDamageAddedRatioBase",
         "value": 0.08
       },
       {
         "anchor": "Point14",
         "type": "stat",
-        "name": "虛數屬性傷害提高",
+        "name": "虚数属性伤害提高",
         "statType": "ImaginaryAddedRatio",
         "value": 0.048
       },
       {
         "anchor": "Point15",
         "type": "stat",
-        "name": "擊破特攻",
+        "name": "击破特攻",
         "statType": "BreakDamageAddedRatioBase",
         "value": 0.08
       },
@@ -20603,14 +20603,14 @@
       {
         "anchor": "Point17",
         "type": "stat",
-        "name": "虛數屬性傷害提高",
+        "name": "虚数属性伤害提高",
         "statType": "ImaginaryAddedRatio",
         "value": 0.064
       },
       {
         "anchor": "Point18",
         "type": "stat",
-        "name": "擊破特攻",
+        "name": "击破特攻",
         "statType": "BreakDamageAddedRatioBase",
         "value": 0.107
       }
@@ -20768,38 +20768,38 @@
         "anchor": "Point06",
         "type": "ability",
         "name": "衛我起舞",
-        "description": "當場上敵方目標數量等於5或以上/4/3/2/1名時，【伴舞】效果觸發的超擊破傷害提高?/?/?/?/?。"
+        "description": "當場上敵方目標數量等於5或以上/4/3/2/1名時，【伴舞】效果觸發的超擊破傷害提高20%/30%/40%/50%/60%。"
       },
       {
         "anchor": "Point07",
         "type": "ability",
         "name": "隨波逐流",
-        "description": "施放戰技時，第一次傷害的削韌值額外提高?。"
+        "description": "施放戰技時，第一次傷害的削韌值額外提高100%。"
       },
       {
         "anchor": "Point08",
         "type": "ability",
         "name": "劇院之帽",
-        "description": "我方目標造成弱點擊破後額外使敵方目標行動延後?。"
+        "description": "我方目標造成弱點擊破後額外使敵方目標行動延後30%。"
       },
       {
         "anchor": "Point09",
         "type": "stat",
-        "name": "擊破特攻",
+        "name": "击破特攻",
         "statType": "BreakDamageAddedRatioBase",
         "value": 0.053
       },
       {
         "anchor": "Point10",
         "type": "stat",
-        "name": "虛數屬性傷害提高",
+        "name": "虚数属性伤害提高",
         "statType": "ImaginaryAddedRatio",
         "value": 0.032
       },
       {
         "anchor": "Point11",
         "type": "stat",
-        "name": "擊破特攻",
+        "name": "击破特攻",
         "statType": "BreakDamageAddedRatioBase",
         "value": 0.053
       },
@@ -20813,21 +20813,21 @@
       {
         "anchor": "Point13",
         "type": "stat",
-        "name": "擊破特攻",
+        "name": "击破特攻",
         "statType": "BreakDamageAddedRatioBase",
         "value": 0.08
       },
       {
         "anchor": "Point14",
         "type": "stat",
-        "name": "虛數屬性傷害提高",
+        "name": "虚数属性伤害提高",
         "statType": "ImaginaryAddedRatio",
         "value": 0.048
       },
       {
         "anchor": "Point15",
         "type": "stat",
-        "name": "擊破特攻",
+        "name": "击破特攻",
         "statType": "BreakDamageAddedRatioBase",
         "value": 0.08
       },
@@ -20841,14 +20841,14 @@
       {
         "anchor": "Point17",
         "type": "stat",
-        "name": "虛數屬性傷害提高",
+        "name": "虚数属性伤害提高",
         "statType": "ImaginaryAddedRatio",
         "value": 0.064
       },
       {
         "anchor": "Point18",
         "type": "stat",
-        "name": "擊破特攻",
+        "name": "击破特攻",
         "statType": "BreakDamageAddedRatioBase",
         "value": 0.107
       }
