@@ -2,7 +2,6 @@ import type { Metadata } from 'next';
 import './globals.css';
 import Link from 'next/link';
 import NavMenu from '@/components/NavMenu';
-import { LangProvider } from '@/lib/lang';
 
 export const metadata: Metadata = {
   title: 'CT杯 數據庫',
@@ -25,7 +24,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body>
-        <LangProvider>
+        <>
           {/* 頂部導覽列 */}
           <nav className="sticky top-0 z-50 border-b border-white/10 backdrop-blur-md bg-[#0d0d1a]/80">
             <div className="max-w-7xl mx-auto px-4 h-12 sm:h-14 flex items-center">
@@ -47,7 +46,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <main className="max-w-7xl mx-auto px-4 py-6">
             {children}
           </main>
-        </LangProvider>
+        </>
       </body>
     </html>
   );

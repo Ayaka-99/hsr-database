@@ -3,15 +3,14 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import { getAllRelicSets } from '@/lib/api';
-import { useLang } from '@/lib/lang';
 import type { RelicSet } from '@/lib/types';
 
 type Tab = 'relic' | 'ornament';
 
 // 遺器組合卡片元件
-function RelicCard({ set, lang }: { set: RelicSet; lang: 'zh' | 'en' }) {
+function RelicCard({ set }: { set: RelicSet }) {
   const [imgError, setImgError] = useState(false);
-  const displayName = lang === 'en' && set.nameEn ? set.nameEn : set.name;
+  const displayName = set.name;
 
   return (
     <div className="rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm p-4 hover:border-[#c9a227]/40 transition-colors">
@@ -60,7 +59,6 @@ function RelicCard({ set, lang }: { set: RelicSet; lang: 'zh' | 'en' }) {
 }
 
 export default function RelicsPage() {
-  const { lang } = useLang();
   const [tab, setTab] = useState<Tab>('relic');
   const [search, setSearch] = useState('');
   const allSets = getAllRelicSets();
@@ -70,7 +68,7 @@ export default function RelicsPage() {
     if (s.type !== tab) return false;
     if (search.trim() !== '') {
       const q = search.trim().toLowerCase();
-      const name = (lang === 'en' && s.nameEn ? s.nameEn : s.name).toLowerCase();
+      const name = s.name.toLowerCase();
       const effect2 = s.effects[2].toLowerCase();
       const effect4 = (s.effects[4] ?? '').toLowerCase();
       if (!name.includes(q) && !effect2.includes(q) && !effect4.includes(q)) return false;
@@ -122,7 +120,7 @@ export default function RelicsPage() {
       {/* 套裝列表 */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {filtered.map(set => (
-          <RelicCard key={set.id} set={set} lang={lang} />
+          <RelicCard key={set.id} set={set} />
         ))}
       </div>
 
