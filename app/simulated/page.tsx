@@ -107,12 +107,19 @@ function TimelineNode({ floor, index, total }: { floor: EndgameFloor; index: num
 
           {/* 機制標籤 */}
           {floor.tags1 && floor.tags1.length > 0 && (
-            <div className="flex flex-wrap gap-1.5">
-              {floor.tags1.map((tag, i) => (
-                <span key={i} className="text-[10px] px-2 py-0.5 rounded-full border border-white/10 bg-white/5 text-gray-400" title={tag.desc}>
-                  {tag.name}
-                </span>
-              ))}
+            <div className="space-y-1.5">
+              <div className="flex flex-wrap gap-1.5">
+                {floor.tags1.map((tag, i) => (
+                  <span key={i} className="text-[10px] px-2 py-0.5 rounded-full border border-white/10 bg-white/5 text-gray-400" title={tag.desc}>
+                    {tag.name}
+                  </span>
+                ))}
+              </div>
+              {floor.tags1.some(t => t.name.startsWith('桎梏')) && (
+                <p className="text-[10px] text-red-400/80 leading-relaxed pl-0.5">
+                  ⚠ {floor.tags1.find(t => t.name.startsWith('桎梏'))!.desc}
+                </p>
+              )}
             </div>
           )}
         </div>
@@ -173,7 +180,7 @@ export default function SimulatedPage() {
       {/* 頁面標題 */}
       <div>
         <h1 className="text-2xl font-bold text-white tracking-tight">異相仲裁</h1>
-        <p className="text-sm text-gray-500 mt-1">差分宇宙特殊挑戰</p>
+        <p className="text-sm text-gray-500 mt-1">0課別想滿星騎士啦 溝槽策劃</p>
       </div>
 
       {/* 賽季橫向捲動選擇器 */}
