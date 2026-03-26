@@ -50,6 +50,46 @@ function MonsterIcon({ monster }: { monster: EndgameMonster }) {
   );
 }
 
+// ── 機制標籤（點擊桎梏展開說明） ─────────────────────
+function TagList({ tags }: { tags: { name: string; desc: string }[] }) {
+  const [expanded, setExpanded] = useState<string | null>(null);
+
+  return (
+    <div className="space-y-1.5">
+      <div className="flex flex-wrap gap-1.5">
+        {tags.map((tag, i) => {
+          const isDebuff = tag.name.startsWith('桎梏');
+          const isOpen = expanded === `${i}`;
+          return (
+            <button
+              key={i}
+              onClick={() => isDebuff && setExpanded(isOpen ? null : `${i}`)}
+              className={`text-[10px] px-2 py-0.5 rounded-full border transition-colors ${
+                isDebuff
+                  ? isOpen
+                    ? 'border-red-500/40 bg-red-500/10 text-red-400 cursor-pointer'
+                    : 'border-red-500/20 bg-white/5 text-gray-400 hover:border-red-500/40 hover:text-red-400 cursor-pointer'
+                  : 'border-white/10 bg-white/5 text-gray-400 cursor-default'
+              }`}
+              title={tag.desc}
+            >
+              {tag.name}
+            </button>
+          );
+        })}
+      </div>
+      {expanded !== null && (() => {
+        const tag = tags[parseInt(expanded)];
+        return tag ? (
+          <p className="text-[10px] text-red-400/80 leading-relaxed pl-0.5">
+            ⚠ {tag.desc}
+          </p>
+        ) : null;
+      })()}
+    </div>
+  );
+}
+
 // ── 時間線節點 ───────────────────────────────────────
 function TimelineNode({ floor, index, total }: { floor: EndgameFloor; index: number; total: number }) {
   const isBoss = index === total - 1;
@@ -107,20 +147,7 @@ function TimelineNode({ floor, index, total }: { floor: EndgameFloor; index: num
 
           {/* 機制標籤 */}
           {floor.tags1 && floor.tags1.length > 0 && (
-            <div className="space-y-1.5">
-              <div className="flex flex-wrap gap-1.5">
-                {floor.tags1.map((tag, i) => (
-                  <span key={i} className="text-[10px] px-2 py-0.5 rounded-full border border-white/10 bg-white/5 text-gray-400" title={tag.desc}>
-                    {tag.name}
-                  </span>
-                ))}
-              </div>
-              {floor.tags1.some(t => t.name.startsWith('桎梏')) && (
-                <p className="text-[10px] text-red-400/80 leading-relaxed pl-0.5">
-                  ⚠ {floor.tags1.find(t => t.name.startsWith('桎梏'))!.desc}
-                </p>
-              )}
-            </div>
+            <TagList tags={floor.tags1} />
           )}
         </div>
       </div>
