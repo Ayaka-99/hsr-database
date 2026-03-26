@@ -99,7 +99,9 @@ function TagList({ tags }: { tags: { name: string; desc: string }[] }) {
 
 // ── 時間線節點 ───────────────────────────────────────
 function TimelineNode({ floor, index, total }: { floor: EndgameFloor; index: number; total: number }) {
-  const isBoss = index === total - 1;
+  const isEndless = index === total - 1;   // 絕境（最後一層）
+  const isBoss = index === total - 2;      // 王棋（倒數第二層）
+  const isSpecial = isBoss || isEndless;
 
   return (
     <div className="flex gap-4">
@@ -107,34 +109,48 @@ function TimelineNode({ floor, index, total }: { floor: EndgameFloor; index: num
       <div className="flex flex-col items-center shrink-0">
         {/* 節點圓圈 */}
         <div className={`w-8 h-8 rounded-full border-2 flex items-center justify-center text-xs font-bold shrink-0 ${
-          isBoss
-            ? 'border-[#c9a227] bg-[#c9a227]/15 text-[#c9a227]'
-            : 'border-[#6b4ff5]/50 bg-[#6b4ff5]/10 text-[#6b4ff5]'
+          isEndless
+            ? 'border-red-500 bg-red-500/15 text-red-400'
+            : isBoss
+              ? 'border-[#c9a227] bg-[#c9a227]/15 text-[#c9a227]'
+              : 'border-[#6b4ff5]/50 bg-[#6b4ff5]/10 text-[#6b4ff5]'
         }`}>
-          {isBoss ? '♛' : index + 1}
+          {isEndless ? '∞' : isBoss ? '♛' : index + 1}
         </div>
         {/* 連接線 */}
         {index < total - 1 && (
-          <div className="w-px flex-1 min-h-[24px] bg-gradient-to-b from-[#6b4ff5]/30 to-transparent" />
+          <div className={`w-px flex-1 min-h-[24px] bg-gradient-to-b to-transparent ${
+            isBoss ? 'from-[#c9a227]/30' : 'from-[#6b4ff5]/30'
+          }`} />
         )}
       </div>
 
       {/* 右側內容卡片 */}
       <div className={`flex-1 min-w-0 mb-4 rounded-xl border overflow-hidden ${
-        isBoss
-          ? 'border-[#c9a227]/30 bg-gradient-to-br from-[#1a1200]/30 to-transparent'
-          : 'border-white/8 bg-white/[0.015]'
+        isEndless
+          ? 'border-red-500/30 bg-gradient-to-br from-red-950/30 to-transparent'
+          : isBoss
+            ? 'border-[#c9a227]/30 bg-gradient-to-br from-[#1a1200]/30 to-transparent'
+            : 'border-white/8 bg-white/[0.015]'
       }`}>
         {/* 關卡名稱列 */}
         <div className={`px-4 py-2.5 border-b flex items-center gap-2 ${
-          isBoss ? 'border-[#c9a227]/20 bg-[#c9a227]/5' : 'border-white/5 bg-white/[0.02]'
+          isEndless
+            ? 'border-red-500/20 bg-red-500/5'
+            : isBoss ? 'border-[#c9a227]/20 bg-[#c9a227]/5' : 'border-white/5 bg-white/[0.02]'
         }`}>
-          <span className={`text-xs font-bold ${isBoss ? 'text-[#c9a227]' : 'text-white'}`}>
+          <span className={`text-xs font-bold ${
+            isEndless ? 'text-red-400' : isBoss ? 'text-[#c9a227]' : 'text-white'
+          }`}>
             {floor.name}
           </span>
-          {isBoss && (
-            <span className="text-[9px] px-1.5 py-0.5 rounded bg-[#c9a227]/15 text-[#c9a227] border border-[#c9a227]/30">
-              王棋
+          {isSpecial && (
+            <span className={`text-[9px] px-1.5 py-0.5 rounded border ${
+              isEndless
+                ? 'bg-red-500/15 text-red-400 border-red-500/30'
+                : 'bg-[#c9a227]/15 text-[#c9a227] border-[#c9a227]/30'
+            }`}>
+              {isEndless ? '絕境' : '王棋'}
             </span>
           )}
         </div>

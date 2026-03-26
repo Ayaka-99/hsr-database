@@ -280,6 +280,24 @@ async function fetchPeak(baseUrl: string, monsters: MonsterMap) {
           monsters2: [] as any[],
           tags1: (bl.tag_list ?? []).map((t: any) => ({ name: toTW(t.name ?? ''), desc: cleanDesc(t.desc, t.param ?? []) })),
         });
+
+        // 加入絕境關卡（infinite_list）
+        if (bl.infinite_list && typeof bl.infinite_list === 'object') {
+          const infiniteMonsterIds = new Set<string>();
+          for (const wave of Object.values(bl.infinite_list) as any[]) {
+            for (const mid of wave.monster_group_id_list ?? []) {
+              infiniteMonsterIds.add(String(mid));
+            }
+          }
+          floors.push({
+            name: toTW((bl.name ?? '王棋') + '·絕境'),
+            weakness1: mapWeakness(Array.isArray(bl.damage_type) ? bl.damage_type : []),
+            weakness2: [] as string[],
+            monsters1: Array.from(infiniteMonsterIds).map(mid => resolveMonster(mid, monsters)),
+            monsters2: [] as any[],
+            tags1: (bl.tag_list ?? []).map((t: any) => ({ name: toTW(t.name ?? ''), desc: cleanDesc(t.desc, t.param ?? []) })),
+          });
+        }
       }
 
       const buffs = (data.boss_config?.buff_list ?? []).map((b: any) => ({

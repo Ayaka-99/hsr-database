@@ -17976,6 +17976,48 @@
               "desc": "我方目標初始獲得2層該效果，每層使自身造成的傷害降低10%，該效果不可解除，每次施放終結技後移除1層該效果。"
             }
           ]
+        },
+        {
+          "name": "將殺王棋·絕境",
+          "weakness1": [
+            "物理",
+            "火",
+            "虛數"
+          ],
+          "weakness2": [],
+          "monsters1": [
+            {
+              "id": "5012100",
+              "name": "魔法少女急襲劇團",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_5012100.webp"
+            },
+            {
+              "id": "3003020",
+              "name": "驚夢劇團的甜猿泰山",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_3003020.webp"
+            },
+            {
+              "id": "5023010",
+              "name": "樂變化天人",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_5023010.webp"
+            },
+            {
+              "id": "5024010",
+              "name": "極樂顛倒•邪願蓮華主",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_5024010.webp"
+            }
+          ],
+          "monsters2": [],
+          "tags1": [
+            {
+              "name": "均衡",
+              "desc": "戰鬥開始時，速度最高的1名我方角色速度降低20%，速度最低的1名我方角色速度提高15%。"
+            },
+            {
+              "name": "桎梏",
+              "desc": "我方目標初始獲得2層該效果，每層使自身造成的傷害降低10%，該效果不可解除，每次施放終結技後移除1層該效果。"
+            }
+          ]
         }
       ]
     },
@@ -18106,6 +18148,46 @@
         },
         {
           "name": "將殺王棋",
+          "weakness1": [
+            "火",
+            "雷"
+          ],
+          "weakness2": [],
+          "monsters1": [
+            {
+              "id": "5012090",
+              "name": "SD民用機鎧",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_5012090.webp"
+            },
+            {
+              "id": "4053010",
+              "name": "波濤夫人",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_4053010.webp"
+            },
+            {
+              "id": "5014020",
+              "name": "合金機鎧•帕姆王",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_5014020.webp"
+            }
+          ],
+          "monsters2": [],
+          "tags1": [
+            {
+              "name": "龜裂",
+              "desc": "我方目標受到敵方攻擊時會被施加【龜裂】效果，每層使持有者在受到攻擊後額外損失最大生命值0.8%的生命值，該效果疊加層數無上限且不可驅散。持有【龜裂】的目標獲得除自身外的友方目標施加的護盾效果或治療後，雙方均解除全部【龜裂】效果。"
+            },
+            {
+              "name": "滋擾",
+              "desc": "敵方目標施放攻擊後，對攻擊目標隨機造成5%或者10%的行動延後。"
+            },
+            {
+              "name": "桎梏",
+              "desc": "我方目標初始獲得2層該效果，每層使自身造成的傷害降低10%，該效果不可解除，每次施放終結技後移除1層該效果。"
+            }
+          ]
+        },
+        {
+          "name": "將殺王棋·絕境",
           "weakness1": [
             "火",
             "雷"
@@ -18306,6 +18388,46 @@
               "desc": "我方目標初始獲得2層該效果，每層使自身造成的傷害降低20%，該效果不可解除，每次施放終結技後移除1層該效果。"
             }
           ]
+        },
+        {
+          "name": "將殺王棋·絕境",
+          "weakness1": [
+            "火"
+          ],
+          "weakness2": [],
+          "monsters1": [
+            {
+              "id": "5012030",
+              "name": "攻擊性閱讀物",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_5012030.webp"
+            },
+            {
+              "id": "5013010",
+              "name": "搖滾狂徒",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_5013010.webp"
+            },
+            {
+              "id": "2023020",
+              "name": "豐饒靈獸•長右",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_2023020.webp"
+            },
+            {
+              "id": "5014010",
+              "name": "火花大會@Official",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_5014010.webp"
+            }
+          ],
+          "monsters2": [],
+          "tags1": [
+            {
+              "name": "滋擾",
+              "desc": "敵方目標施放攻擊後，對攻擊目標隨機造成5%或者10%的行動延後。"
+            },
+            {
+              "name": "桎梏+",
+              "desc": "我方目標初始獲得2層該效果，每層使自身造成的傷害降低20%，該效果不可解除，每次施放終結技後移除1層該效果。"
+            }
+          ]
         }
       ]
     },
@@ -18427,6 +18549,35 @@
         },
         {
           "name": "將殺王棋",
+          "weakness1": [
+            "火"
+          ],
+          "weakness2": [],
+          "monsters1": [
+            {
+              "id": "3025016",
+              "name": "「齊響詩班」神主日",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_3025010.webp"
+            }
+          ],
+          "monsters2": [],
+          "tags1": [
+            {
+              "name": "韌甲+",
+              "desc": "敵方目標初始擁有3層【韌甲+】，每層使敵方目標受到的傷害降低15%；敵方目標每次韌性被削減為0時降低1層【韌甲+】。該效果的層數在敵方目標的每個階段重置。"
+            },
+            {
+              "name": "失能",
+              "desc": "進入戰鬥時，固定降低我方目標50%的能量，並使我方目標在自身回合外的能量恢復效率降低50%，持續2回合。"
+            },
+            {
+              "name": "百鍊",
+              "desc": "敵方目標每次受到攻擊後，使自身受到的傷害降低2%，受到的暴擊傷害降低4%，最多疊加10層，該效果在敵方目標回合開始或進入弱點擊破狀態時清空層數；若敵方目標處於弱點擊破狀態時，該效果不會疊加層數。"
+            }
+          ]
+        },
+        {
+          "name": "將殺王棋·絕境",
           "weakness1": [
             "火"
           ],
@@ -18603,6 +18754,33 @@
               "desc": "我方目標受到敵方攻擊時會被施加【龜裂】效果，每層使持有者在受到攻擊後額外損失最大生命值0.8%的生命值，該效果疊加層數無上限且不可驅散。持有【龜裂】的目標獲得除自身外的友方目標施加的護盾效果或治療後，雙方均解除全部【龜裂】效果。"
             }
           ]
+        },
+        {
+          "name": "將殺王棋·絕境",
+          "weakness1": [
+            "物理",
+            "冰",
+            "量子"
+          ],
+          "weakness2": [],
+          "monsters1": [
+            {
+              "id": "401501101",
+              "name": "至高，至陽，天空的化身",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_4015010.webp"
+            }
+          ],
+          "monsters2": [],
+          "tags1": [
+            {
+              "name": "吸能+",
+              "desc": "敵方目標每次受到攻擊後都會使攻擊者能量降低3點，但攻擊者能量達到上限時不會降低；敵方目標被消滅時固定恢復攻擊者10點能量。"
+            },
+            {
+              "name": "龜裂",
+              "desc": "我方目標受到敵方攻擊時會被施加【龜裂】效果，每層使持有者在受到攻擊後額外損失最大生命值0.8%的生命值，該效果疊加層數無上限且不可驅散。持有【龜裂】的目標獲得除自身外的友方目標施加的護盾效果或治療後，雙方均解除全部【龜裂】效果。"
+            }
+          ]
         }
       ]
     },
@@ -18730,6 +18908,47 @@
         },
         {
           "name": "將殺王棋",
+          "weakness1": [
+            "物理",
+            "冰",
+            "量子"
+          ],
+          "weakness2": [],
+          "monsters1": [
+            {
+              "id": "4023010",
+              "name": "正陽獅鷲",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_4023010.webp"
+            },
+            {
+              "id": "4023020",
+              "name": "月夜天馬",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_4023020.webp"
+            },
+            {
+              "id": "4044010",
+              "name": "第一位天才，隱德來希，贊達爾",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_4044010.webp"
+            }
+          ],
+          "monsters2": [],
+          "tags1": [
+            {
+              "name": "反相",
+              "desc": "敵方目標每次受到攻擊後，攻擊者都會損失自身最大生命值2%的生命值，該效果不致命。"
+            },
+            {
+              "name": "吸能",
+              "desc": "敵方目標每次受到攻擊後都會使攻擊者能量降低2點，但攻擊者能量達到上限時不會降低；敵方目標被消滅時固定恢復攻擊者10點能量。"
+            },
+            {
+              "name": "龜裂",
+              "desc": "我方目標受到敵方攻擊時會被施加【龜裂】效果，每層使持有者在受到攻擊後額外損失最大生命值0.8%的生命值，該效果疊加層數無上限且不可驅散。持有【龜裂】的目標獲得除自身外的友方目標施加的護盾效果或治療後，雙方均解除全部【龜裂】效果。"
+            }
+          ]
+        },
+        {
+          "name": "將殺王棋·絕境",
           "weakness1": [
             "物理",
             "冰",
