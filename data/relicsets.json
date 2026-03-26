@@ -568,5 +568,25 @@
     "effects": {
       "2": "使装备者的暴击伤害提高16%，若在同一回合内消耗大于等于3点战技点，额外使装备者暴击伤害提高32%，持续3回合。"
     }
+  },
+  {
+    "id": "325",
+    "name": "零号关卡朋克洛德",
+    "nameEn": "Punklorde Stage Zero",
+    "icon": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/relic/325.png",
+    "type": "ornament",
+    "effects": {
+      "2": "使装备者的欢愉度提高8%。战斗中欢愉度首次达到40%/80%时，使装备者暴击伤害提高20%/32%。"
+    }
+  },
+  {
+    "id": "326",
+    "name": "千星荟萃之城",
+    "nameEn": "City of Converging Stars",
+    "icon": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/relic/326.png",
+    "type": "ornament",
+    "effects": {
+      "2": "装备者施放追加攻击时，攻击力提高24%，持续2回合。当敌方目标被消灭时，我方全体在本场战斗中暴击伤害提高12%，该效果无法叠加。"
+    }
   }
 ]
