@@ -42,6 +42,15 @@ const SKILL_LABEL_COLORS: Record<keyof Character['skills'], string> = {
 // 秘技只有 1 級，不顯示滑動條
 const NO_LEVELS = new Set<keyof Character['skills']>(['technique']);
 
+// 各技能類型的最大等級上限
+const MAX_LEVEL_CAP: Record<keyof Character['skills'], number> = {
+  basic: 7,
+  skill: 12,
+  ult: 12,
+  talent: 12,
+  technique: 1,
+};
+
 // 依稀有度與技能類型計算預設等級
 function defaultLevel(key: keyof Character['skills'], rarity: 4 | 5, maxLv: number): number {
   const base = key === 'basic' ? (rarity === 4 ? 7 : 6) : (rarity === 4 ? 12 : 10);
@@ -122,7 +131,7 @@ export default function SkillSection({
           if (!skill.name) return null;
 
           const descs = skill.descriptions ?? [];
-          const maxLv = descs.length;
+          const maxLv = Math.min(descs.length, MAX_LEVEL_CAP[key]);
           const showSlider = !NO_LEVELS.has(key) && maxLv > 1;
           const lv = levels[key] ?? defaultLevel(key, rarity, maxLv);
           const description = showSlider && descs[lv - 1]
@@ -189,7 +198,9 @@ export default function SkillSection({
               const descs = skill.descriptions ?? [];
               const maxLv = descs.length;
               const lv = memoLevels[skill.id] ?? 1;
-              const showSlider = maxLv > 1;
+              // 所有等級描述相同（數值固定）則不顯示滑動條
+              const allSame = descs.length > 1 && descs.every(d => d === descs[0]);
+              const showSlider = maxLv > 1 && !allSame;
 
               return (
                 <div key={skill.id} className="rounded-lg border border-sky-500/30 bg-sky-500/5 p-4">
