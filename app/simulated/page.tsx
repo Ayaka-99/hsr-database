@@ -50,42 +50,49 @@ function MonsterIcon({ monster }: { monster: EndgameMonster }) {
   );
 }
 
-// ── 機制標籤（點擊桎梏展開說明） ─────────────────────
+// ── 機制標籤（點擊展開說明） ──────────────────────────
 function TagList({ tags }: { tags: { name: string; desc: string }[] }) {
-  const [expanded, setExpanded] = useState<string | null>(null);
+  const [expanded, setExpanded] = useState<Set<number>>(new Set());
+
+  function toggle(i: number) {
+    setExpanded(prev => {
+      const next = new Set(prev);
+      next.has(i) ? next.delete(i) : next.add(i);
+      return next;
+    });
+  }
 
   return (
     <div className="space-y-1.5">
       <div className="flex flex-wrap gap-1.5">
         {tags.map((tag, i) => {
-          const isDebuff = tag.name.startsWith('桎梏');
-          const isOpen = expanded === `${i}`;
+          const isOpen = expanded.has(i);
           return (
             <button
               key={i}
-              onClick={() => isDebuff && setExpanded(isOpen ? null : `${i}`)}
-              className={`text-[10px] px-2 py-0.5 rounded-full border transition-colors ${
-                isDebuff
-                  ? isOpen
-                    ? 'border-red-500/40 bg-red-500/10 text-red-400 cursor-pointer'
-                    : 'border-red-500/20 bg-white/5 text-gray-400 hover:border-red-500/40 hover:text-red-400 cursor-pointer'
-                  : 'border-white/10 bg-white/5 text-gray-400 cursor-default'
+              onClick={() => toggle(i)}
+              className={`text-[10px] px-2 py-0.5 rounded-full border transition-colors cursor-pointer ${
+                isOpen
+                  ? 'border-amber-500/40 bg-amber-500/10 text-amber-300'
+                  : 'border-white/10 bg-white/5 text-gray-400 hover:border-amber-500/30 hover:text-gray-300'
               }`}
-              title={tag.desc}
             >
               {tag.name}
             </button>
           );
         })}
       </div>
-      {expanded !== null && (() => {
-        const tag = tags[parseInt(expanded)];
-        return tag ? (
-          <p className="text-[10px] text-red-400/80 leading-relaxed pl-0.5">
-            ⚠ {tag.desc}
-          </p>
-        ) : null;
-      })()}
+      {expanded.size > 0 && (
+        <div className="space-y-1">
+          {tags.map((tag, i) =>
+            expanded.has(i) ? (
+              <p key={i} className="text-[10px] text-amber-400/80 leading-relaxed pl-0.5">
+                ⚠ <span className="font-semibold text-amber-300">{tag.name}</span>：{tag.desc}
+              </p>
+            ) : null
+          )}
+        </div>
+      )}
     </div>
   );
 }
