@@ -1,5 +1,14 @@
 @import "tailwindcss";
 
+/* 網站圖示等速旋轉動畫，3 秒轉一圈 */
+@keyframes favicon-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.animate-favicon-spin {
+  animation: favicon-spin 3s linear infinite;
+}
+
 :root {
   --bg: #0d0d1a;
   --gold: #c9a227;

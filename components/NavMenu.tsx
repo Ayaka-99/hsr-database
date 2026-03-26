@@ -46,7 +46,7 @@ export default function NavMenu() {
         <img
           src="/hsr-database/favicon.jpg.png"
           alt="選單"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover animate-favicon-spin"
           onError={(e) => {
             // 圖片載入失敗時顯示漢堡圖示
             (e.target as HTMLImageElement).style.display = 'none';

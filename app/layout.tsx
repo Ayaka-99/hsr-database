@@ -35,7 +35,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                   alt="icon"
                   width={28}
                   height={28}
-                  className="rounded-full object-cover border border-white/20"
+                  className="rounded-full object-cover border border-white/20 animate-favicon-spin"
                 />
                 CT杯 數據庫
               </Link>
