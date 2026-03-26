@@ -13,7 +13,7 @@ const { Converter } = require('opencc-js') as { Converter: (opts: { from: string
 const toTW = Converter({ from: 'cn', to: 'tw' });
 
 const MANIFEST_URL = 'https://static.nanoka.cc/manifest.json';
-const IMG_BASE = 'https://raw.githubusercontent.com/Mar-7th/StarRailRes/master';
+const IMG_BASE = 'https://static.nanoka.cc/assets/hsr/monstermiddleicon';
 const DATA_DIR = join(process.cwd(), 'data');
 
 // ─── 對照表 ─────────────────────────────────────────
@@ -59,7 +59,8 @@ async function buildMonsterMap(baseUrl: string): Promise<MonsterMap> {
   const data = await fetchJson<Record<string, { icon: string; zh: string; en: string }>>(`${baseUrl}/monster.json`);
   const map: MonsterMap = new Map();
   for (const [id, e] of Object.entries(data)) {
-    map.set(id, { name: toTW(e.zh || e.en), icon: `${IMG_BASE}/${e.icon}` });
+    const iconFile = (e.icon ?? '').split('/').pop()?.replace('.png', '.webp') ?? '';
+    map.set(id, { name: toTW(e.zh || e.en), icon: iconFile ? `${IMG_BASE}/${iconFile}` : '' });
   }
   console.log(`   共 ${map.size} 個怪物`);
   return map;

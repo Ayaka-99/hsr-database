@@ -12,6 +12,11 @@ const nextConfig: NextConfig = {
         hostname: 'raw.githubusercontent.com',
         pathname: '/Mar-7th/StarRailRes/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'static.nanoka.cc',
+        pathname: '/assets/hsr/**',
+      },
     ],
   },
 };
