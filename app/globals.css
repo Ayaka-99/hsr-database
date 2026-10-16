@@ -10,46 +10,114 @@
 }
 
 :root {
-  --bg: #0d0d1a;
-  --gold: #c9a227;
-  --purple: #6b4ff5;
+  --bg: #0b0c16;
+  --gold: #d4af37;
+  --gold-glow: rgba(212, 175, 55, 0.4);
+  --purple: #7e57c2;
+  --purple-glow: rgba(126, 87, 194, 0.4);
 }
 
 body {
-  /* 底色加上極淡的色彩光暈：左上紫調、右下暖金調、頂部中央天空藍 */
+  /* 深空星軌背景氛圍：星塵雲霧與柔光漸變 */
   background:
-    radial-gradient(ellipse 70% 45% at 5% 0%,    rgba(107, 79, 245, 0.18) 0%, transparent 70%),
-    radial-gradient(ellipse 55% 35% at 95% 100%,  rgba(201,162,  39, 0.13) 0%, transparent 65%),
-    radial-gradient(ellipse 40% 30% at 60%   8%,  rgba( 56,189,248, 0.08) 0%, transparent 60%),
+    radial-gradient(circle at 18% 12%, rgba(126, 87, 194, 0.16) 0%, transparent 45%),
+    radial-gradient(circle at 82% 88%, rgba(212, 175, 55, 0.12) 0%, transparent 50%),
+    radial-gradient(circle at 50% 40%, rgba(56, 189, 248, 0.07) 0%, transparent 60%),
+    radial-gradient(ellipse 80% 60% at 50% -10%, rgba(99, 102, 241, 0.14) 0%, transparent 70%),
     var(--bg);
   background-attachment: fixed;
-  color: #e8e8f0;
+  color: #ededf5;
   font-family: 'Noto Sans TC', sans-serif;
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
 }
 
 /* 隱藏水平篩選列的滾動條 */
 .scrollbar-none { scrollbar-width: none; }
 .scrollbar-none::-webkit-scrollbar { display: none; }
 
-/* 自訂滾動條 */
-::-webkit-scrollbar { width: 6px; height: 6px; }
-::-webkit-scrollbar-track { background: #0a0a16; }
-::-webkit-scrollbar-thumb { background: rgba(201,162,39,0.25); border-radius: 3px; }
-::-webkit-scrollbar-thumb:hover { background: rgba(201,162,39,0.45); }
+/* 現代質感自訂滾動條 */
+::-webkit-scrollbar { width: 7px; height: 7px; }
+::-webkit-scrollbar-track { background: rgba(11, 12, 22, 0.7); }
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, rgba(212, 175, 55, 0.35), rgba(126, 87, 194, 0.35));
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, rgba(212, 175, 55, 0.6), rgba(126, 87, 194, 0.6));
+}
 
-/* 選取色 */
-::selection { background: rgba(107,79,245,0.4); color: #fff; }
+/* 文本選取色 */
+::selection { background: rgba(126, 87, 194, 0.45); color: #fff; }
 
-/* 頁面進場動畫 */
+/* 頁面流暢進場動畫 */
 @keyframes pageIn {
-  from { opacity: 0; transform: translateY(10px); }
+  from { opacity: 0; transform: translateY(8px); }
   to   { opacity: 1; transform: translateY(0); }
 }
 
-main { animation: pageIn 0.25s ease both; }
+main { animation: pageIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) both; }
+
+/* 光暈掃掠 (Shimmer shine sweep) */
+@keyframes shimmer-sweep {
+  0% { transform: translateX(-150%) skewX(-20deg); }
+  100% { transform: translateX(250%) skewX(-20deg); }
+}
+
+.animate-shimmer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.15) 50%,
+    transparent 100%
+  );
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.group:hover .animate-shimmer {
+  opacity: 1;
+  animation: shimmer-sweep 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+/* 5星金色與4星紫色流光光暈 */
+.card-gold-glow {
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.5), 0 0 15px -3px rgba(212, 175, 55, 0.15);
+}
+.card-gold-glow:hover {
+  box-shadow: 0 12px 30px -4px rgba(0, 0, 0, 0.7), 0 0 25px 2px rgba(212, 175, 55, 0.35);
+}
+
+.card-purple-glow {
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.5), 0 0 15px -3px rgba(126, 87, 194, 0.15);
+}
+.card-purple-glow:hover {
+  box-shadow: 0 12px 30px -4px rgba(0, 0, 0, 0.7), 0 0 25px 2px rgba(126, 87, 194, 0.35);
+}
+
+/* 玻璃擬態通用面板 */
+.glass-panel {
+  background: rgba(18, 20, 34, 0.65);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-gold {
+  background: rgba(26, 23, 16, 0.65);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(212, 175, 55, 0.25);
+}
 
 /* CT 彩蛋：炫彩古典畫框 */
 @keyframes ct-jewel-hue {

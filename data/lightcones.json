@@ -5,6 +5,11 @@
     "rarity": 3,
     "path": "巡獵",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/20000.png",
+    "stats": {
+      "hp": 449,
+      "atk": 168,
+      "def": 140
+    },
     "passive": {
       "name": "危機",
       "description": [
@@ -22,6 +27,11 @@
     "rarity": 3,
     "path": "豐饒",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/20001.png",
+    "stats": {
+      "hp": 505,
+      "atk": 140,
+      "def": 140
+    },
     "passive": {
       "name": "繁盛",
       "description": [
@@ -39,6 +49,11 @@
     "rarity": 3,
     "path": "毀滅",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/20002.png",
+    "stats": {
+      "hp": 449,
+      "atk": 197,
+      "def": 105
+    },
     "passive": {
       "name": "破滅",
       "description": [
@@ -56,6 +71,11 @@
     "rarity": 3,
     "path": "存護",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/20003.png",
+    "stats": {
+      "hp": 449,
+      "atk": 140,
+      "def": 176
+    },
     "passive": {
       "name": "靜滯",
       "description": [
@@ -73,6 +93,11 @@
     "rarity": 3,
     "path": "虛無",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/20004.png",
+    "stats": {
+      "hp": 449,
+      "atk": 168,
+      "def": 140
+    },
     "passive": {
       "name": "沉淪",
       "description": [
@@ -90,6 +115,11 @@
     "rarity": 3,
     "path": "同諧",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/20005.png",
+    "stats": {
+      "hp": 449,
+      "atk": 168,
+      "def": 140
+    },
     "passive": {
       "name": "協力",
       "description": [
@@ -107,6 +137,11 @@
     "rarity": 3,
     "path": "智識",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/20006.png",
+    "stats": {
+      "hp": 393,
+      "atk": 197,
+      "def": 140
+    },
     "passive": {
       "name": "博識",
       "description": [
@@ -124,6 +159,11 @@
     "rarity": 3,
     "path": "巡獵",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/20007.png",
+    "stats": {
+      "hp": 393,
+      "atk": 197,
+      "def": 140
+    },
     "passive": {
       "name": "鳴角",
       "description": [
@@ -141,6 +181,11 @@
     "rarity": 3,
     "path": "豐饒",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/20008.png",
+    "stats": {
+      "hp": 505,
+      "atk": 168,
+      "def": 105
+    },
     "passive": {
       "name": "甘美",
       "description": [
@@ -158,6 +203,11 @@
     "rarity": 3,
     "path": "毀滅",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/20009.png",
+    "stats": {
+      "hp": 449,
+      "atk": 197,
+      "def": 105
+    },
     "passive": {
       "name": "誅討",
       "description": [
@@ -175,6 +225,11 @@
     "rarity": 3,
     "path": "存護",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/20010.png",
+    "stats": {
+      "hp": 505,
+      "atk": 140,
+      "def": 140
+    },
     "passive": {
       "name": "興復",
       "description": [
@@ -192,6 +247,11 @@
     "rarity": 3,
     "path": "虛無",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/20011.png",
+    "stats": {
+      "hp": 449,
+      "atk": 168,
+      "def": 140
+    },
     "passive": {
       "name": "追逼",
       "description": [
@@ -209,6 +269,11 @@
     "rarity": 3,
     "path": "同諧",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/20012.png",
+    "stats": {
+      "hp": 449,
+      "atk": 168,
+      "def": 140
+    },
     "passive": {
       "name": "速決",
       "description": [
@@ -226,6 +291,11 @@
     "rarity": 3,
     "path": "智識",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/20013.png",
+    "stats": {
+      "hp": 393,
+      "atk": 197,
+      "def": 140
+    },
     "passive": {
       "name": "頓悟",
       "description": [
@@ -243,6 +313,11 @@
     "rarity": 3,
     "path": "巡獵",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/20014.png",
+    "stats": {
+      "hp": 393,
+      "atk": 197,
+      "def": 140
+    },
     "passive": {
       "name": "聯盟",
       "description": [
@@ -260,6 +335,11 @@
     "rarity": 3,
     "path": "豐饒",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/20015.png",
+    "stats": {
+      "hp": 505,
+      "atk": 168,
+      "def": 105
+    },
     "passive": {
       "name": "豐饒民",
       "description": [
@@ -277,6 +357,11 @@
     "rarity": 3,
     "path": "毀滅",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/20016.png",
+    "stats": {
+      "hp": 449,
+      "atk": 197,
+      "def": 105
+    },
     "passive": {
       "name": "軍團",
       "description": [
@@ -294,6 +379,11 @@
     "rarity": 3,
     "path": "存護",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/20017.png",
+    "stats": {
+      "hp": 505,
+      "atk": 140,
+      "def": 140
+    },
     "passive": {
       "name": "公司",
       "description": [
@@ -311,6 +401,11 @@
     "rarity": 3,
     "path": "虛無",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/20018.png",
+    "stats": {
+      "hp": 449,
+      "atk": 168,
+      "def": 140
+    },
     "passive": {
       "name": "機關",
       "description": [
@@ -328,6 +423,11 @@
     "rarity": 3,
     "path": "同諧",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/20019.png",
+    "stats": {
+      "hp": 449,
+      "atk": 168,
+      "def": 140
+    },
     "passive": {
       "name": "家族",
       "description": [
@@ -345,6 +445,11 @@
     "rarity": 3,
     "path": "智識",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/20020.png",
+    "stats": {
+      "hp": 393,
+      "atk": 197,
+      "def": 140
+    },
     "passive": {
       "name": "天才",
       "description": [
@@ -362,6 +467,11 @@
     "rarity": 3,
     "path": "記憶",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/20021.png",
+    "stats": {
+      "hp": 449,
+      "atk": 168,
+      "def": 140
+    },
     "passive": {
       "name": "美化",
       "description": [
@@ -379,6 +489,11 @@
     "rarity": 3,
     "path": "記憶",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/20022.png",
+    "stats": {
+      "hp": 337,
+      "atk": 225,
+      "def": 140
+    },
     "passive": {
       "name": "入寐",
       "description": [
@@ -396,6 +511,11 @@
     "rarity": 3,
     "path": "歡愉",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/20023.png",
+    "stats": {
+      "hp": 393,
+      "atk": 197,
+      "def": 140
+    },
     "passive": {
       "name": "縱歡",
       "description": [
@@ -413,6 +533,11 @@
     "rarity": 3,
     "path": "歡愉",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/20024.png",
+    "stats": {
+      "hp": 449,
+      "atk": 168,
+      "def": 140
+    },
     "passive": {
       "name": "悼念",
       "description": [
@@ -430,6 +555,11 @@
     "rarity": 4,
     "path": "豐饒",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/21000.png",
+    "stats": {
+      "hp": 562,
+      "atk": 225,
+      "def": 176
+    },
     "passive": {
       "name": "互相治癒",
       "description": [
@@ -447,6 +577,11 @@
     "rarity": 4,
     "path": "虛無",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/21001.png",
+    "stats": {
+      "hp": 505,
+      "atk": 253,
+      "def": 176
+    },
     "passive": {
       "name": "勞碌者",
       "description": [
@@ -464,6 +599,11 @@
     "rarity": 4,
     "path": "存護",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/21002.png",
+    "stats": {
+      "hp": 505,
+      "atk": 197,
+      "def": 246
+    },
     "passive": {
       "name": "此刻定格",
       "description": [
@@ -481,6 +621,11 @@
     "rarity": 4,
     "path": "巡獵",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/21003.png",
+    "stats": {
+      "hp": 505,
+      "atk": 253,
+      "def": 176
+    },
     "passive": {
       "name": "記錄",
       "description": [
@@ -498,6 +643,11 @@
     "rarity": 4,
     "path": "同諧",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/21004.png",
+    "stats": {
+      "hp": 505,
+      "atk": 225,
+      "def": 211
+    },
     "passive": {
       "name": "老相片",
       "description": [
@@ -515,6 +665,11 @@
     "rarity": 4,
     "path": "毀滅",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/21005.png",
+    "stats": {
+      "hp": 562,
+      "atk": 253,
+      "def": 140
+    },
     "passive": {
       "name": "奇妙冒險",
       "description": [
@@ -532,6 +687,11 @@
     "rarity": 4,
     "path": "智識",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/21006.png",
+    "stats": {
+      "hp": 505,
+      "atk": 253,
+      "def": 176
+    },
     "passive": {
       "name": "畫像少女",
       "description": [
@@ -549,6 +709,11 @@
     "rarity": 4,
     "path": "豐饒",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/21007.png",
+    "stats": {
+      "hp": 505,
+      "atk": 225,
+      "def": 211
+    },
     "passive": {
       "name": "救治與維修",
       "description": [
@@ -566,6 +731,11 @@
     "rarity": 4,
     "path": "虛無",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/21008.png",
+    "stats": {
+      "hp": 505,
+      "atk": 253,
+      "def": 176
+    },
     "passive": {
       "name": "自信",
       "description": [
@@ -583,6 +753,11 @@
     "rarity": 4,
     "path": "存護",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/21009.png",
+    "stats": {
+      "hp": 505,
+      "atk": 225,
+      "def": 211
+    },
     "passive": {
       "name": "時光如梭",
       "description": [
@@ -600,6 +775,11 @@
     "rarity": 4,
     "path": "巡獵",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/21010.png",
+    "stats": {
+      "hp": 505,
+      "atk": 253,
+      "def": 176
+    },
     "passive": {
       "name": "各自的答案",
       "description": [
@@ -617,6 +797,11 @@
     "rarity": 4,
     "path": "同諧",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/21011.png",
+    "stats": {
+      "hp": 562,
+      "atk": 225,
+      "def": 176
+    },
     "passive": {
       "name": "啟程",
       "description": [
@@ -634,6 +819,11 @@
     "rarity": 4,
     "path": "毀滅",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/21012.png",
+    "stats": {
+      "hp": 562,
+      "atk": 253,
+      "def": 140
+    },
     "passive": {
       "name": "竭力而為",
       "description": [
@@ -651,6 +841,11 @@
     "rarity": 4,
     "path": "智識",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/21013.png",
+    "stats": {
+      "hp": 449,
+      "atk": 253,
+      "def": 211
+    },
     "passive": {
       "name": "聲音的力量",
       "description": [
@@ -668,6 +863,11 @@
     "rarity": 4,
     "path": "豐饒",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/21014.png",
+    "stats": {
+      "hp": 505,
+      "atk": 225,
+      "def": 211
+    },
     "passive": {
       "name": "折射的視線",
       "description": [
@@ -685,6 +885,11 @@
     "rarity": 4,
     "path": "虛無",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/21015.png",
+    "stats": {
+      "hp": 505,
+      "atk": 253,
+      "def": 176
+    },
     "passive": {
       "name": "回眸",
       "description": [
@@ -702,6 +907,11 @@
     "rarity": 4,
     "path": "存護",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/21016.png",
+    "stats": {
+      "hp": 562,
+      "atk": 197,
+      "def": 211
+    },
     "passive": {
       "name": "新一輪洗牌",
       "description": [
@@ -719,6 +929,11 @@
     "rarity": 4,
     "path": "巡獵",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/21017.png",
+    "stats": {
+      "hp": 505,
+      "atk": 253,
+      "def": 176
+    },
     "passive": {
       "name": "不讚不許走！",
       "description": [
@@ -736,6 +951,11 @@
     "rarity": 4,
     "path": "同諧",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/21018.png",
+    "stats": {
+      "hp": 505,
+      "atk": 225,
+      "def": 211
+    },
     "passive": {
       "name": "停不下來啦！",
       "description": [
@@ -753,6 +973,11 @@
     "rarity": 4,
     "path": "毀滅",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/21019.png",
+    "stats": {
+      "hp": 505,
+      "atk": 253,
+      "def": 176
+    },
     "passive": {
       "name": "暖陽麥浪",
       "description": [
@@ -770,6 +995,11 @@
     "rarity": 4,
     "path": "智識",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/21020.png",
+    "stats": {
+      "hp": 449,
+      "atk": 253,
+      "def": 211
+    },
     "passive": {
       "name": "各得其所",
       "description": [
@@ -787,6 +1017,11 @@
     "rarity": 4,
     "path": "豐饒",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/21021.png",
+    "stats": {
+      "hp": 505,
+      "atk": 225,
+      "def": 211
+    },
     "passive": {
       "name": "酣適",
       "description": [
@@ -804,6 +1039,11 @@
     "rarity": 4,
     "path": "虛無",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/21022.png",
+    "stats": {
+      "hp": 505,
+      "atk": 253,
+      "def": 176
+    },
     "passive": {
       "name": "休止符",
       "description": [
@@ -821,6 +1061,11 @@
     "rarity": 4,
     "path": "存護",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/21023.png",
+    "stats": {
+      "hp": 393,
+      "atk": 253,
+      "def": 246
+    },
     "passive": {
       "name": "淚中人",
       "description": [
@@ -838,6 +1083,11 @@
     "rarity": 4,
     "path": "巡獵",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/21024.png",
+    "stats": {
+      "hp": 449,
+      "atk": 253,
+      "def": 211
+    },
     "passive": {
       "name": "驅散餘寒",
       "description": [
@@ -855,6 +1105,11 @@
     "rarity": 4,
     "path": "同諧",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/21025.png",
+    "stats": {
+      "hp": 505,
+      "atk": 225,
+      "def": 211
+    },
     "passive": {
       "name": "舊日紙鳶",
       "description": [
@@ -872,6 +1127,11 @@
     "rarity": 4,
     "path": "毀滅",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/21026.png",
+    "stats": {
+      "hp": 505,
+      "atk": 253,
+      "def": 176
+    },
     "passive": {
       "name": "快溜",
       "description": [
@@ -889,6 +1149,11 @@
     "rarity": 4,
     "path": "智識",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/21027.png",
+    "stats": {
+      "hp": 449,
+      "atk": 253,
+      "def": 211
+    },
     "passive": {
       "name": "各就其位",
       "description": [
@@ -906,6 +1171,11 @@
     "rarity": 4,
     "path": "豐饒",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/21028.png",
+    "stats": {
+      "hp": 562,
+      "atk": 197,
+      "def": 211
+    },
     "passive": {
       "name": "小小燈火",
       "description": [
@@ -923,6 +1193,11 @@
     "rarity": 4,
     "path": "虛無",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/21029.png",
+    "stats": {
+      "hp": 449,
+      "atk": 281,
+      "def": 176
+    },
     "passive": {
       "name": "交手如交談",
       "description": [
@@ -940,6 +1215,11 @@
     "rarity": 4,
     "path": "存護",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/21030.png",
+    "stats": {
+      "hp": 449,
+      "atk": 197,
+      "def": 281
+    },
     "passive": {
       "name": "新篇章",
       "description": [
@@ -957,6 +1237,11 @@
     "rarity": 4,
     "path": "巡獵",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/21031.png",
+    "stats": {
+      "hp": 449,
+      "atk": 281,
+      "def": 176
+    },
     "passive": {
       "name": "洶湧",
       "description": [
@@ -974,6 +1259,11 @@
     "rarity": 4,
     "path": "同諧",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/21032.png",
+    "stats": {
+      "hp": 505,
+      "atk": 253,
+      "def": 176
+    },
     "passive": {
       "name": "秘密",
       "description": [
@@ -991,6 +1281,11 @@
     "rarity": 4,
     "path": "毀滅",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/21033.png",
+    "stats": {
+      "hp": 505,
+      "atk": 281,
+      "def": 140
+    },
     "passive": {
       "name": "絕境",
       "description": [
@@ -1008,6 +1303,11 @@
     "rarity": 4,
     "path": "智識",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/21034.png",
+    "stats": {
+      "hp": 449,
+      "atk": 281,
+      "def": 176
+    },
     "passive": {
       "name": "風雨將至",
       "description": [
@@ -1025,6 +1325,11 @@
     "rarity": 4,
     "path": "豐饒",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/21035.png",
+    "stats": {
+      "hp": 562,
+      "atk": 225,
+      "def": 176
+    },
     "passive": {
       "name": "假設",
       "description": [
@@ -1042,6 +1347,11 @@
     "rarity": 4,
     "path": "同諧",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/21036.png",
+    "stats": {
+      "hp": 505,
+      "atk": 225,
+      "def": 211
+    },
     "passive": {
       "name": "團結",
       "description": [
@@ -1059,6 +1369,11 @@
     "rarity": 4,
     "path": "巡獵",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/21037.png",
+    "stats": {
+      "hp": 505,
+      "atk": 253,
+      "def": 176
+    },
     "passive": {
       "name": "下注",
       "description": [
@@ -1076,6 +1391,11 @@
     "rarity": 4,
     "path": "毀滅",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/21038.png",
+    "stats": {
+      "hp": 562,
+      "atk": 253,
+      "def": 140
+    },
     "passive": {
       "name": "爆燃",
       "description": [
@@ -1093,6 +1413,11 @@
     "rarity": 4,
     "path": "存護",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/21039.png",
+    "stats": {
+      "hp": 505,
+      "atk": 197,
+      "def": 246
+    },
     "passive": {
       "name": "洞見",
       "description": [
@@ -1110,6 +1435,11 @@
     "rarity": 4,
     "path": "智識",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/21040.png",
+    "stats": {
+      "hp": 505,
+      "atk": 253,
+      "def": 176
+    },
     "passive": {
       "name": "攻略",
       "description": [
@@ -1127,6 +1457,11 @@
     "rarity": 4,
     "path": "虛無",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/21041.png",
+    "stats": {
+      "hp": 562,
+      "atk": 253,
+      "def": 140
+    },
     "passive": {
       "name": "自娛自樂",
       "description": [
@@ -1144,6 +1479,11 @@
     "rarity": 4,
     "path": "毀滅",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/21042.png",
+    "stats": {
+      "hp": 505,
+      "atk": 253,
+      "def": 176
+    },
     "passive": {
       "name": "傳承",
       "description": [
@@ -1161,6 +1501,11 @@
     "rarity": 4,
     "path": "存護",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/21043.png",
+    "stats": {
+      "hp": 505,
+      "atk": 197,
+      "def": 246
+    },
     "passive": {
       "name": "鼓舞",
       "description": [
@@ -1178,6 +1523,11 @@
     "rarity": 4,
     "path": "虛無",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/21044.png",
+    "stats": {
+      "hp": 505,
+      "atk": 253,
+      "def": 176
+    },
     "passive": {
       "name": "試探",
       "description": [
@@ -1195,6 +1545,11 @@
     "rarity": 4,
     "path": "智識",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/21045.png",
+    "stats": {
+      "hp": 449,
+      "atk": 253,
+      "def": 211
+    },
     "passive": {
       "name": "沉寂",
       "description": [
@@ -1212,6 +1567,11 @@
     "rarity": 4,
     "path": "同諧",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/21046.png",
+    "stats": {
+      "hp": 505,
+      "atk": 225,
+      "def": 211
+    },
     "passive": {
       "name": "莫失莫忘",
       "description": [
@@ -1229,6 +1589,11 @@
     "rarity": 4,
     "path": "巡獵",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/21047.png",
+    "stats": {
+      "hp": 449,
+      "atk": 253,
+      "def": 211
+    },
     "passive": {
       "name": "隱匿",
       "description": [
@@ -1246,6 +1611,11 @@
     "rarity": 4,
     "path": "豐饒",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/21048.png",
+    "stats": {
+      "hp": 505,
+      "atk": 225,
+      "def": 211
+    },
     "passive": {
       "name": "學院式剪接",
       "description": [
@@ -1263,6 +1633,11 @@
     "rarity": 4,
     "path": "記憶",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/21050.png",
+    "stats": {
+      "hp": 449,
+      "atk": 253,
+      "def": 211
+    },
     "passive": {
       "name": "最後一擊",
       "description": [
@@ -1280,6 +1655,11 @@
     "rarity": 4,
     "path": "記憶",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/21051.png",
+    "stats": {
+      "hp": 505,
+      "atk": 253,
+      "def": 176
+    },
     "passive": {
       "name": "恭喜",
       "description": [
@@ -1297,6 +1677,11 @@
     "rarity": 4,
     "path": "記憶",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/21052.png",
+    "stats": {
+      "hp": 562,
+      "atk": 281,
+      "def": 105
+    },
     "passive": {
       "name": "來練！",
       "description": [
@@ -1314,6 +1699,11 @@
     "rarity": 4,
     "path": "存護",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/21053.png",
+    "stats": {
+      "hp": 562,
+      "atk": 197,
+      "def": 281
+    },
     "passive": {
       "name": "甜夢",
       "description": [
@@ -1331,6 +1721,11 @@
     "rarity": 4,
     "path": "記憶",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/21054.png",
+    "stats": {
+      "hp": 562,
+      "atk": 197,
+      "def": 211
+    },
     "passive": {
       "name": "書寫",
       "description": [
@@ -1348,6 +1743,11 @@
     "rarity": 4,
     "path": "豐饒",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/21055.png",
+    "stats": {
+      "hp": 562,
+      "atk": 253,
+      "def": 211
+    },
     "passive": {
       "name": "離別",
       "description": [
@@ -1365,6 +1765,11 @@
     "rarity": 4,
     "path": "同諧",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/21056.png",
+    "stats": {
+      "hp": 562,
+      "atk": 253,
+      "def": 211
+    },
     "passive": {
       "name": "慌張",
       "description": [
@@ -1382,6 +1787,11 @@
     "rarity": 4,
     "path": "記憶",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/21057.png",
+    "stats": {
+      "hp": 562,
+      "atk": 281,
+      "def": 176
+    },
     "passive": {
       "name": "相依為命",
       "description": [
@@ -1399,6 +1809,11 @@
     "rarity": 4,
     "path": "毀滅",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/21058.png",
+    "stats": {
+      "hp": 562,
+      "atk": 281,
+      "def": 176
+    },
     "passive": {
       "name": "廝殺",
       "description": [
@@ -1416,6 +1831,11 @@
     "rarity": 4,
     "path": "智識",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/21060.png",
+    "stats": {
+      "hp": 505,
+      "atk": 281,
+      "def": 211
+    },
     "passive": {
       "name": "憧憬",
       "description": [
@@ -1433,6 +1853,11 @@
     "rarity": 4,
     "path": "虛無",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/21061.png",
+    "stats": {
+      "hp": 562,
+      "atk": 281,
+      "def": 176
+    },
     "passive": {
       "name": "冷靜一下",
       "description": [
@@ -1450,6 +1875,11 @@
     "rarity": 4,
     "path": "巡獵",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/21062.png",
+    "stats": {
+      "hp": 505,
+      "atk": 281,
+      "def": 211
+    },
     "passive": {
       "name": "執著",
       "description": [
@@ -1467,6 +1897,11 @@
     "rarity": 4,
     "path": "歡愉",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/21064.png",
+    "stats": {
+      "hp": 449,
+      "atk": 253,
+      "def": 211
+    },
     "passive": {
       "name": "亂鬥",
       "description": [
@@ -1484,6 +1919,11 @@
     "rarity": 4,
     "path": "歡愉",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/21065.png",
+    "stats": {
+      "hp": 505,
+      "atk": 281,
+      "def": 211
+    },
     "passive": {
       "name": "抉擇",
       "description": [
@@ -1496,11 +1936,38 @@
     }
   },
   {
+    "id": "21066",
+    "name": "放個短假",
+    "rarity": 4,
+    "path": "歡愉",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/21066.png",
+    "stats": {
+      "hp": 505,
+      "atk": 225,
+      "def": 211
+    },
+    "passive": {
+      "name": "秘語",
+      "description": [
+        "使裝備者的歡愉度提高20%。裝備者施放歡愉技期間無視目標8%的防禦力。",
+        "使裝備者的歡愉度提高25%。裝備者施放歡愉技期間無視目標10%的防禦力。",
+        "使裝備者的歡愉度提高30%。裝備者施放歡愉技期間無視目標12%的防禦力。",
+        "使裝備者的歡愉度提高35%。裝備者施放歡愉技期間無視目標14%的防禦力。",
+        "使裝備者的歡愉度提高40%。裝備者施放歡愉技期間無視目標16%的防禦力。"
+      ]
+    }
+  },
+  {
     "id": "22000",
     "name": "新手任務開始前",
     "rarity": 4,
     "path": "虛無",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/22000.png",
+    "stats": {
+      "hp": 505,
+      "atk": 253,
+      "def": 176
+    },
     "passive": {
       "name": "眼疾手快",
       "description": [
@@ -1518,6 +1985,11 @@
     "rarity": 4,
     "path": "豐饒",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/22001.png",
+    "stats": {
+      "hp": 505,
+      "atk": 225,
+      "def": 211
+    },
     "passive": {
       "name": "不怕不怕啦",
       "description": [
@@ -1535,6 +2007,11 @@
     "rarity": 4,
     "path": "同諧",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/22002.png",
+    "stats": {
+      "hp": 505,
+      "atk": 253,
+      "def": 176
+    },
     "passive": {
       "name": "聯結",
       "description": [
@@ -1552,6 +2029,11 @@
     "rarity": 4,
     "path": "毀滅",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/22003.png",
+    "stats": {
+      "hp": 562,
+      "atk": 253,
+      "def": 140
+    },
     "passive": {
       "name": "開演！",
       "description": [
@@ -1569,6 +2051,11 @@
     "rarity": 4,
     "path": "智識",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/22004.png",
+    "stats": {
+      "hp": 505,
+      "atk": 253,
+      "def": 176
+    },
     "passive": {
       "name": "互惠",
       "description": [
@@ -1586,6 +2073,11 @@
     "rarity": 4,
     "path": "同諧",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/22005.png",
+    "stats": {
+      "hp": 505,
+      "atk": 253,
+      "def": 176
+    },
     "passive": {
       "name": "真香",
       "description": [
@@ -1603,6 +2095,11 @@
     "rarity": 4,
     "path": "記憶",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/22006.png",
+    "stats": {
+      "hp": 449,
+      "atk": 253,
+      "def": 211
+    },
     "passive": {
       "name": "凝望",
       "description": [
@@ -1615,11 +2112,60 @@
     }
   },
   {
+    "id": "22007",
+    "name": "未來，有我們一起",
+    "rarity": 4,
+    "path": "歡愉",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/22007.png",
+    "stats": {
+      "hp": 505,
+      "atk": 253,
+      "def": 176
+    },
+    "passive": {
+      "name": "同行",
+      "description": [
+        "使裝備者的暴擊傷害提高12%。裝備者施放終結技後，使我方全體歡愉度提高8%，持續1回合。",
+        "使裝備者的暴擊傷害提高15%。裝備者施放終結技後，使我方全體歡愉度提高9%，持續1回合。",
+        "使裝備者的暴擊傷害提高18%。裝備者施放終結技後，使我方全體歡愉度提高10%，持續1回合。",
+        "使裝備者的暴擊傷害提高21%。裝備者施放終結技後，使我方全體歡愉度提高11%，持續1回合。",
+        "使裝備者的暴擊傷害提高24%。裝備者施放終結技後，使我方全體歡愉度提高12%，持續1回合。"
+      ]
+    }
+  },
+  {
+    "id": "22008",
+    "name": "向著地平線的終點",
+    "rarity": 4,
+    "path": "巡獵",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/22008.png",
+    "stats": {
+      "hp": 449,
+      "atk": 253,
+      "def": 211
+    },
+    "passive": {
+      "name": "超越",
+      "description": [
+        "使裝備者的攻擊力提高12%。裝備者施放追加攻擊後，使裝備者的暴擊傷害提高3%，持續2回合，該效果最多疊加10層。",
+        "使裝備者的攻擊力提高15%。裝備者施放追加攻擊後，使裝備者的暴擊傷害提高4%，持續2回合，該效果最多疊加10層。",
+        "使裝備者的攻擊力提高18%。裝備者施放追加攻擊後，使裝備者的暴擊傷害提高4%，持續2回合，該效果最多疊加10層。",
+        "使裝備者的攻擊力提高21%。裝備者施放追加攻擊後，使裝備者的暴擊傷害提高5%，持續2回合，該效果最多疊加10層。",
+        "使裝備者的攻擊力提高24%。裝備者施放追加攻擊後，使裝備者的暴擊傷害提高5%，持續2回合，該效果最多疊加10層。"
+      ]
+    }
+  },
+  {
     "id": "23000",
     "name": "銀河鐵道之夜",
     "rarity": 5,
     "path": "智識",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/23000.png",
+    "stats": {
+      "hp": 618,
+      "atk": 309,
+      "def": 211
+    },
     "passive": {
       "name": "流星群",
       "description": [
@@ -1637,6 +2183,11 @@
     "rarity": 5,
     "path": "巡獵",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/23001.png",
+    "stats": {
+      "hp": 562,
+      "atk": 309,
+      "def": 246
+    },
     "passive": {
       "name": "花與蝶",
       "description": [
@@ -1654,6 +2205,11 @@
     "rarity": 5,
     "path": "毀滅",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/23002.png",
+    "stats": {
+      "hp": 618,
+      "atk": 309,
+      "def": 211
+    },
     "passive": {
       "name": "家人",
       "description": [
@@ -1671,6 +2227,11 @@
     "rarity": 5,
     "path": "同諧",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/23003.png",
+    "stats": {
+      "hp": 618,
+      "atk": 281,
+      "def": 246
+    },
     "passive": {
       "name": "繼承人",
       "description": [
@@ -1688,6 +2249,11 @@
     "rarity": 5,
     "path": "虛無",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/23004.png",
+    "stats": {
+      "hp": 562,
+      "atk": 309,
+      "def": 246
+    },
     "passive": {
       "name": "傳承者",
       "description": [
@@ -1705,6 +2271,11 @@
     "rarity": 5,
     "path": "存護",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/23005.png",
+    "stats": {
+      "hp": 562,
+      "atk": 253,
+      "def": 316
+    },
     "passive": {
       "name": "決斷",
       "description": [
@@ -1722,6 +2293,11 @@
     "rarity": 5,
     "path": "虛無",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/23006.png",
+    "stats": {
+      "hp": 562,
+      "atk": 309,
+      "def": 246
+    },
     "passive": {
       "name": "蜘蛛的網",
       "description": [
@@ -1739,6 +2315,11 @@
     "rarity": 5,
     "path": "虛無",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/23007.png",
+    "stats": {
+      "hp": 562,
+      "atk": 309,
+      "def": 246
+    },
     "passive": {
       "name": "幻影現實",
       "description": [
@@ -1756,6 +2337,11 @@
     "rarity": 5,
     "path": "豐饒",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/23008.png",
+    "stats": {
+      "hp": 618,
+      "atk": 309,
+      "def": 211
+    },
     "passive": {
       "name": "荊棘",
       "description": [
@@ -1773,6 +2359,11 @@
     "rarity": 5,
     "path": "毀滅",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/23009.png",
+    "stats": {
+      "hp": 674,
+      "atk": 309,
+      "def": 176
+    },
     "passive": {
       "name": "不得",
       "description": [
@@ -1790,6 +2381,11 @@
     "rarity": 5,
     "path": "智識",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/23010.png",
+    "stats": {
+      "hp": 562,
+      "atk": 309,
+      "def": 246
+    },
     "passive": {
       "name": "長夜",
       "description": [
@@ -1807,6 +2403,11 @@
     "rarity": 5,
     "path": "存護",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/23011.png",
+    "stats": {
+      "hp": 674,
+      "atk": 225,
+      "def": 281
+    },
     "passive": {
       "name": "視界",
       "description": [
@@ -1824,6 +2425,11 @@
     "rarity": 5,
     "path": "巡獵",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/23012.png",
+    "stats": {
+      "hp": 562,
+      "atk": 309,
+      "def": 246
+    },
     "passive": {
       "name": "美夢",
       "description": [
@@ -1841,6 +2447,11 @@
     "rarity": 5,
     "path": "豐饒",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/23013.png",
+    "stats": {
+      "hp": 674,
+      "atk": 253,
+      "def": 246
+    },
     "passive": {
       "name": "日有四時",
       "description": [
@@ -1858,6 +2469,11 @@
     "rarity": 5,
     "path": "毀滅",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/23014.png",
+    "stats": {
+      "hp": 618,
+      "atk": 309,
+      "def": 211
+    },
     "passive": {
       "name": "執此宵玉",
       "description": [
@@ -1875,6 +2491,11 @@
     "rarity": 5,
     "path": "毀滅",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/23015.png",
+    "stats": {
+      "hp": 562,
+      "atk": 337,
+      "def": 211
+    },
     "passive": {
       "name": "抵死",
       "description": [
@@ -1892,6 +2513,11 @@
     "rarity": 5,
     "path": "巡獵",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/23016.png",
+    "stats": {
+      "hp": 562,
+      "atk": 309,
+      "def": 246
+    },
     "passive": {
       "name": "一個一個來",
       "description": [
@@ -1909,6 +2535,11 @@
     "rarity": 5,
     "path": "豐饒",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/23017.png",
+    "stats": {
+      "hp": 618,
+      "atk": 253,
+      "def": 281
+    },
     "passive": {
       "name": "深度深呼吸",
       "description": [
@@ -1926,6 +2557,11 @@
     "rarity": 5,
     "path": "智識",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/23018.png",
+    "stats": {
+      "hp": 562,
+      "atk": 309,
+      "def": 246
+    },
     "passive": {
       "name": "騎士巡禮",
       "description": [
@@ -1943,6 +2579,11 @@
     "rarity": 5,
     "path": "同諧",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/23019.png",
+    "stats": {
+      "hp": 562,
+      "atk": 281,
+      "def": 281
+    },
     "passive": {
       "name": "徹骨梅香",
       "description": [
@@ -1960,6 +2601,11 @@
     "rarity": 5,
     "path": "巡獵",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/23020.png",
+    "stats": {
+      "hp": 505,
+      "atk": 309,
+      "def": 281
+    },
     "passive": {
       "name": "思想訓練",
       "description": [
@@ -1977,6 +2623,11 @@
     "rarity": 5,
     "path": "同諧",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/23021.png",
+    "stats": {
+      "hp": 618,
+      "atk": 281,
+      "def": 246
+    },
     "passive": {
       "name": "善變",
       "description": [
@@ -1994,6 +2645,11 @@
     "rarity": 5,
     "path": "虛無",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/23022.png",
+    "stats": {
+      "hp": 562,
+      "atk": 309,
+      "def": 246
+    },
     "passive": {
       "name": "結晶",
       "description": [
@@ -2011,6 +2667,11 @@
     "rarity": 5,
     "path": "存護",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/23023.png",
+    "stats": {
+      "hp": 562,
+      "atk": 225,
+      "def": 351
+    },
     "passive": {
       "name": "全下",
       "description": [
@@ -2028,6 +2689,11 @@
     "rarity": 5,
     "path": "虛無",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/23024.png",
+    "stats": {
+      "hp": 562,
+      "atk": 337,
+      "def": 211
+    },
     "passive": {
       "name": "司渡",
       "description": [
@@ -2045,6 +2711,11 @@
     "rarity": 5,
     "path": "毀滅",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/23025.png",
+    "stats": {
+      "hp": 618,
+      "atk": 253,
+      "def": 281
+    },
     "passive": {
       "name": "蛻變",
       "description": [
@@ -2062,6 +2733,11 @@
     "rarity": 5,
     "path": "同諧",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/23026.png",
+    "stats": {
+      "hp": 505,
+      "atk": 337,
+      "def": 246
+    },
     "passive": {
       "name": "撫慰",
       "description": [
@@ -2079,6 +2755,11 @@
     "rarity": 5,
     "path": "巡獵",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/23027.png",
+    "stats": {
+      "hp": 562,
+      "atk": 309,
+      "def": 246
+    },
     "passive": {
       "name": "苦航",
       "description": [
@@ -2096,6 +2777,11 @@
     "rarity": 5,
     "path": "智識",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/23028.png",
+    "stats": {
+      "hp": 505,
+      "atk": 309,
+      "def": 281
+    },
     "passive": {
       "name": "承諾",
       "description": [
@@ -2113,6 +2799,11 @@
     "rarity": 5,
     "path": "虛無",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/23029.png",
+    "stats": {
+      "hp": 505,
+      "atk": 309,
+      "def": 281
+    },
     "passive": {
       "name": "世事無痕",
       "description": [
@@ -2130,6 +2821,11 @@
     "rarity": 5,
     "path": "毀滅",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/23030.png",
+    "stats": {
+      "hp": 562,
+      "atk": 309,
+      "def": 246
+    },
     "passive": {
       "name": "沉酣",
       "description": [
@@ -2147,6 +2843,11 @@
     "rarity": 5,
     "path": "巡獵",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/23031.png",
+    "stats": {
+      "hp": 505,
+      "atk": 337,
+      "def": 246
+    },
     "passive": {
       "name": "震懾",
       "description": [
@@ -2164,6 +2865,11 @@
     "rarity": 5,
     "path": "豐饒",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/23032.png",
+    "stats": {
+      "hp": 562,
+      "atk": 281,
+      "def": 281
+    },
     "passive": {
       "name": "安心",
       "description": [
@@ -2181,6 +2887,11 @@
     "rarity": 5,
     "path": "智識",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/23033.png",
+    "stats": {
+      "hp": 505,
+      "atk": 309,
+      "def": 281
+    },
     "passive": {
       "name": "除邪",
       "description": [
@@ -2198,6 +2909,11 @@
     "rarity": 5,
     "path": "同諧",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/23034.png",
+    "stats": {
+      "hp": 618,
+      "atk": 253,
+      "def": 281
+    },
     "passive": {
       "name": "再啟程",
       "description": [
@@ -2215,6 +2931,11 @@
     "rarity": 5,
     "path": "虛無",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/23035.png",
+    "stats": {
+      "hp": 505,
+      "atk": 253,
+      "def": 351
+    },
     "passive": {
       "name": "新生",
       "description": [
@@ -2232,6 +2953,11 @@
     "rarity": 5,
     "path": "記憶",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/23036.png",
+    "stats": {
+      "hp": 562,
+      "atk": 337,
+      "def": 211
+    },
     "passive": {
       "name": "創設",
       "description": [
@@ -2249,6 +2975,11 @@
     "rarity": 5,
     "path": "智識",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/23037.png",
+    "stats": {
+      "hp": 505,
+      "atk": 337,
+      "def": 246
+    },
     "passive": {
       "name": "思維遊戲",
       "description": [
@@ -2266,6 +2997,11 @@
     "rarity": 5,
     "path": "同諧",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/23038.png",
+    "stats": {
+      "hp": 674,
+      "atk": 281,
+      "def": 211
+    },
     "passive": {
       "name": "希冀",
       "description": [
@@ -2283,6 +3019,11 @@
     "rarity": 5,
     "path": "毀滅",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/23039.png",
+    "stats": {
+      "hp": 730,
+      "atk": 253,
+      "def": 211
+    },
     "passive": {
       "name": "遠望",
       "description": [
@@ -2300,6 +3041,11 @@
     "rarity": 5,
     "path": "記憶",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/23040.png",
+    "stats": {
+      "hp": 674,
+      "atk": 281,
+      "def": 211
+    },
     "passive": {
       "name": "銘刻",
       "description": [
@@ -2317,6 +3063,11 @@
     "rarity": 5,
     "path": "智識",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/23041.png",
+    "stats": {
+      "hp": 505,
+      "atk": 309,
+      "def": 281
+    },
     "passive": {
       "name": "熔鍊",
       "description": [
@@ -2334,6 +3085,11 @@
     "rarity": 5,
     "path": "記憶",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/23042.png",
+    "stats": {
+      "hp": 618,
+      "atk": 253,
+      "def": 281
+    },
     "passive": {
       "name": "包容",
       "description": [
@@ -2351,6 +3107,11 @@
     "rarity": 5,
     "path": "虛無",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/23043.png",
+    "stats": {
+      "hp": 505,
+      "atk": 309,
+      "def": 281
+    },
     "passive": {
       "name": "欺瞞",
       "description": [
@@ -2368,6 +3129,11 @@
     "rarity": 5,
     "path": "毀滅",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/23044.png",
+    "stats": {
+      "hp": 505,
+      "atk": 365,
+      "def": 211
+    },
     "passive": {
       "name": "失卻",
       "description": [
@@ -2385,6 +3151,11 @@
     "rarity": 5,
     "path": "毀滅",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/23045.png",
+    "stats": {
+      "hp": 505,
+      "atk": 309,
+      "def": 281
+    },
     "passive": {
       "name": "騎士之王",
       "description": [
@@ -2402,6 +3173,11 @@
     "rarity": 5,
     "path": "巡獵",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/23046.png",
+    "stats": {
+      "hp": 505,
+      "atk": 309,
+      "def": 281
+    },
     "passive": {
       "name": "赤原獵兵",
       "description": [
@@ -2419,6 +3195,11 @@
     "rarity": 5,
     "path": "虛無",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/23047.png",
+    "stats": {
+      "hp": 505,
+      "atk": 337,
+      "def": 246
+    },
     "passive": {
       "name": "獨奏",
       "description": [
@@ -2436,6 +3217,11 @@
     "rarity": 5,
     "path": "同諧",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/23048.png",
+    "stats": {
+      "hp": 505,
+      "atk": 337,
+      "def": 246
+    },
     "passive": {
       "name": "征服",
       "description": [
@@ -2453,6 +3239,11 @@
     "rarity": 5,
     "path": "記憶",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/23049.png",
+    "stats": {
+      "hp": 618,
+      "atk": 281,
+      "def": 246
+    },
     "passive": {
       "name": "未眠",
       "description": [
@@ -2470,6 +3261,11 @@
     "rarity": 5,
     "path": "虛無",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/23050.png",
+    "stats": {
+      "hp": 618,
+      "atk": 281,
+      "def": 246
+    },
     "passive": {
       "name": "焚身",
       "description": [
@@ -2487,6 +3283,11 @@
     "rarity": 5,
     "path": "存護",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/23051.png",
+    "stats": {
+      "hp": 562,
+      "atk": 309,
+      "def": 246
+    },
     "passive": {
       "name": "新鱗",
       "description": [
@@ -2504,6 +3305,11 @@
     "rarity": 5,
     "path": "記憶",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/23052.png",
+    "stats": {
+      "hp": 674,
+      "atk": 253,
+      "def": 246
+    },
     "passive": {
       "name": "約定",
       "description": [
@@ -2521,6 +3327,11 @@
     "rarity": 5,
     "path": "歡愉",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/23053.png",
+    "stats": {
+      "hp": 562,
+      "atk": 309,
+      "def": 246
+    },
     "passive": {
       "name": "矚目",
       "description": [
@@ -2538,6 +3349,11 @@
     "rarity": 5,
     "path": "歡愉",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/23054.png",
+    "stats": {
+      "hp": 562,
+      "atk": 281,
+      "def": 281
+    },
     "passive": {
       "name": "破局",
       "description": [
@@ -2550,11 +3366,38 @@
     }
   },
   {
+    "id": "23055",
+    "name": "獻給明日的色彩",
+    "rarity": 5,
+    "path": "歡愉",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/23055.png",
+    "stats": {
+      "hp": 562,
+      "atk": 253,
+      "def": 316
+    },
+    "passive": {
+      "name": "揮墨",
+      "description": [
+        "使裝備者的防禦力提高48%。裝備者對我方全體施放歡愉技時，使敵方全體受到的傷害提高10，持續3回合，為裝備者固定恢復22%點能量，併為我方全體回覆等同於裝備者防禦力10%的生命值。",
+        "使裝備者的防禦力提高60%。裝備者對我方全體施放歡愉技時，使敵方全體受到的傷害提高10，持續3回合，為裝備者固定恢復28%點能量，併為我方全體回覆等同於裝備者防禦力13%的生命值。",
+        "使裝備者的防禦力提高72%。裝備者對我方全體施放歡愉技時，使敵方全體受到的傷害提高10，持續3回合，為裝備者固定恢復33%點能量，併為我方全體回覆等同於裝備者防禦力15%的生命值。",
+        "使裝備者的防禦力提高84%。裝備者對我方全體施放歡愉技時，使敵方全體受到的傷害提高10，持續3回合，為裝備者固定恢復39%點能量，併為我方全體回覆等同於裝備者防禦力18%的生命值。",
+        "使裝備者的防禦力提高96%。裝備者對我方全體施放歡愉技時，使敵方全體受到的傷害提高10，持續3回合，為裝備者固定恢復44%點能量，併為我方全體回覆等同於裝備者防禦力20%的生命值。"
+      ]
+    }
+  },
+  {
     "id": "23056",
     "name": "一場謊言的終幕",
     "rarity": 5,
     "path": "巡獵",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/23056.png",
+    "stats": {
+      "hp": 449,
+      "atk": 337,
+      "def": 281
+    },
     "passive": {
       "name": "吞沒",
       "description": [
@@ -2567,11 +3410,192 @@
     }
   },
   {
+    "id": "23057",
+    "name": "歡迎來到銀河城",
+    "rarity": 5,
+    "path": "歡愉",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/23057.png",
+    "stats": {
+      "hp": 618,
+      "atk": 253,
+      "def": 281
+    },
+    "passive": {
+      "name": "穩贏",
+      "description": [
+        "使裝備者的速度提高18%，造成的歡愉傷害無視目標20%的防禦力。當裝備者對自身單體施放終結技時，獲得20點【笑點】。該效果最多觸發1次，施放3次普攻後重置可觸發次數。",
+        "使裝備者的速度提高21%，造成的歡愉傷害無視目標24%的防禦力。當裝備者對自身單體施放終結技時，獲得25點【笑點】。該效果最多觸發1次，施放3次普攻後重置可觸發次數。",
+        "使裝備者的速度提高24%，造成的歡愉傷害無視目標28%的防禦力。當裝備者對自身單體施放終結技時，獲得30點【笑點】。該效果最多觸發1次，施放3次普攻後重置可觸發次數。",
+        "使裝備者的速度提高27%，造成的歡愉傷害無視目標32%的防禦力。當裝備者對自身單體施放終結技時，獲得35點【笑點】。該效果最多觸發1次，施放3次普攻後重置可觸發次數。",
+        "使裝備者的速度提高30%，造成的歡愉傷害無視目標36%的防禦力。當裝備者對自身單體施放終結技時，獲得40點【笑點】。該效果最多觸發1次，施放3次普攻後重置可觸發次數。"
+      ]
+    }
+  },
+  {
+    "id": "23058",
+    "name": "邂逅於下一個花季",
+    "rarity": 5,
+    "path": "歡愉",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/23058.png",
+    "stats": {
+      "hp": 505,
+      "atk": 337,
+      "def": 246
+    },
+    "passive": {
+      "name": "遐想",
+      "description": [
+        "使裝備者的暴擊傷害提高60%，能量恢復效率提高15%。裝備者的能量上限大於2時，每超出10點能量上限額外使能量恢復效率提高10%，最多計入120點超出的能量上限。裝備者施放歡愉技時，使敵方全體受到的傷害提高0%，持續360回合，同類效果無法疊加。",
+        "使裝備者的暴擊傷害提高75%，能量恢復效率提高19%。裝備者的能量上限大於2時，每超出10點能量上限額外使能量恢復效率提高12%，最多計入120點超出的能量上限。裝備者施放歡愉技時，使敵方全體受到的傷害提高0%，持續360回合，同類效果無法疊加。",
+        "使裝備者的暴擊傷害提高90%，能量恢復效率提高23%。裝備者的能量上限大於2時，每超出10點能量上限額外使能量恢復效率提高13%，最多計入120點超出的能量上限。裝備者施放歡愉技時，使敵方全體受到的傷害提高0%，持續360回合，同類效果無法疊加。",
+        "使裝備者的暴擊傷害提高1.05，能量恢復效率提高26%。裝備者的能量上限大於2時，每超出10點能量上限額外使能量恢復效率提高14%，最多計入120點超出的能量上限。裝備者施放歡愉技時，使敵方全體受到的傷害提高0%，持續360回合，同類效果無法疊加。",
+        "使裝備者的暴擊傷害提高1.2，能量恢復效率提高30%。裝備者的能量上限大於2時，每超出10點能量上限額外使能量恢復效率提高16%，最多計入120點超出的能量上限。裝備者施放歡愉技時，使敵方全體受到的傷害提高0%，持續360回合，同類效果無法疊加。"
+      ]
+    }
+  },
+  {
+    "id": "23059",
+    "name": "灼盡煉獄的新骸",
+    "rarity": 5,
+    "path": "虛無",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/23059.png",
+    "stats": {
+      "hp": 730,
+      "atk": 225,
+      "def": 246
+    },
+    "passive": {
+      "name": "淬鍊",
+      "description": [
+        "使裝備者的生命上限提高30%，裝備者回合開始時，固定恢復20點能量，該效果每個波次可觸發1次。裝備者施放戰技攻擊後，使目標陷入【煉獄】狀態，持續2回合，【煉獄】狀態下目標受到的暴擊傷害提高30%，受到來自裝備者的暴擊傷害額外提高30%。",
+        "使裝備者的生命上限提高38%，裝備者回合開始時，固定恢復20點能量，該效果每個波次可觸發1次。裝備者施放戰技攻擊後，使目標陷入【煉獄】狀態，持續2回合，【煉獄】狀態下目標受到的暴擊傷害提高38%，受到來自裝備者的暴擊傷害額外提高38%。",
+        "使裝備者的生命上限提高45%，裝備者回合開始時，固定恢復20點能量，該效果每個波次可觸發1次。裝備者施放戰技攻擊後，使目標陷入【煉獄】狀態，持續2回合，【煉獄】狀態下目標受到的暴擊傷害提高45%，受到來自裝備者的暴擊傷害額外提高45%。",
+        "使裝備者的生命上限提高53%，裝備者回合開始時，固定恢復20點能量，該效果每個波次可觸發1次。裝備者施放戰技攻擊後，使目標陷入【煉獄】狀態，持續2回合，【煉獄】狀態下目標受到的暴擊傷害提高53%，受到來自裝備者的暴擊傷害額外提高53%。",
+        "使裝備者的生命上限提高60%，裝備者回合開始時，固定恢復20點能量，該效果每個波次可觸發1次。裝備者施放戰技攻擊後，使目標陷入【煉獄】狀態，持續2回合，【煉獄】狀態下目標受到的暴擊傷害提高60%，受到來自裝備者的暴擊傷害額外提高60%。"
+      ]
+    }
+  },
+  {
+    "id": "23060",
+    "name": "當一顆星照亮夜空",
+    "rarity": 5,
+    "path": "智識",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/23060.png",
+    "stats": {
+      "hp": 449,
+      "atk": 337,
+      "def": 281
+    },
+    "passive": {
+      "name": "初願",
+      "description": [
+        "使裝備者造成傷害時無視目標0%的防禦力。當裝備者施放助戰技時，恢復6點能量並獲得【啟航】，持續2回合，最多疊加3層。每層【啟航】使助戰技傷害提高20%，【啟航】達到3層時，每層【啟航】使終結技傷害提高20%。",
+        "使裝備者造成傷害時無視目標0%的防禦力。當裝備者施放助戰技時，恢復6點能量並獲得【啟航】，持續2回合，最多疊加3層。每層【啟航】使助戰技傷害提高25%，【啟航】達到3層時，每層【啟航】使終結技傷害提高25%。",
+        "使裝備者造成傷害時無視目標0%的防禦力。當裝備者施放助戰技時，恢復6點能量並獲得【啟航】，持續2回合，最多疊加3層。每層【啟航】使助戰技傷害提高30%，【啟航】達到3層時，每層【啟航】使終結技傷害提高30%。",
+        "使裝備者造成傷害時無視目標0%的防禦力。當裝備者施放助戰技時，恢復6點能量並獲得【啟航】，持續2回合，最多疊加3層。每層【啟航】使助戰技傷害提高35%，【啟航】達到3層時，每層【啟航】使終結技傷害提高35%。",
+        "使裝備者造成傷害時無視目標0%的防禦力。當裝備者施放助戰技時，恢復6點能量並獲得【啟航】，持續2回合，最多疊加3層。每層【啟航】使助戰技傷害提高40%，【啟航】達到3層時，每層【啟航】使終結技傷害提高40%。"
+      ]
+    }
+  },
+  {
+    "id": "23061",
+    "name": "星火悄然閃耀",
+    "rarity": 5,
+    "path": "智識",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/23061.png",
+    "stats": {
+      "hp": 449,
+      "atk": 337,
+      "def": 281
+    },
+    "passive": {
+      "name": "萌芽",
+      "description": [
+        "使裝備者的暴擊率提高18%。我方任意角色在自身同一回合內累計消耗大於等於72%點戰技點時，裝備者獲得【閃耀王冠】，持續4回合。裝備者持有【閃耀王冠】時，我方全體造成的傷害無視目標3的防禦力，裝備者造成的戰技傷害提高20%，同類效果無法疊加。",
+        "使裝備者的暴擊率提高21%。我方任意角色在自身同一回合內累計消耗大於等於84%點戰技點時，裝備者獲得【閃耀王冠】，持續4回合。裝備者持有【閃耀王冠】時，我方全體造成的傷害無視目標3的防禦力，裝備者造成的戰技傷害提高24%，同類效果無法疊加。",
+        "使裝備者的暴擊率提高24%。我方任意角色在自身同一回合內累計消耗大於等於96%點戰技點時，裝備者獲得【閃耀王冠】，持續4回合。裝備者持有【閃耀王冠】時，我方全體造成的傷害無視目標3的防禦力，裝備者造成的戰技傷害提高28%，同類效果無法疊加。",
+        "使裝備者的暴擊率提高27%。我方任意角色在自身同一回合內累計消耗大於等於1.08點戰技點時，裝備者獲得【閃耀王冠】，持續4回合。裝備者持有【閃耀王冠】時，我方全體造成的傷害無視目標3的防禦力，裝備者造成的戰技傷害提高32%，同類效果無法疊加。",
+        "使裝備者的暴擊率提高30%。我方任意角色在自身同一回合內累計消耗大於等於1.2點戰技點時，裝備者獲得【閃耀王冠】，持續4回合。裝備者持有【閃耀王冠】時，我方全體造成的傷害無視目標3的防禦力，裝備者造成的戰技傷害提高36%，同類效果無法疊加。"
+      ]
+    }
+  },
+  {
+    "id": "23062",
+    "name": "所見即我",
+    "rarity": 5,
+    "path": "毀滅",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/23062.png",
+    "stats": {
+      "hp": 505,
+      "atk": 337,
+      "def": 246
+    },
+    "passive": {
+      "name": "隨心",
+      "description": [
+        "使裝備者的攻擊力提高18%，能量恢復效率提高10%。裝備者施放終結技時，每消耗1點能量值，使本次造成的終結技傷害提高0%，最多提高3。裝備者進入戰鬥或施放終結技時，使裝備者獲得【王之娛樂】，持續24%回合。當裝備者持有【王之娛樂】時，我方全體暴擊傷害提高72%，同類效果無法疊加。",
+        "使裝備者的攻擊力提高21%，能量恢復效率提高13%。裝備者施放終結技時，每消耗1點能量值，使本次造成的終結技傷害提高0%，最多提高3。裝備者進入戰鬥或施放終結技時，使裝備者獲得【王之娛樂】，持續30%回合。當裝備者持有【王之娛樂】時，我方全體暴擊傷害提高90%，同類效果無法疊加。",
+        "使裝備者的攻擊力提高24%，能量恢復效率提高15%。裝備者施放終結技時，每消耗1點能量值，使本次造成的終結技傷害提高0%，最多提高3。裝備者進入戰鬥或施放終結技時，使裝備者獲得【王之娛樂】，持續36%回合。當裝備者持有【王之娛樂】時，我方全體暴擊傷害提高1.08，同類效果無法疊加。",
+        "使裝備者的攻擊力提高27%，能量恢復效率提高18%。裝備者施放終結技時，每消耗1點能量值，使本次造成的終結技傷害提高0%，最多提高3。裝備者進入戰鬥或施放終結技時，使裝備者獲得【王之娛樂】，持續42%回合。當裝備者持有【王之娛樂】時，我方全體暴擊傷害提高1.26，同類效果無法疊加。",
+        "使裝備者的攻擊力提高30%，能量恢復效率提高20%。裝備者施放終結技時，每消耗1點能量值，使本次造成的終結技傷害提高0%，最多提高3。裝備者進入戰鬥或施放終結技時，使裝備者獲得【王之娛樂】，持續48%回合。當裝備者持有【王之娛樂】時，我方全體暴擊傷害提高1.44，同類效果無法疊加。"
+      ]
+    }
+  },
+  {
+    "id": "23063",
+    "name": "你將起身歌唱",
+    "rarity": 5,
+    "path": "記憶",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/23063.png",
+    "stats": {
+      "hp": 618,
+      "atk": 309,
+      "def": 211
+    },
+    "passive": {
+      "name": "即興",
+      "description": [
+        "使裝備者的生命上限提高30%，裝備者施放終結技後，為我方恢復1點戰技點。進入戰鬥時，使裝備者的行動提前30%，並使裝備者獲得【新聲】，持續20%回合。裝備者持有【新聲】時，我方全體速度提高2。",
+        "使裝備者的生命上限提高38%，裝備者施放終結技後，為我方恢復1點戰技點。進入戰鬥時，使裝備者的行動提前33%，並使裝備者獲得【新聲】，持續25%回合。裝備者持有【新聲】時，我方全體速度提高2。",
+        "使裝備者的生命上限提高45%，裝備者施放終結技後，為我方恢復1點戰技點。進入戰鬥時，使裝備者的行動提前35%，並使裝備者獲得【新聲】，持續30%回合。裝備者持有【新聲】時，我方全體速度提高2。",
+        "使裝備者的生命上限提高53%，裝備者施放終結技後，為我方恢復1點戰技點。進入戰鬥時，使裝備者的行動提前38%，並使裝備者獲得【新聲】，持續35%回合。裝備者持有【新聲】時，我方全體速度提高2。",
+        "使裝備者的生命上限提高60%，裝備者施放終結技後，為我方恢復1點戰技點。進入戰鬥時，使裝備者的行動提前40%，並使裝備者獲得【新聲】，持續40%回合。裝備者持有【新聲】時，我方全體速度提高2。"
+      ]
+    }
+  },
+  {
+    "id": "23064",
+    "name": "向浪花擲下盛夏",
+    "rarity": 5,
+    "path": "歡愉",
+    "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/23064.png",
+    "stats": {
+      "hp": 505,
+      "atk": 309,
+      "def": 281
+    },
+    "passive": {
+      "name": "浪行",
+      "description": [
+        "使裝備者的暴擊率提高18%。裝備者施放歡愉技時，獲得【風口】，【風口】使裝備者的速度提高24%。若施放的歡愉技與上一次施放的歡愉技不同，則額外獲得【潮流】，【潮流】使裝備者的歡愉度提高40%。\n每個波次開始時或裝備者每施放3次歡愉技後，恢復1個戰技點。",
+        "使裝備者的暴擊率提高21%。裝備者施放歡愉技時，獲得【風口】，【風口】使裝備者的速度提高28%。若施放的歡愉技與上一次施放的歡愉技不同，則額外獲得【潮流】，【潮流】使裝備者的歡愉度提高55%。\n每個波次開始時或裝備者每施放3次歡愉技後，恢復1個戰技點。",
+        "使裝備者的暴擊率提高24%。裝備者施放歡愉技時，獲得【風口】，【風口】使裝備者的速度提高32%。若施放的歡愉技與上一次施放的歡愉技不同，則額外獲得【潮流】，【潮流】使裝備者的歡愉度提高70%。\n每個波次開始時或裝備者每施放3次歡愉技後，恢復1個戰技點。",
+        "使裝備者的暴擊率提高27%。裝備者施放歡愉技時，獲得【風口】，【風口】使裝備者的速度提高36%。若施放的歡愉技與上一次施放的歡愉技不同，則額外獲得【潮流】，【潮流】使裝備者的歡愉度提高85%。\n每個波次開始時或裝備者每施放3次歡愉技後，恢復1個戰技點。",
+        "使裝備者的暴擊率提高30%。裝備者施放歡愉技時，獲得【風口】，【風口】使裝備者的速度提高40%。若施放的歡愉技與上一次施放的歡愉技不同，則額外獲得【潮流】，【潮流】使裝備者的歡愉度提高1。\n每個波次開始時或裝備者每施放3次歡愉技後，恢復1個戰技點。"
+      ]
+    }
+  },
+  {
     "id": "24000",
     "name": "記一位星神的隕落",
     "rarity": 5,
     "path": "毀滅",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/24000.png",
+    "stats": {
+      "hp": 562,
+      "atk": 281,
+      "def": 211
+    },
     "passive": {
       "name": "撲火",
       "description": [
@@ -2589,6 +3613,11 @@
     "rarity": 5,
     "path": "巡獵",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/24001.png",
+    "stats": {
+      "hp": 505,
+      "atk": 281,
+      "def": 246
+    },
     "passive": {
       "name": "獵逐",
       "description": [
@@ -2606,6 +3635,11 @@
     "rarity": 5,
     "path": "存護",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/24002.png",
+    "stats": {
+      "hp": 562,
+      "atk": 225,
+      "def": 281
+    },
     "passive": {
       "name": "珍存",
       "description": [
@@ -2623,6 +3657,11 @@
     "rarity": 5,
     "path": "虛無",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/24003.png",
+    "stats": {
+      "hp": 562,
+      "atk": 281,
+      "def": 211
+    },
     "passive": {
       "name": "混沌靈藥",
       "description": [
@@ -2640,6 +3679,11 @@
     "rarity": 5,
     "path": "智識",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/24004.png",
+    "stats": {
+      "hp": 562,
+      "atk": 281,
+      "def": 211
+    },
     "passive": {
       "name": "無界之思",
       "description": [
@@ -2657,6 +3701,11 @@
     "rarity": 5,
     "path": "記憶",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/24005.png",
+    "stats": {
+      "hp": 562,
+      "atk": 281,
+      "def": 211
+    },
     "passive": {
       "name": "收取",
       "description": [
@@ -2674,6 +3723,11 @@
     "rarity": 5,
     "path": "歡愉",
     "image": "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/icon/light_cone/24006.png",
+    "stats": {
+      "hp": 505,
+      "atk": 281,
+      "def": 246
+    },
     "passive": {
       "name": "開場",
       "description": [

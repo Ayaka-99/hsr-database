@@ -375,8 +375,8 @@ async function fetchCharacters(baseUrl: string): Promise<Character[]> {
       const rarity = parseRarity(entry.rank);
       characters.push({
         id,
-        name: toTW(detail.name || entry.zh || entry.en),
-        nameEn: entry.en || undefined,
+        name: toTW(stripFormatOnly(detail.name || entry.zh || entry.en)),
+        nameEn: entry.en ? stripFormatOnly(entry.en) : undefined,
         rarity: (rarity === 5 ? 5 : 4) as Character['rarity'],
         path:    PATH_MAP[entry.baseType]    ?? '巡獵',
         element: ELEMENT_MAP[entry.damageType] ?? '物理',
@@ -409,10 +409,21 @@ interface ApiLightConeList {
   };
 }
 
+interface LcStatEntry {
+  max_level: number;
+  base_hp: number;
+  base_hp_add: number;
+  base_attack: number;
+  base_attack_add: number;
+  base_defence: number;
+  base_defence_add: number;
+}
+
 interface ApiLightConeDetail {
   name: string;
   rarity?: string;
   base_type?: string;
+  stats?: LcStatEntry[];
   refinements: {
     name: string;
     desc: string;
@@ -451,12 +462,25 @@ async function fetchLightCones(baseUrl: string): Promise<LightCone[]> {
         return desc;
       });
 
+      // 取得滿級屬性（Lv.80）
+      let stats: LightCone['stats'] = undefined;
+      const maxStage = detail.stats?.find(s => s.max_level === 80);
+      if (maxStage) {
+        const levels = maxStage.max_level - (maxStage.max_level === 80 ? 70 : 60);
+        stats = {
+          hp:  Math.round(maxStage.base_hp + maxStage.base_hp_add * levels),
+          atk: Math.round(maxStage.base_attack + maxStage.base_attack_add * levels),
+          def: Math.round(maxStage.base_defence + maxStage.base_defence_add * levels),
+        };
+      }
+
       lightCones.push({
         id,
         name: toTW(detail.name || entry.zh || entry.en),
         rarity: ([3, 4, 5].includes(rarity) ? rarity : 3) as LightCone['rarity'],
         path:  PATH_MAP[entry.baseType] ?? '巡獵',
         image: `${IMG_BASE}/icon/light_cone/${id}.png`,
+        stats,
         passive: {
           name: toTW(ref?.name ?? ''),
           description: descriptions.map(toTW),
@@ -473,7 +497,7 @@ async function fetchLightCones(baseUrl: string): Promise<LightCone[]> {
   return lightCones;
 }
 
-// ─── 遺器套裝資料 ─────────────────────────────────────────
+// ─── 遺器資料 ─────────────────────────────────────────
 
 interface ApiRelicSetEffect {
   zh: string;
@@ -506,13 +530,13 @@ async function fetchRelicSets(baseUrl: string): Promise<RelicSet[]> {
 
     sets.push({
       id,
-      name: entry.zh,
+      name: toTW(entry.zh),
       nameEn: entry.en,
       icon: `${IMG_BASE}/icon/relic/${id}.png`,
       type: effect4 ? 'relic' : 'ornament',
       effects: effect4
-        ? { 2: effect2, 4: effect4 }
-        : { 2: effect2 },
+        ? { 2: toTW(effect2), 4: toTW(effect4) }
+        : { 2: toTW(effect2) },
     });
   }
 

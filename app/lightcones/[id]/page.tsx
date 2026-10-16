@@ -72,6 +72,8 @@ export default async function LightConePage({ params }: { params: Promise<{ id: 
   const lc = getLightConeById(id);
   if (!lc) notFound();
 
+  const isGold = lc.rarity === 5;
+  const isPurple = lc.rarity === 4;
   const color = RARITY_COLOR[lc.rarity] ?? RARITY_COLOR[3];
   const passiveStyle = PASSIVE_COLOR[lc.rarity] ?? PASSIVE_COLOR[3];
 
@@ -79,77 +81,111 @@ export default async function LightConePage({ params }: { params: Promise<{ id: 
   const mergedDesc = mergeRefinements(lc.passive.description);
 
   return (
-    <div className="max-w-3xl mx-auto">
+    <div className="max-w-3xl mx-auto pb-12">
       {/* 返回按鈕 */}
-      <Link href="/lightcones" className="inline-flex items-center gap-1.5 text-sm text-gray-500 hover:text-gray-200 transition-colors mb-6">
-        ← 光錐列表
+      <Link
+        href="/lightcones"
+        className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/[0.04] border border-white/10 text-xs sm:text-sm text-gray-300 hover:text-white hover:border-[#d4af37]/60 hover:bg-[#d4af37]/10 transition-all duration-200 mb-6 group cursor-pointer"
+      >
+        <span className="transition-transform group-hover:-translate-x-0.5">←</span>
+        <span>返回光錐列表</span>
       </Link>
 
-      {/* 頭部 */}
-      <div className="flex flex-col sm:flex-row gap-6 mb-8">
-        {/* 光錐圖片 */}
-        <div className={`
-          relative w-40 aspect-[3/4] h-auto rounded-xl overflow-hidden shrink-0
-          border bg-gradient-to-b from-[#1a1a2e] to-[#0d0d1a] ${color}
-        `}>
-          <Image
-            src={lc.image}
-            alt={lc.name}
-            fill
-            className="object-contain p-3"
-            unoptimized
-            priority
-          />
-        </div>
-
-        {/* 基本資訊 + 屬性 */}
-        <div className="flex flex-col justify-center gap-2">
-          <div className={`text-sm font-semibold ${color.split(' ')[0]}`}>
-            {'★'.repeat(lc.rarity)}
-          </div>
-          <h1 className="text-3xl font-bold text-white">{lc.name}</h1>
-          <div className="text-sm">
-            <span className="text-gray-500">命途  </span>
-            <span className="text-white font-medium">{lc.path}</span>
+      {/* 頭部英雄區塊 */}
+      <div className="p-5 sm:p-6 rounded-3xl bg-white/[0.03] border border-white/[0.08] backdrop-blur-xl shadow-2xl shadow-black/40 mb-8">
+        <div className="flex flex-col sm:flex-row gap-6 items-center sm:items-start">
+          {/* 光錐圖片 */}
+          <div className={`
+            relative w-44 aspect-[3/4] rounded-2xl overflow-hidden shrink-0
+            border bg-gradient-to-b from-[#18192e] to-[#0c0d18]
+            ${isGold ? 'border-[#d4af37]/50 card-gold-glow' : isPurple ? 'border-[#7e57c2]/50 card-purple-glow' : 'border-blue-500/40'}
+          `}>
+            <Image
+              src={lc.image}
+              alt={lc.name}
+              fill
+              className="object-contain p-3 drop-shadow-[0_10px_16px_rgba(0,0,0,0.6)]"
+              unoptimized
+              priority
+            />
           </div>
 
-          {/* 滿級屬性（Lv.80） */}
-          {lc.stats && (
-            <div className="mt-2 flex flex-wrap gap-3">
-              <div className="flex flex-col items-center rounded-lg border border-white/10 bg-white/5 px-4 py-2 min-w-[72px]">
-                <span className="text-[10px] text-gray-500 mb-0.5">生命值</span>
-                <span className="text-sm font-bold text-white">{lc.stats.hp.toLocaleString()}</span>
-              </div>
-              <div className="flex flex-col items-center rounded-lg border border-white/10 bg-white/5 px-4 py-2 min-w-[72px]">
-                <span className="text-[10px] text-gray-500 mb-0.5">攻擊力</span>
-                <span className="text-sm font-bold text-white">{lc.stats.atk.toLocaleString()}</span>
-              </div>
-              <div className="flex flex-col items-center rounded-lg border border-white/10 bg-white/5 px-4 py-2 min-w-[72px]">
-                <span className="text-[10px] text-gray-500 mb-0.5">防禦力</span>
-                <span className="text-sm font-bold text-white">{lc.stats.def.toLocaleString()}</span>
+          {/* 基本資訊 + 屬性 */}
+          <div className="flex-1 flex flex-col justify-center gap-3 w-full">
+            <div className={`
+              w-fit text-xs font-black tracking-widest px-2.5 py-0.5 rounded-full backdrop-blur-md border shadow-sm
+              ${isGold
+                ? 'bg-amber-950/60 border-amber-400/50 text-[#ffd700]'
+                : isPurple
+                  ? 'bg-purple-950/60 border-purple-400/50 text-purple-300'
+                  : 'bg-blue-950/60 border-blue-400/50 text-blue-300'}
+            `}>
+              {'★'.repeat(lc.rarity)}
+            </div>
+
+            <div>
+              <h1 className="text-2xl sm:text-3xl font-black text-white tracking-tight">{lc.name}</h1>
+              <div className="flex items-center gap-2 mt-1.5">
+                <span className="px-2.5 py-0.5 rounded-md bg-white/[0.05] border border-white/10 text-xs text-gray-300 font-medium">
+                  命途：<span className="text-white font-semibold">{lc.path}</span>
+                </span>
               </div>
             </div>
-          )}
+
+            {/* 滿級屬性（Lv.80） */}
+            {lc.stats && (
+              <div className="mt-2 pt-3 border-t border-white/[0.08]">
+                <div className="text-[11px] font-bold text-gray-400 uppercase tracking-wider mb-2">
+                  Lv.80 基礎屬性面板
+                </div>
+                <div className="grid grid-cols-3 gap-2.5">
+                  <div className="flex flex-col items-center rounded-xl border border-white/[0.07] bg-white/[0.02] p-2.5 hover:border-white/20 transition-colors">
+                    <span className="text-[11px] text-gray-400 mb-0.5">生命值</span>
+                    <span className="text-base font-bold text-white">{lc.stats.hp.toLocaleString()}</span>
+                  </div>
+                  <div className="flex flex-col items-center rounded-xl border border-white/[0.07] bg-white/[0.02] p-2.5 hover:border-white/20 transition-colors">
+                    <span className="text-[11px] text-gray-400 mb-0.5">攻擊力</span>
+                    <span className="text-base font-bold text-white">{lc.stats.atk.toLocaleString()}</span>
+                  </div>
+                  <div className="flex flex-col items-center rounded-xl border border-white/[0.07] bg-white/[0.02] p-2.5 hover:border-white/20 transition-colors">
+                    <span className="text-[11px] text-gray-400 mb-0.5">防禦力</span>
+                    <span className="text-base font-bold text-white">{lc.stats.def.toLocaleString()}</span>
+                  </div>
+                </div>
+              </div>
+            )}
+          </div>
         </div>
       </div>
 
       {/* 被動技能 */}
       <div>
-        <h2 className="text-lg font-bold text-white mb-3">被動技能</h2>
-        <div className={`rounded-xl border ${passiveStyle.border} ${passiveStyle.bg} p-4`}>
-          <p className={`${passiveStyle.name} font-semibold mb-4`}>{lc.passive.name}</p>
-
-          {/* 精煉等級標籤列 */}
-          <div className="flex flex-wrap gap-1.5 mb-4">
-            {REFINEMENT_LABELS.map((label, i) => (
-              <span key={i} className="text-xs font-bold text-[#c9a227] bg-[#c9a227]/10 border border-[#c9a227]/30 rounded-full px-2 py-0.5">
-                精{label}
-              </span>
-            ))}
+        <div className="flex items-center gap-2 mb-4">
+          <h2 className="text-xl font-bold text-white tracking-wide">光錐技能</h2>
+          <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-[#d4af37]/20 border border-[#d4af37]/50 text-[#ffd700]">
+            Passive
+          </span>
+        </div>
+        <div className="rounded-2xl border border-white/[0.08] bg-gradient-to-br from-white/[0.04] to-white/[0.01] p-5 sm:p-6 backdrop-blur-xl shadow-xl shadow-black/30">
+          <div className="flex items-center justify-between mb-3 flex-wrap gap-2">
+            <h3 className={`text-base font-extrabold ${passiveStyle.name}`}>{lc.passive.name}</h3>
+            {/* 精煉等級標籤列 */}
+            <div className="flex items-center gap-1">
+              {REFINEMENT_LABELS.map((label, i) => (
+                <span
+                  key={i}
+                  className="text-[11px] font-extrabold text-[#ffd700] bg-[#d4af37]/15 border border-[#d4af37]/40 rounded-md px-1.5 py-0.5"
+                >
+                  精{label}
+                </span>
+              ))}
+            </div>
           </div>
 
           {/* 合併描述 */}
-          <p className="text-sm text-gray-300 whitespace-pre-line leading-relaxed">{mergedDesc}</p>
+          <p className="text-sm text-gray-200/90 whitespace-pre-line leading-relaxed">
+            {mergedDesc}
+          </p>
         </div>
       </div>
     </div>

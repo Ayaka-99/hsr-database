@@ -10,34 +10,53 @@ const RARITY_COLOR: Record<number, string> = {
 };
 
 export default function LightConeCard({ lc }: { lc: LightCone }) {
-  const color = RARITY_COLOR[lc.rarity] ?? RARITY_COLOR[3];
+  const isGold = lc.rarity === 5;
+  const isPurple = lc.rarity === 4;
 
   return (
-    <Link href={`/lightcones/${lc.id}`}>
+    <Link href={`/lightcones/${lc.id}`} className="group block focus:outline-none">
       <div className={`
-        relative rounded-xl overflow-hidden cursor-pointer
-        bg-white/5 border backdrop-blur-sm
-        transition-all duration-200 hover:scale-105 ${color}
+        relative rounded-2xl overflow-hidden cursor-pointer
+        bg-gradient-to-b from-white/[0.07] to-white/[0.02] border backdrop-blur-md
+        transition-all duration-300 ease-out group-hover:-translate-y-1.5
+        ${isGold
+          ? 'border-[#d4af37]/30 group-hover:border-[#d4af37]/80 card-gold-glow'
+          : isPurple
+            ? 'border-[#7e57c2]/30 group-hover:border-[#7e57c2]/80 card-purple-glow'
+            : 'border-blue-500/25 group-hover:border-blue-400/60 hover:shadow-[0_4px_20px_-2px_rgba(59,130,246,0.3)]'}
       `}>
+        {/* 光暈掃掠 (Shimmer sheen) */}
+        <div className="animate-shimmer" />
+
         {/* 稀有度 */}
-        <div className={`absolute top-2 right-2 text-xs font-bold z-10 ${color.split(' ')[0]}`}>
+        <div className={`
+          absolute top-2.5 right-2.5 text-xs font-black tracking-widest z-10 px-2 py-0.5 rounded-full
+          backdrop-blur-md border shadow-sm
+          ${isGold
+            ? 'bg-amber-950/60 border-amber-400/40 text-[#ffd700]'
+            : isPurple
+              ? 'bg-purple-950/60 border-purple-400/40 text-purple-300'
+              : 'bg-blue-950/60 border-blue-400/40 text-blue-300'}
+        `}>
           {'★'.repeat(lc.rarity)}
         </div>
 
         {/* 光錐圖片 */}
-        <div className="relative w-full aspect-[3/4] bg-gradient-to-b from-[#1a1a2e] to-[#0d0d1a]">
-          <Image
-            src={lc.image}
-            alt={lc.name}
-            fill
-            className="object-contain p-2"
-            unoptimized
-          />
+        <div className="relative w-full aspect-[3/4] bg-gradient-to-b from-[#18192e] to-[#0c0d18] overflow-hidden">
+          <div className="w-full h-full transition-transform duration-500 ease-out group-hover:scale-105">
+            <Image
+              src={lc.image}
+              alt={lc.name}
+              fill
+              className="object-contain p-3 drop-shadow-[0_8px_12px_rgba(0,0,0,0.5)]"
+              unoptimized
+            />
+          </div>
         </div>
 
         {/* 光錐資訊 */}
-        <div className="p-3 border-t border-white/5">
-          <p className="font-semibold text-sm text-white truncate">{lc.name}</p>
+        <div className="p-3 bg-[#0f101d]/90 border-t border-white/[0.06]">
+          <p className="font-bold text-sm text-gray-100 group-hover:text-white transition-colors truncate">{lc.name}</p>
           <p className="text-xs mt-0.5 text-gray-400">{lc.path}</p>
         </div>
       </div>

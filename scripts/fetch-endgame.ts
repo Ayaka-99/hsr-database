@@ -335,10 +335,10 @@ async function main() {
   mkdirSync(DATA_DIR, { recursive: true });
 
   // 1. 取得最新版本號
-  const manifest = await fetchJson<{ hsr: { latest: string } }>(MANIFEST_URL);
-  const version = manifest.hsr.latest;
+  const manifest = await fetchJson<{ hsr: { live: string; latest: string } }>(MANIFEST_URL);
+  const version = manifest.hsr.live;
   const BASE_URL = `https://static.nanoka.cc/hsr/${version}`;
-  console.log(`   版本：${version}\n`);
+  console.log(`   版本：${version}（live）\n`);
 
   // 2. 建立怪物查詢表
   const monsters = await buildMonsterMap(BASE_URL);

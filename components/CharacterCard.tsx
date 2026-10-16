@@ -34,38 +34,52 @@ export default function CharacterCard({ character }: { character: Character }) {
   const displayName = getDisplayName(character, lang);
 
   return (
-    <Link href={`/characters/${character.id}`}>
+    <Link href={`/characters/${character.id}`} className="group block focus:outline-none">
       <div className={`
-        relative rounded-xl overflow-hidden cursor-pointer
-        bg-white/5 border backdrop-blur-sm
-        transition-all duration-200 hover:scale-105
+        relative rounded-2xl overflow-hidden cursor-pointer
+        bg-gradient-to-b from-white/[0.07] to-white/[0.02] border backdrop-blur-md
+        transition-all duration-300 ease-out group-hover:-translate-y-1.5
         ${isGold
-          ? 'border-[#c9a227]/30 hover:border-[#c9a227]/70 hover:shadow-[0_0_20px_#c9a22730]'
-          : 'border-[#6b4ff5]/30 hover:border-[#6b4ff5]/70 hover:shadow-[0_0_20px_#6b4ff530]'}
+          ? 'border-[#d4af37]/30 group-hover:border-[#d4af37]/80 card-gold-glow'
+          : 'border-[#7e57c2]/30 group-hover:border-[#7e57c2]/80 card-purple-glow'}
       `}>
+        {/* 光暈掃掠 (Shimmer sheen) */}
+        <div className="animate-shimmer" />
+
         {/* 稀有度標記 */}
-        <div className={`absolute top-2 right-2 text-xs font-bold z-10 ${isGold ? 'text-[#c9a227]' : 'text-violet-400'}`}>
+        <div className={`
+          absolute top-2.5 right-2.5 text-xs font-black tracking-widest z-10 px-2 py-0.5 rounded-full
+          backdrop-blur-md border shadow-sm
+          ${isGold
+            ? 'bg-amber-950/60 border-amber-400/40 text-[#ffd700]'
+            : 'bg-purple-950/60 border-purple-400/40 text-purple-300'}
+        `}>
           {'★'.repeat(character.rarity)}
         </div>
 
-        {/* 角色圖片 */}
-        <div className={`relative w-full aspect-square bg-gradient-to-b ${ELEMENT_GRADIENT[character.element] ?? 'from-[#1a1a2e] to-[#0d0d1a]'}`}>
-          <AvatarImage
-            src={character.image}
-            alt={displayName}
-            className="object-contain p-3"
-          />
+        {/* 角色圖片區 */}
+        <div className={`relative w-full aspect-square bg-gradient-to-b ${ELEMENT_GRADIENT[character.element] ?? 'from-[#1a1a2e] to-[#0d0d1a]'} overflow-hidden`}>
+          <div className="w-full h-full transition-transform duration-500 ease-out group-hover:scale-105">
+            <AvatarImage
+              src={character.image}
+              alt={displayName}
+              className="object-contain p-2.5 drop-shadow-[0_8px_12px_rgba(0,0,0,0.5)]"
+            />
+          </div>
         </div>
 
         {/* 角色資訊 */}
-        <div className="p-3 border-t border-white/5">
-          <p className="font-semibold text-sm text-white truncate">{displayName}</p>
-          <p className="text-xs mt-0.5 text-gray-400">
-            {character.path} ·{' '}
-            <span className={ELEMENT_COLOR[character.element] ?? 'text-gray-400'}>
+        <div className="p-3 bg-[#0f101d]/90 border-t border-white/[0.06] flex flex-col gap-0.5">
+          <p className="font-bold text-sm text-gray-100 group-hover:text-white transition-colors truncate">
+            {displayName}
+          </p>
+          <div className="flex items-center gap-1.5 text-xs text-gray-400">
+            <span className="text-gray-400/80">{character.path}</span>
+            <span className="inline-block w-1 h-1 rounded-full bg-white/20" />
+            <span className={`font-medium ${ELEMENT_COLOR[character.element] ?? 'text-gray-400'}`}>
               {character.element}
             </span>
-          </p>
+          </div>
         </div>
       </div>
     </Link>

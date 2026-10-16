@@ -124,8 +124,13 @@ export default function SkillSection({
   return (
     <div>
       {/* ── 技能區塊 ── */}
-      <h2 className="text-lg font-bold text-white mb-3">技能</h2>
-      <div className="space-y-3">
+      <div className="flex items-center gap-2 mb-4">
+        <h2 className="text-xl font-bold text-white tracking-wide">戰鬥技能</h2>
+        <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-cyan-500/20 border border-cyan-500/40 text-cyan-300">
+          Skills
+        </span>
+      </div>
+      <div className="space-y-3.5">
         {keys.map(key => {
           const skill = skills[key];
           if (!skill.name) return null;
@@ -139,48 +144,52 @@ export default function SkillSection({
             : skill.description;
 
           return (
-            <div key={key} className={`rounded-lg border p-4 ${SKILL_COLORS[key]}`}>
-              <div className="flex items-center gap-2 mb-2 flex-wrap">
-                <div className="relative w-10 h-10 shrink-0 rounded-md overflow-hidden bg-white/5 border border-white/10">
+            <div
+              key={key}
+              className={`rounded-2xl border p-4 sm:p-5 backdrop-blur-md transition-all duration-200 hover:shadow-lg ${SKILL_COLORS[key]}`}
+            >
+              <div className="flex items-center gap-3 mb-3 flex-wrap">
+                <div className="relative w-11 h-11 shrink-0 rounded-xl overflow-hidden bg-black/40 border border-white/10 p-1">
                   <Image
                     src={getSkillIconUrl(key)}
                     alt={skill.name}
                     fill
-                    className="object-contain p-0.5"
+                    className="object-contain p-0.5 drop-shadow-md"
                     unoptimized
                     onError={(e) => {
                       (e.currentTarget as HTMLImageElement).style.display = 'none';
                     }}
                   />
                 </div>
-                <span className={`text-xs font-semibold px-2 py-0.5 rounded-full border ${SKILL_LABEL_COLORS[key]} border-current/30`}>
-                  {SKILL_LABELS[key]}
-                </span>
-                <span className="text-white font-semibold">{skill.name}</span>
+                <div className="flex items-center gap-2">
+                  <span className={`text-xs font-bold px-2.5 py-0.5 rounded-full border ${SKILL_LABEL_COLORS[key]} border-current/40 bg-black/20`}>
+                    {SKILL_LABELS[key]}
+                  </span>
+                  <span className="text-white font-bold text-base">{skill.name}</span>
+                </div>
                 {showSlider && (
-                  <span className={`ml-auto text-xs font-bold ${SKILL_LABEL_COLORS[key]}`}>
-                    Lv.{lv}
+                  <span className={`ml-auto text-xs font-extrabold px-2.5 py-1 rounded-lg bg-black/30 border border-white/10 ${SKILL_LABEL_COLORS[key]}`}>
+                    Lv.{lv} / {maxLv}
                   </span>
                 )}
               </div>
 
               {showSlider && (
-                <div className="mb-3 flex items-center gap-3">
-                  <span className="text-xs text-gray-500 shrink-0">1</span>
+                <div className="mb-3.5 px-3 py-2 rounded-xl bg-black/25 border border-white/5 flex items-center gap-3">
+                  <span className="text-[11px] font-bold text-gray-500 shrink-0">Lv.1</span>
                   <input
                     type="range"
                     min={1}
                     max={maxLv}
                     value={lv}
                     onChange={e => setLevels(prev => ({ ...prev, [key]: +e.target.value }))}
-                    className="flex-1 h-1.5 accent-current cursor-pointer"
-                    style={{ accentColor: 'currentColor' }}
+                    className="flex-1 h-2 rounded-lg accent-[#d4af37] bg-white/10 cursor-pointer"
                   />
-                  <span className="text-xs text-gray-500 shrink-0">{maxLv}</span>
+                  <span className="text-[11px] font-bold text-gray-500 shrink-0">Lv.{maxLv}</span>
                 </div>
               )}
 
-              <p className="text-sm text-gray-300 whitespace-pre-line leading-relaxed">
+              <p className="text-sm text-gray-200/90 whitespace-pre-line leading-relaxed">
                 {description || '—'}
               </p>
             </div>

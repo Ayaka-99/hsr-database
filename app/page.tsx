@@ -82,16 +82,42 @@ export default function HomePage() {
 
   return (
     <>
-      <h1 className="text-xl sm:text-2xl font-bold text-white mb-4">角色列表</h1>
+      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-5">
+        <div>
+          <h1 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight flex items-center gap-2">
+            角色列表
+            <span className="text-xs font-medium px-2.5 py-0.5 rounded-full bg-white/10 text-gray-300 border border-white/10">
+              {filtered.length}
+            </span>
+          </h1>
+          <p className="text-xs text-gray-400 mt-0.5">點擊卡片檢視角色基礎屬性、技能行跡與命座數據</p>
+        </div>
 
-      {/* 搜尋欄 */}
-      <input
-        type="text"
-        placeholder="搜尋角色名稱…"
-        value={search}
-        onChange={e => setSearch(e.target.value)}
-        className="w-full md:w-80 mb-4 px-4 py-2 rounded-lg bg-white/5 border border-white/15 text-white placeholder-gray-500 text-sm focus:outline-none focus:border-white/40"
-      />
+        {/* 搜尋欄 */}
+        <div className="relative w-full sm:w-72">
+          <input
+            type="text"
+            placeholder="搜尋角色名稱…"
+            value={search}
+            onChange={e => setSearch(e.target.value)}
+            className="w-full pl-9 pr-8 py-2 rounded-xl bg-white/[0.04] border border-white/10 text-white placeholder-gray-500 text-sm backdrop-blur-md transition-all duration-200 focus:outline-none focus:border-[#d4af37]/70 focus:bg-white/[0.08] focus:ring-2 focus:ring-[#d4af37]/20"
+          />
+          {/* 放大鏡圖示 */}
+          <span className="absolute left-3 top-2.5 text-gray-400 pointer-events-none text-xs">
+            🔍
+          </span>
+          {/* 清除按鈕 */}
+          {search && (
+            <button
+              onClick={() => setSearch('')}
+              className="absolute right-2.5 top-2.5 text-gray-400 hover:text-white text-xs w-4 h-4 rounded-full bg-white/10 flex items-center justify-center transition-colors"
+              aria-label="清除搜尋"
+            >
+              ✕
+            </button>
+          )}
+        </div>
+      </div>
 
       <FilterBar
         path={path}
@@ -102,10 +128,8 @@ export default function HomePage() {
         onRarity={setRarity}
       />
 
-      <p className="text-sm text-gray-500 mb-4">共 {filtered.length} 個角色</p>
-
       {/* 角色卡片網格 */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-7 xl:grid-cols-8 gap-2 sm:gap-3">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-7 xl:grid-cols-8 gap-3 sm:gap-4">
         {filtered.map(c => (
           <CharacterCard key={c.id} character={c} />
         ))}

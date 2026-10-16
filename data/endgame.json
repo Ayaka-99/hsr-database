@@ -1,6 +1,1245 @@
 {
   "maze": [
     {
+      "id": "1036",
+      "name": "物競天擇",
+      "beginTime": "",
+      "endTime": "",
+      "buff": "我方目標施放終結技時獲得5個笑點。\n每個輪開始時，使阿哈立即獲得1個固定計入20笑點的額外回合，該回合不消耗笑點。",
+      "floors": [
+        {
+          "name": "第一層",
+          "weakness1": [
+            "量子"
+          ],
+          "weakness2": [
+            "物理",
+            "虛數"
+          ],
+          "monsters1": [
+            {
+              "id": "5013060",
+              "name": "破曉戰隊•曙光",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_5013060.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "2013020",
+              "name": "金人勾魂使",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_2013020.webp"
+            }
+          ]
+        },
+        {
+          "name": "第二層",
+          "weakness1": [
+            "物理",
+            "火"
+          ],
+          "weakness2": [
+            "冰",
+            "風"
+          ],
+          "monsters1": [
+            {
+              "id": "3003040",
+              "name": "「同音共律的來日」",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_3003040.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "2023020",
+              "name": "豐饒靈獸•長右",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_2023020.webp"
+            }
+          ]
+        },
+        {
+          "name": "第三層",
+          "weakness1": [
+            "火",
+            "冰"
+          ],
+          "weakness2": [
+            "火"
+          ],
+          "monsters1": [
+            {
+              "id": "4063010",
+              "name": "金血憶靈•翼蛇形",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_4063010.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "5013010",
+              "name": "搖滾狂徒",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_5013010.webp"
+            }
+          ]
+        },
+        {
+          "name": "第四層",
+          "weakness1": [
+            "風"
+          ],
+          "weakness2": [
+            "雷",
+            "虛數"
+          ],
+          "monsters1": [
+            {
+              "id": "2033010",
+              "name": "咆哮靈柩",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_2033010.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "2013020",
+              "name": "金人勾魂使",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_2013020.webp"
+            }
+          ]
+        },
+        {
+          "name": "第五層",
+          "weakness1": [
+            "風"
+          ],
+          "weakness2": [
+            "物理",
+            "冰"
+          ],
+          "monsters1": [
+            {
+              "id": "2033010",
+              "name": "咆哮靈柩",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_2033010.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "4063010",
+              "name": "金血憶靈•翼蛇形",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_4063010.webp"
+            }
+          ]
+        },
+        {
+          "name": "第六層",
+          "weakness1": [
+            "量子"
+          ],
+          "weakness2": [
+            "物理",
+            "虛數"
+          ],
+          "monsters1": [
+            {
+              "id": "5013060",
+              "name": "破曉戰隊•曙光",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_5013060.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "2013020",
+              "name": "金人勾魂使",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_2013020.webp"
+            }
+          ]
+        },
+        {
+          "name": "第七層",
+          "weakness1": [
+            "物理",
+            "火"
+          ],
+          "weakness2": [
+            "冰",
+            "風"
+          ],
+          "monsters1": [
+            {
+              "id": "3003040",
+              "name": "「同音共律的來日」",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_3003040.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "2023020",
+              "name": "豐饒靈獸•長右",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_2023020.webp"
+            }
+          ]
+        },
+        {
+          "name": "第八層",
+          "weakness1": [
+            "火",
+            "冰"
+          ],
+          "weakness2": [
+            "火"
+          ],
+          "monsters1": [
+            {
+              "id": "4063010",
+              "name": "金血憶靈•翼蛇形",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_4063010.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "5013010",
+              "name": "搖滾狂徒",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_5013010.webp"
+            }
+          ]
+        },
+        {
+          "name": "第九層",
+          "weakness1": [
+            "風"
+          ],
+          "weakness2": [
+            "雷",
+            "虛數"
+          ],
+          "monsters1": [
+            {
+              "id": "2033010",
+              "name": "咆哮靈柩",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_2033010.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "2013020",
+              "name": "金人勾魂使",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_2013020.webp"
+            }
+          ]
+        },
+        {
+          "name": "第十層",
+          "weakness1": [
+            "火",
+            "虛數"
+          ],
+          "weakness2": [
+            "冰",
+            "雷"
+          ],
+          "monsters1": [
+            {
+              "id": "3003014",
+              "name": "驚夢劇團的十七分熟",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_3003010.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "4034010",
+              "name": "至黑之劍，盜火行者",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_4034010.webp"
+            }
+          ]
+        },
+        {
+          "name": "第十一層",
+          "weakness1": [
+            "物理",
+            "風"
+          ],
+          "weakness2": [
+            "冰",
+            "量子"
+          ],
+          "monsters1": [
+            {
+              "id": "3024030",
+              "name": "示死禍源：深魘蝗災",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_3024030.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "8024010",
+              "name": "蟲群•真蟄蟲（完整）",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_8024010.webp"
+            }
+          ]
+        },
+        {
+          "name": "第十二層",
+          "weakness1": [
+            "火",
+            "風"
+          ],
+          "weakness2": [
+            "量子",
+            "虛數"
+          ],
+          "monsters1": [
+            {
+              "id": "2034010",
+              "name": "步離戰首•呼雷",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_2034010.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "5034010",
+              "name": "墮神之血•亞婆離",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_5034010.webp"
+            }
+          ]
+        },
+        {
+          "name": "第undefined層",
+          "weakness1": [],
+          "weakness2": [],
+          "monsters1": [],
+          "monsters2": []
+        }
+      ]
+    },
+    {
+      "id": "1035",
+      "name": "來生泅渡",
+      "beginTime": "",
+      "endTime": "",
+      "buff": "我方編隊中第一位角色獲得歡愉技【極樂漩渦】，可對敵方全體造成100%的角色屬性歡愉傷害。\n每個輪開始時，使阿哈立即獲得1個固定計入20笑點的額外回合，該回合不消耗笑點。",
+      "floors": [
+        {
+          "name": "第一層",
+          "weakness1": [
+            "量子"
+          ],
+          "weakness2": [
+            "物理",
+            "虛數"
+          ],
+          "monsters1": [
+            {
+              "id": "1003010",
+              "name": "銀鬃尉官",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_1003010.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "2013020",
+              "name": "金人勾魂使",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_2013020.webp"
+            }
+          ]
+        },
+        {
+          "name": "第二層",
+          "weakness1": [
+            "物理",
+            "火"
+          ],
+          "weakness2": [
+            "冰",
+            "風"
+          ],
+          "monsters1": [
+            {
+              "id": "3003020",
+              "name": "驚夢劇團的甜猿泰山",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_3003020.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "2023010",
+              "name": "「藥王秘傳」煉形者",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_2023010.webp"
+            }
+          ]
+        },
+        {
+          "name": "第三層",
+          "weakness1": [
+            "火",
+            "冰"
+          ],
+          "weakness2": [
+            "火"
+          ],
+          "monsters1": [
+            {
+              "id": "1013010",
+              "name": "自動機兵•灰熊",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_1013010.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "1013010",
+              "name": "自動機兵•灰熊",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_1013010.webp"
+            }
+          ]
+        },
+        {
+          "name": "第四層",
+          "weakness1": [
+            "風"
+          ],
+          "weakness2": [
+            "雷",
+            "虛數"
+          ],
+          "monsters1": [
+            {
+              "id": "2013010",
+              "name": "金人司閽",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_2013010.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "1013020",
+              "name": "自動機兵•齒狼",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_1013020.webp"
+            }
+          ]
+        },
+        {
+          "name": "第五層",
+          "weakness1": [
+            "雷",
+            "風"
+          ],
+          "weakness2": [
+            "物理",
+            "冰"
+          ],
+          "monsters1": [
+            {
+              "id": "2013010",
+              "name": "金人司閽",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_2013010.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "1003010",
+              "name": "銀鬃尉官",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_1003010.webp"
+            }
+          ]
+        },
+        {
+          "name": "第六層",
+          "weakness1": [
+            "量子"
+          ],
+          "weakness2": [
+            "物理",
+            "虛數"
+          ],
+          "monsters1": [
+            {
+              "id": "1003010",
+              "name": "銀鬃尉官",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_1003010.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "2013020",
+              "name": "金人勾魂使",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_2013020.webp"
+            }
+          ]
+        },
+        {
+          "name": "第七層",
+          "weakness1": [
+            "物理",
+            "火"
+          ],
+          "weakness2": [
+            "冰",
+            "風"
+          ],
+          "monsters1": [
+            {
+              "id": "3003020",
+              "name": "驚夢劇團的甜猿泰山",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_3003020.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "2023010",
+              "name": "「藥王秘傳」煉形者",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_2023010.webp"
+            }
+          ]
+        },
+        {
+          "name": "第八層",
+          "weakness1": [
+            "火",
+            "冰"
+          ],
+          "weakness2": [
+            "火"
+          ],
+          "monsters1": [
+            {
+              "id": "1013010",
+              "name": "自動機兵•灰熊",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_1013010.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "1013010",
+              "name": "自動機兵•灰熊",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_1013010.webp"
+            }
+          ]
+        },
+        {
+          "name": "第九層",
+          "weakness1": [
+            "風"
+          ],
+          "weakness2": [
+            "雷",
+            "虛數"
+          ],
+          "monsters1": [
+            {
+              "id": "2013010",
+              "name": "金人司閽",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_2013010.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "1013020",
+              "name": "自動機兵•齒狼",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_1013020.webp"
+            }
+          ]
+        },
+        {
+          "name": "第十層",
+          "weakness1": [
+            "冰",
+            "雷"
+          ],
+          "weakness2": [
+            "火",
+            "冰"
+          ],
+          "monsters1": [
+            {
+              "id": "4034010",
+              "name": "至黑之劍，盜火行者",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_4034010.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "3024010",
+              "name": "銀枝",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_3024010.webp"
+            }
+          ]
+        },
+        {
+          "name": "第十一層",
+          "weakness1": [
+            "風",
+            "虛數"
+          ],
+          "weakness2": [
+            "物理",
+            "虛數"
+          ],
+          "monsters1": [
+            {
+              "id": "4014030",
+              "name": "冥魂渡者，死龍殘軀，玻呂刻斯",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_4014030.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "3024030",
+              "name": "示死禍源：深魘蝗災",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_3024030.webp"
+            }
+          ]
+        },
+        {
+          "name": "第十二層",
+          "weakness1": [
+            "火",
+            "量子"
+          ],
+          "weakness2": [
+            "物理",
+            "冰"
+          ],
+          "monsters1": [
+            {
+              "id": "5014010",
+              "name": "火花大會@Official",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_5014010.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "4044010",
+              "name": "第一位天才，隱德來希，贊達爾",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_4044010.webp"
+            }
+          ]
+        },
+        {
+          "name": "第undefined層",
+          "weakness1": [],
+          "weakness2": [],
+          "monsters1": [],
+          "monsters2": []
+        }
+      ]
+    },
+    {
+      "id": "1034",
+      "name": "掃除風暴",
+      "beginTime": "",
+      "endTime": "",
+      "buff": "每個輪開始時，隨機使1名我方「巡獵」或「智識」命途目標立即行動，並使其造成的傷害提高80%，持續1回合。",
+      "floors": [
+        {
+          "name": "第一層",
+          "weakness1": [
+            "量子"
+          ],
+          "weakness2": [
+            "物理",
+            "虛數"
+          ],
+          "monsters1": [
+            {
+              "id": "4033010",
+              "name": "黑潮蝕魔",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_4033010.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "8013010",
+              "name": "虛卒•踐踏者",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_8013010.webp"
+            }
+          ]
+        },
+        {
+          "name": "第二層",
+          "weakness1": [
+            "物理",
+            "火"
+          ],
+          "weakness2": [
+            "冰",
+            "風"
+          ],
+          "monsters1": [
+            {
+              "id": "5013010",
+              "name": "搖滾狂徒",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_5013010.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "2023010",
+              "name": "「藥王秘傳」煉形者",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_2023010.webp"
+            }
+          ]
+        },
+        {
+          "name": "第三層",
+          "weakness1": [
+            "火",
+            "冰"
+          ],
+          "weakness2": [
+            "火"
+          ],
+          "monsters1": [
+            {
+              "id": "1013010",
+              "name": "自動機兵•灰熊",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_1013010.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "3003010",
+              "name": "驚夢劇團的十七分熟",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_3003010.webp"
+            }
+          ]
+        },
+        {
+          "name": "第四層",
+          "weakness1": [
+            "風"
+          ],
+          "weakness2": [
+            "雷",
+            "虛數"
+          ],
+          "monsters1": [
+            {
+              "id": "2033010",
+              "name": "咆哮靈柩",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_2033010.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "1013020",
+              "name": "自動機兵•齒狼",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_1013020.webp"
+            }
+          ]
+        },
+        {
+          "name": "第五層",
+          "weakness1": [
+            "雷",
+            "風"
+          ],
+          "weakness2": [
+            "物理",
+            "冰"
+          ],
+          "monsters1": [
+            {
+              "id": "4033020",
+              "name": "黑潮鬥將",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_4033020.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "1003010",
+              "name": "銀鬃尉官",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_1003010.webp"
+            }
+          ]
+        },
+        {
+          "name": "第六層",
+          "weakness1": [
+            "量子"
+          ],
+          "weakness2": [
+            "物理",
+            "虛數"
+          ],
+          "monsters1": [
+            {
+              "id": "4033010",
+              "name": "黑潮蝕魔",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_4033010.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "8013010",
+              "name": "虛卒•踐踏者",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_8013010.webp"
+            }
+          ]
+        },
+        {
+          "name": "第七層",
+          "weakness1": [
+            "物理",
+            "火"
+          ],
+          "weakness2": [
+            "冰",
+            "風"
+          ],
+          "monsters1": [
+            {
+              "id": "5013010",
+              "name": "搖滾狂徒",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_5013010.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "2023010",
+              "name": "「藥王秘傳」煉形者",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_2023010.webp"
+            }
+          ]
+        },
+        {
+          "name": "第八層",
+          "weakness1": [
+            "火",
+            "冰"
+          ],
+          "weakness2": [
+            "火"
+          ],
+          "monsters1": [
+            {
+              "id": "1013010",
+              "name": "自動機兵•灰熊",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_1013010.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "3003010",
+              "name": "驚夢劇團的十七分熟",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_3003010.webp"
+            }
+          ]
+        },
+        {
+          "name": "第九層",
+          "weakness1": [
+            "風"
+          ],
+          "weakness2": [
+            "雷",
+            "虛數"
+          ],
+          "monsters1": [
+            {
+              "id": "2033010",
+              "name": "咆哮靈柩",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_2033010.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "1013020",
+              "name": "自動機兵•齒狼",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_1013020.webp"
+            }
+          ]
+        },
+        {
+          "name": "第十層",
+          "weakness1": [
+            "冰",
+            "雷"
+          ],
+          "weakness2": [
+            "火",
+            "冰"
+          ],
+          "monsters1": [
+            {
+              "id": "4034010",
+              "name": "至黑之劍，盜火行者",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_4034010.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "2024010",
+              "name": "豐饒玄鹿",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_2024010.webp"
+            }
+          ]
+        },
+        {
+          "name": "第十一層",
+          "weakness1": [
+            "風",
+            "量子"
+          ],
+          "weakness2": [
+            "物理",
+            "火"
+          ],
+          "monsters1": [
+            {
+              "id": "4014030",
+              "name": "冥魂渡者，死龍殘軀，玻呂刻斯",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_4014030.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "5024010",
+              "name": "極樂顛倒•邪願蓮華主",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_5024010.webp"
+            }
+          ]
+        },
+        {
+          "name": "第十二層",
+          "weakness1": [
+            "雷",
+            "量子"
+          ],
+          "weakness2": [
+            "火",
+            "虛數"
+          ],
+          "monsters1": [
+            {
+              "id": "3024020",
+              "name": "「星核獵手」薩姆",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_3024020.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "5014020",
+              "name": "合金機鎧•帕姆王",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_5014020.webp"
+            }
+          ]
+        },
+        {
+          "name": "第undefined層",
+          "weakness1": [],
+          "weakness2": [],
+          "monsters1": [],
+          "monsters2": []
+        }
+      ]
+    },
+    {
+      "id": "1033",
+      "name": "學院怪談",
+      "beginTime": "",
+      "endTime": "",
+      "buff": "我方目標造成的終結技和追加攻擊傷害提高50%，我方角色施放終結技或追加攻擊後為【記憶紊流】增加1段攻擊段數，最多疊加15段。\n每個輪開始時，【記憶紊流】的每段攻擊對隨機敵方目標造成1次真實傷害。",
+      "floors": [
+        {
+          "name": "第一層",
+          "weakness1": [
+            "量子"
+          ],
+          "weakness2": [
+            "物理",
+            "虛數"
+          ],
+          "monsters1": [
+            {
+              "id": "1023020",
+              "name": "深寒徘徊者",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_1023020.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "2013020",
+              "name": "金人勾魂使",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_2013020.webp"
+            }
+          ]
+        },
+        {
+          "name": "第二層",
+          "weakness1": [
+            "物理",
+            "火"
+          ],
+          "weakness2": [
+            "冰",
+            "風"
+          ],
+          "monsters1": [
+            {
+              "id": "3003020",
+              "name": "驚夢劇團的甜猿泰山",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_3003020.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "2023010",
+              "name": "「藥王秘傳」煉形者",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_2023010.webp"
+            }
+          ]
+        },
+        {
+          "name": "第三層",
+          "weakness1": [
+            "火",
+            "冰"
+          ],
+          "weakness2": [
+            "火"
+          ],
+          "monsters1": [
+            {
+              "id": "1013010",
+              "name": "自動機兵•灰熊",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_1013010.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "3003010",
+              "name": "驚夢劇團的十七分熟",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_3003010.webp"
+            }
+          ]
+        },
+        {
+          "name": "第四層",
+          "weakness1": [
+            "風"
+          ],
+          "weakness2": [
+            "雷",
+            "虛數"
+          ],
+          "monsters1": [
+            {
+              "id": "2033010",
+              "name": "咆哮靈柩",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_2033010.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "1004020",
+              "name": "傑帕德",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_1004020.webp"
+            }
+          ]
+        },
+        {
+          "name": "第五層",
+          "weakness1": [
+            "雷",
+            "風"
+          ],
+          "weakness2": [
+            "物理",
+            "冰"
+          ],
+          "monsters1": [
+            {
+              "id": "4033020",
+              "name": "黑潮鬥將",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_4033020.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "3024010",
+              "name": "銀枝",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_3024010.webp"
+            }
+          ]
+        },
+        {
+          "name": "第六層",
+          "weakness1": [
+            "量子"
+          ],
+          "weakness2": [
+            "物理",
+            "虛數"
+          ],
+          "monsters1": [
+            {
+              "id": "1023020",
+              "name": "深寒徘徊者",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_1023020.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "2013020",
+              "name": "金人勾魂使",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_2013020.webp"
+            }
+          ]
+        },
+        {
+          "name": "第七層",
+          "weakness1": [
+            "物理",
+            "火"
+          ],
+          "weakness2": [
+            "冰",
+            "風"
+          ],
+          "monsters1": [
+            {
+              "id": "3003020",
+              "name": "驚夢劇團的甜猿泰山",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_3003020.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "2023010",
+              "name": "「藥王秘傳」煉形者",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_2023010.webp"
+            }
+          ]
+        },
+        {
+          "name": "第八層",
+          "weakness1": [
+            "火",
+            "冰"
+          ],
+          "weakness2": [
+            "火"
+          ],
+          "monsters1": [
+            {
+              "id": "1013010",
+              "name": "自動機兵•灰熊",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_1013010.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "3003010",
+              "name": "驚夢劇團的十七分熟",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_3003010.webp"
+            }
+          ]
+        },
+        {
+          "name": "第九層",
+          "weakness1": [
+            "風"
+          ],
+          "weakness2": [
+            "雷",
+            "虛數"
+          ],
+          "monsters1": [
+            {
+              "id": "2033010",
+              "name": "咆哮靈柩",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_2033010.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "1004020",
+              "name": "傑帕德",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_1004020.webp"
+            }
+          ]
+        },
+        {
+          "name": "第十層",
+          "weakness1": [
+            "冰",
+            "虛數"
+          ],
+          "weakness2": [
+            "物理",
+            "火"
+          ],
+          "monsters1": [
+            {
+              "id": "3003014",
+              "name": "驚夢劇團的十七分熟",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_3003010.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "2034010",
+              "name": "步離戰首•呼雷",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_2034010.webp"
+            }
+          ]
+        },
+        {
+          "name": "第十一層",
+          "weakness1": [
+            "物理",
+            "火"
+          ],
+          "weakness2": [
+            "火",
+            "雷",
+            "風"
+          ],
+          "monsters1": [
+            {
+              "id": "5014010",
+              "name": "火花大會@Official",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_5014010.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "1014010",
+              "name": "史瓦羅",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_1014010.webp"
+            }
+          ]
+        },
+        {
+          "name": "第十二層",
+          "weakness1": [
+            "冰",
+            "雷"
+          ],
+          "weakness2": [
+            "火"
+          ],
+          "monsters1": [
+            {
+              "id": "4034010",
+              "name": "至黑之劍，盜火行者",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_4034010.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "5014030",
+              "name": "始作畫者，無量塔繪世",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_5014030.webp"
+            }
+          ]
+        },
+        {
+          "name": "第undefined層",
+          "weakness1": [],
+          "weakness2": [],
+          "monsters1": [],
+          "monsters2": []
+        }
+      ]
+    },
+    {
       "id": "1032",
       "name": "值日行動",
       "beginTime": "",
@@ -108,7 +1347,10 @@
         },
         {
           "name": "第五層",
-          "weakness1": [],
+          "weakness1": [
+            "雷",
+            "風"
+          ],
           "weakness2": [
             "物理",
             "風"
@@ -308,8 +1550,8 @@
     {
       "id": "1031",
       "name": "演劇終焉",
-      "beginTime": "2026-04-13 04:00:00",
-      "endTime": "2026-05-25 04:00:00",
+      "beginTime": "",
+      "endTime": "",
       "buff": "我方目標施放攻擊後獲得1個笑點，併為【記憶紊流】增加對應點數的充能，最多疊加20點。\n每個輪開始時，【記憶紊流】根據充能點數對敵方全體目標造成1次真實傷害。",
       "floors": [
         {
@@ -612,8 +1854,8 @@
     {
       "id": "1030",
       "name": "網絡謎蹤",
-      "beginTime": "2026-03-02 04:00:00",
-      "endTime": "2026-04-13 04:00:00",
+      "beginTime": "",
+      "endTime": "",
       "buff": "每個波次或輪開始時，獲得5個笑點，每次獲得笑點時，為【記憶紊流】增加對應點數的充能，最多疊加50點。\n每個輪開始時，【記憶紊流】根據充能點數對敵方目標造成1次真實傷害。",
       "floors": [
         {
@@ -917,8 +2159,8 @@
     {
       "id": "1029",
       "name": "堤潰蟻穴",
-      "beginTime": "2026-01-19 04:00:00",
-      "endTime": "2026-03-02 04:00:00",
+      "beginTime": "",
+      "endTime": "",
       "buff": "每個波次開始時，為我方恢復4個戰技點，我方目標施放戰技或消耗戰技點時，為【記憶紊流】增加1段攻擊段數，最多疊加15段。\n每個輪開始時，【記憶紊流】的每段攻擊對隨機敵方目標造成1次真實傷害。",
       "floors": [
         {
@@ -1219,8 +2461,8 @@
     {
       "id": "1028",
       "name": "猴子把戲",
-      "beginTime": "2025-12-08 04:00:00",
-      "endTime": "2026-01-19 04:00:00",
+      "beginTime": "",
+      "endTime": "",
       "buff": "我方目標攻擊持有對應屬性弱點的精英或首領敵人後，為【記憶紊流】增加1段攻擊段數，擊破精英或首領敵人弱點時額外增加1段攻擊段數，最多疊加10段。\n每個輪開始時，【記憶紊流】的每段攻擊對隨機敵方目標造成1次真實傷害。",
       "floors": [
         {
@@ -1524,8 +2766,8 @@
     {
       "id": "1027",
       "name": "範疇錯誤",
-      "beginTime": "2025-10-27 04:00:00",
-      "endTime": "2025-12-08 04:00:00",
+      "beginTime": "",
+      "endTime": "",
       "buff": "我方角色擁有召喚物時，自身與召喚物造成的傷害提高40%。\n每個輪開始時，【記憶紊流】對敵方全體目標造成1次真實傷害，我方每擁有1個召喚物則額外造成1次傷害，最多計入2個。",
       "floors": [
         {
@@ -1830,8 +3072,8 @@
     {
       "id": "1026",
       "name": "創世之柱",
-      "beginTime": "2025-09-15 04:00:00",
-      "endTime": "2025-10-27 04:00:00",
+      "beginTime": "",
+      "endTime": "",
       "buff": "我方角色施放戰技進行攻擊或憶靈進行攻擊後，為【記憶紊流】增加1段攻擊段數，最多增加10段。\n每個輪開始時，【記憶紊流】的每段攻擊對隨機敵方目標造成1次真實傷害。",
       "floors": [
         {
@@ -2132,8 +3374,8 @@
     {
       "id": "1025",
       "name": "博徒困境",
-      "beginTime": "2025-08-04 04:00:00",
-      "endTime": "2025-09-15 04:00:00",
+      "beginTime": "",
+      "endTime": "",
       "buff": "每個波次或輪開始時，使一個精英級別及以上的敵方目標獲得【記憶印記】，該效果持續到下個輪開始。【記憶印記】為特殊灼燒，持有者每回合開始時受到火屬性持續傷害。我方目標施放戰技攻擊持有【記憶印記】的目標後，對其和相鄰目標造成等同於攻擊者攻擊力220%的附加傷害。",
       "floors": [
         {
@@ -2437,8 +3679,8 @@
     {
       "id": "1024",
       "name": "赤月吞狼",
-      "beginTime": "2025-06-23 04:00:00",
-      "endTime": "2025-08-04 04:00:00",
+      "beginTime": "",
+      "endTime": "",
       "buff": "我方編隊中的第一位角色施放終結技後，自身與憶靈會獲得【記憶印記】，持續1回合。持有【記憶印記】的目標造成的傷害提高40%，並在攻擊後為【記憶紊流】增加2段攻擊段數，最多疊加10段。\n每個輪開始時，【記憶紊流】的每段攻擊對隨機敵方目標造成1次真實傷害。",
       "floors": [
         {
@@ -2743,8 +3985,8 @@
     {
       "id": "1023",
       "name": "彼岸之息",
-      "beginTime": "2025-05-12 04:00:00",
-      "endTime": "2025-06-23 04:00:00",
+      "beginTime": "",
+      "endTime": "",
       "buff": "我方全體戰技等級+3，憶靈技等級+2。我方全體施放戰技或憶靈技後，為隨機1名攻擊目標添加1個未擁有的隨機屬性弱點。\n每個輪開始時，【記憶紊流】對敵方全體目標造成1次真實傷害，若目標持有3個以上的弱點，每多1個弱點額外受到1次真實傷害。",
       "floors": [
         {
@@ -3054,8 +4296,8 @@
     {
       "id": "1022",
       "name": "出故鄉記",
-      "beginTime": "2025-03-31 04:00:00",
-      "endTime": "2025-05-12 04:00:00",
+      "beginTime": "",
+      "endTime": "",
       "buff": "我方全體生命上限提高30%，每次受到攻擊時恢復等同於生命上限5%的生命值，併為【記憶紊流】增加1段攻擊段數；每次消耗生命值時恢復等同於生命上限10%的生命值，併為【記憶紊流】增加2段攻擊段數，該效果每次攻擊只可觸發1次，最多增加20段。\n每個輪開始時，【記憶紊流】的每段攻擊對隨機敵方目標造成1次真實傷害。",
       "floors": [
         {
@@ -3363,8 +4605,8 @@
     {
       "id": "1021",
       "name": "創世紛爭",
-      "beginTime": "2025-02-17 04:00:00",
-      "endTime": "2025-03-31 04:00:00",
+      "beginTime": "",
+      "endTime": "",
       "buff": "每個輪開始時，為我方全體角色恢復20%能量，該效果恢復的能量可以超出目標的能量上限，並使場上所有憶靈下一次行動後可立即再次行動。",
       "floors": [
         {
@@ -3668,8 +4910,8 @@
     {
       "id": "1020",
       "name": "舸艦迷津",
-      "beginTime": "2025-01-06 04:00:00",
-      "endTime": "2025-02-17 04:00:00",
+      "beginTime": "",
+      "endTime": "",
       "buff": "每個波次或輪開始時，召喚2只撲滿到場上，撲滿被消滅時對所有精英級別及以上的目標造成1次固定數值的傷害。",
       "floors": [
         {
@@ -3970,8 +5212,8 @@
     {
       "id": "1019",
       "name": "與夢共舞",
-      "beginTime": "2024-11-25 04:00:00",
-      "endTime": "2025-01-06 04:00:00",
+      "beginTime": "",
+      "endTime": "",
       "buff": "敵方目標的弱點被擊破時，為【記憶紊流】增加1段攻擊段數，若目標是精英級別及以上的目標，則額外增加1段攻擊段數，最多疊加15段。\n每個輪開始時，【記憶紊流】的每段攻擊對隨機敵方目標造成1次固定數值的傷害，且不清除攻擊段數。",
       "floors": [
         {
@@ -4277,8 +5519,8 @@
     {
       "id": "1018",
       "name": "鱗淵潮動",
-      "beginTime": "2024-10-14 04:00:00",
-      "endTime": "2024-11-25 04:00:00",
+      "beginTime": "",
+      "endTime": "",
       "buff": "敵人擁有虛韌性，且弱點被擊破時使其行動延後30%，同時為【記憶紊流】增加1段攻擊段數，若目標是精英級別及以上的目標，則額外增加2段攻擊段數，最多疊加10段。\n每個輪開始時，【記憶紊流】的每段攻擊對隨機敵方目標造成1次固定數值的傷害。",
       "floors": [
         {
@@ -4585,8 +5827,8 @@
     {
       "id": "1017",
       "name": "長眠不醒",
-      "beginTime": "2024-09-02 04:00:00",
-      "endTime": "2024-10-14 04:00:00",
+      "beginTime": "",
+      "endTime": "",
       "buff": "我方每次攻擊後為我方全體附上1層【記憶印記】，處於【記憶印記】狀態中的我方目標造成的傷害提高8%，該效果最多疊加6層。當【記憶印記】疊加至上限時，立即對敵方全體造成1次基於各自生命上限一定百分比的傷害。\n每個波次或輪開始時，清除我方全體的【記憶印記】。",
       "floors": [
         {
@@ -4889,9 +6131,9 @@
     },
     {
       "id": "1016",
-      "name": "曲盡夢散(<unbreak>2.3</unbreak>)",
-      "beginTime": "2024-07-22 04:00:00",
-      "endTime": "2024-09-02 04:00:00",
+      "name": "曲盡夢散",
+      "beginTime": "",
+      "endTime": "",
       "buff": "我方目標施放追加攻擊或戰技進行攻擊後，為【記憶紊流】增加1段攻擊段數，最多疊加10段。\n每個輪開始時，每段攻擊對隨機敵方目標造成1次基於目標生命上限的傷害。",
       "floors": [
         {
@@ -5193,9 +6435,9 @@
     },
     {
       "id": "1015",
-      "name": "弦外之聲(<unbreak>2.2</unbreak>)",
-      "beginTime": "2024-06-10 04:00:00",
-      "endTime": "2024-07-22 04:00:00",
+      "name": "弦外之聲",
+      "beginTime": "",
+      "endTime": "",
       "buff": "每個波次或輪開始時，召喚1只撲滿到場上，撲滿的弱點被擊破時會立刻被消滅。\n撲滿被消滅後，使攻擊者行動提前100%，隨後為我方全體施加【記憶印記】。每層【記憶印記】使目標的攻擊力提高15%，擊破特攻提高30%，最多疊加5層。",
       "floors": [
         {
@@ -5503,8 +6745,8 @@
     {
       "id": "1014",
       "name": "夢中之夢",
-      "beginTime": "2024-05-13 04:00:00",
-      "endTime": "2024-06-24 04:00:00",
+      "beginTime": "",
+      "endTime": "",
       "buff": "我方每次攻擊後為我方全體附上1層【記憶印記】，處於【記憶印記】狀態中的我方目標造成的傷害提高5%，該效果最多疊加6層。當【記憶印記】疊加至上限時，立即為我方全體恢復25%能量，該效果恢復的能量可以超出目標的能量上限。\n每個波次或輪開始時，清除我方全體的【記憶印記】。",
       "floors": [
         {
@@ -5808,8 +7050,8 @@
     {
       "id": "1013",
       "name": "白夜夢國記",
-      "beginTime": "2024-04-15 04:00:00",
-      "endTime": "2024-05-27 04:00:00",
+      "beginTime": "",
+      "endTime": "",
       "buff": "我方每次攻擊後使敵方全體陷入1層【記憶印記】，處於【記憶印記】狀態中的敵方目標受到的傷害提高5%，該效果最多疊加6層。當【記憶印記】疊加至上限時，立即對敵方全體造成1次基於各自生命上限一定百分比的傷害。\n當敵方目標進入戰鬥時，若場上其他目標處於【記憶印記】狀態，則使其獲得同樣層數的【記憶印記】。\n每個波次或輪開始時，清除敵方全體的【記憶印記】。",
       "floors": [
         {
@@ -6114,8 +7356,8 @@
     {
       "id": "1012",
       "name": "一晌荒宴",
-      "beginTime": "2024-03-18 04:00:00",
-      "endTime": "2024-04-29 04:00:00",
+      "beginTime": "",
+      "endTime": "",
       "buff": "每個波次或輪開始時，召喚1只撲滿到場上，該撲滿受到的普攻和持續傷害提高200%。\n在消滅撲滿後，若敵方目標處於裂傷、觸電、灼燒或風化狀態，使其當前承受的對應狀態立即產生相當於原傷害50%的傷害，並對敵方全體大概率施加裂傷、觸電、灼燒、風化狀態，持續3回合。",
       "floors": [
         {
@@ -6417,8 +7659,8 @@
     {
       "id": "1011",
       "name": "難捨夢鄉",
-      "beginTime": "2024-02-19 04:00:00",
-      "endTime": "2024-04-01 04:00:00",
+      "beginTime": "",
+      "endTime": "",
       "buff": "我方全體普攻和戰技造成的傷害提高50%，且每消耗1點戰技點，為【記憶紊流】增加1段攻擊段數，最多增加10段。\n每個輪開始時，每段攻擊對隨機敵方目標造成1次基於目標生命上限的傷害。",
       "floors": [
         {
@@ -6723,8 +7965,8 @@
     {
       "id": "1010",
       "name": "重燃之光",
-      "beginTime": "2024-01-22 04:00:00",
-      "endTime": "2024-03-04 04:00:00",
+      "beginTime": "",
+      "endTime": "",
       "buff": "每個波次或輪開始時，對敵方全體隨機施加10次以下負面效果：攻擊力降低8%、防禦力降低8%、速度降低8%、效果抵抗降低8%、受到追加攻擊傷害提高20%。每種效果最多疊加3層，持續3回合；並使1名我方「巡獵」或「毀滅」命途目標立即行動。",
       "floors": [
         {
@@ -7023,8 +8265,8 @@
     {
       "id": "1009",
       "name": "藏於深空之秘",
-      "beginTime": "2023-12-25 04:00:00",
-      "endTime": "2024-02-05 04:00:00",
+      "beginTime": "",
+      "endTime": "",
       "buff": "我方目標擊破敵方目標弱點或攻擊處於弱點擊破狀態的敵方目標後，為【記憶紊流】增加1段攻擊段數，最多疊加10段。\n每個輪開始時，每段攻擊對隨機敵方目標造成1次基於目標生命上限的傷害。",
       "floors": [
         {
@@ -7328,9 +8570,9 @@
     },
     {
       "id": "1008",
-      "name": "飲月之亂",
-      "beginTime": "2023-12-11 04:00:00",
-      "endTime": "2023-12-25 04:00:00",
+      "name": "藏於深空之秘",
+      "beginTime": "",
+      "endTime": "",
       "buff": "我方目標施放終結技時，獲得【記憶印記】，該效果最多疊加10層。\n每個輪開始時，為我方全體恢復基於【記憶印記】層數的能量（每層恢復10點能量），該效果恢復的能量可以超出目標的能量上限。",
       "floors": [
         {
@@ -7591,8 +8833,8 @@
     {
       "id": "1007",
       "name": "萬載盟誓",
-      "beginTime": "2023-11-27 04:00:00",
-      "endTime": "2023-12-11 04:00:00",
+      "beginTime": "",
+      "endTime": "",
       "buff": "我方目標施放戰技或終結技進行攻擊後，為【記憶紊流】增加1段攻擊段數，最多疊加10段。\n每個輪開始時，每段攻擊對隨機敵方目標造成1次基於目標生命上限的傷害。",
       "floors": [
         {
@@ -7852,8 +9094,8 @@
     {
       "id": "1006",
       "name": "鎮伏玄根",
-      "beginTime": "2023-11-13 04:00:00",
-      "endTime": "2023-11-27 04:00:00",
+      "beginTime": "",
+      "endTime": "",
       "buff": "我方目標施放終結技或發動追加攻擊後，對受到攻擊的敵方目標造成4次等同於角色攻擊力60%的附加傷害。",
       "floors": [
         {
@@ -8161,8 +9403,8 @@
     {
       "id": "1005",
       "name": "建木降臨",
-      "beginTime": "2023-10-30 04:00:00",
-      "endTime": "2023-11-13 04:00:00",
+      "beginTime": "",
+      "endTime": "",
       "buff": "每個波次或輪開始時，使一個精英級別及以上的敵方目標獲得【記憶印記】。持有【記憶印記】的目標受到傷害時，其他敵方目標受到等同於原傷害30%的傷害，該效果持續到下個輪開始。",
       "floors": [
         {
@@ -8470,8 +9712,8 @@
     {
       "id": "1004",
       "name": "生劫火劫",
-      "beginTime": "2023-10-16 04:00:00",
-      "endTime": "2023-10-30 04:00:00",
+      "beginTime": "",
+      "endTime": "",
       "buff": "我方相同目標連續行動時，獲得1層【記憶印記】。【記憶印記】的持有者施放攻擊後，每層【記憶印記】有40%固定概率使目標陷入【離神】 狀態，持續1回合。擁有【記憶印記】的目標造成的傷害提高40%，該效果不可以疊加。在行動者改變後，移除場上所有【記憶印記】。\n【離神】：被視為凍結狀態，期間無法行動，當該狀態解除時，目標受到等同於生命上限15%的冰屬性附加傷害。",
       "floors": [
         {
@@ -8779,8 +10021,8 @@
     {
       "id": "1003",
       "name": "魔陰空劫",
-      "beginTime": "2023-10-02 04:00:00",
-      "endTime": "2023-10-16 04:00:00",
+      "beginTime": "",
+      "endTime": "",
       "buff": "每個波次或輪開始時，召喚1只撲滿到場上，該撲滿受到的戰技和終結技傷害提高200%。撲滿被消滅後，使敵方全體陷入易傷狀態，受到的傷害提高30%，持續2回合，該效果最多疊加2層。",
       "floors": [
         {
@@ -9087,8 +10329,8 @@
     {
       "id": "1002",
       "name": "天裂一射",
-      "beginTime": "2023-09-18 04:00:00",
-      "endTime": "2023-10-02 04:00:00",
+      "beginTime": "",
+      "endTime": "",
       "buff": "每個波次或輪開始時，召喚1只撲滿到場上，該撲滿受到的普攻和終結技傷害提高200%。撲滿被消滅後，對敵方全體造成1次固定數值的傷害。",
       "floors": [
         {
@@ -9395,8 +10637,8 @@
     {
       "id": "1001",
       "name": "迷夢造舸",
-      "beginTime": "2023-09-04 04:00:00",
-      "endTime": "2023-09-18 04:00:00",
+      "beginTime": "",
+      "endTime": "",
       "buff": "每個波次或輪開始時，召喚1只撲滿到場上，該撲滿受到的普攻和持續傷害提高200%。撲滿被消滅後，為我方恢復2個戰技點。",
       "floors": [
         {
@@ -9702,6 +10944,532 @@
     }
   ],
   "story": [
+    {
+      "id": "2027",
+      "name": "取象為文",
+      "beginTime": "",
+      "endTime": "",
+      "buff": "",
+      "buffs": [
+        {
+          "name": "觸技",
+          "desc": "我方目標造成的終結技和追加攻擊傷害提高40%，「戰意洶湧」期間，敵方目標每次陷入【沮喪】效果時改為疊加2層該效果，【沮喪】效果的疊加上限提高到50層。"
+        },
+        {
+          "name": "笑韻",
+          "desc": "我方角色施放歡愉技攻擊敵方目標後，使受到攻擊的敵方目標陷入【享樂】效果，使該目標受到的傷害提高15%，持續2回合，每個角色施加的該效果獨立存在。進入「戰意洶湧」時，我方獲得40個笑點。"
+        },
+        {
+          "name": "賦格",
+          "desc": "「戰意洶湧」期間，我方目標施放攻擊後，額外使受到攻擊的目標當前承受的隨機1個持續傷害類負面效果立即產生相當於原傷害400%的傷害。"
+        }
+      ],
+      "floors": [
+        {
+          "name": "取象為文其一",
+          "weakness1": [
+            "物理",
+            "量子"
+          ],
+          "weakness2": [
+            "火",
+            "冰"
+          ],
+          "monsters1": [
+            {
+              "id": "4033010",
+              "name": "黑潮蝕魔",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_4033010.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "4063010",
+              "name": "金血憶靈•翼蛇形",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_4063010.webp"
+            }
+          ]
+        },
+        {
+          "name": "取象為文其二",
+          "weakness1": [
+            "物理",
+            "雷"
+          ],
+          "weakness2": [
+            "風",
+            "量子"
+          ],
+          "monsters1": [
+            {
+              "id": "4053010",
+              "name": "波濤夫人",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_4053010.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "4033010",
+              "name": "黑潮蝕魔",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_4033010.webp"
+            }
+          ]
+        },
+        {
+          "name": "取象為文其三",
+          "weakness1": [
+            "冰",
+            "虛數"
+          ],
+          "weakness2": [
+            "物理",
+            "虛數"
+          ],
+          "monsters1": [
+            {
+              "id": "8033010",
+              "name": "資深員工•組長",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_8033010.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "5013040",
+              "name": "破曉戰隊•蒼翼",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_5013040.webp"
+            }
+          ]
+        },
+        {
+          "name": "取象為文其四",
+          "weakness1": [
+            "冰",
+            "雷"
+          ],
+          "weakness2": [
+            "火",
+            "虛數"
+          ],
+          "monsters1": [
+            {
+              "id": "4034010",
+              "name": "至黑之劍，盜火行者",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_4034010.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "5014020",
+              "name": "合金機鎧•帕姆王",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_5014020.webp"
+            }
+          ]
+        },
+        {
+          "name": "難度5",
+          "weakness1": [],
+          "weakness2": [],
+          "monsters1": [],
+          "monsters2": []
+        }
+      ]
+    },
+    {
+      "id": "2026",
+      "name": "立界開篇",
+      "beginTime": "",
+      "endTime": "",
+      "buff": "",
+      "buffs": [
+        {
+          "name": "狂歡",
+          "desc": "「戰意洶湧」期間，敵方目標受到的歡愉傷害提高30%，阿哈時刻的速度額外提高20點。"
+        },
+        {
+          "name": "狂想",
+          "desc": "我方目標施放普攻或戰技後，獲得1個笑點；「戰意洶湧」期間，我方目標造成的傷害提高50%。"
+        },
+        {
+          "name": "謎狂",
+          "desc": "我方憶靈施放攻擊後，獲得2個笑點；「戰意洶湧」期間，我方憶靈造成的傷害提高50%。"
+        }
+      ],
+      "floors": [
+        {
+          "name": "立界開篇其一",
+          "weakness1": [
+            "物理",
+            "冰",
+            "量子"
+          ],
+          "weakness2": [
+            "物理",
+            "火",
+            "冰"
+          ],
+          "monsters1": [
+            {
+              "id": "8003020",
+              "name": "外宇宙之炎",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_8003020.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "4063010",
+              "name": "金血憶靈•翼蛇形",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_4063010.webp"
+            }
+          ]
+        },
+        {
+          "name": "立界開篇其二",
+          "weakness1": [
+            "物理",
+            "冰",
+            "雷"
+          ],
+          "weakness2": [
+            "物理",
+            "風",
+            "量子"
+          ],
+          "monsters1": [
+            {
+              "id": "2023030",
+              "name": "承露天人",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_2023030.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "8003030",
+              "name": "守護者之影",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_8003030.webp"
+            }
+          ]
+        },
+        {
+          "name": "立界開篇其三",
+          "weakness1": [
+            "冰",
+            "雷",
+            "虛數"
+          ],
+          "weakness2": [
+            "物理",
+            "風",
+            "虛數"
+          ],
+          "monsters1": [
+            {
+              "id": "1013020",
+              "name": "自動機兵•齒狼",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_1013020.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "8013010",
+              "name": "虛卒•踐踏者",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_8013010.webp"
+            }
+          ]
+        },
+        {
+          "name": "立界開篇其四",
+          "weakness1": [
+            "量子",
+            "虛數"
+          ],
+          "weakness2": [
+            "物理",
+            "虛數"
+          ],
+          "monsters1": [
+            {
+              "id": "8024010",
+              "name": "蟲群•真蟄蟲（完整）",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_8024010.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "5024010",
+              "name": "極樂顛倒•邪願蓮華主",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_5024010.webp"
+            }
+          ]
+        },
+        {
+          "name": "難度5",
+          "weakness1": [],
+          "weakness2": [],
+          "monsters1": [],
+          "monsters2": []
+        }
+      ]
+    },
+    {
+      "id": "2025",
+      "name": "構事生意",
+      "beginTime": "",
+      "endTime": "",
+      "buff": "",
+      "buffs": [
+        {
+          "name": "暴言",
+          "desc": "造成的追加攻擊傷害的全屬性抗性穿透提高30%，「戰意洶湧」期間，我方目標施放追加攻擊攻擊敵方目標後，額外對每個被攻擊的敵方目標相鄰的目標造成攻擊者40%攻擊力+20%生命上限的附加傷害，該傷害被視為追加攻擊傷害。"
+        },
+        {
+          "name": "高論",
+          "desc": "「戰意洶湧」期間，我方目標施放終結技時造成的暴擊傷害提高60%，「戰意洶湧」結束時，我方全體恢復20%能量。"
+        },
+        {
+          "name": "快嘴",
+          "desc": "我方全體速度提高20%。「戰意洶湧」期間敵方目標受到的傷害額外提高30%。"
+        }
+      ],
+      "floors": [
+        {
+          "name": "構事生意其一",
+          "weakness1": [
+            "風",
+            "量子"
+          ],
+          "weakness2": [
+            "冰",
+            "虛數"
+          ],
+          "monsters1": [
+            {
+              "id": "4033010",
+              "name": "黑潮蝕魔",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_4033010.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "8033010",
+              "name": "資深員工•組長",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_8033010.webp"
+            }
+          ]
+        },
+        {
+          "name": "構事生意其二",
+          "weakness1": [
+            "物理",
+            "雷"
+          ],
+          "weakness2": [
+            "火",
+            "風"
+          ],
+          "monsters1": [
+            {
+              "id": "4033020",
+              "name": "黑潮鬥將",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_4033020.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "2023020",
+              "name": "豐饒靈獸•長右",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_2023020.webp"
+            }
+          ]
+        },
+        {
+          "name": "構事生意其三",
+          "weakness1": [
+            "物理",
+            "冰"
+          ],
+          "weakness2": [
+            "雷",
+            "虛數"
+          ],
+          "monsters1": [
+            {
+              "id": "1003010",
+              "name": "銀鬃尉官",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_1003010.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "2033010",
+              "name": "咆哮靈柩",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_2033010.webp"
+            }
+          ]
+        },
+        {
+          "name": "構事生意其四",
+          "weakness1": [
+            "物理",
+            "虛數"
+          ],
+          "weakness2": [
+            "火",
+            "雷"
+          ],
+          "monsters1": [
+            {
+              "id": "1004020",
+              "name": "傑帕德",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_1004020.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "5014020",
+              "name": "合金機鎧•帕姆王",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_5014020.webp"
+            }
+          ]
+        },
+        {
+          "name": "難度5",
+          "weakness1": [],
+          "weakness2": [],
+          "monsters1": [],
+          "monsters2": []
+        }
+      ]
+    },
+    {
+      "id": "2024",
+      "name": "借虛成真",
+      "beginTime": "",
+      "endTime": "",
+      "buff": "",
+      "buffs": [
+        {
+          "name": "觸技",
+          "desc": "我方目標造成的終結技和追加攻擊傷害提高40%，「戰意洶湧」期間，敵方目標每次陷入【沮喪】效果時改為疊加2層該效果，【沮喪】效果的疊加上限提高到50層。"
+        },
+        {
+          "name": "笑韻",
+          "desc": "我方角色施放歡愉技攻擊敵方目標後，使受到攻擊的敵方目標陷入【享樂】效果，使該目標受到的傷害提高15%，持續2回合，每個角色施加的該效果獨立存在。進入「戰意洶湧」時，我方獲得40個笑點。"
+        },
+        {
+          "name": "變奏",
+          "desc": "我方目標施放普攻、戰技或終結技攻擊敵方目標後，有100%的基礎概率使受到攻擊的敵方目標的防禦力降低3%，持續2回合，該效果最多疊加10次。"
+        }
+      ],
+      "floors": [
+        {
+          "name": "借虛成真其一",
+          "weakness1": [
+            "火",
+            "量子"
+          ],
+          "weakness2": [
+            "冰",
+            "虛數"
+          ],
+          "monsters1": [
+            {
+              "id": "8003010",
+              "name": "外宇宙之冰",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_8003010.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "8033010",
+              "name": "資深員工•組長",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_8033010.webp"
+            }
+          ]
+        },
+        {
+          "name": "借虛成真其二",
+          "weakness1": [
+            "雷",
+            "風"
+          ],
+          "weakness2": [
+            "物理",
+            "火"
+          ],
+          "monsters1": [
+            {
+              "id": "4033020",
+              "name": "黑潮鬥將",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_4033020.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "4063010",
+              "name": "金血憶靈•翼蛇形",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_4063010.webp"
+            }
+          ]
+        },
+        {
+          "name": "借虛成真其三",
+          "weakness1": [
+            "物理",
+            "量子"
+          ],
+          "weakness2": [
+            "火",
+            "虛數"
+          ],
+          "monsters1": [
+            {
+              "id": "8003020",
+              "name": "外宇宙之炎",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_8003020.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "5013040",
+              "name": "破曉戰隊•蒼翼",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_5013040.webp"
+            }
+          ]
+        },
+        {
+          "name": "借虛成真其四",
+          "weakness1": [
+            "冰",
+            "風"
+          ],
+          "weakness2": [
+            "火",
+            "雷"
+          ],
+          "monsters1": [
+            {
+              "id": "4044010",
+              "name": "第一位天才，隱德來希，贊達爾",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_4044010.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "1004010",
+              "name": "可可利亞",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_1004010.webp"
+            }
+          ]
+        },
+        {
+          "name": "難度5",
+          "weakness1": [],
+          "weakness2": [],
+          "monsters1": [],
+          "monsters2": []
+        }
+      ]
+    },
     {
       "id": "2023",
       "name": "造象立說",
@@ -11672,7 +13440,7 @@
     },
     {
       "id": "2007",
-      "name": "向壁虛造(<unbreak>2.3</unbreak>)",
+      "name": "向壁虛造",
       "beginTime": "",
       "endTime": "",
       "buff": "",
@@ -11795,7 +13563,7 @@
     },
     {
       "id": "2006",
-      "name": "新詞迷離(<unbreak>2.2</unbreak>)",
+      "name": "新詞迷離",
       "beginTime": "",
       "endTime": "",
       "buff": "",
@@ -12534,64 +14302,64 @@
   ],
   "boss": [
     {
-      "id": "3018",
-      "name": "偶像螟蝗",
+      "id": "3022",
+      "name": "末日幻影 3022",
       "beginTime": "",
       "endTime": "",
-      "buff": "擁有【堅防守備】的敵方目標被弱點擊破時，使我方全體目標解除控制狀態並激活終結技。\n敵方全體目標受到的歡愉傷害提高25%，弱點擊破傷害提高15%。",
+      "buff": "擁有【堅防守備】的敵方目標被弱點擊破時，使我方全體目標解除控制狀態、行動提前並使阿哈立即獲得一個額外回合（本回合固定計入10笑點）。\n敵方全體目標受到的終結技傷害提高25%，歡愉傷害提高15%。",
       "buffs": [
         {
-          "name": "以柔克剛",
-          "desc": "我方全體造成的歡愉傷害無視敵方目標15%的全屬性抗性。破壞敵方目標的【戰甲】或【百鍊戰甲】時，獲得3笑點。"
-        },
-        {
-          "name": "氣湧如山",
-          "desc": "我方目標施放終結技後，使自身戰技造成的暴擊傷害提高50%，持續2回合。"
-        },
-        {
-          "name": "可乘之隙",
-          "desc": "我方全體造成的追加攻擊和終結技傷害提高50%，對弱點擊破狀態下的敵方目標額外提高50%。"
+          "name": "魔法時間",
+          "desc": "戰鬥開始時，我方隊伍中存在1/2/3/4名歡愉命途的角色時，我方全體目標歡愉度提高10%/20%/30%/60%。"
         },
         {
           "name": "望風瓦解",
           "desc": "敵方全體受到的擊破傷害提高10%。擊破敵方弱點後，我方全體速度提高15%，持續2回合。"
         },
         {
-          "name": "金玉其質",
-          "desc": "我方全體的暴擊傷害提高30%，編隊中的第1位角色及其憶靈的暴擊傷害額外提高30%。"
+          "name": "可乘之隙",
+          "desc": "我方全體造成的追加攻擊和終結技傷害提高50%，對弱點擊破狀態下的敵方目標額外提高50%。"
         },
         {
-          "name": "寸心如割",
-          "desc": "處於弱點擊破狀態下的敵方目標受到的持續傷害提高30%。"
+          "name": "淪為笑談",
+          "desc": "我方目標施放攻擊造成歡愉傷害後，使受到歡愉傷害的目標陷入易傷狀態，受到的傷害提高15%，持續2回合。該效果每次攻擊對每名敵方目標最多觸發1次。"
+        },
+        {
+          "name": "有機可趁",
+          "desc": "我方目標對敵方目標施加負面狀態後，使自身暴擊傷害提高75%，持續2回合。"
+        },
+        {
+          "name": "膏腴之地",
+          "desc": "我方全體造成的戰技和終結技傷害提高30%，編隊中的第1位角色造成的戰技和終結技傷害額外提高30%。"
         }
       ],
       "floors": [
         {
-          "name": "偶像螟蝗·難度01",
+          "name": "難度1",
           "weakness1": [
             "物理",
             "火",
-            "量子",
+            "風",
             "虛數"
           ],
           "weakness2": [
             "物理",
-            "冰",
-            "量子",
+            "火",
+            "雷",
             "虛數"
           ],
           "monsters1": [
             {
-              "id": "501401401",
-              "name": "萬眾矚目的超偶像",
-              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_5014010.webp"
+              "id": "200401401",
+              "name": "勾魂攝魄的支配者",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_2004010.webp"
             }
           ],
           "monsters2": [
             {
-              "id": "802501101",
-              "name": "遮天蔽日的噬星蠹",
-              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_8025010.webp"
+              "id": "406401201",
+              "name": "迷惘之淵的裁定者",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_4064010.webp"
             }
           ],
           "tags1": [
@@ -12600,16 +14368,16 @@
               "desc": "首領幻影受到的傷害降低50%。弱點擊破後，行動額外延後，受到的傷害提高100%。"
             },
             {
-              "name": "雙重戰場",
-              "desc": "首領幻影會在戰鬥中開啟連麥PK，選擇一名我方角色前往副戰場戰鬥，其餘角色留在主戰場提供支援。連麥PK開啟後，處於主戰場的敵方目標受到的傷害降低，並免疫控制類負面狀態，首領幻影進入【韌性鎖止】狀態。首領幻影的回合開始時，【我方人氣值】和【對方人氣值】均重置為初始狀態。"
+              "name": "陣地轉移",
+              "desc": "首領幻影召喚2個精英敵人協助戰鬥。首領幻影會將自身弱點屬性傳遞給召喚物，但當召喚物被消滅時，自身韌性值受到額外削減。"
             },
             {
-              "name": "人氣爆發",
-              "desc": "【我方人氣值】和【對方人氣值】的上限提高。"
+              "name": "眾星拱衛",
+              "desc": "除首領幻影外，每多存在1個敵方單位，敵方全體受到的傷害降低。"
             },
             {
-              "name": "人氣傍身",
-              "desc": "【我方人氣值】和【對方人氣值】每有一項未達到極限，敵方全體受到的傷害降低。"
+              "name": "絕境逆轉",
+              "desc": "首領幻影第二階段施放【傀儡候場】時，會對所有的召喚物附加強化效果。"
             }
           ],
           "tags2": [
@@ -12618,45 +14386,45 @@
               "desc": "首領幻影受到的傷害降低50%。弱點擊破後，行動額外延後，受到的傷害提高100%。"
             },
             {
-              "name": "蟲卵分裂",
-              "desc": "首領幻影每回合結束時獲得一定數量的蟲卵。首領幻影可以消耗蟲卵強化蟲群召喚物，使其獲得1層【生長激素】。"
+              "name": "化整為零",
+              "desc": "戰鬥開始時和轉階段時，首領幻影分裂為5只【金血憶靈】併為這些召喚物施加【合而為一】。當擁有【合而為一】的【金血憶靈】全部陷入【假死】狀態時，它們重新合體成為首領幻影。"
             },
             {
-              "name": "激素分泌",
-              "desc": "首領幻影每召喚一定數量的蟲群召喚物，其召喚的下一隻召喚物將自帶1層【生長激素】。"
+              "name": "相生相成",
+              "desc": "首領幻影分裂後召喚的【金血憶靈】的生命上限提高，且第二階段分裂後召喚的【金血憶靈】共享生命值。"
             },
             {
-              "name": "蟲卵爆發",
-              "desc": "首領幻影每回合結束時和通過【築巢育卵】獲得的蟲卵數量提高。"
+              "name": "規模效應",
+              "desc": "除首領幻影外，每多存在1個不處於【假死】狀態的敵方單位，敵方全體受到的傷害降低，造成的傷害提高。"
             }
           ]
         },
         {
-          "name": "偶像螟蝗·難度02",
+          "name": "難度2",
           "weakness1": [
             "物理",
             "火",
-            "量子",
+            "風",
             "虛數"
           ],
           "weakness2": [
             "物理",
-            "冰",
-            "量子",
+            "火",
+            "雷",
             "虛數"
           ],
           "monsters1": [
             {
-              "id": "501401402",
-              "name": "萬眾矚目的超偶像",
-              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_5014010.webp"
+              "id": "200401402",
+              "name": "勾魂攝魄的支配者",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_2004010.webp"
             }
           ],
           "monsters2": [
             {
-              "id": "802501102",
-              "name": "遮天蔽日的噬星蠹",
-              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_8025010.webp"
+              "id": "406401202",
+              "name": "迷惘之淵的裁定者",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_4064010.webp"
             }
           ],
           "tags1": [
@@ -12665,16 +14433,16 @@
               "desc": "首領幻影受到的傷害降低50%。弱點擊破後，行動額外延後，受到的傷害提高100%。"
             },
             {
-              "name": "雙重戰場",
-              "desc": "首領幻影會在戰鬥中開啟連麥PK，選擇一名我方角色前往副戰場戰鬥，其餘角色留在主戰場提供支援。連麥PK開啟後，處於主戰場的敵方目標受到的傷害降低，並免疫控制類負面狀態，首領幻影進入【韌性鎖止】狀態。首領幻影的回合開始時，【我方人氣值】和【對方人氣值】均重置為初始狀態。"
+              "name": "陣地轉移",
+              "desc": "首領幻影召喚2個精英敵人協助戰鬥。首領幻影會將自身弱點屬性傳遞給召喚物，但當召喚物被消滅時，自身韌性值受到額外削減。"
             },
             {
-              "name": "人氣爆發",
-              "desc": "【我方人氣值】和【對方人氣值】的上限提高。"
+              "name": "眾星拱衛",
+              "desc": "除首領幻影外，每多存在1個敵方單位，敵方全體受到的傷害降低。"
             },
             {
-              "name": "人氣傍身",
-              "desc": "【我方人氣值】和【對方人氣值】每有一項未達到極限，敵方全體受到的傷害降低。"
+              "name": "絕境逆轉",
+              "desc": "首領幻影第二階段施放【傀儡候場】時，會對所有的召喚物附加強化效果。"
             }
           ],
           "tags2": [
@@ -12683,45 +14451,45 @@
               "desc": "首領幻影受到的傷害降低50%。弱點擊破後，行動額外延後，受到的傷害提高100%。"
             },
             {
-              "name": "蟲卵分裂",
-              "desc": "首領幻影每回合結束時獲得一定數量的蟲卵。首領幻影可以消耗蟲卵強化蟲群召喚物，使其獲得1層【生長激素】。"
+              "name": "化整為零",
+              "desc": "戰鬥開始時和轉階段時，首領幻影分裂為5只【金血憶靈】併為這些召喚物施加【合而為一】。當擁有【合而為一】的【金血憶靈】全部陷入【假死】狀態時，它們重新合體成為首領幻影。"
             },
             {
-              "name": "激素分泌",
-              "desc": "首領幻影每召喚一定數量的蟲群召喚物，其召喚的下一隻召喚物將自帶1層【生長激素】。"
+              "name": "相生相成",
+              "desc": "首領幻影分裂後召喚的【金血憶靈】的生命上限提高，且第二階段分裂後召喚的【金血憶靈】共享生命值。"
             },
             {
-              "name": "蟲卵爆發",
-              "desc": "首領幻影每回合結束時和通過【築巢育卵】獲得的蟲卵數量提高。"
+              "name": "規模效應",
+              "desc": "除首領幻影外，每多存在1個不處於【假死】狀態的敵方單位，敵方全體受到的傷害降低，造成的傷害提高。"
             }
           ]
         },
         {
-          "name": "偶像螟蝗·難度03",
+          "name": "難度3",
           "weakness1": [
             "物理",
             "火",
-            "量子",
+            "風",
             "虛數"
           ],
           "weakness2": [
             "物理",
-            "冰",
-            "量子",
+            "火",
+            "雷",
             "虛數"
           ],
           "monsters1": [
             {
-              "id": "501401403",
-              "name": "萬眾矚目的超偶像",
-              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_5014010.webp"
+              "id": "200401403",
+              "name": "勾魂攝魄的支配者",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_2004010.webp"
             }
           ],
           "monsters2": [
             {
-              "id": "802501103",
-              "name": "遮天蔽日的噬星蠹",
-              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_8025010.webp"
+              "id": "406401203",
+              "name": "迷惘之淵的裁定者",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_4064010.webp"
             }
           ],
           "tags1": [
@@ -12730,16 +14498,16 @@
               "desc": "首領幻影受到的傷害降低50%。弱點擊破後，行動額外延後，受到的傷害提高100%。"
             },
             {
-              "name": "雙重戰場",
-              "desc": "首領幻影會在戰鬥中開啟連麥PK，選擇一名我方角色前往副戰場戰鬥，其餘角色留在主戰場提供支援。連麥PK開啟後，處於主戰場的敵方目標受到的傷害降低，並免疫控制類負面狀態，首領幻影進入【韌性鎖止】狀態。首領幻影的回合開始時，【我方人氣值】和【對方人氣值】均重置為初始狀態。"
+              "name": "陣地轉移",
+              "desc": "首領幻影召喚2個精英敵人協助戰鬥。首領幻影會將自身弱點屬性傳遞給召喚物，但當召喚物被消滅時，自身韌性值受到額外削減。"
             },
             {
-              "name": "人氣爆發",
-              "desc": "【我方人氣值】和【對方人氣值】的上限提高。"
+              "name": "眾星拱衛",
+              "desc": "除首領幻影外，每多存在1個敵方單位，敵方全體受到的傷害降低。"
             },
             {
-              "name": "人氣傍身",
-              "desc": "【我方人氣值】和【對方人氣值】每有一項未達到極限，敵方全體受到的傷害降低。"
+              "name": "絕境逆轉",
+              "desc": "首領幻影第二階段施放【傀儡候場】時，會對所有的召喚物附加強化效果。"
             }
           ],
           "tags2": [
@@ -12748,45 +14516,45 @@
               "desc": "首領幻影受到的傷害降低50%。弱點擊破後，行動額外延後，受到的傷害提高100%。"
             },
             {
-              "name": "蟲卵分裂",
-              "desc": "首領幻影每回合結束時獲得一定數量的蟲卵。首領幻影可以消耗蟲卵強化蟲群召喚物，使其獲得1層【生長激素】。"
+              "name": "化整為零",
+              "desc": "戰鬥開始時和轉階段時，首領幻影分裂為5只【金血憶靈】併為這些召喚物施加【合而為一】。當擁有【合而為一】的【金血憶靈】全部陷入【假死】狀態時，它們重新合體成為首領幻影。"
             },
             {
-              "name": "激素分泌",
-              "desc": "首領幻影每召喚一定數量的蟲群召喚物，其召喚的下一隻召喚物將自帶1層【生長激素】。"
+              "name": "相生相成",
+              "desc": "首領幻影分裂後召喚的【金血憶靈】的生命上限提高，且第二階段分裂後召喚的【金血憶靈】共享生命值。"
             },
             {
-              "name": "蟲卵爆發",
-              "desc": "首領幻影每回合結束時和通過【築巢育卵】獲得的蟲卵數量提高。"
+              "name": "規模效應",
+              "desc": "除首領幻影外，每多存在1個不處於【假死】狀態的敵方單位，敵方全體受到的傷害降低，造成的傷害提高。"
             }
           ]
         },
         {
-          "name": "偶像螟蝗·難度04",
+          "name": "難度4",
           "weakness1": [
             "物理",
             "火",
-            "量子",
+            "風",
             "虛數"
           ],
           "weakness2": [
             "物理",
-            "冰",
-            "量子",
+            "火",
+            "雷",
             "虛數"
           ],
           "monsters1": [
             {
-              "id": "501401404",
-              "name": "萬眾矚目的超偶像",
-              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_5014010.webp"
+              "id": "200401404",
+              "name": "勾魂攝魄的支配者",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_2004010.webp"
             }
           ],
           "monsters2": [
             {
-              "id": "802501104",
-              "name": "遮天蔽日的噬星蠹",
-              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_8025010.webp"
+              "id": "406401204",
+              "name": "迷惘之淵的裁定者",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_4064010.webp"
             }
           ],
           "tags1": [
@@ -12795,16 +14563,16 @@
               "desc": "首領幻影受到的傷害降低50%。弱點擊破後，行動額外延後，受到的傷害提高100%。"
             },
             {
-              "name": "雙重戰場",
-              "desc": "首領幻影會在戰鬥中開啟連麥PK，選擇一名我方角色前往副戰場戰鬥，其餘角色留在主戰場提供支援。連麥PK開啟後，處於主戰場的敵方目標受到的傷害降低，並免疫控制類負面狀態，首領幻影進入【韌性鎖止】狀態。首領幻影的回合開始時，【我方人氣值】和【對方人氣值】均重置為初始狀態。"
+              "name": "陣地轉移",
+              "desc": "首領幻影召喚2個精英敵人協助戰鬥。首領幻影會將自身弱點屬性傳遞給召喚物，但當召喚物被消滅時，自身韌性值受到額外削減。"
             },
             {
-              "name": "人氣爆發",
-              "desc": "【我方人氣值】和【對方人氣值】的上限提高。"
+              "name": "眾星拱衛",
+              "desc": "除首領幻影外，每多存在1個敵方單位，敵方全體受到的傷害降低。"
             },
             {
-              "name": "人氣傍身",
-              "desc": "【我方人氣值】和【對方人氣值】每有一項未達到極限，敵方全體受到的傷害降低。"
+              "name": "絕境逆轉",
+              "desc": "首領幻影第二階段施放【傀儡候場】時，會對所有的召喚物附加強化效果。"
             }
           ],
           "tags2": [
@@ -12813,18 +14581,1243 @@
               "desc": "首領幻影受到的傷害降低50%。弱點擊破後，行動額外延後，受到的傷害提高100%。"
             },
             {
-              "name": "蟲卵分裂",
-              "desc": "首領幻影每回合結束時獲得一定數量的蟲卵。首領幻影可以消耗蟲卵強化蟲群召喚物，使其獲得1層【生長激素】。"
+              "name": "化整為零",
+              "desc": "戰鬥開始時和轉階段時，首領幻影分裂為5只【金血憶靈】併為這些召喚物施加【合而為一】。當擁有【合而為一】的【金血憶靈】全部陷入【假死】狀態時，它們重新合體成為首領幻影。"
             },
             {
-              "name": "激素分泌",
-              "desc": "首領幻影每召喚一定數量的蟲群召喚物，其召喚的下一隻召喚物將自帶1層【生長激素】。"
+              "name": "相生相成",
+              "desc": "首領幻影分裂後召喚的【金血憶靈】的生命上限提高，且第二階段分裂後召喚的【金血憶靈】共享生命值。"
             },
             {
-              "name": "蟲卵爆發",
-              "desc": "首領幻影每回合結束時和通過【築巢育卵】獲得的蟲卵數量提高。"
+              "name": "規模效應",
+              "desc": "除首領幻影外，每多存在1個不處於【假死】狀態的敵方單位，敵方全體受到的傷害降低，造成的傷害提高。"
             }
           ]
+        },
+        {
+          "name": "難度5",
+          "weakness1": [],
+          "weakness2": [],
+          "monsters1": [],
+          "monsters2": [],
+          "tags1": [],
+          "tags2": []
+        }
+      ]
+    },
+    {
+      "id": "3021",
+      "name": "支配遺忘",
+      "beginTime": "",
+      "endTime": "",
+      "buff": "擁有【堅防守備】的敵方目標被弱點擊破時，使我方全體目標解除控制狀態、行動提前並使阿哈立即獲得一個額外回合（本回合固定計入10笑點）。\n敵方全體目標受到的終結技傷害提高25%，歡愉傷害提高15%。",
+      "buffs": [
+        {
+          "name": "魔法時間",
+          "desc": "戰鬥開始時，我方隊伍中存在1/2/3/4名歡愉命途的角色時，我方全體目標歡愉度提高10%/20%/30%/60%。"
+        },
+        {
+          "name": "望風瓦解",
+          "desc": "敵方全體受到的擊破傷害提高10%。擊破敵方弱點後，我方全體速度提高15%，持續2回合。"
+        },
+        {
+          "name": "可乘之隙",
+          "desc": "我方全體造成的追加攻擊和終結技傷害提高50%，對弱點擊破狀態下的敵方目標額外提高50%。"
+        },
+        {
+          "name": "淪為笑談",
+          "desc": "我方目標施放攻擊造成歡愉傷害後，使受到歡愉傷害的目標陷入易傷狀態，受到的傷害提高15%，持續2回合。該效果每次攻擊對每名敵方目標最多觸發1次。"
+        },
+        {
+          "name": "有機可趁",
+          "desc": "我方目標對敵方目標施加負面狀態後，使自身暴擊傷害提高75%，持續2回合。"
+        },
+        {
+          "name": "膏腴之地",
+          "desc": "我方全體造成的戰技和終結技傷害提高30%，編隊中的第1位角色造成的戰技和終結技傷害額外提高30%。"
+        }
+      ],
+      "floors": [
+        {
+          "name": "支配遺忘·難度01",
+          "weakness1": [
+            "物理",
+            "火",
+            "風",
+            "虛數"
+          ],
+          "weakness2": [
+            "物理",
+            "火",
+            "雷",
+            "虛數"
+          ],
+          "monsters1": [
+            {
+              "id": "200401401",
+              "name": "勾魂攝魄的支配者",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_2004010.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "406401201",
+              "name": "迷惘之淵的裁定者",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_4064010.webp"
+            }
+          ],
+          "tags1": [
+            {
+              "name": "堅防守備",
+              "desc": "首領幻影受到的傷害降低50%。弱點擊破後，行動額外延後，受到的傷害提高100%。"
+            },
+            {
+              "name": "陣地轉移",
+              "desc": "首領幻影召喚2個精英敵人協助戰鬥。首領幻影會將自身弱點屬性傳遞給召喚物，但當召喚物被消滅時，自身韌性值受到額外削減。"
+            },
+            {
+              "name": "眾星拱衛",
+              "desc": "除首領幻影外，每多存在1個敵方單位，敵方全體受到的傷害降低。"
+            },
+            {
+              "name": "絕境逆轉",
+              "desc": "首領幻影第二階段施放【傀儡候場】時，會對所有的召喚物附加強化效果。"
+            }
+          ],
+          "tags2": [
+            {
+              "name": "堅防守備",
+              "desc": "首領幻影受到的傷害降低50%。弱點擊破後，行動額外延後，受到的傷害提高100%。"
+            },
+            {
+              "name": "化整為零",
+              "desc": "戰鬥開始時和轉階段時，首領幻影分裂為5只【金血憶靈】併為這些召喚物施加【合而為一】。當擁有【合而為一】的【金血憶靈】全部陷入【假死】狀態時，它們重新合體成為首領幻影。"
+            },
+            {
+              "name": "相生相成",
+              "desc": "首領幻影分裂後召喚的【金血憶靈】的生命上限提高，且第二階段分裂後召喚的【金血憶靈】共享生命值。"
+            },
+            {
+              "name": "規模效應",
+              "desc": "除首領幻影外，每多存在1個不處於【假死】狀態的敵方單位，敵方全體受到的傷害降低，造成的傷害提高。"
+            }
+          ]
+        },
+        {
+          "name": "支配遺忘·難度02",
+          "weakness1": [
+            "物理",
+            "火",
+            "風",
+            "虛數"
+          ],
+          "weakness2": [
+            "物理",
+            "火",
+            "雷",
+            "虛數"
+          ],
+          "monsters1": [
+            {
+              "id": "200401402",
+              "name": "勾魂攝魄的支配者",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_2004010.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "406401202",
+              "name": "迷惘之淵的裁定者",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_4064010.webp"
+            }
+          ],
+          "tags1": [
+            {
+              "name": "堅防守備",
+              "desc": "首領幻影受到的傷害降低50%。弱點擊破後，行動額外延後，受到的傷害提高100%。"
+            },
+            {
+              "name": "陣地轉移",
+              "desc": "首領幻影召喚2個精英敵人協助戰鬥。首領幻影會將自身弱點屬性傳遞給召喚物，但當召喚物被消滅時，自身韌性值受到額外削減。"
+            },
+            {
+              "name": "眾星拱衛",
+              "desc": "除首領幻影外，每多存在1個敵方單位，敵方全體受到的傷害降低。"
+            },
+            {
+              "name": "絕境逆轉",
+              "desc": "首領幻影第二階段施放【傀儡候場】時，會對所有的召喚物附加強化效果。"
+            }
+          ],
+          "tags2": [
+            {
+              "name": "堅防守備",
+              "desc": "首領幻影受到的傷害降低50%。弱點擊破後，行動額外延後，受到的傷害提高100%。"
+            },
+            {
+              "name": "化整為零",
+              "desc": "戰鬥開始時和轉階段時，首領幻影分裂為5只【金血憶靈】併為這些召喚物施加【合而為一】。當擁有【合而為一】的【金血憶靈】全部陷入【假死】狀態時，它們重新合體成為首領幻影。"
+            },
+            {
+              "name": "相生相成",
+              "desc": "首領幻影分裂後召喚的【金血憶靈】的生命上限提高，且第二階段分裂後召喚的【金血憶靈】共享生命值。"
+            },
+            {
+              "name": "規模效應",
+              "desc": "除首領幻影外，每多存在1個不處於【假死】狀態的敵方單位，敵方全體受到的傷害降低，造成的傷害提高。"
+            }
+          ]
+        },
+        {
+          "name": "支配遺忘·難度03",
+          "weakness1": [
+            "物理",
+            "火",
+            "風",
+            "虛數"
+          ],
+          "weakness2": [
+            "物理",
+            "火",
+            "雷",
+            "虛數"
+          ],
+          "monsters1": [
+            {
+              "id": "200401403",
+              "name": "勾魂攝魄的支配者",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_2004010.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "406401203",
+              "name": "迷惘之淵的裁定者",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_4064010.webp"
+            }
+          ],
+          "tags1": [
+            {
+              "name": "堅防守備",
+              "desc": "首領幻影受到的傷害降低50%。弱點擊破後，行動額外延後，受到的傷害提高100%。"
+            },
+            {
+              "name": "陣地轉移",
+              "desc": "首領幻影召喚2個精英敵人協助戰鬥。首領幻影會將自身弱點屬性傳遞給召喚物，但當召喚物被消滅時，自身韌性值受到額外削減。"
+            },
+            {
+              "name": "眾星拱衛",
+              "desc": "除首領幻影外，每多存在1個敵方單位，敵方全體受到的傷害降低。"
+            },
+            {
+              "name": "絕境逆轉",
+              "desc": "首領幻影第二階段施放【傀儡候場】時，會對所有的召喚物附加強化效果。"
+            }
+          ],
+          "tags2": [
+            {
+              "name": "堅防守備",
+              "desc": "首領幻影受到的傷害降低50%。弱點擊破後，行動額外延後，受到的傷害提高100%。"
+            },
+            {
+              "name": "化整為零",
+              "desc": "戰鬥開始時和轉階段時，首領幻影分裂為5只【金血憶靈】併為這些召喚物施加【合而為一】。當擁有【合而為一】的【金血憶靈】全部陷入【假死】狀態時，它們重新合體成為首領幻影。"
+            },
+            {
+              "name": "相生相成",
+              "desc": "首領幻影分裂後召喚的【金血憶靈】的生命上限提高，且第二階段分裂後召喚的【金血憶靈】共享生命值。"
+            },
+            {
+              "name": "規模效應",
+              "desc": "除首領幻影外，每多存在1個不處於【假死】狀態的敵方單位，敵方全體受到的傷害降低，造成的傷害提高。"
+            }
+          ]
+        },
+        {
+          "name": "支配遺忘·難度04",
+          "weakness1": [
+            "物理",
+            "火",
+            "風",
+            "虛數"
+          ],
+          "weakness2": [
+            "物理",
+            "火",
+            "雷",
+            "虛數"
+          ],
+          "monsters1": [
+            {
+              "id": "200401404",
+              "name": "勾魂攝魄的支配者",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_2004010.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "406401204",
+              "name": "迷惘之淵的裁定者",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_4064010.webp"
+            }
+          ],
+          "tags1": [
+            {
+              "name": "堅防守備",
+              "desc": "首領幻影受到的傷害降低50%。弱點擊破後，行動額外延後，受到的傷害提高100%。"
+            },
+            {
+              "name": "陣地轉移",
+              "desc": "首領幻影召喚2個精英敵人協助戰鬥。首領幻影會將自身弱點屬性傳遞給召喚物，但當召喚物被消滅時，自身韌性值受到額外削減。"
+            },
+            {
+              "name": "眾星拱衛",
+              "desc": "除首領幻影外，每多存在1個敵方單位，敵方全體受到的傷害降低。"
+            },
+            {
+              "name": "絕境逆轉",
+              "desc": "首領幻影第二階段施放【傀儡候場】時，會對所有的召喚物附加強化效果。"
+            }
+          ],
+          "tags2": [
+            {
+              "name": "堅防守備",
+              "desc": "首領幻影受到的傷害降低50%。弱點擊破後，行動額外延後，受到的傷害提高100%。"
+            },
+            {
+              "name": "化整為零",
+              "desc": "戰鬥開始時和轉階段時，首領幻影分裂為5只【金血憶靈】併為這些召喚物施加【合而為一】。當擁有【合而為一】的【金血憶靈】全部陷入【假死】狀態時，它們重新合體成為首領幻影。"
+            },
+            {
+              "name": "相生相成",
+              "desc": "首領幻影分裂後召喚的【金血憶靈】的生命上限提高，且第二階段分裂後召喚的【金血憶靈】共享生命值。"
+            },
+            {
+              "name": "規模效應",
+              "desc": "除首領幻影外，每多存在1個不處於【假死】狀態的敵方單位，敵方全體受到的傷害降低，造成的傷害提高。"
+            }
+          ]
+        },
+        {
+          "name": "難度5",
+          "weakness1": [],
+          "weakness2": [],
+          "monsters1": [],
+          "monsters2": [],
+          "tags1": [],
+          "tags2": []
+        }
+      ]
+    },
+    {
+      "id": "3020",
+      "name": "仙客天狼",
+      "beginTime": "",
+      "endTime": "",
+      "buff": "擁有【堅防守備】的敵方目標被弱點擊破時，使我方全體目標解除控制狀態並激活終結技。\n敵方全體目標受到的戰技傷害提高25%，歡愉傷害提高15%。",
+      "buffs": [
+        {
+          "name": "膏腴之地",
+          "desc": "我方全體造成的戰技和終結技傷害提高30%，編隊中的第1位角色造成的戰技和終結技傷害額外提高30%。"
+        },
+        {
+          "name": "攻無不克",
+          "desc": "憶靈造成傷害時無視目標20%的防禦力。"
+        },
+        {
+          "name": "喜上眉梢",
+          "desc": "敵方全體受到的歡愉傷害提高30%。我方隊伍中存在歡愉命途的角色時，我方全體的弱點擊破效率提高50%。"
+        },
+        {
+          "name": "才藻富贍",
+          "desc": "敵方全體的風屬性抗性和雷屬性抗性降低40%。"
+        },
+        {
+          "name": "前塵影事",
+          "desc": "當前在場的我方憶靈數量大於等於3時，我方全體目標造成的傷害提高60%。"
+        },
+        {
+          "name": "附骨之疽",
+          "desc": "我方目標對敵方造成持續傷害後，回覆1點能量。我方全體造成的持續傷害無視敵方目標40%的全屬性抗性。"
+        }
+      ],
+      "floors": [
+        {
+          "name": "仙客天狼·難度01",
+          "weakness1": [
+            "物理",
+            "火",
+            "冰",
+            "量子"
+          ],
+          "weakness2": [
+            "物理",
+            "火",
+            "雷",
+            "量子"
+          ],
+          "monsters1": [
+            {
+              "id": "202401601",
+              "name": "弗有垂暮的不老仙",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_2024010.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "203302201",
+              "name": "蠱言妄念的蝕心獸",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_2033020.webp"
+            }
+          ],
+          "tags1": [
+            {
+              "name": "堅防守備",
+              "desc": "首領幻影受到的傷害降低50%。弱點擊破後，行動額外延後，受到的傷害提高100%。"
+            },
+            {
+              "name": "豐亨豫大",
+              "desc": "當首領幻影的召喚物被消滅時，其對自身造成少量真實傷害，削減自身少量韌性；如果被消滅的是精英敵人，則改為對自身造成大量真實傷害，削減自身大量韌性。然後立即召喚新的召喚物。"
+            },
+            {
+              "name": "如鹿添翼",
+              "desc": "通過【雞犬升天】和【雞犬升天•強化】召喚的召喚物的初始行動值大幅提前。"
+            },
+            {
+              "name": "仙光奪目",
+              "desc": "任意種類的【仙光】效果生效期間，所有未被弱點擊破的敵方目標受到的傷害降低，造成的傷害提高。"
+            }
+          ],
+          "tags2": [
+            {
+              "name": "堅防守備",
+              "desc": "首領幻影受到的傷害降低50%。弱點擊破後，行動額外延後，受到的傷害提高100%。"
+            },
+            {
+              "name": "鐵骨崢嶸",
+              "desc": "部位受到的傷害降低50%。當首領幻影被弱點擊破後，受到的傷害提高100%"
+            },
+            {
+              "name": "鉤爪鋸牙",
+              "desc": "首領幻影的韌性提高40點。"
+            },
+            {
+              "name": "獸血沸騰",
+              "desc": "【厲咒】狀態的持續時間延長1回合。"
+            }
+          ]
+        },
+        {
+          "name": "仙客天狼·難度02",
+          "weakness1": [
+            "物理",
+            "火",
+            "冰",
+            "量子"
+          ],
+          "weakness2": [
+            "物理",
+            "火",
+            "雷",
+            "量子"
+          ],
+          "monsters1": [
+            {
+              "id": "202401602",
+              "name": "弗有垂暮的不老仙",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_2024010.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "203302202",
+              "name": "蠱言妄念的蝕心獸",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_2033020.webp"
+            }
+          ],
+          "tags1": [
+            {
+              "name": "堅防守備",
+              "desc": "首領幻影受到的傷害降低50%。弱點擊破後，行動額外延後，受到的傷害提高100%。"
+            },
+            {
+              "name": "豐亨豫大",
+              "desc": "當首領幻影的召喚物被消滅時，其對自身造成少量真實傷害，削減自身少量韌性；如果被消滅的是精英敵人，則改為對自身造成大量真實傷害，削減自身大量韌性。然後立即召喚新的召喚物。"
+            },
+            {
+              "name": "如鹿添翼",
+              "desc": "通過【雞犬升天】和【雞犬升天•強化】召喚的召喚物的初始行動值大幅提前。"
+            },
+            {
+              "name": "仙光奪目",
+              "desc": "任意種類的【仙光】效果生效期間，所有未被弱點擊破的敵方目標受到的傷害降低，造成的傷害提高。"
+            }
+          ],
+          "tags2": [
+            {
+              "name": "堅防守備",
+              "desc": "首領幻影受到的傷害降低50%。弱點擊破後，行動額外延後，受到的傷害提高100%。"
+            },
+            {
+              "name": "鐵骨崢嶸",
+              "desc": "部位受到的傷害降低50%。當首領幻影被弱點擊破後，受到的傷害提高100%"
+            },
+            {
+              "name": "鉤爪鋸牙",
+              "desc": "首領幻影的韌性提高40點。"
+            },
+            {
+              "name": "獸血沸騰",
+              "desc": "【厲咒】狀態的持續時間延長1回合。"
+            }
+          ]
+        },
+        {
+          "name": "仙客天狼·難度03",
+          "weakness1": [
+            "物理",
+            "火",
+            "冰",
+            "量子"
+          ],
+          "weakness2": [
+            "物理",
+            "火",
+            "雷",
+            "量子"
+          ],
+          "monsters1": [
+            {
+              "id": "202401603",
+              "name": "弗有垂暮的不老仙",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_2024010.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "203302203",
+              "name": "蠱言妄念的蝕心獸",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_2033020.webp"
+            }
+          ],
+          "tags1": [
+            {
+              "name": "堅防守備",
+              "desc": "首領幻影受到的傷害降低50%。弱點擊破後，行動額外延後，受到的傷害提高100%。"
+            },
+            {
+              "name": "豐亨豫大",
+              "desc": "當首領幻影的召喚物被消滅時，其對自身造成少量真實傷害，削減自身少量韌性；如果被消滅的是精英敵人，則改為對自身造成大量真實傷害，削減自身大量韌性。然後立即召喚新的召喚物。"
+            },
+            {
+              "name": "如鹿添翼",
+              "desc": "通過【雞犬升天】和【雞犬升天•強化】召喚的召喚物的初始行動值大幅提前。"
+            },
+            {
+              "name": "仙光奪目",
+              "desc": "任意種類的【仙光】效果生效期間，所有未被弱點擊破的敵方目標受到的傷害降低，造成的傷害提高。"
+            }
+          ],
+          "tags2": [
+            {
+              "name": "堅防守備",
+              "desc": "首領幻影受到的傷害降低50%。弱點擊破後，行動額外延後，受到的傷害提高100%。"
+            },
+            {
+              "name": "鐵骨崢嶸",
+              "desc": "部位受到的傷害降低50%。當首領幻影被弱點擊破後，受到的傷害提高100%"
+            },
+            {
+              "name": "鉤爪鋸牙",
+              "desc": "首領幻影的韌性提高40點。"
+            },
+            {
+              "name": "獸血沸騰",
+              "desc": "【厲咒】狀態的持續時間延長1回合。"
+            }
+          ]
+        },
+        {
+          "name": "仙客天狼·難度04",
+          "weakness1": [
+            "物理",
+            "火",
+            "冰",
+            "量子"
+          ],
+          "weakness2": [
+            "物理",
+            "火",
+            "雷",
+            "量子"
+          ],
+          "monsters1": [
+            {
+              "id": "202401604",
+              "name": "弗有垂暮的不老仙",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_2024010.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "203302204",
+              "name": "蠱言妄念的蝕心獸",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_2033020.webp"
+            }
+          ],
+          "tags1": [
+            {
+              "name": "堅防守備",
+              "desc": "首領幻影受到的傷害降低50%。弱點擊破後，行動額外延後，受到的傷害提高100%。"
+            },
+            {
+              "name": "豐亨豫大",
+              "desc": "當首領幻影的召喚物被消滅時，其對自身造成少量真實傷害，削減自身少量韌性；如果被消滅的是精英敵人，則改為對自身造成大量真實傷害，削減自身大量韌性。然後立即召喚新的召喚物。"
+            },
+            {
+              "name": "如鹿添翼",
+              "desc": "通過【雞犬升天】和【雞犬升天•強化】召喚的召喚物的初始行動值大幅提前。"
+            },
+            {
+              "name": "仙光奪目",
+              "desc": "任意種類的【仙光】效果生效期間，所有未被弱點擊破的敵方目標受到的傷害降低，造成的傷害提高。"
+            }
+          ],
+          "tags2": [
+            {
+              "name": "堅防守備",
+              "desc": "首領幻影受到的傷害降低50%。弱點擊破後，行動額外延後，受到的傷害提高100%。"
+            },
+            {
+              "name": "鐵骨崢嶸",
+              "desc": "部位受到的傷害降低50%。當首領幻影被弱點擊破後，受到的傷害提高100%"
+            },
+            {
+              "name": "鉤爪鋸牙",
+              "desc": "首領幻影的韌性提高40點。"
+            },
+            {
+              "name": "獸血沸騰",
+              "desc": "【厲咒】狀態的持續時間延長1回合。"
+            }
+          ]
+        },
+        {
+          "name": "難度5",
+          "weakness1": [],
+          "weakness2": [],
+          "monsters1": [],
+          "monsters2": [],
+          "tags1": [],
+          "tags2": []
+        }
+      ]
+    },
+    {
+      "id": "3019",
+      "name": "兵鋒騎士",
+      "beginTime": "",
+      "endTime": "",
+      "buff": "擁有【堅防守備】的敵方單位被弱點擊破時，使我方全體解除控制狀態、恢復戰技點並激活終結技。\n敵方全體受到的戰技傷害提高25%，終結技傷害提高15%。",
+      "buffs": [
+        {
+          "name": "攻心扼吭",
+          "desc": "我方全體目標造成的擊破傷害提高10%，當場上有敵方目標進入弱點擊破狀態後額外提高5%，最多疊加4次。"
+        },
+        {
+          "name": "摧鋒陷陣",
+          "desc": "編隊中的第1位角色造成的傷害無視敵方目標15%的防禦力。"
+        },
+        {
+          "name": "附骨之疽",
+          "desc": "我方目標對敵方造成持續傷害後，回覆1點能量。我方全體造成的持續傷害無視敵方目標40%的全屬性抗性。"
+        },
+        {
+          "name": "以柔克剛",
+          "desc": "我方全體造成的歡愉傷害無視敵方目標15%的全屬性抗性。破壞敵方目標的【戰甲】或【百鍊戰甲】時，獲得3笑點。"
+        },
+        {
+          "name": "攻無不克",
+          "desc": "憶靈造成傷害時無視目標20%的防禦力。"
+        },
+        {
+          "name": "聚氣化神",
+          "desc": "我方目標每次消耗戰技點後，使自身暴擊傷害提高6%，最多疊加10層。"
+        }
+      ],
+      "floors": [
+        {
+          "name": "兵鋒騎士·難度01",
+          "weakness1": [
+            "物理",
+            "火",
+            "冰",
+            "虛數"
+          ],
+          "weakness2": [
+            "火",
+            "冰",
+            "雷",
+            "量子"
+          ],
+          "monsters1": [
+            {
+              "id": "302401301",
+              "name": "芒寒色正的銀騎士",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_3024010.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "401401301",
+              "name": "兵戈擾攘的常勝軍",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_4014010.webp"
+            }
+          ],
+          "tags1": [
+            {
+              "name": "堅防守備",
+              "desc": "首領幻影受到的傷害降低60%。弱點擊破後，行動額外延後，受到的傷害提高125%。"
+            },
+            {
+              "name": "攻守易型",
+              "desc": "首領幻影會在戰鬥中切換自身戰鬥姿態，召喚不同雕塑進行戰鬥；我方消滅處於【靈魂釋放】狀態的雕塑時，會使本次戰鬥中我方全體造成的傷害提高。"
+            },
+            {
+              "name": "絕境逆轉",
+              "desc": "首領幻影第二階段施加【靈魂釋放】時，會選擇所有雕塑作為目標。"
+            },
+            {
+              "name": "眾星拱衛",
+              "desc": "除首領幻影外，每多存在1個敵方單位，敵方全體受到的傷害降低，造成的傷害提高。"
+            }
+          ],
+          "tags2": [
+            {
+              "name": "堅防守備",
+              "desc": "首領幻影受到的傷害降低50%。弱點擊破後，行動額外延後，受到的傷害提高100%。"
+            },
+            {
+              "name": "鐵甲森森",
+              "desc": "首領幻影和其召喚物擁有【戰甲】，使自身受到的傷害降低。在第二階段【戰甲】會強化為【百鍊戰甲】，層數上限大幅提高，首領幻影還會額外獲得韌性保護。"
+            },
+            {
+              "name": "鑠金點玉",
+              "desc": "第二階段時，首領幻影的【百鍊戰甲】層數上限提高。"
+            },
+            {
+              "name": "列陣護主",
+              "desc": "除首領幻影外，每多存在1個敵方單位，敵方全體受到的傷害降低，造成的傷害提高。"
+            }
+          ]
+        },
+        {
+          "name": "兵鋒騎士·難度02",
+          "weakness1": [
+            "物理",
+            "火",
+            "冰",
+            "虛數"
+          ],
+          "weakness2": [
+            "火",
+            "冰",
+            "雷",
+            "量子"
+          ],
+          "monsters1": [
+            {
+              "id": "302401302",
+              "name": "芒寒色正的銀騎士",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_3024010.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "401401302",
+              "name": "兵戈擾攘的常勝軍",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_4014010.webp"
+            }
+          ],
+          "tags1": [
+            {
+              "name": "堅防守備",
+              "desc": "首領幻影受到的傷害降低60%。弱點擊破後，行動額外延後，受到的傷害提高125%。"
+            },
+            {
+              "name": "攻守易型",
+              "desc": "首領幻影會在戰鬥中切換自身戰鬥姿態，召喚不同雕塑進行戰鬥；我方消滅處於【靈魂釋放】狀態的雕塑時，會使本次戰鬥中我方全體造成的傷害提高。"
+            },
+            {
+              "name": "絕境逆轉",
+              "desc": "首領幻影第二階段施加【靈魂釋放】時，會選擇所有雕塑作為目標。"
+            },
+            {
+              "name": "眾星拱衛",
+              "desc": "除首領幻影外，每多存在1個敵方單位，敵方全體受到的傷害降低，造成的傷害提高。"
+            }
+          ],
+          "tags2": [
+            {
+              "name": "堅防守備",
+              "desc": "首領幻影受到的傷害降低50%。弱點擊破後，行動額外延後，受到的傷害提高100%。"
+            },
+            {
+              "name": "鐵甲森森",
+              "desc": "首領幻影和其召喚物擁有【戰甲】，使自身受到的傷害降低。在第二階段【戰甲】會強化為【百鍊戰甲】，層數上限大幅提高，首領幻影還會額外獲得韌性保護。"
+            },
+            {
+              "name": "鑠金點玉",
+              "desc": "第二階段時，首領幻影的【百鍊戰甲】層數上限提高。"
+            },
+            {
+              "name": "列陣護主",
+              "desc": "除首領幻影外，每多存在1個敵方單位，敵方全體受到的傷害降低，造成的傷害提高。"
+            }
+          ]
+        },
+        {
+          "name": "兵鋒騎士·難度03",
+          "weakness1": [
+            "物理",
+            "火",
+            "冰",
+            "虛數"
+          ],
+          "weakness2": [
+            "火",
+            "冰",
+            "雷",
+            "量子"
+          ],
+          "monsters1": [
+            {
+              "id": "302401303",
+              "name": "芒寒色正的銀騎士",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_3024010.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "401401303",
+              "name": "兵戈擾攘的常勝軍",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_4014010.webp"
+            }
+          ],
+          "tags1": [
+            {
+              "name": "堅防守備",
+              "desc": "首領幻影受到的傷害降低60%。弱點擊破後，行動額外延後，受到的傷害提高125%。"
+            },
+            {
+              "name": "攻守易型",
+              "desc": "首領幻影會在戰鬥中切換自身戰鬥姿態，召喚不同雕塑進行戰鬥；我方消滅處於【靈魂釋放】狀態的雕塑時，會使本次戰鬥中我方全體造成的傷害提高。"
+            },
+            {
+              "name": "絕境逆轉",
+              "desc": "首領幻影第二階段施加【靈魂釋放】時，會選擇所有雕塑作為目標。"
+            },
+            {
+              "name": "眾星拱衛",
+              "desc": "除首領幻影外，每多存在1個敵方單位，敵方全體受到的傷害降低，造成的傷害提高。"
+            }
+          ],
+          "tags2": [
+            {
+              "name": "堅防守備",
+              "desc": "首領幻影受到的傷害降低50%。弱點擊破後，行動額外延後，受到的傷害提高100%。"
+            },
+            {
+              "name": "鐵甲森森",
+              "desc": "首領幻影和其召喚物擁有【戰甲】，使自身受到的傷害降低。在第二階段【戰甲】會強化為【百鍊戰甲】，層數上限大幅提高，首領幻影還會額外獲得韌性保護。"
+            },
+            {
+              "name": "鑠金點玉",
+              "desc": "第二階段時，首領幻影的【百鍊戰甲】層數上限提高。"
+            },
+            {
+              "name": "列陣護主",
+              "desc": "除首領幻影外，每多存在1個敵方單位，敵方全體受到的傷害降低，造成的傷害提高。"
+            }
+          ]
+        },
+        {
+          "name": "兵鋒騎士·難度04",
+          "weakness1": [
+            "物理",
+            "火",
+            "冰",
+            "虛數"
+          ],
+          "weakness2": [
+            "火",
+            "冰",
+            "雷",
+            "量子"
+          ],
+          "monsters1": [
+            {
+              "id": "302401304",
+              "name": "芒寒色正的銀騎士",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_3024010.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "401401304",
+              "name": "兵戈擾攘的常勝軍",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_4014010.webp"
+            }
+          ],
+          "tags1": [
+            {
+              "name": "堅防守備",
+              "desc": "首領幻影受到的傷害降低60%。弱點擊破後，行動額外延後，受到的傷害提高125%。"
+            },
+            {
+              "name": "攻守易型",
+              "desc": "首領幻影會在戰鬥中切換自身戰鬥姿態，召喚不同雕塑進行戰鬥；我方消滅處於【靈魂釋放】狀態的雕塑時，會使本次戰鬥中我方全體造成的傷害提高。"
+            },
+            {
+              "name": "絕境逆轉",
+              "desc": "首領幻影第二階段施加【靈魂釋放】時，會選擇所有雕塑作為目標。"
+            },
+            {
+              "name": "眾星拱衛",
+              "desc": "除首領幻影外，每多存在1個敵方單位，敵方全體受到的傷害降低，造成的傷害提高。"
+            }
+          ],
+          "tags2": [
+            {
+              "name": "堅防守備",
+              "desc": "首領幻影受到的傷害降低50%。弱點擊破後，行動額外延後，受到的傷害提高100%。"
+            },
+            {
+              "name": "鐵甲森森",
+              "desc": "首領幻影和其召喚物擁有【戰甲】，使自身受到的傷害降低。在第二階段【戰甲】會強化為【百鍊戰甲】，層數上限大幅提高，首領幻影還會額外獲得韌性保護。"
+            },
+            {
+              "name": "鑠金點玉",
+              "desc": "第二階段時，首領幻影的【百鍊戰甲】層數上限提高。"
+            },
+            {
+              "name": "列陣護主",
+              "desc": "除首領幻影外，每多存在1個敵方單位，敵方全體受到的傷害降低，造成的傷害提高。"
+            }
+          ]
+        },
+        {
+          "name": "難度5",
+          "weakness1": [],
+          "weakness2": [],
+          "monsters1": [],
+          "monsters2": [],
+          "tags1": [],
+          "tags2": []
+        }
+      ]
+    },
+    {
+      "id": "3018",
+      "name": "遺忘冽風",
+      "beginTime": "",
+      "endTime": "",
+      "buff": "擁有【堅防守備】的敵方目標被弱點擊破時，使我方全體目標解除控制狀態、行動提前並使阿哈立即獲得一個額外回合（本回合固定計入10笑點）。\n敵方全體目標受到的終結技傷害提高25%，歡愉傷害提高15%。",
+      "buffs": [
+        {
+          "name": "淪為笑談",
+          "desc": "我方目標施放攻擊造成歡愉傷害後，使受到歡愉傷害的目標陷入易傷狀態，受到的傷害提高15%，持續2回合。該效果每次攻擊對每名敵方目標最多觸發1次。"
+        },
+        {
+          "name": "有機可趁",
+          "desc": "我方目標對敵方目標施加負面狀態後，使自身暴擊傷害提高75%，持續2回合。"
+        },
+        {
+          "name": "望風瓦解",
+          "desc": "敵方全體受到的擊破傷害提高10%。擊破敵方弱點後，我方全體速度提高15%，持續2回合。"
+        },
+        {
+          "name": "披堅執銳",
+          "desc": "我方全體造成的物理屬性傷害提高50%，敵方全體的物理屬性抗性降低20%。"
+        },
+        {
+          "name": "喜上眉梢",
+          "desc": "敵方全體受到的歡愉傷害提高30%。我方隊伍中存在歡愉命途的角色時，我方全體的弱點擊破效率提高50%。"
+        },
+        {
+          "name": "可乘之隙",
+          "desc": "我方全體造成的追加攻擊和終結技傷害提高50%，對弱點擊破狀態下的敵方目標額外提高50%。"
+        }
+      ],
+      "floors": [
+        {
+          "name": "遺忘冽風·難度01",
+          "weakness1": [
+            "物理",
+            "火",
+            "雷",
+            "虛數"
+          ],
+          "weakness2": [
+            "火",
+            "雷",
+            "風",
+            "量子"
+          ],
+          "monsters1": [
+            {
+              "id": "406401201",
+              "name": "迷惘之淵的裁定者",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_4064010.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "100401401",
+              "name": "無望冽風的幻滅者",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_1004010.webp"
+            }
+          ],
+          "tags1": [
+            {
+              "name": "堅防守備",
+              "desc": "首領幻影受到的傷害降低50%。弱點擊破後，行動額外延後，受到的傷害提高100%。"
+            },
+            {
+              "name": "化整為零",
+              "desc": "戰鬥開始時和轉階段時，首領幻影分裂為5只【金血憶靈】併為這些召喚物施加【合而為一】。當擁有【合而為一】的【金血憶靈】全部陷入【假死】狀態時，它們重新合體成為首領幻影。"
+            },
+            {
+              "name": "相生相成",
+              "desc": "首領幻影分裂後召喚的【金血憶靈】的生命上限提高，且第二階段分裂後召喚的【金血憶靈】共享生命值。"
+            },
+            {
+              "name": "規模效應",
+              "desc": "除首領幻影外，每多存在1個不處於【假死】狀態的敵方單位，敵方全體受到的傷害降低，造成的傷害提高。"
+            }
+          ],
+          "tags2": [
+            {
+              "name": "堅防守備",
+              "desc": "首領幻影受到的傷害降低60%。弱點擊破後，行動額外延後，受到的傷害提高125%。"
+            },
+            {
+              "name": "陣地轉移",
+              "desc": "傑帕德會加入戰鬥併為首領幻影提供保護。首領幻影會將自身弱點屬性轉移給召喚物，但當召喚物被消滅時，自身韌性值受到額外削減。"
+            },
+            {
+              "name": "逃無可逃",
+              "desc": "首領幻影的召喚物會標記1個我方單位，首領幻影施放單攻技能後會對被標記的我方單位追加施放。"
+            },
+            {
+              "name": "堅韌之志",
+              "desc": "敵方全體受到的傷害降低。但每擁有1個弱點屬性，受到的傷害提高。"
+            }
+          ]
+        },
+        {
+          "name": "遺忘冽風·難度02",
+          "weakness1": [
+            "物理",
+            "火",
+            "雷",
+            "虛數"
+          ],
+          "weakness2": [
+            "火",
+            "雷",
+            "風",
+            "量子"
+          ],
+          "monsters1": [
+            {
+              "id": "406401202",
+              "name": "迷惘之淵的裁定者",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_4064010.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "100401402",
+              "name": "無望冽風的幻滅者",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_1004010.webp"
+            }
+          ],
+          "tags1": [
+            {
+              "name": "堅防守備",
+              "desc": "首領幻影受到的傷害降低50%。弱點擊破後，行動額外延後，受到的傷害提高100%。"
+            },
+            {
+              "name": "化整為零",
+              "desc": "戰鬥開始時和轉階段時，首領幻影分裂為5只【金血憶靈】併為這些召喚物施加【合而為一】。當擁有【合而為一】的【金血憶靈】全部陷入【假死】狀態時，它們重新合體成為首領幻影。"
+            },
+            {
+              "name": "相生相成",
+              "desc": "首領幻影分裂後召喚的【金血憶靈】的生命上限提高，且第二階段分裂後召喚的【金血憶靈】共享生命值。"
+            },
+            {
+              "name": "規模效應",
+              "desc": "除首領幻影外，每多存在1個不處於【假死】狀態的敵方單位，敵方全體受到的傷害降低，造成的傷害提高。"
+            }
+          ],
+          "tags2": [
+            {
+              "name": "堅防守備",
+              "desc": "首領幻影受到的傷害降低60%。弱點擊破後，行動額外延後，受到的傷害提高125%。"
+            },
+            {
+              "name": "陣地轉移",
+              "desc": "傑帕德會加入戰鬥併為首領幻影提供保護。首領幻影會將自身弱點屬性轉移給召喚物，但當召喚物被消滅時，自身韌性值受到額外削減。"
+            },
+            {
+              "name": "逃無可逃",
+              "desc": "首領幻影的召喚物會標記1個我方單位，首領幻影施放單攻技能後會對被標記的我方單位追加施放。"
+            },
+            {
+              "name": "堅韌之志",
+              "desc": "敵方全體受到的傷害降低。但每擁有1個弱點屬性，受到的傷害提高。"
+            }
+          ]
+        },
+        {
+          "name": "遺忘冽風·難度03",
+          "weakness1": [
+            "物理",
+            "火",
+            "雷",
+            "虛數"
+          ],
+          "weakness2": [
+            "火",
+            "雷",
+            "風",
+            "量子"
+          ],
+          "monsters1": [
+            {
+              "id": "406401203",
+              "name": "迷惘之淵的裁定者",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_4064010.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "100401403",
+              "name": "無望冽風的幻滅者",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_1004010.webp"
+            }
+          ],
+          "tags1": [
+            {
+              "name": "堅防守備",
+              "desc": "首領幻影受到的傷害降低50%。弱點擊破後，行動額外延後，受到的傷害提高100%。"
+            },
+            {
+              "name": "化整為零",
+              "desc": "戰鬥開始時和轉階段時，首領幻影分裂為5只【金血憶靈】併為這些召喚物施加【合而為一】。當擁有【合而為一】的【金血憶靈】全部陷入【假死】狀態時，它們重新合體成為首領幻影。"
+            },
+            {
+              "name": "相生相成",
+              "desc": "首領幻影分裂後召喚的【金血憶靈】的生命上限提高，且第二階段分裂後召喚的【金血憶靈】共享生命值。"
+            },
+            {
+              "name": "規模效應",
+              "desc": "除首領幻影外，每多存在1個不處於【假死】狀態的敵方單位，敵方全體受到的傷害降低，造成的傷害提高。"
+            }
+          ],
+          "tags2": [
+            {
+              "name": "堅防守備",
+              "desc": "首領幻影受到的傷害降低60%。弱點擊破後，行動額外延後，受到的傷害提高125%。"
+            },
+            {
+              "name": "陣地轉移",
+              "desc": "傑帕德會加入戰鬥併為首領幻影提供保護。首領幻影會將自身弱點屬性轉移給召喚物，但當召喚物被消滅時，自身韌性值受到額外削減。"
+            },
+            {
+              "name": "逃無可逃",
+              "desc": "首領幻影的召喚物會標記1個我方單位，首領幻影施放單攻技能後會對被標記的我方單位追加施放。"
+            },
+            {
+              "name": "堅韌之志",
+              "desc": "敵方全體受到的傷害降低。但每擁有1個弱點屬性，受到的傷害提高。"
+            }
+          ]
+        },
+        {
+          "name": "遺忘冽風·難度04",
+          "weakness1": [
+            "物理",
+            "火",
+            "雷",
+            "虛數"
+          ],
+          "weakness2": [
+            "火",
+            "雷",
+            "風",
+            "量子"
+          ],
+          "monsters1": [
+            {
+              "id": "406401204",
+              "name": "迷惘之淵的裁定者",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_4064010.webp"
+            }
+          ],
+          "monsters2": [
+            {
+              "id": "100401404",
+              "name": "無望冽風的幻滅者",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_1004010.webp"
+            }
+          ],
+          "tags1": [
+            {
+              "name": "堅防守備",
+              "desc": "首領幻影受到的傷害降低50%。弱點擊破後，行動額外延後，受到的傷害提高100%。"
+            },
+            {
+              "name": "化整為零",
+              "desc": "戰鬥開始時和轉階段時，首領幻影分裂為5只【金血憶靈】併為這些召喚物施加【合而為一】。當擁有【合而為一】的【金血憶靈】全部陷入【假死】狀態時，它們重新合體成為首領幻影。"
+            },
+            {
+              "name": "相生相成",
+              "desc": "首領幻影分裂後召喚的【金血憶靈】的生命上限提高，且第二階段分裂後召喚的【金血憶靈】共享生命值。"
+            },
+            {
+              "name": "規模效應",
+              "desc": "除首領幻影外，每多存在1個不處於【假死】狀態的敵方單位，敵方全體受到的傷害降低，造成的傷害提高。"
+            }
+          ],
+          "tags2": [
+            {
+              "name": "堅防守備",
+              "desc": "首領幻影受到的傷害降低60%。弱點擊破後，行動額外延後，受到的傷害提高125%。"
+            },
+            {
+              "name": "陣地轉移",
+              "desc": "傑帕德會加入戰鬥併為首領幻影提供保護。首領幻影會將自身弱點屬性轉移給召喚物，但當召喚物被消滅時，自身韌性值受到額外削減。"
+            },
+            {
+              "name": "逃無可逃",
+              "desc": "首領幻影的召喚物會標記1個我方單位，首領幻影施放單攻技能後會對被標記的我方單位追加施放。"
+            },
+            {
+              "name": "堅韌之志",
+              "desc": "敵方全體受到的傷害降低。但每擁有1個弱點屬性，受到的傷害提高。"
+            }
+          ]
+        },
+        {
+          "name": "難度5",
+          "weakness1": [],
+          "weakness2": [],
+          "monsters1": [],
+          "monsters2": [],
+          "tags1": [],
+          "tags2": []
         }
       ]
     },
@@ -12853,7 +15846,7 @@
         },
         {
           "name": "智圓行方",
-          "desc": "我方隊伍中存在智識命途的角色時，我方全體全屬性抗性穿透提高15%。"
+          "desc": "我方隊伍中存在智識命途的角色時，我方全體全屬性抗性穿透提高25%。"
         },
         {
           "name": "前塵影事",
@@ -13742,7 +16735,7 @@
         },
         {
           "name": "智圓行方",
-          "desc": "我方隊伍中存在智識命途的角色時，我方全體全屬性抗性穿透提高15%。"
+          "desc": "我方隊伍中存在智識命途的角色時，我方全體全屬性抗性穿透提高25%。"
         }
       ],
       "floors": [
@@ -17814,8 +20807,785 @@
   ],
   "peak": [
     {
+      "id": "10",
+      "name": "落葉歸根",
+      "beginTime": "",
+      "endTime": "",
+      "buff": "",
+      "buffs": [
+        {
+          "name": "狂喜之夜",
+          "desc": "我方編隊中第一位角色造成的歡愉傷害增笑50%。"
+        },
+        {
+          "name": "領航誓言",
+          "desc": "我方編隊中第一位角色造成的戰技和終結技傷害的全屬性抗性穿透提高50%。"
+        },
+        {
+          "name": "胞吞作用",
+          "desc": "【穩態失衡】對【血腦屏障】造成的傷害提高50%。"
+        }
+      ],
+      "floors": [
+        {
+          "name": "騎士（一）",
+          "weakness1": [
+            "火",
+            "虛數"
+          ],
+          "weakness2": [],
+          "monsters1": [
+            {
+              "id": "5023010",
+              "name": "樂變化天人",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_5023010.webp"
+            },
+            {
+              "id": "5013040",
+              "name": "破曉戰隊•蒼翼",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_5013040.webp"
+            },
+            {
+              "id": "5014020",
+              "name": "合金機鎧•帕姆王",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_5014020.webp"
+            }
+          ],
+          "monsters2": [],
+          "tags1": [
+            {
+              "name": "血嗜",
+              "desc": "我方目標回合開始時損失500點生命值，該效果可致命。"
+            }
+          ]
+        },
+        {
+          "name": "騎士（二）",
+          "weakness1": [
+            "量子"
+          ],
+          "weakness2": [],
+          "monsters1": [
+            {
+              "id": "5013050",
+              "name": "破曉戰隊•赤焰",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_5013050.webp"
+            },
+            {
+              "id": "5013070",
+              "name": "破曉戰隊•灰燼",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_5013070.webp"
+            },
+            {
+              "id": "4014030",
+              "name": "冥魂渡者，死龍殘軀，玻呂刻斯",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_4014030.webp"
+            }
+          ],
+          "monsters2": [],
+          "tags1": [
+            {
+              "name": "桎梏+",
+              "desc": "我方目標初始獲得2層該效果，每層使自身造成的傷害降低20%，該效果不可解除，每次施放終結技後移除1層該效果。"
+            },
+            {
+              "name": "激怒",
+              "desc": "我方目標每次施放終結技後使敵方全體目標疊加1層該效果，每層使敵方目標的速度提高30%，最多疊加4層。該效果的層數在敵方目標回合開始時清空。"
+            }
+          ]
+        },
+        {
+          "name": "騎士（三）",
+          "weakness1": [
+            "火",
+            "風"
+          ],
+          "weakness2": [],
+          "monsters1": [
+            {
+              "id": "4053020",
+              "name": "颶風大母",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_4053020.webp"
+            },
+            {
+              "id": "2023020",
+              "name": "豐饒靈獸•長右",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_2023020.webp"
+            },
+            {
+              "id": "3024030",
+              "name": "示死禍源：深魘蝗災",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_3024030.webp"
+            }
+          ],
+          "monsters2": [],
+          "tags1": [
+            {
+              "name": "閉鎖",
+              "desc": "我方目標每次施放攻擊後疊加1層該效果，達到6層後使該目標陷入持續1回合的【禁錮】狀態，並固定降低30%能量。該效果的層數在目標回合開始時或負面效果觸發後清空。"
+            }
+          ]
+        },
+        {
+          "name": "將殺王棋",
+          "weakness1": [
+            "量子",
+            "虛數"
+          ],
+          "weakness2": [],
+          "monsters1": [
+            {
+              "id": "402302001",
+              "name": "月夜天馬",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_4023020.webp"
+            },
+            {
+              "id": "8033020",
+              "name": "「燈塔」",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_8033020.webp"
+            },
+            {
+              "id": "503401002",
+              "name": "墮神之血•亞婆離",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_5034010.webp"
+            }
+          ],
+          "monsters2": [],
+          "tags1": [
+            {
+              "name": "血嗜",
+              "desc": "我方目標回合開始時損失500點生命值，該效果可致命。"
+            },
+            {
+              "name": "洞穿",
+              "desc": "敵方目標施放攻擊時，如果受到攻擊的我方目標持有護盾，則使敵方目標造成的傷害提高200%。"
+            }
+          ]
+        },
+        {
+          "name": "將殺王棋·絕境",
+          "weakness1": [
+            "量子",
+            "虛數"
+          ],
+          "weakness2": [],
+          "monsters1": [
+            {
+              "id": "402302001",
+              "name": "月夜天馬",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_4023020.webp"
+            },
+            {
+              "id": "8033020",
+              "name": "「燈塔」",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_8033020.webp"
+            },
+            {
+              "id": "503401002",
+              "name": "墮神之血•亞婆離",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_5034010.webp"
+            }
+          ],
+          "monsters2": [],
+          "tags1": [
+            {
+              "name": "血嗜",
+              "desc": "我方目標回合開始時損失500點生命值，該效果可致命。"
+            },
+            {
+              "name": "洞穿",
+              "desc": "敵方目標施放攻擊時，如果受到攻擊的我方目標持有護盾，則使敵方目標造成的傷害提高200%。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "name": "軍團再臨",
+      "beginTime": "",
+      "endTime": "",
+      "buff": "",
+      "buffs": [
+        {
+          "name": "美妙奇笑",
+          "desc": "我方全體目標歡愉度提高40%，造成的歡愉傷害的全屬性抗性穿透提高20%，施放歡愉技時該效果翻倍。"
+        },
+        {
+          "name": "終結之吻",
+          "desc": "我方任意目標回合開始時，我方全體目標固定恢復25%能量，該效果全場只觸發1次。我方全體目標造成的戰技和終結技傷害提高40%。"
+        },
+        {
+          "name": "蜂群憶質",
+          "desc": "我方憶靈數量等於1/2/3/4時，我方全體目標造成的傷害提高20%/25%/30%/50%。"
+        }
+      ],
+      "floors": [
+        {
+          "name": "騎士（一）",
+          "weakness1": [
+            "火",
+            "量子"
+          ],
+          "weakness2": [],
+          "monsters1": [
+            {
+              "id": "8033020",
+              "name": "「燈塔」",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_8033020.webp"
+            },
+            {
+              "id": "800304016",
+              "name": "蠶食者之影",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_8003040.webp"
+            },
+            {
+              "id": "100401014",
+              "name": "可可利亞",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_1004010.webp"
+            }
+          ],
+          "monsters2": [],
+          "tags1": [
+            {
+              "name": "剛毅",
+              "desc": "敵方目標韌性無法被削減，且受到的擊破傷害降低50%。"
+            },
+            {
+              "name": "鱗甲",
+              "desc": "敵方目標初始擁有20層該效果，每層使敵方目標受到的傷害降低2%，敵方目標每次受到攻擊後降低1層。該效果的層數在首領敵人階段轉換時重置。"
+            }
+          ]
+        },
+        {
+          "name": "騎士（二）",
+          "weakness1": [
+            "虛數"
+          ],
+          "weakness2": [],
+          "monsters1": [
+            {
+              "id": "5023010",
+              "name": "樂變化天人",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_5023010.webp"
+            },
+            {
+              "id": "5013010",
+              "name": "搖滾狂徒",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_5013010.webp"
+            },
+            {
+              "id": "5014010",
+              "name": "火花大會@Official",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_5014010.webp"
+            }
+          ],
+          "monsters2": [],
+          "tags1": [
+            {
+              "name": "破勢",
+              "desc": "敵方目標每次受到我方攻擊後，使自身受到的傷害降低2%，受到的暴擊傷害降低4%，最多疊加10層，該效果在敵方目標受到追加攻擊後或阿哈時刻結束時改為降低5層。"
+            }
+          ]
+        },
+        {
+          "name": "騎士（三）",
+          "weakness1": [
+            "冰",
+            "量子"
+          ],
+          "weakness2": [],
+          "monsters1": [
+            {
+              "id": "5013010",
+              "name": "搖滾狂徒",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_5013010.webp"
+            },
+            {
+              "id": "8003020",
+              "name": "外宇宙之炎",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_8003020.webp"
+            },
+            {
+              "id": "4034010",
+              "name": "至黑之劍，盜火行者",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_4034010.webp"
+            }
+          ],
+          "monsters2": [],
+          "tags1": [
+            {
+              "name": "合勢",
+              "desc": "敵方目標受到的傷害降低60%，我方當前在場的目標數量大於4時，每多1個目標，使該效果的數值降低20%。"
+            }
+          ]
+        },
+        {
+          "name": "將殺王棋",
+          "weakness1": [
+            "冰",
+            "雷",
+            "量子"
+          ],
+          "weakness2": [],
+          "monsters1": [
+            {
+              "id": "403501001",
+              "name": "反造物主，流溢之恨",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_4035010.webp"
+            }
+          ],
+          "monsters2": [],
+          "tags1": [
+            {
+              "name": "血嗜",
+              "desc": "我方目標回合開始時損失500點生命值，該效果可致命。"
+            },
+            {
+              "name": "鱗甲",
+              "desc": "敵方目標初始擁有20層該效果，每層使敵方目標受到的傷害降低2%，敵方目標每次受到攻擊後降低1層。該效果的層數在首領敵人階段轉換時重置。"
+            }
+          ]
+        },
+        {
+          "name": "將殺王棋·絕境",
+          "weakness1": [
+            "冰",
+            "雷",
+            "量子"
+          ],
+          "weakness2": [],
+          "monsters1": [
+            {
+              "id": "403501001",
+              "name": "反造物主，流溢之恨",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_4035010.webp"
+            }
+          ],
+          "monsters2": [],
+          "tags1": [
+            {
+              "name": "血嗜",
+              "desc": "我方目標回合開始時損失500點生命值，該效果可致命。"
+            },
+            {
+              "name": "鱗甲",
+              "desc": "敵方目標初始擁有20層該效果，每層使敵方目標受到的傷害降低2%，敵方目標每次受到攻擊後降低1層。該效果的層數在首領敵人階段轉換時重置。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "name": "塵世卷中",
+      "beginTime": "",
+      "endTime": "",
+      "buff": "",
+      "buffs": [
+        {
+          "name": "領航誓言",
+          "desc": "我方編隊中第一位角色造成的戰技和終結技傷害的全屬性抗性穿透提高50%。"
+        },
+        {
+          "name": "落井下石",
+          "desc": "敵方目標受到來自我方的追加攻擊後，受到的傷害提高15%，持續2回合，該效果最多疊加3層。"
+        },
+        {
+          "name": "狂歡不息",
+          "desc": "我方全體目標的全屬性抗性穿透提高20%，造成的歡愉傷害的全屬性抗性穿透額外提高20%。"
+        }
+      ],
+      "floors": [
+        {
+          "name": "騎士（一）",
+          "weakness1": [
+            "火",
+            "冰"
+          ],
+          "weakness2": [],
+          "monsters1": [
+            {
+              "id": "2023020",
+              "name": "豐饒靈獸•長右",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_2023020.webp"
+            },
+            {
+              "id": "803301014",
+              "name": "資深員工•組長",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_8033010.webp"
+            },
+            {
+              "id": "302401012",
+              "name": "銀枝",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_3024010.webp"
+            }
+          ],
+          "monsters2": [],
+          "tags1": [
+            {
+              "name": "挑釁",
+              "desc": "敵方目標受到6次攻擊後立即行動，該計數在敵方目標回合開始時清空。"
+            }
+          ]
+        },
+        {
+          "name": "騎士（二）",
+          "weakness1": [
+            "火",
+            "雷"
+          ],
+          "weakness2": [],
+          "monsters1": [
+            {
+              "id": "5023010",
+              "name": "樂變化天人",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_5023010.webp"
+            },
+            {
+              "id": "5023020",
+              "name": "吞神子嗣",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_5023020.webp"
+            },
+            {
+              "id": "101401016",
+              "name": "史瓦羅",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_1014010.webp"
+            }
+          ],
+          "monsters2": [],
+          "tags1": [
+            {
+              "name": "破勢",
+              "desc": "敵方目標每次受到我方攻擊後，使自身受到的傷害降低2%，受到的暴擊傷害降低4%，最多疊加10層，該效果在敵方目標受到追加攻擊後或阿哈時刻結束時改為降低5層。"
+            },
+            {
+              "name": "失能",
+              "desc": "進入戰鬥時，固定降低我方目標50%的能量，並使我方目標在自身回合外的能量恢復效率降低50%，持續2回合。"
+            }
+          ]
+        },
+        {
+          "name": "騎士（三）",
+          "weakness1": [
+            "物理",
+            "虛數"
+          ],
+          "weakness2": [],
+          "monsters1": [
+            {
+              "id": "5013040",
+              "name": "破曉戰隊•蒼翼",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_5013040.webp"
+            },
+            {
+              "id": "402301001",
+              "name": "正陽獅鷲",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_4023010.webp"
+            },
+            {
+              "id": "5024010",
+              "name": "極樂顛倒•邪願蓮華主",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_5024010.webp"
+            }
+          ],
+          "monsters2": [],
+          "tags1": [
+            {
+              "name": "血嗜",
+              "desc": "我方目標回合開始時損失500點生命值，該效果可致命。"
+            }
+          ]
+        },
+        {
+          "name": "將殺王棋",
+          "weakness1": [
+            "火",
+            "量子"
+          ],
+          "weakness2": [],
+          "monsters1": [
+            {
+              "id": "4033030",
+              "name": "黑日獅鷲",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_4033030.webp"
+            },
+            {
+              "id": "402302001",
+              "name": "月夜天馬",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_4023020.webp"
+            },
+            {
+              "id": "501403002",
+              "name": "始作畫者，無量塔繪世",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_5014030.webp"
+            }
+          ],
+          "monsters2": [],
+          "tags1": [
+            {
+              "name": "激怒",
+              "desc": "我方目標每次施放終結技後使敵方全體目標疊加1層該效果，每層使敵方目標的速度提高30%，最多疊加4層。該效果的層數在敵方目標回合開始時清空。"
+            },
+            {
+              "name": "均衡",
+              "desc": "戰鬥開始時，速度最高的1名我方角色速度降低20%，速度最低的1名我方角色速度提高15%。"
+            }
+          ]
+        },
+        {
+          "name": "將殺王棋·絕境",
+          "weakness1": [
+            "火",
+            "量子"
+          ],
+          "weakness2": [],
+          "monsters1": [
+            {
+              "id": "402302001",
+              "name": "月夜天馬",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_4023020.webp"
+            },
+            {
+              "id": "4033030",
+              "name": "黑日獅鷲",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_4033030.webp"
+            },
+            {
+              "id": "501403002",
+              "name": "始作畫者，無量塔繪世",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_5014030.webp"
+            }
+          ],
+          "monsters2": [],
+          "tags1": [
+            {
+              "name": "激怒",
+              "desc": "我方目標每次施放終結技後使敵方全體目標疊加1層該效果，每層使敵方目標的速度提高30%，最多疊加4層。該效果的層數在敵方目標回合開始時清空。"
+            },
+            {
+              "name": "均衡",
+              "desc": "戰鬥開始時，速度最高的1名我方角色速度降低20%，速度最低的1名我方角色速度提高15%。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "name": "嗡鳴如笑",
+      "beginTime": "",
+      "endTime": "",
+      "buff": "",
+      "buffs": [
+        {
+          "name": "捧腹大笑",
+          "desc": "我方全體目標歡愉度提高50%，阿哈時刻開始時，我方額外獲得10個笑點。"
+        },
+        {
+          "name": "烈火轟雷",
+          "desc": "為【碎星王蟲•斯喀拉卡巴茲（擬造）】及其召喚物添加火屬性弱點和雷屬性弱點，並使以上目標的火屬性和雷屬性抗性降低60%。"
+        },
+        {
+          "name": "破堅摧剛",
+          "desc": "我方全體目標造成的傷害提高30%；我方目標每次消滅敵方目標後，使自身造成的傷害額外提高3%，該效果可疊加。"
+        }
+      ],
+      "floors": [
+        {
+          "name": "騎士（一）",
+          "weakness1": [
+            "火",
+            "雷"
+          ],
+          "weakness2": [],
+          "monsters1": [
+            {
+              "id": "5012090",
+              "name": "SD民用機鎧",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_5012090.webp"
+            },
+            {
+              "id": "5023020",
+              "name": "吞神子嗣",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_5023020.webp"
+            },
+            {
+              "id": "5012040",
+              "name": "助手塗鴉•拖稿",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_5012040.webp"
+            }
+          ],
+          "monsters2": [],
+          "tags1": [
+            {
+              "name": "失能",
+              "desc": "進入戰鬥時，固定降低我方目標50%的能量，並使我方目標在自身回合外的能量恢復效率降低50%，持續2回合。"
+            },
+            {
+              "name": "破勢",
+              "desc": "敵方目標每次受到我方攻擊後，使自身受到的傷害降低2%，受到的暴擊傷害降低4%，最多疊加10層，該效果在敵方目標受到追加攻擊後或阿哈時刻結束時改為降低5層。"
+            }
+          ]
+        },
+        {
+          "name": "騎士（二）",
+          "weakness1": [
+            "火",
+            "虛數"
+          ],
+          "weakness2": [],
+          "monsters1": [
+            {
+              "id": "5012010",
+              "name": "全自動魔仙棒",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_5012010.webp"
+            },
+            {
+              "id": "5013030",
+              "name": "畫板孔雀",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_5013030.webp"
+            },
+            {
+              "id": "5013040",
+              "name": "破曉戰隊•蒼翼",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_5013040.webp"
+            },
+            {
+              "id": "5014020",
+              "name": "合金機鎧•帕姆王",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_5014020.webp"
+            }
+          ],
+          "monsters2": [],
+          "tags1": [
+            {
+              "name": "沉毅+",
+              "desc": "我方全體目標造成的傷害降低20%，受到的傷害降低10%。"
+            }
+          ]
+        },
+        {
+          "name": "騎士（三）",
+          "weakness1": [
+            "冰",
+            "量子"
+          ],
+          "weakness2": [],
+          "monsters1": [
+            {
+              "id": "5013050",
+              "name": "破曉戰隊•赤焰",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_5013050.webp"
+            },
+            {
+              "id": "4013010",
+              "name": "天譴先鋒",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_4013010.webp"
+            },
+            {
+              "id": "4014020",
+              "name": "頒賜者，千軍首，天譴之矛",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_4014020.webp"
+            }
+          ],
+          "monsters2": [],
+          "tags1": [
+            {
+              "name": "血嗜",
+              "desc": "我方目標回合開始時損失500點生命值，該效果可致命。"
+            }
+          ]
+        },
+        {
+          "name": "將殺王棋",
+          "weakness1": [
+            "物理",
+            "冰",
+            "虛數"
+          ],
+          "weakness2": [],
+          "monsters1": [
+            {
+              "id": "5013040",
+              "name": "破曉戰隊•蒼翼",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_5013040.webp"
+            },
+            {
+              "id": "4053020",
+              "name": "颶風大母",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_4053020.webp"
+            },
+            {
+              "id": "5012010",
+              "name": "全自動魔仙棒",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_5012010.webp"
+            },
+            {
+              "id": "802501003",
+              "name": "碎星王蟲•斯喀拉卡巴茲（擬造）",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_8025010.webp"
+            }
+          ],
+          "monsters2": [],
+          "tags1": [
+            {
+              "name": "血嗜",
+              "desc": "我方目標回合開始時損失500點生命值，該效果可致命。"
+            },
+            {
+              "name": "破勢",
+              "desc": "敵方目標每次受到我方攻擊後，使自身受到的傷害降低2%，受到的暴擊傷害降低4%，最多疊加10層，該效果在敵方目標受到追加攻擊後或阿哈時刻結束時改為降低5層。"
+            }
+          ]
+        },
+        {
+          "name": "將殺王棋·絕境",
+          "weakness1": [
+            "物理",
+            "冰",
+            "虛數"
+          ],
+          "weakness2": [],
+          "monsters1": [
+            {
+              "id": "5013040",
+              "name": "破曉戰隊•蒼翼",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_5013040.webp"
+            },
+            {
+              "id": "4053020",
+              "name": "颶風大母",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_4053020.webp"
+            },
+            {
+              "id": "5012100",
+              "name": "魔法少女急襲劇團",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_5012100.webp"
+            },
+            {
+              "id": "802501003",
+              "name": "碎星王蟲•斯喀拉卡巴茲（擬造）",
+              "icon": "https://static.nanoka.cc/assets/hsr/monstermiddleicon/Monster_8025010.webp"
+            }
+          ],
+          "monsters2": [],
+          "tags1": [
+            {
+              "name": "血嗜",
+              "desc": "我方目標回合開始時損失500點生命值，該效果可致命。"
+            },
+            {
+              "name": "破勢",
+              "desc": "敵方目標每次受到我方攻擊後，使自身受到的傷害降低2%，受到的暴擊傷害降低4%，最多疊加10層，該效果在敵方目標受到追加攻擊後或阿哈時刻結束時改為降低5層。"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "6",
-      "name": "4.2異相仲裁",
+      "name": "幸福語法",
       "beginTime": "",
       "endTime": "",
       "buff": "",
@@ -17939,7 +21709,7 @@
           "name": "將殺王棋",
           "weakness1": [
             "物理",
-            "火",
+            "雷",
             "虛數"
           ],
           "weakness2": [],
@@ -17968,8 +21738,8 @@
           "monsters2": [],
           "tags1": [
             {
-              "name": "均衡",
-              "desc": "戰鬥開始時，速度最高的1名我方角色速度降低20%，速度最低的1名我方角色速度提高15%。"
+              "name": "沉毅",
+              "desc": "我方全體目標造成的傷害降低10%，受到的傷害降低10%。"
             },
             {
               "name": "桎梏",
@@ -17981,7 +21751,7 @@
           "name": "將殺王棋·絕境",
           "weakness1": [
             "物理",
-            "火",
+            "雷",
             "虛數"
           ],
           "weakness2": [],
@@ -18010,8 +21780,8 @@
           "monsters2": [],
           "tags1": [
             {
-              "name": "均衡",
-              "desc": "戰鬥開始時，速度最高的1名我方角色速度降低20%，速度最低的1名我方角色速度提高15%。"
+              "name": "沉毅",
+              "desc": "我方全體目標造成的傷害降低10%，受到的傷害降低10%。"
             },
             {
               "name": "桎梏",
