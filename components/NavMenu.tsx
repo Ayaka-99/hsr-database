@@ -17,6 +17,7 @@ export default function NavMenu() {
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
   const pathname = usePathname();
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
   // 點擊外部關閉選單
   useEffect(() => {
@@ -34,15 +35,19 @@ export default function NavMenu() {
     setOpen(false);
   }, [pathname]);
 
+  const checkActive = (href: string) => {
+    if (href === '/') {
+      return pathname === basePath || pathname === `${basePath}/` || pathname === '/' || pathname === '/hsr-database' || pathname === '/hsr-database/';
+    }
+    return pathname.includes(href);
+  };
+
   return (
     <div ref={ref} className="flex items-center ml-auto">
       {/* 桌面端直覺導覽標籤 */}
       <div className="hidden md:flex items-center gap-1.5 mr-3">
         {NAV_ITEMS.map(({ href, label }) => {
-          const isActive =
-            href === '/'
-              ? pathname === '/hsr-database' || pathname === '/hsr-database/' || pathname === '/'
-              : pathname.includes(href);
+          const isActive = checkActive(href);
           return (
             <Link
               key={href}
@@ -68,7 +73,7 @@ export default function NavMenu() {
         >
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/hsr-database/favicon.jpg.png"
+            src={`${basePath}/favicon.jpg.png`}
             alt="選單"
             className="w-full h-full object-cover animate-favicon-spin"
             onError={(e) => {
@@ -90,10 +95,7 @@ export default function NavMenu() {
               星軌導航
             </div>
             {NAV_ITEMS.map(({ href, label }) => {
-              const isActive =
-                href === '/'
-                  ? pathname === '/hsr-database' || pathname === '/hsr-database/' || pathname === '/'
-                  : pathname.includes(href);
+              const isActive = checkActive(href);
               return (
                 <Link
                   key={href}

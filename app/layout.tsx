@@ -9,12 +9,14 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
   return (
     <html lang="zh-TW">
       <head>
-        <link rel="icon" href="/hsr-database/favicon.jpg.png" type="image/png" />
-        <link rel="shortcut icon" href="/hsr-database/favicon.jpg.png" type="image/png" />
-        <link rel="apple-touch-icon" href="/hsr-database/favicon.jpg.png" />
+        <link rel="icon" href={`${basePath}/favicon.jpg.png`} type="image/png" />
+        <link rel="shortcut icon" href={`${basePath}/favicon.jpg.png`} type="image/png" />
+        <link rel="apple-touch-icon" href={`${basePath}/favicon.jpg.png`} />
         {/* 繁體中文字體 */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
@@ -32,7 +34,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <div className="relative p-0.5 rounded-full bg-gradient-to-tr from-[#d4af37] to-[#7e57c2]">
                   <img
-                    src="/hsr-database/favicon.jpg.png"
+                    src={`${basePath}/favicon.jpg.png`}
                     alt="icon"
                     width={30}
                     height={30}

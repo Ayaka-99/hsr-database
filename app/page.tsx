@@ -25,7 +25,7 @@ function CtEasterEgg() {
           <div className="ct-frame-content">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/hsr-database/ct-easter-egg.png"
+              src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/ct-easter-egg.png`}
               alt="CT"
               className="block max-h-[60vh] w-auto"
             />
