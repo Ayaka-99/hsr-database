@@ -82,35 +82,37 @@ export default function HomePage() {
 
   return (
     <>
-      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-5">
+      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
         <div>
-          <h1 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight flex items-center gap-2">
-            角色列表
-            <span className="text-xs font-medium px-2.5 py-0.5 rounded-full bg-white/10 text-gray-300 border border-white/10">
-              {filtered.length}
+          <h1 className="text-2xl sm:text-3xl font-black text-white tracking-tight flex items-center gap-3">
+            <span className="bg-gradient-to-r from-white via-gray-100 to-gray-400 bg-clip-text text-transparent">
+              星軌角色名鑑
+            </span>
+            <span className="text-xs font-bold px-3 py-1 rounded-full liquid-capsule text-[#ffd700] border-[#d4af37]/40 shadow-[0_0_12px_rgba(212,175,55,0.25)]">
+              {filtered.length} 名角色
             </span>
           </h1>
-          <p className="text-xs text-gray-400 mt-0.5">點擊卡片檢視角色基礎屬性、技能行跡與命座數據</p>
+          <p className="text-xs text-gray-400 mt-1">沉浸式 3D 浮空卡片 · 懸浮預覽基礎數值、技能星魂與命途行跡</p>
         </div>
 
-        {/* 搜尋欄 */}
-        <div className="relative w-full sm:w-72">
+        {/* 搜尋欄 (Liquid Glass Capsule) */}
+        <div className="relative w-full sm:w-80">
           <input
             type="text"
             placeholder="搜尋角色名稱…"
             value={search}
             onChange={e => setSearch(e.target.value)}
-            className="w-full pl-9 pr-8 py-2 rounded-xl bg-white/[0.04] border border-white/10 text-white placeholder-gray-500 text-sm backdrop-blur-md transition-all duration-200 focus:outline-none focus:border-[#d4af37]/70 focus:bg-white/[0.08] focus:ring-2 focus:ring-[#d4af37]/20"
+            className="w-full pl-10 pr-9 py-2.5 rounded-full liquid-glass text-white placeholder-gray-400 text-sm backdrop-blur-xl transition-all duration-300 focus:outline-none focus:border-[#ffd700]/70 focus:shadow-[0_0_20px_rgba(212,175,55,0.3)]"
           />
           {/* 放大鏡圖示 */}
-          <span className="absolute left-3 top-2.5 text-gray-400 pointer-events-none text-xs">
+          <span className="absolute left-3.5 top-3 text-gray-400 pointer-events-none text-xs">
             🔍
           </span>
           {/* 清除按鈕 */}
           {search && (
             <button
               onClick={() => setSearch('')}
-              className="absolute right-2.5 top-2.5 text-gray-400 hover:text-white text-xs w-4 h-4 rounded-full bg-white/10 flex items-center justify-center transition-colors"
+              className="absolute right-3 top-2.5 text-gray-400 hover:text-white text-xs w-5 h-5 rounded-full bg-white/10 flex items-center justify-center transition-colors cursor-pointer"
               aria-label="清除搜尋"
             >
               ✕
@@ -128,8 +130,8 @@ export default function HomePage() {
         onRarity={setRarity}
       />
 
-      {/* 角色卡片網格 */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-7 xl:grid-cols-8 gap-3 sm:gap-4">
+      {/* 角色卡片網格 (立體破框 3D 空間間距) */}
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-x-4 gap-y-8 sm:gap-x-6 sm:gap-y-11 pt-4">
         {filtered.map(c => (
           <CharacterCard key={c.id} character={c} />
         ))}

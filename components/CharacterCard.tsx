@@ -1,82 +1,139 @@
 'use client';
 
+import { useState, useRef } from 'react';
 import Link from 'next/link';
 import type { Character } from '@/lib/types';
 import { getDisplayName } from '@/lib/api';
 import { useLang } from '@/lib/lang';
 import AvatarImage from './AvatarImage';
 
-// 屬性漸層背景（用於卡片圖片區）
-const ELEMENT_GRADIENT: Record<string, string> = {
-  '火':   'from-orange-900/50 to-[#0e0e1e]',
-  '冰':   'from-sky-900/50    to-[#0e0e1e]',
-  '雷':   'from-violet-900/50 to-[#0e0e1e]',
-  '風':   'from-teal-900/50   to-[#0e0e1e]',
-  '量子': 'from-purple-900/50 to-[#0e0e1e]',
-  '虛數': 'from-amber-900/50  to-[#0e0e1e]',
-  '物理': 'from-slate-800/50  to-[#0e0e1e]',
+// 屬性微光漸變（用於卡片背部有機液態光環）
+const ELEMENT_GLOW: Record<string, string> = {
+  '火':   'from-orange-500/25 via-red-500/10 to-transparent',
+  '冰':   'from-sky-400/25 via-cyan-500/10 to-transparent',
+  '雷':   'from-violet-400/25 via-indigo-500/10 to-transparent',
+  '風':   'from-emerald-400/25 via-teal-500/10 to-transparent',
+  '量子': 'from-purple-500/25 via-fuchsia-500/10 to-transparent',
+  '虛數': 'from-amber-400/25 via-yellow-500/10 to-transparent',
+  '物理': 'from-slate-400/25 via-gray-500/10 to-transparent',
 };
 
-// 屬性顏色對照
-const ELEMENT_COLOR: Record<string, string> = {
-  '火': 'text-orange-400',
-  '冰': 'text-cyan-400',
-  '雷': 'text-yellow-300',
-  '風': 'text-emerald-400',
-  '量子': 'text-violet-400',
-  '虛數': 'text-amber-300',
-  '物理': 'text-gray-300',
+// 屬性文字與膠囊邊框對照
+const ELEMENT_BADGE: Record<string, { text: string; bg: string; border: string }> = {
+  '火':   { text: 'text-orange-300', bg: 'bg-orange-500/15', border: 'border-orange-500/30' },
+  '冰':   { text: 'text-cyan-200',   bg: 'bg-sky-500/15',    border: 'border-sky-400/30' },
+  '雷':   { text: 'text-purple-200', bg: 'bg-violet-500/15', border: 'border-violet-400/30' },
+  '風':   { text: 'text-emerald-200',bg: 'bg-teal-500/15',   border: 'border-teal-400/30' },
+  '量子': { text: 'text-fuchsia-200',bg: 'bg-purple-500/15', border: 'border-purple-400/30' },
+  '虛數': { text: 'text-amber-200',  bg: 'bg-amber-500/15',  border: 'border-amber-400/30' },
+  '物理': { text: 'text-slate-200',  bg: 'bg-slate-500/15',  border: 'border-slate-400/30' },
 };
 
 export default function CharacterCard({ character }: { character: Character }) {
   const { lang } = useLang();
   const isGold = character.rarity === 5;
   const displayName = getDisplayName(character, lang);
+  const cardRef = useRef<HTMLDivElement>(null);
+  const [tilt, setTilt] = useState({ rotateX: 0, rotateY: 0 });
+
+  // 實時 3D 陀螺儀微視差與滑鼠光斑追蹤
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (!cardRef.current) return;
+    const rect = cardRef.current.getBoundingClientRect();
+    const x = ((e.clientX - rect.left) / rect.width) * 100;
+    const y = ((e.clientY - rect.top) / rect.height) * 100;
+
+    // 計算微幅 3D 傾斜角度（±5deg）
+    const rotateY = ((x - 50) / 50) * 5;
+    const rotateX = ((y - 50) / 50) * -5;
+
+    cardRef.current.style.setProperty('--mouse-x', `${x}%`);
+    cardRef.current.style.setProperty('--mouse-y', `${y}%`);
+    setTilt({ rotateX, rotateY });
+  };
+
+  const handleMouseLeave = () => {
+    setTilt({ rotateX: 0, rotateY: 0 });
+  };
+
+  const badgeStyle = ELEMENT_BADGE[character.element] ?? {
+    text: 'text-gray-300',
+    bg: 'bg-white/10',
+    border: 'border-white/20',
+  };
 
   return (
-    <Link href={`/characters/${character.id}`} className="group block focus:outline-none">
-      <div className={`
-        relative rounded-2xl overflow-hidden cursor-pointer
-        bg-gradient-to-b from-white/[0.07] to-white/[0.02] border backdrop-blur-md
-        transition-all duration-300 ease-out group-hover:-translate-y-1.5
-        ${isGold
-          ? 'border-[#d4af37]/30 group-hover:border-[#d4af37]/80 card-gold-glow'
-          : 'border-[#7e57c2]/30 group-hover:border-[#7e57c2]/80 card-purple-glow'}
-      `}>
-        {/* 光暈掃掠 (Shimmer sheen) */}
+    <Link href={`/characters/${character.id}`} className="group block focus:outline-none pt-6 select-none">
+      <div
+        ref={cardRef}
+        onMouseMove={handleMouseMove}
+        onMouseLeave={handleMouseLeave}
+        style={{
+          transform: `perspective(1000px) rotateX(${tilt.rotateX}deg) rotateY(${tilt.rotateY}deg)`,
+          transition: 'transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease',
+        }}
+        className={`
+          relative rounded-3xl cursor-pointer
+          liquid-glass backdrop-blur-2xl
+          ${isGold
+            ? 'border-[#ffd700]/30 group-hover:border-[#ffd700]/80 card-gold-glow'
+            : 'border-purple-500/30 group-hover:border-purple-400/80 card-purple-glow'}
+        `}
+      >
+        {/* 動態液體跟隨高光 (Liquid Specular Shine) */}
+        <div className={isGold ? 'liquid-specular-gold' : 'liquid-specular-purple'} />
+
+        {/* 頂部光暈掃掠 */}
         <div className="animate-shimmer" />
 
-        {/* 稀有度標記 */}
+        {/* 頂部星級浮空膠囊 */}
         <div className={`
-          absolute top-2.5 right-2.5 text-xs font-black tracking-widest z-10 px-2 py-0.5 rounded-full
-          backdrop-blur-md border shadow-sm
+          absolute top-3 right-3 text-[11px] font-black tracking-widest z-30 px-2.5 py-0.5 rounded-full
+          backdrop-blur-xl border shadow-lg
           ${isGold
-            ? 'bg-amber-950/60 border-amber-400/40 text-[#ffd700]'
-            : 'bg-purple-950/60 border-purple-400/40 text-purple-300'}
+            ? 'bg-amber-950/70 border-amber-400/60 text-[#ffd700] shadow-[0_0_12px_rgba(212,175,55,0.4)]'
+            : 'bg-purple-950/70 border-purple-400/60 text-purple-200 shadow-[0_0_12px_rgba(168,85,247,0.4)]'}
         `}>
           {'★'.repeat(character.rarity)}
         </div>
 
-        {/* 角色圖片區 */}
-        <div className={`relative w-full aspect-square bg-gradient-to-b ${ELEMENT_GRADIENT[character.element] ?? 'from-[#1a1a2e] to-[#0d0d1a]'} overflow-hidden`}>
-          <div className="w-full h-full transition-transform duration-500 ease-out group-hover:scale-105">
+        {/* 角色立繪區：立體破框突破感 (-mt-8 使立繪突破上邊界) */}
+        <div className="relative w-full aspect-[4/4.2] overflow-visible flex items-center justify-center -mt-8 pt-2">
+          {/* 背後屬性有機流態圓光 */}
+          <div className={`
+            absolute inset-3 rounded-full bg-gradient-to-tr ${ELEMENT_GLOW[character.element] ?? 'from-white/10 to-transparent'}
+            blur-2xl opacity-60 group-hover:opacity-100 group-hover:scale-110 transition-all duration-500 pointer-events-none
+          `} />
+
+          {/* 破框立繪本體 */}
+          <div className="relative w-full h-full z-10 popout-character flex items-center justify-center p-1">
             <AvatarImage
               src={character.image}
               alt={displayName}
-              className="object-contain p-2.5 drop-shadow-[0_8px_12px_rgba(0,0,0,0.5)]"
+              className="object-contain w-full h-full drop-shadow-[0_16px_22px_rgba(0,0,0,0.7)]"
             />
           </div>
         </div>
 
-        {/* 角色資訊 */}
-        <div className="p-3 bg-[#0f101d]/90 border-t border-white/[0.06] flex flex-col gap-0.5">
-          <p className="font-bold text-sm text-gray-100 group-hover:text-white transition-colors truncate">
-            {displayName}
-          </p>
-          <div className="flex items-center gap-1.5 text-xs text-gray-400">
-            <span className="text-gray-400/80">{character.path}</span>
-            <span className="inline-block w-1 h-1 rounded-full bg-white/20" />
-            <span className={`font-medium ${ELEMENT_COLOR[character.element] ?? 'text-gray-400'}`}>
+        {/* 下方液態玻璃資訊基座 */}
+        <div className="p-3.5 pt-2 flex flex-col gap-2 relative z-20">
+          {/* 角色名稱 */}
+          <div className="flex items-center justify-between gap-1.5">
+            <h3 className="font-extrabold text-sm sm:text-base text-gray-100 group-hover:text-white transition-colors truncate drop-shadow-sm">
+              {displayName}
+            </h3>
+          </div>
+
+          {/* 懸浮液態膠囊資訊列 (VisionOS Capsule Pills) */}
+          <div className="flex items-center gap-1.5 flex-wrap">
+            {/* 命途膠囊 */}
+            <span className="liquid-capsule px-2.5 py-0.5 rounded-full text-[11px] font-medium text-gray-300 flex items-center gap-1">
+              <span className="w-1.5 h-1.5 rounded-full bg-cyan-400/80 shadow-[0_0_6px_rgba(34,211,238,0.8)]" />
+              {character.path}
+            </span>
+
+            {/* 屬性膠囊 */}
+            <span className={`px-2.5 py-0.5 rounded-full text-[11px] font-bold border backdrop-blur-md ${badgeStyle.bg} ${badgeStyle.border} ${badgeStyle.text} shadow-sm`}>
               {character.element}
             </span>
           </div>

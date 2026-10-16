@@ -91,32 +91,188 @@ main { animation: pageIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) both; }
 
 /* 5星金色與4星紫色流光光暈 */
 .card-gold-glow {
-  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.5), 0 0 15px -3px rgba(212, 175, 55, 0.15);
+  box-shadow: 0 8px 30px -4px rgba(0, 0, 0, 0.6), 0 0 20px -2px rgba(212, 175, 55, 0.2);
 }
 .card-gold-glow:hover {
-  box-shadow: 0 12px 30px -4px rgba(0, 0, 0, 0.7), 0 0 25px 2px rgba(212, 175, 55, 0.35);
+  box-shadow: 0 16px 40px -6px rgba(0, 0, 0, 0.8), 0 0 35px 4px rgba(212, 175, 55, 0.45);
 }
 
 .card-purple-glow {
-  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.5), 0 0 15px -3px rgba(126, 87, 194, 0.15);
+  box-shadow: 0 8px 30px -4px rgba(0, 0, 0, 0.6), 0 0 20px -2px rgba(126, 87, 194, 0.2);
 }
 .card-purple-glow:hover {
-  box-shadow: 0 12px 30px -4px rgba(0, 0, 0, 0.7), 0 0 25px 2px rgba(126, 87, 194, 0.35);
+  box-shadow: 0 16px 40px -6px rgba(0, 0, 0, 0.8), 0 0 35px 4px rgba(126, 87, 194, 0.45);
 }
 
-/* 玻璃擬態通用面板 */
+/* ========================================================
+   VisionOS Liquid Glass (液態玻璃) 架構與光學系統
+   ======================================================== */
+
+/* 動態有機流體光球 (Liquid Ambient Blobs) */
+@keyframes fluid-blob-1 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(70px, -50px) scale(1.15); }
+  66% { transform: translate(-40px, 60px) scale(0.9); }
+}
+
+@keyframes fluid-blob-2 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(-80px, 50px) scale(1.2); }
+  66% { transform: translate(60px, -40px) scale(0.85); }
+}
+
+@keyframes fluid-blob-3 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(40px, 60px) scale(1.1); }
+}
+
+.liquid-blob-1 {
+  animation: fluid-blob-1 20s cubic-bezier(0.4, 0, 0.2, 1) infinite alternate;
+}
+.liquid-blob-2 {
+  animation: fluid-blob-2 25s cubic-bezier(0.4, 0, 0.2, 1) infinite alternate;
+}
+.liquid-blob-3 {
+  animation: fluid-blob-3 30s cubic-bezier(0.4, 0, 0.2, 1) infinite alternate;
+}
+
+/* 液態玻璃基礎面板 (Liquid Glass Panel) */
+.liquid-glass {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.08) 0%,
+    rgba(255, 255, 255, 0.02) 60%,
+    rgba(255, 255, 255, 0.05) 100%
+  ),
+  rgba(15, 17, 30, 0.65);
+  backdrop-filter: blur(28px) saturate(180%);
+  -webkit-backdrop-filter: blur(28px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow:
+    0 12px 35px -8px rgba(0, 0, 0, 0.65),
+    inset 0 1px 1.5px 0 rgba(255, 255, 255, 0.25),
+    inset 0 -1px 1px 0 rgba(0, 0, 0, 0.4);
+}
+
+/* 懸浮液態島導航 (Liquid Glass Dock) */
+.liquid-glass-dock {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.12) 0%,
+    rgba(255, 255, 255, 0.03) 100%
+  ),
+  rgba(11, 13, 24, 0.82);
+  backdrop-filter: blur(32px) saturate(200%);
+  -webkit-backdrop-filter: blur(32px) saturate(200%);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow:
+    0 20px 45px -10px rgba(0, 0, 0, 0.75),
+    0 0 25px -4px rgba(212, 175, 55, 0.12),
+    inset 0 1px 1.5px 0 rgba(255, 255, 255, 0.4),
+    inset 0 -1px 1px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* 晶透液態膠囊按鈕 (Liquid Glass Capsule) */
+.liquid-capsule {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.3),
+    inset 0 1px 1px rgba(255, 255, 255, 0.25);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.liquid-capsule:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.3);
+  box-shadow:
+    0 6px 18px rgba(0, 0, 0, 0.45),
+    inset 0 1px 1.5px rgba(255, 255, 255, 0.4);
+}
+
+/* 3D 空間透視舞台 */
+.spatial-container {
+  perspective: 1000px;
+}
+
+/* 3D 卡片液態光學跟隨高光層 */
+.liquid-specular-shine {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  background: radial-gradient(
+    320px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+    rgba(255, 255, 255, 0.22) 0%,
+    rgba(255, 255, 255, 0.06) 35%,
+    transparent 70%
+  );
+  z-index: 20;
+}
+
+/* 5星金色動態液體高光跟隨 */
+.liquid-specular-gold {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  background: radial-gradient(
+    340px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+    rgba(255, 225, 120, 0.32) 0%,
+    rgba(212, 175, 55, 0.15) 40%,
+    transparent 75%
+  );
+  z-index: 20;
+}
+
+/* 4星紫色動態液體高光跟隨 */
+.liquid-specular-purple {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  background: radial-gradient(
+    340px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+    rgba(216, 180, 254, 0.3) 0%,
+    rgba(147, 51, 234, 0.15) 40%,
+    transparent 75%
+  );
+  z-index: 20;
+}
+
+.group:hover .liquid-specular-shine,
+.group:hover .liquid-specular-gold,
+.group:hover .liquid-specular-purple {
+  opacity: 1;
+}
+
+/* 玻璃擬態通用面板 (相容舊類別) */
 .glass-panel {
-  background: rgba(18, 20, 34, 0.65);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(18, 20, 34, 0.7);
+  backdrop-filter: blur(20px) saturate(160%);
+  -webkit-backdrop-filter: blur(20px) saturate(160%);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow:
+    0 10px 30px -6px rgba(0, 0, 0, 0.6),
+    inset 0 1px 1px 0 rgba(255, 255, 255, 0.2);
 }
 
 .glass-panel-gold {
-  background: rgba(26, 23, 16, 0.65);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  border: 1px solid rgba(212, 175, 55, 0.25);
+  background: rgba(26, 23, 16, 0.72);
+  backdrop-filter: blur(20px) saturate(160%);
+  -webkit-backdrop-filter: blur(20px) saturate(160%);
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  box-shadow:
+    0 10px 30px -6px rgba(0, 0, 0, 0.6),
+    0 0 20px -2px rgba(212, 175, 55, 0.15),
+    inset 0 1px 1.5px 0 rgba(255, 225, 120, 0.25);
 }
 
 /* CT 彩蛋：炫彩古典畫框 */

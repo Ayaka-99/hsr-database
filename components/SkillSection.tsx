@@ -124,13 +124,13 @@ export default function SkillSection({
   return (
     <div>
       {/* ── 技能區塊 ── */}
-      <div className="flex items-center gap-2 mb-4">
-        <h2 className="text-xl font-bold text-white tracking-wide">戰鬥技能</h2>
-        <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-cyan-500/20 border border-cyan-500/40 text-cyan-300">
-          Skills
+      <div className="flex items-center gap-2.5 mb-5">
+        <h2 className="text-xl font-extrabold text-white tracking-wide">戰鬥技能體系</h2>
+        <span className="text-xs font-bold px-2.5 py-0.5 rounded-full bg-cyan-500/20 border border-cyan-400/60 text-cyan-200 shadow-[0_0_12px_rgba(6,182,212,0.3)]">
+          Combat Skills
         </span>
       </div>
-      <div className="space-y-3.5">
+      <div className="space-y-4">
         {keys.map(key => {
           const skill = skills[key];
           if (!skill.name) return null;
@@ -146,50 +146,50 @@ export default function SkillSection({
           return (
             <div
               key={key}
-              className={`rounded-2xl border p-4 sm:p-5 backdrop-blur-md transition-all duration-200 hover:shadow-lg ${SKILL_COLORS[key]}`}
+              className="rounded-3xl liquid-glass border border-white/15 p-5 sm:p-6 transition-all duration-300 hover:border-white/30 hover:shadow-xl relative overflow-hidden"
             >
-              <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <div className="relative w-11 h-11 shrink-0 rounded-xl overflow-hidden bg-black/40 border border-white/10 p-1">
+              <div className="flex items-center gap-3.5 mb-3 flex-wrap">
+                <div className="relative w-12 h-12 shrink-0 rounded-2xl liquid-capsule p-1.5 border border-white/20 flex items-center justify-center">
                   <Image
                     src={getSkillIconUrl(key)}
                     alt={skill.name}
                     fill
-                    className="object-contain p-0.5 drop-shadow-md"
+                    className="object-contain p-1 drop-shadow-md"
                     unoptimized
                     onError={(e) => {
                       (e.currentTarget as HTMLImageElement).style.display = 'none';
                     }}
                   />
                 </div>
-                <div className="flex items-center gap-2">
-                  <span className={`text-xs font-bold px-2.5 py-0.5 rounded-full border ${SKILL_LABEL_COLORS[key]} border-current/40 bg-black/20`}>
+                <div className="flex items-center gap-2.5">
+                  <span className={`text-xs font-extrabold px-3 py-1 rounded-full border ${SKILL_LABEL_COLORS[key]} border-current/40 bg-white/[0.04] backdrop-blur-md shadow-sm`}>
                     {SKILL_LABELS[key]}
                   </span>
-                  <span className="text-white font-bold text-base">{skill.name}</span>
+                  <span className="text-white font-black text-base sm:text-lg tracking-tight">{skill.name}</span>
                 </div>
                 {showSlider && (
-                  <span className={`ml-auto text-xs font-extrabold px-2.5 py-1 rounded-lg bg-black/30 border border-white/10 ${SKILL_LABEL_COLORS[key]}`}>
+                  <span className={`ml-auto text-xs font-black px-3 py-1 rounded-full liquid-capsule ${SKILL_LABEL_COLORS[key]} border-current/40`}>
                     Lv.{lv} / {maxLv}
                   </span>
                 )}
               </div>
 
               {showSlider && (
-                <div className="mb-3.5 px-3 py-2 rounded-xl bg-black/25 border border-white/5 flex items-center gap-3">
-                  <span className="text-[11px] font-bold text-gray-500 shrink-0">Lv.1</span>
+                <div className="mb-4 px-4 py-2.5 rounded-2xl liquid-capsule flex items-center gap-3 border border-white/10">
+                  <span className="text-[11px] font-bold text-gray-400 shrink-0">Lv.1</span>
                   <input
                     type="range"
                     min={1}
                     max={maxLv}
                     value={lv}
                     onChange={e => setLevels(prev => ({ ...prev, [key]: +e.target.value }))}
-                    className="flex-1 h-2 rounded-lg accent-[#d4af37] bg-white/10 cursor-pointer"
+                    className="flex-1 h-2 rounded-lg accent-[#ffd700] bg-white/10 cursor-pointer"
                   />
-                  <span className="text-[11px] font-bold text-gray-500 shrink-0">Lv.{maxLv}</span>
+                  <span className="text-[11px] font-bold text-gray-400 shrink-0">Lv.{maxLv}</span>
                 </div>
               )}
 
-              <p className="text-sm text-gray-200/90 whitespace-pre-line leading-relaxed">
+              <p className="text-sm sm:text-[15px] text-gray-200 whitespace-pre-line leading-relaxed font-normal">
                 {description || '—'}
               </p>
             </div>
@@ -199,42 +199,46 @@ export default function SkillSection({
 
       {/* ── 憶靈技區塊 ── */}
       {memosprite && memosprite.skills.length > 0 && (
-        <div className="mt-8">
-          <h2 className="text-lg font-bold text-white mb-1">憶靈技</h2>
-          <p className="text-xs text-gray-500 mb-3">憶靈：{memosprite.name}</p>
-          <div className="space-y-3">
+        <div className="mt-10">
+          <div className="flex items-center gap-2 mb-1.5">
+            <h2 className="text-lg sm:text-xl font-extrabold text-white">憶靈技</h2>
+            <span className="text-xs font-bold px-2.5 py-0.5 rounded-full bg-sky-500/20 border border-sky-400/50 text-sky-200">
+              {memosprite.name}
+            </span>
+          </div>
+          <div className="space-y-3.5 mt-3">
             {memosprite.skills.map(skill => {
               const descs = skill.descriptions ?? [];
               const maxLv = descs.length;
               const lv = memoLevels[skill.id] ?? 1;
-              // 所有等級描述相同（數值固定）則不顯示滑動條
               const allSame = descs.length > 1 && descs.every(d => d === descs[0]);
               const showSlider = maxLv > 1 && !allSame;
 
               return (
-                <div key={skill.id} className="rounded-lg border border-sky-500/30 bg-sky-500/5 p-4">
-                  <div className="flex items-center justify-between mb-2 flex-wrap gap-2">
-                    <span className="text-sky-300 font-semibold text-sm">{skill.name}</span>
+                <div key={skill.id} className="rounded-3xl liquid-glass border border-sky-500/30 p-5 sm:p-6 shadow-lg">
+                  <div className="flex items-center justify-between mb-2.5 flex-wrap gap-2">
+                    <span className="text-sky-300 font-black text-base">{skill.name}</span>
                     {showSlider && (
-                      <span className="text-xs font-bold text-sky-400">Lv.{lv}</span>
+                      <span className="text-xs font-bold text-sky-300 liquid-capsule px-2.5 py-0.5 rounded-full border-sky-400/40">
+                        Lv.{lv}
+                      </span>
                     )}
                   </div>
                   {showSlider && (
-                    <div className="mb-3 flex items-center gap-3">
-                      <span className="text-xs text-gray-500 shrink-0">1</span>
+                    <div className="mb-3.5 px-4 py-2 rounded-2xl liquid-capsule flex items-center gap-3">
+                      <span className="text-xs text-gray-400 shrink-0">1</span>
                       <input
                         type="range"
                         min={1}
                         max={maxLv}
                         value={lv}
                         onChange={e => setMemoLevels(prev => ({ ...prev, [skill.id]: +e.target.value }))}
-                        className="flex-1 h-1.5 cursor-pointer"
-                        style={{ accentColor: '#38bdf8' }}
+                        className="flex-1 h-2 cursor-pointer accent-sky-400"
                       />
-                      <span className="text-xs text-gray-500 shrink-0">{maxLv}</span>
+                      <span className="text-xs text-gray-400 shrink-0">{maxLv}</span>
                     </div>
                   )}
-                  <p className="text-sm text-gray-300 whitespace-pre-line leading-relaxed">
+                  <p className="text-sm text-gray-200 whitespace-pre-line leading-relaxed font-normal">
                     {descs[lv - 1] || skill.description || '—'}
                   </p>
                 </div>
@@ -245,22 +249,30 @@ export default function SkillSection({
       )}
 
       {/* ── 行迹區塊 ── */}
-      <div className="mt-8">
-        <h2 className="text-lg font-bold text-white mb-3">行迹</h2>
+      <div className="mt-10">
+        <div className="flex items-center gap-2 mb-4">
+          <h2 className="text-xl font-extrabold text-white tracking-wide">額外行迹與屬性提升</h2>
+          <span className="text-xs font-bold px-2.5 py-0.5 rounded-full bg-gradient-to-r from-[#d4af37]/30 to-[#ffd700]/20 border border-[#ffd700]/60 text-[#ffd700]">
+            Traces
+          </span>
+        </div>
 
         {hasTraces ? (
           <div className="space-y-4">
             {/* 能力型行迹 */}
             {abilityTraces.length > 0 && (
-              <div className="space-y-2">
+              <div className="space-y-3">
                 {abilityTraces.map(trace => (
                   <div
                     key={trace.anchor}
-                    className="rounded-lg border border-[#c9a227]/30 bg-[#c9a227]/5 p-4"
+                    className="rounded-3xl liquid-glass border border-[#ffd700]/30 p-5 sm:p-6 shadow-lg"
                   >
-                    <p className="text-[#c9a227] font-semibold text-sm mb-1">{trace.name}</p>
+                    <p className="text-[#ffd700] font-black text-base mb-1.5 flex items-center gap-2">
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#ffd700] shadow-[0_0_8px_#ffd700]" />
+                      {trace.name}
+                    </p>
                     {trace.description && (
-                      <p className="text-sm text-gray-300 whitespace-pre-line leading-relaxed">
+                      <p className="text-sm text-gray-200 whitespace-pre-line leading-relaxed font-normal">
                         {trace.description}
                       </p>
                     )}
@@ -271,15 +283,19 @@ export default function SkillSection({
 
             {/* 屬性強化行迹（加總顯示） */}
             {Object.keys(statSummary).length > 0 && (
-              <div>
-                <p className="text-xs text-gray-500 mb-2">屬性強化</p>
+              <div className="pt-2">
+                <p className="text-xs font-bold text-gray-300 uppercase tracking-wider mb-2.5 flex items-center gap-1.5">
+                  <span className="w-1 h-1 rounded-full bg-emerald-400 shadow-[0_0_6px_#34d399]" />
+                  行迹屬性點累計總和
+                </p>
                 <div className="flex flex-wrap gap-2">
                   {Object.entries(statSummary).map(([key, { name, total }]) => (
                     <span
                       key={key}
-                      className="text-xs px-3 py-1.5 rounded-full border border-white/10 bg-white/5 text-gray-300"
+                      className="text-xs font-bold px-3.5 py-1.5 rounded-full liquid-capsule text-gray-200 flex items-center gap-1.5 border-white/15"
                     >
-                      {name} <span className="text-emerald-400 font-semibold">{formatStatValue(key, total)}</span>
+                      <span>{name}</span>
+                      <span className="text-emerald-400 font-extrabold">{formatStatValue(key, total)}</span>
                     </span>
                   ))}
                 </div>
@@ -287,8 +303,8 @@ export default function SkillSection({
             )}
           </div>
         ) : (
-          <div className="rounded-xl border border-white/10 bg-white/3 p-6 text-center">
-            <p className="text-xs text-gray-600 italic">資料擴充中</p>
+          <div className="rounded-3xl liquid-glass p-6 text-center border border-white/10">
+            <p className="text-xs text-gray-400 italic">資料擴充中</p>
           </div>
         )}
       </div>
