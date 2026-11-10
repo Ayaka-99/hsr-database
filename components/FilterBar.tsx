@@ -1,5 +1,6 @@
 'use client';
 
+import { useState, useEffect } from 'react';
 import type { Path, Element } from '@/lib/types';
 
 const PATHS: Path[] = ['存護', '巡獵', '毀滅', '智識', '同諧', '虛無', '豐饒', '記憶', '歡愉'];
@@ -62,6 +63,13 @@ function FilterGroup({ label, children }: { label: string; children: React.React
 
 export default function FilterBar({ path, element, rarity, onPath, onElement, onRarity }: Props) {
   const hasActiveFilter = rarity !== 0 || element !== '' || path !== '';
+  const activeCount = (rarity !== 0 ? 1 : 0) + (element !== '' ? 1 : 0) + (path !== '' ? 1 : 0);
+
+  // 收合狀態：手機預設收合、桌面預設展開（掛載後依視窗寬度決定，避免 SSR 水合不一致）
+  const [expanded, setExpanded] = useState(true);
+  useEffect(() => {
+    if (window.innerWidth < 640) setExpanded(false);
+  }, []);
 
   const clearAll = () => {
     onRarity(0);
@@ -71,10 +79,24 @@ export default function FilterBar({ path, element, rarity, onPath, onElement, on
 
   return (
     <div className="sticky top-[76px] sm:top-[88px] z-40 rounded-2xl border border-white/15 p-3 shadow-xl liquid-glass mb-6 sm:rounded-3xl sm:p-4 sm:mb-8">
-      {/* 標題列：只有在有篩選生效時顯示清除全部 */}
-      <div className="mb-2.5 flex items-center justify-between">
-        <span className="text-xs font-bold tracking-[0.2em] text-gray-300">篩選</span>
-        {hasActiveFilter && (
+      {/* 標題列：點按收合／展開；清除全部只在展開且有篩選時顯示 */}
+      <div className="flex items-center justify-between">
+        <button
+          type="button"
+          onClick={() => setExpanded((v) => !v)}
+          aria-expanded={expanded}
+          aria-label={expanded ? '收合篩選面板' : '展開篩選面板'}
+          className="flex cursor-pointer items-center gap-2 py-0.5 text-xs font-bold tracking-[0.2em] text-gray-300 transition-colors hover:text-white"
+        >
+          篩選
+          <span className="text-[10px] text-gray-400">{expanded ? '▲' : '▼'}</span>
+          {!expanded && hasActiveFilter && (
+            <span className="rounded-full border border-[#ffd700]/40 bg-[#d4af37]/20 px-2 py-0.5 text-[10px] font-bold tracking-normal text-[#ffd700]">
+              已選 {activeCount} 項
+            </span>
+          )}
+        </button>
+        {expanded && hasActiveFilter && (
           <button
             type="button"
             onClick={clearAll}
@@ -85,7 +107,8 @@ export default function FilterBar({ path, element, rarity, onPath, onElement, on
         )}
       </div>
 
-      <div className="flex flex-col gap-2.5">
+      {expanded && (
+      <div className="mt-2.5 flex flex-col gap-2.5">
         {/* 稀有度篩選 */}
         <FilterGroup label="稀有度">
           <FilterBtn
@@ -139,6 +162,7 @@ export default function FilterBar({ path, element, rarity, onPath, onElement, on
           ))}
         </FilterGroup>
       </div>
+      )}
     </div>
   );
 }

@@ -185,13 +185,27 @@ export default function CharacterCard({ character }: { character: Character }) {
             transition-opacity duration-300
             ${previewOpen
               ? 'opacity-100 visible'
-              : 'opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible'}
+              : 'opacity-0 invisible [@media(hover:hover)]:group-hover:opacity-100 [@media(hover:hover)]:group-hover:visible'}
           `}
         >
           {/* 預覽標頭 */}
           <div className="flex items-center justify-between gap-2">
             <p className="font-extrabold text-sm text-white truncate">{displayName}</p>
-            <span className="shrink-0 text-[10px] font-bold tracking-widest text-[#ffd700]">✦ 預覽</span>
+            <div className="flex shrink-0 items-center gap-1.5">
+              <span className="text-[10px] font-bold tracking-widest text-[#ffd700]">✦ 預覽</span>
+              <button
+                type="button"
+                onClick={(e) => {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  setPreviewOpen(false);
+                }}
+                aria-label="關閉角色預覽"
+                className="flex h-6 w-6 items-center justify-center rounded-full border border-white/25 bg-black/40 text-[12px] font-bold text-white backdrop-blur-xl transition-colors hover:border-[#ffd700]/70 hover:text-[#ffd700] cursor-pointer"
+              >
+                ✕
+              </button>
+            </div>
           </div>
 
           {/* 基礎數值（有資料時才顯示） */}
@@ -252,7 +266,9 @@ export default function CharacterCard({ character }: { character: Character }) {
             </section>
           )}
 
-          <p className="mt-auto pt-1 text-center text-[10px] text-gray-500">點按卡片查看完整詳情</p>
+          <p className="mt-auto pt-1 text-center text-[10px] text-gray-500">
+            {previewOpen ? '點按關閉預覽' : '點按卡片查看完整詳情'}
+          </p>
         </div>
       </div>
     </Link>
