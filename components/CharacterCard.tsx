@@ -189,24 +189,7 @@ export default function CharacterCard({ character }: { character: Character }) {
           `}
         >
           {/* 預覽標頭 */}
-          <div className="flex items-center justify-between gap-2">
-            <p className="font-extrabold text-sm text-white truncate">{displayName}</p>
-            <div className="flex shrink-0 items-center gap-1.5">
-              <span className="text-[10px] font-bold tracking-widest text-[#ffd700]">✦ 預覽</span>
-              <button
-                type="button"
-                onClick={(e) => {
-                  e.preventDefault();
-                  e.stopPropagation();
-                  setPreviewOpen(false);
-                }}
-                aria-label="關閉角色預覽"
-                className="flex h-6 w-6 items-center justify-center rounded-full border border-white/25 bg-black/40 text-[12px] font-bold text-white backdrop-blur-xl transition-colors hover:border-[#ffd700]/70 hover:text-[#ffd700] cursor-pointer"
-              >
-                ✕
-              </button>
-            </div>
-          </div>
+          <p className="font-extrabold text-sm text-white truncate">{displayName}</p>
 
           {/* 基礎數值（有資料時才顯示） */}
           {character.stats && (
