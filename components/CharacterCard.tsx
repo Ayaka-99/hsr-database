@@ -29,12 +29,23 @@ const ELEMENT_BADGE: Record<string, { text: string; bg: string; border: string }
   '物理': { text: 'text-slate-200',  bg: 'bg-slate-500/15',  border: 'border-slate-400/30' },
 };
 
+// 技能欄位對照（顯示順序與中文名稱）
+const SKILL_ROWS: { key: 'basic' | 'skill' | 'ult' | 'talent' | 'technique'; label: string }[] = [
+  { key: 'basic', label: '普攻' },
+  { key: 'skill', label: '戰技' },
+  { key: 'ult', label: '終結技' },
+  { key: 'talent', label: '天賦' },
+  { key: 'technique', label: '秘技' },
+];
+
 export default function CharacterCard({ character }: { character: Character }) {
   const { lang } = useLang();
   const isGold = character.rarity === 5;
   const displayName = getDisplayName(character, lang);
   const cardRef = useRef<HTMLDivElement>(null);
   const [tilt, setTilt] = useState({ rotateX: 0, rotateY: 0 });
+  // 預覽浮層是否固定展開（手機點按 / 鍵盤操作用；桌面另可直接懸停顯示）
+  const [previewOpen, setPreviewOpen] = useState(false);
 
   // 實時 3D 陀螺儀微視差與滑鼠光斑追蹤
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
@@ -56,11 +67,21 @@ export default function CharacterCard({ character }: { character: Character }) {
     setTilt({ rotateX: 0, rotateY: 0 });
   };
 
+  // 點按已固定展開的預覽浮層：收起浮層，不跳轉詳情頁
+  const handlePreviewClick = (e: React.MouseEvent) => {
+    if (!previewOpen) return;
+    e.preventDefault();
+    e.stopPropagation();
+    setPreviewOpen(false);
+  };
+
   const badgeStyle = ELEMENT_BADGE[character.element] ?? {
     text: 'text-gray-300',
     bg: 'bg-white/10',
     border: 'border-white/20',
   };
+
+  const traces = character.traces ?? [];
 
   return (
     <Link href={`/characters/${character.id}`} className="group block focus:outline-none pt-6 select-none">
@@ -96,6 +117,21 @@ export default function CharacterCard({ character }: { character: Character }) {
         `}>
           {'★'.repeat(character.rarity)}
         </div>
+
+        {/* 預覽開關：手機點按展開、鍵盤可操作；桌面另可直接懸停顯示 */}
+        <button
+          type="button"
+          onClick={(e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            setPreviewOpen((v) => !v);
+          }}
+          aria-expanded={previewOpen}
+          aria-label={previewOpen ? '關閉角色預覽' : '預覽角色數值、技能與星魂'}
+          className="absolute top-3 left-3 z-40 flex h-6 w-6 items-center justify-center rounded-full border border-white/25 bg-black/40 text-[11px] font-bold text-white backdrop-blur-xl transition-colors hover:border-[#ffd700]/70 hover:text-[#ffd700] cursor-pointer"
+        >
+          {previewOpen ? '✕' : 'ⓘ'}
+        </button>
 
         {/* 角色立繪區：立體破框突破感 (-mt-8 使立繪突破上邊界) */}
         <div className="relative w-full aspect-[4/4.2] overflow-visible flex items-center justify-center -mt-8 pt-2">
@@ -137,6 +173,86 @@ export default function CharacterCard({ character }: { character: Character }) {
               {character.element}
             </span>
           </div>
+        </div>
+
+        {/* 懸停預覽浮層：基礎數值 / 技能 / 星魂 / 行跡 */}
+        <div
+          onClick={handlePreviewClick}
+          className={`
+            absolute inset-0 z-30 rounded-3xl liquid-glass
+            flex flex-col gap-2.5 overflow-y-auto scrollbar-none
+            p-3
+            transition-opacity duration-300
+            ${previewOpen
+              ? 'opacity-100 visible'
+              : 'opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible'}
+          `}
+        >
+          {/* 預覽標頭 */}
+          <div className="flex items-center justify-between gap-2">
+            <p className="font-extrabold text-sm text-white truncate">{displayName}</p>
+            <span className="shrink-0 text-[10px] font-bold tracking-widest text-[#ffd700]">✦ 預覽</span>
+          </div>
+
+          {/* 基礎數值（有資料時才顯示） */}
+          {character.stats && (
+            <section>
+              <p className="text-[10px] font-bold tracking-[0.2em] text-[#ffd700]">基礎數值</p>
+              <div className="mt-1 grid grid-cols-3 gap-1">
+                {[
+                  ['生命', character.stats.hp],
+                  ['攻擊', character.stats.atk],
+                  ['防禦', character.stats.def],
+                  ['速度', character.stats.spd],
+                  ['暴擊率', `${character.stats.critRate}%`],
+                  ['暴擊傷害', `${character.stats.critDmg}%`],
+                ].map(([label, value]) => (
+                  <div key={label} className="rounded-lg bg-white/5 border border-white/10 px-1 py-1 text-center">
+                    <p className="text-[9px] text-gray-400">{label}</p>
+                    <p className="text-[11px] font-bold text-white leading-tight">{value}</p>
+                  </div>
+                ))}
+              </div>
+            </section>
+          )}
+
+          {/* 技能名稱 */}
+          <section>
+            <p className="text-[10px] font-bold tracking-[0.2em] text-[#ffd700]">技能</p>
+            <ul className="mt-1 space-y-0.5">
+              {SKILL_ROWS.map(({ key, label }) => (
+                <li key={key} className="flex items-center gap-1.5 text-[11px] leading-tight">
+                  <span className="shrink-0 w-9 text-gray-400">{label}</span>
+                  <span className="text-gray-100 truncate">{character.skills[key].name}</span>
+                </li>
+              ))}
+            </ul>
+          </section>
+
+          {/* 星魂名稱 */}
+          <section>
+            <p className="text-[10px] font-bold tracking-[0.2em] text-[#ffd700]">星魂 · {character.eidolons.length}</p>
+            <div className="mt-1 grid grid-cols-2 gap-x-2 gap-y-0.5">
+              {character.eidolons.map((e) => (
+                <p key={e.rank} className="text-[10px] leading-tight text-gray-300 truncate">
+                  <span className="text-[#ffd700] font-bold">{e.rank}</span> {e.name}
+                </p>
+              ))}
+            </div>
+          </section>
+
+          {/* 行跡（有資料時才顯示） */}
+          {traces.length > 0 && (
+            <section>
+              <p className="text-[10px] font-bold tracking-[0.2em] text-[#ffd700]">行跡 · {traces.length}</p>
+              <p className="mt-0.5 text-[10px] leading-relaxed text-gray-300">
+                {traces.slice(0, 3).map((t) => t.name).join('、')}
+                {traces.length > 3 ? ` 等 ${traces.length} 個` : ''}
+              </p>
+            </section>
+          )}
+
+          <p className="mt-auto pt-1 text-center text-[10px] text-gray-500">點按卡片查看完整詳情</p>
         </div>
       </div>
     </Link>

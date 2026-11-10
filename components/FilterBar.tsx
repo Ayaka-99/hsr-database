@@ -50,60 +50,94 @@ function FilterBtn({
   );
 }
 
-export default function FilterBar({ path, element, rarity, onPath, onElement, onRarity }: Props) {
+// 一組篩選：左側固定標籤 + 右側可換行按鈕
+function FilterGroup({ label, children }: { label: string; children: React.ReactNode }) {
   return (
-    <div className="p-2.5 sm:p-3 rounded-2xl sm:rounded-3xl liquid-glass shadow-xl mb-6 sm:mb-8 border border-white/15">
-      <div className="flex gap-2 items-center overflow-x-auto pb-1 scrollbar-none">
-        {/* 稀有度篩選 */}
-        <FilterBtn
-          active={rarity === 0}
-          activeClass="bg-gradient-to-r from-white/25 to-white/10 border-white/60 text-white shadow-[0_0_16px_rgba(255,255,255,0.3),inset_0_1px_1px_rgba(255,255,255,0.5)]"
-          onClick={() => onRarity(0)}
-        >
-          全部
-        </FilterBtn>
-        <FilterBtn
-          active={rarity === 5}
-          activeClass="bg-gradient-to-r from-[#d4af37]/35 to-[#f59e0b]/20 border-[#ffd700]/80 text-[#ffd700] shadow-[0_0_18px_rgba(212,175,55,0.5),inset_0_1px_1px_rgba(255,255,255,0.5)]"
-          onClick={() => onRarity(rarity === 5 ? 0 : 5)}
-        >
-          5★ 典藏
-        </FilterBtn>
-        <FilterBtn
-          active={rarity === 4}
-          activeClass="bg-gradient-to-r from-purple-600/35 to-violet-500/20 border-purple-400/80 text-purple-200 shadow-[0_0_18px_rgba(168,85,247,0.5),inset_0_1px_1px_rgba(255,255,255,0.5)]"
-          onClick={() => onRarity(rarity === 4 ? 0 : 4)}
-        >
-          4★ 卓越
-        </FilterBtn>
+    <div className="flex items-start gap-2">
+      <span className="w-12 shrink-0 pt-2 text-xs font-bold text-gray-400">{label}</span>
+      <div className="flex flex-wrap gap-2">{children}</div>
+    </div>
+  );
+}
 
-        <span className="shrink-0 w-px h-5 bg-white/15 mx-1" />
+export default function FilterBar({ path, element, rarity, onPath, onElement, onRarity }: Props) {
+  const hasActiveFilter = rarity !== 0 || element !== '' || path !== '';
+
+  const clearAll = () => {
+    onRarity(0);
+    onElement('');
+    onPath('');
+  };
+
+  return (
+    <div className="sticky top-[76px] sm:top-[88px] z-40 rounded-2xl border border-white/15 p-3 shadow-xl liquid-glass mb-6 sm:rounded-3xl sm:p-4 sm:mb-8">
+      {/* 標題列：只有在有篩選生效時顯示清除全部 */}
+      <div className="mb-2.5 flex items-center justify-between">
+        <span className="text-xs font-bold tracking-[0.2em] text-gray-300">篩選</span>
+        {hasActiveFilter && (
+          <button
+            type="button"
+            onClick={clearAll}
+            className="cursor-pointer rounded-full border border-[#ffd700]/40 bg-[#d4af37]/10 px-2.5 py-1 text-[11px] font-bold text-[#ffd700] transition-colors hover:bg-[#d4af37]/20"
+          >
+            ✕ 清除全部
+          </button>
+        )}
+      </div>
+
+      <div className="flex flex-col gap-2.5">
+        {/* 稀有度篩選 */}
+        <FilterGroup label="稀有度">
+          <FilterBtn
+            active={rarity === 0}
+            activeClass="bg-gradient-to-r from-white/25 to-white/10 border-white/60 text-white shadow-[0_0_16px_rgba(255,255,255,0.3),inset_0_1px_1px_rgba(255,255,255,0.5)]"
+            onClick={() => onRarity(0)}
+          >
+            全部
+          </FilterBtn>
+          <FilterBtn
+            active={rarity === 5}
+            activeClass="bg-gradient-to-r from-[#d4af37]/35 to-[#f59e0b]/20 border-[#ffd700]/80 text-[#ffd700] shadow-[0_0_18px_rgba(212,175,55,0.5),inset_0_1px_1px_rgba(255,255,255,0.5)]"
+            onClick={() => onRarity(rarity === 5 ? 0 : 5)}
+          >
+            5★ 典藏
+          </FilterBtn>
+          <FilterBtn
+            active={rarity === 4}
+            activeClass="bg-gradient-to-r from-purple-600/35 to-violet-500/20 border-purple-400/80 text-purple-200 shadow-[0_0_18px_rgba(168,85,247,0.5),inset_0_1px_1px_rgba(255,255,255,0.5)]"
+            onClick={() => onRarity(rarity === 4 ? 0 : 4)}
+          >
+            4★ 卓越
+          </FilterBtn>
+        </FilterGroup>
 
         {/* 屬性篩選 */}
-        {ELEMENTS.map(e => (
-          <FilterBtn
-            key={e}
-            active={element === e}
-            activeClass={ELEMENT_ACTIVE[e] ?? 'bg-white/20 border-white/50 text-white'}
-            onClick={() => onElement(element === e ? '' : e)}
-          >
-            {e}
-          </FilterBtn>
-        ))}
-
-        <span className="shrink-0 w-px h-5 bg-white/15 mx-1" />
+        <FilterGroup label="屬性">
+          {ELEMENTS.map(e => (
+            <FilterBtn
+              key={e}
+              active={element === e}
+              activeClass={ELEMENT_ACTIVE[e] ?? 'bg-white/20 border-white/50 text-white'}
+              onClick={() => onElement(element === e ? '' : e)}
+            >
+              {e}
+            </FilterBtn>
+          ))}
+        </FilterGroup>
 
         {/* 命途篩選 */}
-        {PATHS.map(p => (
-          <FilterBtn
-            key={p}
-            active={path === p}
-            activeClass="bg-gradient-to-r from-cyan-500/30 to-sky-500/20 border-cyan-400/80 text-cyan-100 shadow-[0_0_16px_rgba(6,182,212,0.45),inset_0_1px_1px_rgba(255,255,255,0.4)]"
-            onClick={() => onPath(path === p ? '' : p)}
-          >
-            {p}
-          </FilterBtn>
-        ))}
+        <FilterGroup label="命途">
+          {PATHS.map(p => (
+            <FilterBtn
+              key={p}
+              active={path === p}
+              activeClass="bg-gradient-to-r from-cyan-500/30 to-sky-500/20 border-cyan-400/80 text-cyan-100 shadow-[0_0_16px_rgba(6,182,212,0.45),inset_0_1px_1px_rgba(255,255,255,0.4)]"
+              onClick={() => onPath(path === p ? '' : p)}
+            >
+              {p}
+            </FilterBtn>
+          ))}
+        </FilterGroup>
       </div>
     </div>
   );
